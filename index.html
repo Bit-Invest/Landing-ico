@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Landing Ico</title>
-	<link rel="stylesheet" href="./css/misha/misha.css">
+	<link rel="stylesheet" href="./css/ibragim/ibr.css">
 </head>
 <style>
 	* {
@@ -21,10 +21,70 @@
 <body>
 
 	<app>
-		<div ibragim_1>
-			<!-- ... !-->
+		<div class="gen_container">
+			<div class="i-bl1" i-gen>
+				<div class="i-line1">
+					<div class="i-line1-column1">
+
+						<div class="i-line1-crl">
+							<div class="i-line1-cntr"></div>
+						</div>
+
+					</div>
+					<div class="i-line1-column2">
+						
+					</div>
+				</div>
+			</div>
 		</div>
 	</app>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+
+		/*let crl = function(opts){
+			const { arrs } = opts;
+			Object.assign(this,{
+				arrs
+			});
+
+			return methosCrl;
+		};
+
+		let methosCrl = {
+			init: () => {
+				console.log(this.arrs)
+			}
+		};
+
+		console.log(
+			crl({
+				arrs: [1,2]
+			})
+				.init()
+		)*/
+
+		class Crl {
+			constructor() {
+				Object.assign(this,{
+					...arguments
+				});
+			}
+
+			init() {
+				console.log(this.arrs)
+			}
+		}
+
+		const crls = new Crl({
+			arrs: [
+				[10,10,100,-1]
+			]
+		})
+
+		crls.init()
+
+	</script>
 
 </body>
 </html>
