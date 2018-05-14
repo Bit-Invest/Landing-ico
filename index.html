@@ -473,6 +473,54 @@
 					<img src="assets/ibragim/menu-bar.svg" class="img_bur">
 				</div>
 			</div>
+			<div class="pop-up-menu">
+				<div class="pop-head">
+					<div class="pop__logo">
+						<img src="image/white-Logo.svg" class="pop_th_logo">
+					</div>
+					<div class="pop-right">
+						<div class="pop_language_s">Рус</div>
+						<div class="pop_burgerClose">
+							<img src="assets/ibragim/menu-close.svg">
+						</div>
+					</div>
+				</div>
+				<div class="pop-body">
+					<div class="pop-items">
+						<div class="pop-th-item">Overview</div>
+						<div class="pop-th-item">Feedback</div>
+						<div class="pop-th-item">Benefits</div>
+						<div class="pop-th-item">Roadmap</div>
+						<div class="pop-th-item">Team</div>
+						<div class="pop-th-item">Media</div>
+						<div class="pop-th-item">Blog</div>
+					</div>
+					<div class="pop-hr"></div>
+					<div class="pop-body">
+						<div class="pop-hrefs">
+							<a href="#" class="pop-a">
+								<img src="" class="pop-a-img">
+							</a>
+						</div>
+					</div>
+					<div class="pop-i-w">
+						<div class="i-line2">
+							<div class="i-line2-column1">
+								<input type="text" class="i-line2-inp1" value="your@email.com">
+								<div class="i-line2-chkParent">
+									<div class="i-line2-chk1"></div>
+									<div class="i-line2-chk-t1">I agree to the processing of my personal data</div>
+								</div>
+							</div>
+							<div class="i-line2-column2">
+								<div class="i-line2-btn1">
+									<span class="i-line2-btn1-span">Join Token Pre-Sale</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</app>
 
@@ -783,20 +831,54 @@
 				}
 			}
 
-
 			/*
 			* ************ class for resize
 			*/
-			let obRs = new rsWindow({
-				points: [320, 768, 1024, 1380],
-				selector: window,
-				resize: function(e){
-					console.log('resize',e)
-					crls
-						.clear()
-						.init();
+			let 
+				obRs = new rsWindow({
+					points: [320, 768, 1024, 1380],
+					selector: window,
+					resize: function(e){
+						console.log('resize',e)
+						crls
+							.clear()
+							.init();
+					}
+				});
+
+
+			//GOVNOCODE))))
+			/*
+			* JQUERY
+			*/
+			function fide(dom) {
+			  let arrayPro = {
+			    'mousedown': 'touchstart',
+			    'mouseup': 'touchend',
+			    'mousemove': 'touchmove',
+			  };
+			  /* detecting signs */
+			  for (q in dom) {
+			    for (e in dom[q]) {
+			      var property = e;
+			      (property.substr(0, 5) == 'mouse') && (function() {
+			        (device.tablet() || device.mobile() || false) && (function() {
+			          property = arrayPro[e] || property;
+			        }());
+			      }());
+			      jq(document).on(property, q, dom[q][e]);
+			    }
+			  }
+			};
+
+			fide({
+				'.menu__burger, .pop_burgerClose':{
+					click: function() {
+						$('.pop-up-menu')
+							.toggleClass('show');
+					}
 				}
-			});
+			})
 
 			jq(document).ready(function(){
 				crls.init();
@@ -804,6 +886,7 @@
 				$app.scroll(srWindow);
 			});
 		})($)
+
 	</script>
 
 </body>
