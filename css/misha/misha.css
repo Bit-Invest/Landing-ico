@@ -1,6 +1,47 @@
+@font-face {
+  font-family: 'DINPro';
+  src: url('../../assets/misha/fonts/DINPro.otf');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../../assets/misha/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../../assets/misha/fonts/OpenSans-Light.ttf');
+}
+
+.pre-sale-info {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.pre-sale-info__distribution {
+  margin-top: 30px;
+}
+
+.pre-sale-info__picture {
+  display: none;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.pre-sale-info__picture-s {
+  width: 100%;
+  margin-top: 15px;
+}
+
 .pre-sale-info__header {
+  font-family: OpenSans;
   color: #fff;
   font-size: 30px;
+}
+
+.pre-sale-info__detail {
+  margin-top: 20px;
+  width: 200px;
 }
 
 .pre-sale-info__detail-title {
@@ -25,4 +66,1154 @@
   letter-spacing: 0.8px;
   text-align: left;
   color: #4fffd8;
+}
+
+.pre-sale-info__time-info {
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.pre-sale-info__time-first-column {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pre-sale-info__date-info {
+  color: #fff;
+  width: 223px;
+  margin: 0 auto;
+}
+
+.pre-sale-info__date-title {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.pre-sale-info__date-data {
+  font-family: DINPro;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: 0.7px;
+  text-align: left;
+}
+
+.pre-sale-info__time-description {
+  margin: 11px auto 0 auto;
+  width: 223px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.pre-sale-info__first-column-bonus {
+  margin: 12px auto 0 auto;
+  width: 223px;
+  font-family: DINPro;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #4fffd8;
+}
+
+.pre-sale-info__time-second-column {
+  padding-top: 25px;
+}
+
+.pre-sale-info__bonus-table {
+  margin-top: 30px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.pre-sale-info__column {
+  display: inline-block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 100px;
+  font-family: DINPro;
+  font-size: 13px;
+  color: #4fffd8;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.pre-sale-info__column:first-of-type {
+  font-family: OpenSans;
+  color: #fff;
+  text-align: left;
+  border: none;
+}
+
+.pre-sale-info__second-row {
+  margin-top: 19px;
+}
+
+.pre-sale-info__progress-bar-wrapper {
+  margin-top: 57px;
+}
+
+.pre-sale-info__progress-bar {
+  padding: 10px;
+  height: 60px;
+  border: solid 1px #ffffff;
+}
+
+.pre-sale-info__progress {
+  height: 100%;
+  background-image: linear-gradient(to left, #4fffd8, #0087c1);
+}
+
+.pre-sale-info__milestones {
+  margin-top: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pre-sale-info__milestone {
+  opacity: 0.5;
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.pre-sale-info__milestone_active {
+  opacity: 1;
+}
+
+.pre-sale-info__link {
+  display: inline-block;
+  font-family: DINPro;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.pre-sale-info__link-wrap {
+  position: relative;
+  display: inline-block;
+  height: 78px;
+  width: 100px;
+}
+
+.pre-sale-info__links {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.pre-sale-info__link-wrap_1 {
+  background-image: url('../../assets/misha/UnderFileGlow01.png');
+  background-size: 66%;
+  background-repeat: no-repeat;
+  margin-right: 44px;
+}
+.pre-sale-info__link-wrap_2 {
+  background-image: url('../../assets/misha/UnderFileGlow02.png');
+  background-size: 66%;
+  background-repeat: no-repeat;
+}
+.pre-sale-info__link-wrap_3 {
+  background-image: url('../../assets/misha/UnderFileGlow03.png');
+  background-size: 66%;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  margin-right: 34px;
+}
+.pre-sale-info__link-wrap_4 {
+  background-image: url('../../assets/misha/UnderFileGlow04.png');
+  background-size: 66%;
+  background-repeat: no-repeat;
+  margin-right: -4px;
+}
+
+.pre-sale-info__link-title {
+  border-bottom: 3px solid #ff4b81;
+}
+
+.pre-sale-info__links-form {
+  margin-top: 100px;
+  height: 246px;
+  border: 1px solid #fff;
+  background-image: url('../../assets/misha/UnderButtonSmall.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/**---------------------------------------------------------------------------*/
+
+.roadmap {
+  padding: 0 9px 0 9px;
+}
+
+.roadmap__map-wrap {
+  /* display: flex;
+  flex-direction: row; */
+  margin-top: 76px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 150px;
+}
+
+.roadmap__map {
+  /* display: inline-block; */
+  /* position: absolute; */
+  margin-top: 27px;
+  height: 11px;
+  width: 750px;
+}
+
+.roadmap__quartals {
+  position: relative;
+  width: 750px;
+  height: 23px;
+  margin-top: 10px;
+}
+
+.roadmap__years {
+  position: relative;
+  height: 31px;
+  width: 750px;
+}
+
+.roadmap__year {
+  position: absolute;
+  font-family: DINPro;
+  font-size: 42px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.71;
+  letter-spacing: 1.1px;
+  color: #685ed3;
+  width: 50%;
+}
+
+.roadmap__year_2 {
+  left: 375px;
+}
+
+.roadmap__year-title {
+  position: sticky;
+  display: inline;
+  left: 0;
+}
+
+.roadmap__year_active {
+  color: #4fffd8;
+}
+
+.roadmap__quartal {
+  position: absolute;
+  /* color: #fff; */
+  font-family: DINPro;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.5px;
+  color: #685ed3;
+}
+
+.roadmap__quartal_active {
+  color: #4fffd8;
+}
+
+.roadmap__quartal_2 {
+  left: 85px;
+}
+.roadmap__quartal_3 {
+  left: 178px;
+}
+.roadmap__quartal_4 {
+  left: 271px;
+}
+.roadmap__quartal_5 {
+  right: 364px;
+}
+.roadmap__quartal_6 {
+  right: 272px;
+}
+.roadmap__quartal_7 {
+  right: 179px;
+}
+.roadmap__quartal_8 {
+  right: 86px;
+}
+.roadmap__description-title {
+  font-family: DINPro;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #4fffd8;
+}
+.roadmap__description-content {
+  /* margin-top: 8px; */
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+}
+.roadmap__audience {
+  display: inline-block;
+}
+.roadmap__audience-value {
+  margin-left: 15px;
+  font-family: DINPro;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #4fffd8;
+}
+.roadmap__audience-title {
+  display: inline-block;
+}
+.roadmap__system-scheme {
+  display: none;
+  margin-top: -50px;
+  width: 404px;
+  height: 498px;
+  background-image: url('../../assets/misha/system-scheme.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.roadmap__milestone-marketing {
+  margin-top: 12px;
+}
+.section-name {
+  font-family: DINPro;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.05;
+  letter-spacing: -2.6px;
+  color: #ffffff;
+}
+/**-----------------------------MARKETING-------------------------------------*/
+.marketing {
+  padding: 0 9px 0 9px;
+}
+.marketing__global-aum {
+  margin-top: 39px;
+}
+.marketing__units {
+  margin-top: 13px;
+}
+.marketing__description {
+  margin-top: 15px;
+}
+.marketing__global-aum-title {
+  font-family: DINPro;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+}
+.marketing__units {
+  font-family: DINPro;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  color: #4fffd8;
+}
+.marketing__description {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.marketing__global-aum-graph {
+  margin-top: 29px;
+  width: 100%;
+  height: 157px;
+  background-image: url('../../assets/misha/GroupNormal.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.marketing__global-aum-graph-l {
+  display: none;
+  background-image: url('../../assets/misha/GroupNormal-980.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.marketing__logo {
+  margin-top: 60px;
+  height: 80px;
+  width: 200px;
+  background-image: url('../../assets/misha/autonomous-next.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.marketing__investments-graph {
+  position: relative;
+}
+.marketing__investments-graph .marketing__units {
+  margin: 0;
+  position: absolute;
+  top: 4px;
+  font-size: 11px;
+}
+.marketing__investments {
+  margin-top: 7px;
+}
+.marketing__logo-title {
+  margin-top: 11px;
+  font-family: DINPro;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+}
+.marketing__investments-title {
+  margin-top: 40px;
+  font-family: DINPro;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.marketing__percent-graph {
+  height: 224px;
+  background-image: url('../../assets/misha/Crypto_FundsNormal.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.marketing__graph-text {
+  font-family: OpenSans;
+}
+.marketing__corporate-percent-title {
+  font-family: DINPro;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.marketing__corporate-percents {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-top: 14px;
+}
+.marketing__corporate-percent {
+  font-family: DINPro;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #4fffd8;
+}
+
+.menu-pop-up {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(69, 2, 157, 0.85);
+  z-index: 9999;
+}
+.menu-pop-up.show {
+  display: block;
+}
+.menu-pop-up__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-pop-up__logo {
+  width: 136px;
+  height: 40px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/misha/white-logo.svg');
+}
+.menu-pop-up__check {
+  width: 30.4px;
+  height: 30.4px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/misha/menu-close.svg');
+}
+.menu-pop-up__lang {
+  margin-left: 36px;
+  font-family: DINPro;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.1px;
+  color: #ff4b81;
+}
+.menu-pop-up__content-wrap {
+  padding: 30px 10px 6px 10px;
+  width: 320px;
+  margin: 0 auto;
+  /* margin: 0 auto;
+  width: 320px; */
+}
+.menu-pop-up__sections {
+  margin-top: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.menu-pop-up__section-list {
+  padding: 0 107px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.menu-pop-up__section {
+  margin-bottom: 12px;
+  width: 93px;
+  font-family: DINPro;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.1px;
+  color: #ff4b81;
+}
+.menu-pop-up__social-medias {
+  padding-top: 22px;
+  padding-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu-pop-up__social-media {
+  margin-right: 50px;
+  margin-bottom: 12px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+}
+.menu-pop-up__social-media_telegram {
+  background-size: 88%;
+  /* background-position: 50%; */
+  background-image: url('../../assets/misha/telegram.svg');
+}
+.menu-pop-up__social-media_facebook {
+  background-size: 41%;
+  /* background-position-x: 50%; */
+  background-image: url('../../assets/misha/facebook.svg');
+}
+.menu-pop-up__social-media_twitter {
+  background-size: 90%;
+  background-image: url('../../assets/misha/twitter.svg');
+}
+.menu-pop-up__social-media_m {
+  background-size: 86%;
+  background-image: url('../../assets/misha/medium.svg');
+}
+.menu-pop-up__social-media_robot {
+  background-size: 89%;
+  background-image: url('../../assets/misha/reddit.svg');
+}
+.menu-pop-up__social-media_linked-in {
+  background-size: 76%;
+  background-image: url('../../assets/misha/linkedin.svg');
+}
+
+.video-pop-up {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(69, 2, 157, 0.85);
+  \
+  z-index: 999;
+  z-index: 9999;
+}
+.video-pop-up.show {
+  display: block;
+}
+.video-pop-up__content-wrap {
+  padding: 30px 10px 6px 10px;
+}
+.video-pop-up__logo {
+  width: 136px;
+  height: 40px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/misha/white-logo.svg');
+}
+.video-pop-up__check {
+  width: 30.4px;
+  height: 30.4px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/misha/menu-close.svg');
+  cursor: pointer;
+}
+.video-pop-up__header {
+  display: flex;
+  justify-content: space-between;
+}
+.video-pop-up__video-wrap {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.video-pop-up__video-wrap iframe {
+  width: 100%;
+  height: 500px;
+  max-width: 900px;
+  display:  block;
+  margin:  0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .pre-sale-info {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+  .menu-pop-up__content-wrap {
+    padding: 30px 33px 6px 33px;
+    width: 768px;
+    margin: 0 auto;
+  }
+  .video-pop-up__content-wrap {
+    padding: 30px 33px 6px 33px;
+  }
+  .video-pop-up__video-wrap {
+    width: 80%;
+  }
+  .menu-pop-up__section-list {
+    flex-direction: row;
+  }
+  .menu-pop-up__section {
+    margin-bottom: 25px;
+    margin-right: 179px;
+  }
+  .menu-pop-up__lang {
+    margin-left: 340px;
+  }
+  .marketing {
+    padding: 0 33px 0 33px;
+  }
+  .marketing__global-aum-graph {
+    height: 354px;
+  }
+  .marketing__percent-graph {
+    height: 510px;
+  }
+  .marketing__investments-graph .marketing__units {
+    top: 14px;
+    font-size: 25px;
+  }
+  .marketing__investments {
+    margin-top: 40px;
+  }
+  .marketing__investments-title {
+    margin-top: 50px;
+  }
+  .marketing__corporate-percents {
+    padding: 0 46px;
+  }
+  .marketing__corporate-percent {
+    font-size: 14px;
+  }
+  .pre-sale-info__detail {
+    display: inline-block;
+    margin: 10px 0 0 0;
+    vertical-align: top;
+  }
+
+  .pre-sale-info__picture {
+    display: block;
+    width: 80%;
+    margin: 20px auto 0 auto;
+  }
+
+  .pre-sale-info__picture-s {
+    display: none;
+  }
+
+  .pre-sale-info__time-first-column,
+  .pre-sale-info__time-second-column {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .pre-sale-info__time-first-column {
+    width: 33%;
+    border-bottom: none;
+  }
+
+  .pre-sale-info__date-info {
+    width: 148px;
+    margin: 0;
+  }
+
+  .pre-sale-info__time-second-column {
+    padding-top: 0;
+    padding-left: 21px;
+    width: 66%;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .pre-sale-info__time-second-column .pre-sale-info__time-description {
+    width: 426px;
+  }
+
+  .pre-sale-info__time-description {
+    margin: 7px 0 0 0;
+    width: 204px;
+  }
+
+  .pre-sale-info__first-column-bonus {
+    margin: 11px 0 0 0;
+    width: auto;
+  }
+
+  .pre-sale-info__link-wrap_1 {
+    margin: 0;
+  }
+  .pre-sale-info__link-wrap_2 {
+    margin-left: -25px;
+  }
+  .pre-sale-info__link-wrap_3 {
+    margin: 0 -12px 0 0 ;
+  }
+  .pre-sale-info__link-wrap_4 {
+    margin: 0;
+  }
+  .pre-sale-info__links {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pre-sale-info__link-wrap {
+    vertical-align: middle;
+  }
+
+  .pre-sale-info__links-form {
+    margin: 0;
+    display: inline-block;
+    width: 246px;
+    height: 225px;
+    background-size: 120%;
+    background-position-y: -32px;
+    vertical-align: middle;
+  }
+
+
+  .roadmap {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+  .roadmap__year_2 {
+    left: 339px;
+  }
+  .roadmap__years, .roadmap__quartals, .roadmap__map {
+    width: 100%;
+  }
+  .roadmap__map-wrap {
+    overflow: hidden;
+  }
+  .roadmap__quartal_2 {
+    left: 79px;
+  }
+  .roadmap__quartal_3 {
+    left: 166px;
+  }
+  .roadmap__quartal_4 {
+    left: 253px;
+  }
+  .roadmap__quartal_5 {
+    right: 339px;
+  }
+  .roadmap__quartal_6 {
+    right: 254px;
+  }
+  .roadmap__quartal_7 {
+    right: 167px;
+  }
+  .roadmap__quartal_8 {
+    right: 80px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .pre-sale-info {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .marketing {
+    padding: 0 60px;
+  }
+  .marketing__global-aum-graph {
+    display: none;
+  }
+  .marketing__global-aum-graph-l {
+    display: block;
+    height: 190px;
+  }
+  .marketing__global-aum-content, .marketing__investments-content {
+    padding: 0 62px;
+  }
+  .marketing__description {
+    width: 550px;
+  }
+  .marketing__investments-graph-wrap, .marketing__percent-graph-wrap {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .marketing__investments-graph-wrap {
+    width: 260px;
+    margin-right: 56px;
+  }
+  .marketing__percent-graph-wrap {
+    width: 460px;
+  }
+  .marketing__percent-graph {
+    height: 332px;
+  }
+  .marketing__corporate-percents {
+    padding: 0 19px;
+  }
+  .marketing__investments-graph .marketing__units {
+    top: 4px;
+    font-size: 11px;
+  }
+  .pre-sale-info__picture {
+    margin-top: 30px;
+  }
+
+  .pre-sale-info__detail {
+    width: 298px;
+  }
+
+  .pre-sale-info__link-wrap {
+    width: 161px;
+    height: 128px;
+  }
+
+  .pre-sale-info__link {
+    margin: 35px 0 0 22px;
+  }
+
+  .section-name {
+    font-family: DINPro;
+    font-size: 114px;
+  }
+
+  .roadmap {
+    padding: 0 60px 446px 60px;
+    background-image: url('../../assets/misha/spot.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 273px;
+  }
+  .roadmap__map-wrap {
+    flex-direction: column-reverse;
+    height: 113px;
+    margin-top: 60px;
+  }
+  .roadmap__map {
+    display: block;
+    height: auto;
+    width: 98%;
+    margin: 27px auto 0 auto;
+  }
+  .roadmap__quartals {
+    height: 20px;
+    width: 100%;
+  }
+  .roadmap__years {
+    width: 100%;
+    height: 44px;
+  }
+  .roadmap__year_2 {
+    left: 438px;
+  }
+  .roadmap__year_1, .roadmap__year_2 {
+    top: 0;
+  }
+  .roadmap__year_1 {
+    left: 1px;
+  }
+  .roadmap__quartal_1 {
+    left: 2px;
+  }
+  .roadmap__quartal_2 {
+    left: 111px;
+  }
+  .roadmap__quartal_3 {
+    left: 222px;
+  }
+  .roadmap__quartal_4 {
+    left: 331px;
+  }
+  .roadmap__quartal_5 {
+    right: 440px;
+  }
+  .roadmap__quartal_6 {
+    right: 332px;
+  }
+  .roadmap__quartal_7 {
+    right: 222px;
+  }
+  .roadmap__quartal_8 {
+    right: 111px;
+  }
+  .roadmap__milestone-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .roadmap__description-column {
+    width: 271px;
+  }
+  .roadmap__description-title {
+    font-family: DINPro;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: 0.7px;
+    color: #4fffd8;
+  }
+  .roadmap__description-content {
+    margin-top: 8px;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: 0.9px;
+    color: #ffffff;
+  }
+  .roadmap__audience {
+    margin-top: 92px;
+    display: flex;
+    align-items: center;
+    width: 155px;
+    height: 155px;
+    border: solid 3px #4fffd8;
+    border-radius: 100%;
+  }
+  .roadmap__audience-value {
+    margin: 0 auto;
+    font-family: DINPro;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #4fffd8;
+  }
+  .roadmap__system-scheme {
+    display: block;
+  }
+  .roadmap__milestone-marketing {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .pre-sale-info {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+
+  .marketing {
+    padding: 0 96px;
+  }
+  .marketing__global-aum-graph-l {
+    height: 240px;
+  }
+  .marketing__logo {
+    margin-top: 35px;
+  }
+  .marketing__global-aum-content {
+    padding: 0 102px;
+  }
+  .marketing__investments-content {
+    padding-left: 102px;
+  }
+  .marketing__description {
+    width: 782px;
+  }
+  .marketing__investments-graph-wrap {
+    width: 358px;
+    margin-right: 84px;
+  }
+  .marketing__percent-graph-wrap {
+    width: 574px;
+  }
+  .marketing__percent-graph {
+    height: 414px;
+  }
+  .marketing__corporate-percent {
+    font-size: 18px;
+  }
+  .marketing__investments-graph .marketing__units {
+    top: 6px;
+    font-size: 14px;
+  }
+  .marketing__corporate-percent-title {
+    margin-top: 10px;
+  }
+  .pre-sale-info__date-info {
+    width: auto;
+  }
+
+  .pre-sale-info__picture {
+    margin-top: 40px;
+  }
+
+  .pre-sale-info__time-first-column {
+    width: 25%;
+  }
+
+  .pre-sale-info__date-data {
+    margin-top: 5px;
+  }
+
+  .pre-sale-info__time-description {
+    margin: 30px 0 0 0;
+    width: 221px;
+    font-size: 20px;
+  }
+
+  .pre-sale-info__time-second-column {
+    padding-left: 58px;
+    width: 74%;
+  }
+
+  .pre-sale-info__first-column-bonus {
+    margin: 15px 0 0 0;
+    width: auto;
+  }
+
+  .pre-sale-info__bonus-table {
+    margin-top: 36px;
+  }
+
+  .pre-sale-info__time-second-column .pre-sale-info__time-description {
+    width: auto;
+  }
+
+  .pre-sale-info__link-wrap {
+    width: 206px;
+    height: 188px;
+  }
+
+  .pre-sale-info__link {
+    margin: 54px 0 0 41px;
+  }
+
+  .roadmap {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+  .roadmap__map-l {
+    /* height: auto;
+    width: 100%; */
+  }
+  .roadmap__quartal_2 {
+    left: 150px;
+  }
+  .roadmap__quartal_3 {
+    left: 294px;
+  }
+  .roadmap__quartal_4 {
+    left: 439px;
+  }
+  .roadmap__quartal_5 {
+    right: 582px;
+  }
+  .roadmap__quartal_6 {
+    right: 439px;
+  }
+  .roadmap__quartal_7 {
+    right: 289px;
+  }
+  .roadmap__quartal_8 {
+    right: 150px;
+  }
+  .roadmap__year_2 {
+    left: 580px;
+  }
+
+  .roadmap__milestone-container {
+    margin-top: 100px;
+  }
 }

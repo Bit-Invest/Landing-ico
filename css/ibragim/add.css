@@ -1,0 +1,126 @@
+
+.Team_inf_slider .slick-slide{
+	transform: scale(.85);
+	transition: all .4s ease;
+    opacity: 0.5;
+}
+
+.Team_inf_slider .slick-active.slick-center{
+	transform: scale(1);
+	transition: all .4s ease;
+    opacity: 1;
+}
+
+.i-slide slick-slide slick-cloned {
+  width: 350px !important;
+}
+
+.i-Team__icon-face {
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.i-Team__name {
+  text-align: center;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 1.1px;
+  color: #ffffff;
+}
+
+.i-Team__position {
+  margin-top: 10px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.i-Team__icon-carusel {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.i-Team__icon {
+  float: left;
+  margin: 0 10%;
+}
+
+.i-Team__icon_logo {
+  height: 25px;
+  float: left;
+  margin: 0 9%;
+}
+
+.i-Team__text {
+  margin: 0 auto;
+  width: 75%;
+  clear: both;
+  padding-top: 20px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.slick-next.slick-arrow {
+  background-image: url(../../image/arrow-right.svg);
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  width: 70px;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  bottom: 268px;
+  display: block;
+}
+
+.slick-prev.slick-arrow {
+  background-image: url(../../image/arrow-left.svg);
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  width: 70px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  top: 250px;
+  display: block;
+}
+
+.slick-list.draggable {
+  padding: 0 55px;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-prev.slick-arrow {
+    display: none;
+  }
+  .slick-next.slick-arrow {
+    display: none;
+  }
+}
+
+
+
