@@ -1,0 +1,10 @@
+
+.Team_inf_slider .slick-active{
+	transform: scale(.85);
+	transition: all .4s ease;
+}
+
+.Team_inf_slider .slick-active.slick-center{
+	transform: scale(1);
+	transition: all .4s ease;
+}
