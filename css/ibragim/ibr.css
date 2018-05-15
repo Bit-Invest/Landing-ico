@@ -232,14 +232,19 @@ margin-top: 20px;
 
 .i-line2-chk1{
 
-width: 30px;
-
-height: 30px;
-
-border: solid 1px #ff4b81;
-
 margin-right: 14px;
 cursor: pointer;
+position: relative;
+    top: -5px;
+}
+
+.i-line2-chk1 .JoinOurTokenPreSale__checkbox-block{
+	margin: 0;
+	cursor: pointer;
+}
+
+.i-line2-chk1 .JoinOurTokenPreSale__checkbox{
+	cursor: pointer;
 }
 
 .i-line2-chk-t1{
@@ -886,6 +891,14 @@ cursor:  pointer;
 }
 
 /*
+*   FLOAT
+*/
+
+.clear{
+	clear: both;
+}
+
+/*
 *    MEDIA screens 1024
 */
 
@@ -1034,7 +1047,9 @@ margin-left: 20px;
 	.menu__burger{
 		display: block;
 	}
-
+	.i-bl2{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -1081,5 +1096,8 @@ margin-left: 20px;
 	.i-bl2-h1{
 		font-size: 70px;
 		margin-left: 20px;
+	}
+	.i-bl2{
+		display: none;
 	}
 }
