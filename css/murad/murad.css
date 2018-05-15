@@ -496,13 +496,6 @@ input[type="checkbox"]:checked:before{
   -o-user-select: none;
   user-select: none;
   text-align: center;
-  background: rgb(72, 46, 157);
-  background: -moz-linear-gradient(left, rgb(72, 46, 157) 0%, rgba(71,0,171,0) 40%, rgba(71,0,171,0) 49%, rgba(71,0,171,0) 60%, rgb(72, 46, 157) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgb(72, 46, 157)), color-stop(40%, rgba(71,0,171,0)), color-stop(49%, rgba(71,0,171,0)), color-stop(60%, rgba(71,0,171,0)), color-stop(100%, rgb(72, 46, 157)));
-  background: -webkit-linear-gradient(left, rgb(72, 46, 157) 0%, rgba(71,0,171,0) 40%, rgba(71,0,171,0) 49%, rgba(71,0,171,0) 60%, rgb(72, 46, 157) 100%);
-  background: -o-linear-gradient(left, rgb(72, 46, 157) 0%, rgba(71,0,171,0) 40%, rgba(71,0,171,0) 49%, rgba(71,0,171,0) 60%, rgb(72, 46, 157) 100%);
-  background: -ms-linear-gradient(left, rgb(72, 46, 157)0%, rgba(71,0,171,0) 40%, rgba(71,0,171,0) 49%, rgba(71,0,171,0) 60%, rgb(72, 46, 157) 100%);
-  background: linear-gradient(to right, rgb(72, 46, 157) 0%, rgba(71,0,171,0) 40%, rgba(71,0,171,0) 49%, rgba(71,0,171,0) 60%, rgb(72, 46, 157) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4700ab', endColorstr='#4700ab', GradientType=1 );
 }
 #viewport__team {
