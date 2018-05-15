@@ -8,6 +8,11 @@
   src: url('../../assets/misha/fonts/OpenSans-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../../assets/misha/fonts/OpenSans-Light.ttf');
+}
+
 .pre-sale-info {
   padding-left: 9px;
   padding-right: 9px;
@@ -425,13 +430,358 @@
   letter-spacing: -2.6px;
   color: #ffffff;
 }
+/**-----------------------------MARKETING-------------------------------------*/
+.marketing {
+  padding: 0 9px 0 9px;
+}
+.marketing__global-aum {
+  margin-top: 39px;
+}
+.marketing__units {
+  margin-top: 13px;
+}
+.marketing__description {
+  margin-top: 15px;
+}
+.marketing__global-aum-title {
+  font-family: DINPro;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+}
+.marketing__units {
+  font-family: DINPro;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  color: #4fffd8;
+}
+.marketing__description {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.marketing__global-aum-graph {
+  margin-top: 29px;
+  width: 100%;
+  height: 157px;
+  background-image: url('../../assets/misha/GroupNormal.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.marketing__global-aum-graph-l {
+  display: none;
+  background-image: url('../../assets/misha/GroupNormal-980.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.marketing__logo {
+  margin-top: 60px;
+  height: 80px;
+  width: 200px;
+  background-image: url('../../assets/misha/autonomous-next.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.marketing__investments-graph {
+  position: relative;
+}
+.marketing__investments-graph .marketing__units {
+  margin: 0;
+  position: absolute;
+  top: 4px;
+  font-size: 11px;
+}
+.marketing__investments {
+  margin-top: 7px;
+}
+.marketing__logo-title {
+  margin-top: 11px;
+  font-family: DINPro;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+}
+.marketing__investments-title {
+  margin-top: 40px;
+  font-family: DINPro;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.marketing__percent-graph {
+  height: 224px;
+  background-image: url('../../assets/misha/Crypto_FundsNormal.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.marketing__graph-text {
+  font-family: OpenSans;
+}
+.marketing__corporate-percent-title {
+  font-family: DINPro;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.marketing__corporate-percents {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-top: 14px;
+}
+.marketing__corporate-percent {
+  font-family: DINPro;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #4fffd8;
+}
+
+.menu-pop-up {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(69, 2, 157, 0.85);
+  z-index: 9999;
+}
+.menu-pop-up.show {
+  display: block;
+}
+.menu-pop-up__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-pop-up__logo {
+  width: 136px;
+  height: 40px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/misha/white-logo.svg');
+}
+.menu-pop-up__check {
+  width: 30.4px;
+  height: 30.4px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/misha/menu-close.svg');
+}
+.menu-pop-up__lang {
+  margin-left: 36px;
+  font-family: DINPro;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.1px;
+  color: #ff4b81;
+}
+.menu-pop-up__content-wrap {
+  padding: 30px 10px 6px 10px;
+  width: 320px;
+  margin: 0 auto;
+  /* margin: 0 auto;
+  width: 320px; */
+}
+.menu-pop-up__sections {
+  margin-top: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.menu-pop-up__section-list {
+  padding: 0 107px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.menu-pop-up__section {
+  margin-bottom: 12px;
+  width: 93px;
+  font-family: DINPro;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.1px;
+  color: #ff4b81;
+}
+.menu-pop-up__social-medias {
+  padding-top: 22px;
+  padding-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu-pop-up__social-media {
+  margin-right: 50px;
+  margin-bottom: 12px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+}
+.menu-pop-up__social-media_telegram {
+  background-size: 88%;
+  /* background-position: 50%; */
+  background-image: url('../../assets/misha/telegram.svg');
+}
+.menu-pop-up__social-media_facebook {
+  background-size: 41%;
+  /* background-position-x: 50%; */
+  background-image: url('../../assets/misha/facebook.svg');
+}
+.menu-pop-up__social-media_twitter {
+  background-size: 90%;
+  background-image: url('../../assets/misha/twitter.svg');
+}
+.menu-pop-up__social-media_m {
+  background-size: 86%;
+  background-image: url('../../assets/misha/medium.svg');
+}
+.menu-pop-up__social-media_robot {
+  background-size: 89%;
+  background-image: url('../../assets/misha/reddit.svg');
+}
+.menu-pop-up__social-media_linked-in {
+  background-size: 76%;
+  background-image: url('../../assets/misha/linkedin.svg');
+}
+
+.video-pop-up {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(69, 2, 157, 0.85);
+  \
+  z-index: 999;
+  z-index: 9999;
+}
+.video-pop-up.show {
+  display: block;
+}
+.video-pop-up__content-wrap {
+  padding: 30px 10px 6px 10px;
+}
+.video-pop-up__logo {
+  width: 136px;
+  height: 40px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/misha/white-logo.svg');
+}
+.video-pop-up__check {
+  width: 30.4px;
+  height: 30.4px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/misha/menu-close.svg');
+  cursor: pointer;
+}
+.video-pop-up__header {
+  display: flex;
+  justify-content: space-between;
+}
+.video-pop-up__video-wrap {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.video-pop-up__video-wrap iframe {
+  width: 100%;
+  height: 500px;
+  max-width: 900px;
+  display:  block;
+  margin:  0 auto;
+}
 
 @media screen and (min-width: 768px) {
   .pre-sale-info {
     padding-left: 33px;
     padding-right: 33px;
   }
-
+  .menu-pop-up__content-wrap {
+    padding: 30px 33px 6px 33px;
+    width: 768px;
+    margin: 0 auto;
+  }
+  .video-pop-up__content-wrap {
+    padding: 30px 33px 6px 33px;
+  }
+  .video-pop-up__video-wrap {
+    width: 80%;
+  }
+  .menu-pop-up__section-list {
+    flex-direction: row;
+  }
+  .menu-pop-up__section {
+    margin-bottom: 25px;
+    margin-right: 179px;
+  }
+  .menu-pop-up__lang {
+    margin-left: 340px;
+  }
+  .marketing {
+    padding: 0 33px 0 33px;
+  }
+  .marketing__global-aum-graph {
+    height: 354px;
+  }
+  .marketing__percent-graph {
+    height: 510px;
+  }
+  .marketing__investments-graph .marketing__units {
+    top: 14px;
+    font-size: 25px;
+  }
+  .marketing__investments {
+    margin-top: 40px;
+  }
+  .marketing__investments-title {
+    margin-top: 50px;
+  }
+  .marketing__corporate-percents {
+    padding: 0 46px;
+  }
+  .marketing__corporate-percent {
+    font-size: 14px;
+  }
   .pre-sale-info__detail {
     display: inline-block;
     margin: 10px 0 0 0;
@@ -561,7 +911,43 @@
     padding-left: 60px;
     padding-right: 60px;
   }
-
+  .marketing {
+    padding: 0 60px;
+  }
+  .marketing__global-aum-graph {
+    display: none;
+  }
+  .marketing__global-aum-graph-l {
+    display: block;
+    height: 190px;
+  }
+  .marketing__global-aum-content, .marketing__investments-content {
+    padding: 0 62px;
+  }
+  .marketing__description {
+    width: 550px;
+  }
+  .marketing__investments-graph-wrap, .marketing__percent-graph-wrap {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .marketing__investments-graph-wrap {
+    width: 260px;
+    margin-right: 56px;
+  }
+  .marketing__percent-graph-wrap {
+    width: 460px;
+  }
+  .marketing__percent-graph {
+    height: 332px;
+  }
+  .marketing__corporate-percents {
+    padding: 0 19px;
+  }
+  .marketing__investments-graph .marketing__units {
+    top: 4px;
+    font-size: 11px;
+  }
   .pre-sale-info__picture {
     margin-top: 30px;
   }
@@ -707,6 +1093,44 @@
     padding-right: 96px;
   }
 
+  .marketing {
+    padding: 0 96px;
+  }
+  .marketing__global-aum-graph-l {
+    height: 240px;
+  }
+  .marketing__logo {
+    margin-top: 35px;
+  }
+  .marketing__global-aum-content {
+    padding: 0 102px;
+  }
+  .marketing__investments-content {
+    padding-left: 102px;
+  }
+  .marketing__description {
+    width: 782px;
+  }
+  .marketing__investments-graph-wrap {
+    width: 358px;
+    margin-right: 84px;
+  }
+  .marketing__percent-graph-wrap {
+    width: 574px;
+  }
+  .marketing__percent-graph {
+    height: 414px;
+  }
+  .marketing__corporate-percent {
+    font-size: 18px;
+  }
+  .marketing__investments-graph .marketing__units {
+    top: 6px;
+    font-size: 14px;
+  }
+  .marketing__corporate-percent-title {
+    margin-top: 10px;
+  }
   .pre-sale-info__date-info {
     width: auto;
   }
