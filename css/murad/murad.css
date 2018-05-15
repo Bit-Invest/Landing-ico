@@ -667,6 +667,18 @@ input[type="checkbox"]:checked:before{
   background-color: #4fffd8;
 }
 
+.i-line1__icon-block {
+  width: 30px;
+  top: 120px;
+  position: fixed;
+  right: 50px;
+  text-align: center;
+}
+.i-line1__icon {
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
 @media screen and (max-width: 1024px) {
   .block-for-slider {
     width: 767px;
@@ -717,6 +729,9 @@ input[type="checkbox"]:checked:before{
   }
   .JoinOurTokenPreSale__icon-block {
     margin-bottom: 0px;
+  }
+  .i-line1__icon-block {
+    display: none;
   }
 }
 
