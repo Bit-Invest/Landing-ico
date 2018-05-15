@@ -23,6 +23,13 @@
   margin-bottom: 20px;
 }
 
+.i-Team__icon-face-play {
+  position: absolute;
+  width: 60px;
+  left: 45%;
+  top: 28%;
+}
+
 .i-Team__name {
   text-align: center;
   font-family: OpenSans;
@@ -49,20 +56,20 @@
 }
 
 .i-Team__icon-carusel {
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 20px;
 }
 
 .i-Team__icon {
   float: left;
-  margin: 0 10%;
+  margin: 0 12%;
 }
 
 .i-Team__icon_logo {
   height: 25px;
   float: left;
-  margin: 0 9%;
+  margin: 0 3%;
 }
 
 .i-Team__text {
