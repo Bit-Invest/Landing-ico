@@ -36,7 +36,7 @@
 
 	<app>
 		<div class="gen_container">
-			<div class="i-bl1" i-gen>
+			<div class="i-bl1" i-gen anchor-to="overview">
 				<img class="i-line1-background1" src="assets/ibragim/Thing@1x.png">
 				<img class="i-line1-background2" src="assets/ibragim/UnderButtonSmall.png">
 				<div class="i-line1">
@@ -126,7 +126,7 @@
 								ICO
 							</div>
 							<div class="pre-sale-info__detail-data">
-								16.05.2018–DD.MM.2018
+								xx.xx.20xx–DD.MM.20xx
 							</div>
 						</div>
 					</div>
@@ -145,7 +145,7 @@
 								Token Pre-Sale
 							</div>
 							<div class="pre-sale-info__date-data">
-								16-22 May 2018
+								xx-xx Mounth 2018
 							</div>
 						</div>
 						<div class="pre-sale-info__time-description">
@@ -161,7 +161,7 @@
 								Token sale starts:
 							</div>
 							<div class="pre-sale-info__date-data">
-								6 June 2018
+								x Mounth 20xx
 							</div>
 						</div>
 						<div class="pre-sale-info__time-description">
@@ -250,7 +250,7 @@
 					</div>
 				</div>
 			</section>
-			<div class="feedBack">
+			<div class="feedBack" anchor-to="feedBack">
 		    <div class="feedback__tittle">Feedback</div>
 		    <div class="feedback__tittle2">on our project</div>
 		    <!--     CARUSEL-->
@@ -288,7 +288,7 @@
 		      </div>
 		    </div>
 		  </div>
-			<div class="i-bl3">
+			<div class="i-bl3" anchor-to="benefits">
 				<div class="i-bl3-h1">Benefits</div>
 				<div class="i-bl3-h5-cnt">CINDEX Platform is your one-stop solution for easy, secure and efficient crypto-assets trading.</div>
 				<div class="i-bl3-sl-t">
@@ -328,7 +328,7 @@
 		    <img src="image/Orbs.svg" class="HowItWorks__bg-img__orbs">
 		    <img src="image/Orbs-mini.svg" class="HowItWorks__bg-img__orbs-mini">
 		  </div>
-			<section>
+			<section anchor-to="roadmap">
 				<div class="roadmap">
 					<div class="section-name">Roadmap</div>
 					<div class="roadmap__map-wrap">
@@ -469,13 +469,13 @@
 					<img src="image/white-Logo.svg" class="menu_th_logo">
 				</div>
 				<div class="menu__left_items">
-					<div class="menu__item">Overview</div>
-					<div class="menu__item">Feedback</div>
-					<div class="menu__item">Benefits</div>
-					<div class="menu__item">Roadmap</div>
-					<div class="menu__item">Team</div>
-					<div class="menu__item">Media</div>
-					<div class="menu__item">Blog</div>
+					<div class="menu__item" anchor-from="overview">Overview</div>
+					<div class="menu__item" anchor-from="feedBack">Feedback</div>
+					<div class="menu__item" anchor-from="benefits">Benefits</div>
+					<div class="menu__item" anchor-from="roadmap">Roadmap</div>
+					<div class="menu__item" anchor-from="team">Team</div>
+					<div class="menu__item" anchor-from="media">Media</div>
+					<div class="menu__item" anchor-from="blog">Blog</div>
 					<div class="button menu__button">Test MVP</div>
 					<div class="button menu__button">Join Pre-Sale</div>
 					<div class="language_s">Рус</div>
@@ -553,7 +553,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="gen_container">
+		<div class="gen_container" anchor-to="team">
 		  <div class="Team">
 		    <div class="Team__tittle">Team</div>
 		    <div class="Team__tittle-2">Founders</div>
@@ -838,7 +838,7 @@
 		    </div>
 		  </div>
 		  <div class="clear"></div>
-		  <div class="i-bl2">
+		  <div class="i-bl2" anchor-to="media">
 				<div class="i-bl2-h1">Media</div>
 				<div class="i-bl2-rowsParent">
 					<div class="i-bl2-rows">
@@ -921,7 +921,7 @@
 					</div>
 				</div>
 			</div>
-		  <div class="JoinOurTokenPreSale">
+		  <div class="JoinOurTokenPreSale" anchor-to="blog">
 		    <img src="image/UnderButtonSmall.png" class="JoinOurTokenPreSale__BG">
 		    <div class="JoinOurTokenPreSale__tittle">
 		      Join our
@@ -1400,6 +1400,19 @@
 					click: function() {
 						$('.video-pop-up')
 							.toggleClass('show');
+					}
+				},
+				'[anchor-from]':{
+					click: function() {
+						let 
+							ancFrom = $(this).attr('anchor-from'),
+							ancTo = $(`[anchor-to=${ancFrom}]`),
+							scrTop = ancTo.offset().top;
+
+						$('app')
+							.animate({
+								scrollTop: scrTop
+							}, 500, 'swing')
 					}
 				}
 			})
