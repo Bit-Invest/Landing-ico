@@ -94,12 +94,22 @@
   background-color: transparent;
   border: none;
   background-repeat: no-repeat;
-  width: 70px;
+  width: 80px;
+  height: 13px;
   cursor: pointer;
   float: right;
   position: relative;
   bottom: 268px;
   display: block;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.slick-next.slick-arrow:hover {
+  background-image: url(../../image/arrow-right%20%E2%80%94%20hover.svg);
+}
+.slick-next.slick-arrow:active {
+  background-image: url(../../image/arrow-right%20%E2%80%94%20pressed.svg);
 }
 
 .slick-prev.slick-arrow {
@@ -108,12 +118,24 @@
   background-color: transparent;
   border: none;
   background-repeat: no-repeat;
-  width: 70px;
+  width: 80px;
+  height: 13px;
   cursor: pointer;
   float: left;
   position: relative;
   top: 250px;
   display: block;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.slick-prev.slick-arrow:hover {
+  background-image:
+  url(../../image/arrow-left%20%E2%80%94%20hover.svg);
+}
+.slick-prev.slick-arrow:active {
+  background-image:
+  url(../../image/arrow-left%20%E2%80%94%20pressed.svg);
 }
 
 .slick-list.draggable {

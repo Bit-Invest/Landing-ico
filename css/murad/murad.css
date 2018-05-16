@@ -92,7 +92,7 @@
 .HowItWorks {
   width: 100%;
   float: left;
-  background-color: #45029D; 
+  background-color: #45029D;
 }
 .HowItWorks__tittle {
   font-family: DINPro;
@@ -125,6 +125,7 @@
   margin-top: 90px;
 }
 .WatchProgress {
+  padding: 0 10px 0 10px;
   position: relative;
   width: 100%;
   float: left;
@@ -147,7 +148,6 @@
   text-align: left;
   color: #ffffff;
   padding-left: 90px;
-  padding-top: 130px;
 }
 .WatchProgress__tittle-2 {
   max-width: 567px;
@@ -170,9 +170,10 @@
   margin: 0 auto;
 }
 .Team {
+  padding: 0 10px 0 10px;
   float: left;
   width: 100%;
-  background: #45029d; 
+  background: #45029d;
 }
 .Team__tittle {
   padding-top: 80px;
@@ -271,7 +272,7 @@
   margin: 0 60px;
   margin-bottom: 20px;
 }
-.Team__name { 
+.Team__name {
   font-family: OpenSans;
   font-size: 18px;
   font-weight: bold;
@@ -320,15 +321,18 @@
   padding: 0 5px;
 }
 .JoinOurTokenPreSale {
-  position: relative;
+  padding: 0 10px 0 10px;
+  position: absolute;
   margin-top: 50px;
   float: left;
   width: 100%;
+  margin-right: -250px;
 }
 .JoinOurTokenPreSale__BG {
   pointer-events: none;
   position: absolute;
   width: 100%;
+  margin-top: -700px;
 }
 .JoinOurTokenPreSale__tittle {
   font-family: DINPro;
@@ -367,14 +371,17 @@
   color: #4fffd8;
   padding-left: 200px;
   margin-top: 35px;
+  margin-bottom: 250px;
 }
 .JoinOurTokenPreSale__icon-block {
+  display: none;
   float: left;
   width: 30px;
   padding-right: 50%;
   margin-left: 200px;
   margin-top: 70px;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 .JoinOurTokenPreSale__icon-block-mob {
   width: 100%;
@@ -393,7 +400,7 @@
 }
 .JoinOurTokenPreSale__icon-mob {
   display: none;
-  padding: 20px 13%;
+  padding: 20px 11%;
 }
 .JoinOurTokenPreSale__email {
   max-width: 1100px;
@@ -407,9 +414,8 @@
 .JoinOurTokenPreSale__input {
   max-width: 520px;
   height: 94px;
-  border-style: none none solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
   background-color: transparent;
   color: #fff;
   font-size: 42px;
@@ -418,6 +424,16 @@
   z-index: 2;
   outline: none;
 }
+.JoinOurTokenPreSale__input::placeholder {
+  color: rgba(255, 255, 255, .62);
+}
+.JoinOurTokenPreSale__input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, .62);
+}
+.JoinOurTokenPreSale__input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, .62);
+}
+
 .JoinOurTokenPreSale__checkbox-block {
   margin-top: 30px;
 }
@@ -474,7 +490,7 @@ input[type="checkbox"]:checked:before{
   z-index: 2;
   outline: none;
   cursor: pointer;
-} 
+}
 .JoinOurTokenPreSale__button:hover {
   background-color: rgba(255, 255, 255, 0.9);
   border: solid 3px #ff4b81;
@@ -566,27 +582,49 @@ input[type="checkbox"]:checked:before{
   padding: 0 50px;
   padding-bottom: 10px;
   float: left;
+  margin-bottom: 50px;
 }
 .feedBack__prev-btn {
   cursor: pointer;
   float: left;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-left: 50px;
-  width: 55px;
-  height: 10px;
+  width: 80px;
+  height: 13px;
   top: calc(50% - 25px);
   background-image:
-  url(../../image/arrow-left.svg); 
+  url(../../image/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedBack__prev-btn:hover {
+  background-image:
+  url(../../image/arrow-left%20%E2%80%94%20hover.svg);
+}
+.feedBack__prev-btn:active {
+  background-image:
+  url(../../image/arrow-left%20%E2%80%94%20pressed.svg);
 }
 .feedBack__next-btn {
   cursor: pointer;
   float: right;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-right: 50px;
+  width: 80px;
+  height: 13px;
+  background-image: url(../../image/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedBack__next-btn:hover {
+  background-image: url(../../image/arrow-right%20%E2%80%94%20hover.svg);
+}
+.feedBack__next-btn:active {
+  background-image: url(../../image/arrow-right%20%E2%80%94%20pressed.svg);
   width: 62px;
   height: 10px;
   background-image:
-  url(../../image/arrow-right.svg); 
+  url(../../image/arrow-right.svg);
 }
 .Team__prev-btn {
   z-index: 21;
@@ -594,11 +632,21 @@ input[type="checkbox"]:checked:before{
   cursor: pointer;
   float: left;
   margin-left: 50px;
-  width: 55px;
-  height: 10px;
+  width: 80px;
+  height: 13px;
   top: calc(50% - 25px);
   background-image:
-  url(../../image/arrow-left.svg); 
+  url(../../image/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.Team__prev-btn:hover {
+  background-image:
+  url(../../image/arrow-left%20%E2%80%94%20hover.svg);
+}
+.Team__prev-btn:active {
+  background-image:
+  url(../../image/arrow-left%20%E2%80%94%20pressed.svg);
 }
 .Team__next-btn {
   z-index: 21;
@@ -606,34 +654,60 @@ input[type="checkbox"]:checked:before{
   cursor: pointer;
   float: right;
   margin-right: 50px;
-  width: 62px;
-  height: 10px;
+  width: 80px;
+  height: 13px;
   top: calc(50% - 25px);
   background-image:
   url(../../image/arrow-right.svg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Team__next-btn:hover {
+  background-image: url(../../image/arrow-right%20%E2%80%94%20hover.svg);
+}
+.Team__next-btn:active {
+  background-image: url(../../image/arrow-right%20%E2%80%94%20pressed.svg);
 }
 .WatchProgress__prev-btn {
   position: relative;
   cursor: pointer;
   float: left;
-  margin-top: 300px;
+  margin-top: 350px;
   margin-left: 50px;
-  width: 55px;
-  height: 10px;
+  width: 80px;
+  height: 13px;
   top: calc(50% - 25px);
   background-image:
   url(../../image/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.WatchProgress__prev-btn:hover {
+  background-image:
+  url(../../image/arrow-left%20%E2%80%94%20hover.svg);
+}
+.WatchProgress__prev-btn:active {
+  background-image:
+  url(../../image/arrow-left%20%E2%80%94%20pressed.svg);
 }
 .WatchProgress__next-btn {
   position: relative;
   cursor: pointer;
   float: right;
-  margin-top: 300px;
+  margin-top: 350px;
   margin-right: 50px;
-  width: 62px;
-  height: 10px;
+  width: 80px;
+  height: 13px;
   background-image:
-  url(../../image/arrow-right.svg); 
+  url(../../image/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.WatchProgress__next-btn:hover {
+  background-image: url(../../image/arrow-right%20%E2%80%94%20hover.svg);
+}
+.WatchProgress__next-btn:active {
+  background-image: url(../../image/arrow-right%20%E2%80%94%20pressed.svg);
 }
 #prev-btn:hover, #next-btn:hover {
   cursor: pointer;
@@ -646,7 +720,7 @@ input[type="checkbox"]:checked:before{
 }
 #nav-btns {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 .slide-nav-btn_WatchProgress {
   position: relative;
@@ -674,9 +748,13 @@ input[type="checkbox"]:checked:before{
   text-align: center;
   position:  absolute;
 }
-.i-line1__icon {
-  cursor: pointer;
+.i-line1__icon-block a svg {
   margin-bottom: 25px;
+  cursor: pointer;
+}
+
+a svg #Shape:hover {
+  fill: #fff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -687,25 +765,25 @@ input[type="checkbox"]:checked:before{
     display: none;
   }
   .Team__prev-btn {
-    display: none; 
+    display: none;
   }
- .feedBack__prev-btn { 
-    display: none; 
+ .feedBack__prev-btn {
+    display: none;
   }
   .feedBack__next-btn {
-   display: none; 
+   display: none;
   }
   .WatchProgress__next-btn {
-    display: none; 
+    display: none;
   }
-  .WatchProgress__prev-btn { 
-    display: none; 
+  .WatchProgress__prev-btn {
+    display: none;
   }
   .feedback__slider_BG {
     width: 767px;
   }
   .WatchProgress__block-for-slider {
-   max-width: 80% 
+   max-width: 80%
   }
   .HowItWorks__bg-img__orbs {
     width: 720px;
@@ -725,13 +803,24 @@ input[type="checkbox"]:checked:before{
     margin-bottom: 20px;
   }
   .JoinOurTokenPreSale__BG {
-    margin-top: 240px;
+    margin-top: 0px;
+    right: -150px;
   }
   .JoinOurTokenPreSale__icon-block {
     margin-bottom: 0px;
+    display: block;
   }
   .i-line1__icon-block {
     display: none;
+  }
+  .JoinOurTokenPreSale__button {
+    float: left;
+  }
+  .JoinOurTokenPreSale__email {
+    width: 900px;
+  }
+  .JoinOurTokenPreSale__tittle-2 {
+    margin-bottom: 20px;
   }
 }
 
@@ -746,13 +835,13 @@ input[type="checkbox"]:checked:before{
   .feedback__slider_BG {
     width: 600px;
   }
-  .feedback__tittle { 
+  .feedback__tittle {
     font-size: 80px;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .feedback__tittle2 {
     font-size: 36px;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .HowItWorks__bg-img__orbs {
     display: none;
@@ -835,6 +924,7 @@ input[type="checkbox"]:checked:before{
   }
   .JoinOurTokenPreSale__email {
     padding-top: 50px;
+    width: 100%;
   }
   .HowItWorks__bg-img {
     width: 700px;
@@ -847,7 +937,8 @@ input[type="checkbox"]:checked:before{
     padding-left: 15%;
   }
   .JoinOurTokenPreSale__BG {
-    margin-top: 310px;
+    margin-top: 0px;
+    right: 0;
   }
 }
 
@@ -863,13 +954,13 @@ input[type="checkbox"]:checked:before{
   .slide-img {
     font-size: 24px;
   }
- .feedback__tittle { 
+ .feedback__tittle {
     font-size: 60px;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .feedback__tittle2 {
     font-size: 30px;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .HowItWorks__tittle {
     font-size: 60px;
@@ -908,7 +999,7 @@ input[type="checkbox"]:checked:before{
     height: 245px;
   }
   .JoinOurTokenPreSale__icon-mob {
-    padding: 20px 12%;
+    padding: 20px 11%;
   }
   .slide-img {
     padding: 0px;
@@ -927,7 +1018,7 @@ input[type="checkbox"]:checked:before{
   }
   .Team__icon-face {
     margin: 0 18px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
   }
   .Team__person-statick {
     float: inherit;
@@ -944,12 +1035,10 @@ input[type="checkbox"]:checked:before{
     width: 100%;
   }
   .JoinOurTokenPreSale__BG {
-    margin-top: 600px;
+    margin-top: 200px;
   }
   .JoinOurTokenPreSale__email {
     padding-top: 0;
-  }
-  .JoinOurTokenPreSale__email {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -957,14 +1046,3 @@ input[type="checkbox"]:checked:before{
     padding-top: 60px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -13,6 +13,11 @@
   src: url('../../assets/misha/fonts/OpenSans-Light.ttf');
 }
 
+.input_error {
+  border-bottom: 1px solid rgba(234, 31, 92, 0.8);
+  color: rgba(234, 31, 92, 0.8);
+}
+
 .pre-sale-info {
   padding-left: 9px;
   padding-right: 9px;
@@ -69,7 +74,7 @@
 }
 
 .pre-sale-info__time-info {
-  margin-top: 15px;
+  margin-top: 40px;
   overflow: hidden;
 }
 
@@ -205,6 +210,14 @@
   opacity: 1;
 }
 
+.pre-sale-info__doc {
+  width: 27px;
+  height: 36px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/misha/document-icon.svg');
+}
+
 .pre-sale-info__link {
   display: inline-block;
   font-family: DINPro;
@@ -216,6 +229,14 @@
   letter-spacing: 0.5px;
   text-align: left;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.pre-sale-info__link:hover .pre-sale-info__doc {
+  background-image: url('../../assets/misha/document-icon3.svg');
+}
+.pre-sale-info__link:active .pre-sale-info__doc {
+  background-image: url('../../assets/misha/document-icon2.svg');
 }
 
 .pre-sale-info__link-wrap {
@@ -257,6 +278,13 @@
 
 .pre-sale-info__link-title {
   border-bottom: 3px solid #ff4b81;
+}
+.pre-sale-info__link-title:hover {
+  border-bottom: 3px solid #fff;
+}
+.pre-sale-info__link-title:active {
+  border-bottom: 3px solid #4fffd8;
+  color: #4fffd8;
 }
 
 .pre-sale-info__links-form {
@@ -784,7 +812,7 @@
   }
   .pre-sale-info__detail {
     display: inline-block;
-    margin: 10px 0 0 0;
+    margin: 30px 0 0 0;
     vertical-align: top;
   }
 
@@ -872,6 +900,7 @@
   .roadmap {
     padding-left: 33px;
     padding-right: 33px;
+    padding-bottom: 100px;
   }
   .roadmap__year_2 {
     left: 339px;
@@ -971,7 +1000,7 @@
   }
 
   .roadmap {
-    padding: 0 60px 446px 60px;
+    padding: 0 60px 150px 60px;
     background-image: url('../../assets/misha/spot.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -1183,6 +1212,7 @@
   .roadmap {
     padding-left: 96px;
     padding-right: 96px;
+    padding-bottom: 200px;
   }
   .roadmap__map-l {
     /* height: auto;
@@ -1204,7 +1234,7 @@
     right: 439px;
   }
   .roadmap__quartal_7 {
-    right: 289px;
+    right: 295px;
   }
   .roadmap__quartal_8 {
     right: 150px;
