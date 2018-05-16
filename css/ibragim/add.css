@@ -1,13 +1,13 @@
 
 .Team_inf_slider .slick-slide{
-	transform: scale(.85);
-	transition: all .4s ease;
+  transform: scale(.85);
+  transition: all .4s ease;
     opacity: 0.5;
 }
 
 .Team_inf_slider .slick-active.slick-center{
-	transform: scale(1);
-	transition: all .4s ease;
+  transform: scale(1);
+  transition: all .4s ease;
     opacity: 1;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .i-Team__icon_logo {
-  height: 25px;
+  height: 21px;
   float: left;
   margin: 0 3%;
 }
