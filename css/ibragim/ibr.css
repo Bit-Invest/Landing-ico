@@ -655,7 +655,15 @@ float:  right;
 
 .menu__item{
 	cursor: pointer;
-	display:  inline-block;padding: 10px;font-family: DINPro;font-size: 15px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: 1.33;letter-spacing: -0.1px;color: #ff4b81;margin: 0 5px;}
+	display:  inline-block;padding: 5px 0;font-family: DINPro;font-size: 15px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: 1.33;letter-spacing: -0.1px;color: #ff4b81;margin: 0 15px;}
+.menu__item:hover {
+  color: #fff;
+  border-bottom: 2px solid #ff4b81;
+}
+.menu__item:active {
+  color: #4fffd8;
+  border-bottom: 2px solid #4fffd8;
+}
 
 .menu__burger{
 	display: none;
@@ -716,6 +724,34 @@ color: #ffffff;
 margin: 0 5px;
 
 cursor:  pointer;
+}
+
+.menu__button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: solid 3px #ff4b81;
+  font-family: DINPro;
+  font-size: 19px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ff4b81;
+}
+
+.menu__button:active {
+  background-color: rgba(8, 181, 199, 0.9);
+  border: solid 3px #ffffff;
+  font-family: DINPro;
+  font-size: 19px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .button.menu__button{
@@ -892,6 +928,35 @@ cursor:  pointer;
 	width: 100%;
 }
 
+.i-line2-btn1:hover {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: solid 3px #ff4b81;
+  font-family: DINPro;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ff4b81;
+}
+
+.i-line2-btn1:active {
+  background-color: rgba(8, 181, 199, 0.9);
+  border: solid 3px #ffffff;
+  font-family: DINPro;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ffffff;
+}
+
 /*
 *   FLOAT
 */
@@ -969,6 +1034,8 @@ margin-left: 20px;
 		    font-size: 14px;
 		        margin: 0 2px;
 	}
+    
+    
 	.menu__button{
     	padding: 8px 25px;
     	

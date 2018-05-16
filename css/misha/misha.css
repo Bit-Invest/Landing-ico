@@ -258,6 +258,13 @@
 .pre-sale-info__link-title {
   border-bottom: 3px solid #ff4b81;
 }
+.pre-sale-info__link-title:hover {
+  border-bottom: 3px solid #fff;
+}
+.pre-sale-info__link-title:active {
+  border-bottom: 3px solid #4fffd8;
+  color: #4fffd8;
+}
 
 .pre-sale-info__links-form {
   margin-top: 100px;
