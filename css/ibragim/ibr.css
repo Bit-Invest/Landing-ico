@@ -36,7 +36,7 @@
 }
 
 /*
-* 
+*
 */
 
 .i-line1-background1{
@@ -202,7 +202,15 @@
 	border-bottom: 1px solid white;
 	background: none;
 }
-
+.i-line2-inp1::placeholder {
+  color: rgba(255, 255, 255, 0.62);
+}
+.i-line2-inp1:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.62);
+}
+.i-line2-inp1::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.62);
+}
 .i-line2-btn1{
 	width: 280px;
   height: 60px;
@@ -248,29 +256,29 @@ position: relative;
 }
 
 .i-line2-chk-t1{
-	
+
 width: 161px;
-	
+
 height: 40px;
-	
+
 font-family: OpenSans;
-	
+
 font-size: 12px;
-	
+
 font-weight: normal;
-	
+
 font-style: normal;
-	
+
 font-stretch: normal;
-	
+
 line-height: 1.67;
-	
+
 letter-spacing: 0.7px;
-	
+
 text-align: left;
-	
+
 color: #ffffff;
-	
+
 margin-top: -6px;
 }
 
@@ -293,7 +301,7 @@ margin-top: -6px;
 [anm1] span:nth-of-type(1){
 	margin-top: 60px;
 	animation: switch1 5s linear infinite;
-	
+
 }
 
 [anm1] span:nth-of-type(2){
@@ -305,13 +313,13 @@ margin-top: -6px;
 *  ANIMATION
 */
 
-@keyframes spin { 
-	100% { 
-		transform: rotate(360deg); 
-	} 
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
-@keyframes switch1 { 
+@keyframes switch1 {
 	0% {
 		margin-top: 60px;
 	}
@@ -329,7 +337,7 @@ margin-top: -6px;
 	}
 }
 
-@keyframes switch2 { 
+@keyframes switch2 {
 	0% {
 		margin-top: 60px;
 	}
@@ -559,7 +567,7 @@ position: absolute;
 }
 
 .i-bl3-sl-item{
-	
+
 margin-top: 125px;
 }
 
@@ -589,27 +597,27 @@ color: #ffffff;
 }
 
 .i-bl3-sl-r-desc{
-	
+
 width: 339px;
-	
+
 height: 165px;
-	
+
 font-family: OpenSans;
-	
+
 font-size: 18px;
-	
+
 font-weight: normal;
-	
+
 font-style: normal;
-	
+
 font-stretch: normal;
-	
+
 line-height: 1.67;
-	
+
 letter-spacing: 1.1px;
-	
+
 text-align: left;
-	
+
 color: #ffffff;
 }
 
@@ -719,11 +727,11 @@ cursor:  pointer;
 }
 
 .button.menu__button{
-	
+
 }
 
 .menu_th_logo{
-	
+
 }
 
 /*
@@ -863,7 +871,7 @@ cursor:  pointer;
 }
 
 .pop-a-img{
-	
+
 }
 
 .pop-i-w{
@@ -952,9 +960,9 @@ font-size: 27px;
 
 }
 	.i-bl3-h1{
-		
+
 font-size: 70px;
-		
+
 margin-left: 20px;
 	}
 	.i-bl2-h1{
@@ -971,9 +979,9 @@ margin-left: 20px;
 	}
 	.menu__button{
     	padding: 8px 25px;
-    	
+
     	font-size: 15px;
-    	
+
     	margin: 0 5px;
 	}
 	.language_s{
@@ -1026,7 +1034,7 @@ margin-left: 20px;
 
 	}
 	.i-bl3-h1{
-		
+
 	}
 	.i-bl2-h1{
 		font-size: 70px;
@@ -1083,7 +1091,7 @@ margin-left: 20px;
 
 	}
 	.i-bl3-h1{
-		
+
 	}
 	.i-bl3-sl-t{
 		display: block;

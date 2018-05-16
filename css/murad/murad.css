@@ -92,7 +92,7 @@
 .HowItWorks {
   width: 100%;
   float: left;
-  background-color: #45029D; 
+  background-color: #45029D;
 }
 .HowItWorks__tittle {
   font-family: DINPro;
@@ -172,7 +172,7 @@
 .Team {
   float: left;
   width: 100%;
-  background: #45029d; 
+  background: #45029d;
 }
 .Team__tittle {
   padding-top: 80px;
@@ -271,7 +271,7 @@
   margin: 0 60px;
   margin-bottom: 20px;
 }
-.Team__name { 
+.Team__name {
   font-family: OpenSans;
   font-size: 18px;
   font-weight: bold;
@@ -407,9 +407,8 @@
 .JoinOurTokenPreSale__input {
   max-width: 520px;
   height: 94px;
-  border-style: none none solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
   background-color: transparent;
   color: #fff;
   font-size: 42px;
@@ -418,6 +417,16 @@
   z-index: 2;
   outline: none;
 }
+.JoinOurTokenPreSale__input::placeholder {
+  color: rgba(255, 255, 255, .62);
+}
+.JoinOurTokenPreSale__input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, .62);
+}
+.JoinOurTokenPreSale__input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, .62);
+}
+
 .JoinOurTokenPreSale__checkbox-block {
   margin-top: 30px;
 }
@@ -474,7 +483,7 @@ input[type="checkbox"]:checked:before{
   z-index: 2;
   outline: none;
   cursor: pointer;
-} 
+}
 .JoinOurTokenPreSale__button:hover {
   background-color: rgba(255, 255, 255, 0.9);
   border: solid 3px #ff4b81;
@@ -576,7 +585,7 @@ input[type="checkbox"]:checked:before{
   height: 10px;
   top: calc(50% - 25px);
   background-image:
-  url(../../image/arrow-left.svg); 
+  url(../../image/arrow-left.svg);
 }
 .feedBack__next-btn {
   cursor: pointer;
@@ -586,7 +595,7 @@ input[type="checkbox"]:checked:before{
   width: 62px;
   height: 10px;
   background-image:
-  url(../../image/arrow-right.svg); 
+  url(../../image/arrow-right.svg);
 }
 .Team__prev-btn {
   z-index: 21;
@@ -598,7 +607,7 @@ input[type="checkbox"]:checked:before{
   height: 10px;
   top: calc(50% - 25px);
   background-image:
-  url(../../image/arrow-left.svg); 
+  url(../../image/arrow-left.svg);
 }
 .Team__next-btn {
   z-index: 21;
@@ -610,7 +619,7 @@ input[type="checkbox"]:checked:before{
   height: 10px;
   top: calc(50% - 25px);
   background-image:
-  url(../../image/arrow-right.svg); 
+  url(../../image/arrow-right.svg);
 }
 .WatchProgress__prev-btn {
   position: relative;
@@ -633,7 +642,7 @@ input[type="checkbox"]:checked:before{
   width: 62px;
   height: 10px;
   background-image:
-  url(../../image/arrow-right.svg); 
+  url(../../image/arrow-right.svg);
 }
 #prev-btn:hover, #next-btn:hover {
   cursor: pointer;
@@ -687,25 +696,25 @@ input[type="checkbox"]:checked:before{
     display: none;
   }
   .Team__prev-btn {
-    display: none; 
+    display: none;
   }
- .feedBack__prev-btn { 
-    display: none; 
+ .feedBack__prev-btn {
+    display: none;
   }
   .feedBack__next-btn {
-   display: none; 
+   display: none;
   }
   .WatchProgress__next-btn {
-    display: none; 
+    display: none;
   }
-  .WatchProgress__prev-btn { 
-    display: none; 
+  .WatchProgress__prev-btn {
+    display: none;
   }
   .feedback__slider_BG {
     width: 767px;
   }
   .WatchProgress__block-for-slider {
-   max-width: 80% 
+   max-width: 80%
   }
   .HowItWorks__bg-img__orbs {
     width: 720px;
@@ -746,13 +755,13 @@ input[type="checkbox"]:checked:before{
   .feedback__slider_BG {
     width: 600px;
   }
-  .feedback__tittle { 
+  .feedback__tittle {
     font-size: 80px;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .feedback__tittle2 {
     font-size: 36px;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .HowItWorks__bg-img__orbs {
     display: none;
@@ -863,13 +872,13 @@ input[type="checkbox"]:checked:before{
   .slide-img {
     font-size: 24px;
   }
- .feedback__tittle { 
+ .feedback__tittle {
     font-size: 60px;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .feedback__tittle2 {
     font-size: 30px;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .HowItWorks__tittle {
     font-size: 60px;
@@ -927,7 +936,7 @@ input[type="checkbox"]:checked:before{
   }
   .Team__icon-face {
     margin: 0 18px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
   }
   .Team__person-statick {
     float: inherit;
@@ -957,14 +966,3 @@ input[type="checkbox"]:checked:before{
     padding-top: 60px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
