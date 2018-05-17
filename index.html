@@ -53,14 +53,16 @@
 							<div class="i-line1-cl-sp1">Copy the best</div>
 							<div class="i-line1-cl-sp1">traders</div>
 							<div class="i-line1-cl-sp1" anm1>
+								<span>manually</span>
 								<span>automatically</span>
-								<span>manual</span>
 							</div>
 						</div>
 						<div class="i-line1-cl-t2">
-							<div class="i-line1-cl-sp1">Decent passive earning</div>
-							<div class="i-line1-cl-sp1">on professional trading</div>
-							<div class="i-line1-cl-sp1">of the best crypto traders</div>
+							<div anm2>
+								<div class="i-line1-cl-sp1">Decent passive earning</div>
+								<div class="i-line1-cl-sp1">on professional trading</div>
+								<div class="i-line1-cl-sp1">of the best crypto traders</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -194,7 +196,7 @@
 				</div>
 				<div class="pre-sale-info__progress-bar-wrapper">
 					<div class="pre-sale-info__progress-bar">
-						<div class="pre-sale-info__progress" style="width:43%;"></div>
+						<div class="pre-sale-info__progress" style="width:1%;"></div>
 					</div>
 					<div class="pre-sale-info__milestones">
 						<div class="pre-sale-info__milestone pre-sale-info__milestone_active">
@@ -1075,60 +1077,7 @@
 		</div>
 	</app>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		var texts = {
-			marketing: {
-				1: 'ICO, Initial coin offering, (с англ. — «первичное предложение монет, первичное размещение монет») — форма привлечения инвестиций в виде продажи инвесторам фиксированного количества новых единиц криптовалют, полученных разовой или ускоренной эмиссией[1][2]. Встречается также форма «первичного предложения токенов». Помимо этого термин ICO часто заменяется словом «краудсейл»',
-				2: 'Аналитическая группа Smith + Crown[4] утверждает, что в 2017 году количество ICO практически удвоилось по сравнению с 2016 годом (от 1,5 размещения в неделю до 2,75). При этом заметно растут объёмы привлеченных средств: наряду с сотнями проектов, привлекающих от нескольких сотен тысяч до нескольких миллионов долларов, на рынок выходят компании, размещения которых привлекли сотни миллионов долларов',
-				3: 'Например, Status Research & Development GmbH, Switzerland, разместил токены Status Network Token (SNT) на сумму 95 млн долларов, ещё более успешными стали размещения токенов EOS и Bancor (см. ниже).',
-				4: 'Маркетплейс v 1.1 beta, Торговый терминал для управляющих и трейдеров v 1.1, Личный кабинет управляющего, Система рейтинга управляющих v 1.0, smart-контракт на выплату комиссионных трейдерам, API интеграция и начало работы с 3 биржами из списка ТОП',
-				5: 'Термин «ICO» образован по аналогии с IPO (англ. Initial Public Offering — первичное публичное предложение акций)',
-				6: 'при ICO отсутствует на сегодняшний день государственное регулирование, характерное для IPO и любых других публичных финансовых и инвестиционных видов деятельности;',
-				7: 'покупатели токенов и криптовалют могут иметь права, отличные от тех, которые есть у покупателей/владельцев акций. В частности, токены могут быть как дивидендными и давать право на участие в будущей прибыли компании, так и исключительно утилитарными, то есть дающими право обменять токены на услуги или товары компании.',
-				8: 'Выбор в пользу утилитарных токенов зачастую мотивирован стремлением не попасть под определение «ценной бумаги», согласно Комиссии по ценным бумагам и биржам США («SEC»), которая использует Howey Test.'
-			},
-			development: {
-				1: 'В отчёте от 25 июля 2017 года Комиссия по ценным бумагам и биржам США («SEC») считает, что ICO для виртуального инвестиционного фонда The DAO[en] была продажей ценных бумаг',
-				2: 'Вопрос регулирования, уже активно обсуждаемый на всех возможных уровнях[8][9][10], — это вопрос времени',
-				3: 'Pre-ICO — это предварительная продажа токенов, позволяющая предпринимателям собрать средства до момента проведения официальной ICO кампании. Как правило, в ходе Pre-ICO токены продаются по заниженной стоимости.',
-				4: 'Старт разрбаботки встроенных в платформу инструментов алгоритмической торговли, Старт разработки интеллектуальной системы аналитики профиля инвестора по фотографии (с применением нейронных сетей)',
-				5: 'ICO является одной из форм краудфандинга, — коллективного финансирования. Самой известной площадкой для краудфандинга проектов в мире является сайт Kickstarter, существуют краудфандинговые проекты и в России (Kroogi, Boomstarter).',
-				6: 'Понятие ICO неразрывно связано с криптовалютами и технологией блокчейн[12], являющейся реплицированной распределённой базой данных.',
-				7: 'ICO реализуется в виде предварительной эмиссии компанией своей криптовалюты вне процедур майнинга или форжинга и распределении данной эмиссии среди заинтересованных лиц',
-				8: 'Единицы продаваемой криптовалюты в профессиональном сообществе называются как монетами, так и токенами. Раньше выпускаемые криптовалюты обменивались в основном на биткойны'
-			}
-		};
-		function checkMail(mail) {
-			mail.keyup(function(e) {
-				if (!e.target.value.match(/^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i)) {
-					mail.addClass('input_error');
-				} else {
-					mail.removeClass('input_error');
-				}
-			});
-		}
-		$(document).ready(function() {
-			checkMail($('#mail-pop'));
-			checkMail($('#mail-presale'));
-			checkMail($('#mail-head'));
-			$('.cls-2, .cls-3').click(function(e) {
-				$('.roadmap__quartal_active').removeClass('roadmap__quartal_active');
-				$(`.roadmap__quartal_${e.target.id}`).addClass('roadmap__quartal_active');
-				$('.cls-3').removeClass('cls-3').addClass('cls-2');
-				$(e.target).addClass('cls-3').removeClass('cls-2');
-				$('.roadmap__description-content_development').text(texts.development[e.target.id]);
-				$('.roadmap__description-content_marketing').text(texts.marketing[e.target.id]);
-				if (Number(e.target.id) > 4) {
-					$('.roadmap__year_2').addClass('roadmap__year_active');
-					$('.roadmap__year_1').removeClass('roadmap__year_active');
-				} else {
-					$('.roadmap__year_1').addClass('roadmap__year_active');
-					$('.roadmap__year_2').removeClass('roadmap__year_active');
-				}
-			});
-		});
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
 	<script>
 		;(function(jq){
 			class Crl {
@@ -1330,6 +1279,7 @@
 			let $bl3_sl = jq('.i-bl3-sl-items-margin');
 			let $bl3_sl_i = jq('.i-bl3-sl-item');
 			let $imgParr = jq('[i-mc-srn]');
+			let $menu = jq('.menu__logo');
 
 			let BREAKPOINT;
 
@@ -1337,6 +1287,11 @@
 				let scrTop = $app.scrollTop();
 				let oftTop = $bnf.offset().top;
 				let cssTop = parseFloat($bnf.css('top'));
+
+				if(scrTop>80)
+					$menu.addClass('scroll')
+				else
+					$menu.removeClass('scroll')
 
 				if(BREAKPOINT<700){
 					return false;
@@ -1600,6 +1555,69 @@
 			});
 		})($)
 
+	</script>
+
+
+	<!-- MISHA !-->
+	<script>
+		var texts = {
+			marketing: {
+				1: 'ICO, Initial coin offering, (с англ. — «первичное предложение монет, первичное размещение монет») — форма привлечения инвестиций в виде продажи инвесторам фиксированного количества новых единиц криптовалют, полученных разовой или ускоренной эмиссией[1][2]. Встречается также форма «первичного предложения токенов». Помимо этого термин ICO часто заменяется словом «краудсейл»',
+				2: 'Аналитическая группа Smith + Crown[4] утверждает, что в 2017 году количество ICO практически удвоилось по сравнению с 2016 годом (от 1,5 размещения в неделю до 2,75). При этом заметно растут объёмы привлеченных средств: наряду с сотнями проектов, привлекающих от нескольких сотен тысяч до нескольких миллионов долларов, на рынок выходят компании, размещения которых привлекли сотни миллионов долларов',
+				3: 'Например, Status Research & Development GmbH, Switzerland, разместил токены Status Network Token (SNT) на сумму 95 млн долларов, ещё более успешными стали размещения токенов EOS и Bancor (см. ниже).',
+				4: 'Маркетплейс v 1.1 beta, Торговый терминал для управляющих и трейдеров v 1.1, Личный кабинет управляющего, Система рейтинга управляющих v 1.0, smart-контракт на выплату комиссионных трейдерам, API интеграция и начало работы с 3 биржами из списка ТОП',
+				5: 'Термин «ICO» образован по аналогии с IPO (англ. Initial Public Offering — первичное публичное предложение акций)',
+				6: 'при ICO отсутствует на сегодняшний день государственное регулирование, характерное для IPO и любых других публичных финансовых и инвестиционных видов деятельности;',
+				7: 'покупатели токенов и криптовалют могут иметь права, отличные от тех, которые есть у покупателей/владельцев акций. В частности, токены могут быть как дивидендными и давать право на участие в будущей прибыли компании, так и исключительно утилитарными, то есть дающими право обменять токены на услуги или товары компании.',
+				8: 'Выбор в пользу утилитарных токенов зачастую мотивирован стремлением не попасть под определение «ценной бумаги», согласно Комиссии по ценным бумагам и биржам США («SEC»), которая использует Howey Test.'
+			},
+			development: {
+				1: 'В отчёте от 25 июля 2017 года Комиссия по ценным бумагам и биржам США («SEC») считает, что ICO для виртуального инвестиционного фонда The DAO[en] была продажей ценных бумаг',
+				2: 'Вопрос регулирования, уже активно обсуждаемый на всех возможных уровнях[8][9][10], — это вопрос времени',
+				3: 'Pre-ICO — это предварительная продажа токенов, позволяющая предпринимателям собрать средства до момента проведения официальной ICO кампании. Как правило, в ходе Pre-ICO токены продаются по заниженной стоимости.',
+				4: 'Старт разрбаботки встроенных в платформу инструментов алгоритмической торговли, Старт разработки интеллектуальной системы аналитики профиля инвестора по фотографии (с применением нейронных сетей)',
+				5: 'ICO является одной из форм краудфандинга, — коллективного финансирования. Самой известной площадкой для краудфандинга проектов в мире является сайт Kickstarter, существуют краудфандинговые проекты и в России (Kroogi, Boomstarter).',
+				6: 'Понятие ICO неразрывно связано с криптовалютами и технологией блокчейн[12], являющейся реплицированной распределённой базой данных.',
+				7: 'ICO реализуется в виде предварительной эмиссии компанией своей криптовалюты вне процедур майнинга или форжинга и распределении данной эмиссии среди заинтересованных лиц',
+				8: 'Единицы продаваемой криптовалюты в профессиональном сообществе называются как монетами, так и токенами. Раньше выпускаемые криптовалюты обменивались в основном на биткойны'
+			}
+		};
+		function checkMail(mail) {
+			mail.blur(function(e) {
+				if (!e.target.value.match(/^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i)) {
+					mail.addClass('input_error');
+				} else {
+					mail.removeClass('input_error');
+				}
+
+				if(!e.target.value)
+					mail.removeClass('input_error');
+			});
+			mail.keyup(function(e) {
+				if(!e.target.value)
+					mail.removeClass('input_error');
+			});
+		}
+		$(document).ready(function() {
+			checkMail($('#mail-pop'));
+			checkMail($('#mail-presale'));
+			checkMail($('#mail-head'));
+			$('.cls-2, .cls-3').click(function(e) {
+				$('.roadmap__quartal_active').removeClass('roadmap__quartal_active');
+				$(`.roadmap__quartal_${e.target.id}`).addClass('roadmap__quartal_active');
+				$('.cls-3').removeClass('cls-3').addClass('cls-2');
+				$(e.target).addClass('cls-3').removeClass('cls-2');
+				$('.roadmap__description-content_development').text(texts.development[e.target.id]);
+				$('.roadmap__description-content_marketing').text(texts.marketing[e.target.id]);
+				if (Number(e.target.id) > 4) {
+					$('.roadmap__year_2').addClass('roadmap__year_active');
+					$('.roadmap__year_1').removeClass('roadmap__year_active');
+				} else {
+					$('.roadmap__year_1').addClass('roadmap__year_active');
+					$('.roadmap__year_2').removeClass('roadmap__year_active');
+				}
+			});
+		});
 	</script>
 
 	<script src="js/murad/carusel.js"></script>
