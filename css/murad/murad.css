@@ -269,7 +269,7 @@
   height: 200px;
   border-radius: 50%;
   background: white;
-  margin: 0 60px;
+  margin: 0 6px;
   margin-bottom: 20px;
 }
 .Team__name {
@@ -638,7 +638,7 @@ input[type="checkbox"]:checked:before{
   background-image:
   url(../../image/arrow-left.svg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 .Team__prev-btn:hover {
   background-image:
@@ -658,7 +658,7 @@ input[type="checkbox"]:checked:before{
   height: 13px;
   top: calc(50% - 25px);
   background-image:
-  url(../../image/arrow-right.svg); 
+  url(../../image/arrow-right.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -701,7 +701,7 @@ input[type="checkbox"]:checked:before{
   background-image:
   url(../../image/arrow-right.svg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 .WatchProgress__next-btn:hover {
   background-image: url(../../image/arrow-right%20%E2%80%94%20hover.svg);
@@ -733,14 +733,9 @@ input[type="checkbox"]:checked:before{
   margin: 3px 10px;
   cursor: pointer;
 }
-.slide-nav-btn_WatchProgress:hover {
-  cursor: pointer;
+.slide-nav-btn_WatchProgress_active {
   background-color: #4fffd8;
 }
-.slide-nav-btn_WatchProgress:active {
-  background-color: #4fffd8;
-}
-
 .i-line1__icon-block {
   width: 30px;
   top: 180px;
@@ -757,7 +752,7 @@ a svg #Shape:hover {
   fill: #fff;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .block-for-slider {
     width: 767px;
   }
@@ -822,10 +817,20 @@ a svg #Shape:hover {
   .JoinOurTokenPreSale__tittle-2 {
     margin-bottom: 20px;
   }
+  .Team__person-statick {
+    display: block;
+  }
+  .Team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Team__icon-face {
+    margin: 0 6px;
+  }
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #nav-btns {
     padding-top: 20px;
   }

@@ -87,8 +87,9 @@ $(document).ready(function() {
   });
 
   $('.slide-nav-btn_WatchProgress').click(function() {
-      navBtnIdWatchProgress = $(this).index();
-
+    $(`.slide-nav-btn_WatchProgress_active`).removeClass('slide-nav-btn_WatchProgress_active');
+    navBtnIdWatchProgress = $(this).index();
+    $(`#slide-nav-btn_WatchProgress_${navBtnIdWatchProgress}`).addClass('slide-nav-btn_WatchProgress_active');
     if (navBtnIdWatchProgress + 1 != slideNowWatchProgress) {
       translateWidthWatchProgress = -$('#viewport__WatchProgress').width() * (navBtnIdWatchProgress);
       $('#slidewrapper__WatchProgress').css({
@@ -105,7 +106,9 @@ $(document).ready(function() {
 function nextSlideWatchProgress() {
   if (slideNowWatchProgress == slideCountWatchProgress || slideNowWatchProgress <= 0 || slideNowWatchProgress > slideCountWatchProgress) {
     $('#slidewrapper__WatchProgress').css('transform', 'translate(0, 0)');
+    $(`#slide-nav-btn_WatchProgress_${slideNowWatchProgress - 1}`).removeClass('slide-nav-btn_WatchProgress_active');
     slideNowWatchProgress = 1;
+    $(`#slide-nav-btn_WatchProgress_${slideNowWatchProgress - 1}`).addClass('slide-nav-btn_WatchProgress_active');
   } else {
     translateWidthWatchProgress = -$('#viewport__WatchProgress').width() * (slideNowWatchProgress);
     $('#slidewrapper__WatchProgress').css({
@@ -113,7 +116,9 @@ function nextSlideWatchProgress() {
       '-webkit-transform': 'translate(' + translateWidthWatchProgress + 'px, 0)',
       '-ms-transform': 'translate(' + translateWidthWatchProgress + 'px, 0)',
     });
+    $(`#slide-nav-btn_WatchProgress_${slideNowWatchProgress - 1}`).removeClass('slide-nav-btn_WatchProgress_active');
     slideNowWatchProgress++;
+    $(`#slide-nav-btn_WatchProgress_${slideNowWatchProgress - 1}`).addClass('slide-nav-btn_WatchProgress_active');
   }
 }
 
@@ -142,7 +147,7 @@ function prevSlideWatchProgress() {
 var slideNowTeam = 1;
 var slideCountTeam = $('#slidewrapper__team').children().length;
 var slideIntervalTeam = 8000;
-var navBtnIdTeam = 0;
+var navBtnIdTeam = 1;
 var translateWidthTeam = 0;
 
 $(document).ready(function() {
@@ -212,4 +217,3 @@ function prevSlideTeam() {
     slideNowTeam--;
   }
 }
-
