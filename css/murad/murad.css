@@ -272,7 +272,7 @@
   height: 200px;
   border-radius: 50%;
   background: white;
-  margin: 0 60px;
+  margin: 0 6px;
   margin-bottom: 20px;
 }
 .Team__name {
@@ -324,8 +324,8 @@
   padding: 0 5px;
 }
 .JoinOurTokenPreSale {
+  position: relative;
   padding: 0 10px 0 10px;
-  position: absolute;
   margin-top: 50px;
   float: left;
   width: 100%;
@@ -624,10 +624,6 @@ input[type="checkbox"]:checked:before{
 }
 .feedBack__next-btn:active {
   background-image: url(../../image/arrow-right%20%E2%80%94%20pressed.svg);
-  width: 62px;
-  height: 10px;
-  background-image:
-  url(../../image/arrow-right.svg);
 }
 .Team__prev-btn {
   z-index: 21;
@@ -641,7 +637,7 @@ input[type="checkbox"]:checked:before{
   background-image:
   url(../../image/arrow-left.svg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 .Team__prev-btn:hover {
   background-image:
@@ -661,7 +657,7 @@ input[type="checkbox"]:checked:before{
   height: 13px;
   top: calc(50% - 25px);
   background-image:
-  url(../../image/arrow-right.svg); 
+  url(../../image/arrow-right.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -704,7 +700,7 @@ input[type="checkbox"]:checked:before{
   background-image:
   url(../../image/arrow-right.svg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 .WatchProgress__next-btn:hover {
   background-image: url(../../image/arrow-right%20%E2%80%94%20hover.svg);
@@ -736,14 +732,9 @@ input[type="checkbox"]:checked:before{
   margin: 3px 10px;
   cursor: pointer;
 }
-.slide-nav-btn_WatchProgress:hover {
-  cursor: pointer;
+.slide-nav-btn_WatchProgress_active {
   background-color: #4fffd8;
 }
-.slide-nav-btn_WatchProgress:active {
-  background-color: #4fffd8;
-}
-
 .i-line1__icon-block {
   width: 30px;
   top: 180px;
@@ -760,7 +751,7 @@ a svg #Shape:hover {
   fill: #fff;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .block-for-slider {
     width: 767px;
   }
@@ -825,10 +816,20 @@ a svg #Shape:hover {
   .JoinOurTokenPreSale__tittle-2 {
     margin-bottom: 20px;
   }
+  .Team__person-statick {
+    display: block;
+  }
+  .Team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Team__icon-face {
+    margin: 0 6px;
+  }
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #nav-btns {
     padding-top: 20px;
   }
@@ -968,7 +969,7 @@ a svg #Shape:hover {
   .HowItWorks__tittle {
     font-size: 60px;
     padding-left: 0px;
-    padding-top: 0px;
+    padding-top: 35px;
   }
   .WatchProgress__tittle {
     font-size: 60px;
@@ -986,6 +987,7 @@ a svg #Shape:hover {
   .Team__info {
     font-size: 16px;
     padding-left: 0px;
+    padding-bottom: 20px;
   }
   .JoinOurTokenPreSale__tittle {
     display: none;
@@ -1047,5 +1049,17 @@ a svg #Shape:hover {
   }
   .WatchProgress__block-for-slider {
     padding-top: 60px;
+  }
+  .i-Team__icon-face-play {
+    top: 22%;
+  }
+  .i-Team__icon {
+    margin: 0 10%;
+  }
+  .i-Team__icon_logo {
+    margin: 0 3%;
+  }
+  .i-Team__icon-carusel {
+    width: 80%;
   }
 }
