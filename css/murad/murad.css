@@ -321,8 +321,8 @@
   padding: 0 5px;
 }
 .JoinOurTokenPreSale {
+  position: relative;
   padding: 0 10px 0 10px;
-  position: absolute;
   margin-top: 50px;
   float: left;
   width: 100%;
@@ -621,10 +621,6 @@ input[type="checkbox"]:checked:before{
 }
 .feedBack__next-btn:active {
   background-image: url(../../image/arrow-right%20%E2%80%94%20pressed.svg);
-  width: 62px;
-  height: 10px;
-  background-image:
-  url(../../image/arrow-right.svg);
 }
 .Team__prev-btn {
   z-index: 21;
@@ -965,7 +961,7 @@ a svg #Shape:hover {
   .HowItWorks__tittle {
     font-size: 60px;
     padding-left: 0px;
-    padding-top: 0px;
+    padding-top: 35px;
   }
   .WatchProgress__tittle {
     font-size: 60px;
@@ -983,6 +979,7 @@ a svg #Shape:hover {
   .Team__info {
     font-size: 16px;
     padding-left: 0px;
+    padding-bottom: 20px;
   }
   .JoinOurTokenPreSale__tittle {
     display: none;
@@ -1044,5 +1041,17 @@ a svg #Shape:hover {
   }
   .WatchProgress__block-for-slider {
     padding-top: 60px;
+  }
+  .i-Team__icon-face-play {
+    top: 22%;
+  }
+  .i-Team__icon {
+    margin: 0 10%;
+  }
+  .i-Team__icon_logo {
+    margin: 0 3%;
+  }
+  .i-Team__icon-carusel {
+    width: 80%;
   }
 }
