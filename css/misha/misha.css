@@ -522,6 +522,7 @@
   background-image: url('../../assets/misha/autonomous-next.png');
   background-repeat: no-repeat;
   background-size: 100%;
+  display: none;
 }
 .marketing__investments-graph {
   position: relative;
