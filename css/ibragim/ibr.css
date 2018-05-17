@@ -323,6 +323,15 @@ margin-top: -6px;
   animation-delay: 2s;
 }
 
+/*  2
+*/
+
+[anm2]{
+	
+}
+
+
+
 /*
 *  ANIMATION
 */
@@ -501,7 +510,9 @@ display:  flex;
 	pointer-events: none;
 	transition: padding .5s ease;
 }
-
+.i-bl3-1{
+	margin-top: 100px;
+}
 .i-bl3-h1{
   font-family: DINPro;
   font-size: 114px;
