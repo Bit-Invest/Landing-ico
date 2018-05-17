@@ -37,6 +37,9 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.i-slide{
+  position: relative;
+}
 .feedback__slider_BG {
   z-index: 3;
   position: absolute;
