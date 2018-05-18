@@ -773,7 +773,6 @@
   left: calc(50% - 390px);
   padding: 5px 5px 52px 46px;
   width: 780px;
-  height: 320px;
   background-color: #ffffff;
   box-shadow: 0 2px 40px 10px rgba(24, 37, 73, 0.37);
 }
@@ -814,10 +813,17 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url('../../assets/misha/menu-close.svg');
+  cursor: pointer;
 }
 .show {
   display: block !important;
 }
+
+.marketing__investments-graph {
+  text-align: center;
+}
+
+
 
 @media screen and (min-width: 768px) {
   .pre-sale-info {
@@ -849,7 +855,9 @@
     padding: 0 33px 0 33px;
   }
   .marketing__global-aum-graph {
-    height: 354px;
+    height: 225px;
+    width: 400px;
+    margin: 40px auto;
   }
   .marketing__percent-graph {
     height: 510px;
@@ -992,7 +1000,6 @@
   .roadmap__quartal_8 {
     right: 80px;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
