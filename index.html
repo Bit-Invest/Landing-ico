@@ -24,6 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/ibragim/add.css">
 	<link rel="stylesheet" href="./css/murad/murad.css">
 	<link rel="stylesheet" href="./css/misha/misha.css">
+	<link rel="stylesheet" href="./css/misha/TimeCircles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 </head>
@@ -93,6 +94,10 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="timer">
+					<div class="timer__title">Presale starts in</div>
+					<div class="timer__timer" data-date="2018-06-01 00:00:00"></div>
 				</div>
 				<div class="i-line2">
 					<div class="i-line2-column1">
@@ -1353,6 +1358,23 @@
 	</app>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./js/misha/TimeCircles.js"></script>
+	<script>
+
+			$('.timer__timer').TimeCircles(
+				{
+					start: true,
+					bg_width: 0.15,
+					circle_bg_color: "#4fffd8",
+					time: {
+						Days: {color: "#4fffd8"},
+						Hours: {color: "#4fffd8"},
+						Minutes: {color: "#4fffd8"},
+						Seconds: {color: "#4fffd8"}
+					}
+				}
+			);
+	</script>
 	<script>
 		;(function(jq){
 			class Crl {

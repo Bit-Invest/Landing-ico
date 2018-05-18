@@ -17,7 +17,50 @@
   border-bottom: 1px solid rgba(234, 31, 92, 0.8);
   color: rgba(234, 31, 92, 0.8);
 }
-
+.timer {
+}
+.timer__title {
+  margin-top: 5px;
+  margin-left: 9px;
+  font-family: DINPro;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.timer__timer {
+  height: 75px;
+}
+.timer__timer > .time_circles > div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.timer__timer > .time_circles > div > span {
+  font-family: DINPro;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #4fffd8;
+}
+.timer__timer > .time_circles > div> h4 {
+  margin-top: 10px;
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #ffffff;
+}
 .pre-sale-info {
   padding-left: 9px;
   padding-right: 9px;
@@ -1000,6 +1043,23 @@
   .roadmap__quartal_8 {
     right: 80px;
   }
+  .timer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 17px;
+  }
+  .timer__title {
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 35px;
+  }
+  .timer__timer {
+    display: inline-block;
+    vertical-align: top;
+    height: 100px;
+    margin-left: 16px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1181,6 +1241,9 @@
   .roadmap__milestone-marketing {
     margin-top: 12px;
   }
+  .timer {
+    padding-right: 60px;
+  }
 }
 
 @media screen and (min-width: 1380px) {
@@ -1310,8 +1373,17 @@
   .roadmap__year_2 {
     left: 580px;
   }
-
   .roadmap__milestone-container {
     margin-top: 100px;
+  }
+  .timer {
+    padding-right: 185px;
+    margin-top: 50px;
+  }
+  .timer__title {
+    font-size: 42px;
+  }
+  .timer__timer {
+    margin-left: 76px;
   }
 }
