@@ -45,6 +45,7 @@
 .i-line1-background1{
 	position: absolute;
 	top: -100px;
+  z-index: -1;
 }
 
 .i-line1-background2{
@@ -322,7 +323,7 @@ margin-top: -6px;
 
 [anm1] span:nth-of-type(1){
 	margin-top: 0px;
-	margin-left: 100%; 
+	margin-left: 100%;
 	animation: switch1 8s linear;
 }
 
@@ -349,7 +350,7 @@ margin-top: -6px;
 */
 
 [anm2]{
-	
+
 }
 
 
@@ -713,7 +714,7 @@ overflow: hidden;
 
 .menu__logo.scroll{
 	width: 40px;
-	
+
 	transition: all .3s ease;
 }
 
@@ -1105,8 +1106,8 @@ margin-left: 20px;
 		    font-size: 14px;
 		        margin: 0 2px;
 	}
-    
-    
+
+
 	.menu__button{
     	padding: 8px 25px;
 
@@ -1281,7 +1282,7 @@ margin-left: 20px;
     .i-line1-img1{
       width: 107.25px;
       left: 89px;
-      top: -19.5px;    
+      top: -19.5px;
     }
     .i-line1-img-mob {
       display: block;
