@@ -227,13 +227,9 @@
 						<div class="pre-sale-info__progress" style="width:1%;"></div>
 					</div>
 					<div class="pre-sale-info__milestones">
-						<div class="pre-sale-info__milestone pre-sale-info__milestone_active">
+						<div class="pre-sale-info__milestone pre-sale-info__milestone_active" style="margin-left: 20%;">
 							Pre Sale<br/>
 							6 mln
-						</div>
-						<div class="pre-sale-info__milestone">
-							Soft Cap<br/>
-							15 mln
 						</div>
 						<div class="pre-sale-info__milestone">
 							Hard Cap<br/>
@@ -243,25 +239,25 @@
 				</div>
 				<div class="pre-sale-info__links">
 					<div class="pre-sale-info__link-wrap pre-sale-info__link-wrap_1">
-						<a class="pre-sale-info__link" clickLorem1>
+						<a class="pre-sale-info__link" clickLorem1="One pager">
 							<div class="pre-sale-info__doc"></div>
-							<div class="pre-sale-info__link-title" >One Page</div>
+							<div class="pre-sale-info__link-title" >One Pager</div>
 						</a>
 					</div>
 					<div class="pre-sale-info__link-wrap pre-sale-info__link-wrap_2">
-						<a class="pre-sale-info__link" clickLorem1>
+						<a class="pre-sale-info__link" clickLorem1="Presentation">
 							<div class="pre-sale-info__doc"></div>
 							<div class="pre-sale-info__link-title">Presentation</div>
 						</a>
 					</div>
 					<div class="pre-sale-info__link-wrap pre-sale-info__link-wrap_3">
-						<a class="pre-sale-info__link" clickLorem1>
+						<a class="pre-sale-info__link" clickLorem1="Whitepaper">
 							<div class="pre-sale-info__doc"></div>
 							<div class="pre-sale-info__link-title">Whitepaper</div>
 						</a>
 					</div>
 					<div class="pre-sale-info__link-wrap pre-sale-info__link-wrap_4">
-						<a class="pre-sale-info__link" clickLorem1>
+						<a class="pre-sale-info__link" clickLorem1="Math Model">
 							<div class="pre-sale-info__doc"></div>
 							<div class="pre-sale-info__link-title">Math Model</div>
 						</a>
@@ -725,17 +721,20 @@
 					<img src="image/white-Logo.svg" class="menu_th_logo">
 				</div>
 				<div class="menu__left_items">
+					<div class="docHref" clickLorem1="Whitepaper">
+						<img src="assets/misha/document-icon.svg" class="docImg" width="15" >
+						<span>Whitepaper</span>
+					</div>
 					<div class="menu__item" anchor-from="overview">Overview</div>
 					<div class="menu__item" anchor-from="feedBack">Feedback</div>
 					<div class="menu__item" anchor-from="benefits">Benefits</div>
 					<div class="menu__item" anchor-from="roadmap">Roadmap</div>
 					<div class="menu__item" anchor-from="team">Team</div>
 					<div class="menu__item" anchor-from="media">Media</div>
-					<div class="menu__item" anchor-from="blog">Blog</div>
 					<a href="http://192.81.220.26/" target="__blank">
 						<div class="button menu__button">Test MVP</div>
 					</a>
-					<a href="https://cindex.net/registration" target="__blank">
+					<a href="https://my.cindx.io/" target="__blank">
 						<div class="button menu__button">Join Pre-Sale</div>
 					</a>
 					<div class="language_s">Рус</div>
@@ -1365,6 +1364,7 @@
 					this.init = this.init.bind(this);
 					this.add = this.add.bind(this);
 					this.clear = this.clear.bind(this);
+					this.animate = this.animate.bind(this);
 				}
 
 				clear() {
@@ -1443,7 +1443,7 @@
 				}
 
 				add(opcss) {
-					const { parentDiv } = this;
+					const { parentDiv, animate } = this;
 					const {
 						ps,
 						or,
@@ -1479,7 +1479,7 @@
 									class: 'i-line1-orbtParent'
 								})
 								.css({
-									animation: or ? `spin ${or[3]}s linear infinite` : null
+									animation: or ? `spin ${or[3]}s linear infinite` : null,
 								}),
 						$orbt=
 							jq('<div>')
@@ -1503,6 +1503,21 @@
 						);
 
 					$pr.appendTo(parentDiv)
+					animate(
+						$orbtParent,
+						360
+					)
+				}
+
+				animate($elem, angle) {
+					/*$({deg: 0}).animate({deg: 500}, {
+    			  duration: Infinity,
+    			  step: function(now) {
+    			    $elem.css({
+    			      transform: 'rotate(' + now + 'deg)'
+    			    })
+    			  }
+    			});*/
 				}
 			};
 
@@ -1795,7 +1810,7 @@
 							thankPage({
 								title: 'Video',
 								colorTitle: 'rgba(8, 181, 199, 0.9)',
-								decsTest: 'coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon'
+								decsTest: 'Is coming soon'
 							})
 								.show()
 
@@ -1809,11 +1824,13 @@
 							thankPage
 						} = jqMethods;
 
+						let text = jq(this).attr('clickLorem1');
+
 						thankPage &&
 							thankPage({
-								title: 'Document',
+								title: text,
 								colorTitle: 'rgba(8, 181, 199, 0.9)',
-								decsTest: 'coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon'
+								decsTest: 'Is coming soon'
 							})
 								.show()
 					}
