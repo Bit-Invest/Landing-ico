@@ -248,25 +248,25 @@
 				</div>
 				<div class="pre-sale-info__links">
 					<div class="pre-sale-info__link-wrap pre-sale-info__link-wrap_1">
-						<a class="pre-sale-info__link">
+						<a class="pre-sale-info__link" clickLorem1>
 							<div class="pre-sale-info__doc"></div>
-							<div class="pre-sale-info__link-title">One Page</div>
+							<div class="pre-sale-info__link-title" >One Page</div>
 						</a>
 					</div>
 					<div class="pre-sale-info__link-wrap pre-sale-info__link-wrap_2">
-						<a class="pre-sale-info__link">
+						<a class="pre-sale-info__link" clickLorem1>
 							<div class="pre-sale-info__doc"></div>
 							<div class="pre-sale-info__link-title">Presentation</div>
 						</a>
 					</div>
 					<div class="pre-sale-info__link-wrap pre-sale-info__link-wrap_3">
-						<a class="pre-sale-info__link">
+						<a class="pre-sale-info__link" clickLorem1>
 							<div class="pre-sale-info__doc"></div>
 							<div class="pre-sale-info__link-title">Whitepaper</div>
 						</a>
 					</div>
 					<div class="pre-sale-info__link-wrap pre-sale-info__link-wrap_4">
-						<a class="pre-sale-info__link">
+						<a class="pre-sale-info__link" clickLorem1>
 							<div class="pre-sale-info__doc"></div>
 							<div class="pre-sale-info__link-title">Math Model</div>
 						</a>
@@ -1736,6 +1736,45 @@
 					}
 				});
 
+			let
+				jqMethods = {
+					thankPage: function(arr) {
+						const {
+							title,
+							colorTitle,
+							decsTest
+						} = arr || {};
+
+						let 
+							$success_pop = jq('.success-pop-up'),
+							$title = $success_pop.find('.success-pop-up__success'),
+							$decsTest = $success_pop.find('.success-pop-up__description');
+
+						title &&
+							$title
+								.text(title);
+
+						colorTitle &&
+							$title
+								.css({
+									color: colorTitle
+								})
+
+						decsTest &&
+							$decsTest
+								.text(decsTest);	
+
+						return {
+							show: function() {
+								$success_pop.addClass('show')
+							},
+							hide: function() {
+								$success_pop.removeClass('show')
+							}
+						}
+					}
+				};
+
 
 			//GOVNOCODE))))
 			/*
@@ -1770,8 +1809,35 @@
 				},
 				'.i-line1-img1,.video-pop-up__check':{
 					click: function() {
-						$('.video-pop-up')
-							.toggleClass('show');
+						const {
+							thankPage
+						} = jqMethods;
+
+						thankPage &&
+							thankPage({
+								title: 'Video',
+								colorTitle: 'rgba(8, 181, 199, 0.9)',
+								decsTest: 'coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon'
+							})
+								.show()
+
+						//$('.video-pop-up')
+							//.toggleClass('show');
+					}
+				},
+				'[clickLorem1]':{
+					click: function() {
+						const {
+							thankPage
+						} = jqMethods;
+
+						thankPage &&
+							thankPage({
+								title: 'Document',
+								colorTitle: 'rgba(8, 181, 199, 0.9)',
+								decsTest: 'coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon'
+							})
+								.show()
 					}
 				},
 				'[anchor-from]':{
@@ -1785,6 +1851,17 @@
 							.animate({
 								scrollTop: scrTop - 40
 							}, 500, 'swing')
+					}
+				},
+				'.success-pop-up__check':{
+					click: function() {
+						const {
+							thankPage
+						} = jqMethods;
+
+						thankPage &&
+							thankPage()
+								.hide()
 					}
 				}
 			})
@@ -1808,7 +1885,7 @@
 				        arrows: false,
 				        centerMode: true,
 				        centerPadding: '40px',
-				        slidesToShow: 1
+				        slidesToShow: 3
 				      }
 				    },
                     {
@@ -1826,7 +1903,7 @@
 				        arrows: false,
 				        centerMode: true,
 				        centerPadding: '40px',
-				        slidesToShow: 1
+				        slidesToShow: 2
 				      }
 				    },
 				    {

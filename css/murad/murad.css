@@ -94,6 +94,7 @@
 }
 .HowItWorks {
   width: 100%;
+  position: relative;
   float: left;
   background-color: #45029D;
 }
@@ -112,10 +113,11 @@
 }
 .HowItWorks__bg-img {
   position: absolute;
+  width: 100%;
   pointer-events: none;
 }
 .HowItWorks__bg-img__orbs {
-  width: 1100px;
+  width: 80%;
   margin: 0 auto;
   position: relative;
   display: block;
@@ -415,6 +417,7 @@
   float: left;
 }
 .JoinOurTokenPreSale__input {
+  margin-right: 30px;
   max-width: 520px;
   height: 94px;
   border: none;
@@ -449,6 +452,7 @@ input[type="checkbox"] {
   outline:none;
   margin:5px;box-sizing:border-box;
   display:inline-block;
+  margin-bottom: 25px;
 }
 input[type="checkbox"]:checked:before{
   content:"";
@@ -475,7 +479,6 @@ input[type="checkbox"]:checked:before{
   margin-left: 10px;
 }
 .JoinOurTokenPreSale__button {
-  float: right;
   width: 481px;
   height: 94px;
   background-color: rgb(234, 31, 92);
@@ -751,7 +754,7 @@ a svg #Shape:hover {
   fill: #fff;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .block-for-slider {
     width: 767px;
   }
@@ -777,7 +780,8 @@ a svg #Shape:hover {
     width: 767px;
   }
   .WatchProgress__block-for-slider {
-   max-width: 80%
+    max-width: 80%;
+    padding-top: 120px;
   }
   .HowItWorks__bg-img__orbs {
     width: 720px;
@@ -790,7 +794,7 @@ a svg #Shape:hover {
     width: 430px;
   }
   .HowItWorks__bg-img {
-    width: 960px;
+    width: 100%;
   }
   .Team__icon-face {
     margin: 0 40px;
@@ -825,6 +829,9 @@ a svg #Shape:hover {
   }
   .Team__icon-face {
     margin: 0 6px;
+  }
+  .Team__info {
+    margin-bottom: 70px;
   }
 }
 
