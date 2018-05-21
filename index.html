@@ -595,6 +595,38 @@
 					</div>
 				</div>
 			</div>
+			<div class="map">
+				<div class="map__picture-wrap">
+					<img src="./image/Map.svg" class="map__picture" />
+					<div class="map__dot">
+						<div class="map__dot-info">
+							<span class="map__city-name">London</span><br>
+							<span class="map__dot-info_currency">
+								<span class="map__currency-from">ETH</span> → <span class="map__currency-to">BTC</span>
+							</span>
+						</div>
+						<div class="map__dot-wrap">
+							<div class="map__dot-circle-wrap">
+								<div class="map__dot-circle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__details">
+					<div class="map__detail">
+						<div class="map__detail-title">11M users</div>
+						<div class="map__detail-description">costumers potential</div>
+					</div>
+					<div class="map__detail">
+						<div class="map__detail-title">$596B</div>
+						<div class="map__detail-description">transactions potential</div>
+					</div>
+					<div class="map__detail">
+						<div class="map__detail-title">30%</div>
+						<div class="map__detail-description">better profitability than market average</div>
+					</div>
+				</div>
+			</div>
 			<div class="HowItWorks">
 		    <div class="HowItWorks__tittle">
 		      How it works
@@ -1361,7 +1393,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="./js/misha/TimeCircles.js"></script>
 	<script>
-
 			$('.timer__timer').TimeCircles(
 				{
 					start: true,
@@ -1745,7 +1776,7 @@
 							decsTest
 						} = arr || {};
 
-						let 
+						let
 							$success_pop = jq('.success-pop-up'),
 							$title = $success_pop.find('.success-pop-up__success'),
 							$decsTest = $success_pop.find('.success-pop-up__description');
@@ -1762,7 +1793,7 @@
 
 						decsTest &&
 							$decsTest
-								.text(decsTest);	
+								.text(decsTest);
 
 						return {
 							show: function() {
@@ -1993,6 +2024,120 @@
 					$('.roadmap__year_2').removeClass('roadmap__year_active');
 				}
 			});
+		});
+	</script>
+	<script>
+		var cities = [
+			{
+				name: 'London',
+				top: '95px',
+				left: '481px'
+			},
+			{
+				name: 'Miami',
+				top: '163px',
+				left: '296px'
+			},
+			{
+				name: 'New York',
+				top: '134px',
+				left: '311px'
+			},
+			{
+				name: 'Madrid',
+				top: '131px',
+				left: '473px'
+			},
+			{
+				name: 'Seul',
+				top: '134px',
+				left: '773px'
+			},
+			{
+				name: 'Tokyo',
+				top: '131px',
+				left: '797px'
+			},
+			{
+				name: 'Pekin',
+				top: '108px',
+				left: '723px'
+			},
+			{
+				name: 'Hong-Kong',
+				top: '171px',
+				left: '751px'
+			},
+			{
+				name: 'Abu-Dhabi',
+				top: '172px',
+				left: '606px'
+			},
+			{
+				name: 'Los-Angeles',
+				top: '132px',
+				left: '208px'
+			},
+			{
+				name: 'Paris',
+				top: '107px',
+				left: '486px'
+			},
+			{
+				name: 'Rome',
+				top: '129px',
+				left: '514px'
+			},
+			{
+				name: 'Capetown',
+				top: '311px',
+				left: '525px'
+			},
+			{
+				name: 'Moscow',
+				top: '73px',
+				left: '581px'
+			},
+			{
+				name: 'Berlin',
+				top: '96px',
+				left: '505px'
+			},
+			{
+				name: 'Oslo',
+				top: '65px',
+				left: '503px'
+			},
+			{
+				name: 'Barcelona',
+				top: '125px',
+				left: '483px'
+			},
+			{
+				name: 'Rio de Janeiro',
+				top: '285px',
+				left: '381px'
+			}
+		];
+		var coins1 = ['BTC', 'BCH', 'LTC', 'NEO', 'XMR'];
+		var coins2 = ['ETH', 'XRP', 'DASH', 'XEM', 'ETC'];
+		$(document).ready(function() {
+			setInterval(function() {
+				var city = cities[Math.floor(Math.random() * cities.length)];
+				var dot = $('.map__dot');
+				var dotCircleWrap = $('.map__dot-circle-wrap');
+				var dotInfo = $('.map__dot-info');
+				dot.css({top: city.top, left: city.left});
+				$('.map__currency-from').text(coins1[Math.floor(Math.random() * coins1.length)]);
+				$('.map__currency-to').text(coins2[Math.floor(Math.random() * coins2.length)]);
+				$('.map__city-name').text(city.name);
+				dotCircleWrap.addClass('map__dot-circle-wrap_border-animate');
+				dotInfo.addClass('map__dot-info_animate');
+				setTimeout(function() {
+					dotCircleWrap.removeClass('map__dot-circle-wrap_border-animate');
+					dotInfo.removeClass('map__dot-info_animate')
+				}, 1300);
+			}, 1500);
 		});
 	</script>
 
