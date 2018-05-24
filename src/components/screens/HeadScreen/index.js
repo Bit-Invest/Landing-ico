@@ -1,0 +1,1 @@
+export { HeadScreen } from './HeadScreen';

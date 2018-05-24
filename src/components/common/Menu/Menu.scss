@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 423px;
+
+  &__item {
+    font-family: Geometria;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.23;
+
+    &_underline {
+      border-bottom: 2px solid #6C5ED6;
+    }
+  }
+}

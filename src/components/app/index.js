@@ -1,12 +1,14 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import { Mountains } from '../scenes/';
+import { HeadScreen } from '@screens/HeadScreen';
 
 const App = () => (
-  <div>
-    <div>Misha</div>
-    <div>Ibr</div>
+  <div className="App">
     <Mountains />
+    <div className="App__container">
+      <HeadScreen />
+    </div>
   </div>
 );
 
