@@ -4,8 +4,6 @@ import { Mountains } from '../scenes/';
 
 const App = () => (
   <div>
-    <div>Misha</div>
-    <div>Ibr</div>
     <Mountains />
   </div>
 );

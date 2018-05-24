@@ -6,6 +6,7 @@ import store, { history } from './store';
 import App from '@components/app';
 
 import 'sanitize.css/sanitize.css';
+import './css/app.css';
 import './index.css';
 
 const target = document.querySelector('#root');
