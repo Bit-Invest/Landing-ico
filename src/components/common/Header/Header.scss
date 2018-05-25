@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 148px;
+
+  &__promo-info {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  %promo-wrap {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__logo-wrap {
+    @extend %promo-wrap;
+    padding-right: 45px;
+    padding-bottom: 18px;
+    width: 160px;
+    height: 100%;
+    border-right: 1px solid #fff;
+  }
+
+  &__promo-title-wrap {
+    @extend %promo-wrap;
+    padding-left: 45px;
+    padding-bottom: 14px;
+    width: 200px;
+  }
+
+  &__logo {
+    height: 40px;
+    width: 115px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/export_mountain_v2/logo_white.svg);
+  }
+
+  &__promo-title {
+    width: 134px;
+    font-family: Geometria;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+  }
+
+  &__security {
+    font-size: 14px;
+    opacity: 0.5;
+    line-height: 1.2;
+  }
+}

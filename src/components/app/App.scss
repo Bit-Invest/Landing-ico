@@ -1,0 +1,12 @@
+.App {
+  &__container {
+    margin: 0 auto;
+    width: 1024px;
+    height: 100vh;
+    background-color: blue;
+  }
+}
+
+@media screen and (min-height: 768px) {
+
+}
