@@ -2,6 +2,7 @@ import React from 'react';
 import Plx from "react-plx";
 import { HeadScreen } from '@screens/HeadScreen';
 import { VideoScreen } from '@screens/VideoScreen';
+import { LaptopScreen } from '@screens/LaptopScreen';
 
 class RearDt {
   constructor(props) {
@@ -134,7 +135,11 @@ export class MountainContentPage extends React.Component {
     			</Plx>
     			<Plx parallaxData={ParallaxData2}>
   					<div className="containerContent">
-    				  <VideoScreen />
+    				  <LaptopScreen
+                header="Feature 1" 
+                title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus congue gravida. Sed non feugiat velit, sit amet suscipit metus."
+                description="Pellentesque rutrum condimentum felis, sed imperdiet lectus bibendum id. Suspendisse lobortis enim justo"
+              />
     				</div>
     			</Plx>
       	</Plx>
