@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  &__button {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../assets/export_mountain_v2/arrow_down.svg);
+  }
+
+  &__social-media {
+    display: flex;
+    height: 16px;
+    align-self: center;
+  }
+
+  &__social {
+    background-position-y: 50%;
+    margin-right: 25px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+
+    &_facebook {
+      margin-right: 0;
+      background-image: url(../assets/export_mountain_v2/Facebook_icon.svg);
+    }
+    &_twitter {
+      background-image: url(../assets/export_mountain_v2/Twitter_icon.svg);
+    }
+    &_tumblr {
+      background-image: url(../assets/export_mountain_v2/Tumblr_icon.svg);
+    }
+    &_linked-in {
+      background-image: url(../assets/export_mountain_v2/LinkedIN__icon.svg);
+    }
+  }
+}

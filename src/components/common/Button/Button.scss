@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #fff;
+
+  &__title {
+    font-family: Geometria-Bold;
+    font-size: 10px;
+    color: #fff;
+  }
+
+  &_filled {
+    border: none;
+    background-image: linear-gradient(315deg, #6C5ED6, #F287B7);
+    box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 20px;
+  }
+}

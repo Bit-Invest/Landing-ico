@@ -1,0 +1,68 @@
+.head-screen {
+
+  &__buttons {
+    margin-top: 7.6vh;
+    display: flex;
+    justify-content: space-between;
+    width: 535px;
+  }
+
+  &__header {
+    margin-top: 5.8vh;
+    width: 500px;
+    font-family: Geometria-Bold;
+    font-size: 45px;
+    line-height: 1.1;
+    color: #fff;
+  }
+
+  &__pre-sale-info {
+    display: flex;
+    margin-top: 4.8vh;
+  }
+
+  &__list {
+    width: 300px;
+    color: #fff;
+  }
+
+  &__list-item {
+    font-size: 15px;
+    margin-top: 18px;
+  }
+
+  &__list-item:first-child {
+    margin-top: 0;
+  }
+
+  &__list-wrap {
+    padding-right: 30px;
+    border-right: 1px solid #fff;
+  }
+
+  &__timer-wrap {
+    padding-left: 47px;
+  }
+
+  &__timer-title {
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: Geometria-Bold;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  &__docs {
+    display: flex;
+    margin-top: 7.4vh;
+    margin-bottom: 5.5vh;
+  }
+
+  &__doc-wrap {
+    margin-left: 35px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
