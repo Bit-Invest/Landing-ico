@@ -10,6 +10,7 @@ export const Footer = props => (
     <div className={`${ROOT_CLASS}__social-media`}>
       {Socials.map(social => (
         <div
+          key={social}
           className={`${ROOT_CLASS}__social ${ROOT_CLASS}__social_${social}`}
         />
       ))}

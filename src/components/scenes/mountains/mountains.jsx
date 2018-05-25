@@ -1,6 +1,6 @@
 import React from 'react';
 import imageMouns from '@assets/export_mountain_v2/mountain_new2.svg';
-import imageFunicular from '@assets/export_mountain_v2/kabinka.svg';
+import imageFunicular from '@assets/export_mountain_v2/kabinka_2.svg';
 import { Content_c1 } from '../';
 import Plx from "react-plx";
 
@@ -8,6 +8,21 @@ class RearDt {
   constructor(props) {
     Object.assign(this,{
       ...props,
+
+      ParallaxFilter: [
+        {
+          start: 0,
+          end:  2000,
+          properties: [
+            {
+              startValue: 0,
+              endValue: -33,
+              property: "translateY"
+            },
+          ]
+        }
+      ],
+
       ParallaxData1: [
         {
           start: 0,
@@ -15,11 +30,43 @@ class RearDt {
           properties: [
             {
               startValue: 0,
-              endValue: -14,
+              endValue: -4.6,
               property: "translateX"
             },
             {
               startValue: 0,
+              endValue: 1.6,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 1000,
+          end:  2000,
+          properties: [
+            {
+              startValue: -4.6,
+              endValue: -9.3,
+              property: "translateX"
+            },
+            {
+              startValue: 1.6,
+              endValue: 3.3,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 2000,
+          end:  3000,
+          properties: [
+            {
+              startValue: -9.3,
+              endValue: -14,
+              property: "translateX"
+            },
+            {
+              startValue: 3.3,
               endValue: 5,
               property: "translateY"
             }
@@ -33,12 +80,12 @@ class RearDt {
           properties: [
             {
               startValue: 0,
-              endValue: -10.7,
+              endValue: -1.3,
               property: "translateX"
             },
             {
               startValue: 0,
-              endValue: 0.5,
+              endValue: -2.9,
               property: "translateY"
             },
           ]
@@ -48,13 +95,29 @@ class RearDt {
           end:  2000,
           properties: [
             {
-              startValue: -10.7,
-              endValue: -5.3,
+              startValue: -1.3,
+              endValue: -0.8,
               property: "translateX"
             },
             {
-              startValue: 0.5,
-              endValue: -.2,
+              startValue: -2.9,
+              endValue: -1.45,
+              property: "translateY"
+            },
+          ]
+        },
+        {
+          start: 2000,
+          end:  3000,
+          properties: [
+            {
+              startValue: -0.8,
+              endValue: -3.0,
+              property: "translateX"
+            },
+            {
+              startValue: -1.45,
+              endValue: -3.5,
               property: "translateY"
             },
           ]
@@ -119,7 +182,7 @@ export class RearLayout extends React.Component {
 
   stateSizes = () => {
     const { RearCons, prToPixel } = this;
-    const { ParallaxData1, ParallaxData2 } = RearCons;
+    const { ParallaxData1, ParallaxData2, ParallaxFilter } = RearCons;
 
     RearCons.bgMounimage((args) => {
       this.setState({
@@ -140,6 +203,13 @@ export class RearLayout extends React.Component {
         args.width,
         ['startValue','endValue']
       );
+
+      prToPixel(
+        ['i','properties','i'],
+        ParallaxFilter,
+        window.innerHeight,
+        ['startValue','endValue']
+      );
     })
   }
 
@@ -147,8 +217,10 @@ export class RearLayout extends React.Component {
     console.log('2',arr)
     for(let q in arr){
       for(let w in arr[q].properties){
-        arr[q].properties[w].startValue *= (full / 100);
-        arr[q].properties[w].endValue *= (full / 100);
+        if(!arr[q].properties[w].nopx){
+          arr[q].properties[w].startValue *= (full / 100);
+          arr[q].properties[w].endValue *= (full / 100);
+        }
       } 
     }
 
@@ -157,17 +229,18 @@ export class RearLayout extends React.Component {
 
   render() {
     const { className, RearCons } = this;
-    const { ParallaxData1, ParallaxData2 } = RearCons;
+    const { ParallaxData1, ParallaxData2, ParallaxFilter } = RearCons;
     const {
       w,
       h,
       prlx1
     } = this.state;
 
-    console.log(ParallaxData2)
+    console.log(7777,ParallaxFilter)
 
     return (
       <div className={className}>
+        <Plx parallaxData={ParallaxFilter} className="filterBg"></Plx>
         <React.Fragment>
           <Plx parallaxData={ParallaxData1} className="bgMountains">
             <img src={imageMouns} className="bgMountains-img" style={{
@@ -183,6 +256,7 @@ export class RearLayout extends React.Component {
             <img src={imageFunicular} className="funicular-img" width={(w/100) * 2} height={((h/100) * 6)} />
           </Plx>
         </React.Fragment>
+
         <Content_c1 />
       </div>    
     );

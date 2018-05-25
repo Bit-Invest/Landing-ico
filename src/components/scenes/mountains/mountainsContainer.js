@@ -9,7 +9,7 @@ class MountainsContainer extends React.Component {
   render() {
     return (
       <div>
-        <div className="scene" style={{ height: 4000 }}>
+        <div className="scene" style={{ height: 8000 }}>
           <RearLayout className="layot" />
         </div>
       </div>

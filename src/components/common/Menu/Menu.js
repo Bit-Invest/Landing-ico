@@ -14,6 +14,7 @@ export const Menu = props => (
   <div className={ROOT_CLASS}>
     {Items.map((item, index) => (
       <div
+        key={index}
         className={`${ROOT_CLASS}__item ${
           props.currentItem === index ? ROOT_CLASS + '__item_underline' : ''
         }`}>

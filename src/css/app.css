@@ -1,5 +1,5 @@
-.header,
-.header__promo-info {
+.menu,
+.scene {
   display: -webkit-box;
   display: -ms-flexbox;
 }
@@ -13,6 +13,84 @@
   width: 1024px;
   height: 100vh;
   background-color: #00f;
+}
+.containerContent {
+  width: 1324px !important;
+  background: rgba(249, 25, 25, 0.7);
+  margin: 0 auto;
+  height: 100vh;
+  z-index: 9;
+  position: relative;
+  opacity: 0.1;
+}
+.scene {
+  display: flex;
+  position: relative;
+  border: 2px solid red;
+}
+.scene .layot {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  border: 4px solid green;
+  overflow: hidden;
+}
+.bgMountains {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.bgMountains .bgMountains-img {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+.filterBg,
+.funicular {
+  position: absolute;
+  left: 0;
+}
+.funicular {
+  bottom: 0;
+}
+.filterBg {
+  top: 0;
+  width: 100%;
+  height: 7000px;
+  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
+    -webkit-gradient(linear, left top, left bottom, from(#4e217b), color-stop(23%, #7dabbf), to(#7dabbf));
+  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
+    -webkit-linear-gradient(top, #4e217b, #7dabbf 23%, #7dabbf);
+  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
+    -o-linear-gradient(top, #4e217b, #7dabbf 23%, #7dabbf);
+  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
+    linear-gradient(180deg, #4e217b, #7dabbf 23%, #7dabbf);
+  background-position: 50% 0, 0 0;
+  background-size: 60%, auto;
+  background-repeat: repeat-x, repeat;
+}
+.menu {
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 423px;
+}
+.header,
+.header__promo-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+.menu__item {
+  font-size: 15px;
+  line-height: 1.23;
+}
+.menu__item_underline {
+  border-bottom: 2px solid #6c5ed6;
 }
 .header {
   display: flex;
@@ -64,61 +142,4 @@
   font-size: 14px;
   opacity: 0.5;
   line-height: 1.2;
-}
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 423px;
-}
-.menu__item {
-  font-size: 15px;
-  line-height: 1.23;
-}
-.menu__item_underline {
-  border-bottom: 2px solid #6c5ed6;
-}
-.containerContent {
-  width: 1324px !important;
-  background: rgba(249, 25, 25, 0.7);
-  margin: 10px auto;
-  height: 300px;
-  z-index: 9;
-  position: relative;
-}
-.scene {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  border: 2px solid red;
-}
-.scene .layot {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  border: 4px solid green;
-  overflow: hidden;
-}
-.bgMountains {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.bgMountains .bgMountains-img {
-  position: absolute;
-  bottom: 0;
-  left: 20%;
-}
-.funicular {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }

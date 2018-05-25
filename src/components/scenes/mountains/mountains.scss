@@ -31,3 +31,15 @@
 	bottom: 0;
   left: 0;
 }
+
+.filterBg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 7000px;
+	background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg), linear-gradient(180deg, #4e217b, #7dabbf 23%, #7dabbf);
+	background-position: 50% 0px, 0px 0px;
+  background-size: 60%, auto;
+  background-repeat: repeat-x, repeat;
+}
