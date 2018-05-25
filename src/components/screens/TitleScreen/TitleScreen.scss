@@ -1,0 +1,21 @@
+.title-screen {
+  padding-bottom: 9vh;
+  &__header {
+    margin-top: 10vh;
+    width: 540px;
+    font-family: Geometria-Bold;
+    font-size: 6.45vh;
+    color: #fff;
+    line-height: 1;
+  }
+
+  &__title {
+    margin-top: 4vh;
+    width: 560px;
+    margin-top: 1.9vh;
+    font-family: Geometria;
+    font-size: 2.3vh;
+    color: #fff;
+    line-height: 1;
+  }
+}
