@@ -2,17 +2,15 @@ import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
-import { RearLayout } from './mountains';
+import { MountainContentPage } from './contents';
 import { StickyContainer, Sticky } from 'react-sticky';
 
-class MountainsContainer extends React.Component {
+class ContentsContainer extends React.Component {
   render() {
     return (
-      <div>
-        <div className="scene" style={{ height: 4000 }}>
-          <RearLayout className="layot" />
-        </div>
-      </div>
+      <React.Fragment>
+        <MountainContentPage />
+      </React.Fragment>
     );
   }
 }
@@ -32,7 +30,7 @@ const mapDispatchToProps = dispatch =>
   );
 
 const connectedContainer = connect(mapStateToProps, mapDispatchToProps)(
-  MountainsContainer
+  ContentsContainer
 );
 
-export { connectedContainer as MountainsContainer };
+export { connectedContainer as ContentsContainer };

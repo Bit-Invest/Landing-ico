@@ -1,3 +1,11 @@
+.containerContent {
+  width: 1324px !important;
+  background: rgba(249, 25, 25, 0.7);
+  margin: 10px auto;
+  height: 300px;
+  z-index: 9;
+  position: relative;
+}
 .scene {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,7 +31,11 @@
 }
 .bgMountains .bgMountains-img {
   position: absolute;
-  bottom: -10%;
-  right: -100%;
-  width: 180%;
+  bottom: 0;
+  left: 20%;
+}
+.funicular {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
