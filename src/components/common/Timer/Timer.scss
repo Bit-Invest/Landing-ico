@@ -1,0 +1,10 @@
+.timer {
+  display: flex;
+
+  &__circle {
+    margin-left: 22px;
+    &:first-child {
+      margin: 0;
+    }
+  }
+}

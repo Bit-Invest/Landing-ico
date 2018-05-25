@@ -1,0 +1,25 @@
+.doc {
+  %inline {
+    display: inline-block;
+    vertical-align: center;
+  }
+  &__icon {
+    @extend %inline;
+    width: 12px;
+    height: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    &_paper {}
+    &_slides {}
+    &_circles {}
+  }
+  &__title {
+    @extend %inline;
+    margin-left: 10px;
+    font-family: Geometria;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: underline;
+  }
+}
