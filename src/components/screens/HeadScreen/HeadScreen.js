@@ -17,13 +17,21 @@ export const HeadScreen = () => (
         <div className={`${ROOT_CLASS}__list-wrap`}>
           <ul className={`${ROOT_CLASS}__list`}>
             <li className={`${ROOT_CLASS}__list-item`}>
-              Decent passive earning on professional trading of the best crypto
-              traders
+              <span className={`${ROOT_CLASS}__list-item-title`}>
+                Decent passive earning on professional trading of the best
+                crypto traders
+              </span>
             </li>
             <li className={`${ROOT_CLASS}__list-item`}>
-              All the crypto is kept in the wallet of investor at all time
+              <span className={`${ROOT_CLASS}__list-item-title`}>
+                All the crypto is kept in the wallet of investor at all time
+              </span>
             </li>
-            <li className={`${ROOT_CLASS}__list-item`}>Success fees only</li>
+            <li className={`${ROOT_CLASS}__list-item`}>
+              <span className={`${ROOT_CLASS}__list-item-title`}>
+                Success fees only
+              </span>
+            </li>
           </ul>
         </div>
         <div className={`${ROOT_CLASS}__timer-wrap`}>

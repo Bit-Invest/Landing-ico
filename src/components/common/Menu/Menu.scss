@@ -4,11 +4,12 @@
   // width: 423px;
   height: 20px;
   align-self: center;
-  margin-top: 40px;
+  margin-top: 22px;
 
   &__item {
+    position: relative;
     margin-left: 27px;
-    font-family: Geometria;
+    font-family: Geometria-Light;
     font-size: 15px;
     color: #fff;
     line-height: 1.23;
@@ -16,8 +17,16 @@
       margin: 0;
     }
 
-    &_underline {
-      border-bottom: 2px solid #6C5ED6;
+    &_underline::after {
     }
   }
+}
+
+.menu__item_underline::after {
+  content: "";
+  margin-top: 10px;
+  background-color: #6C5ED6;
+  height: 5px;
+  width: 26px;
+
 }
