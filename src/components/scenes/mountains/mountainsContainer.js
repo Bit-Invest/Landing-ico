@@ -4,14 +4,19 @@ import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 import { RearLayout } from './mountains';
 import { StickyContainer, Sticky } from 'react-sticky';
+import Plx from 'react-plx';
+import { prlxLeftScene } from './prlxData/';
 
 class MountainsContainer extends React.Component {
   render() {
     return (
       <div>
-        <div className="scene" style={{ height: 8000 }}>
+        <div className="scene" style={{ height: 18000 }}>
           <RearLayout className="layot" />
         </div>
+        <Plx className="scene fixedScene" parallaxData={prlxLeftScene}>
+          XXX
+        </Plx>
       </div>
     );
   }
@@ -19,14 +24,14 @@ class MountainsContainer extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    ///state
+    //state
   };
 };
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
-      ///
+      //
     },
     dispatch
   );

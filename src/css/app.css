@@ -1,77 +1,13 @@
-.App__container {
-  margin: 0 auto;
-  width: 1024px;
-  height: 100vh;
-  background-color: #00f;
-}
-.bgMountains,
-.filterBg,
-.scene .layot,
-.upperBg {
-  top: 0;
-  width: 100%;
-}
-.scene {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
 .button,
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
 }
-.scene .layot {
-  position: -webkit-sticky;
-  position: sticky;
-  height: 100vh;
-  overflow: hidden;
-}
-.bgMountains {
-  position: absolute;
-  left: 0;
-  height: 100%;
-}
-.bgMountains .bgMountains-img {
-  position: absolute;
-  bottom: 0;
-  left: 20%;
-}
-.filterBg,
-.funicular,
-.upperBg {
-  position: absolute;
-  left: 0;
-}
-.funicular {
-  bottom: 0;
-  z-index: 2;
-}
-.filterBg {
-  height: 7000px;
-  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
-    -webkit-gradient(linear, left top, left bottom, from(#4e217b), color-stop(23%, #7dabbf), to(#7dabbf));
-  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
-    -webkit-linear-gradient(top, #4e217b, #7dabbf 23%, #7dabbf);
-  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
-    -o-linear-gradient(top, #4e217b, #7dabbf 23%, #7dabbf);
-  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
-    linear-gradient(180deg, #4e217b, #7dabbf 23%, #7dabbf);
-  background-position: 50% 0, 0 0;
-  background-size: 60%, auto;
-  background-repeat: repeat-x, repeat;
-}
-.upperBg {
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 2;
-  pointer-events: none;
-}
 .doc__icon,
 .footer__button,
 .header__logo {
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 .doc__icon,
 .footer__button,
@@ -79,16 +15,16 @@
 .header__logo {
   background-repeat: no-repeat;
 }
-.contents {
+.containerContent,
+.contents,
+.scene {
   position: relative;
-  z-index: 3;
 }
-.containerContent {
-  width: 1024px !important;
+.App__container {
   margin: 0 auto;
+  width: 1024px;
   height: 100vh;
-  z-index: 9;
-  position: relative;
+  background-color: #00f;
 }
 .button {
   display: flex;
@@ -122,21 +58,6 @@
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 20px;
 }
-.doc .doc__icon,
-.doc .doc__title {
-  display: inline-block;
-  vertical-align: center;
-}
-.doc__icon {
-  width: 12px;
-  height: 10px;
-  border: 1px solid #fff;
-}
-.doc__title {
-  margin-left: 10px;
-  font-size: 13px;
-  text-decoration: underline;
-}
 .footer {
   display: flex;
   width: 100%;
@@ -144,17 +65,14 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.footer__social-media,
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-}
 .footer__button {
   width: 50px;
   height: 50px;
   background-image: url(../assets/export_mountain_v2/arrow_down.svg);
 }
 .footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 16px;
   -ms-flex-item-align: center;
@@ -179,6 +97,26 @@
 .footer__social_linked-in {
   background-image: url(../assets/export_mountain_v2/LinkedIN__icon.svg);
 }
+.doc .doc__icon,
+.doc .doc__title {
+  display: inline-block;
+  vertical-align: center;
+}
+.header,
+.header__promo-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+.doc__icon {
+  width: 12px;
+  height: 10px;
+  border: 1px solid #fff;
+}
+.doc__title {
+  margin-left: 10px;
+  font-size: 13px;
+  text-decoration: underline;
+}
 .header {
   display: flex;
   -webkit-box-pack: justify;
@@ -188,8 +126,6 @@
   height: 148px;
 }
 .header__promo-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -202,11 +138,6 @@
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-}
-.menu,
-.time-circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
 }
 .header__logo-wrap {
   padding-right: 45px;
@@ -236,6 +167,8 @@
   line-height: 1.2;
 }
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -244,6 +177,11 @@
   -ms-flex-item-align: center;
   align-self: center;
   margin-top: 40px;
+}
+.time-circle,
+.time-circle__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
 }
 .menu__item {
   margin-left: 27px;
@@ -256,9 +194,6 @@
 .menu__item_underline {
   border-bottom: 2px solid #6c5ed6;
 }
-.screen {
-  height: 100%;
-}
 .time-circle {
   display: flex;
   -webkit-box-orient: vertical;
@@ -269,11 +204,6 @@
   -ms-flex-align: center;
   align-items: center;
   color: #fff;
-}
-.time-circle__circle,
-.timer {
-  display: -webkit-box;
-  display: -ms-flexbox;
 }
 .time-circle__circle {
   display: flex;
@@ -291,11 +221,28 @@
   font-size: 15px;
   line-height: 1.2;
 }
+.scene,
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
 .time-circle__title {
   margin-top: 20px;
   font-family: Geometria-Light;
   font-size: 11px;
   line-height: 1.2;
+}
+.screen {
+  height: 100%;
+}
+.timer {
+  display: flex;
+}
+.timer__circle {
+  margin-left: 22px;
+}
+.timer__circle:first-child {
+  margin: 0;
 }
 @font-face {
   font-family: Geometria-Light;
@@ -309,14 +256,78 @@
   font-family: Geometria;
   src: url(../assets/fonts/Geometria.otf);
 }
-.timer {
+.contents {
+  z-index: 3;
+}
+.containerContent {
+  width: 1024px !important;
+  margin: 0 auto;
+  height: 100vh;
+  z-index: 9;
+}
+.scene {
   display: flex;
 }
-.timer__circle {
-  margin-left: 22px;
+.scene .layot {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
-.timer__circle:first-child {
-  margin: 0;
+.bgMountains,
+.scene.fixedScene {
+  left: 0;
+  height: 100%;
+  top: 0;
+  width: 100%;
+}
+.scene.fixedScene {
+  position: fixed;
+  background: red;
+}
+.bgMountains {
+  position: absolute;
+}
+.bgMountains .bgMountains-img {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+.filterBg,
+.funicular,
+.upperBg {
+  position: absolute;
+  left: 0;
+}
+.funicular {
+  bottom: 0;
+  z-index: 2;
+}
+.filterBg {
+  top: 0;
+  width: 100%;
+  height: 7000px;
+  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
+    -webkit-gradient(linear, left top, left bottom, from(#4e217b), color-stop(23%, #7dabbf), to(#7dabbf));
+  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
+    -webkit-linear-gradient(top, #4e217b, #7dabbf 23%, #7dabbf);
+  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
+    -o-linear-gradient(top, #4e217b, #7dabbf 23%, #7dabbf);
+  background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
+    linear-gradient(180deg, #4e217b, #7dabbf 23%, #7dabbf);
+  background-position: 50% 0, 0 0;
+  background-size: 60%, auto;
+  background-repeat: repeat-x, repeat;
+}
+.upperBg {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  pointer-events: none;
 }
 .head-screen__buttons {
   margin-top: 7.6vh;

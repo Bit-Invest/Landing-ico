@@ -137,6 +137,22 @@ class RearDt {
             },
           ]
         },
+        {
+          start: 7000,
+          end:  7010,
+          properties: [
+            {
+              startValue: -3.0,
+              endValue: 4.1,
+              property: "translateX"
+            },
+            {
+              startValue: -3.5,
+              endValue: -7.6,
+              property: "translateY"
+            },
+          ]
+        },
       ],
     })
   }
@@ -229,7 +245,6 @@ export class RearLayout extends React.Component {
   }
 
   prToPixel = (path,arr,full,keys) => {
-    console.log('2',arr)
     for(let q in arr){
       for(let w in arr[q].properties){
         if(!arr[q].properties[w].nopx){
@@ -250,9 +265,7 @@ export class RearLayout extends React.Component {
       h,
       prlx1
     } = this.state;
-
-    console.log(7777,ParallaxFilter)
-
+    
     return (
       <div className={className}>
         <Plx parallaxData={ParallaxFilter} className="filterBg"></Plx>
