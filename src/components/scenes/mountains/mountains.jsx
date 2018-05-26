@@ -16,8 +16,23 @@ class RearDt {
           properties: [
             {
               startValue: 0,
-              endValue: -33,
+              endValue: 0,
               property: "translateY"
+            },
+          ]
+        }
+      ],
+
+      ParallaxUpperBg: [
+        {
+          start: 0,
+          end:  2000,
+          properties: [
+            {
+              nopx: false,
+              startValue: 1,
+              endValue: .5,
+              property: "opacityFilter"
             },
           ]
         }
@@ -229,7 +244,7 @@ export class RearLayout extends React.Component {
 
   render() {
     const { className, RearCons } = this;
-    const { ParallaxData1, ParallaxData2, ParallaxFilter } = RearCons;
+    const { ParallaxData1, ParallaxData2, ParallaxFilter, ParallaxUpperBg } = RearCons;
     const {
       w,
       h,
@@ -241,6 +256,7 @@ export class RearLayout extends React.Component {
     return (
       <div className={className}>
         <Plx parallaxData={ParallaxFilter} className="filterBg"></Plx>
+        <Plx parallaxData={ParallaxUpperBg} className="upperBg"></Plx>
         <React.Fragment>
           <Plx parallaxData={ParallaxData1} className="bgMountains">
             <img src={imageMouns} className="bgMountains-img" style={{
@@ -256,7 +272,6 @@ export class RearLayout extends React.Component {
             <img src={imageFunicular} className="funicular-img" width={(w/100) * 2} height={((h/100) * 6)} />
           </Plx>
         </React.Fragment>
-
         <Content_c1 />
       </div>    
     );

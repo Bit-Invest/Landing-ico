@@ -1,10 +1,13 @@
 
+.contents{
+	position: relative;
+	z-index: 3;
+}
+
 .containerContent{
-	width: 1324px!important;
-  background: rgba(249, 25, 25, 0.7);
+	width: 1024px!important;
   margin: 0px auto;
   height: 100vh;
   z-index: 9;
   position: relative;
-  opacity: .1;
 }

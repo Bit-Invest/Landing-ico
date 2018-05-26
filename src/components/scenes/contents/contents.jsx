@@ -1,5 +1,6 @@
 import React from 'react';
 import Plx from "react-plx";
+import { HeadScreen } from '@screens/HeadScreen';
 
 class RearDt {
   constructor(props) {
@@ -126,13 +127,13 @@ export class MountainContentPage extends React.Component {
       <div className="contents">
       	<Plx parallaxData={ParallaxData}>
       		<Plx parallaxData={ParallaxData1}>
-  					<div className="containerContent" style={{ backgroundColor: 'rgba(0,0,0,.7)' }}>
-    				  CONTENT 2
+  					<div className="containerContent">
+              <HeadScreen />
     				</div>
     			</Plx>
     			<Plx parallaxData={ParallaxData2}>
   					<div className="containerContent">
-    				  CONTENT 3
+    				  <HeadScreen />
     				</div>
     			</Plx>
       	</Plx>

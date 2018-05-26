@@ -6,9 +6,6 @@ import { HeadScreen } from '@screens/HeadScreen';
 const App = () => (
   <div className="App">
     <Mountains />
-    <div className="App__container">
-      <HeadScreen />
-    </div>
   </div>
 );
 
