@@ -1,6 +1,7 @@
 import React from 'react';
 import Plx from "react-plx";
 import { HeadScreen } from '@screens/HeadScreen';
+import { VideoScreen } from '@screens/VideoScreen';
 
 class RearDt {
   constructor(props) {
@@ -15,7 +16,7 @@ class RearDt {
               startValue: 0,
               endValue: -100,
               property: "translateY"
-            } 	
+            }
           ]
         },
       ],
@@ -29,7 +30,7 @@ class RearDt {
               startValue: 1,
               endValue: 0,
               property: "opacityFilter"
-            } 	
+            }
           ]
         },
       ],
@@ -43,7 +44,7 @@ class RearDt {
               startValue: 1,
               endValue: 0,
               property: "opacityFilter"
-            } 	
+            }
           ]
       	},
       	{
@@ -55,7 +56,7 @@ class RearDt {
               startValue: 0,
               endValue: 1,
               property: "opacityFilter"
-            } 	
+            }
           ]
         },
       ],
@@ -110,7 +111,7 @@ export class MountainContentPage extends React.Component {
         	arr[q].properties[w].startValue *= (full / 100);
         	arr[q].properties[w].endValue *= (full / 100);
       	}
-      } 
+      }
     }
 
     return arr;
@@ -133,11 +134,11 @@ export class MountainContentPage extends React.Component {
     			</Plx>
     			<Plx parallaxData={ParallaxData2}>
   					<div className="containerContent">
-    				  <HeadScreen />
+    				  <VideoScreen />
     				</div>
     			</Plx>
       	</Plx>
-  		</div>  
+  		</div>
     );
   }
 }
