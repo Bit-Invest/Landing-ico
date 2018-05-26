@@ -14,7 +14,10 @@ class MountainsContainer extends React.Component {
         <div className="scene" style={{ height: 18000 }}>
           <RearLayout className="layot" />
         </div>
-        <Plx className="scene fixedScene" parallaxData={prlxLeftScene}>
+        <Plx
+          className="scene fixedScene"
+          style={{ zIndex: 99 }}
+          parallaxData={prlxLeftScene}>
           XXX
         </Plx>
       </div>
