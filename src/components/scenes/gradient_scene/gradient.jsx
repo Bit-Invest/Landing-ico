@@ -1,6 +1,7 @@
 import React from 'react';
 import imageMouns from '@assets/export_mountain_v2/mountain_new2.svg';
 import imageFunicular from '@assets/export_mountain_v2/kabinka_2.svg';
+import { Content_c1 } from '../';
 import Plx from "react-plx";
 
 class RearDt {
@@ -284,6 +285,7 @@ export class RearLayout extends React.Component {
             <img src={imageFunicular} className="funicular-img" width={(w/100) * 2} height={((h/100) * 6)} />
           </Plx>
         </React.Fragment>
+        <Content_c1 />
       </div>    
     );
   }

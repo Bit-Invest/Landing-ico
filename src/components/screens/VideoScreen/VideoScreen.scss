@@ -1,0 +1,29 @@
+.video-screen {
+  padding-bottom: 18.3vh;
+  padding-top: 5.6vh;
+  &__header {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Geometria-Bold;
+    font-size: 6.45vh;
+    width: 423px;
+    color: #fff;
+    line-height: 1;
+    margin-right: 108px;
+  }
+
+  &__video {
+    display: inline-block;
+    vertical-align: middle;
+    width: 457px;
+    height: 245px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/export_mountain_v2/play_button.svg);
+    display: none;
+  }
+
+  &__button {
+    margin-top: 7.4vh;
+  }
+}

@@ -27,5 +27,22 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        console.log('ready')
+        var body = $("html, body");
+        setTimeout(function(){
+          body.scrollTop(0);
+        },100);
+        $('.footer__button').on('click',function(){
+         body.stop().animate({scrollTop:3000}, 2000, 'swing',function(){
+          body.stop().animate({scrollTop:3600}, 500, 'swing')
+         })
+        })
+      })
+    </script>
+
   </body>
 </html>

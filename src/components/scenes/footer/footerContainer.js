@@ -2,37 +2,32 @@ import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
-import { MountainContentPage } from './contents';
 import { StickyContainer, Sticky } from 'react-sticky';
+import { RearLayout } from './footer';
+import Plx from 'react-plx';
 
-class ContentsContainer extends React.Component {
+class FooterContainer extends React.Component {
   render() {
-    return (
-      <div className="scene fixedScene contentScene">
-        <div className="layot">
-          <MountainContentPage />
-        </div>
-      </div>
-    );
+    return <RearLayout />;
   }
 }
 
 const mapStateToProps = state => {
   return {
-    ///state
+    //state
   };
 };
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
-      ///
+      //
     },
     dispatch
   );
 
 const connectedContainer = connect(mapStateToProps, mapDispatchToProps)(
-  ContentsContainer
+  FooterContainer
 );
 
-export { connectedContainer as ContentsContainer };
+export { connectedContainer as FooterContainer };

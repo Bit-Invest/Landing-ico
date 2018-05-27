@@ -2,17 +2,21 @@ import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
-import { RearLayout } from './mountains';
-import { StickyContainer, Sticky } from 'react-sticky';
-import Plx from 'react-plx';
+import { Mountains } from './mountains/';
+import { Gradient } from './gradient_scene/';
+import { Header } from './header/';
+import { Footer } from './footer/';
+import { Content_c1 } from './';
 
-class MountainsContainer extends React.Component {
+class ListContainer extends React.Component {
   render() {
     return (
       <div>
-        <div className="scene" style={{ height: 18000 }}>
-          <RearLayout className="layot" />
-        </div>
+        <Header />
+        <Mountains />
+        <Gradient />
+        <Content_c1 />
+        <Footer />
       </div>
     );
   }
@@ -33,7 +37,7 @@ const mapDispatchToProps = dispatch =>
   );
 
 const connectedContainer = connect(mapStateToProps, mapDispatchToProps)(
-  MountainsContainer
+  ListContainer
 );
 
-export { connectedContainer as MountainsContainer };
+export { connectedContainer as ListContainer };

@@ -10,11 +10,10 @@
 .header__logo {
   background-repeat: no-repeat;
 }
-.containerContent,
-.contents,
-.menu__item,
-.scene {
-  position: relative;
+.containerBlocks,
+.footerContainer {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
 }
 .App__container {
   margin: 0 auto;
@@ -119,6 +118,9 @@
 .footer__social_linked-in {
   background-image: url(../assets/export_mountain_v2/LinkedIN__icon.svg);
 }
+.screen {
+  height: 100%;
+}
 .header {
   display: flex;
   -webkit-box-pack: justify;
@@ -187,6 +189,7 @@
   display: -ms-flexbox;
 }
 .menu__item {
+  position: relative;
   margin-left: 27px;
   font-size: 15px;
   line-height: 1.23;
@@ -200,9 +203,6 @@
   background-color: #6c5ed6;
   height: 5px;
   width: 26px;
-}
-.screen {
-  height: 100%;
 }
 .timer {
   display: flex;
@@ -269,16 +269,44 @@
   src: url(../assets/fonts/Geometria-ExtraLight.otf);
 }
 .contents {
+  position: relative;
   z-index: 3;
 }
-.containerContent {
+.containerBlocks {
   width: 1107px !important;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.containerContent {
   height: 100vh;
   z-index: 9;
+  position: relative;
+  padding-top: calc(128px + 5.8vh);
+}
+.contentScene {
+  z-index: 99;
+}
+.footerContainer,
+.headContainer {
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+}
+.footerContainer {
+  bottom: 55px;
+  transform: translateX(-50%);
+}
+.gradientScene {
+  background: rgba(34, 255, 24, 0.5);
+}
+.headContainer {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .scene {
   display: flex;
+  position: relative;
 }
 .scene .layot {
   position: -webkit-sticky;
@@ -297,7 +325,6 @@
 }
 .scene.fixedScene {
   position: fixed;
-  background: red;
 }
 .bgMountains {
   position: absolute;
@@ -352,7 +379,6 @@
   width: 535px;
 }
 .head-screen__header {
-  margin-top: 5.8vh;
   width: 500px;
   font-family: Geometria-Bold;
   font-size: 45px;
@@ -379,8 +405,8 @@
 }
 .head-screen__list-item-title,
 .head-screen__timer-title {
-  font-family: Geometria-Bold;
   font-size: 15px;
+  font-family: Geometria-Bold;
 }
 .head-screen__list-item:first-child {
   margin-top: 0;
@@ -412,4 +438,30 @@
 }
 .head-screen__doc-wrap:first-child {
   margin: 0;
+}
+.video-screen {
+  padding-bottom: 18.3vh;
+  padding-top: 5.6vh;
+}
+.video-screen__header {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: Geometria-Bold;
+  font-size: 6.45vh;
+  width: 423px;
+  color: #fff;
+  line-height: 1;
+  margin-right: 108px;
+}
+.video-screen__video {
+  vertical-align: middle;
+  width: 457px;
+  height: 245px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/export_mountain_v2/play_button.svg);
+  display: none;
+}
+.video-screen__button {
+  margin-top: 7.4vh;
 }

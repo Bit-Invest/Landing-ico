@@ -4,10 +4,19 @@
 	z-index: 3;
 }
 
-.containerContent{
+.containerBlocks{
 	width: 1107px!important;
-  margin: 0px auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.containerContent{
   height: 100vh;
   z-index: 9;
   position: relative;
+  padding-top: calc(128px + 5.8vh);
+}
+
+.contentScene{
+	z-index: 99;
 }
