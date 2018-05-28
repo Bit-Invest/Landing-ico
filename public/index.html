@@ -34,12 +34,14 @@
         console.log('ready')
         var body = $("html, body");
         setTimeout(function(){
-          body.scrollTop(0);
-        },100);
+          //body.stop().animate({scrollTop: 9100}, 200, 'swing',function(){})
+        },500);
+
+        var scrolls = [ 3600, 7100, 9100 ];
+        var i = 0;
+
         $('.footer__button').on('click',function(){
-         body.stop().animate({scrollTop:3000}, 2000, 'swing',function(){
-          body.stop().animate({scrollTop:3600}, 500, 'swing')
-         })
+         body.stop().animate({scrollTop: scrolls[i++]}, 2000, 'swing',function(){})
         })
       })
     </script>

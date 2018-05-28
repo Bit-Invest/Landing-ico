@@ -1,0 +1,25 @@
+
+.messages-prlx{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background: #6C5ED6;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 44px;
+  padding: 20px 40px 30px;
+  width: 400px;
+  font-family: Geometria-ExtraLight;
+  line-height: 21px;
+
+  &::after{
+  	content: '';
+  	position: absolute;
+  	right: 30px;
+  	bottom: -30px;
+
+  	border: 30px solid transparent;	border-right: 30px solid #6C5ED6;
+  }
+}
+

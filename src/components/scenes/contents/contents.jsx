@@ -2,6 +2,8 @@ import React from 'react';
 import Plx from "react-plx";
 import { HeadScreen } from '@screens/HeadScreen';
 import { VideoScreen } from '@screens/VideoScreen';
+import { LaptopScreen } from '@screens/LaptopScreen';
+import { TitleScreen } from '@screens/TitleScreen';
 
 class RearDt {
   constructor(props) {
@@ -9,12 +11,34 @@ class RearDt {
       ...props,
       ParallaxData:[
       	{
-          start: 3100,
-          end:  3500,
+          start: 100,
+          end:  1000,
           properties: [
           	{
               startValue: 0,
               endValue: -100,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 7000,
+          end:  7100,
+          properties: [
+            {
+              startValue: -100,
+              endValue: -200,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 9000,
+          end:  9100,
+          properties: [
+            {
+              startValue: -200,
+              endValue: -300,
               property: "translateY"
             }
           ]
@@ -135,8 +159,21 @@ export class MountainContentPage extends React.Component {
     			<Plx parallaxData={ParallaxData2}>
   					<div className="containerContent containerBlocks">
     				  <VideoScreen />
-    				</div>
+            </div>
     			</Plx>
+          <div className="containerContent containerBlocks">
+            <TitleScreen 
+              header="So what`s the main issues do we manage:"
+              title="CINDX is a one-stop solution for easy, secure and effcient crypto-assets trading"
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <LaptopScreen
+              header="Feature 1" 
+              title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus congue gravida. Sed non feugiat velit, sit amet suscipit metus."
+              description="Pellentesque rutrum condimentum felis, sed imperdiet lectus bibendum id. Suspendisse lobortis enim justo"
+            />
+          </div>
       	</Plx>
   		</div>
     );

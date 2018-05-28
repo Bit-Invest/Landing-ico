@@ -12,16 +12,15 @@ class GradientContainer extends React.Component {
       <Plx
         className="scene fixedScene gradientScene"
         style={{ zIndex: 99 }}
-        parallaxData={prlxLeftScene}>
-        XXX
-      </Plx>
+        parallaxData={prlxLeftScene}
+      />
     );
   }
 }
 
 const mapStateToProps = state => {
   return {
-    //state
+    mountain: state.counter.mountain
   };
 };
 

@@ -1,0 +1,48 @@
+.laptop-screen {
+
+  &__header {
+    font-family: Geometria-Bold;
+    font-size: 6.45vh;
+    color: #fff;
+    line-height: 1;
+  }
+
+  &__laptop {
+    margin-right: 40px;
+    width: 300px;
+    height: 170px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../assets/export_mountain_v2/laptop.svg);
+  }
+
+  &__content-wrap {
+    display: flex;
+    margin-top: 7vh;
+  }
+
+  &__content {
+    width: 400px;
+  }
+
+  &__title {
+    font-family: Geometria-Bold;
+    font-size: 2.3vh;
+    color: #fff;
+    line-height: 1;
+    margin-right: 108px;
+  }
+
+  &__button-wrap {
+    margin-top: 4vh;
+    // width: max-content;
+  }
+
+  &__description {
+    margin-top: 1.9vh;
+    font-family: Geometria;
+    font-size: 2.3vh;
+    color: #fff;
+    line-height: 1;
+  }
+}

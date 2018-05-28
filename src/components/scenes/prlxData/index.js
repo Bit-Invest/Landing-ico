@@ -1,1 +1,1 @@
-export { prlxLeftScene } from './scene_left';
+export { prlxLeftScene, messagePrlx1 } from './scene_left';

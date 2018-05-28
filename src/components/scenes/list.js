@@ -7,6 +7,7 @@ import { Gradient } from './gradient_scene/';
 import { Header } from './header/';
 import { Footer } from './footer/';
 import { Content_c1 } from './';
+import { Messages } from '@common/Message';
 
 class ListContainer extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class ListContainer extends React.Component {
       <div>
         <Header />
         <Mountains />
+        <Messages />
         <Gradient />
         <Content_c1 />
         <Footer />

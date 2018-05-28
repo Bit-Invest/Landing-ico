@@ -2,6 +2,10 @@ import React from 'react';
 import imageMouns from '@assets/export_mountain_v2/mountain_new2.svg';
 import imageFunicular from '@assets/export_mountain_v2/kabinka_2.svg';
 import Plx from "react-plx";
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { push } from 'react-router-redux';
+import { set_wh_mountain } from '@modules/counter';
 
 class RearDt {
   constructor(props) {
@@ -85,7 +89,23 @@ class RearDt {
               property: "translateY"
             }
           ]
-        }
+        },
+        {
+          start: 7000,
+          end:  7010,
+          properties: [
+            {
+              startValue: -14,
+              endValue: -29,
+              property: "translateX"
+            },
+            {
+              startValue: 5,
+              endValue: 10,
+              property: "translateY"
+            },
+          ]
+        },
       ],
       ParallaxData2: [
         {
@@ -142,12 +162,12 @@ class RearDt {
           properties: [
             {
               startValue: -3.0,
-              endValue: 4.1,
+              endValue: 10.2,
               property: "translateX"
             },
             {
               startValue: -3.5,
-              endValue: -7.6,
+              endValue: -13.7,
               property: "translateY"
             },
           ]
@@ -170,6 +190,8 @@ class RearDt {
   }
 
   sizes = () => {
+    window.innerWidth = 1650;
+
     let wh = window.innerWidth > window.innerHeight;
     let pr = 2.24184553931084;
 
@@ -180,7 +202,7 @@ class RearDt {
   }
 };
 
-export class RearLayout extends React.Component {
+class RearLayout extends React.Component {
   constructor(props) {
     super(props);
 
@@ -213,11 +235,24 @@ export class RearLayout extends React.Component {
   stateSizes = () => {
     const { RearCons, prToPixel } = this;
     const { ParallaxData1, ParallaxData2, ParallaxFilter } = RearCons;
+    const { set_wh_mountain } = this.props;
 
     RearCons.bgMounimage((args) => {
       this.setState({
         w: args.width,
         h: args.height
+      })
+
+      set_wh_mountain({
+        w: args.width,
+        h: args.height
+      })
+
+      console.log('width of funicular', args.width)
+      console.log('height of funicular', args.height)
+      console.log('l & b', {
+        left: (args.width/100) * 29.95,
+        bottom: (args.height/100) * 8.2, 
       })
 
       prToPixel(
@@ -278,9 +313,9 @@ export class RearLayout extends React.Component {
             }} />
           </Plx>
           <Plx parallaxData={ParallaxData2} className="funicular" style={{
-              left: (w/100) * 29.95,
-              bottom: (h/100) * 8.2, //(((w/100) * 2)*(1.121626831148805))
-            }}>
+            left: (w/100) * 29.95,
+            bottom: (h/100) * 8.2, //(((w/100) * 2)*(1.121626831148805))
+          }}>
             <img src={imageFunicular} className="funicular-img" width={(w/100) * 2} height={((h/100) * 6)} />
           </Plx>
         </React.Fragment>
@@ -288,3 +323,23 @@ export class RearLayout extends React.Component {
     );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    state
+  };
+};
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(
+    {
+      set_wh_mountain
+    },
+    dispatch
+  );
+
+const connectedContainer = connect(mapStateToProps, mapDispatchToProps)(
+  RearLayout
+);
+
+export { connectedContainer as RearLayout };
