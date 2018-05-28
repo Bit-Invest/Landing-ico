@@ -15,8 +15,8 @@ export const prlxLeftScene = [
     ]
   },
   {
-    start: 6000,
-    end: 7000,
+    start: 300,
+    end: 400,
     properties: [
       {
         startValue: -100,
@@ -26,12 +26,23 @@ export const prlxLeftScene = [
     ]
   },
   {
-    start: 8000,
-    end: 9000,
+    start: 400,
+    end: 500,
     properties: [
       {
         startValue: 100,
         endValue: 65,
+        property: 'width'
+      }
+    ]
+  },
+  {
+    start: 700,
+    end: 800,
+    properties: [
+      {
+        startValue: 65,
+        endValue: 100,
         property: 'width'
       }
     ]
@@ -40,18 +51,89 @@ export const prlxLeftScene = [
 
 export const messagePrlx1 = [
   {
-    start: 7000,
-    end: 7010,
+    start: 500,
+    end: 600,
     properties: [
       {
-        startValue: 0,
+        startValue: 10.2,
         endValue: 10.2,
         property: 'translateX'
       },
       {
-        startValue: 0,
+        startValue: -13.7,
         endValue: -13.7,
         property: 'translateY'
+      }
+    ]
+  },
+  {
+    start: 500,
+    end: 600,
+    properties: [
+      {
+        startValue: 1,
+        endValue: 0,
+        property: 'opacityFilter'
+      }
+    ]
+  }
+];
+
+export const messagePrlx2 = [
+  {
+    start: 600,
+    end: 700,
+    properties: [
+      {
+        startValue: 10.2,
+        endValue: 10.2,
+        property: 'translateX'
+      },
+      {
+        startValue: -13.7,
+        endValue: -13.7,
+        property: 'translateY'
+      }
+    ]
+  },
+  {
+    start: 600,
+    end: 700,
+    properties: [
+      {
+        startValue: 1,
+        endValue: 0,
+        property: 'opacityFilter'
+      }
+    ]
+  }
+];
+
+export const messagePrlx3 = [
+  {
+    start: 700,
+    end: 800,
+    properties: [
+      {
+        startValue: 10.2,
+        endValue: 10.2,
+        property: 'translateX'
+      },
+      {
+        startValue: -13.7,
+        endValue: -13.7,
+        property: 'translateY'
+      }
+    ]
+  },
+  {
+    start: 700,
+    end: 800,
+    properties: [
+      {
+        startValue: 1,
+        endValue: 0,
+        property: 'opacityFilter'
       }
     ]
   }

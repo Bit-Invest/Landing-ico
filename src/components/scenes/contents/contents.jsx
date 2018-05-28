@@ -4,6 +4,7 @@ import { HeadScreen } from '@screens/HeadScreen';
 import { VideoScreen } from '@screens/VideoScreen';
 import { LaptopScreen } from '@screens/LaptopScreen';
 import { TitleScreen } from '@screens/TitleScreen';
+import { HowDoesItScreen } from '@screens/HowDoesItScreen';
 
 class RearDt {
   constructor(props) {
@@ -11,8 +12,8 @@ class RearDt {
       ...props,
       ParallaxData:[
       	{
-          start: 100,
-          end:  1000,
+          start: 0,
+          end:  300,
           properties: [
           	{
               startValue: 0,
@@ -22,8 +23,8 @@ class RearDt {
           ]
         },
         {
-          start: 7000,
-          end:  7100,
+          start: 300,
+          end:  400,
           properties: [
             {
               startValue: -100,
@@ -33,8 +34,8 @@ class RearDt {
           ]
         },
         {
-          start: 9000,
-          end:  9100,
+          start: 400,
+          end:  500,
           properties: [
             {
               startValue: -200,
@@ -43,8 +44,41 @@ class RearDt {
             }
           ]
         },
+        {
+          start: 500,
+          end:  600,
+          properties: [
+            {
+              startValue: -300,
+              endValue: -400,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 600,
+          end:  700,
+          properties: [
+            {
+              startValue: -400,
+              endValue: -500,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 700,
+          end:  800,
+          properties: [
+            {
+              startValue: -500,
+              endValue: -600,
+              property: "translateY"
+            }
+          ]
+        },
       ],
-      ParallaxData1:[
+      /*ParallaxData1:[
       	{
           start: 3100,
           end:  3200,
@@ -83,7 +117,7 @@ class RearDt {
             }
           ]
         },
-      ],
+      ],*/
     })
   }
 };
@@ -173,6 +207,23 @@ export class MountainContentPage extends React.Component {
               title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus congue gravida. Sed non feugiat velit, sit amet suscipit metus."
               description="Pellentesque rutrum condimentum felis, sed imperdiet lectus bibendum id. Suspendisse lobortis enim justo"
             />
+          </div>
+          <div className="containerContent containerBlocks">
+            <LaptopScreen
+              header="Feature 2" 
+              title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus congue gravida. Sed non feugiat velit, sit amet suscipit metus."
+              description="Pellentesque rutrum condimentum felis, sed imperdiet lectus bibendum id. Suspendisse lobortis enim justo"
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <LaptopScreen
+              header="Feature 3" 
+              title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus congue gravida. Sed non feugiat velit, sit amet suscipit metus."
+              description="Pellentesque rutrum condimentum felis, sed imperdiet lectus bibendum id. Suspendisse lobortis enim justo"
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <HowDoesItScreen />
           </div>
       	</Plx>
   		</div>

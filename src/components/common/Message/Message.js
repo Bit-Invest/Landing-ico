@@ -31,7 +31,7 @@ class Message extends React.Component {
         className="messages-prlx"
         parallaxData={prlxData}
         style={{
-          left: w / 100 * 29.95 - 400,
+          left: w / 100 * 29.95 - 400 + global.WIDTH / 100 * global.LEFT,
           bottom: h / 100 * 8.2 + h / 100 * 6 //(((w/100) * 2)*(1.121626831148805))
 
           // width={(w/100) * 2} height={((h/100) * 6)}

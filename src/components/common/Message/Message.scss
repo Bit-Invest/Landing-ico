@@ -13,6 +13,8 @@
   font-family: Geometria-ExtraLight;
   line-height: 21px;
 
+  transform: translateX(calc(400%));
+
   &::after{
   	content: '';
   	position: absolute;

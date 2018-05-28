@@ -15,7 +15,7 @@ class RearDt {
       ParallaxFilter: [
         {
           start: 0,
-          end:  2000,
+          end:  300,
           properties: [
             {
               startValue: 0,
@@ -29,7 +29,7 @@ class RearDt {
       ParallaxUpperBg: [
         {
           start: 0,
-          end:  2000,
+          end:  300,
           properties: [
             {
               nopx: false,
@@ -44,7 +44,7 @@ class RearDt {
       ParallaxData1: [
         {
           start: 0,
-          end:  1000,
+          end:  100,
           properties: [
             {
               startValue: 0,
@@ -59,8 +59,8 @@ class RearDt {
           ]
         },
         {
-          start: 1000,
-          end:  2000,
+          start: 100,
+          end:  200,
           properties: [
             {
               startValue: -4.6,
@@ -75,8 +75,8 @@ class RearDt {
           ]
         },
         {
-          start: 2000,
-          end:  3000,
+          start: 200,
+          end:  300,
           properties: [
             {
               startValue: -9.3,
@@ -91,8 +91,8 @@ class RearDt {
           ]
         },
         {
-          start: 7000,
-          end:  7010,
+          start: 400,
+          end:  500,
           properties: [
             {
               startValue: -14,
@@ -110,7 +110,7 @@ class RearDt {
       ParallaxData2: [
         {
           start: 0,
-          end:  1000,
+          end:  100,
           properties: [
             {
               startValue: 0,
@@ -125,8 +125,8 @@ class RearDt {
           ]
         },
         {
-          start: 1000,
-          end:  2000,
+          start: 100,
+          end:  200,
           properties: [
             {
               startValue: -1.3,
@@ -141,8 +141,8 @@ class RearDt {
           ]
         },
         {
-          start: 2000,
-          end:  3000,
+          start: 200,
+          end:  300,
           properties: [
             {
               startValue: -0.8,
@@ -157,8 +157,8 @@ class RearDt {
           ]
         },
         {
-          start: 7000,
-          end:  7010,
+          start: 400,
+          end:  500,
           properties: [
             {
               startValue: -3.0,
@@ -190,14 +190,12 @@ class RearDt {
   }
 
   sizes = () => {
-    window.innerWidth = 1650;
-
-    let wh = window.innerWidth > window.innerHeight;
+    let wh = global.WIDTH > global.HEIGHT;
     let pr = 2.24184553931084;
 
     return {
-      width: wh ? window.innerWidth * 2 : (window.innerHeight * 2) * pr,
-      height: wh ? (window.innerWidth * 2) / pr : window.innerHeight * 2 
+      width: wh ? global.WIDTH * 2 : (global.HEIGHT * 2) * pr,
+      height: wh ? (global.WIDTH * 2) / pr : global.HEIGHT * 2 
     }
   }
 };
@@ -272,7 +270,7 @@ class RearLayout extends React.Component {
       prToPixel(
         ['i','properties','i'],
         ParallaxFilter,
-        window.innerHeight,
+        global.HEIGHT,
         ['startValue','endValue']
       );
     })
@@ -309,12 +307,13 @@ class RearLayout extends React.Component {
             <img src={imageMouns} className="bgMountains-img" style={{
               width: w,
               height: h,
-              bottom: -(h/100) * 10
+              bottom: -(h/100) * 10,
+              left: ((global.WIDTH/100) * 20) + ((global.WIDTH/100)*global.LEFT)
             }} />
           </Plx>
           <Plx parallaxData={ParallaxData2} className="funicular" style={{
-            left: (w/100) * 29.95,
-            bottom: (h/100) * 8.2, //(((w/100) * 2)*(1.121626831148805))
+            left: ((w/100) * 29.95) + ((global.WIDTH/100)*global.LEFT),
+            bottom: (h/100) * 8.2
           }}>
             <img src={imageFunicular} className="funicular-img" width={(w/100) * 2} height={((h/100) * 6)} />
           </Plx>
