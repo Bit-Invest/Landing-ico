@@ -5,6 +5,7 @@ import { VideoScreen } from '@screens/VideoScreen';
 import { LaptopScreen } from '@screens/LaptopScreen';
 import { TitleScreen } from '@screens/TitleScreen';
 import { HowDoesItScreen } from '@screens/HowDoesItScreen';
+import { JoinPresaleScreen } from '@screens/JoinPresaleScreen';
 
 class RearDt {
   constructor(props) {
@@ -137,7 +138,7 @@ export class MountainContentPage extends React.Component {
     			</Plx>
     			<Plx parallaxData={ParallaxData2}>
   					<div className="containerContent">
-              <HowDoesItScreen />
+              <JoinPresaleScreen />
     				</div>
     			</Plx>
       	</Plx>
