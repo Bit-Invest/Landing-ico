@@ -3,7 +3,7 @@ import { Screen } from '@common/Screen';
 
 const ROOT_CLASS = 'title-screen';
 
-export const TitleScreen = () => (
+export const TitleScreen = props => (
   <Screen currentItem={0}>
     <div className={ROOT_CLASS}>
       <div className={`${ROOT_CLASS}__header`}>{props.header}</div>
