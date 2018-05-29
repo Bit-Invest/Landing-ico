@@ -25,18 +25,30 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+
+	will-change: transform;
 	.bgMountains-img{
 		position: absolute;
 		bottom: 0%;
 		left: 0%;
+
+		will-change: transform;
 	}
 }
 
-.funicular{
+.funicular,
+.guy{
 	position: absolute;
 	bottom: 0;
   left: 0;
   z-index: 2;
+
+  will-change: transform;
+}
+
+.guy {
+	opacity: 0;
+	animation: guyAnimate 6s;
 }
 
 .filterBg{
@@ -60,4 +72,18 @@
 	background: rgba(0,0,0,.4);
 	z-index: 2;
 	pointer-events: none;
+}
+
+@keyframes guyAnimate {
+  0% { 
+  	opacity: 1;
+  	transform: translate(0px);
+  }
+  50% {
+  	opacity: 1;
+  }
+  100% { 
+  	opacity: 0;
+  	transform: translate(250px) translateY(-50px);
+  }
 }

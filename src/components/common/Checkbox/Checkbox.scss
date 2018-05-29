@@ -1,0 +1,36 @@
+.checkbox {
+  display: flex;
+  cursor: pointer;
+  width: max-content;
+  
+  &__circle {
+    margin-right: 36px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    align-self: center;
+  }
+
+  &__circle-fill {
+    display: none;
+    margin: 6px auto 0 auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #fff;
+  }
+
+  &__title {
+    font-size: 17px;
+    font-family: Geometria-Light;
+    width: 234px;
+    color: #fff;
+  }
+
+  &_active {
+    .checkbox__circle-fill {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+/*** Base ***/
+body {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#2e1d68),
+    to(#8d2d5e)
+  );
+  background: -webkit-linear-gradient(top, #2e1d68, #8d2d5e);
+  background: -o-linear-gradient(top, #2e1d68, #8d2d5e);
+  background: linear-gradient(180deg, #2e1d68, #8d2d5e);
+  background-attachment: fixed;
+  color: white;
+}
+
+.app {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*** Top side ***/
+.top-side {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.top-side h1 {
+  font: 109px Geometria-Bold;
+  max-width: 500px;
+  margin: 0;
+}
+
+.top-side .aircraft {
+  width: 450px;
+  height: 100px;
+  background: url(../images/aircraft.svg);
+  background-repeat: no-repeat;
+}
+
+/*** Bottom side ***/
+.bottom-side {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.bottom-side button {
+  border: 1px solid white;
+  background: none;
+  outline: none;
+  border-radius: 33px;
+  padding: 16px 36.5px;
+  color: white;
+  text-transform: uppercase;
+  font: 11.2px Geometria-Bold;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.bottom-side button:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#6c5ed6),
+    to(#f287b7)
+  );
+  background: -webkit-linear-gradient(left, #6c5ed6, #f287b7);
+  background: -o-linear-gradient(left, #6c5ed6, #f287b7);
+  background: linear-gradient(90deg, #6c5ed6, #f287b7);
+  border-color: transparent;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font: 17px Geometria-Bold;
+}

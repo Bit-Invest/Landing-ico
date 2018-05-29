@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  height: 100%;
+}

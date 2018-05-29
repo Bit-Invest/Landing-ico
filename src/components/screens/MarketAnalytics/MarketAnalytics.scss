@@ -1,0 +1,28 @@
+.market-analytics {
+  padding-top: 11.75vh;
+  padding-bottom: 13.43vh;
+
+  &__header {
+    font-size: 7.87vh;
+    color: #fff;
+    font-family: Geometria-Bold;
+    width: 400px;
+    line-height: 1.2;
+  }
+
+  %text {
+    width: 500px;
+    font-size: 1.57vh;
+    font-family: Geometria-ExtraLight;
+    line-height: 1.2;
+    color: #fff;
+  }
+  &__text1 {
+    @extend %text;
+    margin-top: 11.2vh;
+  }
+  &__text2 {
+    @extend %text;
+    margin-top: 3.33vh;
+  }
+}

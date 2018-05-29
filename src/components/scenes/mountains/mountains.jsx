@@ -1,11 +1,12 @@
 import React from 'react';
 import imageMouns from '@assets/export_mountain_v2/mountain_new2.svg';
 import imageFunicular from '@assets/export_mountain_v2/kabinka_2.svg';
+import Guy from '@assets/gifs/Guy.gif';
 import Plx from "react-plx";
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
-import { set_wh_mountain } from '@modules/counter';
+import { set_wh_mountain } from '../../../modules/counter';
 
 class RearDt {
   constructor(props) {
@@ -316,6 +317,12 @@ class RearLayout extends React.Component {
             bottom: (h/100) * 8.2
           }}>
             <img src={imageFunicular} className="funicular-img" width={(w/100) * 2} height={((h/100) * 6)} />
+          </Plx>
+          <Plx parallaxData={[]} className="guy" style={{
+            left: ((w/100) * 19.95) + ((global.WIDTH/100)*global.LEFT),
+            bottom: (h/100) * 0
+          }}>
+            <img src={Guy} className="guy-img" width={(w/100) * 2} height={((h/100) * 6)} />
           </Plx>
         </React.Fragment>
       </div>    

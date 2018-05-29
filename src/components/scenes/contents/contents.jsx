@@ -5,6 +5,16 @@ import { VideoScreen } from '@screens/VideoScreen';
 import { LaptopScreen } from '@screens/LaptopScreen';
 import { TitleScreen } from '@screens/TitleScreen';
 import { HowDoesItScreen } from '@screens/HowDoesItScreen';
+import { JoinPresaleScreen } from '@screens/JoinPresaleScreen';
+import { TextOne } from '@screens/TextOne';
+import { MarketAnalytics } from '@screens/MarketAnalytics';
+import { RiseOfCapital } from '@screens/RiseOfCapital';
+import { KeyDocs } from '@screens/KeyDocs';
+import { Geographic } from '@screens/Geographic';
+
+import Graph_01 from '@assets/export_mountain_v2/Graph_01.svg';
+import Graph_02 from '@assets/export_mountain_v2/Graph_02.svg';
+import Graph_03 from '@assets/export_mountain_v2/Graph_03.svg';
 
 class RearDt {
   constructor(props) {
@@ -73,6 +83,149 @@ class RearDt {
             {
               startValue: -500,
               endValue: -600,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 800,
+          end:  900,
+          properties: [
+            {
+              startValue: -600,
+              endValue: -700,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 900,
+          end:  1000,
+          properties: [
+            {
+              startValue: -700,
+              endValue: -800,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 1000,
+          end:  1100,
+          properties: [
+            {
+              startValue: -800,
+              endValue: -900,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 1100,
+          end:  1200,
+          properties: [
+            {
+              startValue: -900,
+              endValue: -1000,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 1200,
+          end:  1300,
+          properties: [
+            {
+              startValue: -1000,
+              endValue: -1100,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 1300,
+          end:  1400,
+          properties: [
+            {
+              startValue: -1100,
+              endValue: -1200,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 1400,
+          end:  1500,
+          properties: [
+            {
+              startValue: -1200,
+              endValue: -1300,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 1500,
+          end:  1600,
+          properties: [
+            {
+              startValue: -1300,
+              endValue: -1400,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 1600,
+          end:  1700,
+          properties: [
+            {
+              startValue: -1400,
+              endValue: -1500,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 1700,
+          end:  1800,
+          properties: [
+            {
+              startValue: -1500,
+              endValue: -1600,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 1800,
+          end:  1900,
+          properties: [
+            {
+              startValue: -1600,
+              endValue: -1700,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 2000,
+          end:  2100,
+          properties: [
+            {
+              startValue: -1700,
+              endValue: -1800,
+              property: "translateY"
+            }
+          ]
+        },
+        {
+          start: 2100,
+          end:  2200,
+          properties: [
+            {
+              startValue: -1800,
+              endValue: -1900,
               property: "translateY"
             }
           ]
@@ -204,26 +357,88 @@ export class MountainContentPage extends React.Component {
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 1" 
-              title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus congue gravida. Sed non feugiat velit, sit amet suscipit metus."
-              description="Pellentesque rutrum condimentum felis, sed imperdiet lectus bibendum id. Suspendisse lobortis enim justo"
+              title="Via Cindex you can do both the best. Thanks to the rating system."
+              description="We provide the pull of traders and their rating us formed according to the history of trading through terminal on our platform."
             />
           </div>
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 2" 
-              title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus congue gravida. Sed non feugiat velit, sit amet suscipit metus."
-              description="Pellentesque rutrum condimentum felis, sed imperdiet lectus bibendum id. Suspendisse lobortis enim justo"
+              title="Here all your crypto assets to manage are kept in your wallet all the time"
+              description="Decentralisation and smart contracts allow to manage cryptocurrencies on other wallets with no necessity to transfer any funds to trader"
             />
           </div>
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 3" 
-              title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus congue gravida. Sed non feugiat velit, sit amet suscipit metus."
-              description="Pellentesque rutrum condimentum felis, sed imperdiet lectus bibendum id. Suspendisse lobortis enim justo"
+              title="You earn on a professional trading of the best crypto traders"
+              description="Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market"
             />
           </div>
           <div className="containerContent containerBlocks">
             <HowDoesItScreen />
+          </div>
+          <div className="containerContent containerBlocks">
+            <TextOne 
+              text1="Investor"
+              text2="increases his crypto capital by the efficient management of his assets by a professional trader"
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <TextOne 
+              text1="Trader"
+              text2="earns his success fees building a pull of investors on the deep understanding of the market and trade strategy"
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <TextOne 
+              text1="Vendor"
+              text2="sells advanced tools for traders e.g. trade robots and news feeds"
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <TextOne 
+              text1="CINDX"
+              text2="earnes on success fees commission and subscription for terminal"
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <MarketAnalytics 
+              header="Market Analytics"
+              text1="The traditional trust management market. Since 2000 the global trust management market has grown by over 250%. This is a result of constant improvements in market tools and the general development of market structuring"
+              text2="Despite the explosive growth of the cryptocurrency market in 2017, the industry is still in its infancy. The market capitalisation was $600 billion at the end of 2017, which is still only 1% of the trust management industry"
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <RiseOfCapital 
+              title="Global Aum"
+              title2="$ Trillions"
+              imageSrc={Graph_03}
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <RiseOfCapital 
+              title="Investment"
+              imageSrc={Graph_02}
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <RiseOfCapital 
+              title="Rise of crypto capital"
+              imageSrc={Graph_01}
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <Geographic />
+          </div>
+          <div className="containerContent containerBlocks">
+            <KeyDocs 
+              text1="CINDX"
+              text2="earnes on success fees commission and subscription for terminal"
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <JoinPresaleScreen />
           </div>
       	</Plx>
   		</div>
