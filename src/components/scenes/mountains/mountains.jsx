@@ -45,7 +45,7 @@ class RearDt {
       ParallaxData1: [
         {
           start: 0,
-          end:  100,
+          end:  1000,
           properties: [
             {
               startValue: 0,
@@ -60,8 +60,8 @@ class RearDt {
           ]
         },
         {
-          start: 100,
-          end:  200,
+          start: 1000,
+          end:  2000,
           properties: [
             {
               startValue: -4.6,
@@ -76,8 +76,8 @@ class RearDt {
           ]
         },
         {
-          start: 200,
-          end:  300,
+          start: 2000,
+          end:  3000,
           properties: [
             {
               startValue: -9.3,
@@ -92,8 +92,8 @@ class RearDt {
           ]
         },
         {
-          start: 400,
-          end:  500,
+          start: 4000,
+          end:  5000,
           properties: [
             {
               startValue: -14,
@@ -111,7 +111,7 @@ class RearDt {
       ParallaxData2: [
         {
           start: 0,
-          end:  100,
+          end:  1000,
           properties: [
             {
               startValue: 0,
@@ -126,8 +126,8 @@ class RearDt {
           ]
         },
         {
-          start: 100,
-          end:  200,
+          start: 1000,
+          end:  2000,
           properties: [
             {
               startValue: -1.3,
@@ -142,8 +142,8 @@ class RearDt {
           ]
         },
         {
-          start: 200,
-          end:  300,
+          start: 2000,
+          end:  3000,
           properties: [
             {
               startValue: -0.8,
@@ -158,8 +158,8 @@ class RearDt {
           ]
         },
         {
-          start: 400,
-          end:  500,
+          start: 4000,
+          end:  5000,
           properties: [
             {
               startValue: -3.0,
@@ -225,14 +225,20 @@ class RearLayout extends React.Component {
     window.addEventListener("resize", updateDimensions);
   }
 
+  componentDidMount() {
+    const { loadCanvasSvg } = this;
+
+    //loadCanvasSvg();
+  }
+
   updateDimensions = () => {
     const { stateSizes } = this;
 
-    stateSizes();
+    //stateSizes();
   }
 
   stateSizes = () => {
-    const { RearCons, prToPixel } = this;
+    const { RearCons, prToPixel, loadCanvasSvg } = this;
     const { ParallaxData1, ParallaxData2, ParallaxFilter } = RearCons;
     const { set_wh_mountain } = this.props;
 
@@ -247,12 +253,7 @@ class RearLayout extends React.Component {
         h: args.height
       })
 
-      console.log('width of funicular', args.width)
-      console.log('height of funicular', args.height)
-      console.log('l & b', {
-        left: (args.width/100) * 29.95,
-        bottom: (args.height/100) * 8.2, 
-      })
+      loadCanvasSvg();
 
       prToPixel(
         ['i','properties','i'],
@@ -290,6 +291,17 @@ class RearLayout extends React.Component {
     return arr;
   }
 
+  loadCanvasSvg = () => {
+    const { w, h, } = this.state;
+    const ctx = this.canvasMoun.getContext('2d');
+
+    const image = new window.Image();
+    image.src = imageMouns;
+    image.onload = () => {
+      ctx.drawImage(image, 0, 0, w, h);
+    };
+  }
+
   render() {
     const { className, RearCons } = this;
     const { ParallaxData1, ParallaxData2, ParallaxFilter, ParallaxUpperBg } = RearCons;
@@ -305,12 +317,23 @@ class RearLayout extends React.Component {
         <Plx parallaxData={ParallaxUpperBg} className="upperBg"></Plx>
         <React.Fragment>
           <Plx parallaxData={ParallaxData1} className="bgMountains">
-            <img src={imageMouns} className="bgMountains-img" style={{
+            <canvas 
+              ref={(c) => this.canvasMoun = c}
+              className="bgMountains-img"
+              width={w}
+              height={h}
+              style={{
+                bottom: -(h/100) * 10,
+                left: ((global.WIDTH/100) * 20) + ((global.WIDTH/100)*global.LEFT)
+              }}>
+            </canvas>
+
+            {/*<img src={imageMouns} className="bgMountains-img" style={{
               width: w,
               height: h,
               bottom: -(h/100) * 10,
               left: ((global.WIDTH/100) * 20) + ((global.WIDTH/100)*global.LEFT)
-            }} />
+            }} />*/}
           </Plx>
           <Plx parallaxData={ParallaxData2} className="funicular" style={{
             left: ((w/100) * 29.95) + ((global.WIDTH/100)*global.LEFT),
