@@ -9,10 +9,8 @@ import Plx from 'react-plx';
 class MountainsContainer extends React.Component {
   render() {
     return (
-      <div>
-        <div className="scene" style={{ height: 18000 }}>
-          <RearLayout className="layot" />
-        </div>
+      <div className="scene">
+        <RearLayout className="layot" />
       </div>
     );
   }

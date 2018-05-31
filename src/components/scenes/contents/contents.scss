@@ -5,7 +5,9 @@
 }
 
 .containerBlocks{
-	width: 1107px!important;
+	width: 80%!important;
+  max-width: 1440px;
+  min-width: 1000px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -19,4 +21,16 @@
 
 .contentScene{
 	z-index: 99;
+}
+
+.sceneCnt{
+  display: flex;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  .layot {
+    top: 0;
+    width: 100%;
+  }
 }

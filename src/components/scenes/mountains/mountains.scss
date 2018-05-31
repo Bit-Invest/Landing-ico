@@ -2,6 +2,12 @@
 .scene {
 	display: flex;
 	position: relative;
+
+	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+
 	.layot {
 		position: sticky;
 		top: 0;

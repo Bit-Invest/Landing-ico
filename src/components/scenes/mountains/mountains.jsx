@@ -46,6 +46,8 @@ class RearDt {
         {
           start: 0,
           end:  1000,
+          ratio: 3,
+          ratioHeight: global.HEIGHT,
           properties: [
             {
               startValue: 0,
@@ -62,6 +64,8 @@ class RearDt {
         {
           start: 1000,
           end:  2000,
+          ratio: 3,
+          ratioHeight: global.HEIGHT,
           properties: [
             {
               startValue: -4.6,
@@ -78,6 +82,8 @@ class RearDt {
         {
           start: 2000,
           end:  3000,
+          ratio: 3,
+          ratioHeight: global.HEIGHT,
           properties: [
             {
               startValue: -9.3,
@@ -92,8 +98,9 @@ class RearDt {
           ]
         },
         {
-          start: 4000,
-          end:  5000,
+          start: 2000,
+          end:  3000,
+          ratioHeight: global.HEIGHT,
           properties: [
             {
               startValue: -14,
@@ -112,6 +119,8 @@ class RearDt {
         {
           start: 0,
           end:  1000,
+          ratio: 3,
+          ratioHeight: global.HEIGHT,
           properties: [
             {
               startValue: 0,
@@ -128,6 +137,8 @@ class RearDt {
         {
           start: 1000,
           end:  2000,
+          ratio: 3,
+          ratioHeight: global.HEIGHT,
           properties: [
             {
               startValue: -1.3,
@@ -144,6 +155,8 @@ class RearDt {
         {
           start: 2000,
           end:  3000,
+          ratio: 3,
+          ratioHeight: global.HEIGHT,
           properties: [
             {
               startValue: -0.8,
@@ -158,8 +171,9 @@ class RearDt {
           ]
         },
         {
-          start: 4000,
-          end:  5000,
+          start: 2000,
+          end:  3000,
+          ratioHeight: global.HEIGHT,
           properties: [
             {
               startValue: -3.0,
@@ -280,6 +294,20 @@ class RearLayout extends React.Component {
 
   prToPixel = (path,arr,full,keys) => {
     for(let q in arr){
+
+
+      if(arr[q].ratioHeight){
+        //console.log('ratioHeight', arr[q].start)
+        arr[q].start = (arr[q].start/1000) * arr[q].ratioHeight;
+        arr[q].end = (arr[q].end/1000) * arr[q].ratioHeight;
+        //console.log('ratioHeight END', arr[q].start)
+      }
+
+      if(arr[q].ratio){
+        arr[q].start /= arr[q].ratio;
+        arr[q].end /= arr[q].ratio;
+      }
+      
       for(let w in arr[q].properties){
         if(!arr[q].properties[w].nopx){
           arr[q].properties[w].startValue *= (full / 100);

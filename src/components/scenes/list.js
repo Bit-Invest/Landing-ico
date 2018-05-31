@@ -15,10 +15,14 @@ class ListContainer extends React.Component {
       <div>
         <Header />
         <Mountains />
-        <Messages />
         <Gradient />
+        <Messages />
         <Content_c1 />
         <Footer />
+        {/*
+          <Messages />
+          <Gradient />
+        */}
       </div>
     );
   }

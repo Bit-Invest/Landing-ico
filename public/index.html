@@ -37,11 +37,11 @@
           //body.stop().animate({scrollTop: 9100}, 200, 'swing',function(){})
         },500);
 
-        var scrolls = [ 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400, 2500 ];
         var i = 0;
 
         $('.footer__button').on('click',function(){
-         body.stop().animate({scrollTop: scrolls[i++]}, 1000, 'swing',function(){})
+          console.log('click ', (window.innerHeight * (i+1)) )
+          body.stop().animate({scrollTop: ++i * window.innerHeight }, 1000, 'swing',function(){})
         })
       })
     </script>

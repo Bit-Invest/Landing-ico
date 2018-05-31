@@ -6,6 +6,7 @@ export const prlxLeftScene = [
   {
     start: 0,
     end: 10,
+    ratioHeight: window.innerHeight,
     properties: [
       {
         startValue: -100,
@@ -15,8 +16,9 @@ export const prlxLeftScene = [
     ]
   },
   {
-    start: 300,
-    end: 400,
+    start: 1000,
+    end: 2000,
+    ratioHeight: window.innerHeight,
     properties: [
       {
         startValue: -100,
@@ -26,8 +28,9 @@ export const prlxLeftScene = [
     ]
   },
   {
-    start: 400,
-    end: 500,
+    start: 2000,
+    end: 3000,
+    ratioHeight: window.innerHeight,
     properties: [
       {
         startValue: 100,
@@ -37,8 +40,9 @@ export const prlxLeftScene = [
     ]
   },
   {
-    start: 700,
-    end: 800,
+    start: 5000,
+    end: 6000,
+    ratioHeight: window.innerHeight,
     properties: [
       {
         startValue: 65,
@@ -48,8 +52,9 @@ export const prlxLeftScene = [
     ]
   },
   {
-    start: 800,
-    end: 900,
+    start: 6000,
+    end: 7000,
+    ratioHeight: window.innerHeight,
     properties: [
       {
         startValue: 100,
@@ -59,8 +64,9 @@ export const prlxLeftScene = [
     ]
   },
   {
-    start: 1200,
-    end: 1300,
+    start: 10000,
+    end: 11000,
+    ratioHeight: window.innerHeight,
     properties: [
       {
         startValue: 50,
@@ -70,8 +76,9 @@ export const prlxLeftScene = [
     ]
   },
   {
-    start: 1600,
-    end: 1700,
+    start: 14000,
+    end: 15000,
+    ratioHeight: window.innerHeight,
     properties: [
       {
         startValue: 60,
@@ -84,8 +91,9 @@ export const prlxLeftScene = [
 
 export const messagePrlx1 = [
   {
-    start: 500,
-    end: 600,
+    start: 2900,
+    end: 3000,
+    ratioHeight: window.innerHeight,
     properties: [
       {
         startValue: 10.2,
@@ -100,10 +108,12 @@ export const messagePrlx1 = [
     ]
   },
   {
-    start: 500,
-    end: 600,
+    start: 3000,
+    end: 3500,
+    ratioHeight: window.innerHeight,
     properties: [
       {
+        nopx: true,
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
@@ -114,8 +124,9 @@ export const messagePrlx1 = [
 
 export const messagePrlx2 = [
   {
-    start: 600,
-    end: 700,
+    start: 3900,
+    end: 4000,
+    ratioHeight: window.innerHeight,
     properties: [
       {
         startValue: 10.2,
@@ -130,10 +141,12 @@ export const messagePrlx2 = [
     ]
   },
   {
-    start: 600,
-    end: 700,
+    start: 4000,
+    end: 4500,
+    ratioHeight: window.innerHeight,
     properties: [
       {
+        nopx: true,
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
@@ -144,8 +157,9 @@ export const messagePrlx2 = [
 
 export const messagePrlx3 = [
   {
-    start: 700,
-    end: 800,
+    start: 4900,
+    end: 5000,
+    ratioHeight: window.innerHeight,
     properties: [
       {
         startValue: 10.2,
@@ -160,10 +174,12 @@ export const messagePrlx3 = [
     ]
   },
   {
-    start: 700,
-    end: 800,
+    start: 5000,
+    end: 5500,
+    ratioHeight: window.innerHeight,
     properties: [
       {
+        nopx: true,
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
@@ -176,8 +192,3 @@ newMeth.prToPixel(['i', 'properties', 'i'], prlxLeftScene, window.innerWidth, [
   'startValue',
   'endValue'
 ]);
-
-/*newMeth.prToPixel(['i', 'properties', 'i'], messagePrlx1, window.innerWidth, [
-  'startValue',
-  'endValue'
-]);*/

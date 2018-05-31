@@ -337,7 +337,7 @@ export class MountainContentPage extends React.Component {
 
     return (
       <div className="contents">
-      	<Plx parallaxData={ParallaxData}>
+      	<Plx parallaxData={[]}>
       		<Plx parallaxData={ParallaxData1}>
   					<div className="containerContent containerBlocks">
               <HeadScreen />

@@ -8,7 +8,7 @@ import { StickyContainer, Sticky } from 'react-sticky';
 class ContentsContainer extends React.Component {
   render() {
     return (
-      <div className="scene fixedScene contentScene">
+      <div className="sceneCnt fixedScene contentScene">
         <div className="layot">
           <MountainContentPage />
         </div>
