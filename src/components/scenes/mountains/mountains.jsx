@@ -1,6 +1,8 @@
 import React from 'react';
 import imageMouns from '@assets/export_mountain_v2/mountain_new2.svg';
 import imageFunicular from '@assets/export_mountain_v2/kabinka_2.svg';
+import imageMoon from '@assets/export_mountain_v2/moon.svg';
+import imagePlay_button from '@assets/export_mountain_v2/play_button.svg';
 import Guy from '@assets/gifs/Guy.gif';
 import Plx from "react-plx";
 import { bindActionCreators } from 'redux';
@@ -188,6 +190,63 @@ class RearDt {
           ]
         },
       ],
+
+      prlxMoon1: [
+        {
+          start: 0,
+          end:  1000,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              nopx: true,
+              startValue: 1,
+              endValue: 0,
+              property: "opacityFilter"
+            }
+          ]
+        },
+        {
+          start: 1000,
+          end:  2000,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              nopx: true,
+              startValue: 0,
+              endValue: 1,
+              property: "opacityFilter"
+            }
+          ]
+        },
+      ],
+
+      prlxMoon2: [
+        {
+          start: 0,
+          end:  1000,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              startValue: 0,
+              endValue: 1,
+              property: "opacityFilter"
+            }
+          ]
+        },
+        {
+          start: 1000,
+          end:  2000,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              startValue: 1,
+              endValue: 0,
+              property: "opacityFilter"
+            }
+          ]
+        },
+      ]
+
     })
   }
 
@@ -253,7 +312,7 @@ class RearLayout extends React.Component {
 
   stateSizes = () => {
     const { RearCons, prToPixel, loadCanvasSvg } = this;
-    const { ParallaxData1, ParallaxData2, ParallaxFilter } = RearCons;
+    const { ParallaxData1, ParallaxData2, ParallaxFilter, prlxMoon2 } = RearCons;
     const { set_wh_mountain } = this.props;
 
     RearCons.bgMounimage((args) => {
@@ -332,7 +391,7 @@ class RearLayout extends React.Component {
 
   render() {
     const { className, RearCons } = this;
-    const { ParallaxData1, ParallaxData2, ParallaxFilter, ParallaxUpperBg } = RearCons;
+    const { ParallaxData1, ParallaxData2, ParallaxFilter, ParallaxUpperBg, prlxMoon1, prlxMoon2 } = RearCons;
     const {
       w,
       h,
@@ -369,12 +428,28 @@ class RearLayout extends React.Component {
           }}>
             <img src={imageFunicular} className="funicular-img" width={(w/100) * 2} height={((h/100) * 6)} />
           </Plx>
-          <Plx parallaxData={[]} className="guy" style={{
+
+          <Plx  className="guy" style={{
             left: ((w/100) * 19.95) + ((global.WIDTH/100)*global.LEFT),
             bottom: (h/100) * 0
           }}>
             <img src={Guy} className="guy-img" width={(w/100) * 2} height={((h/100) * 6)} />
           </Plx>
+
+          <Plx className="moon" parallaxData={prlxMoon1} style={{
+            left: ((w/100) * 24.95) + ((global.WIDTH/100)*global.LEFT),
+            top: (h/100) * 14.2
+          }}>
+            <img src={imageMoon} className="moon-img" widwidth={(w/100) * 12} height={((h/100) * 12)} />
+          </Plx>
+
+          <Plx className="moon" parallaxData={prlxMoon2} style={{
+            left: ((w/100) * 24.95) + ((global.WIDTH/100)*global.LEFT),
+            top: (h/100) * 14.2
+          }}>
+            <img src={imagePlay_button} className="moon-img" widwidth={(w/100) * 12} height={((h/100) * 12)} />
+          </Plx>
+
         </React.Fragment>
       </div>    
     );
