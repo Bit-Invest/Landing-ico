@@ -1,0 +1,36 @@
+.ico-details-screen {
+
+  &__content-wrap {
+    display: flex;
+    margin-bottom: 70px;
+  }
+
+  &__header {
+    font-family: Geometria-Bold;
+    font-size: 4.17vh;
+    line-height: 1.1;
+    color: #fff;
+  }
+
+  &__details {
+    margin-left: 60px;
+  }
+
+  &__detail {
+    margin-bottom: 10px;    
+  }
+
+  &__detail-title {
+    display: inline;
+    font-family: Geometria;
+    font-size: 1.8vh;
+    color: #fff;
+  }
+
+  &__detail-info {
+    display: inline;
+    font-family: Geometria-Bold;
+    font-size: 1.8vh;
+    color: #6C5ED6;
+  }
+}

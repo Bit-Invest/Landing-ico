@@ -11,6 +11,7 @@ import { MarketAnalytics } from '@screens/MarketAnalytics';
 import { RiseOfCapital } from '@screens/RiseOfCapital';
 import { KeyDocs } from '@screens/KeyDocs';
 import { Geographic } from '@screens/Geographic';
+import { ICODetailsScreen } from '@screens/ICODetailsScreen';
 
 import Graph_01 from '@assets/export_mountain_v2/Graph_01.svg';
 import Graph_02 from '@assets/export_mountain_v2/Graph_02.svg';
@@ -340,7 +341,7 @@ export class MountainContentPage extends React.Component {
       	<Plx parallaxData={[]}>
       		<Plx parallaxData={ParallaxData1}>
   					<div className="containerContent containerBlocks">
-              <HeadScreen />
+              <ICODetailsScreen />
     				</div>
     			</Plx>
     			<Plx parallaxData={ParallaxData2}>
