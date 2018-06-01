@@ -1,11 +1,13 @@
 .token-details-screen {
+  padding-top: 7.5vh;
+  padding-bottom: 12.87vh;
 
   &__header-wrap {
     display: flex;
   }
   &__header {
-    padding: 20px 40px 20px 0px;    
-    font-size: 7.59vh;
+    padding: 20px 40px 20px 0px;
+    font-size: 6.48vh;
     font-family: Geometria-Bold;
     color: #fff;
     line-height: 1.1;
@@ -16,25 +18,24 @@
     align-items: center;
     height: 108px;
     padding-left: 40px;
-    // padding: 20px 0 20px 40px;
     border-left: 1px solid #fff;
   }
 
   &__content-wrap {
-    margin-top: 60px;
+    margin-top: 5.83vh;
     display: flex;
     flex-wrap: wrap;
-    width: 504px;
+    width: 565px;
     justify-content: space-between;
   }
 
   &__info {
-    width: 200px;
+    width: 266px;
     font-family: Geometria-Light;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 2;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 4.17vh;
   }
 
   &__info:last-child {

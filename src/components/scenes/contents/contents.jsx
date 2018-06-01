@@ -13,6 +13,7 @@ import { KeyDocs } from '@screens/KeyDocs';
 import { Geographic } from '@screens/Geographic';
 import { ICODetailsScreen } from '@screens/ICODetailsScreen';
 import { TokenDetailsScreen } from '@screens/TokenDetailsScreen';
+import { DistributionScreen } from '@screens/DistributionScreen';
 
 import Graph_01 from '@assets/export_mountain_v2/Graph_01.svg';
 import Graph_02 from '@assets/export_mountain_v2/Graph_02.svg';

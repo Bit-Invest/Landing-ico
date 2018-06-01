@@ -1,14 +1,14 @@
 .progress-bar {
   &__bar {
-    width: 350px;
+    width: 360px;
     background-color: rgba(255, 255, 255, 0.1);
-    height: 30px;
+    height: 40px;
     border-radius: 20px;
     overflow: hidden;
   }
 
   &__fill {
-    height: 30px;
+    height: 40px;
     background-color: rgba(255, 255, 255, 0.15);
   }
 
