@@ -7,7 +7,7 @@ export const HowDoesItScreen = () => (
   <Screen currentItem={0}>
     <div className={ROOT_CLASS}>
       <div className={`${ROOT_CLASS}__header`}>
-        How does it work in the nutshell ?
+        How does it work in a nutshell ?
       </div>
       <div className={`${ROOT_CLASS}__people`} />
     </div>

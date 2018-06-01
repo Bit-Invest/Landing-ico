@@ -95,7 +95,8 @@ module.exports = {
       '@scenes': path.resolve(__dirname, '../src/components/scenes'),
       '@assets': path.resolve(__dirname, '../src/assets'),
       '@common': path.resolve(__dirname, '../src/components/common'),
-      '@screens': path.resolve(__dirname, '../src/components/screens')
+      '@screens': path.resolve(__dirname, '../src/components/screens'),
+      '@modules': path.resolve(__dirname, '../src/modules/')
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).

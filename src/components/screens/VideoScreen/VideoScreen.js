@@ -9,7 +9,7 @@ export const VideoScreen = () => (
     <div className={ROOT_CLASS}>
       <div className={`${ROOT_CLASS}__content-wrap`}>
         <div className={`${ROOT_CLASS}__header`}>
-          How the technology works for investor
+          How the technology works for our investor
         </div>
         <div className={`${ROOT_CLASS}__video`} />
       </div>

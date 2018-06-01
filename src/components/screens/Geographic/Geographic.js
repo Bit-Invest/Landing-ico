@@ -11,7 +11,7 @@ export const Geographic = props => (
         <div className="left-side flex">
           <h1>Geographic scope</h1>
           <span className="nav flex">
-            <a href="#">Costumers potential …</a>
+            <a href="#">Customers potential …</a>
             <a href="#">Transactions potential …</a>
             <a href="#">Value added to average …</a>
           </span>

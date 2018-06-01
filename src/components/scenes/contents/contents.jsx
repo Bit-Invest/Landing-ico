@@ -14,10 +14,11 @@ import { Geographic } from '@screens/Geographic';
 import { ICODetailsScreen } from '@screens/ICODetailsScreen';
 import { TokenDetailsScreen } from '@screens/TokenDetailsScreen';
 import { DistributionScreen } from '@screens/DistributionScreen';
+import { VideoPopUp } from '@common/VideoPopUp';
 
 import CINDX_v_2_p_25 from '@assets/export_mountain_v2/CINDX_v_2_p_25.svg';
 import CINDX_v_2_p_16 from '@assets/export_mountain_v2/CINDX_v_2_p_16.svg';
-import CINDX_v_2_p_15 from '@assets/export_mountain_v2/CINDX_v_2_p_15.svg';
+import CINDX_v_2_p_15 from '@assets/export_mountain_v2/Chart.svg';
 
 class RearDt {
   constructor(props) {
@@ -135,7 +136,7 @@ export class MountainContentPage extends React.Component {
       	<Plx parallaxData={[]}>
       		<Plx parallaxData={ParallaxData1}>
   					<div className="containerContent containerBlocks">
-              <HeadScreen 
+              <HeadScreen
                 data={data}
               />
     				</div>
@@ -147,29 +148,29 @@ export class MountainContentPage extends React.Component {
     			</Plx>
           <div className="containerContent containerBlocks">
             <TitleScreen
-              header="So what`s the main issues do we manage:"
-              title="CINDX is a one-stop solution for easy, secure and effcient crypto-assets trading"
+              header="So what problems do we solve?"
+              title="CINDX is a one-stop solution for easy, secure and efficient crypto-assets trading"
             />
           </div>
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 1"
-              title="Via Cindex you can do both the best. Thanks to the rating system."
-              description="We provide the pull of traders and their rating us formed according to the history of trading through terminal on our platform."
+              title="Cindx offers best of both worlds, thanks to their rating system"
+              description="We offer a rating system using trading history that guarantees you find the right manager for you."
             />
           </div>
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 2"
-              title="Here all your crypto assets to manage are kept in your wallet all the time"
-              description="Decentralisation and smart contracts allow to manage cryptocurrencies on other wallets with no necessity to transfer any funds to trader"
+              title="Here all your crypto assets to manage are kept in your wallet at all times"
+              description="Decentralisation and smart contracts allow one to manage their wallets, without having to transfer funds to managers"
             />
           </div>
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 3"
-              title="You earn on a professional trading of the best crypto traders"
-              description="Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market"
+              title="You earn following the best"
+              description="Investors join to sync their transactions with the best players on the marketplace"
             />
           </div>
           <div className="containerContent containerBlocks">
@@ -178,37 +179,37 @@ export class MountainContentPage extends React.Component {
           <div className="containerContent containerBlocks">
             <TextOne
               text1="Investor"
-              text2="increases his crypto capital by the efficient management of his assets by a professional trader"
+              text2="Increase their crypto holdings through efficient trading by asset managers"
             />
           </div>
           <div className="containerContent containerBlocks">
             <TextOne
               text1="Trader"
-              text2="earns his success fees building a pull of investors on the deep understanding of the market and trade strategy"
+              text2="Earn their success fees by building a following of investors using their deep understanding of market and trade strategy"
             />
           </div>
           <div className="containerContent containerBlocks">
             <TextOne
               text1="Vendor"
-              text2="sells advanced tools for traders e.g. trade robots and news feeds"
+              text2="Sells advanced financial instruments and trading tools for traders"
             />
           </div>
           <div className="containerContent containerBlocks">
             <TextOne
               text1="CINDX"
-              text2="earnes on success fees commission and subscription for terminal"
+              text2="Earns on success fee commissions and subscriptions to the terminal"
             />
           </div>
           <div className="containerContent containerBlocks">
             <MarketAnalytics
               header="Market Analytics"
-              text1="The traditional trust management market. Since 2000 the global trust management market has grown by over 250%. This is a result of constant improvements in market tools and the general development of market structuring"
-              text2="Despite the explosive growth of the cryptocurrency market in 2017, the industry is still in its infancy. The market capitalisation was $600 billion at the end of 2017, which is still only 1% of the trust management industry"
+              text1="Since the year 2000, the global trust management market has grown over 250%. This is as a result of constant innovations in the market and continuous updates to the market tools, as well as the general development of the market structure."
+              text2="Despite the explosive growth of the cryptocurrency market in 2017, the industry is still in its infancy. The market capitalisation at the end of 2017 was at $600 billion, which still makes up only about 1% of the trust management industry."
             />
           </div>
           <div className="containerContent containerBlocks">
             <RiseOfCapital
-              title="Global Aum"
+              title="Global Aum*"
               title2="$ Trillions"
               imageSrc={CINDX_v_2_p_15}
             />

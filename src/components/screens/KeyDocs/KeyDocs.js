@@ -9,15 +9,15 @@ export const KeyDocs = props => (
     <div className="app flex KeyDocs" root-class={ROOT_CLASS}>
       <div className="container flex">
         <div className="top-side flex">
-          <h1>Key docs access</h1>
+          <h1>Key Docs Access</h1>
           <div className="aircraft" />
         </div>
         <div className="bottom-side flex">
           <button>Buy tokens</button>
           <div className="nav flex">
-            <a href="#">One Page&#8195;|</a>
+            <a href="#">One Pager&#8195;|</a>
             <a href="#">&#8195;Presentation&#8195;|</a>
-            <a href="#">&#8195;White paper&#8195;|</a>
+            <a href="#">&#8195;White Paper&#8195;|</a>
             <a href="#">&#8195;Financial Model</a>
           </div>
         </div>

@@ -19,12 +19,12 @@ export const ICODetailsScreen = () => (
           <div className={`${ROOT_CLASS}__detail`}>
             <div className={`${ROOT_CLASS}__detail-title`}>ICO: </div>
             <div className={`${ROOT_CLASS}__detail-info`}>
-              16.05.2018 – DD.MM.2018
+              27.06.2018 – 27.09.2018
             </div>
           </div>
           <div className={`${ROOT_CLASS}__detail`}>
             <div className={`${ROOT_CLASS}__detail-title`}>Public supply: </div>
-            <div className={`${ROOT_CLASS}__detail-info`}>80.000.000</div>
+            <div className={`${ROOT_CLASS}__detail-info`}>58.000.000</div>
           </div>
           <div className={`${ROOT_CLASS}__detail`}>
             <div className={`${ROOT_CLASS}__detail-title`}>

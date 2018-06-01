@@ -1,18 +1,24 @@
 .doc {
+  cursor: pointer;
   %inline {
     display: inline-block;
-    vertical-align: center;
+    vertical-align: middle;
   }
   &__icon {
     @extend %inline;
     width: 12px;
-    height: 10px;
+    height: 12px;
     background-size: 100%;
     background-repeat: no-repeat;
-    border: 1px solid #fff;
-    &_paper {}
-    &_slides {}
-    &_circles {}
+    &_paper {
+      background-image: url(../assets/export_mountain_v2/wp.svg);
+    }
+    &_slides {
+      background-image: url(../assets/export_mountain_v2/dk.svg);
+    }
+    &_circles {
+      background-image: url(../assets/export_mountain_v2/circles.svg);
+    }
   }
   &__title {
     @extend %inline;
