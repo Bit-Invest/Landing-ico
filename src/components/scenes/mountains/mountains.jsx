@@ -380,6 +380,7 @@ class RearLayout extends React.Component {
 
   loadCanvasSvg = () => {
     const { w, h, } = this.state;
+    console.log(this.canvasMoun);
     const ctx = this.canvasMoun.getContext('2d');
 
     const image = new window.Image();
