@@ -32,6 +32,11 @@
   border: 1px solid #fff;
   cursor: pointer;
 }
+.checkbox,
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
 .button__title {
   font-family: Geometria-Bold;
   font-size: 10px;
@@ -46,32 +51,7 @@
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 20px;
 }
-.doc .doc__icon,
-.doc .doc__title {
-  display: inline-block;
-  vertical-align: center;
-}
-.doc__icon {
-  width: 12px;
-  height: 10px;
-  border: 1px solid #fff;
-}
-.doc__title {
-  margin-left: 10px;
-  font-family: Geometria;
-  font-size: 13px;
-  color: #fff;
-  text-decoration: underline;
-}
-.checkbox__title,
-.header__promo-title,
-.menu__item {
-  font-family: Geometria-Light;
-  color: #fff;
-}
 .checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   cursor: pointer;
   width: -webkit-max-content;
@@ -97,15 +77,12 @@
 }
 .checkbox__title {
   font-size: 17px;
+  font-family: Geometria-Light;
   width: 234px;
+  color: #fff;
 }
 .checkbox_active .checkbox__circle-fill {
   display: block;
-}
-.footer,
-.footer__social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
 }
 .footer {
   display: flex;
@@ -121,15 +98,12 @@
   background-image: url(../assets/export_mountain_v2/arrow_down.svg);
 }
 .footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 16px;
   -ms-flex-item-align: center;
   align-self: center;
-}
-.header,
-.header__promo-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
 }
 .footer__social {
   background-position-y: 50%;
@@ -149,6 +123,33 @@
 }
 .footer__social_linked-in {
   background-image: url(../assets/export_mountain_v2/LinkedIN__icon.svg);
+}
+.doc .doc__icon,
+.doc .doc__title {
+  display: inline-block;
+  vertical-align: center;
+}
+.header,
+.header__promo-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+.doc__icon {
+  width: 12px;
+  height: 10px;
+  border: 1px solid #fff;
+}
+.media-block,
+.media-block_active {
+  background-color: #fff;
+  border-radius: 30px;
+}
+.doc__title {
+  margin-left: 10px;
+  font-family: Geometria;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: underline;
 }
 .header {
   display: flex;
@@ -172,6 +173,10 @@
   -ms-flex-align: end;
   align-items: flex-end;
 }
+.menu,
+.pop-up__header {
+  -webkit-box-pack: justify;
+}
 .header__logo-wrap {
   padding-right: 45px;
   padding-bottom: 18px;
@@ -191,7 +196,9 @@
 }
 .header__promo-title {
   width: 157px;
+  font-family: Geometria-Light;
   font-size: 16px;
+  color: #fff;
   line-height: 1.1;
 }
 .header__security {
@@ -200,11 +207,57 @@
   line-height: 1.2;
   padding-top: 6px;
 }
+.media-block {
+  width: 319px;
+  overflow: hidden;
+}
+.media-block__picture {
+  width: 100%;
+  height: 133px;
+}
+.media-block__info {
+  padding: 25px 36px 40px 40px;
+}
+.media-block__title {
+  font-family: Geometria-Bold;
+  font-size: 22px;
+  color: #6c5ed6;
+}
+.media-block__description {
+  margin-top: 25px;
+  font-family: Geometria;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.media-block__read-more {
+  display: block;
+  margin-top: 19px;
+  font-family: Geometria-Bold;
+  color: #6c5ed6;
+  font-size: 17px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.media-block_active,
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
+}
+.media-block_active {
   display: flex;
-  -webkit-box-pack: justify;
+  width: 541px;
+  height: 325px;
+}
+.media-block_active .media-block__picture {
+  height: 100%;
+  width: 292px;
+}
+.media-block_active .media-block__info {
+  padding: 45px 48px 36px 27px;
+  width: 248px;
+}
+.menu {
+  display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 20px;
@@ -213,14 +266,16 @@
   margin-top: 22px;
 }
 .pop-up__header,
-.time-circle {
+.progress-bar__titles {
   display: -webkit-box;
   display: -ms-flexbox;
 }
 .menu__item {
   position: relative;
   margin-left: 27px;
+  font-family: Geometria-Light;
   font-size: 15px;
+  color: #fff;
   line-height: 1.23;
 }
 .menu__item:first-child {
@@ -268,9 +323,6 @@
   border: 30px solid transparent;
   border-right: 30px solid #868ec6;
 }
-.screen {
-  height: 100%;
-}
 .pop-up {
   padding-top: 21.57vh;
   padding-bottom: 29.16vh;
@@ -297,7 +349,6 @@
 .pop-up__header {
   width: 100%;
   display: flex;
-  -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
@@ -306,6 +357,10 @@
   font-size: 39px;
   color: #fff;
   font-family: Geometria-Bold;
+}
+.pop-up__input,
+.progress-bar__soft {
+  font-family: Geometria-Light;
 }
 .pop-up__input {
   margin-top: 17.4vh;
@@ -317,7 +372,6 @@
   border: none;
   background-color: rgba(255, 255, 255, 0.3);
   color: #fff;
-  font-family: Geometria-Light;
 }
 .pop-up__input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.4);
@@ -345,6 +399,39 @@
 .pop-up__button-wrap {
   margin-top: 4.44vh;
 }
+.progress-bar__bar {
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.progress-bar__fill {
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.progress-bar__titles {
+  margin-top: 7px;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1;
+}
+.time-circle,
+.time-circle__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+.progress-bar__hard,
+.time-circle__circle {
+  font-family: Geometria-Bold;
+}
+.screen {
+  height: 100%;
+}
 .time-circle {
   display: flex;
   -webkit-box-orient: vertical;
@@ -355,11 +442,6 @@
   -ms-flex-align: center;
   align-items: center;
   color: #fff;
-}
-.time-circle__circle,
-.timer {
-  display: -webkit-box;
-  display: -ms-flexbox;
 }
 .time-circle__circle {
   display: flex;
@@ -373,14 +455,13 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: Geometria-Bold;
   font-size: 15px;
   line-height: 1.2;
 }
-.media-block,
-.media-block_active {
-  background-color: #fff;
-  border-radius: 30px;
+.sceneCnt,
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
 }
 [root-class='Geographic'] .app,
 [root-class='Geographic'] .left-side {
@@ -394,6 +475,15 @@
   font-size: 11px;
   line-height: 1.2;
   opacity: 0.7;
+}
+.timer {
+  display: flex;
+}
+.timer__circle {
+  margin-left: 22px;
+}
+.timer__circle:first-child {
+  margin: 0;
 }
 @font-face {
   font-family: Geometria-Light;
@@ -411,20 +501,6 @@
   font-family: Geometria-ExtraLight;
   src: url(../assets/fonts/Geometria-ExtraLight.otf);
 }
-.timer {
-  display: flex;
-}
-.media-block_active,
-.sceneCnt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-}
-.timer__circle {
-  margin-left: 22px;
-}
-.timer__circle:first-child {
-  margin: 0;
-}
 .contents {
   position: relative;
   z-index: 3;
@@ -436,10 +512,17 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.Moun2Scene,
+.bgMountains,
+.bgMountains2-img,
+.filterBg,
+.scene,
+.scene .layot,
 .sceneCnt,
-.sceneCnt .layot {
-  top: 0;
+.sceneCnt .layot,
+.upperBg {
   width: 100%;
+  top: 0;
 }
 .containerContent {
   height: 100vh;
@@ -455,54 +538,10 @@
   position: relative;
   left: 0;
 }
-.media-block {
-  width: 319px;
-  overflow: hidden;
-}
-.media-block__picture {
-  width: 100%;
-  height: 133px;
-}
-.media-block__info {
-  padding: 25px 36px 40px 40px;
-}
-.media-block__title {
-  font-family: Geometria-Bold;
-  font-size: 22px;
-  color: #6c5ed6;
-}
-.media-block__description {
-  margin-top: 25px;
-  font-family: Geometria;
-  font-size: 15px;
-  line-height: 1.2;
-}
-.media-block__read-more {
-  display: block;
-  margin-top: 19px;
-  font-family: Geometria-Bold;
-  color: #6c5ed6;
-  font-size: 17px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.media-block_active {
-  display: flex;
-  width: 541px;
-  height: 325px;
-}
 .scene,
 [root-class='Geographic'] .flex {
   display: -webkit-box;
   display: -ms-flexbox;
-}
-.media-block_active .media-block__picture {
-  height: 100%;
-  width: 292px;
-}
-.media-block_active .media-block__info {
-  padding: 45px 48px 36px 27px;
-  width: 248px;
 }
 .footerContainer {
   position: fixed;
@@ -532,40 +571,15 @@
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-.M2,
-.M23,
-.Moun2Scene,
-.bgMountains2-img {
-  position: absolute;
-}
-.Moun2Scene,
-.bgMountains2-img,
-.scene {
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.Moun2Scene {
-  height: 100%;
-}
-.bgMountains2-img {
-  height: 100%;
-  z-index: 9999;
-}
-.M2 {
-  top: 0;
-  right: 0;
-}
 .scene {
   display: flex;
   position: relative;
   position: fixed;
+  left: 0;
 }
 .scene .layot {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
@@ -582,12 +596,10 @@
 .guy,
 .moon {
   position: absolute;
-  left: 0;
   will-change: transform;
+  left: 0;
 }
 .bgMountains {
-  top: 0;
-  width: 100%;
   height: 100%;
   z-index: 1;
 }
@@ -608,12 +620,13 @@
   z-index: 9999999;
   cursor: pointer;
 }
+.M2,
+.M23,
+.Moun2Scene,
+.bgMountains2-img,
 .filterBg,
 .upperBg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 .guy {
   opacity: 0;
@@ -621,6 +634,7 @@
   animation: guyAnimate 6s;
 }
 .filterBg {
+  left: 0;
   height: 7000px;
   background-image: url(http://uploads.webflow.com/5b043f8fe114c89242e2de0f/5b05238fabbf26c7e7a31cdb_stars_mount.svg),
     -webkit-gradient(linear, left top, left bottom, from(#4e217b), color-stop(23%, #7dabbf), to(#7dabbf));
@@ -635,6 +649,7 @@
   background-repeat: repeat-x, repeat;
 }
 .upperBg {
+  left: 0;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   z-index: 2;
@@ -669,6 +684,25 @@
     -webkit-transform: translate(250px) translateY(-50px);
     transform: translate(250px) translateY(-50px);
   }
+}
+.Moun2Scene {
+  left: 0;
+  height: 100%;
+}
+.bgMountains2-img {
+  left: 0;
+  height: 100%;
+  z-index: 9999;
+}
+.M2 {
+  top: 0;
+  right: 0;
+}
+.distribution-screen__header {
+  font-family: Geometria-Bold;
+  font-size: 8.55vh;
+  line-height: 1.1;
+  color: #fff;
 }
 .Geographic {
   margin-top: 5vh;
@@ -837,6 +871,36 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   height: 100%;
+}
+.ico-details-screen__content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 70px;
+}
+.ico-details-screen__header {
+  font-family: Geometria-Bold;
+  font-size: 8.55vh;
+  line-height: 1.1;
+  color: #fff;
+}
+.ico-details-screen__details {
+  margin-left: 60px;
+}
+.ico-details-screen__detail {
+  margin-bottom: 10px;
+}
+.ico-details-screen__detail-title {
+  display: inline;
+  font-family: Geometria-Light;
+  font-size: 2.5vh;
+  color: #fff;
+}
+.ico-details-screen__detail-info {
+  display: inline;
+  font-family: Geometria-Bold;
+  font-size: 2.5vh;
+  color: #6c5ed6;
 }
 .join-presale-screen {
   padding-top: 14.6vh;
@@ -1077,6 +1141,61 @@
   font-size: 2.3vh;
   color: #fff;
   line-height: 1;
+}
+.token-details-screen__header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.token-details-screen__header {
+  padding: 20px 40px 20px 0;
+  font-size: 7.59vh;
+  font-family: Geometria-Bold;
+  color: #fff;
+  line-height: 1.1;
+}
+.token-details-screen__bar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 108px;
+  padding-left: 40px;
+  border-left: 1px solid #fff;
+}
+.token-details-screen__content-wrap {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 504px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.token-details-screen__info {
+  width: 200px;
+  font-family: Geometria-Light;
+  font-size: 14px;
+  line-height: 2;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.token-details-screen__info:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.token-details-screen__bold-text {
+  font-family: Geometria-Bold;
+  color: #6c5ed6;
 }
 .video-screen {
   padding-bottom: 18.3vh;

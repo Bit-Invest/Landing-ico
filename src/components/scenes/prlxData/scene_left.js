@@ -86,6 +86,18 @@ export const prlxLeftScene = [
         property: 'width'
       }
     ]
+  },
+  {
+    start: 16000,
+    end: 17000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: 100,
+        endValue: 0,
+        property: 'width'
+      }
+    ]
   }
 ];
 
@@ -209,6 +221,18 @@ export const prlxMoun2Scene = [
       {
         startValue: -100,
         endValue: 0,
+        property: 'translateX'
+      }
+    ]
+  },
+  {
+    start: 15000,
+    end: 16000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: 0,
+        endValue: -100,
         property: 'translateX'
       }
     ]

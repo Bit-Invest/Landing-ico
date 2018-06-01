@@ -42,6 +42,18 @@ class RearDt {
               property: "opacityFilter"
             },
           ]
+        },
+        {
+          start: 14000,
+          end: 15000,
+          ratioHeight: window.innerHeight,
+          properties: [
+            {
+              startValue: .5,
+              endValue: .0,
+              property: 'opacityFilter'
+            }
+          ]
         }
       ],
 
@@ -117,6 +129,23 @@ class RearDt {
             },
           ]
         },
+        {
+          start: 15000,
+          end:  15500,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              startValue: -29,
+              endValue: -19,
+              property: "translateX"
+            },
+            {
+              startValue: 10,
+              endValue: 6,
+              property: "translateY"
+            },
+          ]
+        },
       ],
       ParallaxData2: [
         {
@@ -186,6 +215,108 @@ class RearDt {
             {
               startValue: -3.5,
               endValue: -13.7,
+              property: "translateY"
+            },
+          ]
+        },
+        {
+          start: 15000,
+          end:  15500,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              startValue: 10.2,
+              endValue: -8.6,
+              property: "translateX"
+            },
+            {
+              startValue: -13.7,
+              endValue: -1.3,
+              property: "translateY"
+            },
+          ]
+        },
+        {
+          start: 17000,
+          end:  17500,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              startValue: -8.6,
+              endValue: -7.6,
+              property: "translateX"
+            },
+            {
+              startValue: -1.3,
+              endValue: -2.5,
+              property: "translateY"
+            },
+          ]
+        },
+        {
+          start: 17500,
+          end:  18000,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              startValue: -7.6,
+              endValue: -3.6,
+              property: "translateX"
+            },
+            {
+              startValue: -2.5,
+              endValue: -2.8,
+              property: "translateY"
+            },
+          ]
+        },
+        {
+          start: 18500,
+          end:  19000,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              startValue: -3.6,
+              endValue: -1.1,
+              property: "translateX"
+            },
+            {
+              startValue: -2.8,
+              endValue: -6.4,
+              property: "translateY"
+            },
+          ]
+        },
+        {
+          start: 19500,
+          end:  20000,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              startValue: -1.1,
+              endValue: 3.3,
+              property: "translateX"
+            },
+            {
+              startValue: -6.4,
+              endValue: -7.6,
+              property: "translateY"
+            },
+          ]
+        },
+        {
+          start: 20500,
+          end:  21000,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              startValue: 3.3,
+              endValue: 3.3,
+              property: "translateX"
+            },
+            {
+              startValue: -7.6,
+              endValue: -10.6,
               property: "translateY"
             },
           ]
@@ -407,6 +538,7 @@ class RearLayout extends React.Component {
 
   loadCanvasSvg = () => {
     const { w, h, } = this.state;
+    console.log(this.canvasMoun);
     const ctx = this.canvasMoun.getContext('2d');
 
     const image = new window.Image();

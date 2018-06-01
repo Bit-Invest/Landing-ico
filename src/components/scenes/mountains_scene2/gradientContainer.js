@@ -58,7 +58,8 @@ class GradientContainer extends React.Component {
             width={w / 100 * 17}
             height={h / 100 * 17}
             style={{
-              right: w / 100 * 5
+              right: w / 100 * 5,
+              bottom: h / 100 * 3
             }}
           />
         </Plx>
@@ -68,7 +69,8 @@ class GradientContainer extends React.Component {
             src={Wink_gif}
             height={h / 100 * 35}
             style={{
-              right: w / 100 * 5
+              right: w / 100 * 5,
+              bottom: h / 100 * 3
             }}
           />
         </Plx>

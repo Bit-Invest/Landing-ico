@@ -11,6 +11,8 @@ import { MarketAnalytics } from '@screens/MarketAnalytics';
 import { RiseOfCapital } from '@screens/RiseOfCapital';
 import { KeyDocs } from '@screens/KeyDocs';
 import { Geographic } from '@screens/Geographic';
+import { ICODetailsScreen } from '@screens/ICODetailsScreen';
+import { TokenDetailsScreen } from '@screens/TokenDetailsScreen';
 
 import CINDX_v_2_p_25 from '@assets/export_mountain_v2/CINDX_v_2_p_25.svg';
 import CINDX_v_2_p_16 from '@assets/export_mountain_v2/CINDX_v_2_p_16.svg';
@@ -20,217 +22,6 @@ class RearDt {
   constructor(props) {
     Object.assign(this,{
       ...props,
-      ParallaxData:[
-      	{
-          start: 0,
-          end:  300,
-          properties: [
-          	{
-              startValue: 0,
-              endValue: -100,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 300,
-          end:  400,
-          properties: [
-            {
-              startValue: -100,
-              endValue: -200,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 400,
-          end:  500,
-          properties: [
-            {
-              startValue: -200,
-              endValue: -300,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 500,
-          end:  600,
-          properties: [
-            {
-              startValue: -300,
-              endValue: -400,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 600,
-          end:  700,
-          properties: [
-            {
-              startValue: -400,
-              endValue: -500,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 700,
-          end:  800,
-          properties: [
-            {
-              startValue: -500,
-              endValue: -600,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 800,
-          end:  900,
-          properties: [
-            {
-              startValue: -600,
-              endValue: -700,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 900,
-          end:  1000,
-          properties: [
-            {
-              startValue: -700,
-              endValue: -800,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 1000,
-          end:  1100,
-          properties: [
-            {
-              startValue: -800,
-              endValue: -900,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 1100,
-          end:  1200,
-          properties: [
-            {
-              startValue: -900,
-              endValue: -1000,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 1200,
-          end:  1300,
-          properties: [
-            {
-              startValue: -1000,
-              endValue: -1100,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 1300,
-          end:  1400,
-          properties: [
-            {
-              startValue: -1100,
-              endValue: -1200,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 1400,
-          end:  1500,
-          properties: [
-            {
-              startValue: -1200,
-              endValue: -1300,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 1500,
-          end:  1600,
-          properties: [
-            {
-              startValue: -1300,
-              endValue: -1400,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 1600,
-          end:  1700,
-          properties: [
-            {
-              startValue: -1400,
-              endValue: -1500,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 1700,
-          end:  1800,
-          properties: [
-            {
-              startValue: -1500,
-              endValue: -1600,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 1800,
-          end:  1900,
-          properties: [
-            {
-              startValue: -1600,
-              endValue: -1700,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 2000,
-          end:  2100,
-          properties: [
-            {
-              startValue: -1700,
-              endValue: -1800,
-              property: "translateY"
-            }
-          ]
-        },
-        {
-          start: 2100,
-          end:  2200,
-          properties: [
-            {
-              startValue: -1800,
-              endValue: -1900,
-              property: "translateY"
-            }
-          ]
-        },
-      ],
       /*ParallaxData1:[
       	{
           start: 3100,
@@ -436,6 +227,15 @@ export class MountainContentPage extends React.Component {
               text1="CINDX"
               text2="earnes on success fees commission and subscription for terminal"
             />
+          </div>
+          <div className="containerContent containerBlocks">
+            <ICODetailsScreen />
+          </div>
+          <div className="containerContent containerBlocks">
+            <ICODetailsScreen />
+          </div>
+          <div className="containerContent containerBlocks">
+            <ICODetailsScreen />
           </div>
           <div className="containerContent containerBlocks">
             <JoinPresaleScreen />

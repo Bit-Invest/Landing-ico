@@ -1,0 +1,49 @@
+.token-details-screen {
+
+  &__header-wrap {
+    display: flex;
+  }
+  &__header {
+    padding: 20px 40px 20px 0px;    
+    font-size: 7.59vh;
+    font-family: Geometria-Bold;
+    color: #fff;
+    line-height: 1.1;
+  }
+
+  &__bar-wrap {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    padding-left: 40px;
+    // padding: 20px 0 20px 40px;
+    border-left: 1px solid #fff;
+  }
+
+  &__content-wrap {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 504px;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 200px;
+    font-family: Geometria-Light;
+    font-size: 14px;
+    line-height: 2;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  &__info:last-child {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__bold-text {
+    font-family: Geometria-Bold;
+    color: #6C5ED6;
+  }
+}
