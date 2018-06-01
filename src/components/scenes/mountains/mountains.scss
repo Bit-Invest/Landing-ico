@@ -56,6 +56,11 @@
 
 .moon{
 	z-index: 0;
+}
+
+.playMoon{
+	position: relative;
+	z-index: 9999999;
 	cursor: pointer;
 }
 

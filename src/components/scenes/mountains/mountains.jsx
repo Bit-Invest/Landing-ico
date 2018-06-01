@@ -9,6 +9,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 import { set_wh_mountain } from '../../../modules/counter';
+import { Gradient2 } from '../mountains_scene2/';
 
 class RearDt {
   constructor(props) {
@@ -194,7 +195,7 @@ class RearDt {
       prlxMoon1: [
         {
           start: 0,
-          end:  1000,
+          end:  500,
           ratioHeight: global.HEIGHT,
           properties: [
             {
@@ -206,7 +207,7 @@ class RearDt {
           ]
         },
         {
-          start: 1000,
+          start: 1500,
           end:  2000,
           ratioHeight: global.HEIGHT,
           properties: [
@@ -223,6 +224,18 @@ class RearDt {
       prlxMoon2: [
         {
           start: 0,
+          end:  10,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              startValue: 0,
+              endValue: 0,
+              property: "opacityFilter"
+            }
+          ]
+        },
+        {
+          start: 500,
           end:  1000,
           ratioHeight: global.HEIGHT,
           properties: [
@@ -235,7 +248,7 @@ class RearDt {
         },
         {
           start: 1000,
-          end:  2000,
+          end:  1500,
           ratioHeight: global.HEIGHT,
           properties: [
             {
@@ -312,7 +325,7 @@ class RearLayout extends React.Component {
 
   stateSizes = () => {
     const { RearCons, prToPixel, loadCanvasSvg } = this;
-    const { ParallaxData1, ParallaxData2, ParallaxFilter, prlxMoon2 } = RearCons;
+    const { ParallaxData1, ParallaxData2, ParallaxFilter, prlxMoon1, prlxMoon2 } = RearCons;
     const { set_wh_mountain } = this.props;
 
     RearCons.bgMounimage((args) => {
@@ -345,6 +358,20 @@ class RearLayout extends React.Component {
       prToPixel(
         ['i','properties','i'],
         ParallaxFilter,
+        global.HEIGHT,
+        ['startValue','endValue']
+      );
+
+      prToPixel(
+        ['i','properties','i'],
+        prlxMoon1,
+        global.HEIGHT,
+        ['startValue','endValue']
+      );
+
+      prToPixel(
+        ['i','properties','i'],
+        prlxMoon2,
         global.HEIGHT,
         ['startValue','endValue']
       );
@@ -440,17 +467,22 @@ class RearLayout extends React.Component {
             left: ((w/100) * 24.95) + ((global.WIDTH/100)*global.LEFT),
             top: (h/100) * 14.2
           }}>
-            <img src={imageMoon} className="moon-img" widwidth={(w/100) * 12} height={((h/100) * 12)} />
+            <img src={imageMoon} className="moon-img" width={(w/100) * 12} height={((h/100) * 12)} />
           </Plx>
 
-          <Plx className="moon" parallaxData={prlxMoon2} style={{
-            left: ((w/100) * 24.95) + ((global.WIDTH/100)*global.LEFT),
-            top: (h/100) * 14.2
+          <Plx className="moon playMoon" parallaxData={prlxMoon2} style={{
+            left: ((w/100) * 21.95) + ((global.WIDTH/100)*global.LEFT),
+            top: (h/100) * 18.2
           }}>
-            <img src={imagePlay_button} className="moon-img" widwidth={(w/100) * 12} height={((h/100) * 12)} />
+            <img src={imagePlay_button} className="moon-img" width={(w/100) * 17} height={((h/100) * 17)} />
           </Plx>
 
         </React.Fragment>
+
+        <Gradient2 
+          w={w}
+          h={h}
+        />
       </div>    
     );
   }

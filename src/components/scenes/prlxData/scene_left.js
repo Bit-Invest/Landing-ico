@@ -188,7 +188,229 @@ export const messagePrlx3 = [
   }
 ];
 
+export const prlxMoun2Scene = [
+  {
+    start: 0,
+    end: 10,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: -100,
+        endValue: -100,
+        property: 'translateX'
+      }
+    ]
+  },
+  {
+    start: 5000,
+    end: 6000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: -100,
+        endValue: 0,
+        property: 'translateX'
+      }
+    ]
+  }
+];
+
+export const prlxMoun2ScenePeople = [
+  {
+    start: 10000,
+    end: 11000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        nopx: true,
+        startValue: 1,
+        endValue: 0,
+        property: 'opacityFilter'
+      }
+    ]
+  }
+];
+
+export const prlxMoun2ScenePeople2 = [
+  {
+    start: 0,
+    end: 10,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: 1,
+        endValue: 0,
+        property: 'opacityFilter'
+      }
+    ]
+  },
+  {
+    start: 10000,
+    end: 11000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        nopx: true,
+        startValue: 0,
+        endValue: 1,
+        property: 'opacityFilter'
+      }
+    ]
+  }
+];
+
+export const messagePrlx2_1 = [
+  {
+    start: 6900,
+    end: 7000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: 16.2,
+        endValue: 16.2,
+        property: 'translateX'
+      },
+      {
+        startValue: -13.7,
+        endValue: -4.7,
+        property: 'translateY'
+      }
+    ]
+  },
+  {
+    start: 7000,
+    end: 7500,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        nopx: true,
+        startValue: 1,
+        endValue: 0,
+        property: 'opacityFilter'
+      }
+    ]
+  }
+];
+
+export const messagePrlx2_2 = [
+  {
+    start: 7900,
+    end: 8000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: 11.2,
+        endValue: 11.2,
+        property: 'translateX'
+      },
+      {
+        startValue: -13.7,
+        endValue: -4.7,
+        property: 'translateY'
+      }
+    ]
+  },
+  {
+    start: 8000,
+    end: 8500,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        nopx: true,
+        startValue: 1,
+        endValue: 0,
+        property: 'opacityFilter'
+      }
+    ]
+  }
+];
+
+export const messagePrlx2_3 = [
+  {
+    start: 8900,
+    end: 9000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: 7.2,
+        endValue: 7.2,
+        property: 'translateX'
+      },
+      {
+        startValue: -13.7,
+        endValue: -4.7,
+        property: 'translateY'
+      }
+    ]
+  },
+  {
+    start: 9000,
+    end: 9500,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        nopx: true,
+        startValue: 1,
+        endValue: 0,
+        property: 'opacityFilter'
+      }
+    ]
+  }
+];
+
+export const messagePrlx2_4 = [
+  {
+    start: 9900,
+    end: 10000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: 4.2,
+        endValue: -1.2,
+        property: 'translateX'
+      },
+      {
+        startValue: -13.7,
+        endValue: -8.7,
+        property: 'translateY'
+      }
+    ]
+  },
+  {
+    start: 10000,
+    end: 10500,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        nopx: true,
+        startValue: 1,
+        endValue: 0,
+        property: 'opacityFilter'
+      }
+    ]
+  }
+];
+
 newMeth.prToPixel(['i', 'properties', 'i'], prlxLeftScene, window.innerWidth, [
   'startValue',
   'endValue'
 ]);
+
+newMeth.prToPixel(['i', 'properties', 'i'], prlxMoun2Scene, window.innerWidth, [
+  'startValue',
+  'endValue'
+]);
+
+newMeth.prToPixel(
+  ['i', 'properties', 'i'],
+  prlxMoun2ScenePeople,
+  window.innerWidth,
+  ['startValue', 'endValue']
+);
+
+newMeth.prToPixel(
+  ['i', 'properties', 'i'],
+  prlxMoun2ScenePeople2,
+  window.innerWidth,
+  ['startValue', 'endValue']
+);

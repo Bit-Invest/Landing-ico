@@ -19,10 +19,6 @@ class ListContainer extends React.Component {
         <Messages />
         <Content_c1 />
         <Footer />
-        {/*
-          <Messages />
-          <Gradient />
-        */}
       </div>
     );
   }

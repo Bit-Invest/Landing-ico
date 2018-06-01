@@ -46,6 +46,29 @@
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 20px 20px 20px;
 }
+.doc .doc__icon,
+.doc .doc__title {
+  display: inline-block;
+  vertical-align: center;
+}
+.doc__icon {
+  width: 12px;
+  height: 10px;
+  border: 1px solid #fff;
+}
+.doc__title {
+  margin-left: 10px;
+  font-family: Geometria;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: underline;
+}
+.checkbox__title,
+.header__promo-title,
+.menu__item {
+  font-family: Geometria-Light;
+  color: #fff;
+}
 .checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,39 +97,15 @@
 }
 .checkbox__title {
   font-size: 17px;
-  font-family: Geometria-Light;
   width: 234px;
-  color: #fff;
 }
 .checkbox_active .checkbox__circle-fill {
   display: block;
-}
-.doc .doc__icon,
-.doc .doc__title {
-  display: inline-block;
-  vertical-align: center;
 }
 .footer,
 .footer__social-media {
   display: -webkit-box;
   display: -ms-flexbox;
-}
-.doc__icon {
-  width: 12px;
-  height: 10px;
-  border: 1px solid #fff;
-}
-.media-block,
-.media-block_active {
-  background-color: #fff;
-  border-radius: 30px;
-}
-.doc__title {
-  margin-left: 10px;
-  font-family: Geometria;
-  font-size: 13px;
-  color: #fff;
-  text-decoration: underline;
 }
 .footer {
   display: flex;
@@ -192,9 +191,7 @@
 }
 .header__promo-title {
   width: 157px;
-  font-family: Geometria-Light;
   font-size: 16px;
-  color: #fff;
   line-height: 1.1;
 }
 .header__security {
@@ -203,58 +200,9 @@
   line-height: 1.2;
   padding-top: 6px;
 }
-.media-block {
-  width: 319px;
-  overflow: hidden;
-}
-.media-block__picture {
-  width: 100%;
-  height: 133px;
-}
-.media-block__info {
-  padding: 25px 36px 40px 40px;
-}
-.media-block__title {
-  font-family: Geometria-Bold;
-  font-size: 22px;
-  color: #6c5ed6;
-}
-.media-block__description {
-  margin-top: 25px;
-  font-family: Geometria;
-  font-size: 15px;
-  line-height: 1.2;
-}
-.media-block__read-more {
-  display: block;
-  margin-top: 19px;
-  font-family: Geometria-Bold;
-  color: #6c5ed6;
-  font-size: 17px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.media-block_active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 541px;
-  height: 325px;
-}
-.menu,
-.pop-up__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-}
-.media-block_active .media-block__picture {
-  height: 100%;
-  width: 292px;
-}
-.media-block_active .media-block__info {
-  padding: 45px 48px 36px 27px;
-  width: 248px;
-}
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -264,12 +212,15 @@
   align-self: center;
   margin-top: 22px;
 }
+.pop-up__header,
+.time-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
 .menu__item {
   position: relative;
   margin-left: 27px;
-  font-family: Geometria-Light;
   font-size: 15px;
-  color: #fff;
   line-height: 1.23;
 }
 .menu__item:first-child {
@@ -287,7 +238,7 @@
   bottom: 0;
   left: 0;
   z-index: 999;
-  background: #6c5ed6;
+  background: #868ec6;
   color: #fff;
   font-size: 17px;
   border-radius: 44px;
@@ -315,7 +266,10 @@
   right: 30px;
   bottom: -30px;
   border: 30px solid transparent;
-  border-right: 30px solid #6c5ed6;
+  border-right: 30px solid #868ec6;
+}
+.screen {
+  height: 100%;
 }
 .pop-up {
   padding-top: 21.57vh;
@@ -346,11 +300,6 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-.time-circle,
-.timer {
-  display: -webkit-box;
-  display: -ms-flexbox;
 }
 .pop-up__title {
   margin-top: 4.44vh;
@@ -396,18 +345,6 @@
 .pop-up__button-wrap {
   margin-top: 4.44vh;
 }
-.screen {
-  height: 100%;
-}
-.timer {
-  display: flex;
-}
-.timer__circle {
-  margin-left: 22px;
-}
-.timer__circle:first-child {
-  margin: 0;
-}
 .time-circle {
   display: flex;
   -webkit-box-orient: vertical;
@@ -419,8 +356,8 @@
   align-items: center;
   color: #fff;
 }
-.sceneCnt,
-.time-circle__circle {
+.time-circle__circle,
+.timer {
   display: -webkit-box;
   display: -ms-flexbox;
 }
@@ -440,11 +377,16 @@
   font-size: 15px;
   line-height: 1.2;
 }
+.media-block,
+.media-block_active {
+  background-color: #fff;
+  border-radius: 30px;
+}
 [root-class='Geographic'] .app,
 [root-class='Geographic'] .left-side {
+  -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
 }
 .time-circle__title {
   margin-top: 20px;
@@ -469,6 +411,20 @@
   font-family: Geometria-ExtraLight;
   src: url(../assets/fonts/Geometria-ExtraLight.otf);
 }
+.timer {
+  display: flex;
+}
+.media-block_active,
+.sceneCnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+.timer__circle {
+  margin-left: 22px;
+}
+.timer__circle:first-child {
+  margin: 0;
+}
 .contents {
   position: relative;
   z-index: 3;
@@ -480,13 +436,8 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.bgMountains,
-.filterBg,
-.scene,
-.scene .layot,
 .sceneCnt,
-.sceneCnt .layot,
-.upperBg {
+.sceneCnt .layot {
   top: 0;
   width: 100%;
 }
@@ -504,18 +455,59 @@
   position: relative;
   left: 0;
 }
+.media-block {
+  width: 319px;
+  overflow: hidden;
+}
+.media-block__picture {
+  width: 100%;
+  height: 133px;
+}
+.media-block__info {
+  padding: 25px 36px 40px 40px;
+}
+.media-block__title {
+  font-family: Geometria-Bold;
+  font-size: 22px;
+  color: #6c5ed6;
+}
+.media-block__description {
+  margin-top: 25px;
+  font-family: Geometria;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.media-block__read-more {
+  display: block;
+  margin-top: 19px;
+  font-family: Geometria-Bold;
+  color: #6c5ed6;
+  font-size: 17px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.media-block_active {
+  display: flex;
+  width: 541px;
+  height: 325px;
+}
 .scene,
 [root-class='Geographic'] .flex {
   display: -webkit-box;
   display: -ms-flexbox;
 }
-.footerContainer,
-.headContainer {
+.media-block_active .media-block__picture {
+  height: 100%;
+  width: 292px;
+}
+.media-block_active .media-block__info {
+  padding: 45px 48px 36px 27px;
+  width: 248px;
+}
+.footerContainer {
   position: fixed;
   z-index: 999;
   left: 50%;
-}
-.footerContainer {
   bottom: 5vh;
   transform: translateX(-50%);
 }
@@ -530,21 +522,50 @@
   background: -webkit-linear-gradient(top, #2e1d68 0, #892c5e 100%);
   background: -o-linear-gradient(top, #2e1d68 0, #892c5e 100%);
   background: linear-gradient(to bottom, #2e1d68 0, #892c5e 100%);
+  z-index: 3;
 }
 .headContainer {
+  position: fixed;
+  z-index: 999;
+  left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+.M2,
+.M23,
+.Moun2Scene,
+.bgMountains2-img {
+  position: absolute;
+}
+.Moun2Scene,
+.bgMountains2-img,
+.scene {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.Moun2Scene {
+  height: 100%;
+}
+.bgMountains2-img {
+  height: 100%;
+  z-index: 9999;
+}
+.M2 {
+  top: 0;
+  right: 0;
 }
 .scene {
   display: flex;
   position: relative;
   position: fixed;
-  left: 0;
 }
 .scene .layot {
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
@@ -556,35 +577,43 @@
   height: 100%;
 }
 .bgMountains,
-.filterBg,
+.bgMountains .bgMountains-img,
 .funicular,
 .guy,
-.moon,
-.upperBg {
+.moon {
   position: absolute;
   left: 0;
+  will-change: transform;
 }
 .bgMountains {
+  top: 0;
+  width: 100%;
   height: 100%;
   z-index: 1;
-  will-change: transform;
 }
 .bgMountains .bgMountains-img {
-  position: absolute;
   bottom: 0;
-  left: 0;
-  will-change: transform;
 }
 .funicular,
 .guy,
 .moon {
   bottom: 0;
   z-index: 2;
-  will-change: transform;
 }
 .moon {
   z-index: 0;
+}
+.playMoon {
+  position: relative;
+  z-index: 9999999;
   cursor: pointer;
+}
+.filterBg,
+.upperBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .guy {
   opacity: 0;
@@ -665,7 +694,7 @@
   top: 50%;
   margin-top: -170px;
   z-index: -1;
-  background: url(../assets/export_mountain_v2/map.svg) no-repeat;
+  background: url(../assets/export_mountain_v2/map_min.svg) no-repeat;
 }
 [root-class='Geographic'] .right-side .tooltip {
   position: absolute;
@@ -691,12 +720,6 @@
   justify-content: space-between;
   height: 450px;
   margin: auto 0;
-}
-[root-class='KeyDocs'] .app,
-[root-class='KeyDocs'] .container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  height: 100%;
 }
 [root-class='Geographic'] .left-side h1 {
   font: 83px Geometria-Bold;
@@ -785,6 +808,35 @@
 }
 .head-screen__doc-wrap:first-child {
   margin: 0;
+}
+.how-does-it-screen {
+  padding-top: 3.83vh;
+  padding-bottom: 5.83vh;
+}
+.how-does-it-screen__header {
+  display: inline-block;
+  vertical-align: top;
+  width: 360px;
+  font-family: Geometria-Bold;
+  font-size: 7.69vh;
+  color: #fff;
+  margin-right: 220px;
+  line-height: 1.2;
+}
+.how-does-it-screen__people {
+  display: inline-block;
+  vertical-align: top;
+  width: 36%;
+  height: 65vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/export_mountain_v2/three_men_titles.svg);
+}
+[root-class='KeyDocs'] .app,
+[root-class='KeyDocs'] .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  height: 100%;
 }
 .join-presale-screen {
   padding-top: 14.6vh;
@@ -889,7 +941,6 @@
   -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 }
-.how-does-it-screen__people,
 .laptop-screen__laptop,
 .video-screen__video {
   background-size: 100%;
@@ -901,37 +952,14 @@
   text-transform: uppercase;
   font: 17px Geometria-Bold;
 }
-.how-does-it-screen__header,
-.laptop-screen__header,
-.laptop-screen__title {
-  font-family: Geometria-Bold;
-  color: #fff;
-}
-.how-does-it-screen {
-  padding-top: 3.83vh;
-  padding-bottom: 5.83vh;
-}
-.how-does-it-screen__header {
-  display: inline-block;
-  vertical-align: top;
-  width: 360px;
-  font-size: 7.69vh;
-  margin-right: 220px;
-  line-height: 1.2;
-}
-.how-does-it-screen__people {
-  display: inline-block;
-  vertical-align: top;
-  width: 465px;
-  height: 538px;
-  background-image: url(../assets/export_mountain_v2/three_men_titles.svg);
-}
 .laptop-screen {
   padding-top: 6.1vh;
   padding-bottom: 8.3vh;
 }
 .laptop-screen__header {
+  font-family: Geometria-Bold;
   font-size: 6.48vh;
+  color: #fff;
   line-height: 1;
 }
 .laptop-screen__laptop {
@@ -950,7 +978,9 @@
   width: 283px;
 }
 .laptop-screen__title {
+  font-family: Geometria-Bold;
   font-size: 1.76vh;
+  color: #fff;
   line-height: 1;
 }
 .laptop-screen__button-wrap {

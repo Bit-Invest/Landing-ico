@@ -12,9 +12,9 @@ import { RiseOfCapital } from '@screens/RiseOfCapital';
 import { KeyDocs } from '@screens/KeyDocs';
 import { Geographic } from '@screens/Geographic';
 
-import Graph_01 from '@assets/export_mountain_v2/Graph_01.svg';
-import Graph_02 from '@assets/export_mountain_v2/Graph_02.svg';
-import Graph_03 from '@assets/export_mountain_v2/Graph_03.svg';
+import CINDX_v_2_p_25 from '@assets/export_mountain_v2/CINDX_v_2_p_25.svg';
+import CINDX_v_2_p_16 from '@assets/export_mountain_v2/CINDX_v_2_p_16.svg';
+import CINDX_v_2_p_15 from '@assets/export_mountain_v2/CINDX_v_2_p_15.svg';
 
 class RearDt {
   constructor(props) {
@@ -413,19 +413,19 @@ export class MountainContentPage extends React.Component {
             <RiseOfCapital 
               title="Global Aum"
               title2="$ Trillions"
-              imageSrc={Graph_03}
+              imageSrc={CINDX_v_2_p_15}
             />
           </div>
           <div className="containerContent containerBlocks">
             <RiseOfCapital 
               title="Investment"
-              imageSrc={Graph_02}
+              imageSrc={CINDX_v_2_p_16}
             />
           </div>
           <div className="containerContent containerBlocks">
             <RiseOfCapital 
               title="Rise of crypto capital"
-              imageSrc={Graph_01}
+              imageSrc={CINDX_v_2_p_25}
             />
           </div>
           <div className="containerContent containerBlocks">
