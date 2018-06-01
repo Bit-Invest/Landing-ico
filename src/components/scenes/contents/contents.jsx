@@ -13,6 +13,7 @@ import { KeyDocs } from '@screens/KeyDocs';
 import { Geographic } from '@screens/Geographic';
 import { ICODetailsScreen } from '@screens/ICODetailsScreen';
 import { TokenDetailsScreen } from '@screens/TokenDetailsScreen';
+import { DistributionScreen } from '@screens/DistributionScreen';
 
 import CINDX_v_2_p_25 from '@assets/export_mountain_v2/CINDX_v_2_p_25.svg';
 import CINDX_v_2_p_16 from '@assets/export_mountain_v2/CINDX_v_2_p_16.svg';
@@ -120,18 +121,23 @@ export class MountainContentPage extends React.Component {
   }
 
   render() {
+    const { data } = this.props;
     const { RearCons } = this;
     const { ParallaxData, ParallaxData1, ParallaxData2 } = RearCons;
     const {
       prlx1
     } = this.state;
 
+    console.log(777, this.props);
+
     return (
       <div className="contents">
       	<Plx parallaxData={[]}>
       		<Plx parallaxData={ParallaxData1}>
   					<div className="containerContent containerBlocks">
-              <HeadScreen />
+              <HeadScreen 
+                data={data}
+              />
     				</div>
     			</Plx>
     			<Plx parallaxData={ParallaxData2}>
@@ -140,28 +146,28 @@ export class MountainContentPage extends React.Component {
             </div>
     			</Plx>
           <div className="containerContent containerBlocks">
-            <TitleScreen 
+            <TitleScreen
               header="So what`s the main issues do we manage:"
               title="CINDX is a one-stop solution for easy, secure and effcient crypto-assets trading"
             />
           </div>
           <div className="containerContent containerBlocks">
             <LaptopScreen
-              header="Feature 1" 
+              header="Feature 1"
               title="Via Cindex you can do both the best. Thanks to the rating system."
               description="We provide the pull of traders and their rating us formed according to the history of trading through terminal on our platform."
             />
           </div>
           <div className="containerContent containerBlocks">
             <LaptopScreen
-              header="Feature 2" 
+              header="Feature 2"
               title="Here all your crypto assets to manage are kept in your wallet all the time"
               description="Decentralisation and smart contracts allow to manage cryptocurrencies on other wallets with no necessity to transfer any funds to trader"
             />
           </div>
           <div className="containerContent containerBlocks">
             <LaptopScreen
-              header="Feature 3" 
+              header="Feature 3"
               title="You earn on a professional trading of the best crypto traders"
               description="Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market"
             />
@@ -170,51 +176,51 @@ export class MountainContentPage extends React.Component {
             <HowDoesItScreen />
           </div>
           <div className="containerContent containerBlocks">
-            <TextOne 
+            <TextOne
               text1="Investor"
               text2="increases his crypto capital by the efficient management of his assets by a professional trader"
             />
           </div>
           <div className="containerContent containerBlocks">
-            <TextOne 
+            <TextOne
               text1="Trader"
               text2="earns his success fees building a pull of investors on the deep understanding of the market and trade strategy"
             />
           </div>
           <div className="containerContent containerBlocks">
-            <TextOne 
+            <TextOne
               text1="Vendor"
               text2="sells advanced tools for traders e.g. trade robots and news feeds"
             />
           </div>
           <div className="containerContent containerBlocks">
-            <TextOne 
+            <TextOne
               text1="CINDX"
               text2="earnes on success fees commission and subscription for terminal"
             />
           </div>
           <div className="containerContent containerBlocks">
-            <MarketAnalytics 
+            <MarketAnalytics
               header="Market Analytics"
               text1="The traditional trust management market. Since 2000 the global trust management market has grown by over 250%. This is a result of constant improvements in market tools and the general development of market structuring"
               text2="Despite the explosive growth of the cryptocurrency market in 2017, the industry is still in its infancy. The market capitalisation was $600 billion at the end of 2017, which is still only 1% of the trust management industry"
             />
           </div>
           <div className="containerContent containerBlocks">
-            <RiseOfCapital 
+            <RiseOfCapital
               title="Global Aum"
               title2="$ Trillions"
               imageSrc={CINDX_v_2_p_15}
             />
           </div>
           <div className="containerContent containerBlocks">
-            <RiseOfCapital 
+            <RiseOfCapital
               title="Investment"
               imageSrc={CINDX_v_2_p_16}
             />
           </div>
           <div className="containerContent containerBlocks">
-            <RiseOfCapital 
+            <RiseOfCapital
               title="Rise of crypto capital"
               imageSrc={CINDX_v_2_p_25}
             />
@@ -223,7 +229,7 @@ export class MountainContentPage extends React.Component {
             <Geographic />
           </div>
           <div className="containerContent containerBlocks">
-            <KeyDocs 
+            <KeyDocs
               text1="CINDX"
               text2="earnes on success fees commission and subscription for terminal"
             />
@@ -232,10 +238,10 @@ export class MountainContentPage extends React.Component {
             <ICODetailsScreen />
           </div>
           <div className="containerContent containerBlocks">
-            <ICODetailsScreen />
+            <DistributionScreen />
           </div>
           <div className="containerContent containerBlocks">
-            <ICODetailsScreen />
+            <TokenDetailsScreen />
           </div>
           <div className="containerContent containerBlocks">
             <JoinPresaleScreen />

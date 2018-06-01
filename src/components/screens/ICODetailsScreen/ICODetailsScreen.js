@@ -13,28 +13,28 @@ export const ICODetailsScreen = () => (
         </div>
         <div className={`${ROOT_CLASS}__details`}>
           <div className={`${ROOT_CLASS}__detail`}>
-            <div className={`${ROOT_CLASS}__detail-title`}>Token name:</div>
+            <div className={`${ROOT_CLASS}__detail-title`}>Token name: </div>
             <div className={`${ROOT_CLASS}__detail-info`}>CINDX</div>
           </div>
           <div className={`${ROOT_CLASS}__detail`}>
-            <div className={`${ROOT_CLASS}__detail-title`}>ICO:</div>
+            <div className={`${ROOT_CLASS}__detail-title`}>ICO: </div>
             <div className={`${ROOT_CLASS}__detail-info`}>
               16.05.2018 – DD.MM.2018
             </div>
           </div>
           <div className={`${ROOT_CLASS}__detail`}>
-            <div className={`${ROOT_CLASS}__detail-title`}>Public supply:</div>
+            <div className={`${ROOT_CLASS}__detail-title`}>Public supply: </div>
             <div className={`${ROOT_CLASS}__detail-info`}>80.000.000</div>
           </div>
           <div className={`${ROOT_CLASS}__detail`}>
             <div className={`${ROOT_CLASS}__detail-title`}>
-              Price per token:
+              Price per token:&nbsp;
             </div>
             <div className={`${ROOT_CLASS}__detail-info`}>$ 1.00</div>
           </div>
           <div className={`${ROOT_CLASS}__detail`}>
-            <div className={`${ROOT_CLASS}__detail-title`}>Minimal Goal:</div>
-            <div className={`${ROOT_CLASS}__detail-info`}>$ 6.0 0 0.0 0 0</div>
+            <div className={`${ROOT_CLASS}__detail-title`}>Minimal Goal: </div>
+            <div className={`${ROOT_CLASS}__detail-info`}>$ 6.000.000</div>
           </div>
         </div>
       </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import { Screen } from '@common/Screen';
 import { Button } from '@common/Button';
 
+import Distribution_graph from '@assets/export_mountain_v2/Distribution_graph.svg';
+
 const ROOT_CLASS = 'distribution-screen';
 
 export const DistributionScreen = () => (
@@ -10,6 +12,7 @@ export const DistributionScreen = () => (
       <div className={`${ROOT_CLASS}__header`}>
         Distribution<br />of tokens
       </div>
+      <img className={`${ROOT_CLASS}__graphImg`} src={Distribution_graph} />
       <div className={`${ROOT_CLASS}__graph`} />
       <Button title="BUY TOKENS" theme="filled" />
     </div>
