@@ -28,15 +28,15 @@ class Messages extends React.Component {
       <React.Fragment>
         <Message
           prlxData={messagePrlx1}
-          text="MY PROBLEM NO 1: Had some money to put in the game but couldn`t and check the rigth pro trader to manage them"
+          text="MY PROBLEM NO 1: Had some money to invest in the game, but couldn’t find the best trader to manage it"
         />
         <Message
           prlxData={messagePrlx2}
-          text="MY PROBLEM NO 2: I always felt uncomfortable with thee idea to give my money to somebody in order to have them back with profit"
+          text="MY PROBLEM NO 2: I never felt comfortable letting others handle my investment"
         />
         <Message
           prlxData={messagePrlx3}
-          text="MY PROBLEM NO 3: Not sure it works"
+          text="MY PROBLEM NO 3: Not sure how it works"
         />
 
         <Message

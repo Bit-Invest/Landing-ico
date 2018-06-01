@@ -19,21 +19,24 @@ export class HeadScreen extends React.Component {
       <Screen currentItem={0}>
         <div className={ROOT_CLASS}>
           <div className={`${ROOT_CLASS}__header`}>
-            Reform how you sell and buy crypto.<br />
-            Sync with the best traders automatically
+            Reform how you buy<br />
+            and sell crypto.<br />
+            Sync with the best<br />
+            traders automatically
           </div>
           <div className={`${ROOT_CLASS}__pre-sale-info`}>
             <div className={`${ROOT_CLASS}__list-wrap`}>
               <ul className={`${ROOT_CLASS}__list`}>
                 <li className={`${ROOT_CLASS}__list-item`}>
                   <span className={`${ROOT_CLASS}__list-item-title`}>
-                    Decent passive earning on professional trading of the best
-                    crypto traders
+                    Passive earning on professional trading with the best
+                    cryptotraders
                   </span>
                 </li>
                 <li className={`${ROOT_CLASS}__list-item`}>
                   <span className={`${ROOT_CLASS}__list-item-title`}>
-                    All the crypto is kept in the wallet of investor at all time
+                    The investor{"'"}s assets remain in their wallet at all
+                    times
                   </span>
                 </li>
                 <li className={`${ROOT_CLASS}__list-item`}>
@@ -75,7 +78,7 @@ export class HeadScreen extends React.Component {
               <Doc icon="slides" title="Presentation" />
             </div>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <Doc icon="paper" title="One Paper" />
+              <Doc icon="paper" title="One Pager" />
             </div>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
               <Doc icon="circles" title="Math Model" />

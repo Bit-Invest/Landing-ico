@@ -2,7 +2,7 @@ import React from 'react';
 import { Screen } from '@common/Screen';
 import { Button } from '@common/Button';
 
-import Distribution_graph from '@assets/export_mountain_v2/Distribution_graph.svg';
+import Distribution_graph from '@assets/export_mountain_v2/distribution_tokens.svg';
 
 const ROOT_CLASS = 'distribution-screen';
 

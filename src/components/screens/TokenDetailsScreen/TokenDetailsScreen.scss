@@ -19,6 +19,7 @@
     height: 108px;
     padding-left: 40px;
     border-left: 1px solid #fff;
+    display: none;
   }
 
   &__content-wrap {
@@ -45,6 +46,6 @@
 
   &__bold-text {
     font-family: Geometria-Bold;
-    color: #6C5ED6;
+    color: #B0A5FF;
   }
 }

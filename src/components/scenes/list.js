@@ -9,6 +9,7 @@ import { Footer } from './footer/';
 import { Content_c1 } from './';
 import { Messages } from '@common/Message';
 import { PopUp } from './popup_scene/';
+import { VideoPopUp } from '@common/VideoPopUp/';
 
 class ListContainer extends React.Component {
   constructor(props) {
@@ -47,6 +48,8 @@ class ListContainer extends React.Component {
             setPopUp
           }}
         />
+
+        <VideoPopUp />
       </div>
     );
   }
