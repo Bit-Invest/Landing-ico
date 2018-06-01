@@ -13,7 +13,12 @@ export const KeyDocs = props => (
           <div className="aircraft" />
         </div>
         <div className="bottom-side flex">
-          <button>Buy tokens</button>
+          <a
+            href="https://my.cindx.io"
+            target="__blank"
+            className="href_noUnder">
+            <button>Buy tokens</button>
+          </a>
           <div className="nav flex">
             <a href="#">One Page&#8195;|</a>
             <a href="#">&#8195;Presentation&#8195;|</a>

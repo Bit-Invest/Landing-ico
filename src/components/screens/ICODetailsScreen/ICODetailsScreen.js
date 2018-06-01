@@ -38,7 +38,9 @@ export const ICODetailsScreen = () => (
           </div>
         </div>
       </div>
-      <Button title="BUY TOKENS" theme="filled" />
+      <a href="https://my.cindx.io" target="__blank" className="href_noUnder">
+        <Button title="BUY TOKENS" theme="filled" />
+      </a>
     </div>
   </Screen>
 );

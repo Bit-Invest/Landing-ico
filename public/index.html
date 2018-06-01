@@ -31,17 +31,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
-        console.log('ready')
+
+
         var body = $("html, body");
         setTimeout(function(){
-          //body.stop().animate({scrollTop: 9100}, 200, 'swing',function(){})
+          body.stop().animate({scrollTop: 0}, 200, 'swing',function(){})
         },500);
 
         var i = 0;
 
         $('.footer__button').on('click',function(){
-          console.log('click ', (window.innerHeight * (i+1)) )
-          body.stop().animate({scrollTop: ++i * window.innerHeight }, 1000, 'swing',function(){})
+          let 
+            wHeight = window.innerHeight,
+            nowScroll = $('html, body').scrollTop(),
+            newScroll = (Math.ceil(nowScroll / wHeight) + 1) * wHeight;
+
+            body.stop().animate({scrollTop: newScroll }, 1000, 'swing',function(){})
+        })
+
+        $('.menu__item').on('click',function(){
+          let 
+            wHeight = window.innerHeight,
+            page = $(this).attr('page');
+
+            body.stop().animate({scrollTop: wHeight * page }, 1000, 'swing',function(){})
         })
       })
     </script>

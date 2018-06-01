@@ -4,14 +4,16 @@ import { Button } from '@common/Button';
 import { Timer } from '@common/Timer';
 import { Doc } from '@common/Doc';
 
+import WhitepaperDoc from '@assets/docs/CINDX_new.pdf';
+
+console.log('!!!', WhitepaperDoc);
+
 const ROOT_CLASS = 'head-screen';
 
 export class HeadScreen extends React.Component {
   render() {
     const { data } = this.props;
     const { setPopUp } = data;
-
-    //setPopUp(true);
 
     return (
       <Screen currentItem={0}>
@@ -52,7 +54,7 @@ export class HeadScreen extends React.Component {
             <a href="https://my.cindx.io" className="href_noUnder">
               <Button title="JOIN PRE-SALE" />
             </a>
-            <a href="http://192.81.220.26">
+            <a href="http://192.81.220.26" className="href_noUnder">
               <Button title="TEST MVP" />
             </a>
             <Button
@@ -65,7 +67,9 @@ export class HeadScreen extends React.Component {
           </div>
           <div className={`${ROOT_CLASS}__docs`}>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <Doc icon="paper" title="Whitepaper" />
+              <a href={WhitepaperDoc} target="__blank">
+                <Doc icon="paper" title="Whitepaper" />
+              </a>
             </div>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
               <Doc icon="slides" title="Presentation" />

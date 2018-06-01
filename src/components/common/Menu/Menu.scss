@@ -5,6 +5,11 @@
   height: 20px;
   align-self: center;
   margin-top: 22px;
+  cursor: pointer;
+
+  :hover{
+    opacity: .7;
+  }
 
   &__item {
     position: relative;
@@ -28,5 +33,8 @@
   background-color: #6C5ED6;
   height: 5px;
   width: 26px;
+}
 
+.menu__item a {
+  color: white;
 }

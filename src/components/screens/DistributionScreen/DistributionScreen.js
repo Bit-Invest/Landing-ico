@@ -14,7 +14,9 @@ export const DistributionScreen = () => (
       </div>
       <img className={`${ROOT_CLASS}__graphImg`} src={Distribution_graph} />
       <div className={`${ROOT_CLASS}__graph`} />
-      <Button title="BUY TOKENS" theme="filled" />
+      <a href="https://my.cindx.io" target="__blank" className="href_noUnder">
+        <Button title="BUY TOKENS" theme="filled" />
+      </a>
     </div>
   </Screen>
 );

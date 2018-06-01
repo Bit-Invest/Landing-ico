@@ -7,6 +7,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
+    //
+    console.log('this.node.scrollTop', this.node);
+
     //globals
     global.WIDTH = window.innerWidth > 1400 ? 1400 : window.innerWidth;
     global.LEFT =
@@ -21,6 +24,8 @@ class App extends React.Component {
   }
 
   updateDimensions = () => {
+    window.location.reload();
+
     global.WIDTH = window.innerWidth > 1400 ? 1400 : window.innerWidth;
   };
 
