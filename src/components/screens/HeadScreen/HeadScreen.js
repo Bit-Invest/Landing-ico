@@ -4,10 +4,6 @@ import { Button } from '@common/Button';
 import { Timer } from '@common/Timer';
 import { Doc } from '@common/Doc';
 
-import WhitepaperDoc from '@assets/docs/CINDX_new.pdf';
-
-console.log('!!!', WhitepaperDoc);
-
 const ROOT_CLASS = 'head-screen';
 
 export class HeadScreen extends React.Component {
@@ -70,9 +66,7 @@ export class HeadScreen extends React.Component {
           </div>
           <div className={`${ROOT_CLASS}__docs`}>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <a href={WhitepaperDoc} target="__blank">
-                <Doc icon="paper" title="Whitepaper" />
-              </a>
+              <Doc icon="paper" title="Whitepaper" />
             </div>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
               <Doc icon="slides" title="Presentation" />
