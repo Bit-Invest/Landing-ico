@@ -78,8 +78,10 @@ export class MountainContentPage extends React.Component {
       })
     })
 
+    const { fadeInOut } = this;
+
     this.state = {
-    	prlx1: {}
+    	prlx1: fadeInOut()
     };
   }
 
@@ -108,6 +110,41 @@ export class MountainContentPage extends React.Component {
     );
   }
 
+  fadeInOut = () => {
+    const arrPrlxFade = [];
+
+    for (let i = 0; i < 15; i++) {
+      arrPrlxFade.push(
+        {
+          start: (i * global.HEIGHT) - 100,
+          end:  (i * global.HEIGHT),
+          properties: [
+            {
+              nopx: true,
+              startValue: 0,
+              endValue: 1,
+              property: "opacityFilter"
+            }
+          ]
+        },
+        {
+          start: (i * global.HEIGHT),
+          end:  (i * global.HEIGHT) + 100,
+          properties: [
+            {
+              nopx: true,
+              startValue: 1,
+              endValue: 0,
+              property: "opacityFilter"
+            }
+          ]
+        }
+      );
+    }
+
+    return arrPrlxFade;
+  }
+
   prToPixel = (path,arr,full,keys) => {
     for(let q in arr){
       for(let w in arr[q].properties){
@@ -126,12 +163,14 @@ export class MountainContentPage extends React.Component {
     const { RearCons } = this;
     const { ParallaxData, ParallaxData1, ParallaxData2 } = RearCons;
     const {
-      prlx1
+      prlx1,
     } = this.state;
+
+    console.log(prlx1)
 
     return (
       <div className="contents">
-      	<Plx parallaxData={[]}>
+      	<Plx parallaxData={prlx1}>
       		<Plx parallaxData={ParallaxData1}>
   					<div className="containerContent containerBlocks">
               <HeadScreen

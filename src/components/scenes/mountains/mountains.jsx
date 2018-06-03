@@ -323,6 +323,22 @@ class RearDt {
         },
       ],
 
+      ParallaxDataGuy: [
+        {
+          start: 0,
+          end:  50,
+          ratioHeight: global.HEIGHT,
+          properties: [
+            {
+              nopx: true,
+              startValue: 1,
+              endValue: 0,
+              property: "opacityFilter"
+            }
+          ]
+        },
+      ],
+
       prlxMoon1: [
         {
           start: 0,
@@ -456,7 +472,7 @@ class RearLayout extends React.Component {
 
   stateSizes = () => {
     const { RearCons, prToPixel, loadCanvasSvg } = this;
-    const { ParallaxData1, ParallaxData2, ParallaxFilter, prlxMoon1, prlxMoon2 } = RearCons;
+    const { ParallaxData1, ParallaxData2, ParallaxFilter, prlxMoon1, prlxMoon2, ParallaxDataGuy } = RearCons;
     const { set_wh_mountain } = this.props;
 
     RearCons.bgMounimage((args) => {
@@ -547,7 +563,7 @@ class RearLayout extends React.Component {
 
   render() {
     const { className, RearCons } = this;
-    const { ParallaxData1, ParallaxData2, ParallaxFilter, ParallaxUpperBg, prlxMoon1, prlxMoon2 } = RearCons;
+    const { ParallaxData1, ParallaxData2, ParallaxFilter, ParallaxUpperBg, prlxMoon1, prlxMoon2, ParallaxDataGuy } = RearCons;
     const {
       w,
       h,
@@ -585,7 +601,7 @@ class RearLayout extends React.Component {
             <img src={imageFunicular} className="funicular-img" width={(w/100) * 2} height={((h/100) * 6)} />
           </Plx>
 
-          <Plx  className="guy" style={{
+          <Plx  parallaxData={ParallaxDataGuy} className="guy" style={{
             left: ((w/100) * 19.95) + ((global.WIDTH/100)*global.LEFT),
             bottom: (h/100) * 0
           }}>
