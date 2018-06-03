@@ -32,12 +32,8 @@ export const Footer = props => (
     />
     <div className={`${ROOT_CLASS}__social-media`}>
       {Socials.map(social => (
-        <a href={socsSrc[social][1]} target="__blank">
-          <img
-            src={socsSrc[social][0]}
-            key={social}
-            className={`${ROOT_CLASS}__social`}
-          />
+        <a key={social} href={socsSrc[social][1]} target="__blank">
+          <img src={socsSrc[social][0]} className={`${ROOT_CLASS}__social`} />
         </a>
       ))}
     </div>

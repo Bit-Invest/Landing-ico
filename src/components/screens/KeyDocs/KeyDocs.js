@@ -9,7 +9,9 @@ export const KeyDocs = props => (
     <div className="app flex KeyDocs" root-class={ROOT_CLASS}>
       <div className="container flex">
         <div className="top-side flex">
-          <h1>Key Docs Access</h1>
+          <h1>
+            Key <br /> Docs Access
+          </h1>
           <div className="aircraft" />
         </div>
         <div className="bottom-side flex">
@@ -17,7 +19,7 @@ export const KeyDocs = props => (
             href="https://my.cindx.io"
             target="__blank"
             className="href_noUnder">
-            <button>Buy tokens</button>
+            <button className="active">Buy tokens</button>
           </a>
           <div className="nav flex">
             <a href="#">One Pager&#8195;|</a>

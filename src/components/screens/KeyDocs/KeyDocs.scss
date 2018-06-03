@@ -12,7 +12,6 @@
 }
 
 [root-class=KeyDocs] .container {
-  width: 1024px;
   margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -41,27 +40,22 @@
 }
 
 [root-class=KeyDocs] .top-side h1 {
-  font: 109px Geometria-Bold;
+  font: 70px Geometria-Bold;
   max-width: 500px;
   margin: 0;
   color: white;
 }
 
 [root-class=KeyDocs] .top-side .aircraft {
-  width: 450px;
-  height: 100px;
+  width: 580px;
+    height: 130px;
   background: url(../assets/export_mountain_v2/Samolet.svg);
   background-repeat: no-repeat;
 }
 
 /*** Bottom side ***/
 [root-class=KeyDocs] .bottom-side {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 120px;
 }
 
@@ -70,7 +64,7 @@
   background: none;
   outline: none;
   border-radius: 33px;
-  padding: 16px 36.5px;
+  padding: 24px 59.5px;
   color: white;
   text-transform: uppercase;
   font: 11.2px Geometria-Bold;
@@ -80,7 +74,8 @@
   transition: all 300ms;
 }
 
-[root-class=KeyDocs] .bottom-side button:hover {
+[root-class=KeyDocs] .bottom-side button:hover,
+[root-class=KeyDocs] .bottom-side button.active {
   background: -webkit-gradient(linear, left top, right top, from(#6C5ED6), to(#F287B7));
   background: -webkit-linear-gradient(left, #6C5ED6, #F287B7);
   background: -o-linear-gradient(left, #6C5ED6, #F287B7);
@@ -90,6 +85,10 @@
   -webkit-background-clip: padding;
   -webkit-box-shadow: 0 0 40px rgba(0,0,0,.3);
           box-shadow: 0 0 40px rgba(0,0,0,.3);
+}
+
+[root-class=KeyDocs] .nav {
+  margin-left: 200px;
 }
 
 [root-class=KeyDocs] .nav a {
