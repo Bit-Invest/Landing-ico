@@ -3,6 +3,7 @@ import { Screen } from '@common/Screen';
 import { Button } from '@common/Button';
 import { Timer } from '@common/Timer';
 import { Doc } from '@common/Doc';
+import { docs } from '@common/Links';
 
 const ROOT_CLASS = 'head-screen';
 
@@ -66,16 +67,24 @@ export class HeadScreen extends React.Component {
           </div>
           <div className={`${ROOT_CLASS}__docs`}>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <Doc icon="paper" title="Whitepaper" />
+              <a href={docs.wp} target="__blank">
+                <Doc icon="paper" title="Whitepaper" />
+              </a>
             </div>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <Doc icon="slides" title="Presentation" />
+              <a href={docs.presentation} target="__blank">
+                <Doc icon="slides" title="Presentation" />
+              </a>
             </div>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <Doc icon="paper" title="One Pager" />
+              <a href={docs.one_pager} target="__blank">
+                <Doc icon="paper" title="One Pager" />
+              </a>
             </div>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <Doc icon="circles" title="Math Model" />
+              <a href={docs.math_model} target="__blank">
+                <Doc icon="circles" title="Math Model" />
+              </a>
             </div>
           </div>
         </div>
