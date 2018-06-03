@@ -17,10 +17,10 @@ export const Geographic = props => (
           </span>
         </div>
         <div className="right-side">
-          <div className="tooltip">
+          {/*<div className="tooltip">
             <span>London</span>
             <span> ETH - > BTC</span>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>

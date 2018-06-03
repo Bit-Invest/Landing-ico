@@ -1,5 +1,5 @@
 import React from 'react';
-import imageMouns from '@assets/export_mountain_v2/mountain_new2.svg';
+import imageMouns from '@assets/export_mountain_v2/mountain_new23.svg';
 import imageFunicular from '@assets/export_mountain_v2/kabinka_2.svg';
 import imageMoon from '@assets/export_mountain_v2/moon.svg';
 import imagePlay_button from '@assets/export_mountain_v2/play_button.svg';
