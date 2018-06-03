@@ -12,7 +12,10 @@ export const JoinPresaleScreen = () => (
         <a href="https://my.cindx.io" target="__blank" className="href_noUnder">
           <Button theme="filled" title="JOIN PRE-SALE" />
         </a>
-        <a href="http://192.81.220.26" target="__blank">
+        <a
+          href="http://192.81.220.26"
+          target="__blank"
+          className="href_noUnder">
           <Button title="TEST MVP" />
         </a>
       </div>
