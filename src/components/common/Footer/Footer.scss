@@ -4,8 +4,8 @@
   justify-content: space-between;
 
   &__button {
-    width: 6vh;
-    height: 6vh;
+    width: 4vh;
+    height: 4vh;
     background-repeat: no-repeat;
     background-size: 100%;
     cursor: pointer;
@@ -14,29 +14,18 @@
 
   &__social-media {
     display: flex;
-    height: 16px;
     align-self: center;
+
+    flex-direction: column-reverse;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 
   &__social {
-    background-position-y: 50%;
     margin-right: 25px;
     width: 16px;
     height: 16px;
-    background-repeat: no-repeat;
-
-    &_facebook {
-      margin-right: 0;
-      background-image: url(../assets/export_mountain_v2/Facebook_icon.svg);
-    }
-    &_twitter {
-      background-image: url(../assets/export_mountain_v2/Twitter_icon.svg);
-    }
-    &_tumblr {
-      background-image: url(../assets/export_mountain_v2/Tumblr_icon.svg);
-    }
-    &_linked-in {
-      background-image: url(../assets/export_mountain_v2/LinkedIN__icon.svg);
-    }
+    margin: 10px 0;
   }
 }
