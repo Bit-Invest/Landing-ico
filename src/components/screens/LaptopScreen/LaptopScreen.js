@@ -18,7 +18,7 @@ export const LaptopScreen = props => (
         </div>
       </div>
       <div className={`${ROOT_CLASS}__button-wrap`}>
-        <Button title="READ MORE" />
+        <Button title="ZOOM IN" />
       </div>
     </div>
   </Screen>

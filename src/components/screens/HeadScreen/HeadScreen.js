@@ -23,25 +23,25 @@ export class HeadScreen extends React.Component {
           </div>
           <div className={`${ROOT_CLASS}__pre-sale-info`}>
             <div className={`${ROOT_CLASS}__list-wrap`}>
-              <ul className={`${ROOT_CLASS}__list`}>
-                <li className={`${ROOT_CLASS}__list-item`}>
+              <div className={`${ROOT_CLASS}__list`}>
+                <div className={`${ROOT_CLASS}__list-item`}>
                   <span className={`${ROOT_CLASS}__list-item-title`}>
                     Passive earning on professional trading with the best
                     cryptotraders
                   </span>
-                </li>
-                <li className={`${ROOT_CLASS}__list-item`}>
+                </div>
+                <div className={`${ROOT_CLASS}__list-item`}>
                   <span className={`${ROOT_CLASS}__list-item-title`}>
                     The investor{"'"}s assets remain in their wallet at all
                     times
                   </span>
-                </li>
-                <li className={`${ROOT_CLASS}__list-item`}>
+                </div>
+                <div className={`${ROOT_CLASS}__list-item`}>
                   <span className={`${ROOT_CLASS}__list-item-title`}>
                     Success fees only
                   </span>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
             <div className={`${ROOT_CLASS}__timer-wrap`}>
               <div className={`${ROOT_CLASS}__timer-title`}>
