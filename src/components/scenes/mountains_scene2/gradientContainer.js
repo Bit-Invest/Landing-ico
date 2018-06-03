@@ -20,7 +20,6 @@ class GradientContainer extends React.Component {
 
   componentDidMount() {
     const { loadCanvasSvg } = this;
-    console.log('componentDidMount');
     loadCanvasSvg();
   }
 

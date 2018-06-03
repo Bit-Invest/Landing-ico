@@ -2,7 +2,6 @@ export class RearMethods {
   constructor(props) {}
 
   prToPixel = (path, arr, full, keys) => {
-    console.log(arr);
     for (let q in arr) {
       if (arr[q].ratioHeight) {
         arr[q].start = arr[q].start / 1000 * arr[q].ratioHeight;

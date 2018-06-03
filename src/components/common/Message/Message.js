@@ -19,13 +19,6 @@ class Message extends React.Component {
       'endValue'
     ]);
 
-    console.log('width of message', w);
-    console.log('height of message', h);
-    console.log('l & b', {
-      left: w / 100 * 29.95,
-      bottom: h / 100 * 8.2
-    });
-
     return (
       <Plx
         className="messages-prlx"

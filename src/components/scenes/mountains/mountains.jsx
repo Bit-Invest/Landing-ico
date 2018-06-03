@@ -514,10 +514,8 @@ class RearLayout extends React.Component {
 
 
       if(arr[q].ratioHeight){
-        //console.log('ratioHeight', arr[q].start)
         arr[q].start = (arr[q].start/1000) * arr[q].ratioHeight;
         arr[q].end = (arr[q].end/1000) * arr[q].ratioHeight;
-        //console.log('ratioHeight END', arr[q].start)
       }
 
       if(arr[q].ratio){
@@ -538,7 +536,6 @@ class RearLayout extends React.Component {
 
   loadCanvasSvg = () => {
     const { w, h, } = this.state;
-    console.log(this.canvasMoun);
     const ctx = this.canvasMoun.getContext('2d');
 
     const image = new window.Image();

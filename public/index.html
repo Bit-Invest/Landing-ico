@@ -17,47 +17,5 @@
   </head>
   <body>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start`.
-      To create a production bundle, use `npm run build`.
-    -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-
-
-        var body = $("html, body");
-        setTimeout(function(){
-          body.stop().animate({scrollTop: 0}, 200, 'swing',function(){})
-        },500);
-
-        var i = 0;
-
-        $('.footer__button').on('click',function(){
-          let 
-            wHeight = window.innerHeight,
-            nowScroll = $('html, body').scrollTop(),
-            newScroll = (Math.ceil(nowScroll / wHeight) + 1) * wHeight;
-
-            body.stop().animate({scrollTop: newScroll }, 1000, 'swing',function(){})
-        })
-
-        $('.menu__item').on('click',function(){
-          let 
-            wHeight = window.innerHeight,
-            page = $(this).attr('page');
-
-            body.stop().animate({scrollTop: wHeight * page }, 1000, 'swing',function(){})
-        })
-      })
-    </script>
-
   </body>
 </html>
