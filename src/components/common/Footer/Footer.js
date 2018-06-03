@@ -27,6 +27,8 @@ export const Footer = props => (
         let newSroll =
           Math.ceil((scrTop + 0.01) / global.HEIGHT) * global.HEIGHT;
 
+        console.log(scrTop, newSroll);
+
         scroll.scrollTo(newSroll);
       }}
     />

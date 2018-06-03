@@ -1,6 +1,7 @@
 import React from 'react';
 import { Screen } from '@common/Screen';
 import Aircraft from '@assets/export_mountain_v2/Samolet.svg';
+import { docs } from '@common/Links';
 
 const ROOT_CLASS = 'KeyDocs';
 
@@ -22,10 +23,18 @@ export const KeyDocs = props => (
             <button className="active">Buy tokens</button>
           </a>
           <div className="nav flex">
-            <a href="#">One Pager&#8195;|</a>
-            <a href="#">&#8195;Presentation&#8195;|</a>
-            <a href="#">&#8195;White Paper&#8195;|</a>
-            <a href="#">&#8195;Financial Model</a>
+            <a href={docs.one_pager} target="__blank">
+              One Pager&#8195;|
+            </a>
+            <a href={docs.presentation} target="__blank">
+              &#8195;Presentation&#8195;|
+            </a>
+            <a href={docs.wp} target="__blank">
+              &#8195;White Paper&#8195;|
+            </a>
+            <a href={docs.math_model} target="__blank">
+              &#8195;Financial Model
+            </a>
           </div>
         </div>
       </div>
