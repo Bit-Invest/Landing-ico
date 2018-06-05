@@ -21,8 +21,10 @@ export const TeamMember = props => (
         </div>
       ))}
     </div>
-    <a href={props.linkedIn}>
-      <img src={LinkedInIcon} className={`${ROOT_CLASS}__linked-in`} />
-    </a>
+    {props.linkedIn && (
+      <a href={props.linkedIn} target="__blank">
+        <img src={LinkedInIcon} className={`${ROOT_CLASS}__linked-in`} />
+      </a>
+    )}
   </div>
 );
