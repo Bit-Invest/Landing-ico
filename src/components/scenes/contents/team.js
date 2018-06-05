@@ -114,8 +114,7 @@ export const Team = [
       { number: 5, title: 'years legal advice experience ' },
       { number: null, title: 'Commercial and private client law focus ' },
       { number: null, title: 'Experience in working with KYC procedure' }
-    ],
-    linkedIn: '/'
+    ]
   },
   {
     avatar: Andrzej_Cichowlaz1,

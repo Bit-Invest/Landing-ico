@@ -1248,6 +1248,7 @@
 }
 .laptop-screen__button-wrap {
   margin-top: 10vh;
+  display: none;
 }
 .laptop-screen__description {
   margin-top: 3.42vh;
@@ -1255,26 +1256,6 @@
   font-size: 17px;
   color: #fff;
   line-height: 1;
-}
-.rise-of-capital {
-  padding-top: 5vh;
-  padding-bottom: 2.5vh;
-}
-.rise-of-capital__header {
-  color: #fff;
-}
-.rise-of-capital__header .title1 {
-  font-family: Geometria-Bold;
-  font-size: 5.74vh;
-}
-.rise-of-capital__header .title2 {
-  font-size: 3vh;
-  margin-left: 50px;
-  font-family: Geometria-Light;
-}
-.rise-of-capital__picture {
-  margin-top: 6.67vh;
-  height: 42vh;
 }
 .market-analytics {
   padding-top: 11.75vh;
@@ -1299,6 +1280,26 @@
 .market-analytics__text1,
 .market-analytics__text2 {
   margin-top: 20px;
+}
+.rise-of-capital {
+  padding-top: 5vh;
+  padding-bottom: 2.5vh;
+}
+.rise-of-capital__header {
+  color: #fff;
+}
+.rise-of-capital__header .title1 {
+  font-family: Geometria-Bold;
+  font-size: 5.74vh;
+}
+.rise-of-capital__header .title2 {
+  font-size: 3vh;
+  margin-left: 50px;
+  font-family: Geometria-Light;
+}
+.rise-of-capital__picture {
+  margin-top: 6.67vh;
+  height: 42vh;
 }
 .team-screen__header,
 .team-screen__title {
