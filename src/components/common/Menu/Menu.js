@@ -13,13 +13,13 @@ const Pages = [1, 17, 16];
 
 export class Menu extends React.Component {
   componentDidMount() {
-    Events.scrollEvent.register('begin', function(to, element) {
+    /*Events.scrollEvent.register('begin', function(to, element) {
       console.log('begin', arguments);
     });
 
     Events.scrollEvent.register('end', function(to, element) {
       console.log('end', arguments);
-    });
+    });*/
 
     scrollSpy.update();
   }

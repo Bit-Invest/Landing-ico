@@ -10,6 +10,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   overflow-x: hidden;
+  overflow: hidden;
 }
 
 button:disabled {

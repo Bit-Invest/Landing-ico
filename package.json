@@ -49,6 +49,8 @@
     "react": "^16.2.0",
     "react-dev-utils": "^5.0.0",
     "react-dom": "^16.2.0",
+    "react-mailchimp-form": "^1.0.1",
+    "react-onscroll": "^1.0.4",
     "react-plx": "^1.1.2",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
