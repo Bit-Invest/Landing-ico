@@ -15,7 +15,7 @@ export const DistributionScreen = () => (
       <img className={`${ROOT_CLASS}__graphImg`} src={Distribution_graph} />
       <div className={`${ROOT_CLASS}__graph`} />
       <a
-        href="https://my.cindx.io"
+        href="https://my.cindx.io/user/login?landing=1"
         target="__blank"
         className="href_noUnder"
         target="__blank">

@@ -51,7 +51,7 @@ export class HeadScreen extends React.Component {
           </div>
           <div className={`${ROOT_CLASS}__buttons`}>
             <a
-              href="https://my.cindx.io"
+              href="https://my.cindx.io/user/login?landing=1"
               className="href_noUnder"
               target="__blank">
               <Button title="JOIN PRE-SALE" />

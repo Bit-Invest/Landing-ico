@@ -39,7 +39,7 @@ export const ICODetailsScreen = () => (
         </div>
       </div>
       <a
-        href="https://my.cindx.io"
+        href="https://my.cindx.io/user/login?landing=1"
         target="__blank"
         className="href_noUnder"
         target="__blank">

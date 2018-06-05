@@ -9,7 +9,10 @@ export const JoinPresaleScreen = () => (
     <div className={ROOT_CLASS}>
       <div className={`${ROOT_CLASS}__title`}>Join Our TokenPre-Sale Now!</div>
       <div className={`${ROOT_CLASS}__buttons-wrap`}>
-        <a href="https://my.cindx.io" target="__blank" className="href_noUnder">
+        <a
+          href="https://my.cindx.io/user/login?landing=1"
+          target="__blank"
+          className="href_noUnder">
           <Button theme="filled" title="JOIN PRE-SALE" />
         </a>
         <a

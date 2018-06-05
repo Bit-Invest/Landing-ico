@@ -17,7 +17,7 @@ export const KeyDocs = props => (
         </div>
         <div className="bottom-side flex">
           <a
-            href="https://my.cindx.io"
+            href="https://my.cindx.io/user/login?landing=1"
             target="__blank"
             className="href_noUnder">
             <button className="active">Buy tokens</button>

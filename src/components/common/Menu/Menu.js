@@ -52,7 +52,7 @@ export class Menu extends React.Component {
         </div>
         <div className="menu__item menu__item_underline">
           <a
-            href="https://my.cindx.io"
+            href="https://my.cindx.io/user/login?landing=1"
             target="__blank"
             className="href_noUnder">
             Join Pre-sale
