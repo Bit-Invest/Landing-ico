@@ -15,6 +15,8 @@ import { ICODetailsScreen } from '@screens/ICODetailsScreen';
 import { TokenDetailsScreen } from '@screens/TokenDetailsScreen';
 import { DistributionScreen } from '@screens/DistributionScreen';
 import { VideoPopUp } from '@common/VideoPopUp';
+import { TeamScreen } from '@screens/TeamScreen';
+import Ibrahim from '@assets/export_mountain_v2/ibrahim.jpg';
 
 import CINDX_v_2_p_25 from '@assets/export_mountain_v2/CINDX_v_2_p_25.svg';
 import CINDX_v_2_p_16 from '@assets/export_mountain_v2/CINDX_v_2_p_16.svg';
@@ -173,9 +175,7 @@ export class MountainContentPage extends React.Component {
       	<Plx parallaxData={prlx1}>
       		<Plx parallaxData={ParallaxData1}>
   					<div className="containerContent containerBlocks">
-              <HeadScreen
-                data={data}
-              />
+              <HeadScreen data={data} />
     				</div>
     			</Plx>
     			<Plx parallaxData={ParallaxData2}>
