@@ -22,3 +22,5 @@ render(
   </Provider>,
   target
 );
+
+/**/
