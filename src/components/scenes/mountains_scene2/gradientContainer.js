@@ -25,7 +25,7 @@ class GradientContainer extends React.Component {
 
   loadCanvasSvg = () => {
     let h = global.HEIGHT,
-      w = h;
+      w = h + 100;
 
     const ctx = this.canvasMoun2.getContext('2d');
 
@@ -48,7 +48,7 @@ class GradientContainer extends React.Component {
           ref={c => (this.canvasMoun2 = c)}
           className="M2"
           height={global.HEIGHT}
-          width={global.HEIGHT}
+          width={global.HEIGHT + 100}
         />
         <Plx parallaxData={prlxMoun2ScenePeople}>
           <img

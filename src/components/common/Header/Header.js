@@ -11,7 +11,7 @@ export const Header = props => (
       </div>
       <div className={`${ROOT_CLASS}__promo-title-wrap`}>
         <div className={`${ROOT_CLASS}__promo-title`}>
-          Win or winners<br />
+          Win on winners<br />
           Automatically<br />
           <span className={`${ROOT_CLASS}__security`}>
             Security Token Pre-sale
