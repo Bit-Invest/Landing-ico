@@ -19,15 +19,9 @@ export const Footer = props => (
     <div
       className={`${ROOT_CLASS}__button`}
       onClick={() => {
-        let scrTop = (
-          document.documentElement ||
-          document.body.parentNode ||
-          document.body
-        ).scrollTop;
+        let scrTop = window.scrollY;
         let newSroll =
           Math.ceil((scrTop + 0.01) / global.HEIGHT) * global.HEIGHT;
-
-        console.log(scrTop, newSroll);
 
         scroll.scrollTo(newSroll);
       }}
