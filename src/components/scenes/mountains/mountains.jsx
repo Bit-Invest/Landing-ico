@@ -2,7 +2,6 @@ import React from 'react';
 import imageMouns from '@assets/export_mountain_v2/mountain_new23.svg';
 import imageFunicular from '@assets/export_mountain_v2/kabinka_2.svg';
 import imageMoon from '@assets/export_mountain_v2/moon.svg';
-import imagePlay_button from '@assets/export_mountain_v2/play_button.svg';
 import Guy from '@assets/gifs/Guy.gif';
 import Plx from "react-plx";
 import { bindActionCreators } from 'redux';
@@ -614,14 +613,6 @@ class RearLayout extends React.Component {
           }}>
             <img src={imageMoon} className="moon-img" width={(w/100) * 12} height={((h/100) * 12)} />
           </Plx>
-
-          <Plx className="moon playMoon" parallaxData={prlxMoon2} style={{
-            left: ((w/100) * 21.95) + ((global.WIDTH/100)*global.LEFT),
-            top: (h/100) * 18.2
-          }}>
-            <img src={imagePlay_button} className="moon-img" width={(w/100) * 17} height={((h/100) * 17)} />
-          </Plx>
-
         </React.Fragment>
 
         <Gradient2 

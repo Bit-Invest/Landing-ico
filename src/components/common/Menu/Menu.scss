@@ -11,6 +11,11 @@
     opacity: .7;
   }
 
+  .href_noUnder{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
   &__item {
     position: relative;
     margin-left: 27px;

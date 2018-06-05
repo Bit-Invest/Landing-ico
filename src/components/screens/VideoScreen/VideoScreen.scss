@@ -1,6 +1,8 @@
 .video-screen {
   padding-bottom: 18.3vh;
   padding-top: 5.6vh;
+  position: relative;
+
   &__header {
     display: inline-block;
     vertical-align: middle;
@@ -26,4 +28,21 @@
   &__button {
     margin-top: 7.4vh;
   }
+}
+
+.playMoon{
+  position: absolute;
+  z-index: 9999999;
+  left: 40%;
+  top: 0;
+  width: 30%;
+
+  .moon-img{
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+.playMoon .moon-img:hover{
+  opacity: .7;
 }
