@@ -11,9 +11,9 @@ export const Geographic = props => (
         <div className="left-side flex">
           <h1>Geographic scope</h1>
           <span className="nav flex">
-            <a href="#">Customers potential …</a>
-            <a href="#">Transactions potential …</a>
-            <a href="#">Value added to average …</a>
+            <a>25m potential blockchain wallets</a>
+            <a>200,000 potential transactions daily</a>
+            <a>>225 potential partners with $3-5bn each</a>
           </span>
         </div>
         <div className="right-side">

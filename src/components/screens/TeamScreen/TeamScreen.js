@@ -13,23 +13,26 @@ const settings = {
   arrows: true
 };
 
-export const TeamScreen = props => (
-  <Screen>
-    <div className={ROOT_CLASS}>
-      <div className={`${ROOT_CLASS}__header-wrap`}>
-        <div className={`${ROOT_CLASS}__header`}>{props.header}</div>
-        <div className={`${ROOT_CLASS}__title`}>{props.title}</div>
+export const TeamScreen = props => {
+  console.log(props);
+  return (
+    <Screen>
+      <div className={ROOT_CLASS}>
+        <div className={`${ROOT_CLASS}__header-wrap`}>
+          <div className={`${ROOT_CLASS}__header`}>{props.header}</div>
+          <div className={`${ROOT_CLASS}__title`}>{props.title}</div>
+        </div>
+        <div className={`${ROOT_CLASS}__slider-wrap`}>
+          <Slider {...settings} arrows>
+            {props.slides.map((slide, index) => (
+              <TeamMember {...slide} key={index} />
+            ))}
+          </Slider>
+        </div>
       </div>
-      <div className={`${ROOT_CLASS}__slider-wrap`}>
-        <Slider {...settings}>
-          {props.slides.map((slide, index) => (
-            <TeamMember {...slide} key={index} />
-          ))}
-        </Slider>
-      </div>
-    </div>
-  </Screen>
-);
+    </Screen>
+  );
+};
 
 // <TeamMember
 //   avatar={Ibrahim}

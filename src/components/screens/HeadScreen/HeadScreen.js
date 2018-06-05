@@ -32,8 +32,7 @@ export class HeadScreen extends React.Component {
                 </div>
                 <div className={`${ROOT_CLASS}__list-item`}>
                   <span className={`${ROOT_CLASS}__list-item-title`}>
-                    The investor{"'"}s assets remain in their wallet at all
-                    times
+                    All the crypto is kept in the wallet of investor at all time
                   </span>
                 </div>
                 <div className={`${ROOT_CLASS}__list-item`}>

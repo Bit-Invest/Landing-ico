@@ -98,6 +98,30 @@ export const prlxLeftScene = [
         property: 'width'
       }
     ]
+  },
+  {
+    start: 19000,
+    end: 20000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: 0,
+        endValue: 100,
+        property: 'width'
+      }
+    ]
+  },
+  {
+    start: 21000,
+    end: 22000,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: 100,
+        endValue: 0,
+        property: 'width'
+      }
+    ]
   }
 ];
 

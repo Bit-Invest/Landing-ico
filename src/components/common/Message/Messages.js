@@ -28,32 +28,51 @@ class Messages extends React.Component {
       <React.Fragment>
         <Message
           prlxData={messagePrlx1}
-          text="MY PROBLEM NO 1: Had some money to invest in the game, but couldn’t find the best trader to manage it"
+          text={
+            <span className="messageSpan">
+              MY PROBLEM NO 1:{' '}
+              <p>
+                Had some money to invest in the game, but couldn’t find the best
+                trader to manage it
+              </p>
+            </span>
+          }
         />
         <Message
           prlxData={messagePrlx2}
-          text="MY PROBLEM NO 2: I never felt comfortable letting others handle my investment"
+          text={
+            <span className="messageSpan">
+              MY PROBLEM NO 2:{' '}
+              <p>
+                I never felt comfortable letting others handle my investment
+              </p>
+            </span>
+          }
         />
         <Message
           prlxData={messagePrlx3}
-          text="MY PROBLEM NO 3: Not sure how it works"
+          text={
+            <span className="messageSpan">
+              MY PROBLEM NO 3: <p>Not sure how it works</p>
+            </span>
+          }
         />
 
         <Message
           prlxData={messagePrlx2_1}
-          text="I join Cindex with crypto assets"
+          text="I’m joining CINDX with my crypto assets"
         />
         <Message
           prlxData={messagePrlx2_2}
-          text="I join Cindex with expertise"
+          text="I'm joining CINDX with my expertise"
         />
         <Message
           prlxData={messagePrlx2_3}
-          text="I join Cindex with Apps for traders"
+          text="I joined CINDX with instruments for traders"
         />
         <Message
           prlxData={messagePrlx2_4}
-          text="Cindx We provide a one-stop solution for easy, secure and eddicient crypto-assets trading"
+          text="We provide a one-stop solution for easy, secure and efficient cryptoassets trading"
         />
       </React.Fragment>
     );

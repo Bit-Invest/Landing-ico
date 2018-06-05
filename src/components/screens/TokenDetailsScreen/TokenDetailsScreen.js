@@ -20,7 +20,7 @@ export const TokenDetailsScreen = () => (
           <span className={`${ROOT_CLASS}__bold-text`}>
             27.06.2018<br />
           </span>
-          Join the Token Pre-Sale to receive a time limited 25% bonus
+          Join the Token Pre- Sale to receive a 25% bonus. Limited time offer.
         </div>
         <div className={`${ROOT_CLASS}__info`}>
           Token Sale starts:<br />

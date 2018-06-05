@@ -16,6 +16,7 @@ import { TokenDetailsScreen } from '@screens/TokenDetailsScreen';
 import { DistributionScreen } from '@screens/DistributionScreen';
 import { VideoPopUp } from '@common/VideoPopUp';
 import { TeamScreen } from '@screens/TeamScreen';
+
 import Ibrahim from '@assets/export_mountain_v2/ibrahim.jpg';
 
 import CINDX_v_2_p_25 from '@assets/export_mountain_v2/CINDX_v_2_p_25.svg';
@@ -192,14 +193,14 @@ export class MountainContentPage extends React.Component {
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 1"
-              title="Cindx offers best of both worlds, thanks to their rating system"
+              title="Via Cindex you can do it. Thanks to the rating system"
               description="We offer a rating system using trading history that guarantees you find the right manager for you."
             />
           </div>
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 2"
-              title="Here all your crypto assets to manage are kept in your wallet at all times"
+              title="Here all your crypto assets to manage are kept in your wallet all the time"
               description="Decentralisation and smart contracts allow one to manage their wallets, without having to transfer funds to managers"
             />
           </div>
@@ -216,25 +217,25 @@ export class MountainContentPage extends React.Component {
           <div className="containerContent containerBlocks">
             <TextOne
               text1="Investor"
-              text2="Increase their crypto holdings through efficient trading by asset managers"
+              text2="increases his crypto capital by the efficient management of his assets by a professional trader"
             />
           </div>
           <div className="containerContent containerBlocks">
             <TextOne
               text1="Trader"
-              text2="Earn their success fees by building a following of investors using their deep understanding of market and trade strategy"
+              text2="earns his success fees building a pull of investors on the deep understanding of the market and trade strategy"
             />
           </div>
           <div className="containerContent containerBlocks">
             <TextOne
               text1="Vendor"
-              text2="Sells advanced financial instruments and trading tools for traders"
+              text2="sells advanced tools for traders e.g. trade robots and news feeds"
             />
           </div>
           <div className="containerContent containerBlocks">
             <TextOne
               text1="CINDX"
-              text2="Earns on success fee commissions and subscriptions to the terminal"
+              text2="earnes on success fees commission and subscription for terminal"
             />
           </div>
           <div className="containerContent containerBlocks">
@@ -280,6 +281,165 @@ export class MountainContentPage extends React.Component {
           </div>
           <div className="containerContent containerBlocks">
             <TokenDetailsScreen />
+          </div>
+          <div className="containerContent containerBlocks">
+            <TeamScreen 
+              header="Team"
+              title="CINDX is a strong team composed of successful entrepreneurs with at least 5 years of experience in a variety of fields"
+              slides={[
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                },
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                },
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                },
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                },
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                },
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                }
+              ]}
+            />
+          </div>
+          <div className="containerContent containerBlocks">
+            <TeamScreen 
+              header="Advisors"
+              slides={[
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                },
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                },
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                },
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                },
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                },
+                {
+                  avatar: Ibrahim,
+                  name: "Ibrahim",
+                  surname: 'Haniev',
+                  position: "Chief technical officer",
+                  achievments: [
+                    {number: 500, title: 'years in web development'},
+                    {number: 700, title: 'years in mastering front'},
+                    {number: 4, title: 'years in CINDEX'}
+                  ],
+                  linkedIn: "/"
+                }
+              ]}
+            />
           </div>
           <div className="containerContent containerBlocks">
             <JoinPresaleScreen />
