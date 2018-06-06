@@ -18,6 +18,7 @@ import { VideoPopUp } from '@common/VideoPopUp';
 import { TeamScreen } from '@screens/TeamScreen';
 
 import { Team } from './team';
+import { Advisors } from './advisors';
 
 import CINDX_v_2_p_25 from '@assets/export_mountain_v2/CINDX_v_2_p_25.svg';
 import CINDX_v_2_p_16 from '@assets/export_mountain_v2/CINDX_v_2_p_16.svg';
@@ -287,6 +288,13 @@ export class MountainContentPage extends React.Component {
               header="Team"
               title="CINDX is a strong team composed of successful entrepreneurs with at least 5 years of experience in a variety of fields"
               slides={Team}
+            />
+          </div> 
+          <div className="containerContent containerBlocks">
+            <TeamScreen 
+              header="Advisors"
+              title=""
+              slides={Advisors}
             />
           </div>
           <div className="containerContent containerBlocks">
