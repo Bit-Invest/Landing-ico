@@ -153,7 +153,14 @@ export const messagePrlx1 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
-      },
+      }
+    ]
+  },
+  {
+    start: 3500,
+    end: 3550,
+    ratioHeight: window.innerHeight,
+    properties: [
       {
         startValue: 10.2,
         endValue: -200,
@@ -191,7 +198,14 @@ export const messagePrlx2 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
-      },
+      }
+    ]
+  },
+  {
+    start: 4500,
+    end: 4550,
+    ratioHeight: window.innerHeight,
+    properties: [
       {
         startValue: 10.2,
         endValue: -200,
@@ -234,6 +248,18 @@ export const messagePrlx3 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
+      }
+    ]
+  },
+  {
+    start: 5500,
+    end: 5550,
+    ratioHeight: window.innerHeight,
+    properties: [
+      {
+        startValue: 10.2,
+        endValue: -200,
+        property: 'translateX'
       }
     ]
   }
@@ -350,7 +376,14 @@ export const messagePrlx2_1 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
-      },
+      }
+    ]
+  },
+  {
+    start: 7500,
+    end: 7550,
+    ratioHeight: window.innerHeight,
+    properties: [
       {
         startValue: 16.2,
         endValue: -200,
@@ -388,7 +421,14 @@ export const messagePrlx2_2 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
-      },
+      }
+    ]
+  },
+  {
+    start: 8500,
+    end: 8550,
+    ratioHeight: window.innerHeight,
+    properties: [
       {
         startValue: 11.2,
         endValue: -200,
@@ -426,7 +466,14 @@ export const messagePrlx2_3 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
-      },
+      }
+    ]
+  },
+  {
+    start: 9500,
+    end: 9550,
+    ratioHeight: window.innerHeight,
+    properties: [
       {
         startValue: 7.2,
         endValue: -200,
@@ -464,7 +511,14 @@ export const messagePrlx2_4 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
-      },
+      }
+    ]
+  },
+  {
+    start: 10500,
+    end: 10550,
+    ratioHeight: window.innerHeight,
+    properties: [
       {
         startValue: 4.2,
         endValue: -200,

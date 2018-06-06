@@ -9,7 +9,13 @@ export const LaptopScreen = props => (
     <div className={ROOT_CLASS}>
       <div className={`${ROOT_CLASS}__header`}>{props.header}</div>
       <div className={`${ROOT_CLASS}__content-wrap`}>
-        <div className={`${ROOT_CLASS}__laptop`} />
+        <div className={`${ROOT_CLASS}__laptopParent`}>
+          <div className={`${ROOT_CLASS}__laptop`} />
+          <img
+            className={`${ROOT_CLASS}__laptopScreenImage`}
+            src={props.image}
+          />
+        </div>
         <div className={`${ROOT_CLASS}__content`}>
           <div className={`${ROOT_CLASS}__title`}>{props.title}</div>
           <div className={`${ROOT_CLASS}__description`}>
@@ -17,9 +23,11 @@ export const LaptopScreen = props => (
           </div>
         </div>
       </div>
-      <div className={`${ROOT_CLASS}__button-wrap`}>
-        <Button title="ZOOM IN" />
-      </div>
+      <a href="http://192.81.220.26" className="href_noUnder" target="__blank">
+        <div className={`${ROOT_CLASS}__button-wrap`}>
+          <Button title="TEST MVP" />
+        </div>
+      </a>
     </div>
   </Screen>
 );

@@ -24,6 +24,10 @@ import CINDX_v_2_p_25 from '@assets/export_mountain_v2/CINDX_v_2_p_25.svg';
 import CINDX_v_2_p_16 from '@assets/export_mountain_v2/CINDX_v_2_p_16.svg';
 import CINDX_v_2_p_15 from '@assets/export_mountain_v2/Chart.svg';
 
+import screen_1 from '@assets/screens/Laptop_1.png';
+import screen_2 from '@assets/screens/Laptop_2.png';
+import screen_3 from '@assets/screens/Laptop_3.png';
+
 class RearDt {
   constructor(props) {
     Object.assign(this,{
@@ -196,6 +200,7 @@ export class MountainContentPage extends React.Component {
               header="Feature 1"
               title="Via Cindex you can do it. Thanks to the rating system"
               description="We offer a rating system using trading history that guarantees you find the right manager for you."
+              image={screen_1}
             />
           </div>
           <div className="containerContent containerBlocks">
@@ -203,6 +208,7 @@ export class MountainContentPage extends React.Component {
               header="Feature 2"
               title="Here all your crypto assets to manage are kept in your wallet all the time"
               description="Decentralisation and smart contracts allow one to manage their wallets, without having to transfer funds to managers"
+              image={screen_2}
             />
           </div>
           <div className="containerContent containerBlocks">
@@ -210,6 +216,7 @@ export class MountainContentPage extends React.Component {
               header="Feature 3"
               title="You earn following the best"
               description="Investors join to sync their transactions with the best players on the marketplace"
+              image={screen_3}
             />
           </div>
           <div className="containerContent containerBlocks">
