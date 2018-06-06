@@ -153,6 +153,11 @@ export const messagePrlx1 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
+      },
+      {
+        startValue: 10.2,
+        endValue: -200,
+        property: 'translateX'
       }
     ]
   }
@@ -186,6 +191,11 @@ export const messagePrlx2 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
+      },
+      {
+        startValue: 10.2,
+        endValue: -200,
+        property: 'translateX'
       }
     ]
   }
@@ -206,6 +216,11 @@ export const messagePrlx3 = [
         startValue: -13.7,
         endValue: -13.7,
         property: 'translateY'
+      },
+      {
+        startValue: 10.2,
+        endValue: -200,
+        property: 'translateX'
       }
     ]
   },
@@ -335,6 +350,11 @@ export const messagePrlx2_1 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
+      },
+      {
+        startValue: 16.2,
+        endValue: -200,
+        property: 'translateX'
       }
     ]
   }
@@ -368,6 +388,11 @@ export const messagePrlx2_2 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
+      },
+      {
+        startValue: 11.2,
+        endValue: -200,
+        property: 'translateX'
       }
     ]
   }
@@ -401,6 +426,11 @@ export const messagePrlx2_3 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
+      },
+      {
+        startValue: 7.2,
+        endValue: -200,
+        property: 'translateX'
       }
     ]
   }
@@ -434,6 +464,11 @@ export const messagePrlx2_4 = [
         startValue: 1,
         endValue: 0,
         property: 'opacityFilter'
+      },
+      {
+        startValue: 4.2,
+        endValue: -200,
+        property: 'translateX'
       }
     ]
   }
