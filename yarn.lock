@@ -7771,6 +7771,10 @@ react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
 
+react-favicon@^0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/react-favicon/-/react-favicon-0.0.14.tgz#3c9c7b999d106e6e112f729ab929b8dbec05b280"
+
 react-mailchimp-form@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-mailchimp-form/-/react-mailchimp-form-1.0.1.tgz#edb67c6c7e29e127dac51b0dd1a43a0c60397966"

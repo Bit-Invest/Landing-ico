@@ -1,8 +1,15 @@
-import Yuriy_Avdeev from '@assets/avatars/Yuriy_Avdeev.jpg';
+import Amarpreet_Singh from '@assets/avatars/Amarpreet_Singh.jpg';
+import Austin_Kimm from '@assets/avatars/Austin_Kimm.jpg';
+import Bogdan_Fiedur from '@assets/avatars/Bogdan_Fiedur.jpg';
+import Graham_Doggart from '@assets/avatars/Graham_Doggart.jpg';
+import Keith_Teare from '@assets/avatars/Keith_Teare.jpg';
+import Philip_Staehelin from '@assets/avatars/Philip_Staehelin.jpg';
+import Sadie_Hutton from '@assets/avatars/Sadie_Hutton.jpg';
+import Tyler_Sanford from '@assets/avatars/Tyler_Sanford.jpg';
 
 export const Advisors = [
   {
-    avatar: Yuriy_Avdeev,
+    avatar: Austin_Kimm,
     name: 'Austin',
     surname: 'Kimm',
     achievments: [
@@ -13,7 +20,7 @@ export const Advisors = [
     linkedIn: 'https://www.linkedin.com/in/austin-kimm-486b5a22/'
   },
   {
-    avatar: Yuriy_Avdeev,
+    avatar: Philip_Staehelin,
     name: 'Philip',
     surname: 'Staehelin',
     achievments: [
@@ -30,7 +37,7 @@ export const Advisors = [
     linkedIn: 'https://www.linkedin.com/in/staehelin/'
   },
   {
-    avatar: Yuriy_Avdeev,
+    avatar: Amarpreet_Singh,
     name: 'Amarpreet',
     surname: 'Singh',
     achievments: [
@@ -44,21 +51,7 @@ export const Advisors = [
     linkedIn: 'https://www.linkedin.com/in/amarpreetsingh2/'
   },
   {
-    avatar: Yuriy_Avdeev,
-    name: 'Mofassair',
-    surname: 'Hossain',
-    achievments: [
-      { number: null, title: 'Investor and Advisor of 15+ ICOs' },
-      { number: null, title: 'Top PR and Marketing Advisor at ICO Bench' },
-      {
-        number: null,
-        title: 'Member of Global Blockchain Advisory Professionals'
-      }
-    ],
-    linkedIn: 'https://www.linkedin.com/in/md-mofassair-hossain-515a90148'
-  },
-  {
-    avatar: Yuriy_Avdeev,
+    avatar: Tyler_Sanford,
     name: 'Tyler',
     surname: 'Sanford',
     achievments: [
@@ -72,7 +65,7 @@ export const Advisors = [
     linkedIn: 'https://www.linkedin.com/in/tylersanford/'
   },
   {
-    avatar: Yuriy_Avdeev,
+    avatar: Bogdan_Fiedur,
     name: 'Bogdan',
     surname: 'Fiedur',
     achievments: [
@@ -89,7 +82,7 @@ export const Advisors = [
     linkedIn: 'https://www.linkedin.com/in/bogdanfiedur/'
   },
   {
-    avatar: Yuriy_Avdeev,
+    avatar: Graham_Doggart,
     name: 'Graham',
     surname: 'Doggart',
     achievments: [
@@ -103,7 +96,7 @@ export const Advisors = [
     linkedIn: 'https://www.linkedin.com/in/grahamdoggart/'
   },
   {
-    avatar: Yuriy_Avdeev,
+    avatar: Sadie_Hutton,
     name: 'Sadie',
     surname: 'Hutton',
     achievments: [
@@ -121,7 +114,7 @@ export const Advisors = [
     linkedIn: 'https://www.linkedin.com/in/sadie-hutton/'
   },
   {
-    avatar: Yuriy_Avdeev,
+    avatar: Keith_Teare,
     name: 'Keith',
     surname: 'Teare',
     achievments: [

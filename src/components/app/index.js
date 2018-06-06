@@ -2,9 +2,12 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import ScrollEvent from 'react-onscroll';
 import * as Scroll from 'react-scroll';
+import Favicon from 'react-favicon';
 
 import { ListContainer } from '../scenes/';
 import { HeadScreen } from '@screens/HeadScreen';
+
+import FaviconImage from '@assets/icons/favicon.png';
 
 const ROOT_CLASS = 'menu';
 let _Link = Scroll.Link;
@@ -71,9 +74,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App" onWheel={this.handleScrollCallback}>
-        <ListContainer />
-      </div>
+      <React.Fragment>
+        <Favicon url={FaviconImage} />
+        <div className="App" onWheel={this.handleScrollCallback}>
+          <ListContainer />
+        </div>
+      </React.Fragment>
     );
   }
 }
