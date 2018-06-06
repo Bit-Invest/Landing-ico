@@ -198,7 +198,7 @@ export class MountainContentPage extends React.Component {
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 1"
-              title="Via Cindex you can do it. Thanks to the rating system"
+              title="Via Cindx you can do it. Thanks to the rating system"
               description="We offer a rating system using trading history that guarantees you find the right manager for you."
               image={screen_1}
             />

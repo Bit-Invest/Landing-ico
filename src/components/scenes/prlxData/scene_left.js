@@ -230,11 +230,6 @@ export const messagePrlx3 = [
         startValue: -13.7,
         endValue: -13.7,
         property: 'translateY'
-      },
-      {
-        startValue: 10.2,
-        endValue: -200,
-        property: 'translateX'
       }
     ]
   },
