@@ -248,11 +248,6 @@
   width: 541px;
   height: 325px;
 }
-.menu,
-.pop-up__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-}
 .media-block_active .media-block__picture {
   height: 100%;
   width: 292px;
@@ -262,6 +257,8 @@
   width: 248px;
 }
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -322,11 +319,6 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.containerBlocks,
-.footerContainer {
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-}
 .messages-prlx::after {
   content: '';
   position: absolute;
@@ -363,6 +355,8 @@
 }
 .pop-up__header {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -457,19 +451,49 @@
   border-radius: 100px;
   margin-top: 20px;
 }
+.progress-bar__titles,
+.time-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  color: #fff;
+}
+.progress-bar__bar {
+  width: 360px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.progress-bar__fill {
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.progress-bar__titles {
+  margin-top: 7px;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 1;
+}
+.progress-bar__soft {
+  font-family: Geometria-Light;
+}
+.progress-bar__hard,
+.time-circle__circle {
+  font-family: Geometria-Bold;
+}
 .screen {
   height: 100%;
 }
 .time-circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #fff;
 }
 .time-circle__circle {
   display: -webkit-box;
@@ -485,7 +509,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: Geometria-Bold;
   font-size: 15px;
   line-height: 1.2;
 }
@@ -499,6 +522,11 @@
 .team-member {
   display: inline-block;
   vertical-align: top;
+}
+.timer,
+.video-pop-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
 }
 .team-member__avatar {
   width: 120px;
@@ -533,6 +561,12 @@
   font-family: Geometria-Light;
   line-height: 1.3;
 }
+.distribution-screen__header,
+.head-screen__header {
+  line-height: 1.1;
+  font-family: Geometria-Bold;
+  color: #fff;
+}
 .team-member__achievment-number {
   font-size: 18px;
   font-family: Geometria-Bold;
@@ -541,40 +575,6 @@
   margin-top: 40px;
   width: 18px;
   height: 17px;
-}
-.progress-bar__bar {
-  width: 360px;
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 40px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.progress-bar__fill {
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.15);
-}
-.progress-bar__titles {
-  margin-top: 7px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  font-size: 12px;
-  color: #fff;
-  line-height: 1;
-}
-.timer,
-.video-pop-up {
-  display: -webkit-box;
-  display: -ms-flexbox;
-}
-.progress-bar__soft {
-  font-family: Geometria-Light;
-}
-.progress-bar__hard {
-  font-family: Geometria-Bold;
 }
 .timer {
   display: flex;
@@ -642,12 +642,6 @@
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
-[root-class='Geographic'] .app,
-[root-class='Geographic'] .left-side {
-  -ms-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-}
 .video-pop-up__undercover {
   position: absolute;
   width: 100%;
@@ -668,6 +662,8 @@
   max-width: 1440px;
   min-width: 1000px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 .bgMountains,
@@ -694,10 +690,19 @@
   left: 0;
   z-index: 999;
 }
-.scene,
-[root-class='Geographic'] .flex {
+.head-screen__buttons,
+.scene {
   display: -webkit-box;
   display: -ms-flexbox;
+}
+.footerContainer {
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  bottom: 4vh;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .gradientScene {
   background: -webkit-gradient(
@@ -711,13 +716,6 @@
   background: -o-linear-gradient(top, #2e1d68 0, #892c5e 100%);
   background: linear-gradient(to bottom, #2e1d68 0, #892c5e 100%);
   z-index: 3;
-}
-.footerContainer {
-  position: fixed;
-  z-index: 999;
-  left: 50%;
-  bottom: 4vh;
-  transform: translateX(-50%);
 }
 .headContainer {
   position: fixed;
@@ -870,10 +868,7 @@
   padding-bottom: 6.85vh;
 }
 .distribution-screen__header {
-  font-family: Geometria-Bold;
   font-size: 6.48vh;
-  line-height: 1.1;
-  color: #fff;
 }
 .distribution-screen__graph {
   margin-top: 5.56vh;
@@ -883,90 +878,23 @@
   height: 26vh;
   margin: 3vh 0;
 }
-.Geographic {
-  margin-top: 5vh;
-}
-[root-class='Geographic'] .app {
-  flex-direction: column;
-  height: 100%;
-}
-[root-class='Geographic'] .container {
-  width: 1024px;
-  margin: 0 auto;
-  height: 100%;
-  position: relative;
-}
-[root-class='Geographic'] .flex {
-  display: flex;
-}
-[root-class='Geographic'] .right-side {
-  position: absolute;
-  width: 850px;
-  height: 500px;
-  right: -80px;
-  top: 50%;
-  margin-top: -170px;
-  z-index: -1;
-  background: url(../assets/export_mountain_v2/map_min.svg) no-repeat;
-}
-[root-class='Geographic'] .right-side .tooltip {
-  position: absolute;
-  padding: 10px 25px;
-  background: #40255d;
-  color: #fff;
-}
-[root-class='Geographic'] .right-side .tooltip span:first-child {
-  font: 12px Geometria;
-}
-[root-class='Geographic'] .right-side .tooltip span:last-child {
-  font: 12px Geometria-Bold;
-}
-[root-class='Geographic'] .right-side .tooltip:nth-of-type(1) {
-  left: 240px;
-  top: 200px;
-}
-[root-class='Geographic'] .left-side {
-  max-width: 600px;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 450px;
-  margin: auto 0;
-}
-[root-class='Geographic'] .left-side h1 {
-  font: 83px Geometria-Bold;
-  line-height: 80px;
-  margin: 0;
-  color: #fff;
-}
-[root-class='Geographic'] .left-side .nav {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-[root-class='Geographic'] .left-side .nav a {
-  color: #fff;
-  margin: 5px 0;
-  font: 19px Geometria;
-}
 .head-screen__buttons {
   margin-top: 7.6vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 535px;
 }
+[root-class='Geographic'] .app,
+[root-class='Geographic'] .left-side {
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
 .head-screen__header {
   width: 500px;
-  font-family: Geometria-Bold;
   font-size: 4.17vh;
-  line-height: 1.1;
-  color: #fff;
 }
 .head-screen__pre-sale-info {
   display: -webkit-box;
@@ -1037,6 +965,76 @@
 }
 .href_noUnder {
   text-decoration: none;
+}
+.Geographic {
+  margin-top: 5vh;
+}
+[root-class='Geographic'] .app {
+  flex-direction: column;
+  height: 100%;
+}
+[root-class='Geographic'] .container {
+  width: 1024px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+[root-class='Geographic'] .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+[root-class='Geographic'] .right-side {
+  position: absolute;
+  width: 850px;
+  height: 500px;
+  right: -80px;
+  top: 50%;
+  margin-top: -170px;
+  z-index: -1;
+  background: url(../assets/export_mountain_v2/map_min.svg) no-repeat;
+}
+[root-class='Geographic'] .right-side .tooltip {
+  position: absolute;
+  padding: 10px 25px;
+  background: #40255d;
+  color: #fff;
+}
+[root-class='Geographic'] .right-side .tooltip span:first-child {
+  font: 12px Geometria;
+}
+[root-class='Geographic'] .right-side .tooltip span:last-child {
+  font: 12px Geometria-Bold;
+}
+[root-class='Geographic'] .right-side .tooltip:nth-of-type(1) {
+  left: 240px;
+  top: 200px;
+}
+[root-class='Geographic'] .left-side {
+  max-width: 600px;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 450px;
+  margin: auto 0;
+}
+[root-class='Geographic'] .left-side h1 {
+  font: 83px Geometria-Bold;
+  line-height: 80px;
+  margin: 0;
+  color: #fff;
+}
+[root-class='Geographic'] .left-side .nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+[root-class='Geographic'] .left-side .nav a {
+  color: #fff;
+  margin: 5px 0;
+  font: 19px Geometria;
 }
 .how-does-it-screen {
   padding-top: 3.83vh;
@@ -1326,6 +1324,27 @@
   margin-top: 6.67vh;
   height: 42vh;
 }
+.textOne-analytics {
+  padding-top: 11.75vh;
+  padding-bottom: 13.43vh;
+}
+.textOne-analytics__header {
+  font-size: 7.87vh;
+  color: #fff;
+  font-family: Geometria-Bold;
+  width: 400px;
+  line-height: 1.2;
+}
+.textOne-analytics .textOne-analytics__text1 {
+  width: 400px;
+  font-size: 3.17vh;
+  font-family: Geometria-Bold;
+  line-height: 1.2;
+  color: #fff;
+}
+.textOne-analytics__text1 {
+  margin-top: 11.2vh;
+}
 .team-screen__header,
 .team-screen__title {
   display: inline-block;
@@ -1376,27 +1395,6 @@
 .team-screen__slider-wrap .slick-slide {
   display: inline-block;
 }
-.textOne-analytics {
-  padding-top: 11.75vh;
-  padding-bottom: 13.43vh;
-}
-.textOne-analytics__header {
-  font-size: 7.87vh;
-  color: #fff;
-  font-family: Geometria-Bold;
-  width: 400px;
-  line-height: 1.2;
-}
-.textOne-analytics .textOne-analytics__text1 {
-  width: 400px;
-  font-size: 3.17vh;
-  font-family: Geometria-Bold;
-  line-height: 1.2;
-  color: #fff;
-}
-.textOne-analytics__text1 {
-  margin-top: 11.2vh;
-}
 .title-screen {
   padding-top: 11.5vh;
   padding-bottom: 18.3vh;
@@ -1415,45 +1413,6 @@
   font-size: 2.3vh;
   color: #fff;
   line-height: 1;
-}
-.video-screen {
-  padding-bottom: 18.3vh;
-  padding-top: 5.6vh;
-  position: relative;
-}
-.video-screen__header {
-  display: inline-block;
-  vertical-align: middle;
-  font-family: Geometria-Bold;
-  font-size: 6.45vh;
-  width: 423px;
-  color: #fff;
-  line-height: 1;
-  margin-right: 108px;
-}
-.video-screen__video {
-  vertical-align: middle;
-  width: 457px;
-  height: 245px;
-  background-image: url(../assets/export_mountain_v2/play_button.svg);
-  display: none;
-}
-.video-screen__button {
-  margin-top: 7.4vh;
-}
-.playMoon {
-  position: absolute;
-  z-index: 9999999;
-  left: 40% !important;
-  top: 0;
-  width: 30%;
-}
-.playMoon .moon-img {
-  cursor: pointer;
-  width: 100%;
-}
-.playMoon .moon-img:hover {
-  opacity: 0.7;
 }
 .token-details-screen {
   padding-top: 0.5vh;
@@ -1511,4 +1470,43 @@
 .token-details-screen__bold-text {
   font-family: Geometria-Bold;
   color: #b0a5ff;
+}
+.video-screen {
+  padding-bottom: 18.3vh;
+  padding-top: 5.6vh;
+  position: relative;
+}
+.video-screen__header {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: Geometria-Bold;
+  font-size: 6.45vh;
+  width: 423px;
+  color: #fff;
+  line-height: 1;
+  margin-right: 108px;
+}
+.video-screen__video {
+  vertical-align: middle;
+  width: 457px;
+  height: 245px;
+  background-image: url(../assets/export_mountain_v2/play_button.svg);
+  display: none;
+}
+.video-screen__button {
+  margin-top: 7.4vh;
+}
+.playMoon {
+  position: absolute;
+  z-index: 9999999;
+  left: 40% !important;
+  top: 0;
+  width: 30%;
+}
+.playMoon .moon-img {
+  cursor: pointer;
+  width: 100%;
+}
+.playMoon .moon-img:hover {
+  opacity: 0.7;
 }
