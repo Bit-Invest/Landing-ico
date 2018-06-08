@@ -72,7 +72,7 @@ class Messages extends React.Component {
         />
         <Message
           prlxData={messagePrlx2_4}
-          text="We provide a one-stop solution for easy, secure and efficient cryptoassets trading"
+          text="We provide a one-stop solution for easy, secure and efficient crypto assets trading"
         />
       </React.Fragment>
     );

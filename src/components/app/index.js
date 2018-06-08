@@ -60,13 +60,17 @@ class App extends React.Component {
 
   handleScrollCallback = e => {
     let wheelCour = e.deltaY || e.detail || e.wheelDelta;
+    let scrTop = window.scrollY;
 
     if (scrolling) return false;
     else scrolling = true;
 
-    let newSroll = wheelCour > 0 ? global.HEIGHT : -global.HEIGHT;
+    let newSroll =
+      wheelCour > 0
+        ? Math.ceil((scrTop + 0.01) / global.HEIGHT) * global.HEIGHT
+        : Math.floor((scrTop - 0.01) / global.HEIGHT) * global.HEIGHT;
 
-    _scroll.scrollMore(newSroll);
+    _scroll.scrollTo(newSroll);
     //console.log("A scroll event occurred!", {
     //fromScroll: fromScroll, scrTop, newSroll
     //});

@@ -26,8 +26,8 @@ export class HeadScreen extends React.Component {
               <div className={`${ROOT_CLASS}__list`}>
                 <div className={`${ROOT_CLASS}__list-item`}>
                   <span className={`${ROOT_CLASS}__list-item-title`}>
-                    Passive earning on professional trading with the best
-                    cryptotraders
+                    Passive earning on professional trading with the best crypto
+                    traders
                   </span>
                 </div>
                 <div className={`${ROOT_CLASS}__list-item`}>

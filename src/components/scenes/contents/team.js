@@ -108,7 +108,7 @@ export const Team = [
   {
     avatar: Stefano_Fursman,
     name: 'Stefano',
-    surname: 'Fursman',
+    surname: 'Frumson',
     position: 'Legal Officer',
     achievments: [
       { number: 5, title: 'years legal advice experience ' },

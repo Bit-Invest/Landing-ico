@@ -198,7 +198,7 @@ export class MountainContentPage extends React.Component {
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 1"
-              title="Via Cindx you can do it. Thanks to the rating system"
+              title="Via CINDX you can do it using the rating system"
               description="We offer a rating system using trading history that guarantees you find the right manager for you."
               image={screen_1}
             />
@@ -206,7 +206,7 @@ export class MountainContentPage extends React.Component {
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 2"
-              title="Here all your crypto assets to manage are kept in your wallet all the time"
+              title="Here all your crypto assets are kept in your wallet at all times"
               description="Decentralisation and smart contracts allow one to manage their wallets, without having to transfer funds to managers"
               image={screen_2}
             />
@@ -214,7 +214,7 @@ export class MountainContentPage extends React.Component {
           <div className="containerContent containerBlocks">
             <LaptopScreen
               header="Feature 3"
-              title="You earn following the best"
+              title="You earn by following the best"
               description="Investors join to sync their transactions with the best players on the marketplace"
               image={screen_3}
             />
@@ -224,33 +224,33 @@ export class MountainContentPage extends React.Component {
           </div>
           <div className="containerContent containerBlocks">
             <TextOne
-              text1="Investor"
-              text2="increases his crypto capital by the efficient management of his assets by a professional trader"
+              text1="Investors"
+              text2="increase his crypto capital by the efficient management of his assets by a professional trader"
             />
           </div>
           <div className="containerContent containerBlocks">
             <TextOne
-              text1="Trader"
-              text2="earns his success fees building a pull of investors on the deep understanding of the market and trade strategy"
+              text1="Traders"
+              text2="earn their success fees building a pull of investors on the deep understanding of the market and trade strategy"
             />
           </div>
           <div className="containerContent containerBlocks">
             <TextOne
-              text1="Vendor"
-              text2="sells advanced tools for traders e.g. trade robots and news feeds"
+              text1="Vendors"
+              text2="sell advanced tools for traders. E.g. trade robots and news feeds"
             />
           </div>
           <div className="containerContent containerBlocks">
             <TextOne
               text1="CINDX"
-              text2="earnes on success fees commission and subscription for terminal"
+              text2="earns on success fees commission and subscription for terminal"
             />
           </div>
           <div className="containerContent containerBlocks">
             <MarketAnalytics
               header="Market Analytics"
-              text1="Since the year 2000, the global trust management market has grown over 250%. This is as a result of constant innovations in the market and continuous updates to the market tools, as well as the general development of the market structure."
-              text2="Despite the explosive growth of the cryptocurrency market in 2017, the industry is still in its infancy. The market capitalisation at the end of 2017 was at $600 billion, which still makes up only about 1% of the trust management industry."
+              text1="The traditional trust management market. Since 2000 the global trust management market has grown by over 250%. This is a result of constant improvements in market tools and the general development of market structuring"
+              text2="Despite the explosive growth of the cryptocurrency market in 2017, the industry is still in its infancy. The market capitalisation was $600 billion at the end of 2017, which is still only 1% of the trust management industry"
             />
           </div>
           <div className="containerContent containerBlocks">
