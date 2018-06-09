@@ -28,10 +28,12 @@ class VideoPopUp extends React.Component {
           />
           <div className={`${ROOT_CLASS}__video`}>
             <iframe
-              src="https://player.vimeo.com/video/272995021"
               width="640"
               height="360"
-              frameBorder="0"
+              src="https://www.youtube.com/embed/Mjia-cv1QL0"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
             />
           </div>
         </div>

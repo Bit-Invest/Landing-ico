@@ -24,7 +24,7 @@ export const Team = [
     achievments: [
       { number: 13, title: 'years in entrepreneurship' },
       { number: 9, title: 'ventures' },
-      { number: '2$', title: 'for crypto management' }
+      { number: '$2m', title: 'for crypto management' }
     ],
     linkedIn: 'https://www.linkedin.com/in/yuriyavdeev/'
   },
