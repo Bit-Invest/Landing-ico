@@ -31,9 +31,7 @@ class VideoPopUp extends React.Component {
               width="640"
               height="360"
               src="https://www.youtube.com/embed/Mjia-cv1QL0"
-              frameborder="0"
               allow="autoplay; encrypted-media"
-              allowfullscreen
             />
           </div>
         </div>

@@ -2,9 +2,18 @@ import React from 'react';
 import { Button } from '@common/Button';
 import { Checkbox } from '@common/Checkbox';
 
-import Mailchimp from 'react-mailchimp-form';
+import Mailchimp from '@common/react-mailchimp-form/src';
 
 const ROOT_CLASS = 'pop-up';
+
+const AgreeClass = props => (
+  <div className={`${ROOT_CLASS}__checkbox-wrap`}>
+    <Checkbox
+      title="I agree with the processing of my personal data"
+      isChecked={true}
+    />
+  </div>
+);
 
 export class PopUp extends React.Component {
   constructor(props) {
@@ -14,6 +23,13 @@ export class PopUp extends React.Component {
       email: null
     };
   }
+
+  successSend = () => {
+    console.log('dataLayer', window.dataLayer);
+    window.dataLayer.push({
+      event: 'Sent-Form-Ok_Second_site = Y'
+    });
+  };
 
   render() {
     const { data } = this.props;
@@ -34,9 +50,10 @@ export class PopUp extends React.Component {
           <div className={`${ROOT_CLASS}__title`}>
             Subscribe <br /> to stay tuned
           </div>
-
           <Mailchimp
             className="FormMailchimp"
+            successSend={this.successSend}
+            AgreeClass={AgreeClass}
             action="https://cindx.us18.list-manage.com/subscribe/post?u=db1d36c6102f48b114c4c032b&amp;id=2185faf8f0"
             fields={[
               {
