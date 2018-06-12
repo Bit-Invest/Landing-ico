@@ -32,6 +32,15 @@ export class PopUp extends React.Component {
       window.dataLayer.push({
         event: 'Sent-Form-Ok_Second_site = Y'
       });
+
+      window.open('/thank_you_mail_2.html');
+
+      var iframe = document.createElement('iframe');
+
+      iframe.src = '/thank_you_mail_2.html';
+      iframe.width = '0';
+      iframe.height = '0';
+      document.body.appendChild(iframe);
     } else {
       console.log('dataLayer undefined');
     }
