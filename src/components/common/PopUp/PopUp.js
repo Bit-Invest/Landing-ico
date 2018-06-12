@@ -26,9 +26,15 @@ export class PopUp extends React.Component {
 
   successSend = () => {
     console.log('dataLayer', window.dataLayer);
-    window.dataLayer.push({
-      event: 'Sent-Form-Ok_Second_site = Y'
-    });
+
+    if (typeof window.dataLayer !== 'undefined') {
+      console.log('dataLayer send');
+      window.dataLayer.push({
+        event: 'Sent-Form-Ok_Second_site = Y'
+      });
+    } else {
+      console.log('dataLayer undefined');
+    }
   };
 
   render() {
