@@ -30,7 +30,7 @@ export class PopUp extends React.Component {
     if (typeof window.dataLayer !== 'undefined') {
       console.log('dataLayer send');
       window.dataLayer.push({
-        event: 'Sent-Form-Ok_Second_site = Y'
+        event: 'Sent-Form-Ok_Main_site'
       });
 
       window.open('/thank_you_mail_2.html');
