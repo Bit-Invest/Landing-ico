@@ -72,22 +72,52 @@ export class HeadScreen extends React.Component {
           </div>
           <div className={`${ROOT_CLASS}__docs`}>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <a href={docs.wp} target="__blank">
+              <a
+                href={docs.wp}
+                target="__blank"
+                onClick={() => {
+                  if (typeof window.yaCounter49156897 !== 'undefined') {
+                    window.yaCounter49156897.reachGoal('Download_WP_Main_Site');
+                  }
+                }}>
                 <Doc icon="paper" title="Whitepaper" />
               </a>
             </div>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <a href={docs.presentation} target="__blank">
+              <a
+                href={docs.presentation}
+                target="__blank"
+                onClick={() => {
+                  if (typeof window.yaCounter49156897 !== 'undefined') {
+                    window.yaCounter49156897.reachGoal(
+                      'Download_Presentation_Main_Site'
+                    );
+                  }
+                }}>
                 <Doc icon="slides" title="Presentation" />
               </a>
             </div>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <a href={docs.one_pager} target="__blank">
+              <a
+                href={docs.one_pager}
+                target="__blank"
+                onClick={() => {
+                  if (typeof window.yaCounter49156897 !== 'undefined') {
+                    window.yaCounter49156897.reachGoal('Download_OP_Main_Site');
+                  }
+                }}>
                 <Doc icon="paper" title="One Pager" />
               </a>
             </div>
             <div className={`${ROOT_CLASS}__doc-wrap`}>
-              <a href={docs.math_model} target="__blank">
+              <a
+                href={docs.math_model}
+                target="__blank"
+                onClick={() => {
+                  if (typeof window.yaCounter49156897 !== 'undefined') {
+                    window.yaCounter49156897.reachGoal('Download_MM_Main_Site');
+                  }
+                }}>
                 <Doc icon="circles" title="Math Model" />
               </a>
             </div>

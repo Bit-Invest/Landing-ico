@@ -12,6 +12,16 @@ const Socials = [
   'reddit',
   'telegram'
 ];
+
+const SocialsYandex = [
+  'Go_to_Medium_Main_Site',
+  'Go_to_LinkedIn_Main_Site',
+  'Go_to_Facebook_Main_Site',
+  'Go_to_Twitter_Main_Site',
+  'Go_to_Reddit_Main_Site',
+  'Go_to_Telegram_Main_Site'
+];
+
 const scroll = Scroll.animateScroll;
 
 export const Footer = props => (
@@ -28,7 +38,15 @@ export const Footer = props => (
     />
     <div className={`${ROOT_CLASS}__social-media`}>
       {Socials.map(social => (
-        <a key={social} href={socsSrc[social][1]} target="__blank">
+        <a
+          key={social}
+          href={socsSrc[social][1]}
+          target="__blank"
+          onClick={() => {
+            if (typeof window.yaCounter49156897 !== 'undefined') {
+              window.yaCounter49156897.reachGoal(SocialsYandex[social]);
+            }
+          }}>
           <img src={socsSrc[social][0]} className={`${ROOT_CLASS}__social`} />
         </a>
       ))}

@@ -54,6 +54,9 @@ class VideoScreen extends React.Component {
               className="moon-img"
               onClick={() => {
                 showVideo();
+                if (typeof window.yaCounter49156897 !== 'undefined') {
+                  window.yaCounter49156897.reachGoal('Watch_Video_Main_Site');
+                }
               }}
             />
           </Plx>

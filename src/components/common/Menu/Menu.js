@@ -46,6 +46,11 @@ export class Menu extends React.Component {
           <a
             href="http://192.81.220.26"
             target="__blank"
+            onClick={() => {
+              if (typeof window.yaCounter49156897 !== 'undefined') {
+                window.yaCounter49156897.reachGoal('Test_MVP_Main_Site');
+              }
+            }}
             className="href_noUnder">
             Test MVP
           </a>

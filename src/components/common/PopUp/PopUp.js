@@ -27,6 +27,10 @@ export class PopUp extends React.Component {
   successSend = () => {
     console.log('dataLayer', window.dataLayer);
 
+    if (typeof window.yaCounter49156897 !== 'undefined') {
+      window.yaCounter49156897.reachGoal('Subscribe_Mail_Button_Main_Site');
+    }
+
     if (typeof window.dataLayer !== 'undefined') {
       console.log('dataLayer send');
       window.dataLayer.push({
