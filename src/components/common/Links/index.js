@@ -6,13 +6,10 @@ import reddit_icon from '@assets/export_mountain_v2/icons/Reddit.svg';
 import telegram_icon from '@assets/export_mountain_v2/icons/telegram.svg';
 
 export const docs = {
-  wp: 'https://drive.google.com/file/d/1uqkaJrSYKNlCriDY_9QC1CVOyDkuw0DJ/view',
-  presentation:
-    'https://drive.google.com/file/d/11Kpo4fsF86pq9UzbK-cXlcKUy5FlcB1U/view',
-  one_pager:
-    'https://drive.google.com/file/d/13n4jbGAf8mTssRBYmICkYFnyjLU51BpE/view',
-  math_model:
-    'https://drive.google.com/file/d/1OKXbD42hAo1NZdfK-cBetTueCXf3hsrV/view'
+  wp: '/redirect.html#wp',
+  presentation: '/redirect.html#pr',
+  one_pager: '/redirect.html#op',
+  math_model: '/redirect.html#fm'
 };
 
 export const socsSrc = {

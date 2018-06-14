@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cindx ...</title>
+</head>
+<body>
+
+	<script>
+		var key = location.hash.replace('#','');
+		var arrReds = {
+			'wp': 'https://drive.google.com/file/d/1uqkaJrSYKNlCriDY_9QC1CVOyDkuw0DJ/view',
+			'pr': 'https://drive.google.com/file/d/11Kpo4fsF86pq9UzbK-cXlcKUy5FlcB1U/view',
+			'op': 'https://drive.google.com/file/d/13n4jbGAf8mTssRBYmICkYFnyjLU51BpE/view',
+			'fm': 'https://drive.google.com/file/d/1OKXbD42hAo1NZdfK-cBetTueCXf3hsrV/view'
+		};
+
+		document.location.href = arrReds[key] || 'https://cindx.io';
+	</script>
+
+</body>
+</html>
