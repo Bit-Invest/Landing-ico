@@ -6,10 +6,10 @@ import reddit_icon from '@assets/export_mountain_v2/icons/Reddit.svg';
 import telegram_icon from '@assets/export_mountain_v2/icons/telegram.svg';
 
 export const docs = {
-  wp: '/redirect.html#wp',
-  presentation: '/redirect.html#pr',
-  one_pager: '/redirect.html#op',
-  math_model: '/redirect.html#fm'
+  wp: '/redirect/wp.html',
+  presentation: '/redirect/pr.html',
+  one_pager: '/redirect/op.html',
+  math_model: '/redirect/fm.html'
 };
 
 export const socsSrc = {
