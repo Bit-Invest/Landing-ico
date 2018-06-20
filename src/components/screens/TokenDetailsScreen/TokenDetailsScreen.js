@@ -18,14 +18,14 @@ export const TokenDetailsScreen = () => (
         <div className={`${ROOT_CLASS}__info`}>
           Token Pre-Sale:<br />
           <span className={`${ROOT_CLASS}__bold-text`}>
-            27.06.2018<br />
+            23.07.2018<br />
           </span>
           Join the Token Pre- Sale to receive a 25% bonus. Limited time offer.
         </div>
         <div className={`${ROOT_CLASS}__info`}>
           Token Sale starts:<br />
           <span className={`${ROOT_CLASS}__bold-text`}>
-            08.08.2018<br />
+            27.08.2018<br />
           </span>
           Token sale bonuses will depend on number of tokens for sale
         </div>

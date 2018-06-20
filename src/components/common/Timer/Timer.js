@@ -24,12 +24,12 @@ export class Timer extends React.Component {
   }
 
   timerInterval = () => {
-    let timeTo = new Date(2018, 5, 27).getTime() - new Date().getTime(),
+    let timeTo = new Date(2018, 6, 23).getTime() - new Date().getTime(),
       tms = [
         Math.floor((timeTo / 1000) % 60),
         Math.floor((timeTo / 1000 / 60) % 60),
         Math.floor((timeTo / (1000 * 60 * 60)) % 24),
-        Math.floor((timeTo / (1000 * 60 * 60 * 24)) % 30),
+        Math.floor(timeTo / (1000 * 60 * 60 * 24)),
         Math.floor(timeTo / (1000 * 60 * 60 * 24 * 30))
       ];
 
