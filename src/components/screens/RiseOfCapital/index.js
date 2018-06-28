@@ -1,1 +1,0 @@
-export { RiseOfCapital } from './RiseOfCapital';

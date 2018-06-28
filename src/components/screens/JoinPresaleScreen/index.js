@@ -1,1 +1,0 @@
-export { JoinPresaleScreen } from './JoinPresaleScreen';

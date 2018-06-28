@@ -1,1 +1,0 @@
-export { HeadScreen } from './HeadScreen';

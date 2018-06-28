@@ -1,1 +1,0 @@
-export { ICODetailsScreen } from './ICODetailsScreen';
