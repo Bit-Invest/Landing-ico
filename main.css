@@ -1,0 +1,120 @@
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	outline: none;
+}
+
+animate {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#prlxCnvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#prlxCnvas2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+p#px {
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: red;
+	font-size: 40px;
+	z-index: 99999;
+	display: none;
+}
+
+#animateHtml {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#animateHtml > * {
+	position: absolute;
+}
+
+#animateHtml .guy_anm_parent {
+	background: transparent;
+}
+
+#animateHtml .guy_anm_bl {
+	position: absolute;
+	bottom: 0;
+	height: 70%;
+	animation: guyAnimate 6s;
+	opacity: 0;
+}
+
+.content{
+	position: relative;
+	z-index: 999;
+}
+
+.content .menu_block{
+  position: fixed;
+  width: 100%;
+}
+
+.content .header{
+	width: 100%;
+}
+
+.content .windows-bl {
+	height: 100vh;
+	min-height: 840px;
+}
+
+animateWindows{
+	display: block;
+}
+
+.windows-bl-full {
+	/*height: 10000px;*/
+}
+
+.first_block_1{
+	padding-top: 200px;
+}
+
+.first_block_2{
+	padding-top: 170px;
+}
+
+.first_block_3{
+	padding-top: 300px;
+}
+
+@keyframes guyAnimate {
+  0% { 
+  	opacity: 1;
+  	left: 0%;
+  	bottom: 0%;
+  }
+  50% {
+  	opacity: 1;
+  }
+  65% {
+  	opacity: 0;
+  }
+  100% { 
+  	opacity: 0;
+  	left: 90%;
+  	bottom: 80%;
+  }
+}
