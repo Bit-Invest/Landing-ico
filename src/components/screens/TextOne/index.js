@@ -1,1 +1,0 @@
-export { TextOne } from './TextOne';

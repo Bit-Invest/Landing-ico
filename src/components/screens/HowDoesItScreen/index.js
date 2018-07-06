@@ -1,1 +1,0 @@
-export { HowDoesItScreen } from './HowDoesItScreen';
