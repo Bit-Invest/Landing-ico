@@ -5,15 +5,17 @@ var teams = [
     position: 'Chief Executive Officer',
     fackt1: '13 years in entrepreneurship',
     fackt2: '9 ventures',
-    fackt3: '$2m for crypto management'
+    fackt3: '$2m for crypto management',
+    src: 'https://www.linkedin.com/in/yuriyavdeev/'
   },
   {
     img: './media/Jason_King.jpg',
     name: 'Jason King',
     position: 'Chief Commercial Officer',
     fackt1: '20 years of excecutive experience',
-    fackt2: 'Led businesses operations in 30 countries',
-    fackt3: 'Responsible over $500m-$1bn P&L'
+    fackt2: 'Led operations in 30 countries',
+    fackt3: 'Responsible over $500m P&L',
+    src: 'https://www.linkedin.com/in/jasonking/'
   },
   {
     img: './media/Val_Jerdes.f8ab5be3.jpg',
@@ -21,7 +23,8 @@ var teams = [
     position: 'Product Director',
     fackt1: '20 years in entrepreneurship',
     fackt2: '3 successful exits',
-    fackt3: '4x returns for portfolios'
+    fackt3: '4x returns for portfolios',
+    src: 'https://www.linkedin.com/in/valjerdes/'
   },
   {
     img: './media/Mofassair_Hossain.11359d11.jpg',
@@ -29,7 +32,8 @@ var teams = [
     position: 'Chief Marketing Officer',
     fackt1: 'Investor and Advisor of 15+ ICOs',
     fackt2: 'Top Advisor at ICO Bench',
-    fackt3: 'GBAP Member'
+    fackt3: 'GBAP Member',
+    src: 'https://www.linkedin.com/in/md-mofassair-hossain-515a90148'
   },
   {
     img: './media/Artur_Shamalov.4dc17f50.jpg',
@@ -37,7 +41,9 @@ var teams = [
     position: 'Investment Director',
     fackt1: '15 years in entrepreneurship',
     fackt2: '5000 clients of mixcart.ru',
-    fackt3: 'mail.ru invested in dc-daily.ru'
+    fackt3: 'mail.ru invested in dc-daily.ru',
+    src: 'https://www.linkedin.com/in/artur-shamalov/'
+    
   },
   {
     img: './media/Denis_Eskenazi.e8b0d64b.jpg',
@@ -45,15 +51,17 @@ var teams = [
     position: 'Product Marketing Director',
     fackt1: '7 years in entrepreneurship',
     fackt2: '$2m attracted for clients',
-    fackt3: '10 years in branding'
+    fackt3: '10 years in branding',
+    src: 'https://ru.linkedin.com/in/denis-eskenazi-03b81726'
   },
   {
     img: './media/Stefano_Fursman.ea34a9d1.jpg',
     name: 'Stefano Frumson',
-    position: 'Legal Officer',
+    position: 'Compliance Officer',
     fackt1: '5 years of legal experience',
     fackt2: 'Commercial & private law',
-    fackt3: 'Experience in KYC procedure'
+    fackt3: 'Experience in KYC procedure',
+    src: 'https://www.linkedin.com/in/stefan-normatov-60957071/'
   },
   {
     img: './media/Ibraghim_Haniev.77b0aa4e.jpg',
@@ -61,7 +69,8 @@ var teams = [
     position: 'Tech Lead',
     fackt1: '6 years in entrepreneurship',
     fackt2: '200+ developed site',
-    fackt3: 'Information Security focus'
+    fackt3: 'Information Security focus',
+    src: 'https://www.linkedin.com/in/ibrahimhaniev/'
   },
  ];
 
@@ -217,6 +226,30 @@ var ourPartners = [
     position: 'Market data',
     href: 'https://www.tradingview.com/'
   },
+  {
+    img: './media/ICO Rating.png',
+    name: 'ICORating',
+    position: 'Rating Agency',
+    href: 'https://icorating.com/'
+  },
+  {
+    img: './media/Top ICO List.png',
+    name: 'Topicolist',
+    position: 'Rating Agency',
+    href: 'https://topicolist.com/'
+  },
+  {
+    img: './media/Yellow Door.png',
+    name: 'Consulting',
+    position: 'Rating Agency',
+    href: 'http://yellowdoor.ru/contacts/'
+  },
+  {
+    img: './media/Innova8.png',
+    name: 'Innov8 Global Advisory',
+    position: 'Global Ventures',
+    href: 'http://www.innov8globaladvisory.com/'
+  },
  ];
 
 
@@ -225,14 +258,14 @@ var ourPartners = [
 var news = [
   {
     videoSrc: 'https://www.youtube.com/watch?v=c4ruJPvo5sI',
-    screen: './media/news/IS.png',
+    screen: './media/news/IB.png',
     name: 'CINDX meets Ian Balina',
     text: 'CINDX took part in the event with one of the TOP10 crypto gurus in the world Ian Balina while his stay in Moscow organized by CryptoBazar.',
     source: 'www.youtube.com'
   },
   {
     videoSrc: 'https://www.youtube.com/watch?v=P6qAzbwOMXs',
-    screen: './media/news/IB.png', 
+    screen: './media/news/IS.png', 
     name: 'CINDX took part in Moscow ICO Summit 2018',
     text: 'CINDX team introduced the project to the Russian crypto community during ICO Summit event.',
     source: 'www.youtube.com'
@@ -279,7 +312,7 @@ var feedbackOnOurProject = [
   },
   {
     img: './media/Austin_Kimm.caf37ff2.jpg',
-    name: 'Austin KimmÂ',
+    name: 'Austin Kimm',
     position: 'Advisor',
     video: 'https://www.youtube.com/embed/5X8isxq6S00',
     text: 'Austin Kimm, Advisor of CINDX project tells how CINDX makes trading cryptocurrency for profit simple and smart'
@@ -321,7 +354,7 @@ var feedbackOnOurProject = [
   },
   {
     img: './media/Alina_Vardanyan.jpg',
-    name: 'Alina Vardanyan',
+    name: 'Alina Vardanian',
     position: 'Content Manager',
     video: 'https://www.youtube.com/embed/IATb_l1vLE4',
     text: 'Alina Vardanyan, CINDX Content Manager talks about the team spirit and what she loves about her job'

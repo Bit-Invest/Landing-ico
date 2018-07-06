@@ -64,15 +64,17 @@ advisers.forEach(function(e, i){
 var $map_arr3 = $('[map_arr="3"]').html(null);
 teams.forEach(function(e, i){
 	$(`
-		<div class="item">
-			<div class="mid_img_advisers" style="background-image: url(${e.img})"></div>
-    	<h3>${e.name}</h3>
-    	<p>Chief Financial Officer</p>
-    		<hr>
-    	<p><span></span> ${e.fackt1}</p>
-    	<p><span></span> ${e.fackt2}</p>
-    	<p><span></span> ${e.fackt3}</p>
-    	<a href="#" class="in" target="__blank"></a>
+    <div class="item">
+      <div class="mid_img_advisers" style="background-image: url(${e.img})"></div>
+      <h3>${e.name}</h3>
+      <p>${e.position}</p>
+          <hr>
+      <p><span></span> ${e.fackt1}</p>
+      <p><span></span> ${e.fackt2}</p>
+      <p><span></span> ${e.fackt3}</p>
+      <a href="${e.src}" target='blank'>
+        <div src="../images/in.png" class="in"></div>
+      </a>
     </div>
 	`)
 		.appendTo($map_arr3);
@@ -82,13 +84,13 @@ var $map_arr4 = $('[map_arr="4"]').html(null);
 news.forEach(function(e, i){
 	$(`
 		<div class="item">
-			<div class="mid_img_advisers ava_bg" style="background-image: url(${e.screen})"></div>
-    	<div class="txt">
-      <h3>${e.name}</h3>
-      <div class="clear"></div>
-      <p>${e.text}</p>
-      <a href="${e.videoSrc}" target="__blank">${e.source}</a>
-      </div>
+          <div class="mid_img_advisers ava_bg" style="background-image: url(${e.screen})"></div>
+          <div class="txt">
+          <h3>${e.name}</h3>
+          <div class="clear"></div>
+          <p>${e.text}</p>
+          <a href="${e.videoSrc}" target="__blank">${e.source}</a>
+          </div>
 		</div>
 	`)
 		.appendTo($map_arr4);
