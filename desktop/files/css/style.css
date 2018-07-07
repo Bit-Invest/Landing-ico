@@ -150,7 +150,7 @@ h2
 {
     padding-top: 85px;
     display: block;
-    width: 1130px;
+    width: 1024px;
     margin:  0 auto;
 }
 
@@ -366,6 +366,18 @@ margin-top: 90px;
 .block_1 .cont_row .row p
 {
     font-size: 14px;
+}
+
+.icon-block {
+  position: relative;
+  float: right;
+  width: 45px;
+  margin-top: 300px;
+}
+
+ .icon-block .icon {
+  width: 40px;
+  height: 40px;
 }
 
 .block_2
@@ -1801,7 +1813,7 @@ popup[video] .th_video .th_iframe iframe {
   
 height: 500px;
   
-width: 800px;
+width: 720px;
 }
 
 /**/
@@ -1829,6 +1841,35 @@ width: 800px;
 
 [link] {
     color: inherit;
+}
+
+.footer-block {
+  width: 710px;
+  margin-top: 50px;
+}
+
+.footer-block-left {
+  float: left;
+}
+
+.footer-block-right {
+  float: right;
+}
+
+.footer-block-left .name {
+  font-size: 25px; 
+}
+
+.footer-block-right .name{
+  font-size: 25px;
+}
+
+.inquiries-block {
+  margin-top: 20px;
+}
+
+.feedback-info {
+  float: left;
 }
 
 @media (max-width: 1300px)
@@ -1859,9 +1900,17 @@ width: 800px;
     .menu_block .header ul.menu {
       float: none;
     }
-
+  
     .menu_block.fixed .header ul.menu {
       float: none;
+    }
+  
+    .icon-block {
+      position: relative;
+      float: right;
+      width: 45px;
+      margin-top: 250px;
+      margin-right: 50px;
     }
 
     .menu_block.fixed .header .left_lead a.logo {
@@ -2145,6 +2194,14 @@ width: 800px;
     .block_1 .cont_row .row span {
         height: 110px;
     }
+}
 
-
+@media (max-width: 768px){
+  .icon-block {
+    position: relative;
+    float: right;
+    width: 45px;
+    margin-top: 250px;
+    margin-right: 270px;
+  }
 }

@@ -80,6 +80,7 @@ var teams = [
 var advisers = [
   {
     img: './media/Keith_Teare.1e7599ac.jpg',
+    src: 'https://linkedin.com/in/kteare',
     name: 'Keith Teare',
     position: 'Founder and Executive Chairman at Accelerated Digital Ventures',
     fackt1: 'Advisor to ICOBox, Crypterium, EnergiMine, etc.',
@@ -95,6 +96,7 @@ var advisers = [
   {
     img: './media/Austin_Kimm.caf37ff2.jpg',
     name: 'Austin Kimm',
+    src: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
     position: 'International Financial Services CEO',
     fackt1: '30+ years of financial service experience',
     fackt2: 'Created companies with a worth of $500m',
@@ -108,6 +110,7 @@ var advisers = [
   {
     img: './media/Philip_Staehelin.49caf8a6.jpg',
     name: 'Philip Staehelin',
+    src: 'https://www.linkedin.com/in/staehelin/',
     position: '25 years of consulting and entrepreneurial experience',
     fackt1: '$500m alternative payments business under leadership',
     fackt2: '200+ startups from 20 countries mentored',
@@ -122,6 +125,7 @@ var advisers = [
   {
     img: './media/Amarpreet_Singh.afa7b4f8.jpg',
     name: 'Amarpreet Singh',
+    src: 'https://www.linkedin.com/in/amarpreetsingh2/',
     position: 'Senior Advisor of Global Blockchain Foundation',
     fackt1: 'Experience in Microsoft, The World Bank and Airbus',
     fackt2: 'Advisory Board Member of Blockchain projects',
@@ -137,6 +141,7 @@ var advisers = [
   {
     img: './media/Tyler_Sanford.5d35cd71.jpg',
     name: 'Tyler Sanford',
+    src: 'https://www.linkedin.com/in/tylersanford/',
     position: '8 Years Digital Marketing in Yelp and Zenefits',
     fackt1: '12 ICO’s over $225M raised',
     fackt2: 'Early adopter of blockchain',
@@ -152,6 +157,7 @@ var advisers = [
   {
     img: './media/Bogdan_Fiedur.e36a757d.jpg',
     name: 'Bogdan Fiedur',
+    src: 'https://www.linkedin.com/in/bogdanfiedur/',
     position: 'Blockchain and cryptocurrency expert, investor, entrepreneur',
     fackt1: 'Co-Founder of bitJob and President of Blockchainexperts.io',
     fackt2: 'ICO Advisor, ICOBench Expert',
@@ -166,6 +172,7 @@ var advisers = [
   {
     img: './media/Graham_Doggart.fd8f9df5.jpg',
     name: 'Graham Doggart',
+    src: 'https://www.linkedin.com/in/grahamdoggart/',
     position: '20 years of enterprise development, fintech marketing compliance',
     fackt1: 'Executed campaigns with a worth of $100m',
     fackt2: 'Advisor for 10+ blockchain projects this year',
@@ -180,6 +187,7 @@ var advisers = [
   {
     img: './media/Sadie_Hutton.54ab2eaa.jpg',
     name: 'Sadie Hutton',
+    src: 'https://www.linkedin.com/in/sadie-hutton/',
     position: '25 years in senior management and management consulting',
     fackt1: 'Multimillion-dollar fundraiser with campaigns with a worth of £75m',
     fackt2: 'ICO Advisor of 8 projects',
@@ -242,7 +250,7 @@ var ourPartners = [
     img: './media/Yellow Door.png',
     name: 'Consulting',
     position: 'Rating Agency',
-    href: 'http://yellowdoor.ru/contacts/'
+    href: 'http://yellowdoor.ru/'
   },
   {
     img: './media/Innova8.png',
