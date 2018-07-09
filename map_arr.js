@@ -59,14 +59,17 @@ advisers.forEach(function(e, i){
               <div class="border">
                 <img src="${e.img}" alt="" class="ava">
               </div>
+              <a href="${e.video}" target='blank'>
+                <img style="width: 60px; height: 60px; float: right; position: relative; bottom: 70px; margin-right: 32px;" src="media/play_button.png" >
+              </a>
               <div class="clear"></div>
               <div class="na">${e.name}</div>
-              <h4>${e.position}</h4>
               <hr>
+              <h4>${e.position}</h4>
               <div class="txt">
-                  <span>${e.fackt1}<br>
-                  <span>${e.fackt2}<br>
-                  <span>пусто<br>
+                  <span>${e.fackt1}<br><br>
+                  <span>${e.fackt2}<br><br>
+                  <span>${e.fackt3}<br>
               </div>
               <a href="${e.src}" target='blank'>
                 <div src="../images/in.png" class="in"></div>
@@ -88,8 +91,8 @@ teams.forEach(function(e, i){
               </div>
               <div class="clear"></div>
               <div class="na">${e.name}</div>
-              <h4>${e.position}</h4>
               <hr>
+              <h4>${e.position}</h4>
               <div class="txt">
                   <span>${e.fackt1}<br>
                   <span>${e.fackt2}<br>
