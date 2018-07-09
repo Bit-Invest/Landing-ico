@@ -102,7 +102,21 @@
 	<script src="./main.js"></script>
 	<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 	<script>
-		requirejs(["https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"]);
+		requirejs([
+			"three/files/js/countdown.js?v=1.1",
+		],function(){
+			requirejs(["https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"],function(){
+				requirejs([
+					"desktop/caruselinfo.js?v=1.1",
+					"three/files/js/owl.carousel.min.js",
+					"three/files/js/jquery.fancybox.min.js",
+					"desktop/map_arr.js?v=1.1",
+					"desktop/files/js/script.js?v=1.1"
+				],function(){
+					console.log('loaded scripts')
+				})
+			})
+		});
 	</script>
 
 </body>
