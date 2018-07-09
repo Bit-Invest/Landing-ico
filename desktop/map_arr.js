@@ -97,6 +97,4 @@ news.forEach(function(e, i){
 		</div>
 	`)
 		.appendTo($map_arr4);
-
-	console.log(e)
 })
