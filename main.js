@@ -584,17 +584,29 @@ var resizeFunc = (function() {
     window.onscroll = function() {
       if (window.scrollY > 50 && !menu_fixed) {
         menu_fixed = true;
-        $('.guy_anm_parent').hide();
-        $('.menu_block').addClass('fixed')
+
+        //document.getElementsByClassName('guy_anm_parent')[0].style.display = 'none';
+        //document.getElementsByClassName('menu_block')[0].classList.add("fixed");
+        console.log(typeof $ !== 'undefined')
+        if(typeof $ !== 'undefined'){
+          $('.guy_anm_parent').hide();
+          $('.menu_block').addClass('fixed');
+        }
+        
       } else if (window.scrollY < 50 && menu_fixed) {
         menu_fixed = false;
-        $('.guy_anm_parent').show();
-        $('.menu_block').removeClass('fixed')
+
+        if(typeof $ !== 'undefined'){
+          $('.guy_anm_parent').show();
+          $('.menu_block').removeClass('fixed');
+        }
       }
       if (!!exit_scroll_animate) {
-        var height_anima = $('animateWindows').height();
-        pen = (window.scrollY * (4900 / (height_anima * 1.2)));
-        window.requestAnimationFrame(animateDraw);
+        if(typeof $ !== 'undefined'){
+          var height_anima = $('animateWindows').height();
+          pen = (window.scrollY * (4900 / (height_anima * 1.2)));
+          window.requestAnimationFrame(animateDraw);
+        }
         return false;
       }
       if (!!stop_scroll) {
@@ -632,7 +644,9 @@ var resizeFunc = (function() {
   })()
 
   function readyDom() {
-    $('body').css('overflow', 'auto');
+    if(typeof $ !== 'undefined'){ 
+      $('body').css('overflow', 'auto');
+    }
   };
 
   init();
@@ -640,3 +654,22 @@ var resizeFunc = (function() {
 });
 
 resizeFunc();
+
+/**/
+var templateCodes = `
+  <link rel="stylesheet" type="text/css" href="desktop/files/css/style.css?v=1.1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="three/files/js/countdown.js?v=1.1"></script>
+  <script src="desktop/caruselinfo.js?v=1.1"></script>
+  
+
+  <script src="three/files/js/owl.carousel.min.js"></script>
+  <script src="three/files/js/jquery.fancybox.min.js"></script>
+
+  <script src="desktop/map_arr.js?v=1.1"></script>
+
+  <link rel="stylesheet" href="desktop/files/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="desktop/files/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="desktop/files/css/jquery.fancybox.min.css">
+  <script src="desktop/files/js/script.js?v=1.1"></script>
+`;
