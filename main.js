@@ -668,5 +668,12 @@ window.addEventListener("resize", function() {
 
 /**/
 $(document).ready(function(){
-  $('[toLoad]').load('/desktop/index.html');
+  $.get(
+    './desktop/index.html',
+    function(data){
+      console.log('d', data);
+    }
+  )
+  
+  //$('[toLoad]').load('./desktop/index.html');
 });
