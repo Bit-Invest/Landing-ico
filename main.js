@@ -667,24 +667,3 @@ window.addEventListener("resize", function() {
 }, false);
 
 /**/
-$('[showvideopopup]')
-  .on('click', function(e) {
-    e.preventDefault();
-    var srcvideo = $(this).attr('srcvideo');
-    popupVideo(srcvideo);
-  })
-
-$('[link]')
-  .on('click', function(e) {
-    /*e.preventDefault();
-    var link_href = $(this).attr('link');
-    alert(link_href + ' ' + $(this).prop("tagName"));*/
-  })
-
-$('[link]').each(function(){
-  var link = $(this).attr('link');
-  $(this).attr({
-    target: '__blank',
-    href: links_landing[link]
-  })
-})
