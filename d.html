@@ -101,28 +101,28 @@
 	<div id="blackPreloader"></div>
 	<div id="codes-ajax"></div>
 	<script src="./main.js"></script>
+	<script src="three/files/js/countdown.js?v=1.1"></script>
 	<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 	<script>
-		requirejs([
-			"three/files/js/countdown.js?v=1.1",
-		],function(){
-			loadedFiles(function(){
-				addCodesStyle();
-				document.getElementById('bodyOverflow').style.overflow = 'auto';
-			});
-			requirejs(["https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"],function(){
+		loadedFiles(function(){
+			addCodesStyle();
+			document.getElementById('bodyOverflow').style.overflow = 'auto';
+		});
+
+		requirejs(["https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"],function(){
+			requirejs([
+				"desktop/caruselinfo.js?v=1.1",
+				"three/files/js/owl.carousel.min.js",
+				"three/files/js/jquery.fancybox.min.js",
+			],function(){
 				requirejs([
-					"desktop/caruselinfo.js?v=1.1",
-					"three/files/js/owl.carousel.min.js",
-					"three/files/js/jquery.fancybox.min.js",
 					"desktop/map_arr.js?v=1.1",
 					"desktop/files/js/script.js?v=1.1"
 				],function(){
 					setTimeout(sliders,500);
-					console.log('loaded scripts');
 				})
 			})
-		});
+		})
 
 		function loadedFiles(callback){
 			var aplha = 1;
