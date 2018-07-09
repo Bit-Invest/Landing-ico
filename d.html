@@ -106,7 +106,10 @@
 		requirejs([
 			"three/files/js/countdown.js?v=1.1",
 		],function(){
-			loadedFiles();
+			loadedFiles(function(){
+				addCodesStyle();
+				document.getElementById('bodyOverflow').style.overflow = 'auto';
+			});
 			requirejs(["https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"],function(){
 				requirejs([
 					"desktop/caruselinfo.js?v=1.1",
@@ -120,7 +123,7 @@
 			})
 		});
 
-		function loadedFiles() {
+		function loadedFiles(callback){
 			var aplha = 1;
 			function backtozero(){
 				aplha -= .05;
@@ -128,7 +131,7 @@
 					document.getElementById('blackPreloader').style.opacity = aplha;
 					window.requestAnimationFrame(backtozero);
 				}else{
-					document.getElementById('bodyOverflow').style.overflow = 'auto';
+					if(callback) callback();
 				}
 			}
 			window.requestAnimationFrame(backtozero);
