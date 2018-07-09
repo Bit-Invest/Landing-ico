@@ -106,8 +106,8 @@
 		requirejs([
 			"three/files/js/countdown.js?v=1.1",
 		],function(){
+			loadedFiles();
 			requirejs(["https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"],function(){
-				loadedFiles();
 				requirejs([
 					"desktop/caruselinfo.js?v=1.1",
 					"three/files/js/owl.carousel.min.js",
@@ -121,9 +121,13 @@
 		});
 
 		function loadedFiles() {
-			$("#blackPreloader").animate({
-		    opacity: 0,
-		  }, 600);
+			var aplha = 1;
+			function backtozero(){
+				aplha -= .1;
+				document.getElementById('blackPreloader').style.opacity = aplha;
+				window.requestAnimationFrame(backtozero);
+			}
+			window.requestAnimationFrame(backtozero);
 		};
 	</script>
 
