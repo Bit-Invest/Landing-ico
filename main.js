@@ -667,3 +667,6 @@ window.addEventListener("resize", function() {
 }, false);
 
 /**/
+$(document).ready(function(){
+  $('[toLoad]').load('/desktop/index.html');
+});
