@@ -4,6 +4,10 @@ body {
 	margin: 0;
 }
 
+body.loading{
+	background: #351954;
+}
+
 * {
 	outline: none;
 }
