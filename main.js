@@ -668,12 +668,15 @@ window.addEventListener("resize", function() {
 
 /**/
 $(document).ready(function(){
+  var elem = $('[toLoad]')[0];
+  
   $.get(
     './desktop/index.html',
     function(data){
-      console.log('d', data);
+      var root = elem.createShadowRoot();
+      root.innerHTML = data;
     }
-  )
-  
+  );
+
   //$('[toLoad]').load('./desktop/index.html');
 });
