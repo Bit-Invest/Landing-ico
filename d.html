@@ -18,7 +18,7 @@
 	<!-- !-->
 
 </head>
-<body class="loading">
+<body class="loading" id="bodyOverflow">
 	<p id="px"></p>
 
 	<animate>
@@ -124,8 +124,12 @@
 			var aplha = 1;
 			function backtozero(){
 				aplha -= .05;
-				document.getElementById('blackPreloader').style.opacity = aplha;
-				window.requestAnimationFrame(backtozero);
+				if(aplha>0){
+					document.getElementById('blackPreloader').style.opacity = aplha;
+					window.requestAnimationFrame(backtozero);
+				}else{
+					document.getElementById('bodyOverflow').style.overflow = 'auto';
+				}
 			}
 			window.requestAnimationFrame(backtozero);
 		};
