@@ -1521,6 +1521,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
     padding: 0;
 }
 
+.ourPartners {
+    display: block;
+    width: auto;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.in {
+    background-image: url(../images/in.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
 
 .block_8 .owl-carousel .owl-nav .owl-next,
 .block_8 .owl-carousel .owl-nav .owl-prev

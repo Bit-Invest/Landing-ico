@@ -32,6 +32,25 @@ ourPartners.forEach(function(e, i){
 		.appendTo($map_arr1);
 })*/
 
+var $map_arr1 = $('[map_arr="1"]').html(null);
+ourPartners.forEach(function(e, i){
+	$(`
+		<div class="item">
+          <div class="names">
+            <img class='ourPartners' src="${e.img}">
+            <h3 class='na'>${e.name}</h3>
+            <p>${e.position}</p>
+            <hr>
+            <div class='txt'>
+              <a style="cursor:pointer;text-decoration:underline;color:white; font-size: 15px; margin-top: 20px;" href="${e.href}" target="__blank">${e.href.replace('http://','').replace('https://','').replace('/','').replace('www.','')}
+              </a>
+            </div>
+          </div>
+		</div>
+	`)
+		.appendTo($map_arr1);
+})
+
 var $map_arr2 = $('[map_arr="2"]').html(null);
 advisers.forEach(function(e, i){
 	$(`
@@ -49,8 +68,8 @@ advisers.forEach(function(e, i){
                   <span>${e.fackt2}<br>
                   <span>пусто<br>
               </div>
-              <a href="#" class="soc">
-                  <img src="files/images/footer_soc_6.png" >
+              <a href="${e.src}" target='blank'>
+                <div src="../images/in.png" class="in"></div>
               </a>
           </div>
         </div>
@@ -76,8 +95,8 @@ teams.forEach(function(e, i){
                   <span>${e.fackt2}<br>
                   <span>${e.fackt3}<br>
               </div>
-              <a href="#" class="soc">
-                <img src="files/images/footer_soc_6.png" >
+              <a href="${e.src}" target='blank'>
+                <div src="../images/in.png" class="in"></div>
               </a>
           </div>
       </div>
