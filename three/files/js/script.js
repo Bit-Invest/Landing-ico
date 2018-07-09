@@ -16,7 +16,7 @@ $(document).ready(function() {
     },
    
     // breakpoint from 768 up
-    1150 : {
+    1300 : {
       items: 3,
       mouseDrag: false
     }
@@ -41,7 +41,7 @@ $(document).ready(function() {
     },
    
     // breakpoint from 768 up
-    1150 : {
+    1300 : {
       items: 10,
       mouseDrag: false
     }
@@ -77,7 +77,7 @@ $(document).ready(function() {
     },
    
     // breakpoint from 768 up
-    1150 : {
+    1300 : {
       items: 3,
       mouseDrag: false
     }
@@ -101,7 +101,7 @@ $(document).ready(function() {
     },
    
     // breakpoint from 768 up
-    1150 : {
+    1300 : {
       items: 3
     
     }
@@ -125,7 +125,7 @@ $(document).ready(function() {
     },
    
     // breakpoint from 768 up
-    1150 : {
+    1300 : {
       items: 4
     
     }
@@ -149,7 +149,7 @@ $(document).ready(function() {
     },
    
     // breakpoint from 768 up
-    1150 : {
+    1300 : {
       items: 2
  
     }
@@ -173,7 +173,7 @@ $(document).ready(function() {
     },
    
     // breakpoint from 768 up
-    1150 : {
+    1300 : {
       items: 4
     
     }

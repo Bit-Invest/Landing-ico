@@ -35,5 +35,5 @@ function CountDownTimer(dt, id)
  
     }
 
-    timer = setInterval(showRemaining, 1000);
+    timer = setInterval(showRemaining, 15000);
 }

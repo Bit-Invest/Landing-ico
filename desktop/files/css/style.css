@@ -372,7 +372,6 @@ margin-top: 90px;
   position: relative;
   float: right;
   width: 45px;
-  margin-top: 300px;
 }
 
  .icon-block .icon {
@@ -1909,8 +1908,7 @@ width: 720px;
       position: relative;
       float: right;
       width: 45px;
-      margin-top: 250px;
-      margin-right: 50px;
+      margin-right: -55px;
     }
 
     .menu_block.fixed .header .left_lead a.logo {
@@ -2201,7 +2199,6 @@ width: 720px;
     position: relative;
     float: right;
     width: 45px;
-    margin-top: 250px;
-    margin-right: 270px;
+    margin-right: -31px;
   }
 }
