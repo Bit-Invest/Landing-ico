@@ -151,20 +151,20 @@
 	  	$('#staticBlocks').load('./staticBlocks.html',function(){
 	  		var staticBlocks = document.getElementById('staticBlocks').innerHTML;
 				document.getElementById('hereStaticBlocks').innerHTML = staticBlocks;
-	  	});
 
-	  	require([
-	  		"desktop/caruselinfo.js?v=2.0",
-	  		"desktop/map_arr.js?v=2.0",
-	  		"three/files/js/owl.carousel.min.js",
-	  		"three/files/js/jquery.fancybox.min.js",
-	  		"desktop/files/js/script.js?v=2.0",
-	  		"./mainj.js?v=2.0",
-	  	],
-	  	function(d1,d2,d3,d4,d5,d6){
-	  		d2.render(d1);
-	  		d5.render();
-	  		d6.add(d1);
+				require([
+		  		"desktop/caruselinfo.js?v=2.0",
+		  		"desktop/map_arr.js?v=2.0",
+		  		"three/files/js/owl.carousel.min.js",
+		  		"three/files/js/jquery.fancybox.min.js",
+		  		"desktop/files/js/script.js?v=2.0",
+		  		"./mainj.js?v=2.0",
+		  	],
+		  	function(d1,d2,d3,d4,d5,d6){
+		  		d2.render(d1);
+		  		d5.render();
+		  		d6.add(d1);
+		  	});
 	  	});
 	  });
 	</script>
