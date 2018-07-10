@@ -693,7 +693,6 @@
 	  <link rel="stylesheet" href="desktop/files/css/jquery.fancybox.min.css">
 	</script>
 
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> !-->
 	<script>
 		function progress_load(count){
 	  	if(count==1){
@@ -721,8 +720,9 @@
 
 	<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 	<script>
-		var staticBlocks = document.getElementById('staticBlocks').innerHTML;
-		document.getElementById('hereStaticBlocks').innerHTML = staticBlocks;
+		//var staticBlocks = document.getElementById('staticBlocks').innerHTML;
+		//document.getElementById('hereStaticBlocks').innerHTML = staticBlocks;
+		//$.post('/staticBlocks')
 
 		require(["https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",],
 	  function(){
