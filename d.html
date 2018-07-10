@@ -726,9 +726,6 @@
 
 		require(["https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",],
 	  function(){
-	  	var staticBlocks = document.getElementById('staticBlocks').innerHTML;
-			document.getElementById('hereStaticBlocks').innerHTML = staticBlocks;
-			
 	  	require([
 	  		"desktop/caruselinfo.js?v=2.0",
 	  		"desktop/map_arr.js?v=2.0",
@@ -738,6 +735,9 @@
 	  		"./mainj.js?v=2.0",
 	  	],
 	  	function(d1,d2,d3,d4,d5,d6){
+	  		var staticBlocks = document.getElementById('staticBlocks').innerHTML;
+				document.getElementById('hereStaticBlocks').innerHTML = staticBlocks;
+
 	  		d2.render(d1);
 	  		d5.render();
 	  		d6.add(d1);
