@@ -111,9 +111,11 @@ body
 }
 
 .block_1 .personal-data {
-  font-size: 4vw;
-  margin-top: 10px;
+  font-size: 3vw;
+  margin-top: 14vw;
+  margin-left: 4vw;
   font-weight: 200;
+  clear:  both;
 }
 
 .block_1 a.logo
@@ -377,25 +379,47 @@ body
     color: #fff;
 }
 
-.block_1 form button
+.form_parent_first{
+    position: relative;
+}
+
+.block_1 form .button
 {
+    width: 38vw;
     height: 13vw;
-    border: 0;
-    width: 29vw;
-    display: block; 
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6c5ed6+0,f187b7+100 */
-    background: #6c5ed6; /* Old browsers */
-    background: -moz-linear-gradient(left, #6c5ed6 0%, #f187b7 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #6c5ed6 0%,#f187b7 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #6c5ed6 0%,#f187b7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c5ed6', endColorstr='#f187b7',GradientType=1 ); /* IE6-9 */
-    float: right;
-    border-radius: 10vw;
-    font-size: 3.6vw;
-    font-family: 'Geometria';
-    color: #fff;
+    border-radius: 24px;
+    -moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    display: inline-block;
+    text-align: center;
+    font-size: 4vw;
     font-weight: bold;
-    /* padding-top: 4px; */
+    line-height: 13vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s;
+    /* border: 2px solid #fff; */
+    vertical-align: middle;
+    background: none;
+    background: #fff;
+    color: #6C5ED6;
+    font-weight: bold;
+    font-family: 'Geometria';
+    margin-left: -105px;
+    cursor: pointer;
+    padding: 0;
+    position:  absolute;
+    right:  -3px;
+    top: 0;
+    border-radius: 100px;
+
+    background: #6c5ed6;
+    background: -moz-linear-gradient(left, #6c5ed6 0%, #f187b7 100%);
+    background: -webkit-linear-gradient(left, #6c5ed6 0%,#f187b7 100%);
+    background: linear-gradient(to right, #6c5ed6 0%,#f187b7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c5ed6', endColorstr='#f187b7',GradientType=1 );
+    color: white;
 }
 
 a.sb_watch_video
@@ -1333,7 +1357,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
     background: rgba(255, 255, 255, 0.3);
     border-radius: 10vw;
     margin-top: 15.1vw;
-
+    opacity:  0;
+    pointer-events:  none;
 }
 
 .block_14 form input
@@ -1595,4 +1620,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
 
 .hide {
     display: none;
+}
+
+.clear{
+    clear: both;
+}
+
+.mce_inline_error[for="mce-EMAIL"]{
+    margin: 10px;
+    font-size: 15px;
+    color: red;
+    text-decoration: underline;
+}
+
+.response#mce-success-response{
+    margin: 10px;
+    font-size: 15px;
+    color: green;
+    text-decoration: underline;
+}
+
+.response#mce-error-response{
+    margin: 10px;
+    font-size: 15px;
+    color: red;
+    text-decoration: underline;    
 }
