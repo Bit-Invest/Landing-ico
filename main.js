@@ -654,4 +654,12 @@ var resizeFunc = (function() {
   html_rr();
 });
 
+window.addEventListener("resize", function(){
+  clearTimeout(window.resizedFinished);
+  window.resizedFinished = setTimeout(function(){
+    console.log('Resized finished.');
+    resizeFunc();
+  }, 250);
+}, false);
+
 resizeFunc();
