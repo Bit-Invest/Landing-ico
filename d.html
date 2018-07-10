@@ -694,6 +694,28 @@
 	</script>
 
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> !-->
+	<script>
+		function progress_load(count){
+	  	if(count==1){
+	  		loadedFiles();
+	  	}
+	  }
+
+	  function loadedFiles(callback){
+			var aplha = 1;
+			function backtozero(){
+				aplha -= .05;
+				if(aplha>0){
+					document.getElementById('blackPreloader').style.opacity = aplha;
+					window.requestAnimationFrame(backtozero);
+				}else{
+					if(callback) callback();
+				}
+			}
+			window.requestAnimationFrame(backtozero);
+		};
+	</script>
+	
 	<script src="./main.js"></script>
 	<script src="three/files/js/countdown.js?v=2.0"></script>
 
@@ -718,27 +740,6 @@
 	  		d6.add(d1);
 	  	});
 	  });
-
-	  function progress_load(count){
-	  	if(count==1){
-	  		loadedFiles();
-	  	}
-	  }
-
-	  function loadedFiles(callback){
-			var aplha = 1;
-			function backtozero(){
-				aplha -= .05;
-				if(aplha>0){
-					document.getElementById('blackPreloader').style.opacity = aplha;
-					window.requestAnimationFrame(backtozero);
-				}else{
-					if(callback) callback();
-				}
-			}
-			window.requestAnimationFrame(backtozero);
-		};
-
 	</script>
 
 	<!--
