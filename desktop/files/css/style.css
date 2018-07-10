@@ -1,102 +1,12 @@
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-Bold.woff2') format('woff2'),
-        url('../fonts/Geometria-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-Heavy.woff2') format('woff2'),
-        url('../fonts/Geometria-Heavy.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-ExtraLightItalic.woff2') format('woff2'),
-        url('../fonts/Geometria-ExtraLightItalic.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-Light.woff2') format('woff2'),
-        url('../fonts/Geometria-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-Medium.woff2') format('woff2'),
-        url('../fonts/Geometria-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria.woff2') format('woff2'),
-        url('../fonts/Geometria.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-ExtraBold.woff2') format('woff2'),
-        url('../fonts/Geometria-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-ExtraLight.woff2') format('woff2'),
-        url('../fonts/Geometria-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('../fonts/Geometria-MediumItalic.woff2') format('woff2'),
-        url('../fonts/Geometria-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-}
-
-*
-{
-    padding: 0;
-    margin: 0;
-}
-
-body
-{
-    font-family: 'Geometria';
-    color: #fff;
-    font-size: 16px;
-}
-
-h2
-{
-  font-weight : bold;
-  font-size : 48px;
-  color : #FFFFFF;
-}
 
 
 .size
 {
     width:  1090px;
     padding: 0 20px; 
-    margin: 0 auto;  
+    margin: 0 auto; 
+    padding-bottom: 20px;
 }
 
 .clear
@@ -150,7 +60,7 @@ h2
 {
     padding-top: 85px;
     display: block;
-    width: 1130px;
+    width: 1024px;
     margin:  0 auto;
 }
 
@@ -651,7 +561,7 @@ opacity: 1 !important;
 
 .block_4
 {
-    padding: 70px 0;
+/*    padding: 70px 0;*/
     background : -moz-linear-gradient(50% 0% -90deg,rgba(76, 32, 115, 1) 0%,rgba(8, 159, 195, 1) 100%);
   background : -webkit-linear-gradient(-90deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
   background : -webkit-gradient(linear,50% 0% ,50% 100% ,color-stop(0,rgba(76, 32, 115, 1) ),color-stop(1,rgba(8, 159, 195, 1) ));
@@ -1077,8 +987,8 @@ z-index: 2;
     height: 65px;
     background: #fff;
     position: absolute;
-    left: 16px;
-    bottom: 49px;
+    left: 45px;
+    bottom: 55px;
 }
 
 .block_5 .owl-carousel .item .numb
@@ -1086,7 +996,7 @@ z-index: 2;
     display: block;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 30px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -1095,11 +1005,12 @@ z-index: 2;
 
 .block_5 .owl-carousel .item p
 {
+    text-align: center;
     font-size: 13px;
     font-weight: normal;
     position: absolute;
     display: block;
-    bottom: 160px;
+    bottom: 145px;
     line-height: 18px;
     width: 100%;
     word-wrap: break-word;
@@ -1110,7 +1021,7 @@ z-index: 2;
     width: auto;
     display: block;
     position: absolute;
-    left: 0;
+    left: 40px;
     top: 7px;
 }
 
@@ -1393,9 +1304,11 @@ z-index: 2;
 .block_8 .in {
   background-image: url(../images/in.png);
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
+  background-size: cover;
+  width: 33px;
+  height: 33px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .block_8 h2
@@ -1692,7 +1605,7 @@ vertical-align: middle;
 
 .block_9 a.small
 {
-    font-size: 12px;
+    font-size: 15px;
     color: #fff;
 }
 
@@ -1774,20 +1687,15 @@ popup[video] .th_video {
 }
 
 popup[video] .th_video .close {
-
-position:  relative;
-
-margin:  20px;
-
-background: #717070;
-
-display:  table;
-
-padding: 10px 30px;
-
-border-radius: 100px;
-
-cursor:  pointer;
+position: relative;
+    margin: 20px 0;
+    background: #717070;
+    display: table;
+    padding: 10px 30px;
+    border-radius: 100px;
+    cursor: pointer;
+    left: 100%;
+    margin-left: -100px;
 }
 
 popup[video] .th_video .th_iframe {
@@ -1801,7 +1709,7 @@ popup[video] .th_video .th_iframe iframe {
   
 height: 500px;
   
-width: 800px;
+width: 720px;
 }
 
 /**/
@@ -1829,6 +1737,56 @@ width: 800px;
 
 [link] {
     color: inherit;
+}
+
+.footer-block {
+  width: 560px;
+  margin-top: 50px;
+  padding-bottom: 120px;
+}
+
+.footer-block-left {
+  float: left;
+}
+
+.footer-block-right {
+  float: right;
+}
+
+.footer-block-left .name {
+  font-size: 25px; 
+  margin-bottom: 20px;
+}
+
+.footer-block-right .name{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.inquiries-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.feedback-info {
+  float: left;
+}
+
+.parentAdvisersItem {
+    position: relative;
+    padding-top: 30px;
+}
+
+.play-button-advisers{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: url(../images/play_button.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    z-index: 9;
+    cursor: pointer;
 }
 
 @media (max-width: 1300px)
@@ -1859,7 +1817,7 @@ width: 800px;
     .menu_block .header ul.menu {
       float: none;
     }
-
+  
     .menu_block.fixed .header ul.menu {
       float: none;
     }
@@ -2018,6 +1976,7 @@ width: 800px;
     .block_4 .cont_1
     {
         margin-top: 0;
+        padding-bottom: 20px;
     }
 
     .block_4 .cont_4
@@ -2145,6 +2104,4 @@ width: 800px;
     .block_1 .cont_row .row span {
         height: 110px;
     }
-
-
 }
