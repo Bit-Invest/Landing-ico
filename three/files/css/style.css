@@ -448,11 +448,11 @@ vertical-align: middle;
     bottom: -30px;
 }
 
-.first_block_1 .cont_cont .cont_right form
-{
+.form_parent_first{
     display: inline-block;
     vertical-align: middle;
     margin-top: 70px;
+    position: relative;
 }
 
 .first_block_1 .cont_cont .cont_right form input
@@ -486,23 +486,23 @@ vertical-align: middle;
      font-weight: bold;
 }
 
-.first_block_1 .cont_cont .cont_right form button
+.first_block_1 .cont_cont .cont_right form .button
 {
-    width : 111px;
-    height : 44px;
-    border-radius : 24px;
-    -moz-border-radius : 24px;
-    -webkit-border-radius : 24px;
+    width: 111px;
+    height: 46px;
+    border-radius: 24px;
+    -moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
     display: inline-block;
     text-align: center;
     font-size: 13px;
     font-weight: bold;
-    line-height: 43px;
+    line-height: 45px;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
     transition: background 0.3s;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     vertical-align: middle;
     background: none;
     background: #fff;
@@ -511,6 +511,37 @@ vertical-align: middle;
     font-family: 'Geometria';
     margin-left: -105px;
     cursor: pointer;
+    padding: 0;
+    position:  absolute;
+    right:  -3px;
+    top: 0;
+}
+
+.first_block_1 .cont_cont .cont_right form .button:hover{
+    background: #6C5ED6;
+    color: white;
+    border-color: #6C5ED6;
+}
+
+.first_block_1 .mce_inline_error[for="mce-EMAIL"]{
+    margin: 10px;
+    font-size: 15px;
+    color: red;
+    text-decoration: underline;
+}
+
+.first_block_1 .response#mce-success-response{
+    margin: 10px;
+    font-size: 15px;
+    color: green;
+    text-decoration: underline;
+}
+
+.first_block_1 .response#mce-error-response{
+    margin: 10px;
+    font-size: 15px;
+    color: red;
+    text-decoration: underline;    
 }
 
 .first_block_1 .cont_row
