@@ -31,8 +31,8 @@ define(function(){
       img: './media/Mofassair_Hossain.11359d11.jpg',
       name: 'Mofassair Hossain',
       position: 'Chief Marketing Officer',
-      fackt1: 'Investor and Advisor of 15+ ICOs',
-      fackt2: 'Top Advisor at ICO Bench',
+      fackt1: 'Investor and Adviser of 15+ ICOs',
+      fackt2: 'Top Adviser at ICO Bench',
       fackt3: 'GBAP Member',
       src: 'https://www.linkedin.com/in/md-mofassair-hossain-515a90148'
     },
@@ -85,7 +85,7 @@ define(function(){
       src: 'https://linkedin.com/in/kteare',
       name: 'Keith Teare',
       position: 'Founder and Executive Chairman at Accelerated Digital Ventures',
-      fackt1: 'Advisor to ICOBox, Crypterium, EnergiMine, etc.',
+      fackt1: 'Adviser to ICOBox, Crypterium, EnergiMine, etc.',
       fackt2: 'Founding shareholder of TechCrunch',
       linkedin: 'https://linkedin.com/in/kteare',
       text: [
@@ -131,9 +131,9 @@ define(function(){
       video: 'https://www.youtube.com/embed/vsjxNki18DY',
       name: 'Amarpreet Singh',
       src: 'https://www.linkedin.com/in/amarpreetsingh2/',
-      position: 'Senior Advisor of Global Blockchain Foundation',
+      position: 'Senior Adviser of Global Blockchain Foundation',
       fackt1: 'Experience in Microsoft, The World Bank and Airbus',
-      fackt2: 'Advisory Board Member of Blockchain projects',
+      fackt2: 'Advisery Board Member of Blockchain projects',
       linkedin: 'https://www.linkedin.com/in/amarpreetsingh2/',
       text: [
         "Technology/Digital enthusiast and a seasoned professional with years of experience in Tech industry – operations, consulting and innovation.",
@@ -145,7 +145,7 @@ define(function(){
     },
     {
       img: './media/Tyler_Sanford.5d35cd71.jpg',
-      video: '/',
+      video: '',
       name: 'Tyler Sanford',
       src: 'https://www.linkedin.com/in/tylersanford/',
       position: '8 Years Digital Marketing in Yelp and Zenefits',
@@ -162,12 +162,12 @@ define(function(){
     },
     {
       img: './media/Bogdan_Fiedur.e36a757d.jpg',
-      video: 'https://youtube.com/watch?v=oC-oTaBId7g',
+      video: 'https://www.youtube.com/embed/oC-oTaBId7g',
       name: 'Bogdan Fiedur',
       src: 'https://www.linkedin.com/in/bogdanfiedur/',
       position: 'Blockchain and cryptocurrency expert, investor, entrepreneur',
       fackt1: 'Co-Founder of bitJob and President of Blockchainexperts.io',
-      fackt2: 'ICO Advisor, ICOBench Expert',
+      fackt2: 'ICO Adviser, ICOBench Expert',
       linkedin: 'https://www.linkedin.com/in/bogdanfiedur/',
       text: [
         "Bogdan Fiedur is a smart contract developer, crypto-investor, entrepreneur and President of http://blockchainexperts.io . He has over 20 years of IT experience in building e-commerce websites and has been involved in blockchain development during last 3 years.",
@@ -183,10 +183,10 @@ define(function(){
       src: 'https://www.linkedin.com/in/grahamdoggart/',
       position: '20 years of enterprise development, fintech marketing compliance',
       fackt1: 'Executed campaigns with a worth of $100m',
-      fackt2: 'Advisor for 10+ blockchain projects this year',
+      fackt2: 'Adviser for 10+ blockchain projects this year',
       linkedin: 'https://www.linkedin.com/in/grahamdoggart/',
       text: [
-        "I am chairman of a Stealth Cryptocurrency Project and co-founder and lead strategist at Dynamic Abundance, a Blockchain and Fintech Advisory since 2012. ",
+        "I am chairman of a Stealth Cryptocurrency Project and co-founder and lead strategist at Dynamic Abundance, a Blockchain and Fintech Advisery since 2012. ",
         "I specialise in the structuring and packaging of token offerings and have worked with numerous blockchain, cryptocurrency and ICO projects internationally. ",
         "For more than 20 years I have provided tech management consultation, legal and financial compliance advice, growth strategies, investor relations, as well as design and authorship of materials.",
         "Career and projects: <br> Stealth Cryptocurrency Project, Dynamic Abundance, ELYSIAN, Fox Trading FX, Profede, Worltdopoly, CINDX"
@@ -199,10 +199,10 @@ define(function(){
       src: 'https://www.linkedin.com/in/sadie-hutton/',
       position: '25 years in senior management and management consulting',
       fackt1: 'Multimillion-dollar fundraiser with campaigns with a worth of £75m',
-      fackt2: 'ICO Advisor of 8 projects',
+      fackt2: 'ICO Adviser of 8 projects',
       linkedin: 'https://www.linkedin.com/in/sadie-hutton/',
       text: [
-        'I am the founder of Dynamic Abundance, a blockchain advisory.',
+        'I am the founder of Dynamic Abundance, a blockchain advisery.',
         'Preferring a “hands-on” approach, I am a specialist in ICO analysis, project management, all key aspects of the ICO process. I am skilled in business management and growth, which enable me to see a project from inception through to delivery. I am a problem solver by nature, and I take any project I am involved with personally. I like to win!',
         'With over 20 years of management experience I built up a powerful network, I actively advise on finance, tech, sales, marketing and quality assurance for high-level blockchain projects.',
         'Career and projects: <br> Dynamic Abundance, ELYSIAN, Worldopoly, Confidential ICO,  Fox Trading FX, Profede, Market Digital, CINDX'
@@ -263,9 +263,9 @@ define(function(){
     },
     {
       img: './media/Innova8.png',
-      name: 'Innov8 Global Advisory',
+      name: 'Innov8 Global Advisery',
       position: 'Global Ventures',
-      href: 'http://www.innov8globaladvisory.com/'
+      href: 'http://www.innov8globaladvisery.com/'
     },
    ];
 
@@ -316,9 +316,9 @@ define(function(){
     {
       img: './media/Philip_Staehelin.49caf8a6.jpg',
       name: 'Philip Staehelin',
-      position: 'Advisor',
+      position: 'Adviser',
       video: 'https://www.youtube.com/embed/gMYQzVyXHZI',
-      text: 'Philip Staehelin, Advisor of CINDX project, explains how the cryptocurrency revolution can help even inexperienced investors and tells about the breakthrough that CINDX project prepared for the crypto market'
+      text: 'Philip Staehelin, Adviser of CINDX project, explains how the cryptocurrency revolution can help even inexperienced investors and tells about the breakthrough that CINDX project prepared for the crypto market'
     },
     {
       img: './media/Andrzej_Cichowlaz1.7705cd34.jpg',
@@ -330,23 +330,23 @@ define(function(){
     {
       img: './media/Austin_Kimm.caf37ff2.jpg',
       name: 'Austin Kimm',
-      position: 'Advisor',
+      position: 'Adviser',
       video: 'https://www.youtube.com/embed/5X8isxq6S00',
-      text: 'Austin Kimm, Advisor of CINDX project tells how CINDX makes trading cryptocurrency for profit simple and smart'
+      text: 'Austin Kimm, Adviser of CINDX project tells how CINDX makes trading cryptocurrency for profit simple and smart'
     },
     {
       img: './media/Amarpreet_Singh.afa7b4f8.jpg',
       name: 'Amarpreet Singh',
-      position: 'Advisor',
+      position: 'Adviser',
       video: 'https://www.youtube.com/embed/vsjxNki18DY',
-      text: 'Amarpreet Singh, CINDX Advisor explains how CINDX platform can bridge the gap between investors and traders'
+      text: 'Amarpreet Singh, CINDX Adviser explains how CINDX platform can bridge the gap between investors and traders'
     },
     {
       img: './media/Keith_Teare.1e7599ac.jpg',
       name: 'Keith Teare',
-      position: 'Advisor',
+      position: 'Adviser',
       video: 'https://www.youtube.com/embed/qWpWbZUljdg',
-      text: 'Keith Teare, CINDX Advisor describes advantages of CINDX platform'
+      text: 'Keith Teare, CINDX Adviser describes advantages of CINDX platform'
     },
     {
       img: './media/Mansur_Rasulov.1950d44a.jpg',
@@ -358,16 +358,16 @@ define(function(){
     {
       img: './media/Sadie_Hutton.54ab2eaa.jpg',
       name: 'Sadie Hutton',
-      position: 'Advisor',
+      position: 'Adviser',
       video: 'https://www.youtube.com/embed/iQhcMhT13hs',
-      text: 'Sadie Hutton, CINDX Advisor explains how CINDX plantform is different from other automated trading platforms'
+      text: 'Sadie Hutton, CINDX Adviser explains how CINDX plantform is different from other automated trading platforms'
     },
     {
       img: './media/Graham_Doggart.fd8f9df5.jpg',
       name: 'Graham Doggart',
-      position: 'Advisor',
+      position: 'Adviser',
       video: 'https://www.youtube.com/embed/HWV5Hv2R6vA',
-      text: 'Graham Doggart, CINDX Advisor talks about strengths of CINDX platform'
+      text: 'Graham Doggart, CINDX Adviser talks about strengths of CINDX platform'
     },
     {
       img: './media/Alina_Vardanyan.jpg',
