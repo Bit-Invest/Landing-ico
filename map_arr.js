@@ -60,7 +60,7 @@ advisers.forEach(function(e, i){
                 <img src="${e.img}" alt="" class="ava">
               </div>
               <a href="${e.video}" target='blank'>
-                <img style="width: 60px; height: 60px; float: right; position: relative; bottom: 70px; margin-right: 32px;" src="media/play_button.png" >
+                <img style="width: 60px; height: 60px; float: right; position: relative; bottom: 80px; margin-right: 20px;" src="media/play_button.png" >
               </a>
               <div class="clear"></div>
               <div class="na">${e.name}</div>
