@@ -715,11 +715,22 @@
 		var cp=0;
 		function progress_load(count){
 			cp += count;
-	  	if(cp==3){
+	  	if(cp==4){
 	  		window.onscroll();
+	  		setTimeout(function(){
+	  			window.requestAnimationFrame(animateDraw);
+	  		},200);
+
 	  		loadedFiles();
 	  	}
 	  };
+
+	  /*handle*/
+	  setTimeout(function(){
+	  	if(cp<4){
+	  		loadedFiles();
+	  	}
+	  },3000);
 
 	  function loadedFiles(callback){
 			var aplha = 1;

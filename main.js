@@ -501,6 +501,8 @@ var resizeFunc = (function() {
     })
   };
 
+  progress_load(1);
+
   function pr_px(pr, diff) {
     var diffs = [
       window.innerWidth,
