@@ -107,7 +107,7 @@ body
     background: url(../images/block_1.png) no-repeat center top;
     background-size: 104vw;
     padding: 6vw 0;
-    padding-bottom: 15vw;
+    padding-bottom: 13vw;
 }
 
 .block_1 .personal-data {
@@ -1647,4 +1647,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
     font-size: 15px;
     color: red;
     text-decoration: underline;    
+}
+
+.videoLinkAvsisers{
+
+}
+
+.videoLinkAvsisers img{
+    width: 19vw;
+    height: 19vw;
+    top: 28vw;
+    right: 7vw;
+    position: absolute;
 }

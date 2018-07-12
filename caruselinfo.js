@@ -148,7 +148,7 @@
     },
     {
       img: './media/Tyler_Sanford.5d35cd71.jpg',
-      video: '/',
+      video: '',
       name: 'Tyler Sanford',
       src: 'https://www.linkedin.com/in/tylersanford/',
       position: 'Adviser',
@@ -377,7 +377,7 @@
       text: 'Graham Doggart, CINDX Advisor talks about strengths of CINDX platform'
     },
     {
-      img: './media/Alina_Vardanian.jpg',
+      img: './media/Alina_Vardanyan.jpg',
       name: 'Alina Vardanian',
       position: 'Content Manager',
       video: 'https://www.youtube.com/embed/IATb_l1vLE4',

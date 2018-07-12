@@ -59,9 +59,13 @@ advisers.forEach(function(e, i){
               <div class="border">
                 <img src="${e.img}" alt="" class="ava">
               </div>
-              <a href="${e.video}" target='blank'>
-                <img style="width: 60px; height: 60px; float: right; position: relative; bottom: 80px; margin-right: 20px;" src="media/play_button.png" >
-              </a>
+              ${
+                e.video ?
+                  `<a href="${e.video}" target='blank' class="videoLinkAvsisers">
+                    <img src="media/play_button.png" >
+                  </a>`
+                : ''
+              }              
               <div class="clear"></div>
               <div class="na">${e.name}</div>
               <hr>
