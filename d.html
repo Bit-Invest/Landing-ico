@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- !-->
-	<link rel="stylesheet" type="text/css" href="three/files/css/style.css?v=3.0">
+	<link rel="stylesheet" type="text/css" href="three/files/css/style.css?v=4.0">
 	<!-- !-->
 
 	<!-- analytics !-->
@@ -149,15 +149,15 @@
 		<div class="footerFixed">
 			<div class="size">
 				<div class="icon-block">
-            <a href="https://www.youtube.com/cindx" target='_blank' ><img class="icon" src="./media/youtube_icon.png" alt=""></a>           
-            <a href="https://www.instagram.com/cindx.io/" target='_blank' ><img class="icon" src="./media/instagram_icon.png" alt=""></a> 
+            <a href="https://t.me/cindx_official" target='_blank'><img class="icon" src="./media/telegram_icon.png" alt=""></a>
+            <a href="https://twitter.com/CindxPlatform" target='_blank'><img class="icon" src="./media/twitter_icon.png" alt=""></a>
+            <a href="https://www.facebook.com/cindx.io/" target='_blank'><img class="icon" src="./media/facebook_icon.png" alt=""></a>
+	        <a href="https://medium.com/cindx" target='_blank'><img class="icon" src="./media/medium_icon.png" alt=""></a> 
             <a href="https://bitcointalk.org/index.php?topic=4421275.0" target='_blank' ><img class="icon" src="./media/bitcointalk_icon.png" alt=""></a>
-	        <a href="https://www.reddit.com/r/cindx/" target='_blank' ><img class="icon" src="./media/reddit_icon.png" alt=""></a>
-	        <a href="https://t.me/cindx_official" target='_blank'><img class="icon" src="./media/telegram_icon.png" alt=""></a>
-	        <a href="https://twitter.com/CindxPlatform" target='_blank'><img class="icon" src="./media/twitter_icon.png" alt=""></a>
-	        <a href="https://www.facebook.com/cindx.io/" target='_blank'><img class="icon" src="./media/facebook_icon.png" alt=""></a>
-	        <a href="https://medium.com/cindx" target='_blank'><img class="icon" src="./media/medium_icon.png" alt=""></a>
-	        <a href="https://www.linkedin.com/company/cindex-platform/" target='_blank'><img class="icon" src="./media/linkedin_icon.png" alt=""></a>
+            <a href="https://www.youtube.com/cindx" target='_blank' ><img class="icon" src="./media/youtube_icon.png" alt=""></a>           
+<!--            <a href="https://www.instagram.com/cindx.io/" target='_blank' ><img class="icon" src="./media/instagram_icon.png" alt=""></a>-->
+<!--	        <a href="https://www.reddit.com/r/cindx/" target='_blank' ><img class="icon" src="./media/reddit_icon.png" alt=""></a>-->
+<!--	        <a href="https://www.linkedin.com/company/cindex-platform/" target='_blank'><img class="icon" src="./media/linkedin_icon.png" alt=""></a>-->
 	      </div>
 			</div>
 		</div>
@@ -214,7 +214,7 @@
 		</div>
 		</animateWindows>
 		<div class="windows-bl n-cour" n="2">
-			<div class="first_block_3"><div class="size"><h2>We Make your Crypto Asset Trading Easy, Secure and Ffast</h2><a class="sb" href="#" link="joinpresale">Join Pre-Sale</a></div></div>
+			<div class="first_block_3"><div class="size"><h2>We Make your Crypto Asset Trading Easy, Secure and Fast</h2><a class="sb" href="#" link="joinpresale">Join Pre-Sale</a></div></div>
 		</div>
 		<!-- ajax load blocks !-->
 		<staticBlocks id="hereStaticBlocks"></staticBlocks>
@@ -248,7 +248,7 @@
 		            <div class="row">
 		                <h2>Trust</h2><span>I have always felt uncomfortable <br>with the idea of handing my money over to someone else to make a profit</span><img src="desktop/files/images/block_1_row_2.png">
 		                <h3>On the CINDX platform, your funds <br> will never leave your wallet</h3>
-		                <p>Our decentralized system and smart contracts allow your funds to be managed without being transferred to another trader</p>
+		                <p>Our decentralized system and smart contracts allow your funds to be managed without being transferred to another traders</p>
 		            </div>
 		            <div class="row">
 		                <h2>Uncertainty</h2><span>The technology surrounding crypto trading is not user-friendly. I can't figure out how to trade my coins</span><img src="desktop/files/images/block_1_row_3.png">
@@ -274,7 +274,7 @@
 		            <div class="row">
 		                <h3>Vendors</h3>
 		                <p>sell advanced trading tools, <br>like trade robots and news widgets.</p>
-		                <div class="cloud"><span>I'm joining CINDX <br>with trading apps <br>that will help investors</span></div><img src="desktop/files/images/block_2_img_3.png"></div>
+		                <div class="cloud"><span>I'm joining CINDX <br>with trading apps <br>that will help trader</span></div><img src="desktop/files/images/block_2_img_3.png"></div>
 		            <div class="row">
 		                <h3>CINDX</h3>
 		                <p>collects commissions <br>and subscription fees</p>
@@ -805,7 +805,7 @@
 		    </div>
 		</div>
 
-		<link rel="stylesheet" type="text/css" href="desktop/files/css/style.css?v=3.0">
+		<link rel="stylesheet" type="text/css" href="desktop/files/css/style.css?v=4.0">
 		<link rel="stylesheet" href="desktop/files/css/owl.carousel.min.css">
 	  <link rel="stylesheet" href="desktop/files/css/owl.theme.default.min.css">
 	  <link rel="stylesheet" href="desktop/files/css/jquery.fancybox.min.css">
@@ -813,11 +813,25 @@
 
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> !-->
 	<script>
+		var cp=0;
 		function progress_load(count){
-	  	if(count==1){
+			cp += count;
+	  	if(cp==4){
+	  		window.onscroll();
+	  		setTimeout(function(){
+	  			window.requestAnimationFrame(animateDraw);
+	  		},200);
+
 	  		loadedFiles();
 	  	}
-	  }
+	  };
+
+	  /*handle*/
+	  setTimeout(function(){
+	  	if(cp<4){
+	  		loadedFiles();
+	  	}
+	  },3000);
 
 	  function loadedFiles(callback){
 			var aplha = 1;
@@ -835,23 +849,25 @@
 	</script>
 	
 	<script src="./main.js"></script>
-	<script src="three/files/js/countdown.js?v=3.0"></script>
+	<script src="three/files/js/countdown.js?v=4.0"></script>
 
 	<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 	<script>
 		var staticBlocks = document.getElementById('staticBlocks').innerHTML;
 		document.getElementById('hereStaticBlocks').innerHTML = staticBlocks;
 
+		progress_load(1);
+
 		require(["jquery.js",],
 	  function(){
 	  	require([
-	  		"desktop/caruselinfo.js?v=3.0",
-	  		"desktop/map_arr.js?v=3.0",
+	  		"desktop/caruselinfo.js?v=4.0",
+	  		"desktop/map_arr.js?v=4.0",
 	  		"three/files/js/owl.carousel.min.js",
 	  		"three/files/js/jquery.fancybox.min.js",
-	  		"desktop/files/js/script.js?v=3.0",
-	  		"./mainj.js?v=3.0",
-	  		"./j.js",
+	  		"desktop/files/js/script.js?v=4.0",
+	  		"./mainj.js?v=4.0",
+	  		"./j.js?v=4.0",
 	  	],
 	  	function(d1,d2,d3,d4,d5,d6){
 	  		d2.render(d1);
@@ -863,18 +879,18 @@
 
 	<!--
 
-	<link rel="stylesheet" type="text/css" href="desktop/files/css/style.css?v=3.0">
+	<link rel="stylesheet" type="text/css" href="desktop/files/css/style.css?v=4.0">
 
 	<script src="three/files/js/owl.carousel.min.js"></script>
 	<script src="three/files/js/jquery.fancybox.min.js"></script>
 
-	<script src="desktop/caruselinfo.js?v=3.0"></script>
-	<script src="desktop/map_arr.js?v=3.0"></script>
+	<script src="desktop/caruselinfo.js?v=4.0"></script>
+	<script src="desktop/map_arr.js?v=4.0"></script>
 
 	<link rel="stylesheet" href="desktop/files/css/owl.carousel.min.css">
   <link rel="stylesheet" href="desktop/files/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="desktop/files/css/jquery.fancybox.min.css">
-	<script src="desktop/files/js/script.js?v=3.0"></script>
+	<script src="desktop/files/js/script.js?v=4.0"></script>
 
 	<script>
 		$('[link]').each(function(){
