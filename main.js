@@ -588,12 +588,13 @@ var resizeFunc = (function() {
 
         //document.getElementsByClassName('guy_anm_parent')[0].style.display = 'none';
         //document.getElementsByClassName('menu_block')[0].classList.add("fixed");
-        console.log(typeof $ !== 'undefined')
         if(typeof $ !== 'undefined'){
           $('.guy_anm_parent').hide();
           $('.menu_block').addClass('fixed');
+        }else{
+          document.getElementsByClassName('guy_anm_parent')[0].style.display = 'none';
+          document.getElementsByClassName('menu_block')[0].classList.add("fixed");
         }
-        
       } else if (window.scrollY < 50 && menu_fixed) {
         menu_fixed = false;
 

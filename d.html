@@ -48,15 +48,15 @@
 		<div class="footerFixed">
 			<div class="size">
 				<div class="icon-block">
-            <a href="https://www.youtube.com/cindx" target='_blank' ><img class="icon" src="./media/youtube_icon.png" alt=""></a>           
-            <a href="https://www.instagram.com/cindx.io/" target='_blank' ><img class="icon" src="./media/instagram_icon.png" alt=""></a> 
+            <a href="https://t.me/cindx_official" target='_blank'><img class="icon" src="./media/telegram_icon.png" alt=""></a>
+            <a href="https://twitter.com/CindxPlatform" target='_blank'><img class="icon" src="./media/twitter_icon.png" alt=""></a>
+            <a href="https://www.facebook.com/cindx.io/" target='_blank'><img class="icon" src="./media/facebook_icon.png" alt=""></a>
+	        <a href="https://medium.com/cindx" target='_blank'><img class="icon" src="./media/medium_icon.png" alt=""></a> 
             <a href="https://bitcointalk.org/index.php?topic=4421275.0" target='_blank' ><img class="icon" src="./media/bitcointalk_icon.png" alt=""></a>
-	        <a href="https://www.reddit.com/r/cindx/" target='_blank' ><img class="icon" src="./media/reddit_icon.png" alt=""></a>
-	        <a href="https://t.me/cindx_official" target='_blank'><img class="icon" src="./media/telegram_icon.png" alt=""></a>
-	        <a href="https://twitter.com/CindxPlatform" target='_blank'><img class="icon" src="./media/twitter_icon.png" alt=""></a>
-	        <a href="https://www.facebook.com/cindx.io/" target='_blank'><img class="icon" src="./media/facebook_icon.png" alt=""></a>
-	        <a href="https://medium.com/cindx" target='_blank'><img class="icon" src="./media/medium_icon.png" alt=""></a>
-	        <a href="https://www.linkedin.com/company/cindex-platform/" target='_blank'><img class="icon" src="./media/linkedin_icon.png" alt=""></a>
+            <a href="https://www.youtube.com/cindx" target='_blank' ><img class="icon" src="./media/youtube_icon.png" alt=""></a>           
+<!--            <a href="https://www.instagram.com/cindx.io/" target='_blank' ><img class="icon" src="./media/instagram_icon.png" alt=""></a>-->
+<!--	        <a href="https://www.reddit.com/r/cindx/" target='_blank' ><img class="icon" src="./media/reddit_icon.png" alt=""></a>-->
+<!--	        <a href="https://www.linkedin.com/company/cindex-platform/" target='_blank'><img class="icon" src="./media/linkedin_icon.png" alt=""></a>-->
 	      </div>
 			</div>
 		</div>
@@ -173,7 +173,7 @@
 		            <div class="row">
 		                <h3>Vendors</h3>
 		                <p>sell advanced trading tools, <br>like trade robots and news widgets.</p>
-		                <div class="cloud"><span>I'm joining CINDX <br>with trading apps <br>that will help investors</span></div><img src="desktop/files/images/block_2_img_3.png"></div>
+		                <div class="cloud"><span>I'm joining CINDX <br>with trading apps <br>that will help trader</span></div><img src="desktop/files/images/block_2_img_3.png"></div>
 		            <div class="row">
 		                <h3>CINDX</h3>
 		                <p>collects commissions <br>and subscription fees</p>
@@ -712,11 +712,14 @@
 
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> !-->
 	<script>
+		var cp=0;
 		function progress_load(count){
-	  	if(count==1){
+			cp += count;
+	  	if(cp==2){
+	  		window.scrollTo(0,0);
 	  		loadedFiles();
 	  	}
-	  }
+	  };
 
 	  function loadedFiles(callback){
 			var aplha = 1;
@@ -743,6 +746,7 @@
 
 		require(["jquery.js",],
 	  function(){
+	  	progress_load(1);
 	  	require([
 	  		"desktop/caruselinfo.js?v=2.0",
 	  		"desktop/map_arr.js?v=2.0",
