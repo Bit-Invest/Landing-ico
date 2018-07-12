@@ -744,9 +744,10 @@
 		var staticBlocks = document.getElementById('staticBlocks').innerHTML;
 		document.getElementById('hereStaticBlocks').innerHTML = staticBlocks;
 
+		progress_load(1);
+
 		require(["jquery.js",],
 	  function(){
-	  	progress_load(1);
 	  	require([
 	  		"desktop/caruselinfo.js?v=2.0",
 	  		"desktop/map_arr.js?v=2.0",
