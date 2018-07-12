@@ -643,6 +643,8 @@ var resizeFunc = (function() {
         }, 500);
       });
     };
+
+    progress_load(1);
   })()
 
   function readyDom() {
