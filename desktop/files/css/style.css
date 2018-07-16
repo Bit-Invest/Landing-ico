@@ -1607,6 +1607,8 @@ vertical-align: middle;
 {
     font-size: 15px;
     color: #fff;
+    float: left;
+    clear: both;
 }
 
 [map_arr="3"] .item img {
@@ -1740,7 +1742,7 @@ width: 720px;
 }
 
 .footer-block {
-  width: 560px;
+  width: 680px;
   margin-top: 50px;
   padding-bottom: 120px;
 }
@@ -1789,7 +1791,7 @@ width: 720px;
     cursor: pointer;
 }
 
-@media (max-width: 1300px)
+@media (max-width: 1299px)
 {
     .block_1{
       padding-top: 20px;
@@ -1993,7 +1995,7 @@ width: 720px;
     .block_4:before
     {
         background: url(../images/block_4_img_bg_3.png) no-repeat;
-        background-size: 680px;
+        background-size: 710px;
         width: 675px;
         height: 410px;
         bottom: 0;
@@ -2082,6 +2084,7 @@ width: 720px;
         padding: 10px;
         float: right;
         width: 480px;
+        padding-top: 30px;
     }
 
     .block_8 .owl_7 .item .right p
