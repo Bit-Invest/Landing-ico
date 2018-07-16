@@ -1,4 +1,4 @@
-CountDownTimer('2018/07/23 12:00:00 GMT-0000', 'countdown');
+CountDownTimer('2018/08/22 12:00:00 GMT-0000', 'countdown');
 
 function CountDownTimer(dt, id)
 {

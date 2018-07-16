@@ -364,7 +364,7 @@ body
     height: 13vw;
     line-height: 13vw;
     font-size: 3.6vw;
-    font-weight: bold;
+    font-weight: 300;
     padding-left: 6vw;
     width: 55vw;
     float:  left;
@@ -1460,6 +1460,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
     width: 35vw;
     margin-top: 16vw;
     margin-left: 48vw;
+}
+
+.block_14 .icon-block {
+    padding-top: 170px;
+    margin-left: 18px;
+}
+
+.block_14 .icon-block img {
+  width: 40px;
+  margin: 8px;
 }
 
 .block_15

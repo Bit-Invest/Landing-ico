@@ -115,7 +115,11 @@ var $map_arr4 = $('[map_arr="4"]').html(null);
 news.forEach(function(e, i){
   $(`
     <div class="item news">
-      <div class="video" style="background-image: url(${e.screen})"></div>
+      <div class="video" style="background-image: url(${e.screen})">
+        <a href="#" class="play" video-id="${e.videoSrc}">
+          <img src="files/images/sb_watch_video.png">
+        </a>
+      </div>
       <div class="names">
         <div class="clear"></div>
         <div class="na">${e.name}</div>
