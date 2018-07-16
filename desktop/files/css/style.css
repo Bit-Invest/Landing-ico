@@ -979,7 +979,19 @@ z-index: 2;
     position: relative;
 }
 
-.block_5 .owl-carousel .item:before
+.block_5 .owl-carousel .one:before
+{
+    display: block;
+    content: '';
+    width: 3px;
+    height: 65px;
+    background: #fff;
+    position: absolute;
+    left: 45px;
+    bottom: 55px;
+}
+
+.block_5 .owl-carousel .all:before
 {
     display: block;
     content: '';
