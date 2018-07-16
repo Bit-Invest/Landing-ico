@@ -116,7 +116,7 @@ news.forEach(function(e, i){
   $(`
     <div class="item news">
       <div class="video" style="background-image: url(${e.screen})">
-        <a href="#" class="play" video-id="${e.videoSrc}">
+        <a href="#" class="play" video-id="${i}">
           <img src="files/images/sb_watch_video.png">
         </a>
       </div>

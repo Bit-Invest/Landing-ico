@@ -1462,16 +1462,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
     margin-left: 48vw;
 }
 
-.block_14 .icon-block {
-    padding-top: 170px;
-    margin-left: 18px;
-}
-
-.block_14 .icon-block img {
-  width: 40px;
-  margin: 8px;
-}
-
 .block_15
 {
     background: #8c2d5e;
@@ -1494,6 +1484,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
     font-weight: 500;
     margin-bottom: 2vw;
 }
+
+.block_15 .icon-block {
+  margin: 10px 0 20px;
+}
+
+.block_15 .icon-block img {
+  width: 36px;
+  margin: 5px;
+}
+
 
 .block_15 .headOffice {
   margin-bottom: 4vw;
