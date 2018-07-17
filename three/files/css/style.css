@@ -501,7 +501,7 @@ vertical-align: middle;
     text-decoration: none;
     color: #fff;
     transition: background 0.3s;
-    /* border: 2px solid #fff; */
+     border: 2px solid #fff; 
     vertical-align: middle;
     background: none;
     background: #fff;
