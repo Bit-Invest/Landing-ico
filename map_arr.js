@@ -116,9 +116,14 @@ news.forEach(function(e, i){
   $(`
     <div class="item news">
       <div class="video" style="background-image: url(${e.screen})">
-        <a href="#" class="play" video-id="${i}">
-          <img src="files/images/sb_watch_video.png">
-        </a>
+        ${
+          e.video ?
+            `<a href="#" class="play" arr-id="news" video-id="${i}">
+              <img src="files/images/sb_watch_video.png">
+            </a>`
+          : 
+            `<a href="${e.videoSrc}" class="srcNewsTab" target="__blank"></a>`
+        }
       </div>
       <div class="names">
         <div class="clear"></div>
@@ -136,7 +141,7 @@ feedbackOnOurProject.forEach(function(e, i){
   $(`
     <div class="item">
       <div class="video" style="background-image: url(${e.img})">
-        <a href="#" class="play" video-id="${i}">
+        <a href="#" class="play" arr-id="feedbackOnOurProject" video-id="${i}">
           <img src="files/images/sb_watch_video.png">
         </a>
       </div>

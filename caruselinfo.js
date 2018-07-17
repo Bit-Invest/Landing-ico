@@ -282,6 +282,7 @@
   var news = [
     {
       videoSrc: 'https://www.youtube.com/watch?v=c4ruJPvo5sI',
+      video: 'https://www.youtube.com/embed/c4ruJPvo5sI',
       screen: './media/news/IB.png',
       name: 'CINDX meets <br> Ian Balina <br> in Moscow',
       text: 'CINDX pitched to the one of the TOP10 crypto gurus in the world in the Cryptobazar event.',
@@ -289,6 +290,7 @@
     },
     {
       videoSrc: 'https://www.youtube.com/watch?v=P6qAzbwOMXs',
+      video: 'https://www.youtube.com/embed/P6qAzbwOMXs',
       screen: './media/news/IS.png', 
       name: 'CINDX took part in Moscow ICO Summit 2018',
       text: 'team introduced the project to the Russian crypto community during ICO Summit event.',

@@ -214,7 +214,7 @@
               <div class="size">
 
                   <div class="cont_row">
-                      <a target="_blank" style="color: white" href="https://drive.google.com/open?id=1nulb7NnAQJJHGF09v9VdZC5tUQJPOV4u">
+                      <a target="_blank" style="color: white; display: inline-block;" href="https://drive.google.com/open?id=1nulb7NnAQJJHGF09v9VdZC5tUQJPOV4u">
                         <div class="row">
                           <img src="files/images/block_4_img_1.png">
                           <p>
@@ -224,7 +224,7 @@
                         </div>
                       </a>
 
-                      <a target="_blank" style="color: white" href="https://drive.google.com/open?id=1VvZSFwaR_LVJZBRp_v8GZ6w5erbDr1VF">
+                      <a target="_blank" style="color: white; display: inline-block;" href="https://drive.google.com/open?id=1VvZSFwaR_LVJZBRp_v8GZ6w5erbDr1VF">
                         <div class="row">
                           <img src="files/images/block_4_img_2.png">
                           <p>
@@ -372,7 +372,7 @@
                   </div>
 
                   <div class="txt_pack">
-                      Minimal Goal: <span>$ 6.000.000</span>
+                      Minimal Investment: <span>$ 50 equivalent</span>
                   </div>
 
                   <h2>
@@ -872,22 +872,22 @@
 		<div class="block_15">
 			<div class="size">
 			  <div class="icon-block">
-              <a href="https://t.me/cindx_official" target='_blank'>
+              <a style="display: inline-block;" href="https://t.me/cindx_official" target='_blank'>
                 <img href="https://t.me/cindx_official" target='_blank' class="icon" src="./media/telegram_icon.png" alt="">
               </a>
-              <a href="https://twitter.com/CindxPlatform" target='_blank'>
+              <a style="display: inline-block;" href="https://twitter.com/CindxPlatform" target='_blank'>
                 <img class="icon" src="./media/twitter_icon.png" alt="">
               </a>
-              <a href="https://www.facebook.com/cindx.io/" target='_blank'>
+              <a style="display: inline-block;" href="https://www.facebook.com/cindx.io/" target='_blank'>
                 <img class="icon" src="./media/facebook_icon.png" alt="">
               </a>
-              <a href="https://medium.com/cindx" target='_blank'>
+              <a style="display: inline-block;" href="https://medium.com/cindx" target='_blank'>
                 <img class="icon" src="./media/medium_icon.png" alt="">
               </a> 
-              <a href="https://bitcointalk.org/index.php?topic=4421275.0" target='_blank'>
+              <a style="display: inline-block;" href="https://bitcointalk.org/index.php?topic=4421275.0" target='_blank'>
                 <img class="icon" src="./media/bitcointalk_icon.png" alt="">
               </a>
-              <a href="https://www.youtube.com/cindx" target='_blank' >
+              <a style="display: inline-block;" href="https://www.youtube.com/cindx" target='_blank' >
                 <img class="icon" src="./media/youtube_icon.png" alt="">
               </a>
             </div>
@@ -977,8 +977,9 @@
 
     $('.video .play').on('click', function(e){
       e.preventDefault();
+      var arr_id = $(this).attr('arr-id');
       var video_id = $(this).attr('video-id');
-      var video_src = feedbackOnOurProject[video_id].video;
+      var video_src = window[arr_id][video_id].video;
 
       $(`<iframe src="${video_src}" allow="autoplay; encrypted-media" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>`)
         .insertBefore($(this));
