@@ -37,6 +37,12 @@ define(function(){
 					$(this).closest('popup')
 						.hide()
 				})
+        
+        $('popup[video] .rgba')
+				.on('click', function() {
+					$(this).closest('popup')
+						.hide()
+				})
   }
   
   return {

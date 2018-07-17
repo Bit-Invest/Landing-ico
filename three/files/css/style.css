@@ -281,7 +281,6 @@ h2
 {
     display: block;
     font-size: 15px;
-    font-weight: bold;
     margin-bottom: 20px;
     position: relative;
     padding-left: 50px;
@@ -502,7 +501,7 @@ vertical-align: middle;
     text-decoration: none;
     color: #fff;
     transition: background 0.3s;
-    /* border: 2px solid #fff; */
+     border: 2px solid #fff; 
     vertical-align: middle;
     background: none;
     background: #fff;
