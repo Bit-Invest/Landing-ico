@@ -1331,6 +1331,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
     width: 100%;
 }
 
+.block_13 .video {
+  width: 89.97vw;
+  height: 57.68vw;
+  background: #b0a5ff;
+  border-radius: 10vw;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.block_13 .play {
+  width: 13.68vw;
+  height: 13.68vw;
+  display: block;
+  margin-left: 39vw;
+  margin-top: 22vw;
+}
+
+.block_13 .play img {
+  display: block;
+  width: 100%;
+}
+}
+
 .block_14
 {
     background: url(../images/block_14_bg.png) no-repeat center top;
@@ -1621,7 +1646,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
 .block_13 .owl-carousel .owl-nav .owl-next,
 .block_13 .owl-carousel .owl-nav .owl-prev
 {
-    top: 17vw;
+    top: 77vw;
 }
 
 .block_14 .owl-carousel .owl-nav .owl-next,

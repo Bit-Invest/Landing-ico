@@ -72,6 +72,15 @@
       fackt3: 'Information Security focus',
       src: 'https://www.linkedin.com/in/ibrahimhaniev/'
     },
+    {
+      img: './media/Airat.jpg',
+      name: 'Airat Shaikhulov',
+      position: 'Head of Quantitative Research',
+      fackt1: 'Dr of science at MSU',
+      fackt2: 'Aton-line navigator developer',
+      fackt3: 'head of algorithmic trading',
+      src: 'https://www.linkedin.com/'
+    },
    ];
 
 
@@ -166,7 +175,7 @@
     },
     {
       img: './media/Bogdan_Fiedur.e36a757d.jpg',
-      video: 'https://youtube.com/watch?v=oC-oTaBId7g',
+      video: 'https://www.youtube.com/embed/oC-oTaBId7g',
       name: 'Bogdan Fiedur',
       src: 'https://www.linkedin.com/in/bogdanfiedur/',
       position: 'Adviser',
