@@ -1354,7 +1354,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
   display: block;
   width: 100%;
 }
-}
 
 .block_14
 {
@@ -1645,6 +1644,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c2d5e', end
 
 .block_13 .owl-carousel .owl-nav .owl-next,
 .block_13 .owl-carousel .owl-nav .owl-prev
+{
+    top: 17vw;
+}
+
+.block_13 .owl_5 .owl-nav .owl-next,
+.block_13 .owl_5 .owl-nav .owl-prev
 {
     top: 77vw;
 }
