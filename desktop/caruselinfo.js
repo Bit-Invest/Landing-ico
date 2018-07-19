@@ -79,7 +79,7 @@ define(function(){
       position: 'Head of Quantitative Research',
       fackt1: 'Dr of science at MSU',
       fackt2: 'Aton-line navigator developer',
-      fackt3: 'head of algorithmic trading',
+      fackt3: 'Head of algorithmic trading',
       src: 'https://www.linkedin.com/'
     },
    ];

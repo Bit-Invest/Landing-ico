@@ -1231,6 +1231,11 @@ z-index: 2;
     padding: 35px;
 }
 
+.block_7 .owl_4 .item .txt
+{
+    min-height: 360px;
+}
+
 .block_7 .owl-carousel .item .txt img
 {
     display: block;
