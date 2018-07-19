@@ -8,18 +8,18 @@ define(function(){
 			})
 		});
 
-		function linkScroll(elem) {
-			var sc_top = $(`[elem=${elem}]`).offset().top;
-			scrollBody(sc_top - 85, 1000);
-		};
+  		function linkScroll(elem) {
+  			var sc_top = $(`[elem=${elem}]`).offset().top;
+  			scrollBody(sc_top - 85, 1000);
+  		};
 
 		window.popupVideo = function(src) {
 			$('popup[video] .th_iframe').html(`<iframe src="${src}" frameborder="0" allow="autoplay; encrypted-media"></iframe>`);
 			//$('popup[video] iframe').attr('src', src);
 			$('popup[video]').show();
 		}
-
-		$('[anchor]').on('click', function(e) {
+        
+        $('[anchor]').on('click', function(e) {
 			e.preventDefault();
 			var anchor = $(this).attr('anchor');
 			linkScroll(anchor)

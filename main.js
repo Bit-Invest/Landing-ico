@@ -636,8 +636,9 @@ var resizeFunc = (function() {
       //document.getElementById('px').innerText = window.scrollY + 'px';
       ram_scroll = th_scroll;
     };
+    
     window.scrollBody = function(top, speed) {
-      $("html").animate({
+      $("html, body").animate({
         scrollTop: top
       }, speed, function() {
         setTimeout(function() {
