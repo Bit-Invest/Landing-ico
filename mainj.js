@@ -1,5 +1,8 @@
 define(function(){
   function add(arr){
+
+  arr.links_landing['joinpresale'] += `?clickid=${linkSearch['clickid']}`;
+
    $('[link]').each(function(){
 			var link = $(this).attr('link');
 			$(this).attr({
