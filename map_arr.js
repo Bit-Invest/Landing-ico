@@ -7,7 +7,7 @@ feedbackOnOurProject.forEach(function(e, i){
 	    <div class="right">
         <div class="name">
           <h3>${e.name}</h3>
-          <h4>${e.position}</h4><a href="#" class="sb">Watch Video</a>
+          <h4>${e.position}</h4><a class="sb">Watch Video</a>
           <hr>
         </div>
         <p>
@@ -113,7 +113,7 @@ news.forEach(function(e, i){
       <div class="video" style="background-image: url(${e.screen})">
         ${
           e.video ?
-            `<a href="#" class="play" arr-id="news" video-id="${i}">
+            `<a class="play" arr-id="news" video-id="${i}">
               <img src="files/images/sb_watch_video.png">
             </a>`
           : 
@@ -136,7 +136,7 @@ feedbackOnOurProject.forEach(function(e, i){
   $(`
     <div class="item">
       <div class="video" style="background-image: url(${e.img})">
-        <a href="#" class="play" arr-id="feedbackOnOurProject" video-id="${i}">
+        <a class="play" arr-id="feedbackOnOurProject" video-id="${i}">
           <img src="files/images/sb_watch_video.png">
         </a>
       </div>

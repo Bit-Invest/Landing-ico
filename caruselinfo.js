@@ -394,8 +394,21 @@
       video: 'https://www.youtube.com/embed/IATb_l1vLE4',
       text: 'Alina Vardanian, CINDX Content Manager talks about the team spirit and what she loves about her job'
     },
-    
-   ];
+    {
+      img: './media/Bogdan_Fiedur.e36a757d.jpg',
+      name: 'Bogdan Fiedur',
+      position: 'CINDX Advisor',
+      video: 'https://www.youtube.com/embed/oC-oTaBId7g',
+      text: 'Bogdan Fiedur, CINDX Advisor, explains how the CINDX project differs from other ICO projects'
+    },
+    {
+      img: './media/Jason_King.png',
+      name: 'Jason King',
+      position: 'Chief Commercial Officer',
+      video: 'https://www.youtube.com/embed/RfW8fkvpbTo',
+      text: 'Jason King, Chief Commercial Officer, explains what attracts him to CINDX and talks about crucial advantages of the project'
+    },
+  ];
 
 
   /**/
