@@ -19,7 +19,7 @@ define(function(){
 			$('popup[video]').show();
 		}
         
-        $('[anchor]').on('click', function(e) {
+    $('[anchor]').on('click', function(e) {
 			e.preventDefault();
 			var anchor = $(this).attr('anchor');
 			linkScroll(anchor)
@@ -36,6 +36,10 @@ define(function(){
 				.on('click', function() {
 					$(this).closest('popup')
 						.hide()
+
+					$(this).closest('popup')
+						.find('iframe')
+						.remove()
 				})
         
         $('popup[video] .rgba')
