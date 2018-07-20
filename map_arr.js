@@ -58,7 +58,7 @@ advisers.forEach(function(e, i){
           <div class="names">
             <div class="video" style="background-image: url(${e.img})">
               <a href="#" class="play" arr-id="advisers" video-id="${i}">
-                <img src="files/images/sb_watch_video.png">
+                (i == '') ? null : (<img src="files/images/sb_watch_video.png">)
               </a>
             </div>         
               <div class="clear"></div>
