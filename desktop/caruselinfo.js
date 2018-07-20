@@ -272,9 +272,9 @@ define(function(){
     },
     {
       img: './media/Innova8.png',
-      name: 'Innov8 Global Advisery',
+      name: 'Innov8 Global Advisory',
       position: 'Global Ventures',
-      href: 'http://www.innov8globaladvisery.com/'
+      href: 'http://www.innov8globaladvisory.com/'
     },
    ];
 
