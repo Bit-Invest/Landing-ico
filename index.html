@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="shortcut icon" href="./favicon.png">
   <title>Cindx</title>
   
 	<link rel="stylesheet" href="files/css/owl.carousel.min.css">
@@ -697,18 +697,7 @@
 			</div>
 			<div class="size">
               <h2>Our Partners</h2>
-              <div class="owl_4 owl-carousel owl-theme" map_arr="1">
-                <div class="item ourPartners">
-                  <div class="names">
-                    <img src="desktop/files/images/ava_1.png">
-                    <h3 class='na'>Progressor</h3>
-                    <p>Legal support</p>
-                    <hr>
-                    <p style="cursor:pointer;text-decoration:underline;" href="https://progressor.ee/">progressor.ee</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <div class="owl_4 owl-carousel owl-theme" map_arr="1"></div>
 			
 		</div>
 		
@@ -846,7 +835,7 @@
     }
 
     links_landing['joinpresale'] += `?clickid=${linkSearch['clickid']}`;
-    
+
     $('[link]').each(function(){
       var link = $(this).attr('link');
       $(this).attr({
@@ -855,7 +844,7 @@
       })
     })
 
-    $('.video .play').on('click', function(e){
+    $(document).on('click', '.video .play', function(e){
       e.preventDefault();
       var arr_id = $(this).attr('arr-id');
       var video_id = $(this).attr('video-id');
