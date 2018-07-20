@@ -1,5 +1,8 @@
 define(function(){
   function add(arr){
+
+  arr.links_landing['joinpresale'] += `?clickid=${linkSearch['clickid']}`;
+
    $('[link]').each(function(){
 			var link = $(this).attr('link');
 			$(this).attr({
@@ -19,7 +22,7 @@ define(function(){
 			$('popup[video]').show();
 		}
         
-        $('[anchor]').on('click', function(e) {
+    $('[anchor]').on('click', function(e) {
 			e.preventDefault();
 			var anchor = $(this).attr('anchor');
 			linkScroll(anchor)
@@ -36,6 +39,10 @@ define(function(){
 				.on('click', function() {
 					$(this).closest('popup')
 						.hide()
+
+					$(this).closest('popup')
+						.find('iframe')
+						.remove()
 				})
         
         $('popup[video] .rgba')
