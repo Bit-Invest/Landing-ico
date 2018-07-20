@@ -54,27 +54,27 @@ ourPartners.forEach(function(e, i){
 var $map_arr2 = $('[map_arr="2"]').html(null);
 advisers.forEach(function(e, i){
 	$(`
-		<div class="item">
-          <div class="names">
-            <div class="video" style="background-image: url(${e.img})">
-              <a href="#" class="play" arr-id="advisers" video-id="${i}">
-                (i == '') ? null : (<img src="files/images/sb_watch_video.png">)
-              </a>
-            </div>         
-              <div class="clear"></div>
-              <div class="na">${e.name}</div>
-              <hr>
-              <h4>${e.position}</h4>
-              <div class="txt">
-                  <span>${e.fackt1}<br><br>
-                  <span>${e.fackt2}<br><br>
-                  <span>${e.fackt3}<br>
-              </div>
-              <a href="${e.src}" target='blank'>
-                <div src="../images/in.png" class="in"></div>
-              </a>
+      <div class="item">
+        <div class="names">
+          <div class="video" style="background-image: url(${e.img})">
+            <a href="#" class="play" arr-id="advisers" video-id="${i}">
+              <img src="files/images/sb_watch_video.png">
+            </a>
+          </div>         
+          <div class="clear"></div>
+          <div class="na">${e.name}</div>
+          <hr>
+          <h4>${e.position}</h4>
+          <div class="txt">
+              <span>${e.fackt1}<br><br>
+              <span>${e.fackt2}<br><br>
+              <span>${e.fackt3}<br>
           </div>
+          <a href="${e.src}" target='blank'>
+            <div src="../images/in.png" class="in"></div>
+          </a>
         </div>
+      </div>
 	`)
 		.appendTo($map_arr2);
 })
