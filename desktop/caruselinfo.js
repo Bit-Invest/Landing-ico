@@ -73,6 +73,15 @@ define(function(){
       fackt3: 'Information Security focus',
       src: 'https://www.linkedin.com/in/ibrahimhaniev/'
     },
+    {
+      img: './media/Airat.jpg',
+      name: 'Airat Shaikhulov',
+      position: 'Head of Quantitative Research',
+      fackt1: 'Dr of science at MSU',
+      fackt2: 'Aton-line navigator developer',
+      fackt3: 'Head of algorithmic trading',
+      src: 'https://www.linkedin.com/'
+    },
    ];
 
 
@@ -263,9 +272,9 @@ define(function(){
     },
     {
       img: './media/Innova8.png',
-      name: 'Innov8 Global Advisery',
+      name: 'Innov8 Global Advisory',
       position: 'Global Ventures',
-      href: 'http://www.innov8globaladvisery.com/'
+      href: 'http://www.innov8globaladvisory.com/'
     },
    ];
 
@@ -375,6 +384,20 @@ define(function(){
       position: 'Content Manager',
       video: 'https://www.youtube.com/embed/IATb_l1vLE4',
       text: 'Alina Vardanian, CINDX Content Manager talks about the team spirit and what she loves about her job'
+    },
+    {
+      img: './media/Bogdan_Fiedur.e36a757d.jpg',
+      name: 'Bogdan Fiedur',
+      position: 'CINDX Advisor',
+      video: 'https://www.youtube.com/embed/oC-oTaBId7g',
+      text: 'Bogdan Fiedur, CINDX Advisor, explains how the CINDX project differs from other ICO projects'
+    },
+    {
+      img: './media/Jason_King.png',
+      name: 'Jason King',
+      position: 'Chief Commercial Officer',
+      video: 'https://www.youtube.com/embed/RfW8fkvpbTo',
+      text: 'Jason King, Chief Commercial Officer, explains what attracts him to CINDX and talks about crucial advantages of the project'
     },
     
    ];
