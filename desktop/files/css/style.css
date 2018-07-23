@@ -1117,6 +1117,7 @@ z-index: 2;
 
 .block_6 .owl-carousel .item .right hr
 {
+    text-align: left;
     width: 50px;
     height: 6px;
     background: #6C5ED6;
@@ -1355,6 +1356,7 @@ z-index: 2;
 }
 
 .block_8 .owl-carousel .item hr {
+    text-align: left;
     width: 50px;
     height: 6px;
     background: #6C5ED6;
