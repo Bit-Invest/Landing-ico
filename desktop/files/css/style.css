@@ -1646,14 +1646,13 @@ vertical-align: middle;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    overflow: hidden;
     border: 5px solid white;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    overflow: hidden;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 [map_arr="3"]  .mid_img_advisers {
@@ -1801,15 +1800,17 @@ width: 720px;
 }
 
 .play-button-advisers{
-    top: 0px;
-    right: 0px;
+bottom: -12px;
+    right: -15px;
     position: absolute;
     background-image: url(../images/play_button.png);
     background-size: cover;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     z-index: 9;
     cursor: pointer;
+    border: 6px solid #7B5590;
+    border-radius: 50%;
 }
 
 @media (max-width: 1299px)
