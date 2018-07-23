@@ -29,7 +29,7 @@
 
 /**/
 .menu_block.fixed {
-  background: #46316a6b;
+  background: rgba(50,26,79,.2);
   padding: 20px 0;
   z-index: 999;
 }

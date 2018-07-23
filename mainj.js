@@ -35,21 +35,15 @@ define(function(){
 				popupVideo(srcvideo);
 			})
 
-		$('popup[video] .close')
-				.on('click', function() {
-					$(this).closest('popup')
-						.hide()
+		$('popup[video] .close, popup[video] .rgba')
+			.on('click', function() {
+				$(this).closest('popup')
+					.hide()
 
-					$(this).closest('popup')
-						.find('iframe')
-						.remove()
-				})
-        
-        $('popup[video] .rgba')
-				.on('click', function() {
-					$(this).closest('popup')
-						.hide()
-				})
+				$(this).closest('popup')
+					.find('iframe')
+					.remove()
+			})
   }
   
   return {
