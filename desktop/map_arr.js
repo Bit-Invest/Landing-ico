@@ -41,7 +41,7 @@ define(function() {
                 <div class="mid_img_advisers" style="background-image: url(${e.img})">
                   ${e.video?`<div class="play-button-advisers" srcvideo="${e.video}" showvideopopup></div>`:''}
                 </div>
-                <a href="${e.src}" target='blank'>
+                <a href="${e.src}" style='display: inline-block' target='blank'>
                   <div src="../images/in.png" class="in"></div>
                 </a>
                 <h3>${e.name}</h3>
