@@ -36,10 +36,11 @@ define(function() {
     arr.advisers.forEach(function(e, i) {
       $(`
       <div class="parentAdvisersItem"> 
-        ${e.video?`<div class="play-button-advisers" srcvideo="${e.video}" showvideopopup></div>`:''}
         <div class="item">
               <div class="left">
-                <div class="mid_img_advisers" style="background-image: url(${e.img})"></div>
+                <div class="mid_img_advisers" style="background-image: url(${e.img})">
+                  ${e.video?`<div class="play-button-advisers" srcvideo="${e.video}" showvideopopup></div>`:''}
+                </div>
                 <a href="${e.src}" target='blank'>
                   <div src="../images/in.png" class="in"></div>
                 </a>

@@ -525,7 +525,7 @@ var resizeFunc = (function() {
 
   function html_rr() {
     var anm_blocks = document.getElementById('animateHtml');
-    anm_blocks.innerHTML = null;
+    anm_blocks.innerHTML = '';
     var guy_anm_parent = document.createElement('div');
     guy_anm_parent.className = 'guy_anm_parent';
     guy_anm_parent.style['width'] = ((pr_px(120, 0) * .17)) + 'px';
