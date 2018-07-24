@@ -909,6 +909,10 @@
 
 	<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 	<script>
+		require.config({ 
+  		waitSeconds: 30,
+  	});
+  	
 		var staticBlocks = document.getElementById('staticBlocks').innerHTML;
 		document.getElementById('hereStaticBlocks').innerHTML = staticBlocks;
 
