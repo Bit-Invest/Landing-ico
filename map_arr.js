@@ -57,9 +57,13 @@ advisers.forEach(function(e, i){
       <div class="item">
         <div class="names">
           <div class="video" style="background-image: url(${e.img})">
-            <a href="#" class="play" arr-id="advisers" video-id="${i}">
-              <img src="files/images/sb_watch_video.png">
-            </a>
+            ${
+              e.video ? 
+                `<a href="#" class="play" arr-id="advisers" video-id="${i}">
+                  <img src="files/images/sb_watch_video.png">
+                </a>`
+              : `<a href="${e.img}" class="srcNewsTab" target="__blank"></a>`
+            }
           </div>         
           <div class="clear"></div>
           <div class="na">${e.name}</div>
