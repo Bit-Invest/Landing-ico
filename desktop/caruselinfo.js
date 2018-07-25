@@ -82,6 +82,15 @@ define(function(){
       fackt3: 'Head of algorithmic trading',
       src: 'https://www.linkedin.com/'
     },
+    {
+      img: './media/Sofja_Pevzner.jpg',
+      name: 'Sofja Pevzner',
+      position: 'Personal Data Officer',
+      fackt1: '5 years in entrepreneurship',
+      fackt2: 'Permisson of estonian AML office for working',
+      fackt3: '8 years of legal work expirience',
+      src: 'https://www.linkedin.com/in/sofja-pevzner-70831963/'
+    }
    ];
 
 
