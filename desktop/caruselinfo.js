@@ -419,7 +419,7 @@ define(function(){
     'op': 'https://drive.google.com/open?id=12QCJPMqZSwQeUzCZ0tx0MjooZqnWtF2B',
     'fm': 'https://drive.google.com/open?id=12WBENK_OsaTOU1-StqvIkQkhYZiMkk3b',
     'ld': 'https://drive.google.com/open?id=16bY_MyZW9Q4DdlL_KpnoaaCxP5tLJ55i',
-    'mvp': 'http://mvp.cindx.io/',
+    'mvp': 'http://mvp.cindx.io/registration/sign-in',
     'joinpresale': 'https://my.cindx.io/registration',
   };
 
