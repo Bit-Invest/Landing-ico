@@ -78,7 +78,7 @@ define(function() {
         <p><span></span> ${e.fackt1}</p>
         <p><span></span> ${e.fackt2}</p>
         <p><span></span> ${e.fackt3}</p>
-        <a href="${e.src}" target='blank'>
+        <a href="${e.src}" target='blank' style="display: inline-block;">
           <div src="../images/in.png" class="in"></div>
         </a>
       </div>
