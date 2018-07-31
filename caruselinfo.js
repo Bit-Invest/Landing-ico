@@ -90,6 +90,15 @@
       fackt3: '8 years of legal work expirience',
       src: 'https://www.linkedin.com/in/sofja-pevzner-70831963/'
     },
+    {
+      img: './media/Dave_Gutierrez.jpg',
+      name: 'Dave Gutierrez',
+      position: 'Investment Relations Officer',
+      fackt1: '5 years in aircraft leasing',
+      fackt2: '3 years in Investment Promotion',
+      fackt3: '2 years in Russian investment abroad',
+      src: 'https://www.linkedin.com/in/davidgutierrezcindx/'
+    }
    ];
 
 
