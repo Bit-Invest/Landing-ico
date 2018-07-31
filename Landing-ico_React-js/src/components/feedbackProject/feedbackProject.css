@@ -1,0 +1,23 @@
+.carusel-block {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.slick-list {
+  overflow-x: hidden;
+  height: 600px;
+  display: flex;
+}
+
+.slick-track {
+  overflow-y: hidden;
+  margin: 0px auto;
+}
+
+.item {
+  float: left;
+}
+
+.right {
+  float: right;
+}
