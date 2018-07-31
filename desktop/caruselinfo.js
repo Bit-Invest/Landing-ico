@@ -96,8 +96,8 @@ define(function(){
       name: 'Dave Gutierrez',
       position: 'Investment Relations Officer',
       fackt1: '5 years in aircraft leasing',
-      fackt2: '3 years in Investment Promotion Agency',
-      fackt3: '2 years in promotion of Russian investment abroad',
+      fackt2: '3 years in investment promotion',
+      fackt3: '2 years in russian deals abroad',
       src: 'https://www.linkedin.com/in/davidgutierrezcindx/'
     }
    ];
