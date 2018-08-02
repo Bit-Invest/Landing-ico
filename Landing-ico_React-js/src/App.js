@@ -7,10 +7,12 @@ import { LegalSchedule } from './components/legalSchedule/LegalSchedule';
 import { FeedbackProject } from './components/feedbackProject/FeedbackProject';
 import { Media } from './components/media/Media';
 import { JoinTokenPreSale } from './components/joinTokenPreSale/JoinTokenPreSale';
+import { PopUpManager } from './components/popUp/PopUpManager';
 import './App.css';
 
 export const App = props => (
   <div className="App">
+    <PopUpManager />
     <ProblemSolving />
     <HowCindxWorks />
     <MarketAnalytics />

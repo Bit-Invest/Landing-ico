@@ -3,6 +3,9 @@ import { ProblemSolvingChild } from './problemSolvingChild/ProblemSolvingChild';
 import block_1_row_1 from '../../images/block_1_row_1.png';
 import block_1_row_2 from '../../images/block_1_row_2.png';
 import block_1_row_3 from '../../images/block_1_row_3.png';
+import { showPopUp } from './../../store/store';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 const ProblemSolvingInfo = {
   caption: ['Time', 'Trust', 'Uncertainty'],
@@ -26,13 +29,18 @@ const ProblemSolvingInfo = {
   ]
 };
 
-export class ProblemSolving extends React.Component {
-  render () {
+class ProblemSolving extends React.Component {
+
+  onClickRoot() {
+    this.props.showPopUp();
+  }
+
+  render() {
     return (
       <div className="block_1">
         <div className="size">
           <h1>What kinds of problems does CINDX solve?</h1>
-          <a className="sb" href="#">TEST MVP</a>
+          <a onClick={this.onClickRoot.bind(this)} className="sb" href="#">TEST MVP</a>
           <div className="clear" />
           <div className="cont_row">
             <ProblemSolvingChild
@@ -63,3 +71,11 @@ export class ProblemSolving extends React.Component {
     )
   }
 }
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({showPopUp}, dispatch);
+
+const connectedContainer =
+  connect(null, mapDispatchToProps)(ProblemSolving);
+
+export {connectedContainer as ProblemSolving};

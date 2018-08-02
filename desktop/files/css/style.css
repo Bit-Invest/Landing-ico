@@ -676,7 +676,7 @@ opacity: 1 !important;
     position: absolute;
     left: 0;
     top:0;
-    width: 4%;
+    width: 9%;
 }
 
 .block_4 .cont_2 .process_bar .left
@@ -1755,7 +1755,6 @@ width: 720px;
     height: 180px;
     background-size: cover;
     border-radius: 30px 30px 0 0;
-    background-position: 0 -10px;
 }
 
 [link] {

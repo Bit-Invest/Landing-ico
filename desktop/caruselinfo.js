@@ -62,7 +62,7 @@ define(function(){
       fackt1: '5 years of legal experience',
       fackt2: 'Commercial & private law',
       fackt3: 'Experience in KYC procedure',
-      src: 'https://www.linkedin.com/in/stefan-normatov-60957071/'
+      src: 'https://www.linkedin.com/in/stefan-frumson-60957071/'
     },
     {
       img: './media/Ibraghim_Haniev.77b0aa4e.jpg',
@@ -80,7 +80,7 @@ define(function(){
       fackt1: 'Dr of science at MSU',
       fackt2: 'Aton-line navigator developer',
       fackt3: 'Head of algorithmic trading',
-      src: 'https://www.linkedin.com/'
+      src: 'https://www.linkedin.com/in/airatshayhulov/'
     },
     {
       img: './media/Sofja_Pevzner.jpg',
@@ -300,25 +300,46 @@ define(function(){
   // News 
 
   var news = [
+//    {
+//      videoSrc: 'https://www.youtube.com/watch?v=c4ruJPvo5sI',
+//      screen: './media/news/IB.png',
+//      name: 'CINDX meets <br> Ian Balina <br> in Moscow',
+//      text: 'CINDX pitched to the one of the TOP10 crypto gurus in the world in the Cryptobazar event.',
+//      source: 'www.youtube.com'
+//    },
+//    {
+//      videoSrc: 'https://www.youtube.com/watch?v=P6qAzbwOMXs',
+//      screen: './media/news/IS.png', 
+//      name: 'CINDX took part in Moscow ICO Summit 2018',
+//      text: 'team introduced the project to the Russian crypto community during ICO Summit event.',
+//      source: 'www.youtube.com'
+//    },
+//    {
+//      videoSrc: 'https://medium.com/cindx/meet-worlds-first-financial-crypto-social-network-connect-with-people-as-you-grow-your-wealth-76a3cea9a06c',
+//      screen: './media/news/Medium.png',
+//      name: 'Meet World’s First Financial Crypto Social Network',
+//      text: 'Every day our team takes one more step on the way to creation and start of the CINDX platform.',
+//      source: 'www.medium.com'
+//    },
     {
-      videoSrc: 'https://www.youtube.com/watch?v=c4ruJPvo5sI',
-      screen: './media/news/IB.png',
-      name: 'CINDX meets <br> Ian Balina <br> in Moscow',
-      text: 'CINDX pitched to the one of the TOP10 crypto gurus in the world in the Cryptobazar event.',
-      source: 'www.youtube.com'
+      videoSrc: 'https://medium.com/cindx/the-strategic-meeting-of-the-international-cindx-team-9ce14f49912e',
+      screen: './media/1_k_QKAG1D2E1M56Bf0pXHyA.png',
+      name: 'The strategic meeting of the international CINDX team',
+      text: 'Every day our team takes one more step on the way to creation and start of the CINDX platform. Our work is based on many factors among which are both development of the global promotion strategy, and the daily tasks performance.',
+      source: 'www.medium.com'
     },
     {
-      videoSrc: 'https://www.youtube.com/watch?v=P6qAzbwOMXs',
-      screen: './media/news/IS.png', 
-      name: 'CINDX took part in Moscow ICO Summit 2018',
-      text: 'team introduced the project to the Russian crypto community during ICO Summit event.',
-      source: 'www.youtube.com'
+      videoSrc: ' https://medium.com/cindx/cindx-activity-the-meeting-with-the-international-cindx-partners-1aec5a24c4b1',
+      screen: './media/1*8WvFICehNIYmjM1LeGjtKQ.jpg',
+      name: 'CINDX meets Vangoo Capital Partners Fund ',
+      text: '"Today we have welcomed Kevin Shang from Vangoo Capital Partners and his colleagues in our office. <br> We have discussed business partnership opportunities in order to attract investors from the Asian region."',
+      source: 'www.medium.com'
     },
     {
-      videoSrc: 'https://medium.com/cindx/meet-worlds-first-financial-crypto-social-network-connect-with-people-as-you-grow-your-wealth-76a3cea9a06c',
-      screen: './media/news/Medium.png',
-      name: 'Meet World’s First Financial Crypto Social Network',
-      text: 'Every day our team takes one more step on the way to creation and start of the CINDX platform.',
+      videoSrc: 'https://medium.com/cindx/cindx-negotiates-with-9coin-and-vangoo-capital-partners-646087fff49f',
+      screen: './media/1_Ew36K0eEfDFIHn5rvO9awQ.png',
+      name: 'CINDX meets 9coin Digital Asses Exchange',
+      text: '"The CINDX team continues active work on building relationships with various international companies. ,<br>One of the most important directions of business development is to secure partnerships with different investment funds and exchanges in terms of future integration with CINDX platform and listing of CINX security token."',
       source: 'www.medium.com'
     },
   ];
