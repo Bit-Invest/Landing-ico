@@ -62,7 +62,7 @@ define(function(){
       fackt1: '5 years of legal experience',
       fackt2: 'Commercial & private law',
       fackt3: 'Experience in KYC procedure',
-      src: 'https://www.linkedin.com/in/stefan-normatov-60957071/'
+      src: 'https://www.linkedin.com/in/stefan-frumson-60957071/'
     },
     {
       img: './media/Ibraghim_Haniev.77b0aa4e.jpg',
@@ -80,7 +80,7 @@ define(function(){
       fackt1: 'Dr of science at MSU',
       fackt2: 'Aton-line navigator developer',
       fackt3: 'Head of algorithmic trading',
-      src: 'https://www.linkedin.com/'
+      src: 'https://www.linkedin.com/in/airatshayhulov/'
     },
     {
       img: './media/Sofja_Pevzner.jpg',
@@ -90,6 +90,15 @@ define(function(){
       fackt2: 'Permisson of estonian AML office for working',
       fackt3: '8 years of legal work expirience',
       src: 'https://www.linkedin.com/in/sofja-pevzner-70831963/'
+    },
+    {
+      img: './media/Dave_Gutierrez.jpg',
+      name: 'Dave Gutierrez',
+      position: 'Investment Relations Officer',
+      fackt1: '5 years in aircraft leasing',
+      fackt2: '3 years in investment promotion',
+      fackt3: '2 years in russian deals abroad',
+      src: 'https://www.linkedin.com/in/davidgutierrezcindx/'
     }
    ];
 
@@ -310,6 +319,27 @@ define(function(){
       screen: './media/news/Medium.png',
       name: 'Meet World’s First Financial Crypto Social Network',
       text: 'Every day our team takes one more step on the way to creation and start of the CINDX platform.',
+      source: 'www.medium.com'
+    },
+    {
+      videoSrc: 'https://medium.com/cindx/the-strategic-meeting-of-the-international-cindx-team-9ce14f49912e',
+      screen: './media/1_k_QKAG1D2E1M56Bf0pXHyA.png',
+      name: 'The strategic meeting of the international CINDX team',
+      text: 'Every day our team takes one more step on the way to creation and start of the CINDX...',
+      source: 'www.medium.com'
+    },
+    {
+      videoSrc: ' https://medium.com/cindx/cindx-activity-the-meeting-with-the-international-cindx-partners-1aec5a24c4b1',
+      screen: './media/1*8WvFICehNIYmjM1LeGjtKQ.jpg',
+      name: 'CINDX meets Vangoo Capital Partners <br>Fund ',
+      text: 'Today we have welcomed Kevin Shang from Vangoo Capital Partners and his colleagues...',
+      source: 'www.medium.com'
+    },
+    {
+      videoSrc: 'https://medium.com/cindx/cindx-negotiates-with-9coin-and-vangoo-capital-partners-646087fff49f',
+      screen: './media/1_Ew36K0eEfDFIHn5rvO9awQ.png',
+      name: 'CINDX meets 9coin Digital Asses Exchange',
+      text: 'The CINDX team continues active work on building relationships with various international...',
       source: 'www.medium.com'
     },
   ];
