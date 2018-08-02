@@ -24,7 +24,7 @@ export function switchPopUp(state = initialState, action) {
   }
 }
 
-export const showPopUp = (state = initialState, data) => {
+export const showPopUp = () => {
   return {
     type: SHOW_POP_UP,
     payload: {
