@@ -330,7 +330,7 @@ define(function(){
     },
     {
       videoSrc: ' https://medium.com/cindx/cindx-activity-the-meeting-with-the-international-cindx-partners-1aec5a24c4b1',
-      screen: './media/1*8WvFICehNIYmjM1LeGjtKQ.jpg',
+      screen: './media/M1LeGjtKQ.jpg',
       name: 'CINDX meets Vangoo Capital Partners <br>Fund ',
       text: 'Today we have welcomed Kevin Shang from Vangoo Capital Partners and his colleagues...',
       source: 'www.medium.com'
