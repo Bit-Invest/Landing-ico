@@ -8,6 +8,8 @@ import { FeedbackProject } from './components/feedbackProject/FeedbackProject';
 import { Media } from './components/media/Media';
 import { JoinTokenPreSale } from './components/joinTokenPreSale/JoinTokenPreSale';
 import { PopUpManager } from './components/popUp/PopUpManager';
+import { MediaNews } from './components/mediaNews/MediaNews';
+import { TeamAdvisersPartners } from './components/teamAdvisersPartners/TeamAdvisersPartners';
 import './App.css';
 
 export const App = props => (
@@ -17,7 +19,10 @@ export const App = props => (
     <HowCindxWorks />
     <MarketAnalytics />
     <TokenSaleDetails />
+    <LegalSchedule />
     <FeedbackProject />
+    <MediaNews />
+    <TeamAdvisersPartners />
     <JoinTokenPreSale />
   </div>
 );

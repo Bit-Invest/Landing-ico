@@ -8,23 +8,22 @@ const initialState = {
   currentPopUp: false
 };
 
-
 export function switchPopUp(state = initialState, action) {
   if (action.type === SHOW_POP_UP) {
     return {
       ...state,
-      state: action.payload
+      currentPopUp: true
     }
   }
   else if (action.type === HIDE_POP_UP) {
     return {
       ...state,
-      state: action.payload
+      currentPopUp: false
     }
   }
 }
 
-export const showPopUp = () => {
+export const showPopUp = (state = initialState, action) => {
   return {
     type: SHOW_POP_UP,
     payload: {
@@ -33,7 +32,7 @@ export const showPopUp = () => {
   };
 }
 
-export const hidePopUp = (state = initialState, data) => {
+export const hidePopUp = (state = initialState, action) => {
   return {
     type: HIDE_POP_UP,
     payload: {

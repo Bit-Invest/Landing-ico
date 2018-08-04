@@ -11,13 +11,14 @@ export const JoinTokenPreSale = () => (
       <a href="#" className="sb_2">
         TEST MVP
       </a>
-      <form>
+      {/*<form>
         <input type="text" name placeholder="Your email" />
         <button>SUBSCRIBE</button>
         <div style={{fontSize: 10, paddingTop: 15}}>I agree with the processing of my personal data</div>
       </form>
       <p>Erika 14, Talinn, 10416, Estonia</p>
       <a className="small" href="#">Legal Disclaimer</a>
+      */}
     </div>
   </div>
 )

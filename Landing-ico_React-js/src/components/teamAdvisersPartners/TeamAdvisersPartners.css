@@ -1,0 +1,171 @@
+.block_8
+{
+    padding: 70px 0;
+    background : -moz-linear-gradient(50% 0% -90deg,rgba(46, 29, 104, 1) 0%,rgba(51, 30, 103, 1) 18.15%,rgba(66, 32, 102, 1) 40.15%,rgba(90, 36, 99, 1) 64.16%,rgba(124, 42, 96, 1) 89.42%,rgba(141, 45, 94, 1) 100%);
+  background : -webkit-linear-gradient(-90deg, rgba(46, 29, 104, 1) 0%, rgba(51, 30, 103, 1) 18.15%, rgba(66, 32, 102, 1) 40.15%, rgba(90, 36, 99, 1) 64.16%, rgba(124, 42, 96, 1) 89.42%, rgba(141, 45, 94, 1) 100%);
+  background : -webkit-gradient(linear,50% 0% ,50% 100% ,color-stop(0,rgba(46, 29, 104, 1) ),color-stop(0.1815,rgba(51, 30, 103, 1) ),color-stop(0.4015,rgba(66, 32, 102, 1) ),color-stop(0.6416,rgba(90, 36, 99, 1) ),color-stop(0.8942,rgba(124, 42, 96, 1) ),color-stop(1,rgba(141, 45, 94, 1) ));
+  background : -o-linear-gradient(-90deg, rgba(46, 29, 104, 1) 0%, rgba(51, 30, 103, 1) 18.15%, rgba(66, 32, 102, 1) 40.15%, rgba(90, 36, 99, 1) 64.16%, rgba(124, 42, 96, 1) 89.42%, rgba(141, 45, 94, 1) 100%);
+  background : -ms-linear-gradient(-90deg, rgba(46, 29, 104, 1) 0%, rgba(51, 30, 103, 1) 18.15%, rgba(66, 32, 102, 1) 40.15%, rgba(90, 36, 99, 1) 64.16%, rgba(124, 42, 96, 1) 89.42%, rgba(141, 45, 94, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#2E1D68', endColorstr='#8D2D5E' ,GradientType=0)";
+  background : linear-gradient(180deg, rgba(46, 29, 104, 1) 0%, rgba(51, 30, 103, 1) 18.15%, rgba(66, 32, 102, 1) 40.15%, rgba(90, 36, 99, 1) 64.16%, rgba(124, 42, 96, 1) 89.42%, rgba(141, 45, 94, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2E1D68',endColorstr='#8D2D5E' , GradientType=0);
+}
+
+.block_8 .in {
+  /* background-image: url(./images/in.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.block_8 .team h2
+{
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #fff;
+    font-size: 40px;
+}
+
+.block_8 .item {
+  text-align: center;
+}
+
+.block_8 .item img
+{
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    height:  120px;
+    margin-bottom: 15px;
+}
+
+.block_8 .item p
+{
+    padding: 3px 0;
+    font-size: 14px;
+}
+
+/* .block_8 .item h3
+{
+    padding: 10px 0;
+} */
+
+.block_8 .item hr {
+    width: 50px;
+    height: 6px;
+    background: #6C5ED6;
+    display: block;
+    padding: 0;
+    margin: 30px auto;
+    border: 0;
+    text-align: center;
+}
+
+/* .block_8 .item p span
+{
+    font-size: 20px;
+    font-weight: bold;
+} */
+
+.block_8 .owl_7
+{
+
+}
+
+.block_8 .owl_7 .owl-stage-outer
+{
+    padding-top: 0;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+
+.block_8 .owl_7 .item
+{
+    width: 850px;
+    min-height: 550px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    position: relative;
+}
+
+.block_8 .owl_7 .item .left
+{
+    background: #815998;
+    float: left;
+    min-height: 550px;
+    width: 136px;
+    margin-left: -1px;
+    margin-top:  -1px;
+    padding: 30px;
+    border-radius: 30px 0  0 30px;
+    -moz-border-radius: 30px 0  0 30px;
+    -webkit-border-radius: 30px 0  0 30px;
+}
+
+.block_8 .owl_7 .item .left h3
+{
+    padding:20px 0;
+}
+
+.block_8 .owl_7 .item .left p
+{
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.block_8 .owl_7 .item .right
+{
+    color: #59595C;
+    padding: 30px;
+    float: right;
+    width: 580px;
+}
+
+.block_8 .owl_7 .item .right p
+{
+    padding: 15px 0;
+}
+
+.block_8 .advisers h2 {
+  font-size: 40px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.block_8 .advisers .slick-list {
+  width: 1130px;
+  height: 580px;
+}
+
+.block_8 .advisers .item{
+  width: 1130px;
+  height: 580px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.block_8 .ourPartners .slick-list {
+  width: 1130px;
+  height: 170px;
+}
+
+.block_8 .ourPartners h2 {
+  font-size: 40px;
+}
+
+.block_8 .ourPartners .carusel-block {
+  width: 1130px;
+  height: 170px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.block_8 .ourPartners .carusel-block .img {
+  height: 75px;
+}

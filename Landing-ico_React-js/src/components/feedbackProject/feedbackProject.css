@@ -1,6 +1,63 @@
 .carusel-block {
   width: 900px;
+  height: 400px;
   margin: 0 auto;
+}
+
+.slick-list {
+}
+
+.item {
+  width: 280px;
+  height: 370px;
+  margin-right: 65px;
+  float: left;
+}
+
+.left {
+  float: left;
+}
+
+.left p {
+  width: 440px;
+  font-size: 16px;
+  margin-top: 75px;
+}
+
+.left h3 {
+  font-size: 40px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+.left a.sb
+{
+    display: block;
+    float: right;
+    width: 190px;
+    height: 89px;
+    /* background: url(./images/block_6_play.png) no-repeat left 40px center; */
+    margin-top: -50px;
+    /* border-left: 1px solid rgba(255, 255, 255, 0.21); */
+    line-height: 85px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 120px;
+
+}
+
+.carusel-block hr {
+  text-align: left;
+  width: 50px;
+  height: 6px;
+  background: #6C5ED6;
+  display: block;
+  padding: 0;
+  margin: 30px 0;
+  border: 0;
 }
 
 .slick-list {
@@ -12,12 +69,4 @@
 .slick-track {
   overflow-y: hidden;
   margin: 0px auto;
-}
-
-.item {
-  float: left;
-}
-
-.right {
-  float: right;
 }
