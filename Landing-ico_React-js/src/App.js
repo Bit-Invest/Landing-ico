@@ -5,7 +5,6 @@ import { MarketAnalytics } from './components/marketAnalytics/MarketAnalytics';
 import { TokenSaleDetails } from './components/tokenSaleDetails/TokenSaleDetails';
 import { LegalSchedule } from './components/legalSchedule/LegalSchedule';
 import { FeedbackProject } from './components/feedbackProject/FeedbackProject';
-import { Media } from './components/media/Media';
 import { JoinTokenPreSale } from './components/joinTokenPreSale/JoinTokenPreSale';
 import { PopUpManager } from './components/popUp/PopUpManager';
 import { MediaNews } from './components/mediaNews/MediaNews';

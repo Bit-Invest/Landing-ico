@@ -4,6 +4,7 @@ import block_6_ava from '../../images/block_6_ava.png';
 import ava_1 from '../../images/ava_1.png';
 import ProgressorLogo from '../../media/ProgressorLogo.png';
 import sum_and_substance1 from '../../media/sum_and_substance1.png';
+import ico_promo from '../../media/ico_promo.png';
 import './TeamAdvisersPartners.css';
 
 export class TeamAdvisersPartners extends React.Component {
@@ -15,14 +16,13 @@ export class TeamAdvisersPartners extends React.Component {
       slidesToScroll: 1
     };
     const settingsAdvisers = {
-      lazyLoad: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      initialSlide: 1
     };
     const settingsOurParners = {
+      arrows: false,
       infinite: true,
       speed: 500,
       slidesToShow: 5,
@@ -38,7 +38,7 @@ export class TeamAdvisersPartners extends React.Component {
               <div className="item">
                 <img src={ava_1} alt={"CINDX"}/>
                 <h3>Igor Okatiev</h3>
-                <p>Chief Financial Officer</p>
+                <p className="position">Chief Financial Officer</p>
                 <hr />
                 <p><span>5</span> years in entrepreneurship</p>
                 <p><span>7</span> years in BRM</p>
@@ -47,7 +47,7 @@ export class TeamAdvisersPartners extends React.Component {
               <div className="item">
                 <img src={ava_1} alt={"CINDX"}/>
                 <h3>Yury Avdeev</h3>
-                <p>Chief Executive Officer</p>
+                <p className="position">Chief Executive Officer</p>
                 <hr />
                 <p><span>13</span> years in entrepreneurship</p>
                 <p><span>9</span> ventures</p>
@@ -59,7 +59,7 @@ export class TeamAdvisersPartners extends React.Component {
               <div className="item">
                 <img src={ava_1} alt={"CINDX"}/>
                 <h3>Artur Shamalov</h3>
-                <p>Investment Director</p>
+                <p className="position">Investment Director</p>
                 <hr />
                 <p><span>15</span> years in entrepreneurship</p>
                 <p><span>5000</span> mixcart.ru clients</p>
@@ -68,7 +68,7 @@ export class TeamAdvisersPartners extends React.Component {
               <div className="item">
                 <img src={ava_1} alt={"CINDX"}/>
                 <h3>Denis Eskenazi</h3>
-                <p>Product Director</p>
+                <p className="position">Product Director</p>
                 <hr />
                 <p><span>7</span> years in entrepreneurship</p>
                 <p><span>3</span> buisness degrees</p>
@@ -77,7 +77,7 @@ export class TeamAdvisersPartners extends React.Component {
               <div className="item">
                 <img src={ava_1} alt={"CINDX"}/>
                 <h3>Igor Okatiev</h3>
-                <p>Chief Financial Officer</p>
+                <p className="position">Chief Financial Officer</p>
                 <hr />
                 <p><span>5</span> years in entrepreneurship</p>
                 <p><span>7</span> years in BRM</p>
@@ -86,56 +86,83 @@ export class TeamAdvisersPartners extends React.Component {
             </Slider>
           </div>
 
+          <div className="clear" />
+
           <div className="advisers">
             <h2>Advisers</h2>
             <Slider {...settingsAdvisers}>
-              <div className="item">
-                <img src={block_6_ava} alt={"block_6_ava"}/>
-                <div className="right">
-                  <div className="name">
-                    <h3>Petr </h3>
-                    <h4>Test</h4>
-                    <a href="#" className="sb">
-                      Watch Video
-                    </a>
-                    <hr />
+              <div>
+                <div className="left_content">
+                  <div className="icon_content"></div>
+                  <div className="name_content">Philip Staehelin</div>
+                  <hr/>
+                  <div className="text_content">
+                    <p>25 years of consulting and entrepreneurial experience</p>
+                    <p>$500m alternative payments business under leadership</p>
+                    <p>200+ startups from 20 countries mentored</p>
                   </div>
+                  <div className="ln"></div>
                 </div>
-                <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
+                <div className="right_content">
+                  <p>
+                    Im an innovator and a leader who blends contagious optimism with pragmatic realism. I find opportunity where others see none.
+                    <br/><br/>
+                    Ive leveraged my ability to "see things differently" and "make things happen" in corporate, consulting and start-up environments - all giving me broad new perspectives that provide fodder for new transformative ideas.
+                    <br/><br/>
+                    Finding solutions to hard challenges is what gets me out of bed in the morning.
+                    <br/><br/>
+                    Career and projects: BCG, Spectacler, Transparency International, StartupYard, Bethreum, Gjirafa Inc, Direct People, CINDX
+                  </p>
+                </div>
               </div>
 
-              <div className="item">
-                <img src={block_6_ava} alt={"block_6_ava"}/>
-                <div className="right">
-                  <div className="name">
-                    <h3>Petr </h3>
-                    <h4>Test</h4>
-                    <a href="#" className="sb">
-                      Watch Video
-                    </a>
-                    <hr />
+              <div>
+                <div className="left_content">
+                  <div className="icon_content"></div>
+                  <div className="name_content">Philip Staehelin</div>
+                  <hr/>
+                  <div className="text_content">
+                    <p>25 years of consulting and entrepreneurial experience</p>
+                    <p>$500m alternative payments business under leadership</p>
+                    <p>200+ startups from 20 countries mentored</p>
                   </div>
+                  <div className="ln"></div>
                 </div>
-                <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
+                <div className="right_content">
+                  <p>
+                    Im an innovator and a leader who blends contagious optimism with pragmatic realism. I find opportunity where others see none.
+                    <br/><br/>
+                    Ive leveraged my ability to "see things differently" and "make things happen" in corporate, consulting and start-up environments - all giving me broad new perspectives that provide fodder for new transformative ideas.
+                    <br/><br/>
+                    Finding solutions to hard challenges is what gets me out of bed in the morning.
+                    <br/><br/>
+                    Career and projects: BCG, Spectacler, Transparency International, StartupYard, Bethreum, Gjirafa Inc, Direct People, CINDX
+                  </p>
+                </div>
               </div>
             </Slider>
           </div>
 
+          <div className="clear" />
+
           <div className="ourPartners">
             <h2>Our Partners</h2>
             <div className="carusel-block">
-              <Slider {...settings}>
+              <Slider {...settingsOurParners}>
                 <div>
                   <img className="img" src={ProgressorLogo} alt={"CINDX"}/>
                 </div>
                 <div>
-                  <img className="img" src={sum_and_substance1} alt={"CINDX"}/>
+                  <img className="img" src={ico_promo} alt={"CINDX"}/>
                 </div>
                 <div>
                   <img className="img" src={sum_and_substance1} alt={"CINDX"}/>
                 </div>
                 <div>
                   <img className="img" src={sum_and_substance1} alt={"CINDX"}/>
+                </div>
+                <div>
+                  <img className="img" src={ProgressorLogo} alt={"CINDX"}/>
                 </div>
                 <div>
                   <img className="img" src={sum_and_substance1} alt={"CINDX"}/>
@@ -143,6 +170,8 @@ export class TeamAdvisersPartners extends React.Component {
               </Slider>
             </div>
           </div>
+
+          <div className="clear" />
 
         </div>
       </div>
