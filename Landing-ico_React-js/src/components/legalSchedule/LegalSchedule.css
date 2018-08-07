@@ -1,0 +1,153 @@
+.block_5
+{
+    padding: 70px 0;
+    background: url(../../images/block_5_bg.png) no-repeat center ;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.block_5 h2 {
+  font-size: 40px;
+}
+
+.block_5:before
+{
+    content: '';
+    position: absolute;
+    top: 410px;
+    left: 66px;
+    width: 90%;
+    height: 1px;
+    background: #fff;
+}
+
+.block_5 .slick-list {
+  height: 370px;
+}
+
+.block_5 .cont_item
+{
+    width: 105px;
+    height: 314px;
+    position: relative;
+}
+
+.block_5 .one:before
+{
+    display: block;
+    content: '';
+    width: 1px;
+    height: 65px;
+    background: #fff;
+    position: absolute;
+    left: 45px;
+    bottom: 55px;
+}
+
+.block_5 .all:before
+{
+    display: block;
+    content: '';
+    width: 3px;
+    height: 65px;
+    background: #fff;
+    position: absolute;
+    left: 45px;
+    bottom: 55px;
+}
+
+.block_5 .cont_item .numb
+{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+.block_5 .cont_item p
+{
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+    position: absolute;
+    display: block;
+    bottom: 145px;
+    line-height: 18px;
+    width: 101%;
+    word-wrap: break-word;
+}
+
+.block_5 .cont_item img
+{
+    width: auto;
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 0px;
+}
+
+.block_5 .owl-carousel .owl-nav .owl-next
+{
+    display: block;
+    position: absolute;
+    padding: 0;
+    background: url(../../images/arrow_small_right.png);
+    top: -45px;
+    right: 60px;
+    width: 17px;
+    height: 31px;
+}
+
+.block_5 .owl-carousel .owl-nav .owl-prev
+{
+    display: block;
+    position: absolute;
+    padding: 0;
+    background: url(../../images/arrow_small_left.png);
+    top: -45px;
+    right: 120px;
+    width: 17px;
+    height: 31px;
+}
+
+.block_5 .slick-prev:before {
+    font-size: 0px;
+    display: block;
+    position: relative;
+    padding: 0;
+    background: url(../../images/arrow_big_left.png);
+    top: -300px;
+    left: 1000px;
+    width: 60px;
+    height: 115px;
+}
+
+.block_5 .slick-next:before {
+    font-size: 0px;
+    display: block;
+    position: relative;
+    padding: 0;
+    background: url(../../images/arrow_big_right.png);
+    top: -300px;
+    right: 180px;
+    width: 60px;
+    height: 115px;
+}
+
+.block_5 .settings2 {
+  display: none;
+}
+
+@media (max-width: 1299px){
+  .block_5 .slick-prev:before {
+    left: 700px;
+  }
+  .block_5 .slick-next:before {
+    right: 110px;
+  }
+}

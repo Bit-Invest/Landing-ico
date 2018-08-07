@@ -20,35 +20,35 @@ export class FeedbackProject extends React.Component {
           <div className="carusel-block">
             <Slider {...settings}>
 
-                <div>
-                  <img className="item" src={block_6_ava} alt={"block_6_ava"}/>
-                  <div className="left">
-                    <div className="name">
-                      <h3>Petr </h3>
-                      <h4>Product Director</h4>
-                      <a href="#" className="sb">
-                        Watch Video
-                      </a>
-                    </div>
+              <div>
+                <img className="item" src={block_6_ava} alt={"block_6_ava"}/>
+                <div className="left">
+                  <div className="name">
+                    <h3>Ivan </h3>
+                    <h4>Product Director</h4>
+                    <a href="#" className="sb">
+                    </a>
                     <hr />
-                    <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
+                    <a href="#" className="sb2"></a>
                   </div>
+                  <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
                 </div>
+              </div>
 
-                <div>
-                  <img className="item" src={block_6_ava} alt={"block_6_ava"}/>
-                  <div className="left">
-                    <div className="name">
-                      <h3>Ivan </h3>
-                      <h4>Product Director</h4>
-                      <a href="#" className="sb">
-                        Watch Video
-                      </a>
-                      <hr />
-                    </div>
-                    <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
+              <div>
+                <img className="item" src={block_6_ava} alt={"block_6_ava"}/>
+                <div className="left">
+                  <div className="name">
+                    <h3>Ivan </h3>
+                    <h4>Product Director</h4>
+                    <a href="#" className="sb">
+                    </a>
+                    <hr />
+                    <a href="#" className="sb2"></a>
                   </div>
+                  <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
                 </div>
+              </div>
 
             </Slider>
           </div>

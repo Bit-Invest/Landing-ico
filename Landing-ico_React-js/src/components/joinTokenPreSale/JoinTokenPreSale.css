@@ -13,6 +13,7 @@
   margin-bottom: 50px;
 }
 
+
 .block_9 a.sb
 {
   background : -moz-linear-gradient(0% 50% 0deg,rgba(242, 135, 183, 1) 0%,rgba(108, 94, 214, 1) 100%);
@@ -74,7 +75,6 @@
 .block_9 .adress {
   width: 650px;
   margin: 60px 0;
-  font-size: 16px;
 }
 
 .block_9 .adress_left {
@@ -83,11 +83,14 @@
 
 .block_9 .adress_left p {
   margin: 15px 0;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .block_9 .adress_left .caption{
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
+  margin-bottom: 25px;
 }
 
 .block_9 .adress_right {
@@ -96,11 +99,14 @@
 
 .block_9 .adress_right p {
   margin: 15px 0;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .block_9 .adress_right .caption {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
+  margin-bottom: 25px;
 }
 
 .block_9 .icon_block {

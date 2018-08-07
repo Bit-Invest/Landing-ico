@@ -15,6 +15,12 @@ export class TeamAdvisersPartners extends React.Component {
       slidesToShow: 3,
       slidesToScroll: 1
     };
+    const settingsTeam2 = {
+      infinite: true,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 1
+    };
     const settingsAdvisers = {
       infinite: true,
       speed: 500,
@@ -34,60 +40,112 @@ export class TeamAdvisersPartners extends React.Component {
 
           <div className="team">
             <h2>Team of 40+ Members</h2>
-            <Slider {...settings}>
-              <div className="item">
-                <img src={ava_1} alt={"CINDX"}/>
-                <h3>Igor Okatiev</h3>
-                <p className="position">Chief Financial Officer</p>
-                <hr />
-                <p><span>5</span> years in entrepreneurship</p>
-                <p><span>7</span> years in BRM</p>
-                <p><span>10</span> years in financial markets</p>
-              </div>
-              <div className="item">
-                <img src={ava_1} alt={"CINDX"}/>
-                <h3>Yury Avdeev</h3>
-                <p className="position">Chief Executive Officer</p>
-                <hr />
-                <p><span>13</span> years in entrepreneurship</p>
-                <p><span>9</span> ventures</p>
-                <p><span>$2m</span> for crypto management </p>
-                <a href>
-                  <div src="../images/in.png" className="in" />
-                </a>
-              </div>
-              <div className="item">
-                <img src={ava_1} alt={"CINDX"}/>
-                <h3>Artur Shamalov</h3>
-                <p className="position">Investment Director</p>
-                <hr />
-                <p><span>15</span> years in entrepreneurship</p>
-                <p><span>5000</span> mixcart.ru clients</p>
-                <p><span>$6.5 bn</span> investor in dc-daily.ru</p><a href="#" className="in" />
-              </div>
-              <div className="item">
-                <img src={ava_1} alt={"CINDX"}/>
-                <h3>Denis Eskenazi</h3>
-                <p className="position">Product Director</p>
-                <hr />
-                <p><span>7</span> years in entrepreneurship</p>
-                <p><span>3</span> buisness degrees</p>
-                <p><span>10</span> years in prezentation design</p><a href="#" className="in" />
-              </div>
-              <div className="item">
-                <img src={ava_1} alt={"CINDX"}/>
-                <h3>Igor Okatiev</h3>
-                <p className="position">Chief Financial Officer</p>
-                <hr />
-                <p><span>5</span> years in entrepreneurship</p>
-                <p><span>7</span> years in BRM</p>
-                <p><span>10</span> years in financial markets</p><a href="#" className="in" />
-              </div>
-            </Slider>
+            <div className="settings">
+              <Slider {...settings}>
+                <div className="item">
+                  <img src={ava_1} alt={"CINDX"}/>
+                  <h3>Igor Okatiev</h3>
+                  <p className="position">Chief Financial Officer</p>
+                  <hr />
+                  <p><span>5</span> years in entrepreneurship</p>
+                  <p><span>7</span> years in BRM</p>
+                  <p><span>10</span> years in financial markets</p>
+                </div>
+                <div className="item">
+                  <img src={ava_1} alt={"CINDX"}/>
+                  <h3>Yury Avdeev</h3>
+                  <p className="position">Chief Executive Officer</p>
+                  <hr />
+                  <p><span>13</span> years in entrepreneurship</p>
+                  <p><span>9</span> ventures</p>
+                  <p><span>$2m</span> for crypto management </p>
+                  <a href>
+                    <div src="../images/in.png" className="in" />
+                  </a>
+                </div>
+                <div className="item">
+                  <img src={ava_1} alt={"CINDX"}/>
+                  <h3>Artur Shamalov</h3>
+                  <p className="position">Investment Director</p>
+                  <hr />
+                  <p><span>15</span> years in entrepreneurship</p>
+                  <p><span>5000</span> mixcart.ru clients</p>
+                  <p><span>$6.5 bn</span> investor in dc-daily.ru</p><a href="#" className="in" />
+                </div>
+                <div className="item">
+                  <img src={ava_1} alt={"CINDX"}/>
+                  <h3>Denis Eskenazi</h3>
+                  <p className="position">Product Director</p>
+                  <hr />
+                  <p><span>7</span> years in entrepreneurship</p>
+                  <p><span>3</span> buisness degrees</p>
+                  <p><span>10</span> years in prezentation design</p><a href="#" className="in" />
+                </div>
+                <div className="item">
+                  <img src={ava_1} alt={"CINDX"}/>
+                  <h3>Igor Okatiev</h3>
+                  <p className="position">Chief Financial Officer</p>
+                  <hr />
+                  <p><span>5</span> years in entrepreneurship</p>
+                  <p><span>7</span> years in BRM</p>
+                  <p><span>10</span> years in financial markets</p><a href="#" className="in" />
+                </div>
+              </Slider>
+            </div>
+            <div className="settings2">
+              <Slider {...settingsTeam2}>
+                <div className="item">
+                  <img src={ava_1} alt={"CINDX"}/>
+                  <h3>Igor Okatiev</h3>
+                  <p className="position">Chief Financial Officer</p>
+                  <hr />
+                  <p><span>5</span> years in entrepreneurship</p>
+                  <p><span>7</span> years in BRM</p>
+                  <p><span>10</span> years in financial markets</p>
+                </div>
+                <div className="item">
+                  <img src={ava_1} alt={"CINDX"}/>
+                  <h3>Yury Avdeev</h3>
+                  <p className="position">Chief Executive Officer</p>
+                  <hr />
+                  <p><span>13</span> years in entrepreneurship</p>
+                  <p><span>9</span> ventures</p>
+                  <p><span>$2m</span> for crypto management </p>
+                  <a href>
+                    <div src="../images/in.png" className="in" />
+                  </a>
+                </div>
+                <div className="item">
+                  <img src={ava_1} alt={"CINDX"}/>
+                  <h3>Artur Shamalov</h3>
+                  <p className="position">Investment Director</p>
+                  <hr />
+                  <p><span>15</span> years in entrepreneurship</p>
+                  <p><span>5000</span> mixcart.ru clients</p>
+                  <p><span>$6.5 bn</span> investor in dc-daily.ru</p><a href="#" className="in" />
+                </div>
+                <div className="item">
+                  <img src={ava_1} alt={"CINDX"}/>
+                  <h3>Denis Eskenazi</h3>
+                  <p className="position">Product Director</p>
+                  <hr />
+                  <p><span>7</span> years in entrepreneurship</p>
+                  <p><span>3</span> buisness degrees</p>
+                  <p><span>10</span> years in prezentation design</p><a href="#" className="in" />
+                </div>
+                <div className="item">
+                  <img src={ava_1} alt={"CINDX"}/>
+                  <h3>Igor Okatiev</h3>
+                  <p className="position">Chief Financial Officer</p>
+                  <hr />
+                  <p><span>5</span> years in entrepreneurship</p>
+                  <p><span>7</span> years in BRM</p>
+                  <p><span>10</span> years in financial markets</p><a href="#" className="in" />
+                </div>
+              </Slider>
+            </div>
           </div>
-
           <div className="clear" />
-
           <div className="advisers">
             <h2>Advisers</h2>
             <Slider {...settingsAdvisers}>
@@ -142,35 +200,32 @@ export class TeamAdvisersPartners extends React.Component {
               </div>
             </Slider>
           </div>
-
           <div className="clear" />
-
           <div className="ourPartners">
             <h2>Our Partners</h2>
-            <div className="carusel-block">
-              <Slider {...settingsOurParners}>
-                <div>
-                  <img className="img" src={ProgressorLogo} alt={"CINDX"}/>
-                </div>
-                <div>
-                  <img className="img" src={ico_promo} alt={"CINDX"}/>
-                </div>
-                <div>
-                  <img className="img" src={sum_and_substance1} alt={"CINDX"}/>
-                </div>
-                <div>
-                  <img className="img" src={sum_and_substance1} alt={"CINDX"}/>
-                </div>
-                <div>
-                  <img className="img" src={ProgressorLogo} alt={"CINDX"}/>
-                </div>
-                <div>
-                  <img className="img" src={sum_and_substance1} alt={"CINDX"}/>
-                </div>
-              </Slider>
+            <div className="container2">
+                <Slider {...settingsOurParners}>
+                  <div>
+                    <img className="img" src={ProgressorLogo} alt={"CINDX"}/>
+                  </div>
+                  <div>
+                    <img className="img" src={ico_promo} alt={"CINDX"}/>
+                  </div>
+                  <div>
+                    <img className="img" src={sum_and_substance1} alt={"CINDX"}/>
+                  </div>
+                  <div>
+                    <img className="img" src={sum_and_substance1} alt={"CINDX"}/>
+                  </div>
+                  <div>
+                    <img className="img" src={ProgressorLogo} alt={"CINDX"}/>
+                  </div>
+                  <div>
+                    <img className="img" src={sum_and_substance1} alt={"CINDX"}/>
+                  </div>
+                </Slider>
             </div>
           </div>
-
           <div className="clear" />
 
         </div>

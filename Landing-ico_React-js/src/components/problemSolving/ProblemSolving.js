@@ -6,6 +6,7 @@ import block_1_row_3 from '../../images/block_1_row_3.png';
 import { showPopUp } from './../../store/store';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import './problemSolving.css';
 
 const ProblemSolvingInfo = {
   caption: ['Time', 'Trust', 'Uncertainty'],
@@ -41,29 +42,31 @@ class ProblemSolving extends React.Component {
         <div className="size">
           <h1>What kinds of problems does CINDX solve?</h1>
           <a onClick={this.onClickRoot.bind(this)} className="sb" href="#">TEST MVP</a>
-          <div className="clear" />
-          <div className="cont_row">
-            <ProblemSolvingChild
-              name={ProblemSolvingInfo.caption[0]}
-              text1={ProblemSolvingInfo.text1[0]}
-              icon={ProblemSolvingInfo.icon[0]}
-              text2={ProblemSolvingInfo.text2[0]}
-              text3={ProblemSolvingInfo.text3[0]}
-            />
-            <ProblemSolvingChild
-              name={ProblemSolvingInfo.caption[1]}
-              text1={ProblemSolvingInfo.text1[1]}
-              icon={ProblemSolvingInfo.icon[1]}
-              text2={ProblemSolvingInfo.text2[1]}
-              text3={ProblemSolvingInfo.text3[1]}
-            />
-            <ProblemSolvingChild
-              name={ProblemSolvingInfo.caption[2]}
-              text1={ProblemSolvingInfo.text1[2]}
-              icon={ProblemSolvingInfo.icon[2]}
-              text2={ProblemSolvingInfo.text2[2]}
-              text3={ProblemSolvingInfo.text3[2]}
-            />
+          <div className="container">
+            <div className="clear" />
+            <div className="cont_row">
+              <ProblemSolvingChild
+                name={ProblemSolvingInfo.caption[0]}
+                text1={ProblemSolvingInfo.text1[0]}
+                icon={ProblemSolvingInfo.icon[0]}
+                text2={ProblemSolvingInfo.text2[0]}
+                text3={ProblemSolvingInfo.text3[0]}
+              />
+              <ProblemSolvingChild
+                name={ProblemSolvingInfo.caption[1]}
+                text1={ProblemSolvingInfo.text1[1]}
+                icon={ProblemSolvingInfo.icon[1]}
+                text2={ProblemSolvingInfo.text2[1]}
+                text3={ProblemSolvingInfo.text3[1]}
+              />
+              <ProblemSolvingChild
+                name={ProblemSolvingInfo.caption[2]}
+                text1={ProblemSolvingInfo.text1[2]}
+                icon={ProblemSolvingInfo.icon[2]}
+                text2={ProblemSolvingInfo.text2[2]}
+                text3={ProblemSolvingInfo.text3[2]}
+              />
+            </div>
           </div>
           <div className="clear" />
         </div>
