@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './button.css';
 
 const ROOT_CLASS = 'button';
 

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { MailForm } from '@components/mailForm';
 import { IcoInfo } from './icoInfo';
 import './MainBlock.css';
 
@@ -16,6 +17,9 @@ export const MainBlock = props => (
         </div>
       </div>
       <div className={`${ROOT_CLASS}__container-2`}>
+        <div className={`${ROOT_CLASS}__form`}>
+          <MailForm now={1.25} later={1.20} />
+        </div>
         <div className={`${ROOT_CLASS}__ico-info-m`}>
           <IcoInfo />
         </div>

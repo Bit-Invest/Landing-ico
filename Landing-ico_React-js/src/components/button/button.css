@@ -17,6 +17,7 @@
 }
 
 .button_gradient {
+  border: none;
   background-image: linear-gradient(to top, #6e5fd6, #f086b8);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 }

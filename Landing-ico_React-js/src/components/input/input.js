@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './input.css';
 
 const ROOT_CLASS = 'input';
 

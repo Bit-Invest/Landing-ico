@@ -3,6 +3,7 @@
 }
 
 .input__input {
+  width: 100%;
   height: 40px;
   border-radius: 30px;
   border: solid 1px #d1d1d1;
@@ -11,14 +12,19 @@
 }
 
 .input__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: center;
   color: #666;
 }
 .input__input::-moz-placeholder { /* Firefox 19+ */
   color: #666;
+  text-align: center;
+  
 }
 .input__input:-ms-input-placeholder { /* IE 10+ */
+  text-align: center;
   color: #666;
 }
 .input__input:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
   color: #666;
 }
