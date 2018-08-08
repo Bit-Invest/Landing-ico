@@ -1,0 +1,24 @@
+.input {
+  width: 100%;
+}
+
+.input__input {
+  height: 40px;
+  border-radius: 30px;
+  border: solid 1px #d1d1d1;
+  font-family: Geometria;
+  font-size: 14px;
+}
+
+.input__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #666;
+}
+.input__input::-moz-placeholder { /* Firefox 19+ */
+  color: #666;
+}
+.input__input:-ms-input-placeholder { /* IE 10+ */
+  color: #666;
+}
+.input__input:-moz-placeholder { /* Firefox 18- */
+  color: #666;
+}

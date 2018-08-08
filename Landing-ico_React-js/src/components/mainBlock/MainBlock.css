@@ -1,0 +1,15 @@
+.main-block {
+  background: linear-gradient(180deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
+}
+
+.main-block__ico-info-l {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+}

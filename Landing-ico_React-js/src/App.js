@@ -9,11 +9,13 @@ import { JoinTokenPreSale } from './components/joinTokenPreSale/JoinTokenPreSale
 import { PopUpManager } from './components/popUp/PopUpManager';
 import { MediaNews } from './components/mediaNews/MediaNews';
 import { TeamAdvisersPartners } from './components/teamAdvisersPartners/TeamAdvisersPartners';
+import { MainBlock } from '@components/mainBlock';
 import './App.css';
 
 export const App = props => (
   <div className="App">
     <PopUpManager />
+    <MainBlock />
     <ProblemSolving />
     <HowCindxWorks />
     <MarketAnalytics />
