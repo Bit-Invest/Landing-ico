@@ -12,6 +12,7 @@
 .block_2 h2{
   font-weight: bold;
   font-size: 40px;
+  margin-left: 45px;
 }
 
 .block_2 .cont_row
@@ -20,6 +21,7 @@
     justify-content: space-between;
     margin-top: 100px;
     flex-wrap: wrap;
+    margin: 0 30px;
 }
 
 .block_2 .cont_row .row

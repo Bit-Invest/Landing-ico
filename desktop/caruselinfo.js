@@ -99,6 +99,24 @@ define(function(){
       fackt2: '3 years in investment promotion',
       fackt3: '2 years in russian deals abroad',
       src: 'https://www.linkedin.com/in/davidgutierrezcindx/'
+    },
+    {
+      img: './media/Jelena.png',
+      name: 'Jelena Karzetskaja',
+      position: 'Compliance Officer',
+      fackt1: 'holds several degrees in law',
+      fackt2: 'judicial practice since 1997',
+      fackt3: 'legal spheres: international law, administrative law, civil law and procedure, labour law',
+      src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/'
+    },
+    {
+      img: './media/Leonard.png',
+      name: 'Leonard Grayver',
+      position: 'Compliance Officer',
+      fackt1: 'Partner at Greenberg, Whitcombe & Takeuchi',
+      fackt2: 'Represented over 400 startups',
+      fackt3: 'Raised more than 18 mln USD for his startup when he was a student at Law school',
+      src: 'https://www.linkedin.com/in/leonardgrayver/'
     }
    ];
 
@@ -234,7 +252,7 @@ define(function(){
         'With over 20 years of management experience I built up a powerful network, I actively advise on finance, tech, sales, marketing and quality assurance for high-level blockchain projects.',
         'Career and projects: <br> Dynamic Abundance, ELYSIAN, Worldopoly, Confidential ICO,  Fox Trading FX, Profede, Market Digital, CINDX'
       ]
-    },
+    }
    ];
 
   // Our Partners

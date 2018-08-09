@@ -15,9 +15,10 @@
     background: url(../../images/arrow_big_left.png);
     top: -60px;
     margin-top: 0px;
-    left: -200px;
-    width: 60px;
-    height: 115px;
+    left: -160px;
+    width: 21px;
+    height: 38px;
+    background-size: cover;
 }
 
 .block_6 .carusel-block .slick-next:before {
@@ -28,9 +29,10 @@
     background: url(../../images/arrow_big_right.png);
     top: -60px;
     margin-top: 0px;
-    right: -200px;
-    width: 60px;
-    height: 115px;
+    right: -160px;
+    width: 21px;
+    height: 38px;
+    background-size: cover;
 }
 
 .block_6 .item {
@@ -97,12 +99,10 @@
 }
 
 
-@media (max-width: 1299px) {
+@media (max-width: 1024px) {
   .block_6 .carusel-block .slick-next:before {
-    right: -55px;
-  }
-  .block_6 .carusel-block .slick-prev:before {
-    left: -55px;
+    right: 90px;
+    top: -270px;
   }
   .block_6 .carusel-block {
     width: 770px;

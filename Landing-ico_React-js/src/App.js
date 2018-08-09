@@ -20,12 +20,13 @@ export const App = props => (
     <Roadmap />
     <ProblemSolving />
     <HowCindxWorks />
-    <MarketAnalytics />
+    {/*<MarketAnalytics />*/}
     <TokenSaleDetails />
     <LegalSchedule />
     <FeedbackProject />
     <MediaNews />
     <TeamAdvisersPartners />
     <JoinTokenPreSale />
+    <PopUpManager />
   </div>
 );

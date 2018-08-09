@@ -5,9 +5,9 @@
 }
 
 .block_7 h2 {
-  padding-bottom: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 70px;
   font-size: 40px;
+  margin-left: 75px;
 }
 
 /*MEDIA*/
@@ -21,8 +21,9 @@
   top: -60px;
   margin-top: 0px;
   left: -70px;
-  width: 60px;
-  height: 115px;
+  width: 21px;
+  height: 38px;
+  background-size: cover;
 }
 
 .block_7 .slick-next:before {
@@ -34,8 +35,9 @@
   top: -60px;
   margin-top: 0px;
   right: -70px;
-  width: 60px;
-  height: 115px;
+  width: 21px;
+  height: 38px;
+  background-size: cover;
 }
 
 .block_7 .settings2 {
@@ -134,7 +136,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 1299px) {
+@media (max-width: 1024px) {
   .block_7 .txt .bg {
     width: 260px;
   }
@@ -143,12 +145,12 @@
     margin: 0 auto;
   }
   .block_7 .slick-next:before {
-    right: 45px;
-    top: -270px;
+    right: 90px;
+    top: -247px;
   }
   .block_7 .slick-prev:before {
-    top: -270px;
-    left: 800px;
+    left: 500px;
+    top: -247px;
   }
   .block_7 .img {
     width: 300px;

@@ -14,10 +14,10 @@
 
 .block_3 h2 {
   font-size: 40px;
+  margin-left: 45px;
 }
 
-.block_3:after
-{
+.block_3:after {
     content: '';
     display: block;
     position: absolute;
@@ -28,19 +28,16 @@
     margin-left: -546px;
     bottom: 20px;
     opacity: 0.4;
-
 }
 
 
-.block_3 .ico_block
-{
+.block_3 .ico_block {
     display: block;
     float: right;
     margin-top: -31px;
 }
 
-.block_3 .ico_block .row
-{
+.block_3 .ico_block .row {
     display: inline-block;
     text-transform: uppercase;
     font-size: 14.5px;
@@ -62,11 +59,10 @@
 
 .block_3 .owl-carousel
 {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
     position: relative;
-    display: flex;
-
 }
 
 .block_3 .owl-carousel .owl-stage-outer
@@ -76,6 +72,8 @@
 
 .block_3 .owl-carousel .item
 {
+    width: 440px;
+    height: 500px;
     background: rgba(255, 255, 255, 0.07);
     border-radius: 25px;
     padding: 5px 20px 20px;
@@ -143,7 +141,7 @@
     outline: none;
 }
 
-.fancybox-bg
+/* .fancybox-bg
 {
     background : -moz-linear-gradient(50% 0% -90deg,rgba(46, 29, 104, 1) 0%,rgba(51, 30, 103, 1) 18.15%,rgba(66, 32, 102, 1) 40.15%,rgba(90, 36, 99, 1) 64.16%,rgba(124, 42, 96, 1) 89.42%,rgba(141, 45, 94, 1) 100%);
   background : -webkit-linear-gradient(-90deg, rgba(46, 29, 104, 1) 0%, rgba(51, 30, 103, 1) 18.15%, rgba(66, 32, 102, 1) 40.15%, rgba(90, 36, 99, 1) 64.16%, rgba(124, 42, 96, 1) 89.42%, rgba(141, 45, 94, 1) 100%);
@@ -154,7 +152,7 @@
   background : linear-gradient(180deg, rgba(46, 29, 104, 1) 0%, rgba(51, 30, 103, 1) 18.15%, rgba(66, 32, 102, 1) 40.15%, rgba(90, 36, 99, 1) 64.16%, rgba(124, 42, 96, 1) 89.42%, rgba(141, 45, 94, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2E1D68',endColorstr='#8D2D5E' , GradientType=0);
 opacity: 1 !important;
-}
+} */
 
 .fancybox-caption
 {
@@ -164,7 +162,7 @@ opacity: 1 !important;
 .block_3 .other_text
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 50px;
     border-bottom: 1px solid #fff;
     padding-bottom: 50px;
@@ -220,7 +218,7 @@ opacity: 1 !important;
 
 .block_3 .other_geo .cont_row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .block_3 .other_geo .cont_row .row
@@ -240,11 +238,6 @@ opacity: 1 !important;
 
 .block_3 .carusel {
   display: none;
-}
-
-.block_3 .carusel .slick-slider {
-  width: 560px;
-  height: 500px;
 }
 
 .block_3 .carusel .owl-carousel .item img {
