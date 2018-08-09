@@ -477,7 +477,7 @@ width: 720px;
 }
 
 .play-button-advisers{
-bottom: -12px;
+    bottom: -12px;
     right: -15px;
     position: absolute;
     background-image: url(./images/play_button.png);
