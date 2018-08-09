@@ -490,7 +490,7 @@ bottom: -12px;
     border-radius: 50%;
 }
 
-@media (max-width: 1440px)
+@media (max-width: 1439px)
 {
     .block_1{
       padding-top: 20px;
@@ -872,6 +872,13 @@ bottom: -12px;
 
     .block_8 .advisers .slick-list {
       width: 940px;
+    }
+    .block_8 .slick-next {
+      right: 0;
+    }
+
+    .block_8 .slick-prev {
+      left: 0;
     }
 
     .block_8 .advisers .slick-prev:before {
