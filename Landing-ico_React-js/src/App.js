@@ -10,12 +10,14 @@ import { PopUpManager } from './components/popUp/PopUpManager';
 import { MediaNews } from './components/mediaNews/MediaNews';
 import { TeamAdvisersPartners } from './components/teamAdvisersPartners/TeamAdvisersPartners';
 import { MainBlock } from '@components/mainBlock';
+import { Roadmap } from '@components/roadmap';
 import './App.css';
 
 export const App = props => (
   <div className="App">
     <PopUpManager />
     <MainBlock />
+    <Roadmap />
     <ProblemSolving />
     <HowCindxWorks />
     <MarketAnalytics />
