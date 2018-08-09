@@ -20,7 +20,7 @@ export class LegalSchedule extends React.Component {
     return (
       <div className="block_5">
         <div className="size">
-          <h2>Legal Schedule</h2>
+          <h2 className="header">Legal Schedule</h2>
             <div className="settings">
               <div className="container">
                 <Slider {...settings}>

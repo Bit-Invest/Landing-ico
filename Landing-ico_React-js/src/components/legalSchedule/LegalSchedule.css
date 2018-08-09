@@ -120,8 +120,8 @@
     position: relative;
     padding: 0;
     background: url(../../images/arrow_big_left.png);
-    top: -235px;
-    left: 1000px;
+    top: -275px;
+    left: 1160px;
     width: 21px;
     height: 38px;
     background-size: cover;
@@ -133,7 +133,7 @@
     position: relative;
     padding: 0;
     background: url(../../images/arrow_big_right.png);
-    top: -235px;
+    top: -275px;
     right: 180px;
     width: 20px;
     height: 38px;
@@ -142,6 +142,9 @@
 
 .block_5 .settings2 {
   display: none;
+}
+.block_5 .container {
+    margin-top: 70px;
 }
 
 @media (max-width: 1024px){

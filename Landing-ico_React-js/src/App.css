@@ -312,7 +312,9 @@
     padding-left: 120px;
 
 }
-
+.header {
+  padding-left: 42px;
+}
 
 [map_arr="3"] .item img {
   width: 140px!important;
@@ -492,6 +494,9 @@ width: 720px;
 
 @media (max-width: 1439px)
 {
+    .header {
+      padding: 0;
+    }
     .block_1{
       padding-top: 20px;
       padding-bottom: 50px;
@@ -1767,7 +1772,7 @@ body.compensate-for-scrollbar {
     }
     .block_2 h2 {
       font-size: 32px;
-      margin-left: 75px;
+      margin-left: 70px;
     }
     .block_2 .cont_row {
       justify-content: center;
@@ -1958,6 +1963,6 @@ body.compensate-for-scrollbar {
     }
     .block_9 h2 {
       font-size: 32px;
-      margin-left: 75px;
+      margin-left: 45px;
     }
   }

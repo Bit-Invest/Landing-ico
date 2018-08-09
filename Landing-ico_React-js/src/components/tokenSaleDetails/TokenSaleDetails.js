@@ -7,7 +7,7 @@ import './tokenSaleDetails.css';
 export const TokenSaleDetails = () => (
   <div className="block_4">
     <div className="size">
-      <h2>Token Sale Details</h2>
+      <h2 className="header">Token Sale Details</h2>
         <div className="container">
           <div className="cont_3">
             <h2>Token Allocation</h2>
