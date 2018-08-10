@@ -1,0 +1,58 @@
+.ico-info {
+  width: 400px;
+}
+
+.ico-info__title {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.ico-info__partners {
+  margin-top: 10px;
+  width: 193px;
+}
+
+.ico-info__ratings {
+  display: flex;
+}
+
+.ico-info__partner {
+  display: inline-block;
+  vertical-align: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ico-info__partner_bancor {
+  margin-right: 18px;
+  width: 87px;
+  height: 22px;
+}
+
+.ico-info__partner_hotbit {
+  width: 88px;
+  height: 24px;
+}
+
+.ico-info__partner_local-coin {
+  margin-top: 12px;
+  margin-right: 12px;
+  width: 117px;
+  height: 26px;
+}
+
+.ico-info__partner_hbtop {
+  margin-top: 14px;
+  width: 64px;
+  height: 24px;
+}
+
+.ico-info__ratings {
+  margin-top: 22px;
+}
+
+.ico-info__rating_stable {
+  margin-right: 10px;
+}
