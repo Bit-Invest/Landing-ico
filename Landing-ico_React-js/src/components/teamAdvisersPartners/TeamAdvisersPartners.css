@@ -27,8 +27,9 @@
     top: -60px;
     margin-top: 0px;
     left: 30px;
-    width: 60px;
-    height: 115px;
+    width: 21px;
+    height: 38px;
+    background-size: cover;
 }
 
 .block_8 .team .slick-next:before {
@@ -40,8 +41,9 @@
     top: -60px;
     margin-top: 0px;
     right: 30px;
-    width: 60px;
-    height: 115px;
+    width: 21px;
+    height: 38px;
+    background-size: cover;
 }
 
 .block_8 .settings {
@@ -113,8 +115,9 @@
     top: 50%;
     margin-top: -50px;
     left: 30px;
-    width: 60px;
-    height: 115px;
+    width: 21px;
+    height: 38px;
+    background-size: cover;
 }
 
 .block_8 .advisers .slick-next:before {
@@ -126,8 +129,9 @@
     top: 50%;
     margin-top: -50px;
     right: 30px;
-    width: 60px;
-    height: 115px;
+    width: 21px;
+    height: 38px;
+    background-size: cover;
 }
 
 .block_8 .advisers .slick-list {
@@ -216,18 +220,12 @@
 }
 
 
-@media (max-width: 1299px){
-  .block_8 .slick-list {
-    width: 940px;
-  }
+@media (max-width: 1024px){
   .block_8 .ourPartners .carusel-block .img {
     height: 140px;
   }
   .block_8 .advisers .left_content {
     width: 300px;
-  }
-  .block_8 .advisers .right_content {
-    width: 640px;
   }
   .block_8 .advisers .left_content .text_content {
     width: 260px;
@@ -235,20 +233,9 @@
   .block_8 .advisers .slick-list {
     width: 940px;
   }
-  .block_8 .advisers .slick-prev:before {
-    top: -385px;
-    left: 800px;
-  }
-  .block_8 .advisers .slick-next:before {
-    top: -385px;
-  }
   .block_8 .team .slick-next:before {
-    top: -300px;
-    right: 70px;
-  }
-  .block_8 .team .slick-prev:before {
-    top: -300px;
-    left: 770px;
+    right: 60px;
+    top: -266px;
   }
   .block_8 .ourPartners .slick-list {
     width: 940px;

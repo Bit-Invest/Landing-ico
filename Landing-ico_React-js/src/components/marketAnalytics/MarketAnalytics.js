@@ -11,6 +11,7 @@ import './MarketAnalytics.css';
 
 export const MarketAnalytics = () => {
   const settings = {
+    arrows: false,
     lazyLoad: true,
     infinite: true,
     speed: 500,

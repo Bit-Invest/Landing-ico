@@ -201,7 +201,7 @@ export class TeamAdvisersPartners extends React.Component {
             </Slider>
           </div>
           <div className="clear" />
-          <div className="ourPartners">
+          {/*<div className="ourPartners">
             <h2>Our Partners</h2>
             <div className="container2">
                 <Slider {...settingsOurParners}>
@@ -225,7 +225,7 @@ export class TeamAdvisersPartners extends React.Component {
                   </div>
                 </Slider>
             </div>
-          </div>
+          </div>*/}
           <div className="clear" />
 
         </div>

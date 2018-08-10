@@ -13,15 +13,15 @@ import './App.css';
 
 export const App = props => (
   <div className="App">
-    <PopUpManager />
     <ProblemSolving />
     <HowCindxWorks />
-    <MarketAnalytics />
+    {/*<MarketAnalytics />*/}
     <TokenSaleDetails />
     <LegalSchedule />
     <FeedbackProject />
     <MediaNews />
     <TeamAdvisersPartners />
     <JoinTokenPreSale />
+    <PopUpManager />
   </div>
 );
