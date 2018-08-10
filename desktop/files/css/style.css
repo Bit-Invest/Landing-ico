@@ -791,10 +791,13 @@ opacity: 1 !important;
 
 .block_4 .cont_4 .graph
 {
+    width: 200px;
+    height: 200px;
     display: block;
     padding-left: 230px;
     background: url(../images/block_4_cont_4_img.png) no-repeat center left;
     min-height: 190px;
+    background-size: cover;
 }
 
 .block_4 .cont_4 .graph ul
