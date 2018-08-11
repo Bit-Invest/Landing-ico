@@ -1,0 +1,76 @@
+.cryptoAssetsManagement {
+  background-image: linear-gradient(to top, #626f96, #2e164e);
+  padding: 70px 0;
+  color: white;
+}
+.cryptoAssetsManagement .row {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 45px;
+  margin-bottom: 110px;
+}
+.cryptoAssetsManagement h2 {
+  width: 720px;
+  font-size: 32px;
+}
+.cryptoAssetsManagement .video {
+  margin-right: 100px;
+  width: 280px;
+  height: 140px;
+  background-color: red;
+}
+.cryptoAssetsManagement .txt {
+  width: 670px;
+  margin-right: 160px;
+}
+.cryptoAssetsManagement .txt2 {
+  width: 670px;
+}
+.cryptoAssetsManagement .txt2 {
+  margin-left: 160px;
+}
+.cryptoAssetsManagement .problemBlock .txt .caption,
+.cryptoAssetsManagement .problemBlock .txt2 .caption{
+  font-size: 24px;
+}
+.cryptoAssetsManagement .problemBlock .txt  hr,
+.cryptoAssetsManagement .problemBlock .txt2 hr  {
+  width: 670px;
+  margin: 40px 0;
+}
+.cryptoAssetsManagement .problemBlock .txt  p,
+.cryptoAssetsManagement .problemBlock .txt2 p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.cryptoAssetsManagement .problemBlock .video_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img {
+  width: 300px;
+  height: 200px;
+  background-color: black;
+}
+.problemBlock {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px;
+}
+
+.problemBlock button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to top, #6e5fd6, #f086b8);
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+.problemBlock button:hover {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
