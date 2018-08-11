@@ -16,7 +16,7 @@ export class FeedbackProject extends React.Component {
     return (
       <div className="block_6">
         <div className="size">
-        <h2>Feedback On Our Project</h2>
+        <h2 className="header">Feedback On Our Project</h2>
           <div className="carusel-block">
             <Slider {...settings}>
 

@@ -1,0 +1,138 @@
+.roadmap {
+  padding: 84px 0;
+  background: linear-gradient(180deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
+}
+.roadmap__image {
+  margin: 50px auto 0 auto;
+}
+
+.roadmap__title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.roadmap__buttons {
+  margin: 40px auto 0 auto;
+  width: 541px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roadmap__button {
+  width: 166.7px;
+}
+
+.roadmap__map {
+  margin: 70px auto 0 auto;
+  position: relative;
+  width: 580px;
+}
+
+.roadmap__line {
+  top: 14px;
+  left: 6px;
+  position: absolute;
+  width: 567px;
+  height: 2px;
+  background-color: #fff;
+}
+.roadmap__circles {
+  margin-top: 28px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roadmap__circle {
+  cursor: pointer;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.roadmap__disc {
+  border-radius: 100%;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.roadmap__year {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.roadmap__quartal {
+  font-family: Geometria;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;  
+}
+
+.roadmap__quartals {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  width: 100%;
+  height: 16px;
+}
+
+.roadmap__years {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 16px;
+}
+
+.roadmap__quartal_1 {
+  margin-left: 5px;
+}
+.roadmap__quartal_9 {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .roadmap {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+  .roadmap__buttons {
+    margin: 0;
+  }
+  .roadmap__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .roadmap__map {
+    width: 647px;
+  }
+
+  .roadmap__line {
+    width: 600px;
+    left: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .roadmap {
+    padding-right: 135px;
+  }
+
+  .roadmap__map {
+    width: 904px;
+    
+  }
+
+  .roadmap__line {
+    width: 860px;
+  }
+}

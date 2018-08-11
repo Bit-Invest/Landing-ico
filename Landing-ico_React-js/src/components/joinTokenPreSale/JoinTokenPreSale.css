@@ -2,7 +2,7 @@
 {
   background: url(../../images/block_9_bg.png) no-repeat center;
   background-size: cover;
-  padding: 70px 0;
+  padding: 70px 38px;
   padding-bottom: 90px;
 }
 
@@ -125,6 +125,12 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 1299px) {
+.block_9 .container2 {
+  margin-left: 117px;
+}
 
+@media (max-width: 1439px) {
+  .block_9 .container2 {
+    margin: 0;
+  }
 }

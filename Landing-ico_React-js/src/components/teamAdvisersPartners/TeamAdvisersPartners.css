@@ -218,6 +218,12 @@
 .block_8 .ourPartners .img {
   height: 170px;
 }
+.block_8 .slick-next {
+  right: 0px;
+}
+.block_8 .slick-prev {
+  left: 0px;
+}
 
 
 @media (max-width: 1024px){
