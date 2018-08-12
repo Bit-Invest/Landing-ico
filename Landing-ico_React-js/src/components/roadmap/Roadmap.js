@@ -22,7 +22,7 @@ export const Roadmap = props => {
   }
 
   return (
-    <div className={`${ROOT_CLASS} ${ROOT_CLASS}__headcontainer`}>
+    <div className={`${ROOT_CLASS} ${ROOT_CLASS}__headcontainer`} id="exitAnimate">
       <div className="size">
         <div className={`${ROOT_CLASS}__header`}>
           <div className="header_blocks">Roadmap</div>

@@ -77,6 +77,10 @@
   outline: none;
 }
 
+.contentText {
+  position: relative;
+}
+
 .size {
   width:  100%;
   margin: 0 auto;

@@ -13,24 +13,28 @@ import { MainBlock } from '@components/mainBlock';
 import { CryptoAssetsManagement } from './components/cryptoAssetsManagement/CryptoAssetsManagement';
 import { TeamLegal } from './components/teamLegal/TeamLegal';
 import { Roadmap } from '@components/roadmap';
+import { CanvasMouns } from '@components/animate';
 import './App.css';
 
 export const App = props => (
   <div className="App">
+    <CanvasMouns />
     <PopUpManager />
-    <MainBlock />
-    <CryptoAssetsManagement />
-    <TeamLegal />
-    <Roadmap />
-    <ProblemSolving />
-    <HowCindxWorks />
-    {/*<MarketAnalytics />*/}
-    <TokenSaleDetails />
-    <LegalSchedule />
-    <FeedbackProject />
-    <MediaNews />
-    <TeamAdvisersPartners />
-    <JoinTokenPreSale />
+    <div className="contentText">
+      <MainBlock />
+      <CryptoAssetsManagement />
+      <TeamLegal />
+      <Roadmap />
+      <ProblemSolving />
+      <HowCindxWorks />
+      {/*<MarketAnalytics />*/}
+      <TokenSaleDetails />
+      <LegalSchedule />
+      <FeedbackProject />
+      <MediaNews />
+      <TeamAdvisersPartners />
+      <JoinTokenPreSale />
+    </div>
     <PopUpManager />
   </div>
 );

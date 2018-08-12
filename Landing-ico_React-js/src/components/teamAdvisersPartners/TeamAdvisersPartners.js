@@ -35,7 +35,7 @@ export class TeamAdvisersPartners extends React.Component {
       slidesToScroll: 1
     };
     return (
-      <div class="block_8">
+      <div className="block_8">
         <div className="size">
 
           <div className="team">
@@ -60,7 +60,7 @@ export class TeamAdvisersPartners extends React.Component {
                     <p><span>13</span> years in entrepreneurship</p>
                     <p><span>9</span> ventures</p>
                     <p><span>$2m</span> for crypto management </p>
-                    <a href>
+                    <a href="#">
                       <div src="../images/in.png" className="in" />
                     </a>
                   </div>
@@ -114,7 +114,7 @@ export class TeamAdvisersPartners extends React.Component {
                     <p><span>13</span> years in entrepreneurship</p>
                     <p><span>9</span> ventures</p>
                     <p><span>$2m</span> for crypto management </p>
-                    <a href>
+                    <a href="#">
                       <div src="../images/in.png" className="in" />
                     </a>
                   </div>

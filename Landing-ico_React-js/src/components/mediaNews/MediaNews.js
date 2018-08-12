@@ -33,7 +33,7 @@ export class MediaNews extends React.Component {
       slidesToScroll: 1
     };
     return (
-      <div class="block_7">
+      <div className="block_7">
         <div className="size">
           <h2 className="header_blocks">Media</h2>
           <div className="block_arrow_relative">
