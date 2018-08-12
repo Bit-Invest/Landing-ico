@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.block_9 * {
+  color: white;
+}
+
 
 .block_9 a.sb
 {
@@ -121,10 +125,11 @@
 
 .block_9 .container2 {
   margin-left: 117px;
+  margin-top: 70px;
 }
 
 @media (max-width: 1439px) {
   .block_9 .container2 {
-    margin: 0;
+    margin: 70px 0 0;
   }
 }

@@ -25,7 +25,11 @@
   color: white;
 }
 
-.block_5:after {
+.block_5 .size {
+  position: relative;
+}
+
+.block_5 .size:after {
   content: '';
   position: absolute;
   top: 416px;
@@ -82,7 +86,7 @@
   font-weight: normal;
   position: absolute;
   display: block;
-  bottom: 135px;
+  top: 20px;
   line-height: 18px;
   width: 100%;
   word-wrap: break-word;
@@ -175,7 +179,7 @@
 }
 
 @media (max-width: 1439px){
-  .block_5:after {
+  .block_5 .size:after {
     content: '';
     width: 86%;
     left: 7%;
@@ -183,7 +187,7 @@
 }
 
 @media (max-width: 1023px){
-  .block_5:after {
+  .block_5 .size:after {
     content: '';
     position: absolute;
     top: 412px;

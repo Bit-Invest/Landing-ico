@@ -10,35 +10,16 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2E1D68',endColorstr='#8D2D5E' , GradientType=0);
 }
 
+.block_8 * {
+  color: white;
+}
+
 
 /*TEAM*/
 
-.block_8 .team .slick-prev:before {
-    font-size: 0px;
-    display: block;
-    position: absolute;
-    padding: 0;
-    background: url(../../images/arrow_big_left.png);
-    top: -60px;
-    margin-top: 0px;
-    left: 30px;
-    width: 21px;
-    height: 38px;
-    background-size: cover;
-}
-
-.block_8 .team .slick-next:before {
-    font-size: 0px;
-    display: block;
-    position: absolute;
-    padding: 0;
-    background: url(../../images/arrow_big_right.png);
-    top: -60px;
-    margin-top: 0px;
-    right: 30px;
-    width: 21px;
-    height: 38px;
-    background-size: cover;
+.block_8 .settings,
+.block_8 .settings2 {
+  margin: 70px 0 100px;
 }
 
 .block_8 .settings {
@@ -101,45 +82,20 @@
   margin-bottom: 70px;
 }
 
-.block_8 .advisers .slick-prev:before {
-    font-size: 0px;
-    display: block;
-    position: absolute;
-    padding: 0;
-    background: url(../../images/arrow_big_left.png);
-    top: 50%;
-    margin-top: -50px;
-    left: 30px;
-    width: 21px;
-    height: 38px;
-    background-size: cover;
-}
-
-.block_8 .advisers .slick-next:before {
-    font-size: 0px;
-    display: block;
-    position: absolute;
-    padding: 0;
-    background: url(../../images/arrow_big_right.png);
-    top: 50%;
-    margin-top: -50px;
-    right: 30px;
-    width: 21px;
-    height: 38px;
-    background-size: cover;
-}
-
 .block_8 .advisers .slick-list {
   margin: 0 auto;
   width: 1160px;
-  height: 580px;
   border-radius: 10px;
+}
+
+.block_8 .advisers .settings2_1 {
+  padding: 70px 0 100px;
 }
 
 .block_8 .advisers .left_content {
   float: left;
   width: 440px;
-  height: 580px;
+  height: 620px;
   background-color: #7b5590;
   text-align: center;
 }
@@ -186,7 +142,7 @@
 .block_8 .advisers .right_content {
   float: left;
   width: 720px;
-  height: 580px;
+  height: 620px;
   background-color: white;
 }
 
@@ -213,12 +169,6 @@
 .block_8 .ourPartners .img {
   height: 170px;
 }
-.block_8 .slick-next {
-  right: 0px;
-}
-.block_8 .slick-prev {
-  left: 0px;
-}
 
 
 @media (max-width: 1023px){
@@ -233,10 +183,6 @@
   }
   .block_8 .advisers .slick-list {
     width: 940px;
-  }
-  .block_8 .team .slick-next:before {
-    right: 60px;
-    top: -266px;
   }
   .block_8 .ourPartners .slick-list {
     width: 940px;

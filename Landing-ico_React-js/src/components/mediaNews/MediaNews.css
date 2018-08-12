@@ -12,32 +12,16 @@
 
 /*MEDIA*/
 
-.block_7 .slick-prev:before {
-  font-size: 0px;
-  display: block;
-  position: absolute;
-  padding: 0;
-  background: url(../../images/arrow_big_left.png);
-  top: -60px;
-  margin-top: 0px;
-  left: -70px;
-  width: 21px;
-  height: 38px;
-  background-size: cover;
+.block_7 .settings,
+.block_7 .settingsNews {
+  margin-top: 70px;
+  padding-bottom: 80px;
 }
 
-.block_7 .slick-next:before {
-  font-size: 0px;
-  display: block;
-  position: absolute;
-  padding: 0;
-  background: url(../../images/arrow_big_right.png);
-  top: -60px;
-  margin-top: 0px;
-  right: -70px;
-  width: 21px;
-  height: 38px;
-  background-size: cover;
+.block_7 .settings2,
+.block_7 .settingsNews2 {
+  margin-top: 70px;
+  padding-bottom: 80px;
 }
 
 .block_7 .settings2 {
@@ -47,13 +31,18 @@
 .block_7 .txt .bg {
   color: black;
   width: 300px;
-  height: 250px;
+  min-height: 300px;
   padding: 20px;
   background: #FFFFFF;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   /* margin-left: 20px; */
+}
+
+.block_7 .slick-slide {
+  display: flex !important;
+  justify-content: center;  
 }
 
 .block_7  .slick-slider {
@@ -143,14 +132,6 @@
   .block_7  .slick-slider {
     width: 940px;
     margin: 0 auto;
-  }
-  .block_7 .slick-next:before {
-    right: 90px;
-    top: -247px;
-  }
-  .block_7 .slick-prev:before {
-    left: 500px;
-    top: -247px;
   }
   .block_7 .img {
     width: 300px;

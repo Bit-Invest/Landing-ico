@@ -8,7 +8,9 @@
 }
 .cryptoAssetsManagement .header_blocks {
   width: 50%;
-  margin-right: 15% !important;
+}
+.cryptoAssetsManagement .video {
+  margin-left: 15%;
 }
 .cryptoAssetsManagement .video {
   width: 30%;
