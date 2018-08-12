@@ -39,7 +39,7 @@ export class TeamAdvisersPartners extends React.Component {
         <div className="size">
 
           <div className="team">
-            <h2 className="header">Team of 40+ Members</h2>
+            <h2 className="header_blocks">Team of 40+ Members</h2>
             <div className="settings">
               <Slider {...settings}>
                 <div className="item">
@@ -147,7 +147,7 @@ export class TeamAdvisersPartners extends React.Component {
           </div>
           <div className="clear" />
           <div className="advisers">
-            <h2 className="header">Advisers</h2>
+            <h2 className="header_blocks">Advisers</h2>
             <Slider {...settingsAdvisers}>
               <div>
                 <div className="left_content">

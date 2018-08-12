@@ -1,5 +1,5 @@
 .block_8 {
-  padding: 70px 0;
+  padding: 0;
   background : -moz-linear-gradient(50% 0% -90deg,rgba(46, 29, 104, 1) 0%,rgba(51, 30, 103, 1) 18.15%,rgba(66, 32, 102, 1) 40.15%,rgba(90, 36, 99, 1) 64.16%,rgba(124, 42, 96, 1) 89.42%,rgba(141, 45, 94, 1) 100%);
   background : -webkit-linear-gradient(-90deg, rgba(46, 29, 104, 1) 0%, rgba(51, 30, 103, 1) 18.15%, rgba(66, 32, 102, 1) 40.15%, rgba(90, 36, 99, 1) 64.16%, rgba(124, 42, 96, 1) 89.42%, rgba(141, 45, 94, 1) 100%);
   background : -webkit-gradient(linear,50% 0% ,50% 100% ,color-stop(0,rgba(46, 29, 104, 1) ),color-stop(0.1815,rgba(51, 30, 103, 1) ),color-stop(0.4015,rgba(66, 32, 102, 1) ),color-stop(0.6416,rgba(90, 36, 99, 1) ),color-stop(0.8942,rgba(124, 42, 96, 1) ),color-stop(1,rgba(141, 45, 94, 1) ));
@@ -12,11 +12,6 @@
 
 
 /*TEAM*/
-.block_8 .team h2
-{
-  margin-bottom: 70px;;
-  font-size: 40px;
-}
 
 .block_8 .team .slick-prev:before {
     font-size: 0px;
@@ -226,7 +221,7 @@
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 1023px){
   .block_8 .ourPartners .carusel-block .img {
     height: 140px;
   }

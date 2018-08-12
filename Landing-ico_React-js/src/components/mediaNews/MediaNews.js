@@ -35,7 +35,7 @@ export class MediaNews extends React.Component {
     return (
       <div class="block_7">
         <div className="size">
-          <h2>Media</h2>
+          <h2 className="header_blocks">Media</h2>
           <div className="settings">
             <Slider {...settings}>
               <div className="txt">
@@ -93,7 +93,7 @@ export class MediaNews extends React.Component {
             </Slider>
           </div>
           <hr/>
-          <h2>News</h2>
+          <h2 className="header_blocks">News</h2>
           <div className="settingsNews">
             <Slider {...settingsNews}>
                 <div className="item">

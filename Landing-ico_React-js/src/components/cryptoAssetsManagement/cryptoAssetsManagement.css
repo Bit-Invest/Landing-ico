@@ -1,33 +1,32 @@
 .cryptoAssetsManagement {
   background-image: linear-gradient(to top, #626f96, #2e164e);
-  padding: 70px 0;
+  padding: 0;
   color: white;
 }
 .cryptoAssetsManagement .row {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 45px;
   margin-bottom: 110px;
 }
-.cryptoAssetsManagement h2 {
-  width: 720px;
-  font-size: 32px;
+.cryptoAssetsManagement .header_blocks {
+  width: 50%;
+  margin-right: 15% !important;
 }
 .cryptoAssetsManagement .video {
-  margin-right: 100px;
-  width: 280px;
+  width: 30%;
   height: 140px;
   background-color: red;
+  margin-top: 80px;
+  display: inline-block;
+  max-width: 300px;
 }
 .cryptoAssetsManagement .txt {
-  width: 670px;
-  margin-right: 160px;
+  width: 40%;
+  margin-right: 10%;
 }
 .cryptoAssetsManagement .txt2 {
-  width: 670px;
+  width: 40%;
 }
 .cryptoAssetsManagement .txt2 {
-  margin-left: 160px;
+  margin-left: 10%;
 }
 .cryptoAssetsManagement .problemBlock .txt .caption,
 .cryptoAssetsManagement .problemBlock .txt2 .caption{
@@ -35,7 +34,7 @@
 }
 .cryptoAssetsManagement .problemBlock .txt  hr,
 .cryptoAssetsManagement .problemBlock .txt2 hr  {
-  width: 670px;
+  width: 100%;
   margin: 40px 0;
 }
 .cryptoAssetsManagement .problemBlock .txt  p,
@@ -48,16 +47,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 30%;
+  margin-top: 50px;
 }
-.img {
-  width: 300px;
+.cryptoAssetsManagement .problemBlock .video_block .img {
+  width: 100%;
   height: 200px;
+  max-width: 330px;
   background-color: black;
 }
 .problemBlock {
   display: flex;
   justify-content: center;
-  margin-bottom: 140px;
+  padding-bottom: 140px;
 }
 
 .problemBlock button {
@@ -70,7 +72,19 @@
   font-size: 14px;
   font-weight: 500;
   color: white;
+  line-height: 40px;
 }
 .problemBlock button:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1023px) { 
+  .cryptoAssetsManagement .header_blocks {
+    width: 90%;
+    display: block;
+  }
+  .cryptoAssetsManagement .video {
+    display: block;
+    margin: 70px auto;    
+  }
 }

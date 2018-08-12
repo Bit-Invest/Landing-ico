@@ -6,13 +6,15 @@
     background: -webkit-linear-gradient(top, #5142a9 0%,#5f59cf 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #5142a9 0%,#5f59cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5142a9', endColorstr='#5f59cf',GradientType=0 ); /* IE6-9 */
-    padding: 70px 0;
+    padding: 0;
 }
 
-.block_2 h2{
-  font-weight: bold;
-  font-size: 40px;
-  margin-left: 45px;
+.block_2 * {
+  color: white;
+}
+.block_2 .container {
+  margin-top: 60px;
+  padding-bottom: 40px;
 }
 
 .block_2 .cont_row {
@@ -84,7 +86,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .block_2 h2 {
     font-size: 32px;
     margin-left: 70px;

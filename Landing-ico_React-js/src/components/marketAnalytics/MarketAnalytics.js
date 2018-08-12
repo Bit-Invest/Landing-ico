@@ -22,7 +22,7 @@ export const MarketAnalytics = () => {
   return (
     <div className="block_3">
       <div className="size">
-        <h2>
+        <h2 className="header_blocks">
           Market Analytics
         </h2>
         <div className="statick">

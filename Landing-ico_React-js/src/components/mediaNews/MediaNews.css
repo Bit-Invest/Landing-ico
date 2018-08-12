@@ -1,6 +1,6 @@
 .block_7
 {
-  padding: 70px 0;
+  padding: 0;
   background: #6c5ed6;
 }
 
@@ -85,12 +85,12 @@
 
 .block_7 hr {
   display: block;
-  margin: 50px 0;
   padding: 0;
   border: 0;
   width: auto;
   height: 1px;
   background: #fff;
+  margin: 0;
 }
 
 /*NEWS*/
@@ -136,7 +136,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .block_7 .txt .bg {
     width: 260px;
   }

@@ -13,7 +13,7 @@ const ROOT_CLASS = 'ico-info';
 export const IcoInfo = props => (
   <div className={ROOT_CLASS}>
     <div className={`${ROOT_CLASS}__progress-bar`}>
-      <ProgressBar money="1.053,972" percent="30"/>
+      <ProgressBar money="1.053,972" percent="4"/>
     </div>
     <div className={`${ROOT_CLASS}__signed-partners`}>
       <div className={`${ROOT_CLASS}__title`}>

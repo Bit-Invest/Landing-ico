@@ -14,7 +14,7 @@ import linkedin_icon from '../../media/linkedin_icon.png';
 export const JoinTokenPreSale = () => (
   <div className="block_9">
     <div className="size">
-      <h2>Join Token Pre-Sale now!</h2>
+      <h2 className="header_blocks">Join Token Pre-Sale now!</h2>
       <div className="container2">
         <a href="#" className="sb">
           JOIN PRE-SALE
