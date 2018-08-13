@@ -1,0 +1,56 @@
+.progressBarSale {
+  padding: 50px 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+.progressBarSale .container {
+  width: 900px;
+  margin: 0px auto;
+}
+.progressBarSale .container .saleName {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.progressBarSale .container .saleName p {
+  margin: 0;
+}
+.progressBarSale .container .cinx {
+
+  font-weight: 500;
+}
+.progressBarSale .container .sale-bonusses {
+  padding-right: 350px;
+}
+.progressBarSale .progressBar {
+  width: 900px;
+  height: 34px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 17px;
+}
+.progressBarSale .progressBar .progress {
+  width: 210px;
+  height: 34px;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.progressBarSale .container .progress-data {
+  display: flex;
+  justify-content: space-between;
+}
+.progressBarSale .container .progress-data .data {
+  text-align: center;
+  margin-top: 5px;
+}
+.progressBarSale .container .progress-data .data p {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 500;
+}
+.progressBarSale .container .progress-data .data .amount {
+  font-size: 14px;
+  font-weight: 300;
+}

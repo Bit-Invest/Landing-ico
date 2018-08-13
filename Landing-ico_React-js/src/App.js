@@ -14,6 +14,7 @@ import { CryptoAssetsManagement } from './components/cryptoAssetsManagement/Cryp
 import { TeamLegal } from './components/teamLegal/TeamLegal';
 import { Roadmap } from '@components/roadmap';
 import { CanvasMouns } from '@components/animate';
+import { ProgressBarSale } from '@components/progressBarSale/ProgressBarSale';
 import './App.css';
 
 export const App = props => (
@@ -22,12 +23,13 @@ export const App = props => (
     <PopUpManager />
     <div className="contentText">
       <MainBlock />
+      <ProgressBarSale />
       <CryptoAssetsManagement />
       <TeamLegal />
       <Roadmap />
       <ProblemSolving />
       <HowCindxWorks />
-      {/*<MarketAnalytics />*/}
+      <MarketAnalytics />
       <TokenSaleDetails />
       <LegalSchedule />
       <FeedbackProject />

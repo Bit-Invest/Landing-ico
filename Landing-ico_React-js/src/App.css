@@ -421,11 +421,11 @@ width: 720px;
   position: relative;
 }
 
-.block_6 .slick-next, 
+.block_6 .slick-next,
 .block_6 .slick-prev,
-.block_7 .slick-next, 
+.block_7 .slick-next,
 .block_7 .slick-prev,
-.block_8 .slick-next, 
+.block_8 .slick-next,
 .block_8 .slick-prev {
   float: none;
   height: 92px;
@@ -455,7 +455,7 @@ width: 720px;
   display: block;
   position: relative;
   padding: 0;
-  background: url(./images/arrow_big_left.png);  
+  background: url(./images/arrow_big_left.png);
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -468,16 +468,15 @@ width: 720px;
   display: block;
   position: relative;
   padding: 0;
-  background: url(./images/arrow_big_right.png);  
+  background: url(./images/arrow_big_right.png);
   width: 100%;
   height: 100%;
   background-size: cover;
 }
 
-@media (max-width: 1439px)
-{
+@media (max-width: 1439px) {
 
-  .block_7 .slick-next, 
+  .block_7 .slick-next,
   .block_7 .slick-prev,
   .block_8 .slick-next,
   .block_8 .slick-prev {
@@ -499,14 +498,14 @@ width: 720px;
     margin-left: -150px;
   }
 
-  .block_7 .slick-next, 
+  .block_7 .slick-next,
   .block_7 .slick-prev,
-  .block_8 .slick-next, 
+  .block_8 .slick-next,
   .block_8 .slick-prev {
     margin-top: -95px;
   }
 
-  .block_8 .settings2_1 .slick-next, 
+  .block_8 .settings2_1 .slick-next,
   .block_8 .settings2_1 .slick-prev {
     margin-top: -27px;
   }
@@ -561,6 +560,22 @@ width: 720px;
       padding-top: 135px;
     }
 
+    .progressBarSale .container {
+      width: 780px;
+    }
+
+    .progressBarSale .progressBar {
+      width: 780px;
+    }
+
+    .progressBarSale .progressBar .progress {
+      width: 182px;
+    }
+
+    .progressBarSale .container .sale-bonusses {
+      padding-right: 300px;
+    }
+
     .block_1 h1
     {
       font-size: 32px;
@@ -583,6 +598,10 @@ width: 720px;
       margin-left: 45px;
     }
 
+    .block_3 .statick {
+      margin-top: 70px;
+    }
+
     .block_3 .ico_block
     {
         float: none;
@@ -598,37 +617,38 @@ width: 720px;
 
     .block_3 .owl-carousel {
       display: flex;
-      justify-content: center;
-      margin: 0 45px;
+      justify-content: space-between;
     }
 
     .block_3 .owl-carousel .item {
       padding: 20px;
       width: 300px;
-      height: 330px;
+      height: 350px;
     }
 
     .block_3 .owl-carousel .item h3 {
       margin: 0;
+      margin-bottom: 40px;
     }
 
     .block_3 .owl-carousel .item a.size
     {
-        display: none;
+      display: none;
     }
 
     .block_3 .other_text .cont_1,
     .block_3 .other_text .cont_2
     {
-        font-size: 16px;
-        width: 315px;
+      font-size: 16px;
+      width: 300.block_3 .owl-carouselpx;
+      padding-left: 15px;
     }
 
     .block_3 .other_text
     {
       position: initial;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       margin: 50px 45px;
     }
 
@@ -644,12 +664,23 @@ width: 720px;
         z-index: 2;
     }
 
+    .block_3 .other_text .cont_3 {
+      width: 190px;
+      padding-right: 0px;
+      margin-right: 0px;
+    }
+
+    .block_3 .other_text .cont_3 img {
+      margin-left: 0px;
+    }
+
     .block_3 .other_geo .cont_row {
       justify-content: center;
       margin: 0 45px;
     }
 
     .block_3 .other_geo .cont_row .row {
+      width: 300px;
       float: none;
       display: block;
       margin: 20px;
@@ -668,7 +699,7 @@ width: 720px;
         margin-left: -340px;
     }
 
-    
+
 
     .block_5 h2 {
       font-size: 32px;
@@ -1551,13 +1582,13 @@ body.compensate-for-scrollbar {
 /* Styling for Small-Screen Devices */
 @media all and (max-width: 800px) {
   .fancybox-thumbs {
-    width: 110px; 
+    width: 110px;
   }
   .fancybox-show-thumbs .fancybox-inner {
-    right: 110px; 
+    right: 110px;
   }
   .fancybox-thumbs > ul > li {
-    max-width: calc(100% - 10px); 
+    max-width: calc(100% - 10px);
   }
 }
 
@@ -1570,7 +1601,7 @@ body.compensate-for-scrollbar {
 
 @media (max-width: 1023px) {
 
-  .block_6 .slick-next, 
+  .block_6 .slick-next,
   .block_6 .slick-prev {
     left: 100%;
     right: 0;
@@ -1588,7 +1619,7 @@ body.compensate-for-scrollbar {
     margin-left: -150px;
   }
 
-  .block_6 .slick-next, 
+  .block_6 .slick-next,
   .block_6 .slick-prev {
     margin-top: -120px;
   }
@@ -1598,6 +1629,21 @@ body.compensate-for-scrollbar {
     }
     .container2 {
       width: 620px;
+    }
+    .progressBarSale .container {
+      width: 480px;
+    }
+
+    .progressBarSale .progressBar {
+      width: 480px;
+    }
+
+    .progressBarSale .progressBar .progress {
+      width: 112px;
+    }
+
+    .progressBarSale .container .sale-bonusses {
+      padding-right: 150px;
     }
     .block_1 {
       padding-bottom: 50px;
@@ -1631,6 +1677,30 @@ body.compensate-for-scrollbar {
       margin: 0 auto;
       width: 620px;
     }
+    .block_3 .owl-carousel {
+      display: block;
+      margin-top: 50px;
+    }
+    .block_3 .owl-carousel .item {
+      margin: 0px;
+      height: 500px;
+    }
+    .block_3 .carusel .owl-carousel .item img {
+      width: 395px;
+      height: auto;
+      margin: 0 auto;
+    }
+    .block_3 .carusel .carusel_txt {
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 620px;
+    }
+    .block_3 .carusel .cont_1,
+    .block_3 .carusel .cont_2,
+    .block_3 .carusel .cont_3 {
+      font-size: 16px;
+      width: 620px;
+    }
     .block_5 h2 {
       font-size: 32px;
       margin-left: 75px;
@@ -1648,7 +1718,7 @@ body.compensate-for-scrollbar {
     .block_5 .settings2 .cont_item {
       height: 310px;
     }
-    
+
     .block_7 h2{
       font-size: 32px;
       margin-left: 75px;
