@@ -37,7 +37,7 @@ export const Roadmap = props => {
             </div>
             <div className={`${ROOT_CLASS}__button`}>
               <Button
-                title="$12 M SCENARIO" 
+                title="$12 M SCENARIO"
                 theme={`${props.currentButton === '12m' ? 'gradient' : ''}`}
                 payload={{name: '12m'}}
                 onClick={props.onClickButton}
@@ -101,6 +101,9 @@ export const Roadmap = props => {
                 {renderCircles()}
               </div>
             </div>
+            <p className={`${ROOT_CLASS}__text`}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            </p>
             <img className={`${ROOT_CLASS}__image`} src={props.imageSrc} />
           </div>
         </div>
