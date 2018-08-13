@@ -842,12 +842,23 @@ margin-top: 30px;
   position: relative;
   float: right;
   width: 45px;
-  bottom: 10px;
+  bottom: 40px;
 }
 
  .icon-block .icon {
   width: 40px;
   height: 40px;
+}
+
+.priv_pol {
+    margin-left: 10px;
+}
+
+.priv_pol a {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
 }
 
 @media (max-width: 1300px)
