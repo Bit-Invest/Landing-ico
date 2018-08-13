@@ -154,9 +154,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .roadmap {
-    padding-right: 135px;
-  }
   .roadmap__map {
     width: 904px;
   }

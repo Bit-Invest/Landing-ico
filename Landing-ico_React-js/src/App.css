@@ -1616,6 +1616,12 @@ body.compensate-for-scrollbar {
     .container2 {
       width: 620px;
     }
+    .menu .menu-item {
+      display: none;
+    }
+    .menu .menu-768px {
+      display: flex;
+    }
     .progressBarSale .container {
       width: 480px;
     }

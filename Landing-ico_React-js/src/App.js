@@ -15,6 +15,7 @@ import { TeamLegal } from './components/teamLegal/TeamLegal';
 import { Roadmap } from '@components/roadmap';
 import { CanvasMouns } from '@components/animate';
 import { ProgressBarSale } from '@components/progressBarSale/ProgressBarSale';
+import { Menu } from '@components/menu/Menu';
 import './App.css';
 
 export const App = props => (
@@ -22,6 +23,7 @@ export const App = props => (
     <CanvasMouns />
     <PopUpManager />
     <div className="contentText">
+      <Menu />
       <MainBlock />
       <ProgressBarSale />
       <CryptoAssetsManagement />

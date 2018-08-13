@@ -1,6 +1,7 @@
 .block_4
 {
   padding-bottom: 350px;
+  position: relative;
   background : -moz-linear-gradient(50% 0% -90deg,rgba(76, 32, 115, 1) 0%,rgba(8, 159, 195, 1) 100%);
   background : -webkit-linear-gradient(-90deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
   background : -webkit-gradient(linear,50% 0% ,50% 100% ,color-stop(0,rgba(76, 32, 115, 1) ),color-stop(1,rgba(8, 159, 195, 1) ));
@@ -9,7 +10,6 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4C2073', endColorstr='#089FC3' ,GradientType=0)";
   background : linear-gradient(180deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4C2073',endColorstr='#089FC3' , GradientType=0);
-  position: relative;
   overflow: hidden;
 }
 
