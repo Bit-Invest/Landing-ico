@@ -104,20 +104,20 @@ define(function(){
       img: './media/Jelena.png',
       name: 'Jelena Karzetskaja',
       position: 'Compliance Officer',
-      fackt1: 'holds several degrees in law',
-      fackt2: 'judicial practice since 1997',
-      fackt3: 'legal spheres: international law, administrative law, civil law and procedure, labour law',
+      fackt1: 'Holds several degrees in law',
+      fackt2: 'Judicial practice since 1997',
+      fackt3: 'International law',
       src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/'
     },
-    {
-      img: './media/Leonard.png',
-      name: 'Leonard Grayver',
-      position: 'Compliance Officer',
-      fackt1: 'Partner at Greenberg, Whitcombe & Takeuchi',
-      fackt2: 'Represented over 400 startups',
-      fackt3: 'Raised more than 18 mln USD for his startup when he was a student at Law school',
-      src: 'https://www.linkedin.com/in/leonardgrayver/'
-    }
+//    {
+//      img: './media/Dong.png',
+//      name: 'Wang Dong',
+//      position: 'Specialist in Chinese Blockchain market',
+//      fackt1: '3 years in php/ JavaScript',
+//      fackt2: '5 years in SEO/SMM/media buyer',
+//      fackt3: '2 years in Blockchain development and token sale in China',
+//      src: 'https://www.linkedin.com/'
+//    }
    ];
 
 
@@ -251,6 +251,36 @@ define(function(){
         'Preferring a “hands-on” approach, I am a specialist in ICO analysis, project management, all key aspects of the ICO process. I am skilled in business management and growth, which enable me to see a project from inception through to delivery. I am a problem solver by nature, and I take any project I am involved with personally. I like to win!',
         'With over 20 years of management experience I built up a powerful network, I actively advise on finance, tech, sales, marketing and quality assurance for high-level blockchain projects.',
         'Career and projects: <br> Dynamic Abundance, ELYSIAN, Worldopoly, Confidential ICO,  Fox Trading FX, Profede, Market Digital, CINDX'
+      ]
+    },
+    {
+      img: './media/Motti.png',
+      video: '',
+      name: 'Motti Peer',
+      src: 'https://www.linkedin.com/in/mottipeer/',
+      position: '2Co-founder of Blonde 2.0 global PR agency',
+      fackt1: 'Serial entrepreneur in the security and finance',
+      fackt2: 'Focus in PR for Blockchain and Crypto, startups, VCs',
+      linkedin: 'https://www.linkedin.com/in/sadie-hutton/',
+      text: [
+        'Motti founded various companies in the security and finance sectors. He has many years of experience as a money and hedge fund manager and holds an MBA in Finance and Marketing from Manchester University and a BA in Business Management from Fairleigh Dickinson University.',
+        ' He is a Co-CEO of Blonde 2.0, an award-winning global PR agency also named as one the startup nation’s “Movers and Shakers” on Forbes.',
+        'As Co-CEO of Blonde 2.0, he is responsible for handling the Public Relations aspects, along with strategy and crisis management. With a team of 35 professionals, Blonde 2.0 is one of the leading forces in PR for Blockchain and Crypto, startups, VCs.'
+      ]
+    },
+    {
+      img: './media/Leonard.png',
+      video: '',
+      name: 'Leonard Grayver',
+      src: 'https://www.linkedin.com/in/leonardgrayver/',
+      position: 'Partner at Greenberg, Whitcombe & Takeuchi',
+      fackt1: 'Represented over 400 startups',
+      fackt2: '18 mln USD Raised for his startup',
+      linkedin: 'https://www.linkedin.com/in/sadie-hutton/',
+      text: [
+        'Leonard Grayver was born in USSR, moved to US with his parents as a kid. While in Law school Leonard created a start-up and successfully raised more than 18 mln USD for financing.',
+        'Start-up has not survived but since then Leonard has helped more than 400 start-ups. Overall Leonard has more than 10 years of experience with VC financing, fund structuring, due diligence (representing both funds and LPs). His advise to all entrepreneurs - do not follow trends, follow your interests.',
+        'Leonard has established strong professional connections with various international venture funds.'
       ]
     }
    ];
