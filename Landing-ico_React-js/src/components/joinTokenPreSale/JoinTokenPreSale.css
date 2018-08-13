@@ -2,15 +2,13 @@
 {
   background: url(../../images/block_9_bg.png) no-repeat center;
   background-size: cover;
-  padding: 70px 38px;
   padding-bottom: 90px;
+  display: table;
+  width: 100%;
 }
 
-.block_9 h2
-{
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 50px;
+.block_9 * {
+  color: white;
 }
 
 
@@ -127,10 +125,11 @@
 
 .block_9 .container2 {
   margin-left: 117px;
+  margin-top: 70px;
 }
 
 @media (max-width: 1439px) {
   .block_9 .container2 {
-    margin: 0;
+    margin: 70px 0 0;
   }
 }

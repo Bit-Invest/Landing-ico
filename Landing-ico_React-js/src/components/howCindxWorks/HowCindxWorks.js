@@ -30,7 +30,7 @@ const HowCindxWorksInfo = {
 export const HowCindxWorks = props => (
   <div className="block_2">
     <div className="size">
-      <h2>In a Nutshell: How CINDX Works</h2>
+      <h2 className="header_blocks">In a Nutshell: How CINDX Works</h2>
         <div className="container">
           <div className="cont_row">
             <HowCindxWorksChild

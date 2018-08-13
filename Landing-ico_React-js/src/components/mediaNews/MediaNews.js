@@ -13,7 +13,7 @@ export class MediaNews extends React.Component {
       slidesToScroll: 1
     };
     const settingsNews = {
-      arrows: false,
+      arrows: true,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
@@ -26,161 +26,169 @@ export class MediaNews extends React.Component {
       slidesToScroll: 1
     };
     const settingsNews2 = {
-      arrows: false,
+      arrows: true,
       infinite: true,
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1
     };
     return (
-      <div class="block_7">
+      <div className="block_7">
         <div className="size">
-          <h2>Media</h2>
-          <div className="settings">
-            <Slider {...settings}>
-              <div className="txt">
-                <div className="bg">
-                  <h3>CINDX legal: The issuance of the CINX tokens</h3>
-                  <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+          <h2 className="header_blocks">Media</h2>
+          <div className="block_arrow_relative">
+            <div className="settings">
+              <Slider {...settings}>
+                <div className="txt">
+                  <div className="bg">
+                    <h3>CINDX legal: The issuance of the CINX tokens</h3>
+                    <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                  </div>
                 </div>
-              </div>
-              <div className="txt">
-                <div className="bg">
-                  <h3>CINDX legal: The issuance of the CINX tokens</h3>
-                  <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                <div className="txt">
+                  <div className="bg">
+                    <h3>CINDX legal: The issuance of the CINX tokens</h3>
+                    <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                  </div>
                 </div>
-              </div>
-              <div className="txt">
-                <div className="bg">
-                  <h3>CINDX legal: The issuance of the CINX tokens</h3>
-                  <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                <div className="txt">
+                  <div className="bg">
+                    <h3>CINDX legal: The issuance of the CINX tokens</h3>
+                    <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                  </div>
                 </div>
-              </div>
-              <div className="txt">
-                <div className="bg">
-                  <h3>CINDX legal: The issuance of the CINX tokens</h3>
-                  <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                <div className="txt">
+                  <div className="bg">
+                    <h3>CINDX legal: The issuance of the CINX tokens</h3>
+                    <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                  </div>
                 </div>
-              </div>
-            </Slider>
+              </Slider>
+            </div>
           </div>
-          <div className="settings2">
-            <Slider {...settings2}>
-              <div className="txt">
-                <div className="bg">
-                  <h3>CINDX legal: The issuance of the CINX tokens</h3>
-                  <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+          <div className="block_arrow_relative">
+            <div className="settings2">
+              <Slider {...settings2}>
+                <div className="txt">
+                  <div className="bg">
+                    <h3>CINDX legal: The issuance of the CINX tokens</h3>
+                    <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                  </div>
                 </div>
-              </div>
-              <div className="txt">
-                <div className="bg">
-                  <h3>CINDX legal: The issuance of the CINX tokens</h3>
-                  <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                <div className="txt">
+                  <div className="bg">
+                    <h3>CINDX legal: The issuance of the CINX tokens</h3>
+                    <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                  </div>
                 </div>
-              </div>
-              <div className="txt">
-                <div className="bg">
-                  <h3>CINDX legal: The issuance of the CINX tokens</h3>
-                  <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                <div className="txt">
+                  <div className="bg">
+                    <h3>CINDX legal: The issuance of the CINX tokens</h3>
+                    <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                  </div>
                 </div>
-              </div>
-              <div className="txt">
-                <div className="bg">
-                  <h3>CINDX legal: The issuance of the CINX tokens</h3>
-                  <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                <div className="txt">
+                  <div className="bg">
+                    <h3>CINDX legal: The issuance of the CINX tokens</h3>
+                    <p>CINDX aspires to be fully compliant with laws surrounding ICO/STO projects. We are committed to publishing the necessary licensure...</p><a target="blank" href=" https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d">www.medium.com</a>
+                  </div>
                 </div>
-              </div>
-            </Slider>
+              </Slider>
+            </div>
           </div>
           <hr/>
-          <h2>News</h2>
-          <div className="settingsNews">
-            <Slider {...settingsNews}>
-                <div className="item">
-                  <div className="txtNews">
-                    <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
-                    <div className="content">
-                      <h3>Meet World’s First Financial Crypto Social Network</h3>
-                      <div className="clear" />
-                      <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
-                      <a href="#">read more</a></div>
-                    </div>
-                </div>
-                <div className="item">
-                  <div className="txtNews">
-                    <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
-                    <div className="content">
-                      <h3>Meet World’s First Financial Crypto Social Network</h3>
-                      <div className="clear" />
-                      <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
-                      <a href="#">read more</a></div>
-                    </div>
-                </div>
-                <div className="item">
-                  <div className="txtNews">
-                    <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
-                    <div className="content">
-                      <h3>Meet World’s First Financial Crypto Social Network</h3>
-                      <div className="clear" />
-                      <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
-                      <a href="#">read more</a></div>
-                    </div>
-                </div>
-                <div className="item">
-                  <div className="txtNews">
-                    <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
-                    <div className="content">
-                      <h3>Meet World’s First Financial Crypto Social Network</h3>
-                      <div className="clear" />
-                      <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
-                      <a href="#">read more</a></div>
-                    </div>
-                </div>
-            </Slider>
+          <h2 className="header_blocks">News</h2>
+          <div className="block_arrow_relative">
+            <div className="settingsNews">
+              <Slider {...settingsNews}>
+                  <div className="item">
+                    <div className="txtNews">
+                      <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
+                      <div className="content">
+                        <h3>Meet World’s First Financial Crypto Social Network</h3>
+                        <div className="clear" />
+                        <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
+                        <a href="#">read more</a></div>
+                      </div>
+                  </div>
+                  <div className="item">
+                    <div className="txtNews">
+                      <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
+                      <div className="content">
+                        <h3>Meet World’s First Financial Crypto Social Network</h3>
+                        <div className="clear" />
+                        <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
+                        <a href="#">read more</a></div>
+                      </div>
+                  </div>
+                  <div className="item">
+                    <div className="txtNews">
+                      <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
+                      <div className="content">
+                        <h3>Meet World’s First Financial Crypto Social Network</h3>
+                        <div className="clear" />
+                        <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
+                        <a href="#">read more</a></div>
+                      </div>
+                  </div>
+                  <div className="item">
+                    <div className="txtNews">
+                      <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
+                      <div className="content">
+                        <h3>Meet World’s First Financial Crypto Social Network</h3>
+                        <div className="clear" />
+                        <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
+                        <a href="#">read more</a></div>
+                      </div>
+                  </div>
+              </Slider>
+            </div>
           </div>
-          <div className="settingsNews2">
-            <Slider {...settingsNews2}>
-                <div className="item">
-                  <div className="txtNews">
-                    <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
-                    <div className="content">
-                      <h3>Meet World’s First Financial Crypto Social Network</h3>
-                      <div className="clear" />
-                      <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
-                      <a href="#">read more</a></div>
-                    </div>
-                </div>
-                <div className="item">
-                  <div className="txtNews">
-                    <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
-                    <div className="content">
-                      <h3>Meet World’s First Financial Crypto Social Network</h3>
-                      <div className="clear" />
-                      <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
-                      <a href="#">read more</a></div>
-                    </div>
-                </div>
-                <div className="item">
-                  <div className="txtNews">
-                    <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
-                    <div className="content">
-                      <h3>Meet World’s First Financial Crypto Social Network</h3>
-                      <div className="clear" />
-                      <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
-                      <a href="#">read more</a></div>
-                    </div>
-                </div>
-                <div className="item">
-                  <div className="txtNews">
-                    <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
-                    <div className="content">
-                      <h3>Meet World’s First Financial Crypto Social Network</h3>
-                      <div className="clear" />
-                      <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
-                      <a href="#">read more</a></div>
-                    </div>
-                </div>
-            </Slider>
+          <div className="block_arrow_relative">
+            <div className="settingsNews2">
+              <Slider {...settingsNews2}>
+                  <div className="item">
+                    <div className="txtNews">
+                      <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
+                      <div className="content">
+                        <h3>Meet World’s First Financial Crypto Social Network</h3>
+                        <div className="clear" />
+                        <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
+                        <a href="#">read more</a></div>
+                      </div>
+                  </div>
+                  <div className="item">
+                    <div className="txtNews">
+                      <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
+                      <div className="content">
+                        <h3>Meet World’s First Financial Crypto Social Network</h3>
+                        <div className="clear" />
+                        <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
+                        <a href="#">read more</a></div>
+                      </div>
+                  </div>
+                  <div className="item">
+                    <div className="txtNews">
+                      <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
+                      <div className="content">
+                        <h3>Meet World’s First Financial Crypto Social Network</h3>
+                        <div className="clear" />
+                        <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
+                        <a href="#">read more</a></div>
+                      </div>
+                  </div>
+                  <div className="item">
+                    <div className="txtNews">
+                      <img className="img" src={block_7_ava_bg} alt={"CINDEX"}/>
+                      <div className="content">
+                        <h3>Meet World’s First Financial Crypto Social Network</h3>
+                        <div className="clear" />
+                        <p>Разработка: UX / UI интерфейсы, Веб-платформа, Агрегатор котировок, KYC/AML модуль...</p>
+                        <a href="#">read more</a></div>
+                      </div>
+                  </div>
+              </Slider>
+            </div>
           </div>
           <div className="clear" />
         </div>

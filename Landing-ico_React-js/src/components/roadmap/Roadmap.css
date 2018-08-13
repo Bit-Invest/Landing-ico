@@ -1,7 +1,13 @@
 .roadmap {
-  padding: 84px 0;
+  padding: 0;
+}
+
+.roadmap__headcontainer {
+  margin: 0px !important;
+  padding: 0px !important;
   background: linear-gradient(180deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
 }
+
 .roadmap__image {
   margin: 50px auto 0 auto;
 }
@@ -13,7 +19,7 @@
 }
 
 .roadmap__buttons {
-  margin: 40px auto 0 auto;
+  margin: 80px auto 0 auto;
   width: 541px;
   display: flex;
   justify-content: space-between;
@@ -106,6 +112,8 @@
   }
   .roadmap__buttons {
     margin: 0;
+    margin-top: 85px;
+    margin-right: 40px;
   }
   .roadmap__header {
     display: flex;

@@ -16,41 +16,41 @@ export class FeedbackProject extends React.Component {
     return (
       <div className="block_6">
         <div className="size">
-        <h2 className="header">Feedback On Our Project</h2>
+        <h2 className="header_blocks">Feedback On Our Project</h2>
+          <div className="block_arrow_relative">
           <div className="carusel-block">
-            <Slider {...settings}>
+              <Slider {...settings}>
 
-              <div>
-                <img className="item" src={block_6_ava} alt={"block_6_ava"}/>
-                <div className="left">
-                  <div className="name">
-                    <h3>Ivan </h3>
-                    <h4>Product Director</h4>
-                    <a href="#" className="sb">
-                    </a>
-                    <hr />
-                    <a href="#" className="sb2"></a>
+                <div>
+                  <img className="item" src={block_6_ava} alt={"block_6_ava"}/>
+                  <div className="left">
+                    <div className="name">
+                      <a href="#" className="sb"></a>
+                      <h3>Ivan </h3>
+                      <h4>Product Director</h4>
+                      <hr />
+                      <a href="#" className="sb2"></a>
+                    </div>
+                    <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
                   </div>
-                  <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
                 </div>
-              </div>
 
-              <div>
-                <img className="item" src={block_6_ava} alt={"block_6_ava"}/>
-                <div className="left">
-                  <div className="name">
-                    <h3>Ivan </h3>
-                    <h4>Product Director</h4>
-                    <a href="#" className="sb">
-                    </a>
-                    <hr />
-                    <a href="#" className="sb2"></a>
+                <div>
+                  <img className="item" src={block_6_ava} alt={"block_6_ava"}/>
+                  <div className="left">
+                    <div className="name">
+                      <a href="#" className="sb"></a>
+                      <h3>Ivan </h3>
+                      <h4>Product Director</h4>
+                      <hr />
+                      <a href="#" className="sb2"></a>
+                    </div>
+                    <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
                   </div>
-                  <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
                 </div>
-              </div>
 
-            </Slider>
+              </Slider>
+            </div>
           </div>
           <div className="clear" />
         </div>

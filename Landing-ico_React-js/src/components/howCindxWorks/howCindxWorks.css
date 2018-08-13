@@ -6,17 +6,18 @@
     background: -webkit-linear-gradient(top, #5142a9 0%,#5f59cf 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #5142a9 0%,#5f59cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5142a9', endColorstr='#5f59cf',GradientType=0 ); /* IE6-9 */
-    padding: 70px 0;
+    padding: 0;
 }
 
-.block_2 h2{
-  font-weight: bold;
-  font-size: 40px;
-  margin-left: 45px;
+.block_2 * {
+  color: white;
+}
+.block_2 .container {
+  margin-top: 60px;
+  padding-bottom: 40px;
 }
 
-.block_2 .cont_row
-{
+.block_2 .cont_row {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
@@ -24,17 +25,10 @@
     margin: 0 30px;
 }
 
-.block_2 .cont_row .row
-{
-    width: 240px;
-    display: block;
-    float: left;
-    margin-right: 40px;
-}
-
-.block_2 .cont_row .row:last-child
-{
-    margin-right: 0;
+.block_2 .cont_row .row {
+  width: 23%;
+  display: block;
+  float: left;
 }
 
 .block_2 .cont_row .row h3
@@ -55,27 +49,46 @@
     font-weight: normal;
 }
 
-.block_2 .cont_row .row .cloud
-{
-    background: url(../../images/block_2_cloud.png) no-repeat center;
-    width: 259px;
-    height: 121px;
-    display: block;
-    margin-left: -5px;
+.block_2 .cont_row .row .cloud {
+  background-color: #8789D9;
+  width: 100%;
+  display: inline-block;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  min-height: 80px;
+  max-width: 330px;
+  margin: 0 auto;
+  display: table;
 }
 
-.block_2 .cont_row .row .cloud span
-{
-    display: block;
-    font-size: 14px;
-    font-weight: normal;
-    width: 200px;
-    padding-top: 14px;
-    margin-left: 29px;
+.block_2 .cont_row .row .cloud span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
 }
 
-.block_2 .cont_row .row img
-{
-    display: block;
-    margin: 0 auto;
+.block_2 .cont_row .row img {
+  display: block;
+  margin: 40px auto;
+  height: 15vw;
+  min-height: 120px;
+  max-height: 170px;
+}
+
+@media (max-width: 1439px) {
+  .block_2 h2 {
+    font-size: 32px;
+    margin-left: 45px;
+  }
+  .block_2 .cont_row .row {
+    width: 46%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .block_2 h2 {
+    font-size: 32px;
+    margin-left: 70px;
+  }
 }

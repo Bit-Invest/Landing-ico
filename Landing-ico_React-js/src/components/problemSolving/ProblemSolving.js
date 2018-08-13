@@ -40,7 +40,7 @@ class ProblemSolving extends React.Component {
     return (
       <div className="block_1">
         <div className="size">
-          <h1>What kinds of problems does CINDX solve?</h1>
+          <h2 className="header_blocks">What kinds of problems does CINDX solve?</h2>
           <a onClick={this.onClickRoot.bind(this)} className="sb" href="#">TEST MVP</a>
           <div className="container">
             <div className="clear" />
