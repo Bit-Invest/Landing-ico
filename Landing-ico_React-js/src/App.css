@@ -593,11 +593,6 @@ width: 720px;
         width: 240px;
     }
 
-    .block_3 h2 {
-      font-size: 32px;
-      margin-left: 45px;
-    }
-
     .block_3 .statick {
       margin-top: 70px;
     }
@@ -637,22 +632,14 @@ width: 720px;
     }
 
     .block_3 .other_text .cont_1,
-    .block_3 .other_text .cont_2
+    .block_3 .other_text .cont_2,
+    .block_3 .other_text .cont_3
     {
       font-size: 16px;
-      width: 300.block_3 .owl-carouselpx;
-      padding-left: 15px;
+      width: 300px;
     }
 
-    .block_3 .other_text
-    {
-      position: initial;
-      display: flex;
-      justify-content: space-between;
-      margin: 50px 45px;
-    }
-
-    .block_3 .other_text img.man
+     img.man
     {
         max-width: 100%;
         width: auto;
@@ -664,7 +651,7 @@ width: 720px;
         z-index: 2;
     }
 
-    .block_3 .other_text .cont_3 {
+     .cont_3 {
       width: 190px;
       padding-right: 0px;
       margin-right: 0px;
@@ -675,8 +662,7 @@ width: 720px;
     }
 
     .block_3 .other_geo .cont_row {
-      justify-content: center;
-      margin: 0 45px;
+      justify-content: space-between;
     }
 
     .block_3 .other_geo .cont_row .row {
@@ -1665,9 +1651,8 @@ body.compensate-for-scrollbar {
       width: 560px;
       margin-bottom: 50px;
     }
-    .block_3 h2 {
-      font-size: 32px;
-      margin-left: 75px;
+    .block_3 {
+      padding: 50px;
     }
     .block_3 .statick {
       display: none;
@@ -1693,18 +1678,41 @@ body.compensate-for-scrollbar {
     .block_3 .carusel .carusel_txt {
       margin: 0 auto;
       margin-top: 50px;
-      width: 620px;
+      width: 500px;
     }
     .block_3 .carusel .cont_1,
     .block_3 .carusel .cont_2,
     .block_3 .carusel .cont_3 {
       font-size: 16px;
-      width: 620px;
+      width: 500px;
+      font-weight: normal;
+    }
+    .block_3 .carusel .cont_3 {
+      margin-top: 50px;
+    }
+    .block_3 .carusel .cont_3 .row {
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+    .block_3 .carusel .cont_3 .row img {
+      margin-right: 10px;
+    }
+    .block_3 .carusel .other_geo h2 {
+      border-top: 1px solid white;
+      padding-top: 50px;
+      margin-top: 50px;
+    }
+    .block_3 .carusel .other_geo .text {
+      margin: 0 auto;
+    }
+    .block_3 .carusel .other_geo .row {
+      text-align: center;
+      margin: 50px 0;
     }
     .block_5 h2 {
       font-size: 32px;
       margin-left: 75px;
-      margin-bottom: 60px;
+      margin-top: 60px;
     }
     .block_5 .settings {
       display: none;

@@ -1,6 +1,6 @@
 .block_3
 {
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   background : -moz-linear-gradient(50% 0% -90deg,rgba(46, 29, 104, 1) 0%,rgba(51, 30, 103, 1) 18.15%,rgba(66, 32, 102, 1) 40.15%,rgba(90, 36, 99, 1) 64.16%,rgba(124, 42, 96, 1) 89.42%,rgba(141, 45, 94, 1) 100%);
   background : -webkit-linear-gradient(-90deg, rgba(46, 29, 104, 1) 0%, rgba(51, 30, 103, 1) 18.15%, rgba(66, 32, 102, 1) 40.15%, rgba(90, 36, 99, 1) 64.16%, rgba(124, 42, 96, 1) 89.42%, rgba(141, 45, 94, 1) 100%);
   background : -webkit-gradient(linear,50% 0% ,50% 100% ,color-stop(0,rgba(46, 29, 104, 1) ),color-stop(0.1815,rgba(51, 30, 103, 1) ),color-stop(0.4015,rgba(66, 32, 102, 1) ),color-stop(0.6416,rgba(90, 36, 99, 1) ),color-stop(0.8942,rgba(124, 42, 96, 1) ),color-stop(1,rgba(141, 45, 94, 1) ));
@@ -11,6 +11,10 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2E1D68',endColorstr='#8D2D5E' , GradientType=0);
   position: relative;
   color: white;
+}
+
+.block_3 h2 {
+  font-size: 32px;
 }
 
 .block_3:after {
@@ -27,7 +31,7 @@
 }
 
 .block_3 .statick {
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .block_3 .ico_block {
@@ -59,7 +63,7 @@
 .block_3 .owl-carousel
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 50px;
     position: relative;
 }
@@ -76,7 +80,6 @@
     background: rgba(255, 255, 255, 0.07);
     border-radius: 25px;
     padding: 5px 20px 20px;
-    margin: 0 10px;
 }
 
 .block_3 .owl-carousel .item img
@@ -149,38 +152,31 @@
 .block_3 .other_text
 {
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    justify-content: space-between;
+    margin: 50px 0;
     border-bottom: 1px solid #fff;
     padding-bottom: 50px;
-    margin-bottom: 50px;
-    position: relative;
-    z-index: 2;
 }
 
 .block_3 .other_text .cont_1,
-.block_3 .other_text .cont_2
+.block_3 .other_text .cont_2,
+.block_3 .other_text .cont_3
 {
     font-weight: normal;
     padding-left: 20px;
     width: 380px;
-    float: left;
     font-size: 16px;
-    margin-right: 20px;
-    padding-right: 16px;
 }
 
 .block_3 .other_text .cont_3
 {
-  width: 320px;
-  float: left;
+  width: 300px;
   font-size: 16px;
-  margin-right: 20px;
-  padding-right: 16px;
 }
 
 .block_3 .other_text .cont_3 .row
 {
+  width: 200px;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -197,25 +193,16 @@
     margin-right: 100px;
 }
 
-.block_3 .other_geo
-{
-    position: relative;
-    z-index: 2;
-}
-
 .block_3 .other_geo .cont_row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 70px;
 }
 
-.block_3 .other_geo .cont_row .row
-{
-    padding-right: 20px;
-    padding-left: 10px;
-    margin-top: 70px;
-    font-size: 24px;
-    width: 380px;
-    font-weight: normal;
+.block_3 .other_geo .cont_row .row {
+  font-size: 24px;
+  width: 350px;
+  font-weight: normal;
 }
 
 .block_3 .other_geo .cont_row .row:last-child

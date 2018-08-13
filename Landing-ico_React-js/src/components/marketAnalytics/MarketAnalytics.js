@@ -107,6 +107,7 @@ export const MarketAnalytics = () => {
             <div className="cont_1">
               Since 2000, the global trust management market has grown <br />by more than 250%. <br /><br />This is the result of constant improvements in market tools <br />and the general development <br />of market structuring.
             </div>
+            <br/>
             <div className="cont_2">
               Despite the explosive growth <br />of the cryptocurrency market in 2017, <br />the industry is still in its infancy. <br /><br />The total market capitalization was $600 billion at the end of 2017 — just 1% of the trust management industry total market capitalization.
             </div>
@@ -131,16 +132,16 @@ export const MarketAnalytics = () => {
             <div className="clear" />
           <div className="other_geo">
             <h2>Geographic Scope</h2>
-            <div>
+            <div className="text">
               <div className="row">
-                25 million potential blockchain wallets
+                25 million potential<br/> blockchain wallets
               </div>
               <div className="row">
-                200,000 potential transactions every day
+                200,000 potential<br/> transactions every day
               </div>
               <div className="row">
-                More than 225 <br />
-                potential partners,<br />
+                More than 225
+                potential<br/> partners,
                 each with $3-5 billion
               </div>
             </div>
