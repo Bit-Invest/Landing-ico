@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.55f3f8de.css",
-  "main.css.map": "static/css/main.55f3f8de.css.map",
-  "main.js": "static/js/main.cd53dead.js",
-  "main.js.map": "static/js/main.cd53dead.js.map",
+  "main.css": "static/css/main.6825dc90.css",
+  "main.css.map": "static/css/main.6825dc90.css.map",
+  "main.js": "static/js/main.31d369bb.js",
+  "main.js.map": "static/js/main.31d369bb.js.map",
   "static/media/5b05238fabbf26c7e7a31cdb_stars_mount.svg": "static/media/5b05238fabbf26c7e7a31cdb_stars_mount.15373004.svg",
   "static/media/Geometria-Bold.woff": "static/media/Geometria-Bold.2718c69a.woff",
   "static/media/Geometria-Bold.woff2": "static/media/Geometria-Bold.5c1d517b.woff2",
@@ -34,6 +34,7 @@
   "static/media/block_6_ava.png": "static/media/block_6_ava.335044d5.png",
   "static/media/block_7_ava_bg.png": "static/media/block_7_ava_bg.03d22d20.png",
   "static/media/block_9_bg.png": "static/media/block_9_bg.ea531ac7.png",
+  "static/media/currency_icons.png": "static/media/currency_icons.06dada33.png",
   "static/media/finish_guy.gif": "static/media/finish_guy.b0145fcd.gif",
   "static/media/hb_logo.svg": "static/media/hb_logo.71dac2ba.svg",
   "static/media/hotbit_logo.svg": "static/media/hotbit_logo.757f4b29.svg",
@@ -41,6 +42,7 @@
   "static/media/kabinka_2.1ee5cce3.svg": "static/media/kabinka_2.1ee5cce3.8141993a.svg",
   "static/media/localcoin_logo.svg": "static/media/localcoin_logo.0a80b408.svg",
   "static/media/mountain_new23.70fbb83c.svg": "static/media/mountain_new23.70fbb83c.99c61010.svg",
+  "static/media/play_button_white.png": "static/media/play_button_white.7e1056fa.png",
   "static/media/rating-hot.svg": "static/media/rating-hot.5cc9c6e1.svg",
   "static/media/rating-stable.svg": "static/media/rating-stable.cbe5675f.svg",
   "static/media/sum_and_substance1.png": "static/media/sum_and_substance1.0146fead.png"
