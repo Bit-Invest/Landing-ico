@@ -1785,3 +1785,13 @@ body.compensate-for-scrollbar {
       height: 95px;
     }
   }
+
+@media screen and (max-width: 767px) {
+  .header_blocks {
+    padding: 0 !important;
+    width: 80% !important;
+    margin: 0 auto !important;
+    display: table !important;
+  }
+}
+  
