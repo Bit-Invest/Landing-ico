@@ -10,7 +10,10 @@ export const MainBlock = props => (
     <div className={`${ROOT_CLASS}__content`}>
       <div className={`${ROOT_CLASS}__container-1`}>
         <div className={`${ROOT_CLASS}__header`}>
-          We Revolutionize Crypto Assets Management. And Launch Our Security Token Sale
+          Make The Crypto Investments Easy, Secure and Fast.
+          <div className={`${ROOT_CLASS}__header2`}>
+            Join Our Security Token Sale
+          </div>
         </div>
         <div className={`${ROOT_CLASS}__ico-info-l`}>
           <IcoInfo />

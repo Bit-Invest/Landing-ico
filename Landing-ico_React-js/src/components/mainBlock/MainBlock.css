@@ -33,6 +33,11 @@
   letter-spacing: normal;
   color: #ffffff;
 }
+.main-block__header2 {
+  font-weight: 300;
+  font-size: 32px;
+  color: #ffffff;
+}
 @media screen and (min-width: 1024px) {
   .main-block {
     padding-top: 50px;

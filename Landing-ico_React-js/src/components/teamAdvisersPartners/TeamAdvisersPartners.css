@@ -1,5 +1,6 @@
 .block_8 {
   padding: 0;
+  padding-bottom: 100px;
   background : -moz-linear-gradient(50% 0% -90deg,rgba(46, 29, 104, 1) 0%,rgba(51, 30, 103, 1) 18.15%,rgba(66, 32, 102, 1) 40.15%,rgba(90, 36, 99, 1) 64.16%,rgba(124, 42, 96, 1) 89.42%,rgba(141, 45, 94, 1) 100%);
   background : -webkit-linear-gradient(-90deg, rgba(46, 29, 104, 1) 0%, rgba(51, 30, 103, 1) 18.15%, rgba(66, 32, 102, 1) 40.15%, rgba(90, 36, 99, 1) 64.16%, rgba(124, 42, 96, 1) 89.42%, rgba(141, 45, 94, 1) 100%);
   background : -webkit-gradient(linear,50% 0% ,50% 100% ,color-stop(0,rgba(46, 29, 104, 1) ),color-stop(0.1815,rgba(51, 30, 103, 1) ),color-stop(0.4015,rgba(66, 32, 102, 1) ),color-stop(0.6416,rgba(90, 36, 99, 1) ),color-stop(0.8942,rgba(124, 42, 96, 1) ),color-stop(1,rgba(141, 45, 94, 1) ));
@@ -108,6 +109,19 @@
   margin: 50px auto;
 }
 
+.block_8 .advisers .left_content .icon_content .icon-face {
+  width: 165px;
+  height: 165px;
+}
+
+.block_8 .advisers .left_content .icon_content .playButtonWhite{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 110px;
+  bottom: 40px;
+}
+
 .block_8 .advisers .left_content .name_content {
   font-size: 24px;
   margin-bottom: 25px;
@@ -161,6 +175,7 @@
 }
 
 .block_8 .ourPartners .slick-list {
+  margin-top: 70px;
   height: 170px;
   border-radius: 10px;
   background-color: #ffffff;

@@ -5,6 +5,7 @@ import ava_1 from '../../images/ava_1.png';
 import ProgressorLogo from '../../media/ProgressorLogo.png';
 import sum_and_substance1 from '../../media/sum_and_substance1.png';
 import ico_promo from '../../media/ico_promo.png';
+import playButtonWhite from '../../images/play_button_white.png';
 import './TeamAdvisersPartners.css';
 
 export class TeamAdvisersPartners extends React.Component {
@@ -157,7 +158,10 @@ export class TeamAdvisersPartners extends React.Component {
                 <Slider {...settingsAdvisers}>
                   <div>
                     <div className="left_content">
-                      <div className="icon_content"></div>
+                      <div className="icon_content">
+                        <img className="icon-face" src={ava_1} alt={"CINDX"}/>
+                        <img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/>
+                      </div>
                       <div className="name_content">Philip Staehelin</div>
                       <hr/>
                       <div className="text_content">
@@ -209,8 +213,8 @@ export class TeamAdvisersPartners extends React.Component {
             </div>
           </div>
           <div className="clear" />
-          {/*<div className="ourPartners">
-            <h2>Our Partners</h2>
+          <div className="ourPartners">
+            <h2 className="header_blocks">Our Partners</h2>
             <div className="container2">
                 <Slider {...settingsOurParners}>
                   <div>
@@ -233,7 +237,7 @@ export class TeamAdvisersPartners extends React.Component {
                   </div>
                 </Slider>
             </div>
-          </div>*/}
+          </div>
           <div className="clear" />
 
         </div>

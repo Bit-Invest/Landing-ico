@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Slider from "react-slick";
 import block_6_ava from '../../images/block_6_ava.png';
+import playButtonWhite from '../../images/play_button_white.png';
 import './feedbackProject.css';
 
 export class FeedbackProject extends React.Component {
@@ -25,11 +26,10 @@ export class FeedbackProject extends React.Component {
                   <img className="item" src={block_6_ava} alt={"block_6_ava"}/>
                   <div className="left">
                     <div className="name">
-                      <a href="#" className="sb"></a>
+                      <img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/>
                       <h3>Ivan </h3>
                       <h4>Product Director</h4>
                       <hr />
-                      <a href="#" className="sb2"></a>
                     </div>
                     <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
                   </div>
@@ -39,11 +39,10 @@ export class FeedbackProject extends React.Component {
                   <img className="item" src={block_6_ava} alt={"block_6_ava"}/>
                   <div className="left">
                     <div className="name">
-                      <a href="#" className="sb"></a>
+                      <img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/>
                       <h3>Ivan </h3>
                       <h4>Product Director</h4>
                       <hr />
-                      <a href="#" className="sb2"></a>
                     </div>
                     <p>Investor joins the crypto exchange and best traders to sync the transactions with the most successful players on the market</p>
                   </div>

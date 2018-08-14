@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ProgressBar } from '@components/progressBar';
+import currency_icons from '../../../images/currency_icons.png'
 import BancorLogo from '@images/bancor_logo.svg';
 import HBLogo from '@images/hb_logo.svg';
 import Hotbit from '@images/hotbit_logo.svg';
@@ -13,7 +14,13 @@ const ROOT_CLASS = 'ico-info';
 export const IcoInfo = props => (
   <div className={ROOT_CLASS}>
     <div className={`${ROOT_CLASS}__progress-bar`}>
-      <ProgressBar money="1.053,972" percent="4"/>
+      <div className={`${ROOT_CLASS}__accept`}>We accept:</div>
+      <img className={`${ROOT_CLASS}__currency_icons`} src={currency_icons} alt={"CINDEX"}/>
+      <div className={`${ROOT_CLASS}__amount`}>Hard Cap: <span>$21,000,000</span></div>
+      <div className={`${ROOT_CLASS}__amount`}>Soft Cap Milestone: <span>$1,100,000 / $3,800,000</span></div>
+      <div className={`${ROOT_CLASS}__progressBar`}>
+        <div className={`${ROOT_CLASS}__progress`}></div>
+      </div>
     </div>
     <div className={`${ROOT_CLASS}__signed-partners`}>
       <div className={`${ROOT_CLASS}__title`}>

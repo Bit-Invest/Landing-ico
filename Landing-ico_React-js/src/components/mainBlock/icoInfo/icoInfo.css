@@ -56,3 +56,42 @@
 .ico-info__rating_stable {
   margin-right: 10px;
 }
+
+.ico-info__accept {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.ico-info__currency_icons {
+  width: 240px;
+  height: 44px;
+}
+
+.ico-info__amount {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: normal
+}
+
+.ico-info__amount span {
+  font-weight: bold;
+}
+
+.ico-info__progressBar {
+  width: 400px;
+  height: 34px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 17px;
+}
+
+.ico-info__progress {
+  width: 156.4px;
+  height: 34px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+}

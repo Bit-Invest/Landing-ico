@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9;
 }
 .menu .logo {
   width: 105px;
@@ -21,7 +22,7 @@
   cursor: pointer;
 }
 .menu .item {
-  padding-top: 35px;
+  padding-top: 32px;
   height: 80px;
   margin-left: 20px;
   font-size: 16px;
@@ -53,5 +54,48 @@
 }
 .menu .menu-item-burger {
   margin-left: 35px;
+  position: relative;
+}
+.menu .menu-icon {
+  padding-top: 5px;
+  width: 29px;
+  height: 29px;
+}
+.showMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 280px;
+  padding-bottom: 25px;
+  background-color: #4c4272;
   font-size: 32px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+.menu .showMenu .itemMini {
+  font-size: 16px;
+  font-weight: normal;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+.menu .showMenu .itemMini:hover {
+  border-left: 4px solid #7f00e3;
+}
+.showMenu-hide {
+  display: none;
+}
+.menu .showMenu .publicDocs {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+.menu .showMenu .publicDocs .doc_icon {
+  width: 12px;
+  height: 16px;
+  margin-left: 5px;
+}
+.menu .showMenu .publicDocs-hide {
+  display: none;
 }
