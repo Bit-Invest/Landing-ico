@@ -1,7 +1,7 @@
 import * as React from 'react';
 import logo from '../../images/Logo_CINDX.png';
 import menu from '../../images/menu.png';
-import doc_icon from '../../images/doc_icon.png';
+import arrow_public from '../../images/arrow_public.png';
 import './Menu.css';
 
 export class Menu extends React.Component {
@@ -9,13 +9,21 @@ export class Menu extends React.Component {
     super(props);
     this.state = {
       isOpened: false,
-      publicDocs: false
+      publicDocs: false,
+      language: false
     }
+  }
+
+  openMenu = () => {
+    this.setState({ isOpened: !this.state.isOpened });
   }
 
   openPublicDocs = () => {
     this.setState({ publicDocs: !this.state.publicDocs });
-    console.log(this.state.publicDocs);
+  }
+
+  openLanguage = () => {
+    this.setState({ language: !this.state.language })
   }
 
   renderPublicDocs = () => {
@@ -23,25 +31,25 @@ export class Menu extends React.Component {
     if (publicDocs) {
       return (
         <div className="publicDocs">
-          <div>
-            <img className="doc_icon" src={doc_icon} alt={"CINDEX"}/>
-            <a className="itemMini">WHITEPAPER</a>
+          <div className="show-publicDocs">
+            <div className="doc_icon"></div>
+            <a className="itemMini2">WHITEPAPER</a>
           </div>
-          <div>
-            <img className="doc_icon" src={doc_icon} alt={"CINDEX"}/>
-            <a className="itemMini">PRESENTATION</a>
+          <div className="show-publicDocs">
+            <div className="doc_icon"></div>
+            <a className="itemMini2">PRESENTATION</a>
           </div>
-          <div>
-            <img className="doc_icon" src={doc_icon} alt={"CINDEX"}/>
-            <a className="itemMini">ONE PAGER</a>
+          <div className="show-publicDocs">
+            <div className="doc_icon"></div>
+            <a className="itemMini2">ONE PAGER</a>
           </div>
-          <div>
-            <img className="doc_icon" src={doc_icon} alt={"CINDEX"}/>
-            <a className="itemMini">FINANCIAL MODEL</a>
+          <div className="show-publicDocs">
+            <div className="doc_icon"></div>
+            <a className="itemMini2">FINANCIAL MODEL</a>
           </div>
-          <div>
-            <img className="doc_icon" src={doc_icon} alt={"CINDEX"}/>
-            <a className="itemMini">LEGAL DOCS</a>
+          <div className="show-publicDocs">
+            <div className="doc_icon"></div>
+            <a className="itemMini2">LEGAL DOCS</a>
           </div>
         </div>
       )
@@ -50,8 +58,28 @@ export class Menu extends React.Component {
     }
   }
 
-  openMenu = () => {
-    this.setState({ isOpened: !this.state.isOpened });
+  renderLanguage = () => {
+    const { language } = this.state;
+    if (language) {
+      return (
+        <div className="language">
+          <div className="show-language">
+            <a className="itemMini2">ER</a>
+          </div>
+          <div className="show-language">
+            <a className="itemMini2">FR</a>
+          </div>
+          <div className="show-language">
+            <a className="itemMini2">RU</a>
+          </div>
+          <div className="show-language">
+            <a className="itemMini2">PL</a>
+          </div>
+        </div>
+      )
+    } else {
+      return (<div className="publicDocs-hide"></div>)
+    }
   }
 
   renderMenu = () => {
@@ -62,10 +90,17 @@ export class Menu extends React.Component {
           <a className="itemMini">Product</a>
           <a className="itemMini">Sale Details</a>
           <a className="itemMini">Team</a>
-          <a onClick={this.openPublicDocs} className="itemMini">Public Docs </a>
+          <div className="drop-down">
+            <a onClick={this.openPublicDocs} className="itemMini">Public Docs </a>
+            <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
+          </div>
           {this.renderPublicDocs()}
           <a className="itemMini">Test MVP</a>
-          <a className="itemMini">EN</a>
+          <div className="drop-down">
+            <a onClick={this.openLanguage} className="itemMini">EN</a>
+            <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
+          </div>
+          {this.renderLanguage()}
         </div>
       )
     } else {
@@ -76,23 +111,32 @@ export class Menu extends React.Component {
   render() {
     return (
       <div className="menu">
-        <img className="logo" src={logo} alt={"CINDEX"}/>
-        <div className="menu-item">
-          <a className="item">Product</a>
-          <a className="item">Sale Details</a>
-          <a className="item">Team</a>
-          <a onClick={this.openPublicDocs} className="item">Public Docs </a>
-          {this.renderPublicDocs()}
-          <a className="item">Test MVP</a>
-          <a className="btn">Join Pre-Sale</a>
-          <a className="item">EN</a>
-        </div>
-        <div className="menu-768px">
-          <a className="btn">Join Pre-Sale</a>
-          <a onClick={this.openMenu} className="menu-item-burger">
-            <img className="menu-icon" src={menu} alt={"CINDEX"}/>
-          </a>
-          {this.renderMenu()}
+        <div className="container-menu">
+          <img className="logo" src={logo} alt={"CINDEX"}/>
+          <div className="menu-item">
+            <a className="item">Product</a>
+            <a className="item">Sale Details</a>
+            <a className="item">Team</a>
+            <div className="drop-down">
+              <a onClick={this.openPublicDocs} className="item">Public Docs</a>
+              <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
+            </div>
+            {this.renderPublicDocs()}
+            <a className="item">Test MVP</a>
+            <a className="btn">Join Pre-Sale</a>
+            <div className="drop-down">
+              <a onClick={this.openLanguage} className="item">EN</a>
+              <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
+            </div>
+            {this.renderLanguage()}
+          </div>
+          <div className="menu-768px">
+            <a className="btn">Join Pre-Sale</a>
+            <a onClick={this.openMenu} className="menu-item-burger">
+              <img className="menu-icon" src={menu} alt={"CINDEX"}/>
+            </a>
+            {this.renderMenu()}
+          </div>
         </div>
       </div>
     )

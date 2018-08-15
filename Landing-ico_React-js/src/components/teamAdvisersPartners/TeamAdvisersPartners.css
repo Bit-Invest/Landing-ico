@@ -39,12 +39,14 @@
   margin: 0 auto;
 }
 
-.block_8 .team .item img {
+.block_8 .team .item .img {
     margin: 0 auto;
     display: block;
     width: auto;
-    height:  120px;
+    height:  140px;
     margin-bottom: 15px;
+    border-radius: 50%;
+    border: 5px solid white;
 }
 
 .block_8 .team .item h3 {
@@ -110,6 +112,8 @@
 }
 
 .block_8 .advisers .left_content .icon_content .icon-face {
+  border-radius: 50%;
+  border: 5px solid white;
   width: 165px;
   height: 165px;
 }

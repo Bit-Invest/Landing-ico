@@ -1,24 +1,38 @@
 .menu {
-  color: white;
-  padding: 0 40px;
   width: 100%;
   height: 80px;
+  color: white;
+  padding: 0 40px;
   background-color: #3a2f64;
+  z-index: 9;
   position: fixed;
+}
+.menu .container-menu {
+  max-width: 1440px;
+  height: 80px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 9;
 }
 .menu .logo {
   width: 105px;
   height: 36px;
 }
+.menu .drop-down {
+  display: flex;
+  align-items: center;
+}
+.menu .drop-down .arrow_public {
+  width: 13px;
+  height: auto;
+  margin-left: 8px;
+}
 .menu .menu-item {
   display: flex;
   align-items: center;
 }
-.menu-item-burger {
+.menu .menu-item-burger {
   cursor: pointer;
 }
 .menu .item {
@@ -81,21 +95,103 @@
 }
 .menu .showMenu .itemMini:hover {
   border-left: 4px solid #7f00e3;
+  padding-left: 21px;
 }
 .showMenu-hide {
   display: none;
 }
-.menu .showMenu .publicDocs {
+.menu .publicDocs {
+  position: absolute;
+  padding: 0 17px;
+  padding-top: 17px;
+  top: 80px;
+  right: 290px;
+  color: #7962d4;
+  border-radius: 5%;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  padding-left: 25px;
-  padding-top: 15px;
 }
-.menu .showMenu .publicDocs .doc_icon {
+.menu .language {
+  position: absolute;
+  padding: 0 17px;
+  padding-top: 17px;
+  top: 80px;
+  right: 35px;
+  color: #7962d4;
+  border-radius: 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.menu .publicDocs .show-publicDocs,
+.menu .language .show-language  {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+.menu .language .itemMini2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.menu .publicDocs .itemMini2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.menu .publicDocs .doc_icon {
+  background-image: url(../../images/doc_icon_violet.png);
+  background-size: cover;
   width: 12px;
   height: 16px;
-  margin-left: 5px;
+  cursor: pointer;
+  margin-right: 15px;
 }
 .menu .showMenu .publicDocs-hide {
   display: none;
+}
+
+@media (max-width: 1023px) {
+  .menu .publicDocs {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: auto;
+    height: auto;
+    background-color: #fff0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 0px;
+  }
+  .menu .publicDocs .doc_icon {
+    background-image: url(../../images/doc_icon.png);
+    margin-right: 5px;
+    margin-left: 0px;
+  }
+  .menu .publicDocs .show-publicDocs {
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+  .menu .drop-down .arrow_public {
+    margin-top: 20px;
+  }
+  .menu .language {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: auto;
+    height: auto;
+    background-color: #fff0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 0px;
+  }
+  .menu .language .show-language {
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
 }

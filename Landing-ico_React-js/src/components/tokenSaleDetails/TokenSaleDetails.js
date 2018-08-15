@@ -154,14 +154,14 @@ const TokenDeals = () => {
           <p className="span">Dec 17 - Dec 26 - 0% Bonus</p>
         </div>
       </div>
-      <a className="sb" href="#">BUY TOKENS</a>
+      <a className="sb">BUY TOKENS</a>
     </div>
   );
 };
 
 const ButtonBuy = () => {
   return(
-    <a className="sb duo" href="#">buy tokens</a>
+    <a className="sb duo">buy tokens</a>
   );
 };
 

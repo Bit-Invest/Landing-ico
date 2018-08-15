@@ -16,10 +16,10 @@ export const JoinTokenPreSale = () => (
     <div className="size">
       <h2 className="header_blocks">Join Token Pre-Sale now!</h2>
       <div className="container2">
-        <a href="#" className="sb">
+        <a className="sb">
           JOIN PRE-SALE
         </a>
-        <a href="#" className="sb_2">
+        <a className="sb_2">
           TEST MVP
         </a>
         <div className="adress">
