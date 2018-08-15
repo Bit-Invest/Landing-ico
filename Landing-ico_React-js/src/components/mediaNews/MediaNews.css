@@ -42,7 +42,7 @@
 
 .block_7 .slick-slide {
   display: flex !important;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .block_7  .slick-slider {
@@ -102,6 +102,7 @@
 
 .block_7 .img {
   width: 340px;
+  height: 185px;
 }
 
 .block_7 .txtNews .content {

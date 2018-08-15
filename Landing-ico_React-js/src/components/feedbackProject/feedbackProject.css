@@ -9,7 +9,7 @@
   background : linear-gradient(180deg, rgba(46, 29, 104, 1) 0%, rgba(51, 30, 103, 1) 18.15%, rgba(66, 32, 102, 1) 40.15%, rgba(90, 36, 99, 1) 64.16%, rgba(124, 42, 96, 1) 89.42%, rgba(141, 45, 94, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2E1D68',endColorstr='#8D2D5E' , GradientType=0);
   padding: 0;
-  padding-bottom: 140px;
+  padding-bottom: 100px;
 }
 
 .block_6 * {
@@ -26,7 +26,7 @@
 
 .block_6 .item {
   width: 280px;
-  height: 370px;
+  height: auto;
   margin-right: 65px;
   float: left;
 }
@@ -211,7 +211,7 @@
   }
   .block_6 .item {
     width: 220px;
-    height: 290px;
+    height: auto;
     margin-right: 20px;
   }
   .block_6 .left p {
@@ -227,6 +227,9 @@
 }
 
 @media (max-width: 1439px) {
+  .block_6 {
+    padding-bottom: 80px;
+  }
   .block_6 h2 {
     font-size: 32px;
     margin-left: 45px;
