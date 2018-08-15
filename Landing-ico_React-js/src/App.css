@@ -1787,11 +1787,129 @@ body.compensate-for-scrollbar {
   }
 
 @media screen and (max-width: 767px) {
+  .App {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .header_blocks {
     padding: 0 !important;
     width: 80% !important;
     margin: 0 auto !important;
     display: table !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .teamLegal .container {
+    margin: 0 0 0 13%;
+    padding: 40px 0 200px 0;
+  }
+
+  .teamLegal .container .row {
+    display: inherit;
+  }
+
+  .teamLegal .left .dock_block {
+    display: inherit;
+  }
+
+  .size {
+    padding-top: 40px;
+  }
+
+  .roadmap__buttons {
+    margin: 30px auto 0 auto!important;
+  }
+
+  .roadmap__text {
+    width: 87%!important;
+  }
+
+  .block_1 .container {
+    margin-top: 20px;
+  }
+
+  .container {
+    margin: 0!important;
+  }
+
+  .block_1 .cont_row .row {
+    width: 80%;
+  }
+
+  .block_1 {
+    padding-bottom: 1px!important;
+  }
+
+  .block_1 .cont_row {
+    margin-bottom: 0!important;
+  }
+
+  .block_2 .container {
+    margin-top: 20px;
+  }
+
+  .block_2 .cont_row .row {
+    width: 100%;
+  }
+
+  .block_2 .cont_row .row img {
+    margin: 30px auto;
+  }
+
+  .block_2 .cont_row .row h3 {
+    margin: 0;
+  }
+
+  .block_3 {
+    padding: 0!important;
+  }
+
+  .block_3 .carusel {
+    width: 90%!important;
+  }
+
+  .block_3 .owl-carousel .item {
+    height: 100%!important;
+  }
+
+  .block_3 .carusel .carusel_txt {
+    width: 100%!important;
+  }
+
+  .block_3 .carusel .cont_1,
+  .block_3 .carusel .cont_2,
+  .block_3 .carusel .cont_3 {
+    width: 100%!important;
+  }
+
+  .other_geo {
+    padding-bottom: 20px;
+  }
+
+  .block_3 .carusel .other_geo .row {
+    font-size: 22px;
+  }
+
+  .block_4 .cont_3 {
+    padding: 0 5%;
+  }
+
+  .block_4 .cont_3 .row {
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+  }
+
+  .block_4 .cont_3 .row p {
+    width: 40%;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .block_4 .cont_1 {
+    margin: 0 5%;
   }
 }
   
