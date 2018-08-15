@@ -1826,14 +1826,6 @@ body.compensate-for-scrollbar {
     width: 87%!important;
   }
 
-  .block_1 .container {
-    margin-top: 20px;
-  }
-
-  .container {
-    margin: 0!important;
-  }
-
   .block_1 .cont_row .row {
     width: 80%;
   }
@@ -1846,7 +1838,10 @@ body.compensate-for-scrollbar {
     margin-bottom: 0!important;
   }
 
-  .block_2 .container {
+  .block_1 .container,
+  .block_2 .container,
+  .block_4 .container {
+    margin: 0;
     margin-top: 20px;
   }
 
@@ -1910,6 +1905,75 @@ body.compensate-for-scrollbar {
 
   .block_4 .cont_1 {
     margin: 0 5%;
+  }
+
+  .progress-bar {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 5%;
+    width: auto;
+  }
+
+  .block_4 .cont_5 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    margin-top: 40px;
+  }
+
+  .block_4 .cont_4 {
+    margin: 0 5%;
+    width: auto;
+  }
+
+  .block_4 .cont_4 {
+    margin: 0 5%;
+    width: auto;
+  }
+
+  .block_4 .cont_4 .graph {
+    position: relative;
+    display: flex;
+    margin-bottom: 200px;
+  }
+
+  .block_4 .cont_4 .graph ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .block_4 .cont_2 {
+    margin: 0 5%;
+    width: auto;
+  }
+
+  .block_6 .slick-next, .block_6 .slick-prev {
+    display: none!important;
+  }
+
+  .block_6 .carusel-block .slick-list {
+    margin: 0 5%;
+  }
+
+  .block_6 .left .name a {
+    position: absolute;
+    left: 0;
+    bottom: -65px;
+  }
+
+  .block_6 .name {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .block_6 .carusel-block {
+    width: auto;
+    height: auto;
+    margin: 0 0 0 0;
+    margin-top: 30px;
   }
 }
   
