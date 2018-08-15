@@ -81,7 +81,8 @@ export class Menu extends React.Component {
           <a className="item">Product</a>
           <a className="item">Sale Details</a>
           <a className="item">Team</a>
-          <a className="item">Public Docs </a>
+          <a onClick={this.openPublicDocs} className="item">Public Docs </a>
+          {this.renderPublicDocs()}
           <a className="item">Test MVP</a>
           <a className="btn">Join Pre-Sale</a>
           <a className="item">EN</a>
