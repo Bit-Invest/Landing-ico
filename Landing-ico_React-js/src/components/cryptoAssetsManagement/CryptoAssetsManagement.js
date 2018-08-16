@@ -5,7 +5,7 @@ export const CryptoAssetsManagement = (props) => (
   <div className="cryptoAssetsManagement">
     <div className="size">
       <div className="row">
-        <h2 className="header_blocks">CINDX Is a Crypto Assets Management Hub. We solve the problems of investors, traders and developers</h2>
+        <h2 className="header_blocks">CIDX.MARKET FOR INVESTORS</h2>
         <div className="video"></div>
       </div>
       <div className="problemBlock">
@@ -13,7 +13,7 @@ export const CryptoAssetsManagement = (props) => (
           <p className="caption">CIDX.MARKETPLACE FOR INVESTORS</p>
           <hr/>
           <p>
-            • Do not worry about your knowledge and experience – the experts of crypto trading are here to help you
+          • Do not worry about your knowledge and experience – the experts of crypto trading are here to help you
           </p>
           <p>
             • Control your currency: your coins are kept in your wallet at all times
@@ -33,31 +33,31 @@ export const CryptoAssetsManagement = (props) => (
           <button>TEST MVP</button>
         </div>
         <div className="txt2">
-          <p className="caption">CIDX.MARKETPLACE FOR INVESTORS</p>
+          <p className="caption">CIDX.TRADE FOR TRADERS</p>
           <hr/>
           <p>
-            • Do not worry about your knowledge and experience – the experts of crypto trading are here to help you
+            • If you are a successful trader, you can attract a capital at $0 marketing costs
           </p>
           <p>
-            • Control your currency: your coins are kept in your wallet at all times
+            • We provide you with Terminal, App Store, marketplace and other advanced tools to succeed in trading.
           </p>
           <p>
-            • Only pay if you earn: you will only be charged fees if your portfolio makes money
+          • CINDX helps to monetize your reputation and expertise. Your trade history and influence are transparent.
           </p>
         </div>
       </div>
       <div className="problemBlock">
         <div className="txt">
-          <p className="caption">CIDX.MARKETPLACE FOR INVESTORS</p>
+          <p className="caption">CINDX.TALK, CINDX.HUB & CINDX.DAO</p>
           <hr/>
           <p>
-            • Do not worry about your knowledge and experience – the experts of crypto trading are here to help you
+            • CINDX.talk - a social network with a reward for useful content
           </p>
           <p>
-            • Control your currency: your coins are kept in your wallet at all times
+            • CINDX.hub - the component includes a vendor’s cabinet, as well as a hub for testing and integrating third-party software
           </p>
           <p>
-            • Only pay if you earn: you will only be charged fees if your portfolio makes money
+            • CINDX.dao - a component that allows you to implement a voting system for the community based on decentralised autonomous organisation rules
           </p>
         </div>
         <div className='video_block'>

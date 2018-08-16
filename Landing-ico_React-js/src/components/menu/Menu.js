@@ -20,6 +20,7 @@ export class Menu extends React.Component {
 
   openPublicDocs = () => {
     this.setState({ publicDocs: !this.state.publicDocs });
+    console.log('ok');
   }
 
   openLanguage = () => {
@@ -90,14 +91,14 @@ export class Menu extends React.Component {
           <a className="itemMini">Product</a>
           <a className="itemMini">Sale Details</a>
           <a className="itemMini">Team</a>
-          <div className="drop-down">
-            <a onClick={this.openPublicDocs} className="itemMini">Public Docs </a>
+          <div onClick={this.openPublicDocs} className="drop-down">
+            <a>Public Docs </a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
           {this.renderPublicDocs()}
           <a className="itemMini">Test MVP</a>
-          <div className="drop-down">
-            <a onClick={this.openLanguage} className="itemMini">EN</a>
+          <div onClick={this.openLanguage} className="drop-down">
+            <a>EN</a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
           {this.renderLanguage()}
@@ -117,15 +118,15 @@ export class Menu extends React.Component {
             <a className="item">Product</a>
             <a className="item">Sale Details</a>
             <a className="item">Team</a>
-            <div className="drop-down">
-              <a onClick={this.openPublicDocs} className="item">Public Docs</a>
+            <div onClick={this.openPublicDocs} className="drop-down">
+              <a className="item">Public Docs</a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
             </div>
             {this.renderPublicDocs()}
             <a className="item">Test MVP</a>
             <a className="btn">Join Pre-Sale</a>
-            <div className="drop-down">
-              <a onClick={this.openLanguage} className="item">EN</a>
+            <div onClick={this.openLanguage} className="drop-down">
+              <a>EN</a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
             </div>
             {this.renderLanguage()}
