@@ -2,6 +2,8 @@ import * as React from 'react';
 import Slider from "react-slick";
 import ava_1 from '../../images/ava_1.png';
 import playButtonWhite from '../../images/play_button_white.png';
+import linkedin_icon_social from '../../images/linkedin_icon_social.png';
+import medium_icon_social from '../../images/medium_icon_social.png';
 // Team icon
 import Yuriy_Avdeev from '../../media/Yuriy_Avdeev.5aa55970.jpg';
 import Jason_King from '../../media/Jason_King.jpg';
@@ -339,6 +341,12 @@ export class TeamAdvisersPartners extends React.Component {
           <p><span>5</span>{el.fackt1}</p>
           <p><span>7</span>{el.fackt2}</p>
           <p><span>10</span>{el.fackt3}</p>
+          <div className="block-soc-icon">
+            <a target="_blank" href={el.src}>
+              <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
+            </a>
+            <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
+          </div>
         </div>
       );
     })
@@ -355,7 +363,12 @@ export class TeamAdvisersPartners extends React.Component {
           <p><span>5</span>{el.fackt1}</p>
           <p><span>7</span>{el.fackt2}</p>
           <p><span>10</span>{el.fackt3}</p>
-          <a className="in" />
+          <div className="block-soc-icon">
+            <a target="_blank" href={el.src}>
+              <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
+            </a>
+            <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
+          </div>
         </div>
       );
     })
@@ -387,7 +400,12 @@ export class TeamAdvisersPartners extends React.Component {
               <p>{el.fackt1}</p>
               <p>{el.fackt2}</p>
             </div>
-            <a target="_blank" href={el.linkedin}><div className="ln"></div></a>
+            <div className="block-soc-icon">
+              <a target="_blank" href={el.linkedin}>
+                <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
+              </a>
+              <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
+            </div>
           </div>
           <div className="right_content">
             <p>
