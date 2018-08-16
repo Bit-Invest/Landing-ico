@@ -169,6 +169,10 @@
 .block_5 .settings2 {
   display: none;
 }
+.settings3 {
+  display: none;
+}
+
 .block_5 .container {
   margin-top: 70px;
 }
