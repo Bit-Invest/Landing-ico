@@ -2,11 +2,19 @@ import * as React from 'react';
 import block_3_ico_1 from '../../images/block_3_ico_1.png';
 import block_3_ico_2 from '../../images/block_3_ico_2.png';
 import block_3_ico_3 from '../../images/block_3_ico_3.png';
+import {links} from '../../links.js';
+import play_button_youtube from '../../media/play_button_youtube.png';
 import './TeamLegal.css';
 
 const RigthVideo = () => {
   return (
-    <div className="right"></div>
+    <div className="right">
+      <img
+        src={play_button_youtube}
+        alt="CINDEX"
+        className="play"
+      />
+    </div>
   );
 };
 
@@ -40,26 +48,26 @@ export const TeamLegal = () => (
           <div className="dock_block">
             <div className="dock">
               <div className="row">
-                <img src={block_3_ico_1} alt={"CINDEX"}/>
-                <span>WHITEPAPER</span>
+                <a target="_blank" href={links.wp}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+                <a target="_blank" href={links.wp}><span>WHITEPAPER</span></a>
               </div>
               <div className="row">
-                <img src={block_3_ico_2} alt={"CINDEX"}/>
-                <span>PRESENTATION</span>
+                <a target="_blank" href={links.pr}><img src={block_3_ico_2} alt={"CINDEX"}/></a>
+                <a target="_blank" href={links.pr}><span>PRESENTATION</span></a>
               </div>
               <div className="row">
-                <img src={block_3_ico_1} alt={"CINDEX"}/>
-                <span>ONE PAGER</span>
+                <a target="_blank" href={links.op}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+                <a target="_blank" href={links.op}><span>ONE PAGER</span></a>
               </div>
             </div>
             <div className="dock">
               <div className="row">
-                <img src={block_3_ico_3} alt={"CINDEX"}/>
-                <span>FINANCIAL  MODEL</span>
+                <a target="_blank" href={links.fm}><img src={block_3_ico_3} alt={"CINDEX"}/></a>
+                <a target="_blank" href={links.fm}><span>FINANCIAL  MODEL</span></a>
               </div>
               <div className="row">
-                <img src={block_3_ico_1} alt={"CINDEX"}/>
-                <span>LEGAL DOCS</span>
+                <a target="_blank" href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+                <a target="_blank" href={links.ld}><span>LEGAL DOCS</span></a>
               </div>
             </div>
           </div>

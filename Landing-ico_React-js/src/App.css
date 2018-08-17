@@ -75,8 +75,8 @@
   font-family: 'Geometria';
   box-sizing: border-box;
   outline: none;
+  text-decoration: none;
 }
-
 .contentText {
   position: relative;
 }
@@ -1976,4 +1976,3 @@ body.compensate-for-scrollbar {
     margin-top: 30px;
   }
 }
-  

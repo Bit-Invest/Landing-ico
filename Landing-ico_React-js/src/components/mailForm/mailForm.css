@@ -28,7 +28,7 @@
 }
 
 .mail-form__description {
-  margin-top: 10.6px;  
+  margin-top: 10.6px;
   font-size: 14px;
   text-align: center;
 }
@@ -67,6 +67,7 @@
   margin-top: 10.1px;
 }
 .mail-form__video {
+  background-image: url(../../media/mainBlock_screen.png);
   width: 429px;
   height: 140px;
   margin: 0 auto;
@@ -75,13 +76,11 @@
   align-items: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: rgba(0, 0, 0, 1);
 }
 .mail-form__play {
   width: 40px;
   height: 40px;
-  border-radius: 100%;
-  background-color: #ff4040;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {

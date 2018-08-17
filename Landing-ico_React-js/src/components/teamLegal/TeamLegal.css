@@ -9,6 +9,9 @@
   display: flex;
   margin: 0 130px;
 }
+.teamLegal .container a {
+  color: white;
+}
 .teamLegal .container .left {
   display: inline-block;
   margin-right: 15%;
@@ -44,17 +47,27 @@
   margin-right: 10px;
 }
 .teamLegal .right:nth-of-type(1) {
+  background-image: url(../../media/TeamLegal_screen.png);
+  background-size: cover;
   width: 280px;
   height: 140px;
-  background-color: black;
   margin: 60px auto;
   display: none;
+  text-align: center;
 }
 .teamLegal .right:nth-of-type(2) {
+  background-image: url(../../media/TeamLegal_screen.png);
+  background-size: cover;
   width: 280px;
   height: 140px;
-  background-color: black;
   display: inline-block;
+  text-align: center;
+}
+.teamLegal .right .play {
+  width: 40px;
+  height: 40px;
+  margin-top: 50px;
+  cursor: pointer;
 }
 .dock .row {
   margin-bottom: 20px;
@@ -72,4 +85,3 @@
 @media (max-width: 1439px) {
 
 }
-

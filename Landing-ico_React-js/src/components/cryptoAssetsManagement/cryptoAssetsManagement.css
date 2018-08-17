@@ -5,21 +5,27 @@
   background: none;
 }
 .cryptoAssetsManagement .row {
+  display: flex;
   margin-bottom: 110px;
 }
 .cryptoAssetsManagement .header_blocks {
   width: 50%;
 }
 .cryptoAssetsManagement .video {
+  background-size: cover;
+  background-image: url(../../media/cryptoAssetsManagement_screen.png);
+  text-align: center;
+  width: 30%;
+  max-width: 300px;
+  height: 140px;
+  margin-top: 80px;
   margin-left: 15%;
 }
-.cryptoAssetsManagement .video {
-  width: 30%;
-  height: 140px;
-  background-color: red;
-  margin-top: 80px;
-  display: inline-block;
-  max-width: 300px;
+.cryptoAssetsManagement .video .play {
+  width: 40px;
+  height: 40px;
+  margin-top: 50px;
+  cursor: pointer;
 }
 .cryptoAssetsManagement .txt {
   width: 40%;
@@ -53,11 +59,23 @@
   width: 30%;
   margin-top: 50px;
 }
-.cryptoAssetsManagement .problemBlock .video_block .img {
-  width: 100%;
-  height: 200px;
-  max-width: 330px;
-  background-color: black;
+.cryptoAssetsManagement .problemBlock .video_block .mockup1 {
+  background-size: cover;
+  height: 222px;
+  width: 380px;
+  background-image: url(../../media/mockup1.png);
+}
+.cryptoAssetsManagement .problemBlock .video_block .mockup2 {
+  background-size: cover;
+  height: 222px;
+  width: 380px;
+  background-image: url(../../media/mockup2.png);
+}
+.cryptoAssetsManagement .problemBlock .video_block .mockup3 {
+  background-size: cover;
+  height: 284px;
+  width: 300px;
+  background-image: url(../../media/mockup3.png);
 }
 .problemBlock {
   display: flex;
@@ -65,7 +83,8 @@
   padding-bottom: 140px;
 }
 
-.problemBlock button {
+.problemBlock .btn {
+  text-align: center;
   width: 120px;
   height: 40px;
   border: none;
@@ -77,63 +96,20 @@
   color: white;
   line-height: 40px;
 }
-.problemBlock button:hover {
+.problemBlock .btn:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 1023px) { 
+@media (max-width: 1023px) {
+  .cryptoAssetsManagement .row {
+    display: block;
+  }
   .cryptoAssetsManagement .header_blocks {
     width: 90%;
     display: block;
   }
   .cryptoAssetsManagement .video {
     display: block;
-    margin: 70px auto;    
+    margin: 70px auto;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .cryptoAssetsManagement .header_blocks {
-    width: 80%;
-    padding: 0 !important;
-    margin: 0 auto !important;
-    display: table !important;
-  }
-  .cryptoAssetsManagement .video {
-    width: 100%;
-    padding: 0;
-    margin: 40px auto 0;
-  }
-  .problemBlock {
-    display: table;
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 70px;
-  }
-  .cryptoAssetsManagement .txt {
-    width: 100%;
-    margin: 0;
-  }
-  .cryptoAssetsManagement .problemBlock .video_block {
-    display: table;
-    width: 100%;
-  }
-  .cryptoAssetsManagement .problemBlock .video_block .img {
-    margin: 0 auto;
-  }
-  .problemBlock button {
-    margin: 30px auto;
-    display: table;
-  }
-  .cryptoAssetsManagement .txt2 {
-    width: 100%;
-    margin: 0;
-  }
-}
-
-
-
-
-
-
-

@@ -2,6 +2,7 @@ import * as React from 'react';
 import logo from '../../images/Logo_CINDX.png';
 import menu from '../../images/menu.png';
 import arrow_public from '../../images/arrow_public.png';
+import {links} from '../../links.js';
 import './Menu.css';
 
 export class Menu extends React.Component {
@@ -34,23 +35,23 @@ export class Menu extends React.Component {
         <div className="publicDocs">
           <div className="show-publicDocs">
             <div className="doc_icon"></div>
-            <a className="itemMini2">WHITEPAPER</a>
+            <a target="_blank" href={links.wp} className="itemMini2">WHITEPAPER</a>
           </div>
           <div className="show-publicDocs">
             <div className="doc_icon"></div>
-            <a className="itemMini2">PRESENTATION</a>
+            <a target="_blank" href={links.pr} className="itemMini2">PRESENTATION</a>
           </div>
           <div className="show-publicDocs">
             <div className="doc_icon"></div>
-            <a className="itemMini2">ONE PAGER</a>
+            <a target="_blank" href={links.op} className="itemMini2">ONE PAGER</a>
           </div>
           <div className="show-publicDocs">
             <div className="doc_icon"></div>
-            <a className="itemMini2">FINANCIAL MODEL</a>
+            <a target="_blank" href={links.fm} className="itemMini2">FINANCIAL MODEL</a>
           </div>
           <div className="show-publicDocs">
             <div className="doc_icon"></div>
-            <a className="itemMini2">LEGAL DOCS</a>
+            <a target="_blank" href={links.ld} className="itemMini2">LEGAL DOCS</a>
           </div>
         </div>
       )
@@ -88,7 +89,7 @@ export class Menu extends React.Component {
     if (isOpened) {
       return (
         <div className="showMenu">
-          <a className="itemMini">Product</a>
+          <a href="#product" className="itemMini">Product</a>
           <a className="itemMini">Sale Details</a>
           <a className="itemMini">Team</a>
           <div onClick={this.openPublicDocs} className="drop-down">
@@ -115,7 +116,7 @@ export class Menu extends React.Component {
         <div className="container-menu">
           <img className="logo" src={logo} alt={"CINDEX"}/>
           <div className="menu-item">
-            <a className="item">Product</a>
+            <a href="#product" className="item">Product</a>
             <a className="item">Sale Details</a>
             <a className="item">Team</a>
             <div onClick={this.openPublicDocs} className="drop-down">
@@ -123,8 +124,8 @@ export class Menu extends React.Component {
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
             </div>
             {this.renderPublicDocs()}
-            <a className="item">Test MVP</a>
-            <a className="btn">Join Pre-Sale</a>
+            <a target='_blank' href={links.mvp} className="item">Test MVP</a>
+            <a target='_blank' href={links.joinpresale} className="btn">Join Pre-Sale</a>
             <div onClick={this.openLanguage} className="drop-down">
               <a>EN</a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
@@ -132,7 +133,7 @@ export class Menu extends React.Component {
             {this.renderLanguage()}
           </div>
           <div className="menu-768px">
-            <a className="btn">Join Pre-Sale</a>
+            <a target="_blank" href={links.joinpresale} className="btn">Join Pre-Sale</a>
             <a onClick={this.openMenu} className="menu-item-burger">
               <img className="menu-icon" src={menu} alt={"CINDEX"}/>
             </a>
