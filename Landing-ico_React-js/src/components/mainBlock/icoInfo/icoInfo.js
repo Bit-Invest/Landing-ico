@@ -7,6 +7,11 @@ import Hotbit from '@images/hotbit_logo.svg';
 import Localcoin from '@images/localcoin_logo.svg';
 import Stable from '@images/rating-stable.svg';
 import Hot from '@images/rating-hot.svg';
+import rating_topicolist from '../../../media/rating_topicolist.png';
+import rating_trackico from '../../../media/rating_trackico.png';
+import rating_topicolist2 from '../../../media/rating_topicolist2.png';
+import rating_icomarks from '../../../media/rating_icomarks.png';
+import rating_icobench from '../../../media/rating_icobench.png';
 import './icoInfo.css';
 
 const ROOT_CLASS = 'ico-info';
@@ -45,14 +50,12 @@ export const IcoInfo = props => (
         />
       </div>
       <div className={`${ROOT_CLASS}__ratings`}>
-        <img
-          src={Stable}
-          className={`${ROOT_CLASS}__rating ${ROOT_CLASS}__rating_stable`}
-        />
-        <img
-          src={Hot}
-          className={`${ROOT_CLASS}__rating ${ROOT_CLASS}__rating_hot`}
-        />
+        <img src={rating_topicolist} className={`${ROOT_CLASS}__rating-icon`} />
+        <img src={rating_trackico} className={`${ROOT_CLASS}__rating-icon`} />
+        <img src={rating_topicolist2} className={`${ROOT_CLASS}__rating-icon`} />
+        <br/>
+        <img src={rating_icomarks} className={`${ROOT_CLASS}__rating-icon`} />
+        <img src={rating_icobench} className={`${ROOT_CLASS}__rating-icon`} />
       </div>
     </div>
   </div>

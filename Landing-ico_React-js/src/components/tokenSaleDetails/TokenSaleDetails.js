@@ -3,6 +3,7 @@ import block_3_ico_1 from '../../images/block_3_ico_1.png';
 import block_3_ico_2 from '../../images/block_3_ico_2.png';
 import block_3_ico_3 from '../../images/block_3_ico_3.png';
 
+import { links } from '../../links.js';
 import { ProgressBar } from '@components/progressBar';
 
 import './tokenSaleDetails.css';
@@ -82,24 +83,24 @@ const Docs = () => {
   return(
     <div className="cont_5">
       <div className="row">
-        <img src={block_3_ico_1} alt={"CINDEX"}/>
-        <span>WHITEPAPER</span>
+        <a target="_blank" href={links.wp}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+        <a target="_blank" href={links.wp}><span>WHITEPAPER</span></a>
       </div>
       <div className="row">
-        <img src={block_3_ico_2} alt={"CINDEX"}/>
-        <span>PRESENTATION</span>
+        <a target="_blank" href={links.pr}><img src={block_3_ico_2} alt={"CINDEX"}/></a>
+        <a target="_blank" href={links.pr}><span>PRESENTATION</span></a>
       </div>
       <div className="row">
-        <img src={block_3_ico_1} alt={"CINDEX"}/>
-        <span>ONE PAGER</span>
+        <a target="_blank" href={links.op}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+        <a target="_blank" href={links.op}><span>ONE PAGER</span></a>
       </div>
       <div className="row">
-        <img src={block_3_ico_3} alt={"CINDEX"}/>
-        <span>FINANCIAL  MODEL</span>
+        <a target="_blank" href={links.fm}><img src={block_3_ico_3} alt={"CINDEX"}/></a>
+        <a target="_blank" href={links.fm}><span>FINANCIAL  MODEL</span></a>
       </div>
       <div className="row">
-        <img src={block_3_ico_1} alt={"CINDEX"}/>
-        <span>LEGAL DOCS</span>
+        <a target="_blank" href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+        <a target="_blank" href={links.ld}><span>LEGAL DOCS</span></a>
       </div>
     </div>
   );
@@ -154,14 +155,14 @@ const TokenDeals = () => {
           <p className="span">Dec 17 - Dec 26 - 0% Bonus</p>
         </div>
       </div>
-      <a className="sb">BUY TOKENS</a>
+      <a target="_blank" href={links.buytokens} className="sb">BUY TOKENS</a>
     </div>
   );
 };
 
 const ButtonBuy = () => {
   return(
-    <a className="sb duo">buy tokens</a>
+    <a target="_blank" href={links.buytokens} className="sb duo">buy tokens</a>
   );
 };
 

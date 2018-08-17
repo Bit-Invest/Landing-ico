@@ -19,6 +19,9 @@
   width: 105px;
   height: 36px;
 }
+.menu a {
+  color: white;
+}
 .menu .drop-down {
   display: flex;
   align-items: center;
@@ -157,10 +160,12 @@
 .menu .language .itemMini2 {
   font-size: 16px;
   font-weight: 300;
+  color: #7962d4;
 }
 .menu .publicDocs .itemMini2 {
   font-size: 16px;
   font-weight: 300;
+  color: #7962d4;
 }
 .menu .publicDocs .doc_icon {
   background-image: url(../../images/doc_icon_violet.png);
@@ -197,6 +202,9 @@
     margin-top: 25px;
     margin-bottom: 0px;
   }
+  .menu .publicDocs .itemMini2 {
+    color: white;
+  }
   .menu .drop-down .arrow_public {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -230,8 +238,12 @@
     padding-left: 25px;
     padding-top: 0px;
   }
+  .menu .language .itemMini2 {
+    color: white;
+  }
   .menu .language .show-language {
     margin-top: 25px;
     margin-bottom: 0px;
+    color: white;
   }
 }

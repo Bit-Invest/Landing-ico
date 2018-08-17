@@ -1,12 +1,20 @@
 import * as React from 'react';
+import {links} from '../../links.js';
+import play_button_youtube from '../../media/play_button_youtube.png';
 import './cryptoAssetsManagement.css';
 
 export const CryptoAssetsManagement = (props) => (
-  <div className="cryptoAssetsManagement">
+  <div name="product" className="cryptoAssetsManagement">
     <div className="size">
       <div className="row">
-        <h2 className="header_blocks">CIDX.MARKET FOR INVESTORS</h2>
-        <div className="video"></div>
+        <h2 className="header_blocks">CINDX Is a Crypto Assets Management Hub. We solve the problems of investors, traders and developers</h2>
+        <div className="video">
+          <img
+            src={play_button_youtube}
+            alt="CINDEX"
+            className="play"
+          />
+        </div>
       </div>
       <div className="problemBlock">
         <div className="txt">
@@ -23,14 +31,14 @@ export const CryptoAssetsManagement = (props) => (
           </p>
         </div>
         <div className="video_block">
-          <div className="img"></div>
-          <button>TEST MVP</button>
+          <div className="mockup1"></div>
+          <a target="_blank" href={links.mvp} className="btn">TEST MVP</a>
         </div>
       </div>
       <div className="problemBlock">
         <div className="video_block">
-          <div className="img"></div>
-          <button>TEST MVP</button>
+          <div className="mockup2"></div>
+          <a target='_blank' href={links.mvp} className="btn">TEST MVP</a>
         </div>
         <div className="txt2">
           <p className="caption">CIDX.TRADE FOR TRADERS</p>
@@ -61,8 +69,8 @@ export const CryptoAssetsManagement = (props) => (
           </p>
         </div>
         <div className='video_block'>
-          <div className="img"></div>
-          <button>TEST MVP</button>
+          <div className="mockup3"></div>
+          <a target="_blank" href={links.mvp} className="btn">TEST MVP</a>
         </div>
       </div>
     </div>

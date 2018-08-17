@@ -6,6 +6,7 @@ import block_3_img from '../../images/block_3_img_1@2x.png';
 import block_3_img2 from '../../images/block_3_img_2@2x.png';
 import block_3_img3 from '../../images/block_3_img_3@2x.png';
 import block_3_man from '../../images/block_3_man.png';
+import {links} from '../../links.js';
 import Slider from "react-slick";
 import './MarketAnalytics.css';
 
@@ -51,20 +52,20 @@ export const MarketAnalytics = () => {
           </div>
           <div className="cont_3">
             <div className="row">
-              <img src={block_3_ico_1} alt={"block_3_ico_1"}/>
-              <span>WHITEPAPER</span>
+              <a target="_blank" href={links.wp}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
+              <a target="_blank" href={links.wp}><span>WHITEPAPER</span></a>
             </div>
             <div className="row">
-              <img src={block_3_ico_2} alt={"block_3_ico_2"}/>
-              <span>PRESENTATIOM</span>
+              <a target="_blank" href={links.pr}><img src={block_3_ico_2} alt={"block_3_ico_2"}/></a>
+              <a target="_blank" href={links.pr}><span>PRESENTATIOM</span></a>
             </div>
             <div className="row">
-              <img src={block_3_ico_1} alt={"block_3_ico_1"}/>
-              <span>ONE PAGER</span>
+              <a target="_blank" href={links.op}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
+              <a target="_blank" href={links.op}><span>ONE PAGER</span></a>
             </div>
             <div className="row">
-              <img src={block_3_ico_3} alt={"block_3_ico_3"}/>
-              <span>FINANCIAL MODEL</span>
+              <a target="_blank" href={links.fm}><img src={block_3_ico_3} alt={"block_3_ico_3"}/></a>
+              <a target="_blank" href={links.fm}><span>FINANCIAL MODEL</span></a>
             </div>
           </div>
           <div className="clear" />
@@ -113,20 +114,20 @@ export const MarketAnalytics = () => {
             </div>
             <div className="cont_3">
               <div className="row">
-                <img src={block_3_ico_1} alt={"block_3_ico_1"}/>
-                <span>WHITEPAPER</span>
+                <a target="_blank" href={links.wp}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
+                <a target="_blank" href={links.wp}><span>WHITEPAPER</span></a>
               </div>
               <div className="row">
-                <img src={block_3_ico_2} alt={"block_3_ico_2"}/>
-                <span>PRESENTATIOM</span>
+                <a target="_blank" href={links.pr}><img src={block_3_ico_2} alt={"block_3_ico_2"}/></a>
+                <a target="_blank" href={links.pr}><span>PRESENTATIOM</span></a>
               </div>
               <div className="row">
-                <img src={block_3_ico_1} alt={"block_3_ico_1"}/>
-                <span>ONE PAGER</span>
+                <a target="_blank" href={links.op}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
+                <a target="_blank" href={links.op}><span>ONE PAGER</span></a>
               </div>
               <div className="row">
-                <img src={block_3_ico_3} alt={"block_3_ico_3"}/>
-                <span>FINANCIAL MODEL</span>
+                <a target="_blank" href={links.fm}><img src={block_3_ico_3} alt={"block_3_ico_3"}/></a>
+                <a target="_blank" href={links.fm}><span>FINANCIAL MODEL</span></a>
               </div>
             </div>
             <div className="clear" />

@@ -128,6 +128,9 @@
   margin-top: 70px;
 }
 
+.block_9 .lD {
+  text-decoration: underline;
+}
 @media (max-width: 1439px) {
   .block_9 .container2 {
     margin: 70px 0 0;

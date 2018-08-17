@@ -16,6 +16,15 @@
 
 .ico-info__ratings {
   display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.ico-info__rating-icon {
+  width: 60px;
+  height: 46px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .ico-info__partner {
