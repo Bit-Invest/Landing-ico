@@ -20,6 +20,7 @@
   height: 140px;
   margin-top: 80px;
   margin-left: 15%;
+  border-radius: 10px;
 }
 .cryptoAssetsManagement .video .play {
   width: 40px;
@@ -113,6 +114,7 @@
   .cryptoAssetsManagement .video {
     display: block;
     margin: 70px auto;
+    width: 40%;
   }
 }
 
