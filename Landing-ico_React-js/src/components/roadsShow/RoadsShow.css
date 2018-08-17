@@ -40,7 +40,7 @@
     margin-bottom: 15px;
 }
 
-.road-show-block .slick-next, .slick-prev {
+.road-show-block .slick-next, .road-show-block .slick-prev {
     display: none!important;
 }
 
