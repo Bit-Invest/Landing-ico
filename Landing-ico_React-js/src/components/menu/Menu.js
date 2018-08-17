@@ -89,6 +89,7 @@ export class Menu extends React.Component {
     if (isOpened) {
       return (
         <div className="showMenu">
+          <a target="_blank" href={links.joinpresale} className="itemMini joinpresale">Join Token Pre-Sale</a>
           <a href="#product" className="itemMini">Product</a>
           <a className="itemMini">Sale Details</a>
           <a className="itemMini">Team</a>

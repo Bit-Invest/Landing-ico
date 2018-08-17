@@ -1810,6 +1810,35 @@ body.compensate-for-scrollbar {
     padding: 40px 0 200px 0;
   }
 
+  .cryptoAssetsManagement .problemBlock .video_block .mockup1 {
+    width: 220px;
+    height: 129px;
+    margin: 0 auto;
+  }
+
+  .cryptoAssetsManagement .problemBlock .video_block .mockup2 {
+    width: 220px;
+    height: 129px;
+    margin: 0 auto;
+  }
+
+  .cryptoAssetsManagement .problemBlock .video_block .mockup3 {
+    width: 230px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  .menu .btn {
+    display: none;
+  }
+
+  .menu .joinpresale {
+    display: block;
+  }
+
+  .block_5 .size:after {
+    top: 355px;
+  }
 
   .teamLegal .container .row {
     display: inherit;
