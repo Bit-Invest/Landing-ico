@@ -55,50 +55,52 @@ export const Roadmap = props => {
         </div>
         <div className={ROOT_CLASS}>
           <div className={`${ROOT_CLASS}__content`}>
-            <div className={`${ROOT_CLASS}__map`}>
-              <div className={`${ROOT_CLASS}__years`}>
-                <div className={`${ROOT_CLASS}__year ${ROOT_CLASS}__year_1`}>
-                  2018
+            <div className={`wrapper__${ROOT_CLASS}__map`}>
+              <div className={`${ROOT_CLASS}__map`}>
+                <div className={`${ROOT_CLASS}__years`}>
+                  <div className={`${ROOT_CLASS}__year ${ROOT_CLASS}__year_1`}>
+                    2018
+                  </div>
+                  <div className={`${ROOT_CLASS}__year ${ROOT_CLASS}__year_2`}>
+                    2019
+                  </div>
+                  <div className={`${ROOT_CLASS}__year ${ROOT_CLASS}__year_3`}>
+                    2020
+                  </div>
                 </div>
-                <div className={`${ROOT_CLASS}__year ${ROOT_CLASS}__year_2`}>
-                  2019
+                <div className={`${ROOT_CLASS}__quartals`}>
+                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_1`}>
+                    Q1
+                  </div>
+                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_2`}>
+                    Q2
+                  </div>
+                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_3`}>
+                    Q3
+                  </div>
+                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_4`}>
+                    Q4
+                  </div>
+                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_5`}>
+                    Q1
+                  </div>
+                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_6`}>
+                    Q2
+                  </div>
+                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_7`}>
+                    Q3
+                  </div>
+                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_8`}>
+                    Q4
+                  </div>
+                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_9`}>
+                    Q1
+                  </div>
                 </div>
-                <div className={`${ROOT_CLASS}__year ${ROOT_CLASS}__year_3`}>
-                  2020
+                <div className={`${ROOT_CLASS}__circles`}>
+                  <div className={`${ROOT_CLASS}__line`} />
+                  {renderCircles()}
                 </div>
-              </div>
-              <div className={`${ROOT_CLASS}__quartals`}>
-                <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_1`}>
-                  Q1
-                </div>
-                <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_2`}>
-                  Q2
-                </div>
-                <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_3`}>
-                  Q3
-                </div>
-                <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_4`}>
-                  Q4
-                </div>
-                <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_5`}>
-                  Q1
-                </div>
-                <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_6`}>
-                  Q2
-                </div>
-                <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_7`}>
-                  Q3
-                </div>
-                <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_8`}>
-                  Q4
-                </div>
-                <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_9`}>
-                  Q1
-                </div>
-              </div>
-              <div className={`${ROOT_CLASS}__circles`}>
-                <div className={`${ROOT_CLASS}__line`} />
-                {renderCircles()}
               </div>
             </div>
             <p className={`${ROOT_CLASS}__text`}>

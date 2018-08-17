@@ -9,7 +9,7 @@
   border: solid 1px #d1d1d1;
   font-family: Geometria;
   font-size: 14px;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 .input__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */

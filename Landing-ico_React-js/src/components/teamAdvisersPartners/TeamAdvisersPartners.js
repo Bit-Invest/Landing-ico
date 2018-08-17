@@ -430,6 +430,12 @@ export class TeamAdvisersPartners extends React.Component {
       slidesToShow: 2,
       slidesToScroll: 1
     };
+    const settingsTeam3 = {
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
     const settingsAdvisers = {
       infinite: true,
       speed: 500,
@@ -441,6 +447,13 @@ export class TeamAdvisersPartners extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
+      slidesToScroll: 1
+    };
+    const settingsOurParners3 = {
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 2,
       slidesToScroll: 1
     };
     return (
@@ -462,6 +475,13 @@ export class TeamAdvisersPartners extends React.Component {
                 </Slider>
               </div>
             </div>
+            <div className="block_arrow_relative">
+              <div className="settings3">
+                <Slider {...settingsTeam3}>
+                  {this.mapTeam2()}
+                </Slider>
+              </div>
+            </div>
           </div>
           <div className="clear" />
           <div className="advisers">
@@ -479,6 +499,11 @@ export class TeamAdvisersPartners extends React.Component {
             <h2 className="header_blocks">Our Partners</h2>
             <div className="container2">
                 <Slider {...settingsOurParners}>
+                  {this.mapOurPartners()}
+                </Slider>
+            </div>
+            <div className="container3">
+                <Slider {...settingsOurParners3}>
                   {this.mapOurPartners()}
                 </Slider>
             </div>

@@ -24,7 +24,17 @@
   padding-bottom: 80px;
 }
 
+.block_7 .settings3,
+.block_7 .settingsNews3 {
+  margin-top: 70px;
+  padding-bottom: 80px;
+}
+
 .block_7 .settings2 {
+  display: none;
+}
+
+.block_7 .settings3 {
   display: none;
 }
 
@@ -94,6 +104,10 @@
 }
 
 .block_7 .settingsNews2 {
+  display: none;
+}
+
+.block_7 .settingsNews3 {
   display: none;
 }
 

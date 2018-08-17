@@ -30,6 +30,10 @@
   display: none;
 }
 
+.block_8 .settings3 {
+  display: none;
+}
+
 .block_8 .team .item {
   text-align: center;
 }
@@ -206,6 +210,10 @@
 
 .block_8 .ourPartners .img {
   height: 170px;
+}
+
+.block8 .container3 {
+  display: none;
 }
 
 

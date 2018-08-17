@@ -97,6 +97,10 @@
   margin: 0 auto;
 }
 
+.ourPartners .container3 {
+  display: none;
+}
+
 .clear
 {
     clear: both;
@@ -1806,6 +1810,7 @@ body.compensate-for-scrollbar {
     padding: 40px 0 200px 0;
   }
 
+
   .teamLegal .container .row {
     display: inherit;
   }
@@ -1819,7 +1824,47 @@ body.compensate-for-scrollbar {
   }
 
   .roadmap__buttons {
-    margin: 30px auto 0 auto!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0!important;
+    width: 100%;
+  }
+
+  .roadmap__line {
+    width: 100%;
+  }
+
+  .roadmap__buttons .roadmap__button {
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  .roadmap__map {
+    margin: 30px 0 -30px 0;
+    width: 100%;
+    overflow-x: scroll;
+    padding-left: 5%;
+    padding-bottom: 30px;
+  }
+
+  /* .roadmap__map::-webkit-scrollbar {
+    display: none;
+  } */
+
+  .wrapper__roadmap__map {
+    height: 130px;
+    overflow-y: hidden;
+  }
+
+  .roadmap__map .roadmap__years,
+  .roadmap__map .roadmap__quartals,
+  .roadmap__map .roadmap__circles {
+    width: 550px;
+  }
+
+  .roadmap__image {
+    width: 100%;
   }
 
   .roadmap__text {
@@ -1835,7 +1880,7 @@ body.compensate-for-scrollbar {
   }
 
   .block_1 .cont_row {
-    margin-bottom: 0!important;
+    margin: 0;
   }
 
   .block_1 .container,
@@ -1950,6 +1995,23 @@ body.compensate-for-scrollbar {
     width: auto;
   }
 
+  .block_5 .container {
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .block_5 .slick-next, .block_5 .slick-prev {
+    display: none!important;
+  }
+
+  .block_5 .settings2 {
+    display: none;
+  }
+
+  .settings3 {
+    display: block!important;
+  }
+
   .block_6 .slick-next, .block_6 .slick-prev {
     display: none!important;
   }
@@ -1961,7 +2023,7 @@ body.compensate-for-scrollbar {
   .block_6 .left .name a {
     position: absolute;
     left: 0;
-    bottom: -65px;
+    bottom: -85px;
   }
 
   .block_6 .name {
@@ -1974,5 +2036,144 @@ body.compensate-for-scrollbar {
     height: auto;
     margin: 0 0 0 0;
     margin-top: 30px;
+  }
+
+  .block_6 .left p {
+    width: 100%;
+    padding-top: 110px;
+  }
+
+  .block_6 {
+    padding-bottom: 40px;
+  }
+
+  .block_7 .settings2 {
+    display: none;
+  }
+
+  .block_7 h2 {
+    margin-top: 40px!important;
+  }
+
+  .ourPartners .container3 {
+    display: block;
+  }
+
+  .block_7 .settingsNews2 {
+    display: none;
+  }
+
+  .block_7 .settings3 {
+    display: block;
+  }
+
+  .block_7 .settingsNews3 {
+    display: block;
+  }
+
+  .block_7 .slick-slider {
+    width: 100%;
+  }
+
+  .block_7 .slick-next, .block_8 .slick-next {
+    margin-left: -80px;
+  }
+
+  .block_7 .slick-prev, .block_8 .slick-prev {
+    margin-left: -140px;
+  }
+
+  .block_8 {
+    padding-bottom: 20px;
+  }
+
+  .block_8 .block_arrow_relative {
+    margin-bottom: 50px;
+  }
+
+  .block_8 .advisers .slick-slider {
+    width: 100%;
+  }
+
+  .block_8 .advisers .slick-list {
+    width: 100%;
+  }
+
+  .block_8 .advisers .left_content {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+  }
+
+  .block_8 .advisers .slick-list {
+    border-radius: 0;
+  }
+
+  .block_8 .advisers .right_content {
+    display: none;
+  }
+
+  .block_8 .settings2 {
+    display: none;
+  }
+
+  .block_8 .settings3 {
+    display: block;
+  }
+
+  .block_8 .slick-list {
+    width: 100%;
+  }
+
+  .block_8 .ourPartners .slick-list {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .block_8 .advisers .settings2_1 {
+    padding: 50px 0;
+  }
+
+  .ourPartners .container2 {
+    display: none;
+  }
+
+  .block8 .container3 {
+    width: 100%;
+  }
+
+  .block_8 .slick-next {
+    margin-left: -50px;
+  }
+
+  .block_8 .slick-prev {
+    margin-left: -110px;
+  }
+
+  .block_8 .settings2_1 .slick-next, .block_8 .settings2_1 .slick-prev {
+    margin-top: -22px;
+  }
+
+  .block_9 {
+    display: block!important;
+  }
+
+  .block_9 .adress {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 40px 0 0 0;
+  }
+
+  .block_9 a.sb_2 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .block_9 .container2 {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px 70px 5%;
+    width: 100%;
   }
 }

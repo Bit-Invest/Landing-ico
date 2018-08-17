@@ -108,6 +108,19 @@ export class MediaNews extends React.Component {
       slidesToShow: 2,
       slidesToScroll: 1
     };
+    const settings3 = {
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    const settingsNews3 = {
+      arrows: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
     return (
       <div className="block_7">
         <div className="size">
@@ -126,6 +139,13 @@ export class MediaNews extends React.Component {
               </Slider>
             </div>
           </div>
+          <div className="block_arrow_relative">
+            <div className="settings3">
+              <Slider {...settings3}>
+                {this.mapMedia()}
+              </Slider>
+            </div>
+          </div>
           <hr/>
           <h2 className="header_blocks">News</h2>
           <div className="block_arrow_relative">
@@ -138,6 +158,13 @@ export class MediaNews extends React.Component {
           <div className="block_arrow_relative">
             <div className="settingsNews2">
               <Slider {...settingsNews2}>
+                  {this.mapNews()}
+              </Slider>
+            </div>
+          </div>
+          <div className="block_arrow_relative">
+            <div className="settingsNews3">
+              <Slider {...settingsNews3}>
                   {this.mapNews()}
               </Slider>
             </div>
