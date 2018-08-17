@@ -175,9 +175,41 @@ class RoadsShow extends Component {
         })
     }
 
+    componentDidMount = () => {
+        window.addEventListener('resize', this.handleResize)
+        this.handleResize()
+    }
+
+    handleResize = () => {
+        let i = 0
+        let filterEl
+        if (window.innerWidth >= 801) {
+            i = 2
+            filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
+        } else if (window.innerWidth < 801)  {
+            i = 1
+            filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
+        }
+        this.setState({
+            valuePopUp: filterEl[0]
+        })
+        
+    }
+
     renderRoadShowPopup = (i) => {
         const filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
-        this.slider.slickGoTo(i - 2)
+        if (window.innerWidth >= 1201)
+            this.slider.slickGoTo(i - 2)
+        if (window.innerWidth >= 1001)
+            this.slider1.slickGoTo(i - 2)
+        if (window.innerWidth >= 801)
+            this.slider2.slickGoTo(i - 2)
+        if (window.innerWidth >= 601)
+            this.slider3.slickGoTo(i - 1)
+        if (window.innerWidth >= 451)
+            this.slider4.slickGoTo(i - 1)
+        if (window.innerWidth < 451)
+            this.slider5.slickGoTo(i - 1)
         this.setState({
             valuePopUp: filterEl[0]
         })
@@ -191,50 +223,40 @@ class RoadsShow extends Component {
             slidesToScroll: 1
         }
 
-        // if (window.innerWidth <= 1200) {
-        //     const settings2 = {
-        //         infinite: true,
-        //         speed: 500,
-        //         slidesToShow: 8,
-        //         slidesToScroll: 1
-        //     }
-        // }
+        const settings2 = {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 9,
+            slidesToScroll: 1
+        }
 
-        // if (window.innerWidth <= 1000) {
-        //     const settings3 = {
-        //         infinite: true,
-        //         speed: 500,
-        //         slidesToShow: 6,
-        //         slidesToScroll: 1
-        //     }
-        // }
+        const settings3 = {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 7,
+            slidesToScroll: 1
+        }
 
-        // if (window.innerWidth <= 800) {
-        //     const settings4 = {
-        //         infinite: true,
-        //         speed: 500,
-        //         slidesToShow: 4,
-        //         slidesToScroll: 1
-        //     }
-        // }
+        const settings4 = {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 5,
+            slidesToScroll: 1
+        }
 
-        // if (window.innerWidth <= 600) {
-        //     const settings5 = {
-        //         infinite: true,
-        //         speed: 500,
-        //         slidesToShow: 3,
-        //         slidesToScroll: 1
-        //     }
-        // }
+        const settings5 = {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1
+        }
 
-        // if (window.innerWidth <= 450) {
-        //     const settings6 = {
-        //         infinite: true,
-        //         speed: 500,
-        //         slidesToShow: 2,
-        //         slidesToScroll: 1
-        //     }
-        // }
+        const settings6 = {
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1
+        }
 
         return (
             <div className="road-show-block">
@@ -254,27 +276,27 @@ class RoadsShow extends Component {
                         </Slider>
                     </div>
                     <div className="road__settings road__setting2">
-                        <Slider ref={slider => (this.slider = slider)} {...settings}>
+                        <Slider ref={slider => (this.slider1 = slider)} {...settings2}>
                             { this.renderRoadShow() }
                         </Slider>
                     </div>
                     <div className="road__settings road__setting3">
-                        <Slider ref={slider => (this.slider = slider)} {...settings}>
+                        <Slider ref={slider => (this.slider2 = slider)} {...settings3}>
                             { this.renderRoadShow() }
                         </Slider>
                     </div>
                     <div className="road__settings road__setting4">
-                        <Slider ref={slider => (this.slider = slider)} {...settings}>
+                        <Slider ref={slider => (this.slider3 = slider)} {...settings4}>
                             { this.renderRoadShow() }
                         </Slider>
                     </div>
                     <div className="road__settings road__setting5">
-                        <Slider ref={slider => (this.slider = slider)} {...settings}>
+                        <Slider ref={slider => (this.slider4 = slider)} {...settings5}>
                             { this.renderRoadShow() }
                         </Slider>
                     </div>
                     <div className="road__settings road__setting6">
-                        <Slider ref={slider => (this.slider = slider)} {...settings}>
+                        <Slider ref={slider => (this.slider5 = slider)} {...settings6}>
                             { this.renderRoadShow() }
                         </Slider>
                     </div>
