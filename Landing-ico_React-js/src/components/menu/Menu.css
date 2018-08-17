@@ -119,6 +119,9 @@
   padding-top: 25px;
   padding-left: 25px;
 }
+.menu .joinpresale {
+  display: none;
+}
 .menu .showMenu .itemMini:hover {
   border-left: 4px solid #7f00e3;
   padding-left: 21px;
