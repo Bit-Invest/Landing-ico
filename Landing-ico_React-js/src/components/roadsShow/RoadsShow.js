@@ -6,138 +6,158 @@ const dataRoadShow = [
     {
         place: 'San Francisco',
         date: '1232-21',
-        data: 'chnage djskd',
+        data: '1',
         video: {
             img: '',
             src: ''
         },
-        text: 'iowepqipoqwjdklsa nfmnvckdsanfjdsb vcjkdlfc dvndndlcmdf,vnmc,v nmsal;czxkvn asld;vzk nslvdnzf adklnsfjknldvmb'
+        text: '11'
     },
     {
         place: 'San djasl',
         date: '909-21',
-        data: 'chnage djskd',
+        data: '2',
         video: {
             img: '',
             src: ''
         },
-        text: ' mcvklxcjvxz vlnkjxczmv,cmv,cmzx.,mcz,.xmc dvndndl cmdf,vnmc,vnmsal;vncmxvnm,zxkdsad ioasd;vzk nslvdnzfa klnsfjknldvmb'
+        text: '22'
     },
     {
         place: 'Sadsakldmn Francisco',
         date: '1232-21',
-        data: 'chnage tioriterop',
+        data: '3',
         video: {
             img: '',
             src: ''
         },
-        text: 'ifewour91i2e 09deijkjfwoefijdsivojdflvsk fmvcx,nfewjopn fioqnpunreov'
+        text: '33'
     },
     {
         place: 'San Fracmxz,ncisco',
         date: '3123-21',
-        data: 'chnage jvncmx,',
+        data: '4',
         video: {
             img: '',
             src: ''
         },
-        text: 'vnxmc,nvkldfj sjfpoewjfosdfjp[qeo jfdlkj[rejlfgj lks;jrgklfjd]]'
+        text: '44'
     },
     {
         place: 'San Francisco',
         date: '909-21',
-        data: 'chnage djsnvcm,xkd',
+        data: '5',
         video: {
             img: '',
             src: ''
         },
-        text: 'iroepi3029p ofjdnmdje0iojfknvj rkfeopwls;fks;jgk ljerigfkjgo i30jerlgjo-jfkd lj2[ojsdkgje2lcl,'
+        text: '55'
     },
     {
         place: 'San Fracmxz,ncisco',
         date: '3123-21',
-        data: 'chnage jvncmx,',
+        data: '6',
         video: {
             img: '',
             src: ''
         },
-        text: 'vnxmc,nvkldfj sjfpoewjfosdfjp[qeo jfdlkj[rejlfgj lks;jrgklfjd]]'
+        text: '66'
     },
     {
         place: 'San Francisco',
         date: '909-21',
-        data: 'chnage djsnvcm,xkd',
+        data: '7',
         video: {
             img: '',
             src: ''
         },
-        text: 'iroepi3029p ofjdnmdje0iojfknvj rkfeopwls;fks;jgk ljerigfkjgo i30jerlgjo-jfkd lj2[ojsdkgje2lcl,'
+        text: '77'
     },
     {
         place: 'San Fracmxz,ncisco',
         date: '3123-21',
-        data: 'chnage jvncmx,',
+        data: '8',
         video: {
             img: '',
             src: ''
         },
-        text: 'vnxmc,nvkldfj sjfpoewjfosdfjp[qeo jfdlkj[rejlfgj lks;jrgklfjd]]'
+        text: '88'
     },
     {
         place: 'San Francisco',
         date: '909-21',
-        data: 'chnage djsnvcm,xkd',
+        data: '9',
         video: {
             img: '',
             src: ''
         },
-        text: 'iroepi3029p ofjdnmdje0iojfknvj rkfeopwls;fks;jgk ljerigfkjgo i30jerlgjo-jfkd lj2[ojsdkgje2lcl,'
+        text: '99'
     },
     {
         place: 'San Fracmxz,ncisco',
         date: '3123-21',
-        data: 'chnage jvncmx,',
+        data: '10',
         video: {
             img: '',
             src: ''
         },
-        text: 'vnxmc,nvkldfj sjfpoewjfosdfjp[qeo jfdlkj[rejlfgj lks;jrgklfjd]]'
+        text: '1010'
     },
     {
         place: 'San Francisco',
         date: '909-21',
-        data: 'chnage djsnvcm,xkd',
+        data: '11',
         video: {
             img: '',
             src: ''
         },
-        text: 'iroepi3029p ofjdnmdje0iojfknvj rkfeopwls;fks;jgk ljerigfkjgo i30jerlgjo-jfkd lj2[ojsdkgje2lcl,'
+        text: '1111'
     },
     {
         place: 'San Fracmxz,ncisco',
         date: '3123-21',
-        data: 'chnage jvncmx,',
+        data: '12',
         video: {
             img: '',
             src: ''
         },
-        text: 'vnxmc,nvkldfj sjfpoewjfosdfjp[qeo jfdlkj[rejlfgj lks;jrgklfjd]]'
+        text: '1212'
     },
     {
         place: 'San Francisco',
         date: '909-21',
-        data: 'chnage djsnvcm,xkd',
+        data: '13',
         video: {
             img: '',
             src: ''
         },
-        text: 'iroepi3029p ofjdnmdje0iojfknvj rkfeopwls;fks;jgk ljerigfkjgo i30jerlgjo-jfkd lj2[ojsdkgje2lcl,'
+        text: '1313'
+    },
+    {
+        place: 'San Francisco',
+        date: '909-21',
+        data: '14',
+        video: {
+            img: '',
+            src: ''
+        },
+        text: '1414'
+    },
+    {
+        place: 'San Francisco',
+        date: '909-21',
+        data: '15',
+        video: {
+            img: '',
+            src: ''
+        },
+        text: '1515'
     }
 ]
 
 class RoadsShow extends Component {
     state = {
-        valuePopUp: dataRoadShow[0]
+        valuePopUp: dataRoadShow[2]
     }
 
     renderRoadShow = () => {
@@ -157,64 +177,64 @@ class RoadsShow extends Component {
 
     renderRoadShowPopup = (i) => {
         const filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
-        this.slider.slickGoTo(i)
+        this.slider.slickGoTo(i - 2)
         this.setState({
             valuePopUp: filterEl[0]
         })
     }
 
     render() {
-        let settings = {
+        const settings = {
             infinite: true,
             speed: 500,
             slidesToShow: 11,
             slidesToScroll: 1
         }
 
-        if (window.innerWidth <= 1200) {
-            settings = {
-                infinite: true,
-                speed: 500,
-                slidesToShow: 8,
-                slidesToScroll: 1
-            }
-        }
+        // if (window.innerWidth <= 1200) {
+        //     const settings2 = {
+        //         infinite: true,
+        //         speed: 500,
+        //         slidesToShow: 8,
+        //         slidesToScroll: 1
+        //     }
+        // }
 
-        if (window.innerWidth <= 1000) {
-            settings = {
-                infinite: true,
-                speed: 500,
-                slidesToShow: 6,
-                slidesToScroll: 1
-            }
-        }
+        // if (window.innerWidth <= 1000) {
+        //     const settings3 = {
+        //         infinite: true,
+        //         speed: 500,
+        //         slidesToShow: 6,
+        //         slidesToScroll: 1
+        //     }
+        // }
 
-        if (window.innerWidth <= 800) {
-            settings = {
-                infinite: true,
-                speed: 500,
-                slidesToShow: 4,
-                slidesToScroll: 1
-            }
-        }
+        // if (window.innerWidth <= 800) {
+        //     const settings4 = {
+        //         infinite: true,
+        //         speed: 500,
+        //         slidesToShow: 4,
+        //         slidesToScroll: 1
+        //     }
+        // }
 
-        if (window.innerWidth <= 600) {
-            settings = {
-                infinite: true,
-                speed: 500,
-                slidesToShow: 3,
-                slidesToScroll: 1
-            }
-        }
+        // if (window.innerWidth <= 600) {
+        //     const settings5 = {
+        //         infinite: true,
+        //         speed: 500,
+        //         slidesToShow: 3,
+        //         slidesToScroll: 1
+        //     }
+        // }
 
-        if (window.innerWidth <= 450) {
-            settings = {
-                infinite: true,
-                speed: 500,
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        }
+        // if (window.innerWidth <= 450) {
+        //     const settings6 = {
+        //         infinite: true,
+        //         speed: 500,
+        //         slidesToShow: 2,
+        //         slidesToScroll: 1
+        //     }
+        // }
 
         return (
             <div className="road-show-block">
@@ -228,11 +248,35 @@ class RoadsShow extends Component {
                         <div className="road-popup-triangle"></div>
                     </div>
                     <div className='road__line' />
-                    <div className="road__settings">
+                    <div className="road__settings road__setting">
                         <Slider ref={slider => (this.slider = slider)} {...settings}>
                             { this.renderRoadShow() }
                         </Slider>
-                        {/* {renderCircles()} */}
+                    </div>
+                    <div className="road__settings road__setting2">
+                        <Slider ref={slider => (this.slider = slider)} {...settings}>
+                            { this.renderRoadShow() }
+                        </Slider>
+                    </div>
+                    <div className="road__settings road__setting3">
+                        <Slider ref={slider => (this.slider = slider)} {...settings}>
+                            { this.renderRoadShow() }
+                        </Slider>
+                    </div>
+                    <div className="road__settings road__setting4">
+                        <Slider ref={slider => (this.slider = slider)} {...settings}>
+                            { this.renderRoadShow() }
+                        </Slider>
+                    </div>
+                    <div className="road__settings road__setting5">
+                        <Slider ref={slider => (this.slider = slider)} {...settings}>
+                            { this.renderRoadShow() }
+                        </Slider>
+                    </div>
+                    <div className="road__settings road__setting6">
+                        <Slider ref={slider => (this.slider = slider)} {...settings}>
+                            { this.renderRoadShow() }
+                        </Slider>
                     </div>
                 </div>
             </div>

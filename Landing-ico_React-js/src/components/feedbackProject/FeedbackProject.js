@@ -128,7 +128,7 @@ class FeedbackProject extends React.Component {
           <img className="item" src={el.img} alt="CINDEX"/>
           <div className="left">
             <div className="name">
-              <div target="_blank" onClick={() => this.showVideoInPopUp(el.video)}><img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/></div>
+              <div className="feed-back-div" onClick={() => this.showVideoInPopUp(el.video)}><img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/></div>
               <h3>{el.name}</h3>
               <h4>{el.position}</h4>
               <hr />
