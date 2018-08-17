@@ -1810,6 +1810,10 @@ body.compensate-for-scrollbar {
     padding: 40px 0 200px 0;
   }
 
+  .problemBlock .btn {
+    margin-bottom: 20px;
+  }
+
   .cryptoAssetsManagement .problemBlock .video_block .mockup1 {
     width: 220px;
     height: 129px;
