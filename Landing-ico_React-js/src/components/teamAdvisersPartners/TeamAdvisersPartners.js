@@ -1,5 +1,8 @@
 import * as React from 'react';
 import Slider from "react-slick";
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { showPopUp, changeUrlPopupVideo } from '../../store/store';
 import ava_1 from '../../images/ava_1.png';
 import playButtonWhite from '../../images/play_button_white.png';
 import linkedin_icon_social from '../../images/linkedin_icon_social.png';
@@ -329,7 +332,7 @@ const advisers = [
   },
  ];
 
-export class TeamAdvisersPartners extends React.Component {
+class TeamAdvisersPartners extends React.Component {
   mapTeam = () => {
     return teamInfo.map((el, i) => {
       return (
@@ -384,6 +387,11 @@ export class TeamAdvisersPartners extends React.Component {
     })
   }
 
+  showVideoInPopUp = (url) => {
+    this.props.changeUrlPopupVideo(url)
+    this.props.showPopUp()
+  }
+
   mapAdvisers = () => {
     return advisers.map((el, i) => {
       return (
@@ -391,7 +399,7 @@ export class TeamAdvisersPartners extends React.Component {
           <div className="left_content">
             <div className="icon_content">
               <img className="icon-face" src={el.img} alt={"CINDX"}/>
-              <a target="_blank" href={el.video}><img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/></a>
+              <div onClick={() => this.showVideoInPopUp(el.video)}><img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/></div>
             </div>
             <div className="name_content">{el.name}</div>
             <hr/>
@@ -514,3 +522,11 @@ export class TeamAdvisersPartners extends React.Component {
     );
   }
 }
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({showPopUp, changeUrlPopupVideo}, dispatch);
+
+const connectedContainer =
+  connect(null, mapDispatchToProps)(TeamAdvisersPartners)
+
+export {connectedContainer as TeamAdvisersPartners}

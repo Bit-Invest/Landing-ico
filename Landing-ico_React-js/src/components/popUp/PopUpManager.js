@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { hidePopUp } from '../../store/store';
-import { switchPopUp } from '../../store/store';
+import { hidePopUp, changeUrlPopupVideo } from '../../store/store';
 import './PopUp.css';
 
 const ROOT_CLASS = 'showPopUpPage';
@@ -17,15 +16,29 @@ class PopUpManager extends React.Component {
     );
   }
 
+  buildUrlPoup = () => {
+    return (
+      this.props.state ?
+        this.props.state.urlPopUpVideo ?
+          this.props.state.urlPopUpVideo : ''
+        : ''
+    )
+  }
+
   onClickClose = () => {
     this.props.hidePopUp();
+    this.props.changeUrlPopupVideo('')
   }
 
   render(){
     return(
-      <div className={this.buildRootClass()}>
-        <div onClick={this.onClickClose} className="close">X</div>
-        <div className="showPopUp"></div>
+      <div className={this.buildRootClass()} onClick={this.onClickClose}>
+        <div className="wrapper-video-popup">
+          <div onClick={this.onClickClose} className="close"></div>
+          <div className="showPopUp">
+            <iframe src={this.buildUrlPoup()}></iframe>
+          </div>
+        </div>
       </div>
     )
   }
@@ -36,7 +49,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch =>
-  bindActionCreators({hidePopUp}, dispatch);
+  bindActionCreators({hidePopUp, changeUrlPopupVideo}, dispatch);
 
 const connectedContainer =
   connect(mapStateToProps, mapDispatchToProps)(PopUpManager);

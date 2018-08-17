@@ -1,5 +1,9 @@
 import * as React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { showPopUp, changeUrlPopupVideo } from '../../store/store';
 import Slider from "react-slick";
+import { PopUpManager } from '../popUp/PopUpManager'
 import block_6_ava from '../../images/block_6_ava.png';
 import playButtonWhite from '../../images/play_button_white.png';
 import Val_Jerdes from '../../media/Val_Jerdes.f8ab5be3.jpg';
@@ -111,7 +115,12 @@ const feedbackOnOurProject = [
   },
 ]
 
-export class FeedbackProject extends React.Component {
+class FeedbackProject extends React.Component {
+  showVideoInPopUp = (url) => {
+    this.props.changeUrlPopupVideo(url)
+    this.props.showPopUp()
+  }
+
   feedbackOnOurProject = () => {
     return feedbackOnOurProject.map((el, i) => {
       return (
@@ -119,7 +128,7 @@ export class FeedbackProject extends React.Component {
           <img className="item" src={el.img} alt="CINDEX"/>
           <div className="left">
             <div className="name">
-              <a target="_blank" href={el.video}><img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/></a>
+              <div target="_blank" onClick={() => this.showVideoInPopUp(el.video)}><img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/></div>
               <h3>{el.name}</h3>
               <h4>{el.position}</h4>
               <hr />
@@ -158,3 +167,11 @@ export class FeedbackProject extends React.Component {
     );
   }
 }
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({showPopUp, changeUrlPopupVideo}, dispatch);
+
+const connectedContainer =
+  connect(null, mapDispatchToProps)(FeedbackProject)
+
+export {connectedContainer as FeedbackProject}

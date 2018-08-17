@@ -16,6 +16,7 @@ import { Roadmap } from '@components/roadmap';
 import { CanvasMouns } from '@components/animate';
 import { ProgressBarSale } from '@components/progressBarSale/ProgressBarSale';
 import { Menu } from '@components/menu/Menu';
+import RoadsShow from './components/roadsShow/RoadsShow'
 import './App.css';
 
 export const App = props => (
@@ -29,6 +30,7 @@ export const App = props => (
       <CryptoAssetsManagement />
       <TeamLegal />
       <Roadmap />
+      <RoadsShow />
       <ProblemSolving />
       <HowCindxWorks />
       <MarketAnalytics />
@@ -39,6 +41,6 @@ export const App = props => (
       <TeamAdvisersPartners />
       <JoinTokenPreSale />
     </div>
-    <PopUpManager />
+    {/* <PopUpManager /> */}
   </div>
 );
