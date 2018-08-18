@@ -4,6 +4,8 @@ import block_3_ico_2 from '../../images/block_3_ico_2.png';
 import block_3_ico_3 from '../../images/block_3_ico_3.png';
 
 import { links } from '../../links.js';
+import { Join } from '../../links.js';
+
 import { ProgressBar } from '@components/progressBar';
 
 import './tokenSaleDetails.css';
@@ -155,14 +157,20 @@ const TokenDeals = () => {
           <p className="span">Dec 17 - Dec 26 - 0% Bonus</p>
         </div>
       </div>
-      <a target="_blank" href={links.buytokens} className="sb">BUY TOKENS</a>
+      <Join 
+        text="BUY TOKENS"
+        className="sb"
+      />
     </div>
   );
 };
 
 const ButtonBuy = () => {
   return(
-    <a target="_blank" href={links.buytokens} className="sb duo">buy tokens</a>
+    <Join 
+      text="buy tokens"
+      className="sb"
+    />
   );
 };
 

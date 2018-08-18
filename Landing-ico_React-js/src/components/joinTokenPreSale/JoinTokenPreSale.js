@@ -11,6 +11,7 @@ import medium_icon from '../../media/medium_icon.png';
 import linkedin_icon from '../../media/linkedin_icon.png';
 import github_icon from '../../media/github_icon.png';
 import { links } from '../../links.js';
+import { Join } from '../../links.js';
 import weibo_icon from '../../media/weibo_icon.png';
 import wechat_icon from '../../media/wechat_icon.png';
 import kakaotalk_icon from '../../media/kakaotalk_icon.png';
@@ -21,9 +22,10 @@ export const JoinTokenPreSale = () => (
     <div className="size">
       <h2 className="header_blocks">Join Token Pre-Sale now!</h2>
       <div className="container2">
-        <a target="_blank" href={links.joinpresale} className="sb">
-          JOIN PRE-SALE
-        </a>
+        <Join 
+          text="JOIN PRE-SALE"
+          className="sb"
+        />
         <a target="_blank" href={links.mvp} className="sb_2">
           TEST MVP
         </a>

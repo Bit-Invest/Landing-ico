@@ -3,6 +3,7 @@ import logo from '../../images/Logo_CINDX.png';
 import menu from '../../images/menu.png';
 import arrow_public from '../../images/arrow_public.png';
 import {links} from '../../links.js';
+import { Join } from '../../links.js';
 import './Menu.css';
 
 export class Menu extends React.Component {
@@ -89,7 +90,10 @@ export class Menu extends React.Component {
     if (isOpened) {
       return (
         <div className="showMenu">
-          <a target="_blank" href={links.joinpresale} className="itemMini joinpresale">Join Token Pre-Sale</a>
+          <Join 
+            text="Join Token Pre-Sale"
+            className="itemMini joinpresale"
+          />
           <a href="#product" className="itemMini">Product</a>
           <a href="#sale_details" className="itemMini">Sale Details</a>
           <a href="#team" className="itemMini">Team</a>
@@ -126,7 +130,10 @@ export class Menu extends React.Component {
             </div>
             {this.renderPublicDocs()}
             <a target='_blank' href={links.mvp} className="item">Test MVP</a>
-            <a target='_blank' href={links.joinpresale} className="btn">Join Pre-Sale</a>
+            <Join 
+              text="Join Pre-Sale"
+              className="btn"
+            />
             <div onClick={this.openLanguage} className="drop-down">
               <a>EN</a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
@@ -134,7 +141,10 @@ export class Menu extends React.Component {
             {this.renderLanguage()}
           </div>
           <div className="menu-768px">
-            <a target="_blank" href={links.joinpresale} className="btn">Join Pre-Sale</a>
+             <Join 
+              text="Join Pre-Sale"
+              className="btn"
+            />
             <a onClick={this.openMenu} className="menu-item-burger">
               <img className="menu-icon" src={menu} alt={"CINDEX"}/>
             </a>
