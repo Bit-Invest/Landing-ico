@@ -13,7 +13,9 @@ export class CanvasMouns extends React.Component {
   }
 
   updateDimensions = () => {
-    MounsCnvs.resizeFunc();
+    if(window.innerWidth > 1000){
+      MounsCnvs.resizeFunc();
+    }
   }
 
   componentDidMount() {
