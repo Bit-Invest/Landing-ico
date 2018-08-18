@@ -2,6 +2,33 @@
   width: max-content;
 }
 
+.mail-form__contentagree {
+  color: #666666;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-bottom: 2px solid rgba(0,0,0,.1);
+  padding-bottom: 20px;
+}
+
+.mail-form__contentagreescroll {
+  overflow: hidden;
+  overflow-y: auto;
+  height: 235px;
+  width: calc(100% + 60px);
+  padding-right: 80px;
+  padding-left: 20px;
+}
+
+.mail-form__contentagreescroll .boldtext {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.mail-form__contentagreescroll a {
+  text-decoration: underline;
+  color: #2ba4fc;
+}
+
 .mail-form__content {
   line-height: normal;
   padding: 20.3px 0 18.3px 0;
@@ -81,6 +108,30 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+
+.button_gradient.focus_bun_grdn:hover {
+  background: white;
+  color: #6e5fd6;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+}
+
+.mail-form__textStatus {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+.mail-form__textStatus.success {
+  color: #8bc34a;
+}
+
+.mail-form__textStatus.error {
+  color: #ff4040;
+}
+
+.mail-form__textStatus.loading {
+  color: #666666;
 }
 
 @media screen and (min-width: 1024px) {

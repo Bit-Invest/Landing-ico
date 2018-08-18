@@ -69,12 +69,6 @@ export const Roadmap = props => {
                   </div>
                 </div>
                 <div className={`${ROOT_CLASS}__quartals`}>
-                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_1`}>
-                    Q1
-                  </div>
-                  <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_2`}>
-                    Q2
-                  </div>
                   <div className={`${ROOT_CLASS}__quartal ${ROOT_CLASS}__quartal_3`}>
                     Q3
                   </div>

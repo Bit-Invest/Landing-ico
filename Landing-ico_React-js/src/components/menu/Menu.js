@@ -66,9 +66,9 @@ export class Menu extends React.Component {
       return (
         <div className="language">
           <div className="show-language">
-            <a className="itemMini2">ER</a>
+            <a className="itemMini2">EN</a>
           </div>
-          <div className="show-language">
+          {/*<div className="show-language">
             <a className="itemMini2">FR</a>
           </div>
           <div className="show-language">
@@ -76,7 +76,7 @@ export class Menu extends React.Component {
           </div>
           <div className="show-language">
             <a className="itemMini2">PL</a>
-          </div>
+          </div>*/}
         </div>
       )
     } else {
@@ -91,8 +91,8 @@ export class Menu extends React.Component {
         <div className="showMenu">
           <a target="_blank" href={links.joinpresale} className="itemMini joinpresale">Join Token Pre-Sale</a>
           <a href="#product" className="itemMini">Product</a>
-          <a className="itemMini">Sale Details</a>
-          <a className="itemMini">Team</a>
+          <a href="#sale_details" className="itemMini">Sale Details</a>
+          <a href="#team" className="itemMini">Team</a>
           <div onClick={this.openPublicDocs} className="drop-down">
             <a>Public Docs </a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
@@ -115,11 +115,11 @@ export class Menu extends React.Component {
     return (
       <div className="menu">
         <div className="container-menu">
-          <img className="logo" src={logo} alt={"CINDEX"}/>
+          <a href="#top"><img className="logo" src={logo} alt={"CINDEX"}/></a>
           <div className="menu-item">
             <a href="#product" className="item">Product</a>
-            <a className="item">Sale Details</a>
-            <a className="item">Team</a>
+            <a href="#sale_details" className="item">Sale Details</a>
+            <a href="#team" className="item">Team</a>
             <div onClick={this.openPublicDocs} className="drop-down">
               <a className="item">Public Docs</a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>

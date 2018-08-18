@@ -167,7 +167,7 @@ const ButtonBuy = () => {
 };
 
 export const TokenSaleDetails = () => (
-  <div className="block_4">
+  <div className="block_4" id="sale_details">
     <div className="size">
       <h2 className="header_blocks">Token Sale Details</h2>
         <div className="container">

@@ -465,7 +465,7 @@ class TeamAdvisersPartners extends React.Component {
       slidesToScroll: 1
     };
     return (
-      <div className="block_8">
+      <div className="block_8" id="team">
         <div className="size">
           <div className="team">
             <h2 className="header_blocks">Team of 40+ Members</h2>

@@ -140,6 +140,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 40px black;
 }
 .menu .language {
   position: absolute;
@@ -180,6 +181,12 @@
 }
 .menu .showMenu .publicDocs-hide {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .menu .publicDocs {
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 1023px) {

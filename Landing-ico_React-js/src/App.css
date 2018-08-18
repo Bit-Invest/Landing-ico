@@ -434,7 +434,6 @@ width: 720px;
   float: none;
   height: 92px;
   width: 50px;
-  border: 1px solid red;
 }
 
 .block_6 .slick-next,
@@ -449,7 +448,6 @@ width: 720px;
 .block_8 .slick-prev {
   margin-left: 0px;
   left: 40px;
-  border-color: blue;
 }
 
 .block_6 .slick-prev:before,
@@ -488,7 +486,7 @@ width: 720px;
     right: 0;
     top: 0;
     height: 38px;
-    width: 24px;
+    width: 20px;
     margin-top: -98px;
   }
 
