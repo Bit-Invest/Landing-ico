@@ -11,6 +11,7 @@ var resizeFunc = (function() {
 
   var rfbcue;
   var rfbcue_top;
+  var loaded_canvas;
 
   var animateDraw = function() {
     ctx.clearRect(0, 0, sizesCanvas[0], sizesCanvas[1]);
@@ -80,6 +81,8 @@ var resizeFunc = (function() {
           break;
       }
     })
+
+    loaded_canvas();
   };
 
   var fp = {
@@ -411,8 +414,14 @@ var resizeFunc = (function() {
   var $canvas = document.getElementById('prlxCnvas2');
   var sizesCanvas = [pr_px(100, 0), pr_px(100, 1)];
   var ctx = $canvas.getContext('2d');
-  $canvas.width = sizesCanvas[0];
-  $canvas.height = sizesCanvas[1];
+  var loaded_files = 0;
+
+  loaded_canvas = function() {
+    if(++loaded_files==5){
+      $canvas.width = sizesCanvas[0];
+      $canvas.height = sizesCanvas[1];
+    }
+  }
 
   function init() {
     animatesBlock.forEach(function(e1, index) {
