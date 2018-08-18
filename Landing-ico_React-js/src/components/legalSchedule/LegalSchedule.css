@@ -52,7 +52,7 @@
 .block_5 .one:before {
   display: block;
   content: '';
-  width: 1px;
+  width: 2px;
   height: 65px;
   background: #fff;
   position: absolute;

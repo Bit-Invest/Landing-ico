@@ -4,13 +4,17 @@ import './Roadmap.css';
 
 const ROOT_CLASS = 'roadmap';
 
+const discForMailStiones = {
+
+};
+
 export const Roadmap = props => {
   const renderCircles = () => {
     let result = [];
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 7; i++) {
       result.push((
         <div
-          className={`${ROOT_CLASS}__circle`}
+          className={`${ROOT_CLASS}__circle ${i===props.quartalCour?'active':null}`}
           onClick={() => {props.onClickQuartal(i)}}
           key={i}
         >
@@ -98,7 +102,7 @@ export const Roadmap = props => {
               </div>
             </div>
             <p className={`${ROOT_CLASS}__text`}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+              {props.descText}
             </p>
             <img className={`${ROOT_CLASS}__image`} src={props.imageSrc} alt="CINDEX"/>
           </div>

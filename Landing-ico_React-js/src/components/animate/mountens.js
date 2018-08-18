@@ -26,7 +26,7 @@ export class CanvasMouns extends React.Component {
   render() {
     return (
     	<div className="canvasAnimateMouns">
-    		<canvas id="prlxCnvas2">
+    		<canvas id="prlxCnvas2" width="0" height="0">
 					Your browser error
 				</canvas>
     	</div>

@@ -111,6 +111,12 @@
     display: none;
 }
 
+@media screen and (max-width: 1023px) {
+    .road-show-block {
+        padding-top: 40px;
+    }
+}
+
 @media screen and (min-width: 1001px) and (max-width: 1201px) {
     .road__setting {
         display: none;
