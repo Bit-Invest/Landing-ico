@@ -68,7 +68,6 @@ export const MarketAnalytics = () => {
               <a target="_blank" href={links.fm}><span>FINANCIAL MODEL</span></a>
             </div>
           </div>
-          <div className="clear" />
           </div>
           <div className="other_geo">
             <h2>Geographic Scope</h2>

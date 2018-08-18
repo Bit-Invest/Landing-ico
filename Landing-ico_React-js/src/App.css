@@ -592,7 +592,7 @@ width: 720px;
 
     .block_1 .cont_row .row {
         display: block;
-        width: 240px;
+        width: 30%;
     }
 
     .block_3 .statick {
@@ -619,8 +619,7 @@ width: 720px;
 
     .block_3 .owl-carousel .item {
       padding: 20px;
-      width: 300px;
-      height: 350px;
+      width: 32%;
     }
 
     .block_3 .owl-carousel .item h3 {
@@ -638,7 +637,7 @@ width: 720px;
     .block_3 .other_text .cont_3
     {
       font-size: 16px;
-      width: 300px;
+      width: 32%;
     }
 
      img.man
@@ -1676,7 +1675,6 @@ body.compensate-for-scrollbar {
     }
     .block_3 .owl-carousel .item {
       margin: 0px;
-      height: 500px;
     }
     .block_3 .carusel .owl-carousel .item img {
       width: 395px;

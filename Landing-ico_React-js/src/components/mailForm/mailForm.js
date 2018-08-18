@@ -66,7 +66,7 @@ class MailForm extends React.Component {
       });
     }
 
-    fetch('https://cindx.io/subscribe/?email=haniev97@mail.ru')  
+    fetch(`https://cindx.io/subscribe/?email=${email}`)  
       .then((response) => response.json())
       .then((responseJson) => {
         console.log(responseJson)
