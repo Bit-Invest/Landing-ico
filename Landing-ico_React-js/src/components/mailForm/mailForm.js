@@ -131,10 +131,10 @@ class MailForm extends React.Component {
               25% BONUS
             </div>
             <div className={`${ROOT_CLASS}__description`}>
-            Get it before everyone else does<br/>Offer expires within
+            Get it before everyone else does<br/>Token sale starts in
             </div>
             <div className={`${ROOT_CLASS}__timer`}>
-              <Timer days={10} hours={6} minutes={20} seconds={14}/>
+              <Timer />
             </div>
             <div className={`${ROOT_CLASS}__cost`}>
               <div className={`${ROOT_CLASS}__now`}>
