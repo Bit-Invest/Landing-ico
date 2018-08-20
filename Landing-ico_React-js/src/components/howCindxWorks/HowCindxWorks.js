@@ -3,7 +3,7 @@ import { HowCindxWorksChild } from './howCindxWorksChild/HowCindxWorksChild';
 import block_2_img_1 from '../../images/block_2_img_1.png';
 import block_2_img_2 from '../../images/block_2_img_2.png';
 import block_2_img_3 from '../../images/block_2_img_3.png';
-import block_2_img_4 from '../../images/block_2_img_4.svg';
+import block_2_img_4 from '../../images/block_2_img_4.png';
 import './howCindxWorks.css';
 
 const HowCindxWorksInfo = {
