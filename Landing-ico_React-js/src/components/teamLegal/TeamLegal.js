@@ -41,21 +41,17 @@ class TeamLegal extends React.Component {
               <div className='row'>
                 <div className="LC">
                   <div className="img"></div>
-                  <p>Лицензия 1</p>
+                  <p>‘CRYPTOCURRENCY EXCHANGE LICENSE’</p>
                 </div>
                 <div className="LC">
                   <div className="img"></div>
-                  <div>Лицензия 2</div>
+                  <div>‘FINANCIAL INSTITUTION LICENSE’</div>
                 </div>
               </div>
               <div className='row'>
                 <div className="LC">
                   <div className="img"></div>
-                  <div>Лицензия 3</div>
-                </div>
-                <div className="LC">
-                  <div className="img"></div>
-                  <div>Лицензия 4</div>
+                  <div>‘CRYPTO WALLET LICENSE’</div>
                 </div>
               </div>
               <div className="dock_block">
