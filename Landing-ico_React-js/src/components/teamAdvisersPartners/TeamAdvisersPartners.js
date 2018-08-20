@@ -14,11 +14,12 @@ import Val_Jerdes from '../../media/Val_Jerdes.f8ab5be3.jpg';
 import Mofassair_Hossain from '../../media/Mofassair_Hossain.11359d11.jpg';
 import Artur_Shamalov from '../../media/Artur_Shamalov.4dc17f50.jpg';
 import Denis_Eskenazi from '../../media/Denis_Eskenazi.e8b0d64b.jpg';
-import Stefano_Fursman from '../../media/Stefano_Fursman.ea34a9d1.jpg';
 import Ibraghim_Haniev from '../../media/Ibraghim_Haniev.77b0aa4e.jpg';
 import Airat from '../../media/Airat.jpg';
 import Sofja_Pevzner from '../../media/Sofja_Pevzner.jpg';
 import Dave_Gutierrez from '../../media/Dave_Gutierrez.jpg';
+import Jelena_Karzetskaja from '../../media/Jelena_Karzetskaja.png';
+import Wang_Dong from '../../media/Wang_Dong.png';
 // Our Parners icon
 import Progressor_logo from '../../media/Progressor_logo.png';
 import ICO_PROMO from '../../media/ico_promo.png';
@@ -38,6 +39,8 @@ import Tyler_Sanford from '../../media/Tyler_Sanford.5d35cd71.jpg';
 import Bogdan_Fiedur from '../../media/Bogdan_Fiedur.e36a757d.jpg';
 import Graham_Doggart from '../../media/Graham_Doggart.fd8f9df5.jpg';
 import Sadie_Hutton from '../../media/Sadie_Hutton.54ab2eaa.jpg';
+import Motti_Peer from '../../media/Motti_Peer.png';
+import Leonard_Grayver from '../../media/Leonard_Grayver.png';
 import './TeamAdvisersPartners.css';
 
 const teamInfo = [
@@ -48,7 +51,8 @@ const teamInfo = [
     fackt1: '13 years in entrepreneurship',
     fackt2: '9 ventures',
     fackt3: '$2m for crypto management',
-    src: 'https://www.linkedin.com/in/yuriyavdeev/'
+    src: 'https://www.linkedin.com/in/yuriyavdeev/',
+    m: ''
   },
   {
     img: Val_Jerdes,
@@ -57,7 +61,8 @@ const teamInfo = [
     fackt1: '20 years in entrepreneurship',
     fackt2: '3 successful exits',
     fackt3: '4x returns for portfolios',
-    src: 'https://www.linkedin.com/in/valjerdes/'
+    src: 'https://www.linkedin.com/in/valjerdes/',
+    m: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61'
   },
   {
     img: Mofassair_Hossain,
@@ -66,7 +71,8 @@ const teamInfo = [
     fackt1: 'Investor and Adviser of 15+ ICOs',
     fackt2: 'Top Adviser at ICO Bench',
     fackt3: 'GBAP Member',
-    src: 'https://www.linkedin.com/in/md-mofassair-hossain-515a90148'
+    src: 'https://www.linkedin.com/in/md-mofassair-hossain-515a90148',
+    m: 'https://medium.com/cindx/cindx-team-mofassair-hossain-72661ba3474e'
   },
   {
     img: Artur_Shamalov,
@@ -75,7 +81,8 @@ const teamInfo = [
     fackt1: '15 years in entrepreneurship',
     fackt2: '5000 clients of mixcart.ru',
     fackt3: 'mail.ru invested in dc-daily.ru',
-    src: 'https://www.linkedin.com/in/artur-shamalov/'
+    src: 'https://www.linkedin.com/in/artur-shamalov/',
+    m: 'https://medium.com/cindx/cindx-team-artur-shamalov-52c9dae3b3c9'
 
   },
   {
@@ -85,16 +92,8 @@ const teamInfo = [
     fackt1: '7 years in entrepreneurship',
     fackt2: '$2m attracted for clients',
     fackt3: '10 years in branding',
-    src: 'https://ru.linkedin.com/in/denis-eskenazi-03b81726'
-  },
-  {
-    img: Stefano_Fursman,
-    name: 'Stefano Frumson',
-    position: 'Compliance Officer',
-    fackt1: '5 years of legal experience',
-    fackt2: 'Commercial & private law',
-    fackt3: 'Experience in KYC procedure',
-    src: 'https://www.linkedin.com/in/stefan-frumson-60957071/'
+    src: 'https://ru.linkedin.com/in/denis-eskenazi-03b81726',
+    m: 'https://medium.com/cindx/denis-eskenazi-ac67e81d8c50'
   },
   {
     img: Ibraghim_Haniev,
@@ -103,7 +102,8 @@ const teamInfo = [
     fackt1: '6 years in entrepreneurship',
     fackt2: '200+ developed site',
     fackt3: 'Information Security focus',
-    src: 'https://www.linkedin.com/in/ibrahimhaniev/'
+    src: 'https://www.linkedin.com/in/ibrahimhaniev/',
+    m: 'https://medium.com/cindx/cindx-team-ibraghim-haniev-17f67defd1ba'
   },
   {
     img: Airat,
@@ -112,7 +112,8 @@ const teamInfo = [
     fackt1: 'Dr of science at MSU',
     fackt2: 'Aton-line navigator developer',
     fackt3: 'Head of algorithmic trading',
-    src: 'https://www.linkedin.com/in/airatshayhulov/'
+    src: 'https://www.linkedin.com/in/airatshayhulov/',
+    m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-airat-shayhulov-b980078cdc6f'
   },
   {
     img: Sofja_Pevzner,
@@ -121,7 +122,8 @@ const teamInfo = [
     fackt1: '5 years in entrepreneurship',
     fackt2: 'Permisson of estonian AML office for working',
     fackt3: '8 years of legal work expirience',
-    src: 'https://www.linkedin.com/in/sofja-pevzner-70831963/'
+    src: 'https://www.linkedin.com/in/sofja-pevzner-70831963/',
+    m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-sofja-pevzner-8386e8e88407'
   },
   {
     img: Dave_Gutierrez,
@@ -130,7 +132,28 @@ const teamInfo = [
     fackt1: '5 years in aircraft leasing',
     fackt2: '3 years in investment promotion',
     fackt3: '2 years in russian deals abroad',
-    src: 'https://www.linkedin.com/in/davidgutierrezcindx/'
+    src: 'https://www.linkedin.com/in/davidgutierrezcindx/',
+    m: 'https://medium.com/cindx/cindx-team-david-gutierrez-deeeaf66c992'
+  },
+  {
+    img: Jelena_Karzetskaja,
+    name: 'Jelena Karzetskaja',
+    position: 'Compliance Officer',
+    fackt1: 'holds several degrees in law',
+    fackt2: 'judicial practice since 1997',
+    fackt3: 'legal spheres: international law',
+    src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
+    m: ''
+  },
+  {
+    img: Wang_Dong,
+    name: 'Wang Dong',
+    position: 'Specialist in Chinese Blockchain market ',
+    fackt1: '3 years in php/ JavaScript',
+    fackt2: '5 years in SEO/SMM/media buyer',
+    fackt3: '2 years in Blockchain development and token sale in China',
+    src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
+    m: ''
   }
  ];
 
@@ -196,6 +219,7 @@ const advisers = [
     img: Keith_Teare,
     video: 'https://www.youtube.com/embed/qWpWbZUljdg',
     src: 'https://linkedin.com/in/kteare',
+    m: 'https://medium.com/cindx/cindx-advisers-keith-teare-1041410275d0',
     name: 'Keith Teare',
     position: 'Founder and Executive Chairman at Accelerated Digital Ventures',
     fackt1: 'Adviser to ICOBox, Crypterium, EnergiMine, etc.',
@@ -213,6 +237,7 @@ const advisers = [
     video: 'https://www.youtube.com/embed/5X8isxq6S00',
     name: 'Austin Kimm',
     src: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
+    m: 'https://medium.com/cindx/cindx-advisers-austin-kimm-fa417a929e32',
     position: 'International Financial Services CEO',
     fackt1: '30+ years of financial service experience',
     fackt2: 'Created companies with a worth of $500m',
@@ -228,6 +253,7 @@ const advisers = [
     video: 'https://www.youtube.com/embed/gMYQzVyXHZI',
     name: 'Philip Staehelin',
     src: 'https://www.linkedin.com/in/staehelin/',
+    m: 'https://medium.com/cindx/cindx-advisers-philip-staehelin-810df12247bc',
     position: '25 years of consulting and entrepreneurial experience',
     fackt1: '$500m alternative payments business under leadership',
     fackt2: '200+ startups from 20 countries mentored',
@@ -244,6 +270,7 @@ const advisers = [
     video: 'https://www.youtube.com/embed/vsjxNki18DY',
     name: 'Amarpreet Singh',
     src: 'https://www.linkedin.com/in/amarpreetsingh2/',
+    m: 'https://medium.com/cindx/cindx-advisers-amarpreet-singh-29c1edb22dda',
     position: 'Senior Adviser of Global Blockchain Foundation',
     fackt1: 'Experience in Microsoft, The World Bank and Airbus',
     fackt2: 'Advisery Board Member of Blockchain projects',
@@ -261,6 +288,7 @@ const advisers = [
     video: '',
     name: 'Tyler Sanford',
     src: 'https://www.linkedin.com/in/tylersanford/',
+    m: 'https://medium.com/cindx/cindx-advisers-tyler-sanford-a58eefa42a95',
     position: '8 Years Digital Marketing in Yelp and Zenefits',
     fackt1: '12 ICO’s over $225M raised',
     fackt2: 'Early adopter of blockchain',
@@ -278,6 +306,7 @@ const advisers = [
     video: 'https://www.youtube.com/embed/oC-oTaBId7g',
     name: 'Bogdan Fiedur',
     src: 'https://www.linkedin.com/in/bogdanfiedur/',
+    m: 'https://medium.com/cindx/cindx-advisers-bogdan-fiedur-16897ad954ad',
     position: 'Blockchain and cryptocurrency expert, investor, entrepreneur',
     fackt1: 'Co-Founder of bitJob and President of Blockchainexperts.io',
     fackt2: 'ICO Adviser, ICOBench Expert',
@@ -294,6 +323,7 @@ const advisers = [
     video: 'https://www.youtube.com/embed/HWV5Hv2R6vA',
     name: 'Graham Doggart',
     src: 'https://www.linkedin.com/in/grahamdoggart/',
+    m: 'https://medium.com/cindx/cindx-advisers-graham-doggart-a7f45b3e4ce4',
     position: '20 years of enterprise development, fintech marketing compliance',
     fackt1: 'Executed campaigns with a worth of $100m',
     fackt2: 'Adviser for 10+ blockchain projects this year',
@@ -310,6 +340,7 @@ const advisers = [
     video: 'https://www.youtube.com/embed/iQhcMhT13hs',
     name: 'Sadie Hutton',
     src: 'https://www.linkedin.com/in/sadie-hutton/',
+    m: 'https://medium.com/cindx/cindx-advisers-sadie-hutton-6a8d68aa6fcf',
     position: '25 years in senior management and management consulting',
     fackt1: 'Multimillion-dollar fundraiser with campaigns with a worth of £75m',
     fackt2: 'ICO Adviser of 8 projects',
@@ -326,6 +357,7 @@ const advisers = [
     video: 'https://www.youtube.com/embed/RfW8fkvpbTo',
     name: 'Jason King',
     src: 'https://www.linkedin.com/in/jasonking/',
+    m: 'https://medium.com/cindx/the-cindx-team-jason-king-9a1b93d6aa8b',
     position: '20 years of excecutive experience',
     fackt1: 'Led businesses operations in 30 countries',
     fackt2: 'Responsible over $500m P&L',
@@ -335,6 +367,34 @@ const advisers = [
       'The core theme in his career has been to successfully drive business restructuring, transformation and turnaround programs - by leading the right people and teams towards the most profitable goals.',
       'In addition to his interests in private equity and startup companies, Jason has worked in various groups including Deutsche Telekom, Telenor and UPC Liberty Global and Veon.',
       'Jason has either worked or has led business directly in over 30 countries and has previously held commercial P&L responsibilities in the $500M-$1B range.',
+    ]
+  },
+  {
+    img: Motti_Peer,
+    video: 'https://www.youtube.com/embed/RfW8fkvpbTo',
+    name: 'Motti Peer',
+    src: 'https://www.linkedin.com/in/jasonking/',
+    m: '',
+    position: 'Co-founder of Blonde 2.0, award-winning global PR agency',
+    fackt1: 'Founder of various companies in the security and finance sectors',
+    fackt2: 'Motti is one of the leading forces in PR for Blockchain and Crypto, startups, VCs.',
+    linkedin: 'https://www.linkedin.com/in/mottipeer/',
+    text: [
+      'Motti founded various companies in the security and finance sectors. He has many years of experience as a money and hedge fund manager and holds an MBA in Finance and Marketing from Manchester University and a BA in Business Management from Fairleigh Dickinson University. He is a Co-CEO of Blonde 2.0, an award-winning global PR agency also named as one the startup nation’s “Movers and Shakers” on Forbes. As Co-CEO of Blonde 2.0, he is responsible for handling the Public Relations aspects, along with strategy and crisis management. With a team of 35 professionals, Blonde 2.0 is one of the leading forces in PR for Blockchain and Crypto, startups, VCs.',
+    ]
+  },
+  {
+    img: Leonard_Grayver,
+    video: 'https://www.youtube.com/embed/RfW8fkvpbTo',
+    name: 'Leonard Grayver',
+    src: 'https://www.linkedin.com/in/leonardgrayver/?locale=ru_RU',
+    m: '',
+    position: 'Сhair of Greenberg Whitcombe Takeuchi Gibson & Grayver LLP',
+    fackt1: 'Represented and advised a number of successful ICOs',
+    fackt2: 'Has substantial experience in venture capital fund formation',
+    linkedin: 'https://www.linkedin.com/in/leonardgrayver/?locale=ru_RU',
+    text: [
+      'Leonard Grayver is an experienced corporate attorney based in Silicon Valley, California. He is the chair of the corporate law group at Greenberg, LLP, a boutique law firm with offices in Southern and Northern California. He has represented venture capital funds, entrepreneurs, and startup companies in diverse industries, including medical devices, software, health care, electronics, IT, and alternative energy, for almost twenty years. In the last several years, Leonard also developed a robust practice focusing on cryptocurrency law and has served as counsel in a number of token sales offerings. Leonard earned a B.A. from University of California, Los Angeles, and a Juris Doctorate from UCLA School of Law.',
     ]
   }
  ];
@@ -352,10 +412,12 @@ class TeamAdvisersPartners extends React.Component {
           <p>{el.fackt2}</p>
           <p>{el.fackt3}</p>
           <div className="block-soc-icon">
-            <a target="_blank" href={el.src}>
+            <a target="_blank" style={{ display: el.src ? 'block' : 'none' }} href={el.src}>
               <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
             </a>
-            <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
+            <a target="_blank" style={{ display : el.m ? 'block' : 'none' }} href={el.m}>
+              <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
+            </a>
           </div>
         </div>
       );
@@ -374,10 +436,12 @@ class TeamAdvisersPartners extends React.Component {
           <p>{el.fackt2}</p>
           <p>{el.fackt3}</p>
           <div className="block-soc-icon">
-            <a target="_blank" href={el.src}>
+            <a target="_blank" style={{ display: el.src ? 'block' : 'none' }} href={el.src}>
               <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
             </a>
-            <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
+            <a target="_blank" style={{ display : el.m ? 'block' : 'none' }} href={el.m}>
+              <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
+            </a>
           </div>
         </div>
       );
@@ -416,10 +480,12 @@ class TeamAdvisersPartners extends React.Component {
               <p>{el.fackt2}</p>
             </div>
             <div className="block-soc-icon">
-              <a target="_blank" href={el.linkedin}>
+              <a target="_blank"  style={{ display : el.linkedin ? 'block' : 'none' }} href={el.linkedin}>
                 <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
               </a>
-              <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
+              <a target="_blank"  style={{ display : el.m ? 'block' : 'none' }} href={el.m}>
+                <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
+              </a>
             </div>
           </div>
           <div className="right_content">

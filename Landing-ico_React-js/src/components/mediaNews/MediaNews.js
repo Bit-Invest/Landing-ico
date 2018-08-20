@@ -8,24 +8,24 @@ import './MediaNews.css';
 
 const news = [
   {
-    videoSrc: 'https://www.youtube.com/watch?v=c4ruJPvo5sI',
+    videoSrc: 'https://www.youtube.com/watch?v=P6qAzbwOMXs',
     screen: IB,
-    name: 'CINDX meets Ian Balina in Moscow',
-    text: 'CINDX pitched to the one of the TOP10 crypto gurus in the world in the Cryptobazar event.',
+    name: 'CINDX took part in Moscow ICO Summit 2018',
+    text: 'CINDX team introdused the project to the Russian crypto community during ICO Summit event.',
     source: 'www.youtube.com'
   },
   {
     videoSrc: 'https://www.youtube.com/watch?v=P6qAzbwOMXs',
     screen: IS,
     name: 'CINDX took part in Moscow ICO Summit 2018',
-    text: 'team introduced the project to the Russian crypto community during ICO Summit event.',
+    text: 'CINDX team introdused the project to the Russian crypto community during ICO Summit event.',
     source: 'www.youtube.com'
   },
   {
-    videoSrc: 'https://medium.com/cindx/meet-worlds-first-financial-crypto-social-network-connect-with-people-as-you-grow-your-wealth-76a3cea9a06c',
+    videoSrc: 'https://medium.com/cindx/cindx-legal-how-cindx-is-ensuring-legal-compliance-ee5fdf8a7642',
     screen: Medium,
-    name: 'Meet World’s First Financial Crypto Social Network',
-    text: 'Every day our team takes one more step on the way to creation and start of the CINDX platform.',
+    name: 'How CINDX is ensuring legal compliance',
+    text: 'Our company is registered in Estonia.',
     source: 'www.medium.com'
   },
   {

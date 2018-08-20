@@ -21,7 +21,8 @@ class CryptoAssetsManagement extends React.Component {
           <div className="row">
             <h2 className="header_blocks">
               CINDX Is a Crypto Assets Management Hub. <br/>
-              We solve the problems of investors, traders and developers
+              We solve the problems of investors, <br/>
+              traders and developers
             </h2>
             {/*<div className="video">
               <img

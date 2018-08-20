@@ -44,17 +44,23 @@ class TeamLegal extends React.Component {
               <div className='row'>
                 <div className="LC">
                   <img className="img" src={licensia_1} alt="CINDEX"/>
-                  <p>Лицензия 1</p>
+                  <a target="_blank" href="https://drive.google.com/open?id=1nulb7NnAQJJHGF09v9VdZC5tUQJPOV4u">
+                    <p>CRYPTOCURRENCY EXCHANGE LICENSE</p>
+                  </a>
                 </div>
                 <div className="LC">
                   <img className="img" src={licensia_2} alt="CINDEX"/>
-                  <div>Лицензия 2</div>
+                  <a target="_blank" href="https://drive.google.com/open?id=1VvZSFwaR_LVJZBRp_v8GZ6w5erbDr1VF">
+                    <p>FINANCIAL INSTITUTION LICENSE</p>
+                  </a>
                 </div>
               </div>
               <div className='row'>
                 <div className="LC">
                   <img className="img" src={licensia_3} alt="CINDEX"/>
-                  <div>Лицензия 3</div>
+                  <a target="_blank" href="https://drive.google.com/open?id=1yNU430cKV_3wsGBkBDxqI1DhXVnqdOLM">
+                    <p>CRYPTO WALLET LICENSE</p>
+                  </a>
                 </div>
               </div>
               <div className="dock_block">
