@@ -62,11 +62,13 @@
   margin-top: 70px;
 }
 
-.block_1 .cont_row .row
-{
+.block_1 .cont_row .row {
   display: block;
-  float: left;
-  width: 30%;
+  width: 27%;
+}
+
+.block_1 .cont_row .row span {
+  min-height: 100px;
 }
 
 .block_1 .cont_row .row:last-child
@@ -90,7 +92,7 @@
     color: white;
     margin-top: 27px;
     line-height: 18px;
-    font-weight: normal;
+    font-weight: 300;
 }
 
 .block_1 .cont_row .row img
@@ -111,5 +113,5 @@
 .block_1 .cont_row .row p
 {
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 300;
 }

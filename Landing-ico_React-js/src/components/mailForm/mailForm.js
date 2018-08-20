@@ -125,7 +125,7 @@ class MailForm extends React.Component {
           </div>
           <div style={{display: email ? 'none' : null }} className="timerContent">
             <div className={`${ROOT_CLASS}__title`}>
-              Pre-Token Sale Live
+              Security Token Sale Starts with
             </div>
             <div className={`${ROOT_CLASS}__bonus`}>
               25% BONUS
@@ -139,7 +139,7 @@ class MailForm extends React.Component {
             <div className={`${ROOT_CLASS}__cost`}>
               <div className={`${ROOT_CLASS}__now`}>
                 <div className={`${ROOT_CLASS}__cost-title`}>
-                  1$ now
+                  Start from $1
                 </div>
                 <div className={`${ROOT_CLASS}__cost-value`}>
                   {props.now} CINX

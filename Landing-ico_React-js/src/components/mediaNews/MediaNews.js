@@ -38,7 +38,7 @@ const news = [
   {
     videoSrc: 'https://medium.com/cindx/cindx-activity-the-meeting-with-the-international-cindx-partners-1aec5a24c4b1',
     screen: Medium,
-    name: 'CINDX meets Vangoo Capital Partners <br>Fund ',
+    name: 'CINDX meets Vangoo Capital Partners Fund ',
     text: 'Today we have welcomed Kevin Shang from Vangoo Capital Partners and his colleagues...',
     source: 'www.medium.com'
   },

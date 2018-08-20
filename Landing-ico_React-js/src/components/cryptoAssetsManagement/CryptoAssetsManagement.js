@@ -31,7 +31,7 @@ class CryptoAssetsManagement extends React.Component {
           </div>
           <div className="problemBlock">
             <div className="txt">
-              <p className="caption">CIDX.MARKETPLACE FOR INVESTORS</p>
+              <p className="caption">СINDX.MARKETPLACE FOR INVESTORS</p>
               <hr/>
               <p>
               • Do not worry about your knowledge and experience – the experts of crypto trading are here to help you
@@ -54,7 +54,7 @@ class CryptoAssetsManagement extends React.Component {
               <a target='_blank' href={links.mvp} className="btn">TEST MVP</a>
             </div>
             <div className="txt2">
-              <p className="caption">CIDX.TRADE FOR TRADERS</p>
+              <p className="caption">CINDX.TRADE FOR TRADERS</p>
               <hr/>
               <p>
                 • If you are a successful trader, you can attract a capital at $0 marketing costs

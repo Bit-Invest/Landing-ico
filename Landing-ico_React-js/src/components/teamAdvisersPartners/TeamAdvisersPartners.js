@@ -213,8 +213,8 @@ const advisers = [
     text: [
       "I am Executive Chairman and Chair of the Investment Committee at Accelerated Digital Ventures - a UK Venture Company. I was born and raised in the UK. ",
       "Previously I was founder and a partner at Archimedes Labs in Palo Alto, California. I love working with founders, teams, designers and engineers to create products, tell stories, and turn them into reality. I have founded or co-founded many companies myself since the early 1980s. Some were successfully sold, others IPO'd.",
-      "Two of my companies were Unicorns - valued by others at more than $1 billion. <br> I have always focused on the point at which change is happening. In the 1980's networking and databases. In the 1994-1998 period, Internet Access. From 1998-2010 - Web Services and Content, Mobile Consumer Applications and since 2017 Blockchain.",
-      "Career and projects: <br> Tech Crunch, Accelerated Digital Ventures, cScape, EasyNet, Cyberia,  RealNames, Venture Network, ICOBox, Crypterium,  R/Block, Fluz, EnergiMine, Archimedes Labs  and CINDX"
+      `Two of my companies were Unicorns - valued by others at more than $1 billion. I have always focused on the point at which change is happening. In the 1980's networking and databases. In the 1994-1998 period, Internet Access. From 1998-2010 - Web Services and Content, Mobile Consumer Applications and since 2017 Blockchain.`,
+      "Career and projects: Tech Crunch, Accelerated Digital Ventures, cScape, EasyNet, Cyberia,  RealNames, Venture Network, ICOBox, Crypterium,  R/Block, Fluz, EnergiMine, Archimedes Labs  and CINDX"
     ]
   },
   {
@@ -245,7 +245,7 @@ const advisers = [
       "I'm an innovator and a leader who blends contagious optimism with pragmatic realism. I find opportunity where others see none.",
       `I've leveraged my ability to "see things differently" and "make things happen" in corporate, consulting and start-up environments - all giving me broad new perspectives that provide fodder for new transformative ideas. `,
       `Finding solutions to hard challenges is what gets me out of bed in the morning.`,
-      `Career and projects: <br> BCG, Spectacler, Transparency International, StartupYard, Bethreum, Gjirafa Inc, Direct People, CINDX`
+      `Career and projects: BCG, Spectacler, Transparency International, StartupYard, Bethreum, Gjirafa Inc, Direct People, CINDX`
     ]
   },
   {
@@ -262,7 +262,7 @@ const advisers = [
       "He is a certified Cloud (Microsoft and AWS) specialist. Known for versatility and flexibility. Excellent analytic, strategic, leadership skills and a team player at its best.",
       "Specialties: Technology Consulting, Operations, Cloud Computing, Fintech, Innovation, ERP, Machine Learning, Account Management, Partner Development, Business Development and Strategy",
       "Amarpreet Singh has a very diversified work and educational background. He holds three Masters degrees and has lived/worked/studied in India, Singapore, France, China, South Africa, Korea, Canada.",
-      "Career and projects: <br> Microsoft, The World Bank, Airbus, TokenAsia Platform, GOeurika, CINDX "
+      "Career and projects: Microsoft, The World Bank, Airbus, TokenAsia Platform, GOeurika, CINDX "
     ]
   },
   {
@@ -279,7 +279,7 @@ const advisers = [
       "I have been very fortunate to see the results of going that extra mile, while learning to deal with the highs and lows that go along with all professional careers.",
       "I'm an extremely self-motivated individual, always looking to continue my growth of knowledge and talents in all aspects of business.",
       "Always up for a challenge, my motivation comes from overcoming obstacles to reach my goals",
-      "Career and projects: <br> IPG Holdings, DataBlockChain, TraXion by Puma Technologies, ELYSIAN, Etherinc, FTEC Foundation,  CINDX"
+      "Career and projects: IPG Holdings, DataBlockChain, TraXion by Puma Technologies, ELYSIAN, Etherinc, FTEC Foundation,  CINDX"
     ]
   },
   {
@@ -295,7 +295,7 @@ const advisers = [
       "Bogdan Fiedur is a smart contract developer, crypto-investor, entrepreneur and President of http://blockchainexperts.io . He has over 20 years of IT experience in building e-commerce websites and has been involved in blockchain development during last 3 years.",
       "He is also an ICO adviser working with 20 successful ICOs to date and deeply involved in offering presentation and workshops on blockchain and smart contract programming in his local crypto community of Winnipeg.",
       "Bogdan now focuses on the Blockchain industry and offers advice, consulting services and connections to Blockchain experts. Most recently Bogdan has co-founded ‘Bitjob’, a freelancer blockchain platform for students and participated in several ICO projects as a team member. e.g. PayPie.com.",
-      "Career and projects: <br> US Blockchain Association, Tuurnt, Trends Project, BiNeuro, Zichain, Graphen Tech, CyClean, Swachhcoin, CINDX"
+      "Career and projects: US Blockchain Association, Tuurnt, Trends Project, BiNeuro, Zichain, Graphen Tech, CyClean, Swachhcoin, CINDX"
     ]
   },
   {
@@ -311,7 +311,7 @@ const advisers = [
       "I am chairman of a Stealth Cryptocurrency Project and co-founder and lead strategist at Dynamic Abundance, a Blockchain and Fintech Advisery since 2012. ",
       "I specialise in the structuring and packaging of token offerings and have worked with numerous blockchain, cryptocurrency and ICO projects internationally. ",
       "For more than 20 years I have provided tech management consultation, legal and financial compliance advice, growth strategies, investor relations, as well as design and authorship of materials.",
-      "Career and projects: <br> Stealth Cryptocurrency Project, Dynamic Abundance, ELYSIAN, Fox Trading FX, Profede, Worltdopoly, CINDX"
+      "Career and projects: Stealth Cryptocurrency Project, Dynamic Abundance, ELYSIAN, Fox Trading FX, Profede, Worltdopoly, CINDX"
     ]
   },
   {
@@ -327,7 +327,7 @@ const advisers = [
       'I am the founder of Dynamic Abundance, a blockchain advisery.',
       'Preferring a “hands-on” approach, I am a specialist in ICO analysis, project management, all key aspects of the ICO process. I am skilled in business management and growth, which enable me to see a project from inception through to delivery. I am a problem solver by nature, and I take any project I am involved with personally. I like to win!',
       'With over 20 years of management experience I built up a powerful network, I actively advise on finance, tech, sales, marketing and quality assurance for high-level blockchain projects.',
-      'Career and projects: <br> Dynamic Abundance, ELYSIAN, Worldopoly, Confidential ICO,  Fox Trading FX, Profede, Market Digital, CINDX'
+      'Career and projects: Dynamic Abundance, ELYSIAN, Worldopoly, Confidential ICO,  Fox Trading FX, Profede, Market Digital, CINDX'
     ]
   },
  ];

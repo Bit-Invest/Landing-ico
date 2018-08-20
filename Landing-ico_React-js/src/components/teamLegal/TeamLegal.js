@@ -16,7 +16,7 @@ const RigthVideo = (props) => {
         src={play_button_youtube}
         alt="CINDEX"
         className="play"
-        onClick={() => props.video_show('https://www.youtube.com/embed/e3nmxy4_EKY')}
+        onClick={() => props.video_show('https://www.youtube.com/embed/5Iy_etsH7zo')}
       />
     </div>
   );

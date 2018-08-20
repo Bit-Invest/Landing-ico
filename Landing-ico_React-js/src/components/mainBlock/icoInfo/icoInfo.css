@@ -15,9 +15,10 @@
 }
 
 .ico-info__ratings {
-  display: flex;
-  flex-wrap: wrap;
-  width: 250px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* width: 250px; */
+  display: none;
 }
 
 .ico-info__rating-icon {

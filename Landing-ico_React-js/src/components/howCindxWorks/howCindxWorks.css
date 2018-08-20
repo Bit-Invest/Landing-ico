@@ -26,7 +26,7 @@
 }
 
 .block_2 .cont_row .row {
-  width: 23%;
+  width: 20%;
   display: block;
   float: left;
 }
@@ -46,7 +46,7 @@
     display: block;
     min-height: 80px;
     margin-bottom: 20px;
-    font-weight: normal;
+    font-weight: 300;
 }
 
 .block_2 .cont_row .row .cloud {
@@ -65,7 +65,7 @@
 .block_2 .cont_row .row .cloud span {
   display: block;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .block_2 .cont_row .row img {

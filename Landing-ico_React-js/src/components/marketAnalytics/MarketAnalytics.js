@@ -79,7 +79,7 @@ export const MarketAnalytics = () => {
                 200,000 potential transactions every day
               </div>
               <div className="row">
-                25 million potential blockchain wallets
+                More than 225 potential partners, each with $3-5 billion
               </div>
             </div>
             <div className="clear" />

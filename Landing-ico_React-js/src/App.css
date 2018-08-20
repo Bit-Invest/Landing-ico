@@ -119,6 +119,10 @@
   display: inline-block !important;
 }
 
+.block_1 .header_blocks {
+  width: 65%;
+}
+
 
 /**/
 .menu_block.fixed {
@@ -592,7 +596,10 @@ width: 720px;
 
     .block_1 .cont_row .row {
         display: block;
-        width: 30%;
+        width: 27%;
+    }.block_1 .cont_row .row {
+        display: block;
+        width: 27%;
     }
 
     .block_3 .statick {
@@ -1898,6 +1905,19 @@ body.compensate-for-scrollbar {
 
   .roadmap__text {
     width: 87%!important;
+  }
+
+  .teamLegal .right .play {
+    margin-top: 0;
+  }
+
+  .teamLegal .right:nth-of-type(1) {
+    width: 90%;
+    min-width: 90%;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .block_1 .cont_row .row {

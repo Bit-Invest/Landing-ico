@@ -34,7 +34,7 @@ export class ProblemSolving extends React.Component {
     return (
       <div className="block_1">
         <div className="size">
-          <h2 className="header_blocks">What kinds of problems does CINDX solve?</h2>
+          <h2 className="header_blocks">What kinds of problems does CINDX solve for investors?</h2>
           <a target="_blank" href={links.mvp} className="sb">TEST MVP</a>
           <div className="container">
             <div className="clear" />
