@@ -6,45 +6,72 @@ import IS from '../../media/news/IS.png';
 import Medium from '../../media/news/Medium.png'
 import MediaMedium from '../../media/media/medium-logo.png'
 import MediaForbes from '../../media/media/forbes-logo.png'
+import MediaAmbcrypto from '../../media/media/AMBcrypto.png'
+import MediaBitcoinist from '../../media/media/Bitcoinist.png'
+import MediaTokendesk from '../../media/media/tokendesk.png'
+import MediaBtcmanager from '../../media/media/BTCManager.png'
 import MediaBlockonomi from '../../media/media/blockonomi-logo.png'
+import MediaBitcoingarden from '../../media/media/bitcoingarden_logo.png'
+import MediaDigitaljournal from '../../media/media/digital_journal_transp.png'
+import MediaCoinfox from '../../media/media/CoinFox.png'
 import './MediaNews.css';
 
 const media = [
   {
-    screen: MediaMedium,
-    type: 'medium',
-    name: 'CINDX meets Ian Balina in Moscow',
-    text: 'CINDX pitched to the one of the TOP10 crypto gurus in the world in the Cryptobazar event.',
+    screen: MediaAmbcrypto,
+    type: 'ambcrypto',
+    name: 'CINDX Aims to Democratize the Modern Financial System',
+    text: 'Even as investors in the cryptocurrency space recognize that they are at the forefront of a new financial revolution, adoption by the general populace is yet to occur. While 3rd parties are slowly entering the space in the form of hedge funds and other investors, very few individuals seem to have taken the step to invest in cryptocurrencies on their own.',
+    src: 'https://ambcrypto.com/how-cindx-is-democratizing-the-modern-financial-system-2/'
   },
   {
-    screen: MediaForbes,
-    type: 'forbes',
-    name: 'CINDX took part in Moscow ICO Summit 2018',
-    text: 'team introduced the project to the Russian crypto community during ICO Summit event.',
+    screen: MediaBitcoinist,
+    type: 'bitcoinist',
+    name: 'CINDX Announces Plans For ICO Pre-Sale Amidst Release Of Revolutionary Crypto Trading Hub That Allows Users To Follow Expert Traders',
+    text: 'CINDX takes its business seriously with particular attention and cares to legal matters and has taken great pains to ensure that CINDX is as compliant as possible with global regulations.',
+    src: 'https://bitcoinist.com/cindx-announces-plans-for-ico-pre-sale-amidst-release-of-revolutionary-crypto-trading-hub-that-allows-users-to-follow-expert-traders/'
+  },
+  {
+    screen: MediaTokendesk,
+    type: 'tokendesk',
+    name: 'How CINDX is Democratizing the Modern Financial System',
+    text: 'CINDX is a new platform that is making crypto trading easier, more secure, and more accessible. With this platform, it’s possible to have your funds traded without high fees or minimum investments, with the added security and transparency of blockchain technology.',
+    src: 'https://www.tokendesk.io/how-cindx-is-democratizing-the-modern-financial-system/'
+  },
+  {
+    screen: MediaBtcmanager,
+    type: 'btcmanager',
+    name: 'CINDX is making crypto trading easier, more secure, and more accessible.',
+    text: 'Cryptocurrency and blockchain technology have been slated as powerful tools capable of fueling a global financial revolution. There are myriad opportunities to invest in the crypto space, and yet, very few individuals have undertaken the steps necessary to invest.',
+    src: 'https://btcmanager.com/how-cindx-is-democratizing-the-modern-financial-system/'
   },
   {
     screen: MediaBlockonomi,
-    type: 'blockkonomi',
-    name: 'Meet World’s First Financial Crypto Social Network',
-    text: 'Every day our team takes one more step on the way to creation and start of the CINDX platform.',
+    type: 'blockonomi',
+    name: 'CINDX Announces Plans Release Of Revolutionary Crypto Trading Hub',
+    text: 'The CINDX platform creates a complete ecosystem for cryptocurrency trading that is favorable to all the participants of the market and offers solutions to existing pain points.',
+    src: 'https://blockonomi.com/cindxico-pre-sale/'
   },
   {
-    screen: MediaMedium,
-    type: 'medium',
-    name: 'The strategic meeting of the international CINDX team',
-    text: 'Every day our team takes one more step on the way to creation and start of the CINDX...',
+    screen: MediaBitcoingarden,
+    type: 'bitcoingarden',
+    name: 'CINDX Announces Plans For ICO Pre-Sale',
+    text: 'CINDX made headlines this week with the announcement that they will be opening their ICO Pre-Sale in late August after investors interest in the ICO peaks to new levels.',
+    src: 'https://bitcoingarden.org/cindx-announces-plans-for-ico-pre-sale-amidst-release-of-revolutionary-crypto-trading-hub-that-allows-users-to-follow-expert-traders/'
   },
   {
-    screen: MediaForbes,
-    type: 'forbes',
-    name: 'CINDX meets Vangoo Capital Partners Fund ',
-    text: 'Today we have welcomed Kevin Shang from Vangoo Capital Partners and his colleagues...',
+    screen: MediaDigitaljournal,
+    type: 'digitaljournal',
+    name: 'CINDX Will Be Opening ICO Pre-Sale in late August',
+    text: 'The CINDX Crypto trading platform has a myriad of features and benefits that haven’t been seen in other platforms to date.',
+    src: 'http://www.digitaljournal.com/pr/3881157'
   },
   {
-    screen: MediaBlockonomi,
-    type: 'blockkonomi',
-    name: 'CINDX meets 9coin Digital Asses Exchange',
-    text: 'The CINDX team continues active work on building relationships with various international...',
+    screen: MediaCoinfox,
+    type: 'coinfox',
+    name: '5 Tips from CINDX Crypto Assets Management Hub: How to Avoid Being Cheated',
+    text: 'The team behind the CINDX crypto assets management hub has created a helpful set of guidelines on how not to become victims of unfair play, so you can learn what should be primarily taken into account when evaluating ICOs before investing in them.',
+    src: 'http://www.coinfox.info/news/10108-cryptocurrencies-and-private-capital-management-cindx-platform-allows-easy-and-profitable-investment-in-cryptocurrencies'
   }
 ]
 
@@ -366,7 +393,9 @@ export class MediaNews extends React.Component {
       return (
         <div key={i} className="txt">
           <div className="bg">
-            <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
+            <a href={el.src} target="_blank">
+              <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
+            </a>
             <h3>{el.name}</h3>
             <p>{el.text}</p>
           </div>

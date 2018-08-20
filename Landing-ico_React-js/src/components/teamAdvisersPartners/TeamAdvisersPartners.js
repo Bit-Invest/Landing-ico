@@ -526,14 +526,20 @@ class TeamAdvisersPartners extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000
     };
     const settingsOurParners3 = {
       arrows: false,
       infinite: true,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000
     };
     return (
       <div className="block_8" id="team">
