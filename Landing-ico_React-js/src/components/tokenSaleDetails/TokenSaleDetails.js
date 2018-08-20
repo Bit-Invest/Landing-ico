@@ -119,7 +119,7 @@ const UseProceeds = () => {
           <li><span /> Research and Development 41%</li>
           <li><span /> Operations 28%</li>
           <li><span /> Legal expenses 7%</li>
-          <li><span /> Bonus for traders 3%</li>
+          <li><span /> Community Grants 3%</li>
         </ul>
       </div>
     </div>
