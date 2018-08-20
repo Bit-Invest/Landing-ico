@@ -396,8 +396,8 @@ export class MediaNews extends React.Component {
             <a href={el.src} target="_blank">
               <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
             </a>
-            <h3>{el.name}</h3>
-            <p>{el.text}</p>
+            <h3>{el.name.substr(0, 45)} ...</h3>
+            <p>{el.text.substr(0, 85)} ...</p>
           </div>
         </div>
       );
