@@ -477,3 +477,12 @@ z-index: 2;
     padding: 15px 50px;
   }
 }
+
+@media (max-width: 767px) {
+  .block_4 .cont_4 .graph {
+    background-size: 180px;
+  }
+  .block_4 a.sb {
+    margin-left: 20px;
+  }
+}

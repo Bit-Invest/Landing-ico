@@ -116,6 +116,25 @@
     margin: 70px auto;
     width: 40%;
   }
+
+  .cryptoAssetsManagement .problemBlock .video_block .mockup1 {
+    background-size: cover;
+    height: 181px;
+    width: 310px;
+    background-image: url(../../media/mockup1.png);
+  }
+  .cryptoAssetsManagement .problemBlock .video_block .mockup2 {
+    background-size: cover;
+    height: 181px;
+    width: 310px;
+    background-image: url(../../media/mockup2.png);
+  }
+  .cryptoAssetsManagement .problemBlock .video_block .mockup3 {
+    background-size: cover;
+    height: 284px;
+    width: 300px;
+    background-image: url(../../media/mockup3.png);
+  }
 }
 
 @media screen and (max-width: 767px) {
