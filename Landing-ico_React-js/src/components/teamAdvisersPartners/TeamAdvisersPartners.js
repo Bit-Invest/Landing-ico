@@ -51,15 +51,6 @@ const teamInfo = [
     src: 'https://www.linkedin.com/in/yuriyavdeev/'
   },
   {
-    img: Jason_King,
-    name: 'Jason King',
-    position: 'Chief Commercial Officer',
-    fackt1: '20 years of excecutive experience',
-    fackt2: 'Led operations in 30 countries',
-    fackt3: 'Responsible over $500m P&L',
-    src: 'https://www.linkedin.com/in/jasonking/'
-  },
-  {
     img: Val_Jerdes,
     name: 'Val Jerdes',
     position: 'Product Director',
@@ -330,6 +321,22 @@ const advisers = [
       'Career and projects: <br> Dynamic Abundance, ELYSIAN, Worldopoly, Confidential ICO,  Fox Trading FX, Profede, Market Digital, CINDX'
     ]
   },
+  {
+    img: Jason_King,
+    video: 'https://www.youtube.com/embed/RfW8fkvpbTo',
+    name: 'Jason King',
+    src: 'https://www.linkedin.com/in/jasonking/',
+    position: '20 years of excecutive experience',
+    fackt1: 'Led businesses operations in 30 countries',
+    fackt2: 'Responsible over $500m P&L',
+    linkedin: 'https://www.linkedin.com/in/jasonking/',
+    text: [
+      'For almost 20 years, Jason has been a senior technology, media and telecoms executive involved in structuring and brokering commercial deals, negotiating wins, building markets and positioning organizations for success.',
+      'The core theme in his career has been to successfully drive business restructuring, transformation and turnaround programs - by leading the right people and teams towards the most profitable goals.',
+      'In addition to his interests in private equity and startup companies, Jason has worked in various groups including Deutsche Telekom, Telenor and UPC Liberty Global and Veon.',
+      'Jason has either worked or has led business directly in over 30 countries and has previously held commercial P&L responsibilities in the $500M-$1B range.',
+    ]
+  }
  ];
 
 class TeamAdvisersPartners extends React.Component {
@@ -341,9 +348,9 @@ class TeamAdvisersPartners extends React.Component {
           <h3>{el.name}</h3>
           <p className="position">{el.position}</p>
           <hr />
-          <p><span>5</span>{el.fackt1}</p>
-          <p><span>7</span>{el.fackt2}</p>
-          <p><span>10</span>{el.fackt3}</p>
+          <p>{el.fackt1}</p>
+          <p>{el.fackt2}</p>
+          <p>{el.fackt3}</p>
           <div className="block-soc-icon">
             <a target="_blank" href={el.src}>
               <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
@@ -363,9 +370,9 @@ class TeamAdvisersPartners extends React.Component {
           <h3>{el.name}</h3>
           <p className="position">{el.position}</p>
           <hr />
-          <p><span>5</span>{el.fackt1}</p>
-          <p><span>7</span>{el.fackt2}</p>
-          <p><span>10</span>{el.fackt3}</p>
+          <p>{el.fackt1}</p>
+          <p>{el.fackt2}</p>
+          <p>{el.fackt3}</p>
           <div className="block-soc-icon">
             <a target="_blank" href={el.src}>
               <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
@@ -468,7 +475,7 @@ class TeamAdvisersPartners extends React.Component {
       <div className="block_8" id="team">
         <div className="size">
           <div className="team">
-            <h2 className="header_blocks">Team of 40+ Members</h2>
+            <h2 className="header_blocks">Team of 50+ Members</h2>
             <div className="block_arrow_relative">
               <div className="settings">
                 <Slider {...settings}>

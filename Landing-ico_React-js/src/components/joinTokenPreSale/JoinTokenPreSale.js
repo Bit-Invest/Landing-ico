@@ -22,7 +22,7 @@ export const JoinTokenPreSale = () => (
     <div className="size">
       <h2 className="header_blocks">Join Token Pre-Sale now!</h2>
       <div className="container2">
-        <Join 
+        <Join
           text="JOIN PRE-SALE"
           className="sb"
         />
@@ -50,9 +50,7 @@ export const JoinTokenPreSale = () => (
           <div className="adress_right">
             <div className="caption">Development and Marketing</div>
             <p>
-              Presnenskaya naberezhnaya, 8 building 1,
-            </p>
-            <p>
+              Presnenskaya naberezhnaya, 8 building 1, <br/>
               Moscow, 123112, Russia
             </p>
             <p>

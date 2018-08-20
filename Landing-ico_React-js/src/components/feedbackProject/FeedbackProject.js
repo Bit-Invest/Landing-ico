@@ -125,7 +125,7 @@ class FeedbackProject extends React.Component {
     return feedbackOnOurProject.map((el, i) => {
       return (
         <div key={i}>
-          <img className="item" src={el.img} alt="CINDEX"/>
+          <div className="item" style={{ backgroundImage: `url(${el.img})` }} alt="CINDEX"></div>
           <div className="left">
             <div className="name">
               <div className="feed-back-div" onClick={() => this.showVideoInPopUp(el.video)}><img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/></div>

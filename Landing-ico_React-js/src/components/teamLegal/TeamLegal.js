@@ -7,6 +7,9 @@ import block_3_ico_2 from '../../images/block_3_ico_2.png';
 import block_3_ico_3 from '../../images/block_3_ico_3.png';
 import {links} from '../../links.js';
 import play_button_youtube from '../../media/play_button_youtube.png';
+import licensia_1 from '../../media/licensia_1.png';
+import licensia_2 from '../../media/licensia_2.png';
+import licensia_3 from '../../media/licensia_3.png';
 import './TeamLegal.css';
 
 const RigthVideo = (props) => {
@@ -40,18 +43,18 @@ class TeamLegal extends React.Component {
             <div className="left">
               <div className='row'>
                 <div className="LC">
-                  <div className="img"></div>
-                  <p>‘CRYPTOCURRENCY EXCHANGE LICENSE’</p>
+                  <img className="img" src={licensia_1} alt="CINDEX"/>
+                  <p>Лицензия 1</p>
                 </div>
                 <div className="LC">
-                  <div className="img"></div>
-                  <div>‘FINANCIAL INSTITUTION LICENSE’</div>
+                  <img className="img" src={licensia_2} alt="CINDEX"/>
+                  <div>Лицензия 2</div>
                 </div>
               </div>
               <div className='row'>
                 <div className="LC">
-                  <div className="img"></div>
-                  <div>‘CRYPTO WALLET LICENSE’</div>
+                  <img className="img" src={licensia_3} alt="CINDEX"/>
+                  <div>Лицензия 3</div>
                 </div>
               </div>
               <div className="dock_block">

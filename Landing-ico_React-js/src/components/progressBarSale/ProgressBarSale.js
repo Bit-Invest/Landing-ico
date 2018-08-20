@@ -13,35 +13,35 @@ export const ProgressBarSale = () => (
       <div className="progress-data">
         <div className="data">
           <p className="amount">1.25</p>
-          <p>Sep 16</p>
+          <p>Aug 26</p>
         </div>
         <div className="data">
           <p className="amount">1.20</p>
-          <p>Oct 7</p>
+          <p>Sep 17</p>
         </div>
         <div className="data">
           <p className="amount">1.17</p>
-          <p>Oct 21</p>
+          <p>Oct 8</p>
         </div>
         <div className="data">
           <p className="amount">1.15</p>
-          <p>Nov 4</p>
+          <p>Oct 22</p>
         </div>
         <div className="data">
-          <p className="amount">1.12</p>
-          <p>Nov 18</p>
+          <p className="amount">1.13</p>
+          <p>Nov 6</p>
         </div>
         <div className="data">
           <p className="amount">1.10</p>
-          <p>Dec 2</p>
-        </div>
-        <div className="data">
-          <p className="amount">1.07</p>
-          <p>Dec 16</p>
+          <p>Nov 19</p>
         </div>
         <div className="data">
           <p className="amount">1.05</p>
-          <p>Dec 26</p>
+          <p>Dec 3</p>
+        </div>
+        <div className="data">
+          <p className="amount">1.00</p>
+          <p>Dec 17</p>
         </div>
       </div>
     </div>

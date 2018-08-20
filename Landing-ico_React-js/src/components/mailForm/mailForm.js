@@ -66,7 +66,7 @@ class MailForm extends React.Component {
       });
     }
 
-    fetch(`https://cindx.io/subscribe/?email=${email}&clickid={links.clickid}&loc=en&gaid={links.gaid()}`)  
+    fetch(`https://cindx.io/subscribe/?email=${email}&clickid={links.clickid}&loc=en&gaid={links.gaid()}`)
       .then((response) => response.json())
       .then((responseJson) => {
         console.log(responseJson)
@@ -102,7 +102,7 @@ class MailForm extends React.Component {
             src={play_button_youtube}
             alt="CINDEX"
             className={`${ROOT_CLASS}__play`}
-            onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/SWFZpVGiv-E')}
+            onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/nmh_BfGHORE')}
           />
         </div>
         <div className={`${ROOT_CLASS}__content`}>
@@ -157,9 +157,9 @@ class MailForm extends React.Component {
             </div>
           </div>
           <div className={`${ROOT_CLASS}__input ${ (submitStatus === 0 || submitStatus === 1) ? "errorRed" : null }`}>
-            <Input 
-              placeholder="Your Email" 
-              onChange={this.onChange} 
+            <Input
+              placeholder="Your Email"
+              onChange={this.onChange}
             />
           </div>
           <div className={`${ROOT_CLASS}__button`}>
@@ -171,8 +171,8 @@ class MailForm extends React.Component {
           </div>
           {
             submitStatus !== 4 ?
-              <div 
-                className={`${ROOT_CLASS}__textStatus ${ 
+              <div
+                className={`${ROOT_CLASS}__textStatus ${
                   (submitStatus === 0 || submitStatus ===1) ? "error" :
                     (submitStatus === 3) ? "loading" :
                       (submitStatus === 2) ? "success" : null

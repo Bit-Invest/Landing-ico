@@ -157,17 +157,13 @@ const TokenDeals = () => {
           <p className="span">Dec 17 - Dec 26 - 0% Bonus</p>
         </div>
       </div>
-      <Join 
-        text="BUY TOKENS"
-        className="sb"
-      />
     </div>
   );
 };
 
 const ButtonBuy = () => {
   return(
-    <Join 
+    <Join
       text="buy tokens"
       className="sb"
     />
