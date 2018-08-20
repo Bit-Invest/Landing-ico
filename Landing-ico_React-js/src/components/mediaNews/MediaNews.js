@@ -9,7 +9,6 @@ import MediaBitcoinist from '../../media/media/Bitcoinist.png'
 import MediaTokendesk from '../../media/media/tokendesk.png'
 import MediaBtcmanager from '../../media/media/BTCManager.png'
 import MediaBlockonomi from '../../media/media/blockonomi-logo.png'
-<<<<<<< HEAD
 
 // NEWS
 import Airat_Shayhulov from '../../news/Airat_Shayhulov.jpeg';
@@ -52,11 +51,9 @@ import Tyler_Sanford from '../../news/Tyler_Sanford.jpeg';
 import Val_Jerdes from '../../news/Val_Jerdes.jpeg';
 import Virtual_Currency_Wallet_Services from '../../news/Virtual_Currency_Wallet_Services.jpeg';
 import Welcome_to_CINX_Token_Distribution_its_not_an_ICO_its_an_STO from '../../news/Welcome_to_CINX_Token_Distribution_its_not_an_ICO_its_an_STO.jpeg';
-=======
 import MediaBitcoingarden from '../../media/media/bitcoingarden_logo.png'
 import MediaDigitaljournal from '../../media/media/digital_journal_transp.png'
 import MediaCoinfox from '../../media/media/CoinFox.png'
->>>>>>> 671d2db6e973de3a0fc79fd508618f10fd2febe6
 import './MediaNews.css';
 
 const media = [
