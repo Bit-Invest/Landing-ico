@@ -19,15 +19,18 @@ class CryptoAssetsManagement extends React.Component {
       <div name="product" id="product" className="cryptoAssetsManagement">
         <div className="size">
           <div className="row">
-            <h2 className="header_blocks">CINDX Is a Crypto Assets Management Hub. We solve the problems of investors, traders and developers</h2>
-            <div className="video">
+            <h2 className="header_blocks">
+              CINDX Is a Crypto Assets Management Hub. <br/>
+              We solve the problems of investors, traders and developers
+            </h2>
+            {/*<div className="video">
               <img
                 src={play_button_youtube}
                 alt="CINDEX"
                 className="play"
                 onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/ZLA5tMEJS7M')}
               />
-            </div>
+            </div>*/}
           </div>
           <div className="problemBlock">
             <div className="txt">

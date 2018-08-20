@@ -9,7 +9,7 @@
   margin-bottom: 110px;
 }
 .cryptoAssetsManagement .header_blocks {
-  width: 50%;
+  width: 52%;
 }
 .cryptoAssetsManagement .video {
   background-size: cover;
@@ -108,7 +108,7 @@
     display: block;
   }
   .cryptoAssetsManagement .header_blocks {
-    width: 90%;
+    width: 100%;
     display: block;
   }
   .cryptoAssetsManagement .video {

@@ -67,6 +67,10 @@ export const MarketAnalytics = () => {
               <a target="_blank" href={links.fm}><img src={block_3_ico_3} alt={"block_3_ico_3"}/></a>
               <a target="_blank" href={links.fm}><span>FINANCIAL MODEL</span></a>
             </div>
+            <div className="row">
+              <a target="_blank" href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+              <a target="_blank" href={links.ld}><span>LEGAL DOCS</span></a>
+            </div>
           </div>
           </div>
           <div className="other_geo">
