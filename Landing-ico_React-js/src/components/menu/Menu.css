@@ -53,6 +53,7 @@
 .menu .menu-item {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .menu .menu-item-burger {
   cursor: pointer;
@@ -134,7 +135,7 @@
   padding: 0 17px;
   padding-top: 17px;
   top: 90px;
-  right: 290px;
+  right: 258px;
   color: #7962d4;
   border-radius: 5%;
   background-color: white;
@@ -147,7 +148,7 @@
   padding: 0 17px;
   padding-top: 17px;
   top: 90px;
-  right: 35px;
+  right: -7px;
   color: #7962d4;
   border-radius: 5%;
   background-color: white;
