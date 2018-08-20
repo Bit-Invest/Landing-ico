@@ -351,9 +351,9 @@ export class MediaNews extends React.Component {
           <div className="txtNews">
             <img className="img" src={el.screen} alt="CINDEX"/>
             <div className="content">
-              <h3>{el.name}</h3>
+              <h3>{el.name.substr(0, 35)} ...</h3>
               <div className="clear" />
-              <p>{el.text}</p>
+              <p>{el.text.substr(0, 65)} ...</p>
               <a target="_blank" href={el.videoSrc}>{el.source}</a>
             </div>
           </div>
