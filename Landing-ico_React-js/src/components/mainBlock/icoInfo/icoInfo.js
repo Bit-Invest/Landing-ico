@@ -52,7 +52,7 @@ export const IcoInfo = props => (
       <div className={`${ROOT_CLASS}__ratings`}>
         <img src={rating_topicolist} className={`${ROOT_CLASS}__rating-icon`} />
         <img src={rating_trackico} className={`${ROOT_CLASS}__rating-icon`} />
-        <img src={rating_topicolist2} className={`${ROOT_CLASS}__rating-icon`} />
+        <img src={rating_topicolist2} className={`${ROOT_CLASS}__rating-icon ico_rating`} />
         <br/>
         <img src={rating_icomarks} className={`${ROOT_CLASS}__rating-icon`} />
         <img src={rating_icobench} className={`${ROOT_CLASS}__rating-icon`} />

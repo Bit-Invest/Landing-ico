@@ -388,7 +388,7 @@ class TeamAdvisersPartners extends React.Component {
     return ourPartners.map((el, i) => {
       return (
         <div key={i}>
-          <img className="img" src={el.img} alt="CINDX"/>
+          <img className={`img ${(el.img === ICO_PROMO) ? 'ico-promo' : ''}`} src={el.img} alt="CINDX"/>
         </div>
       );
     })
