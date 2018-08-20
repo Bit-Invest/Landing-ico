@@ -91,14 +91,8 @@ export const JoinTokenPreSale = () => (
           <a target="_blank" href="https://www.linkedin.com/company/cindx/">
             <img className="icon" src={linkedin_icon} alt={"CINDEX"}/>
           </a>
-          <a>
+          <a target="_blank" href="https://m.weibo.cn/profile/6606802462">
             <img className="icon" src={weibo_icon} alt={"CINDEX"}/>
-          </a>
-          <a>
-            <img className="icon" src={wechat_icon} alt={"CINDEX"}/>
-          </a>
-          <a>
-            <img className="icon" src={kakaotalk_icon} alt={"CINDEX"}/>
           </a>
         </div>
       </div>

@@ -40,10 +40,7 @@ export class LegalSchedule extends React.Component {
                             (FVR000110)
                             TO PROVIDE
                             EXCHANGE
-                            BETWEEN
-                            VIRTUAL
-                            CURRENCY AND
-                            FIAT SERVICES
+                            BETWEEN ...
                           </p>
                           <div className="numb">
                             4.18
@@ -138,7 +135,6 @@ export class LegalSchedule extends React.Component {
                       </div>
                       <div className="item">
                         <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
                           <p>
                             REGISTERED
                             UNDER

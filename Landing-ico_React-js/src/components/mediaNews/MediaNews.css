@@ -20,9 +20,44 @@
   margin-bottom: 30px;
 }
 
-.block_7 .blockkonomi {
-  width: 84%;
+.block_7 .ambcrypto {
   margin-bottom: 30px;
+  width: 75%;
+}
+
+.block_7 .bitcoinist {
+  margin-bottom: 30px;
+  width: 75%;
+}
+
+.block_7 .tokendesk {
+  margin-bottom: 30px;
+  width: 65%;
+}
+
+.block_7 .btcmanager {
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+.block_7 .blockonomi {
+  margin-bottom: 30px;
+  width: 84%;
+}
+
+.block_7 .bitcoingarden {
+  margin-bottom: 20px;
+  width: 57%;
+}
+
+.block_7 .digitaljournal {
+  margin-bottom: 30px;
+  width: 85%;
+}
+
+.block_7 .coinfox {
+  margin-bottom: 0px;
+  width: 55%;
 }
 
 /*MEDIA*/
@@ -56,7 +91,7 @@
 .block_7 .txt .bg {
   color: black;
   width: 300px;
-  min-height: 300px;
+  min-height: 330px;
   padding: 20px;
   background: #FFFFFF;
   border-radius: 10px;
@@ -112,10 +147,11 @@
 .block_7 .txtNews {
   color: black;
   width: 340px;
-  height: 400px;
+  min-height: 420px;
   border-radius: 10px;
   background-color: white;
   margin-left: 20px;
+  position: relative;
 }
 
 .block_7 .settingsNews2 {
@@ -153,6 +189,8 @@
   color: #6c5ed6;
   text-decoration: none;
   font-size: 16px;
+  position: absolute;
+  bottom: 20px;
 }
 
 @media (max-width: 1023px) {

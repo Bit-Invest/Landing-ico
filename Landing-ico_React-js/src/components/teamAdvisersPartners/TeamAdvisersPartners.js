@@ -120,7 +120,7 @@ const teamInfo = [
     name: 'Sofja Pevzner',
     position: 'Personal Data Officer',
     fackt1: '5 years in entrepreneurship',
-    fackt2: 'Permisson of estonian AML office for working',
+    fackt2: 'Permisson of estonian AML office',
     fackt3: '8 years of legal work expirience',
     src: 'https://www.linkedin.com/in/sofja-pevzner-70831963/',
     m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-sofja-pevzner-8386e8e88407'
@@ -148,10 +148,10 @@ const teamInfo = [
   {
     img: Wang_Dong,
     name: 'Wang Dong',
-    position: 'Specialist in Chinese Blockchain market ',
+    position: 'Specialist in Chinese market ',
     fackt1: '3 years in php/ JavaScript',
     fackt2: '5 years in SEO/SMM/media buyer',
-    fackt3: '2 years in Blockchain development and token sale in China',
+    fackt3: '2 years in token sale in China',
     src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
     m: ''
   }
@@ -526,14 +526,20 @@ class TeamAdvisersPartners extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000
     };
     const settingsOurParners3 = {
       arrows: false,
       infinite: true,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000
     };
     return (
       <div className="block_8" id="team">

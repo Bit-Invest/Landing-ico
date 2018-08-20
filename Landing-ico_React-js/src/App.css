@@ -1782,7 +1782,6 @@ body.compensate-for-scrollbar {
     }
     .block_8 .advisers .right_content p {
       margin: 0;
-      padding: 50px 20px;
     }
     .block_8 .ourPartners .slick-list {
       width: 620px;
@@ -1813,7 +1812,7 @@ body.compensate-for-scrollbar {
 
 @media (max-width: 680px) {
   .teamLegal .container {
-    margin: 0 0 0 13%;
+    margin: 0 0 0 10%;
     padding: 40px 0 200px 0;
   }
 
@@ -1886,6 +1885,10 @@ body.compensate-for-scrollbar {
     overflow-x: scroll;
     padding-left: 5%;
     padding-bottom: 30px;
+  }
+
+  .teamLegal .container .row .LC {
+    width: 70%;
   }
 
   /* .roadmap__map::-webkit-scrollbar {
