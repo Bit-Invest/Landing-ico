@@ -226,6 +226,11 @@
   display: none;
 }
 
+.block_8 .advisers .right_content .right_content-text {
+  margin: 10px;
+  padding-top: 10px;
+}
+
 
 @media (max-width: 1023px){
   .block_8 .ourPartners .carusel-block .img {
