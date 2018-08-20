@@ -20,9 +20,44 @@
   margin-bottom: 30px;
 }
 
-.block_7 .blockkonomi {
-  width: 84%;
+.block_7 .ambcrypto {
   margin-bottom: 30px;
+  width: 75%;
+}
+
+.block_7 .bitcoinist {
+  margin-bottom: 30px;
+  width: 75%;
+}
+
+.block_7 .tokendesk {
+  margin-bottom: 30px;
+  width: 65%;
+}
+
+.block_7 .btcmanager {
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+.block_7 .blockonomi {
+  margin-bottom: 30px;
+  width: 84%;
+}
+
+.block_7 .bitcoingarden {
+  margin-bottom: 20px;
+  width: 57%;
+}
+
+.block_7 .digitaljournal {
+  margin-bottom: 30px;
+  width: 85%;
+}
+
+.block_7 .coinfox {
+  margin-bottom: 0px;
+  width: 55%;
 }
 
 /*MEDIA*/
@@ -116,6 +151,7 @@
   border-radius: 10px;
   background-color: white;
   margin-left: 20px;
+  min-height: 430px;
 }
 
 .block_7 .settingsNews2 {
