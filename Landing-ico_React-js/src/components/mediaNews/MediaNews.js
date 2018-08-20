@@ -4,7 +4,49 @@ import block_7_ava_bg from '../../images/block_7_ava_bg.png';
 import IB from '../../media/news/IB.png';
 import IS from '../../media/news/IS.png';
 import Medium from '../../media/news/Medium.png'
+import MediaMedium from '../../media/media/medium-logo.png'
+import MediaForbes from '../../media/media/forbes-logo.png'
+import MediaBlockonomi from '../../media/media/blockonomi-logo.png'
 import './MediaNews.css';
+
+const media = [
+  {
+    screen: MediaMedium,
+    type: 'medium',
+    name: 'CINDX meets Ian Balina in Moscow',
+    text: 'CINDX pitched to the one of the TOP10 crypto gurus in the world in the Cryptobazar event.',
+  },
+  {
+    screen: MediaForbes,
+    type: 'forbes',
+    name: 'CINDX took part in Moscow ICO Summit 2018',
+    text: 'team introduced the project to the Russian crypto community during ICO Summit event.',
+  },
+  {
+    screen: MediaBlockonomi,
+    type: 'blockkonomi',
+    name: 'Meet World’s First Financial Crypto Social Network',
+    text: 'Every day our team takes one more step on the way to creation and start of the CINDX platform.',
+  },
+  {
+    screen: MediaMedium,
+    type: 'medium',
+    name: 'The strategic meeting of the international CINDX team',
+    text: 'Every day our team takes one more step on the way to creation and start of the CINDX...',
+  },
+  {
+    screen: MediaForbes,
+    type: 'forbes',
+    name: 'CINDX meets Vangoo Capital Partners Fund ',
+    text: 'Today we have welcomed Kevin Shang from Vangoo Capital Partners and his colleagues...',
+  },
+  {
+    screen: MediaBlockonomi,
+    type: 'blockkonomi',
+    name: 'CINDX meets 9coin Digital Asses Exchange',
+    text: 'The CINDX team continues active work on building relationships with various international...',
+  }
+]
 
 const news = [
   {
@@ -70,12 +112,13 @@ export class MediaNews extends React.Component {
     })
   }
   mapMedia = () => {
-    return news.map((el, i) => {
+    return media.map((el, i) => {
       return (
         <div key={i} className="txt">
           <div className="bg">
+            <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
             <h3>{el.name}</h3>
-            <p>{el.text}</p><a target="blank" href={el.videoSrc}>www.medium.com</a>
+            <p>{el.text}</p>
           </div>
         </div>
       );

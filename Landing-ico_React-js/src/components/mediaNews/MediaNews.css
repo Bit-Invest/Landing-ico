@@ -10,6 +10,21 @@
   margin-left: 75px;
 }
 
+.block_7 .medium {
+  width: 57%;
+  margin-bottom: 30px;
+}
+
+.block_7 .forbes {
+  width: 46%;
+  margin-bottom: 30px;
+}
+
+.block_7 .blockkonomi {
+  width: 84%;
+  margin-bottom: 30px;
+}
+
 /*MEDIA*/
 
 .block_7 .settings,
@@ -63,7 +78,7 @@
 .block_7 .txt h3
 {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .block_7 .txt p
@@ -72,7 +87,7 @@
   font-size: 16px;
   margin-top: 20px;
   margin-bottom: 40px;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .block_7 .txt a
@@ -131,6 +146,7 @@
 .block_7 .txtNews p {
   font-size: 16px;
   color: #888e9c;
+  font-weight: 300;
 }
 
 .block_7 .txtNews a {

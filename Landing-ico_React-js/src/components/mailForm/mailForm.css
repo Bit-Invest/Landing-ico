@@ -45,6 +45,13 @@
   text-align: center;
 }
 
+.mail-form__arrows {
+  background: url('../../media/arrow-purple.png') no-repeat 0 0;
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+}
+
 .mail-form__bonus {
   margin-top: 10.6px;
   font-family: Geometria;
@@ -75,6 +82,7 @@
   justify-content: space-between;
   background-color: #f6f6f6;
   margin-top: 6px;
+  align-items: center;
 }
 
 .mail-form__cost-title {

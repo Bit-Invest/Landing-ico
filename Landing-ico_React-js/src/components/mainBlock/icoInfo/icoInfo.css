@@ -15,10 +15,9 @@
 }
 
 .ico-info__ratings {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* width: 250px; */
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
 }
 
 .ico-info__rating-icon {
@@ -26,6 +25,10 @@
   height: 46px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.ico_rating {
+  display: none;
 }
 
 .ico-info__partner {
@@ -44,6 +47,7 @@
 .ico-info__partner_hotbit {
   width: 88px;
   height: 24px;
+  display: none;
 }
 
 .ico-info__partner_local-coin {
@@ -57,6 +61,7 @@
   margin-top: 14px;
   width: 64px;
   height: 24px;
+  display: none;
 }
 
 .ico-info__ratings {

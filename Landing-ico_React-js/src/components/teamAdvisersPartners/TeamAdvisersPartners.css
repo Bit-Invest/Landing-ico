@@ -202,6 +202,15 @@
   margin-bottom: 70px;
 }
 
+.block_8 .ourPartners .ico-promo {
+  height: 50px!important;
+}
+
+.block_8 .ourPartners .slick-track {
+  display: flex;
+  align-items: center;
+}
+
 .block_8 .ourPartners .slick-list {
   margin-top: 70px;
   height: 170px;
