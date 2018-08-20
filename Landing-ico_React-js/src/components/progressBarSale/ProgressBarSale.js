@@ -9,7 +9,7 @@ export const ProgressBarSale = () => (
         <p className="sale-bonusses">Sale Bonuses</p>
         <p className="cinx">CINX</p>
       </div>
-      <div className="progressBar"><div className="progress"></div></div>
+      <div className="progressBar">{/*<div className="progress"></div>*/}</div>
       <div className="progress-data">
         <div className="data">
           <p className="amount">1.25</p>

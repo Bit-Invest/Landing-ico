@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { ProgressBar } from '@components/progressBar';
 import currency_icons from '../../../images/currency_icons.png'
-import BancorLogo from '@images/bancor_logo.svg';
-import HBLogo from '@images/hb_logo.svg';
-import Hotbit from '@images/hotbit_logo.svg';
-import Localcoin from '@images/localcoin_logo.svg';
+import BancorLogo from '../../../media/bancor_logo.png';
+import HBLogo from '../../../media/hb_logo.png';
+import Hotbit from '../../../media/hotbit_logo.757f4b29.png';
+import Localcoin from '../../../media/localcoin_logo.png';
 import Stable from '@images/rating-stable.svg';
 import Hot from '@images/rating-hot.svg';
 import rating_topicolist from '../../../media/rating_topicolist.png';
