@@ -74,7 +74,7 @@ const TokenInfo = () => {
     <div className="cont_1">
       <p>Token Name: <span>CINX</span></p>
       <p>Token Pre-Sale start: <span>26.08.2018</span></p>
-      <p>Total Emission: <span>51.500.000</span></p>
+      <p>Total Emission: <span>51,500,000</span></p>
       <p>Price Per Token: <span>$ 1.00=1.00</span></p>
       <p><span>CINXO=1.00 CINX</span></p>
       <p>Minimal Investment: <span>$ 50 equivalent</span></p>

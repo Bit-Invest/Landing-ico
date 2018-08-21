@@ -136,6 +136,7 @@ export class LegalSchedule extends React.Component {
                       </div>
                       <div className="item">
                         <div className="cont_item one">
+                          <img src={ico_check} alt={"CINDEX"}/>
                           <p>
                             REGISTERED
                             UNDER
@@ -312,6 +313,7 @@ export class LegalSchedule extends React.Component {
                       </div>
                       <div className="item">
                         <div className="cont_item one">
+                          <img src={ico_check} alt={"CINDEX"}/>
                           <p>
                             REGISTERED
                             UNDER
