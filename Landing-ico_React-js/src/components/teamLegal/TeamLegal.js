@@ -14,12 +14,11 @@ import './TeamLegal.css';
 
 const RigthVideo = (props) => {
   return (
-    <div className="right">
+    <div className="right" onClick={() => props.video_show('https://www.youtube.com/embed/5Iy_etsH7zo')}>
       <img
         src={play_button_youtube}
         alt="CINDEX"
         className="play"
-        onClick={() => props.video_show('https://www.youtube.com/embed/5Iy_etsH7zo')}
       />
     </div>
   );
@@ -42,23 +41,23 @@ class TeamLegal extends React.Component {
           <div className="container">
             <div className="left">
               <div className='row'>
-                <div className="LC">
-                  <img className="img" src={licensia_1} alt="CINDEX"/>
-                  <a target="_blank" href="https://drive.google.com/open?id=1nulb7NnAQJJHGF09v9VdZC5tUQJPOV4u">
+                <div>
+                  <a className="LC" target="_blank" href="https://drive.google.com/open?id=1nulb7NnAQJJHGF09v9VdZC5tUQJPOV4u">
+                    <img className="img" src={licensia_1} alt="CINDEX"/>
                     <p>CRYPTOCURRENCY EXCHANGE LICENSE</p>
                   </a>
                 </div>
-                <div className="LC">
-                  <img className="img" src={licensia_2} alt="CINDEX"/>
-                  <a target="_blank" href="https://drive.google.com/open?id=1VvZSFwaR_LVJZBRp_v8GZ6w5erbDr1VF">
+                <div>
+                  <a className="LC" target="_blank" href="https://drive.google.com/open?id=1VvZSFwaR_LVJZBRp_v8GZ6w5erbDr1VF">
+                    <img className="img" src={licensia_2} alt="CINDEX"/>
                     <p>FINANCIAL INSTITUTION LICENSE</p>
                   </a>
                 </div>
               </div>
               <div className='row'>
-                <div className="LC">
-                  <img className="img" src={licensia_3} alt="CINDEX"/>
-                  <a target="_blank" href="https://drive.google.com/open?id=1yNU430cKV_3wsGBkBDxqI1DhXVnqdOLM">
+                <div>
+                  <a className="LC" target="_blank" href="https://drive.google.com/open?id=1yNU430cKV_3wsGBkBDxqI1DhXVnqdOLM">
+                    <img className="img" src={licensia_3} alt="CINDEX"/>
                     <p>CRYPTO WALLET LICENSE</p>
                   </a>
                 </div>

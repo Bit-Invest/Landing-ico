@@ -1771,14 +1771,15 @@ body.compensate-for-scrollbar {
       width: 620px;
     }
     .block_8 .advisers .slick-slider {
-      width: 620px;
+      width: 680px;
       margin: 0 auto;
     }
     .block_8 .advisers .slick-list {
-      width: 620px;
+      width: 680px;
     }
     .block_8 .advisers .right_content {
-      width: 320px;
+      width: 380px;
+      padding: 5% 20px 0 20px;
     }
     .block_8 .advisers .right_content p {
       margin: 0;
@@ -2030,20 +2031,6 @@ body.compensate-for-scrollbar {
   .block_4 .cont_4 {
     margin: 0 5%;
     width: auto;
-  }
-
-  .block_4 .cont_4 .graph {
-    position: relative;
-    display: flex;
-    margin-bottom: 220px;
-  }
-
-  .block_4 .cont_4 .graph ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin: 0;
-    padding: 0;
   }
 
   .block_4 .cont_2 {

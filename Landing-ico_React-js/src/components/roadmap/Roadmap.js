@@ -33,7 +33,7 @@ export const Roadmap = props => {
           <div className={`${ROOT_CLASS}__buttons`}>
             <div className={`${ROOT_CLASS}__button`}>
               <Button
-                title="$3,8 M SCENARIO"
+                title="$3.8 M SCENARIO"
                 theme={`${props.currentButton === '3.8m' ? 'gradient' : ''}`}
                 payload={{name: '3.8m'}}
                 onClick={props.onClickButton}

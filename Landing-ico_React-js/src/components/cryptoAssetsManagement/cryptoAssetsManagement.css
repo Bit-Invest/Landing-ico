@@ -21,6 +21,7 @@
   margin-top: 80px;
   margin-left: 15%;
   border-radius: 10px;
+  cursor: pointer;
 }
 .cryptoAssetsManagement .video .play {
   width: 40px;
@@ -82,6 +83,10 @@
   display: flex;
   justify-content: center;
   padding-bottom: 140px;
+}
+
+.cryptoAssetsManagement .problemBlock:last-of-type .btn {
+  display: none;
 }
 
 .problemBlock .btn {

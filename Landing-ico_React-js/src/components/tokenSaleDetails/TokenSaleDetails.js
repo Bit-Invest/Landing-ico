@@ -2,6 +2,7 @@ import * as React from 'react';
 import block_3_ico_1 from '../../images/block_3_ico_1.png';
 import block_3_ico_2 from '../../images/block_3_ico_2.png';
 import block_3_ico_3 from '../../images/block_3_ico_3.png';
+import imageCircle from '../../images/block_4_cont_4_img.png'
 
 import { links } from '../../links.js';
 import { Join } from '../../links.js';
@@ -31,15 +32,15 @@ const TokenAllocation = () => {
       </div>
       <div className="row">
         <div className="process_bar">
-          <div className="proc" style={{width: '8%'}} />
-          <div className="num">6%</div>
+          <div className="proc" style={{width: '9%'}} />
+          <div className="num">7%</div>
         </div>
         <p>Advisers</p>
       </div>
       <div className="row">
         <div className="process_bar">
-          <div className="proc" style={{width: '9%'}} />
-          <div className="num">7%</div>
+          <div className="proc" style={{width: '14%'}} />
+          <div className="num">12%</div>
         </div>
         <p>Reserve</p>
       </div>
@@ -52,15 +53,15 @@ const TokenAllocation = () => {
       </div>
       <div className="row">
         <div className="process_bar">
-          <div className="proc" style={{width: '7%'}} />
-          <div className="num">5%</div>
+          <div className="proc" style={{width: '11%'}} />
+          <div className="num">9%</div>
         </div>
         <p>Token Liquidity Support</p>
       </div>
       <div className="row">
         <div className="process_bar">
-          <div className="proc" style={{width: '63%'}} />
-          <div className="num">61%</div>
+          <div className="proc" style={{width: '53%'}} />
+          <div className="num">51%</div>
         </div>
         <p>Available for Sale</p>
       </div>
@@ -114,6 +115,7 @@ const UseProceeds = () => {
       <h2>Use of Proceeds</h2>
       <hr/>
       <div className="graph">
+        <img src={imageCircle} className="graph-image" />
         <ul>
           <li><span /> Marketing and PR 21%</li>
           <li><span /> Research and Development 41%</li>
@@ -179,7 +181,7 @@ export const TokenSaleDetails = () => (
             <TokenAllocation />
             <TokenInfo />
             <div className="progressBar_block4">
-              <ProgressBar money="1.053,972" percent="4"/>
+              <ProgressBar money="1,100,000" percent="4"/>
             </div>
             <Docs />
           </div>

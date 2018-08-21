@@ -186,6 +186,7 @@
   width: 720px;
   height: 710px;
   background-color: white;
+  padding: 15% 60px 0 60px;
 }
 
 .block_8 .advisers .right_content p {
@@ -227,8 +228,7 @@
 }
 
 .block_8 .advisers .right_content .right_content-text {
-  margin: 10px;
-  padding-top: 10px;
+  margin: 15px 0;
 }
 
 

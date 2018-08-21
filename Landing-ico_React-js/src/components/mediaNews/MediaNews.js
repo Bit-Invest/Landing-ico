@@ -402,16 +402,18 @@ export class MediaNews extends React.Component {
   mapNews = () => {
     return news.map((el, i) => {
       return (
-        <div key={i}  className="item">
-          <div className="txtNews">
-            <img className="img" src={el.screen} alt="CINDEX"/>
-            <div className="content">
-              <h3>{el.name.substr(0, 35)} ...</h3>
-              <div className="clear" />
-              <p>{el.text.substr(0, 65)} ...</p>
-              <a target="_blank" href={el.videoSrc}>{el.source}</a>
+        <div key={i} className="item">
+          <a target="_blank" href={el.videoSrc}>
+            <div className="txtNews">
+              <img className="img" src={el.screen} alt="CINDEX"/>
+              <div className="content">
+                <h3>{el.name.substr(0, 35)} ...</h3>
+                <div className="clear" />
+                <p>{el.text.substr(0, 65)} ...</p>
+                <div className="news-class">{el.source}</div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       );
     })
@@ -420,13 +422,13 @@ export class MediaNews extends React.Component {
     return media.map((el, i) => {
       return (
         <div key={i} className="txt">
-          <div className="bg">
-            <a href={el.src} target="_blank">
-              <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
-            </a>
-            <h3>{el.name.substr(0, 45)} ...</h3>
-            <p>{el.text.substr(0, 85)} ...</p>
-          </div>
+          <a href={el.src} target="_blank">
+            <div className="bg">
+                <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
+              <h3>{el.name.substr(0, 45)} ...</h3>
+              <p>{el.text.substr(0, 85)} ...</p>
+            </div>
+          </a>
         </div>
       );
     })

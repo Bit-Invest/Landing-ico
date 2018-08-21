@@ -65,6 +65,7 @@
   display: inline-block;
   text-align: center;
   border-radius: 10px;
+  cursor: pointer;
 }
 .teamLegal .right .play {
   width: 40px;

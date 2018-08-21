@@ -24,14 +24,14 @@ class CryptoAssetsManagement extends React.Component {
               We solve the problems of investors, <br/>
               traders and developers
             </h2>
-            {/*<div className="video">
+            {/* <div className="video" onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/ZLA5tMEJS7M')}>
               <img
                 src={play_button_youtube}
                 alt="CINDEX"
                 className="play"
-                onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/ZLA5tMEJS7M')}
+                
               />
-            </div>*/}
+            </div> */}
           </div>
           <div className="problemBlock">
             <div className="txt">

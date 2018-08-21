@@ -106,6 +106,7 @@
   width: 429px;
   height: 140px;
   margin: 0 auto;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
