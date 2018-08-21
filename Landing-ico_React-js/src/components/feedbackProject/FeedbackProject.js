@@ -110,7 +110,7 @@ const feedbackOnOurProject = [
     img: Jason_King,
     name: 'Jason King',
     position: 'Chief Commercial Officer',
-    video: 'https://www.youtube.com/embed/RfW8fkvpbTo',
+    video: '',
     text: 'Jason King, Chief Commercial Officer, explains what attracts him to CINDX and talks about crucial advantages of the project'
   },
 ]
@@ -128,7 +128,12 @@ class FeedbackProject extends React.Component {
           <div className="item" style={{ backgroundImage: `url(${el.img})` }} alt="CINDEX"></div>
           <div className="left">
             <div className="name">
-              <div className="feed-back-div" onClick={() => this.showVideoInPopUp(el.video)}><img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/></div>
+              <div className="feed-back-div" onClick={() => this.showVideoInPopUp(el.video)}>
+                <img className="playButtonWhite"
+                  src={playButtonWhite} alt={"CINDX"}
+                  style={{display: el.video ? 'block' : 'none'}}
+                />
+              </div>
               <h3>{el.name}</h3>
               <h4>{el.position}</h4>
               <hr />
