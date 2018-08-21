@@ -115,11 +115,11 @@ const UseProceeds = () => {
       <hr/>
       <div className="graph">
         <ul>
-          <li><span /> Marketing and PR 18%</li>
-          <li><span /> Research and Development 44%</li>
-          <li><span /> Legal expenses 9%</li>
-          <li><span /> Operations 26%</li>
-          <li><span /> Bonus for traders 3%</li>
+          <li><span /> Marketing and PR 21%</li>
+          <li><span /> Research and Development 41%</li>
+          <li><span /> Operations 28%</li>
+          <li><span /> Legal expenses 7%</li>
+          <li><span /> Community Grants 3%</li>
         </ul>
       </div>
     </div>
