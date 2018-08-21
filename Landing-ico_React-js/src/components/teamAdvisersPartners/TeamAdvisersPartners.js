@@ -152,7 +152,7 @@ const teamInfo = [
     fackt1: '3 years in php/ JavaScript',
     fackt2: '5 years in SEO/SMM/media buyer',
     fackt3: '2 years in token sale in China',
-    src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
+    src: '',
     m: ''
   }
  ];
@@ -228,8 +228,8 @@ const advisers = [
     text: [
       "I am Executive Chairman and Chair of the Investment Committee at Accelerated Digital Ventures - a UK Venture Company. I was born and raised in the UK. ",
       "Previously I was founder and a partner at Archimedes Labs in Palo Alto, California. I love working with founders, teams, designers and engineers to create products, tell stories, and turn them into reality. I have founded or co-founded many companies myself since the early 1980s. Some were successfully sold, others IPO'd.",
-      "Two of my companies were Unicorns - valued by others at more than $1 billion. I have always focused on the point at which change is happening. In the 1980's networking and databases. In the 1994-1998 period, Internet Access. From 1998-2010 - Web Services and Content, Mobile Consumer Applications and since 2017 Blockchain.", 
-      "Career and projects: Tech Crunch, Accelerated Digital Ventures, cScape, EasyNet, Cyberia,  RealNames, Venture Network, ICOBox, Crypterium,  R/Block, Fluz, EnergiMine, Archimedes Labs  and CINDX" 
+      "Two of my companies were Unicorns - valued by others at more than $1 billion. I have always focused on the point at which change is happening. In the 1980's networking and databases. In the 1994-1998 period, Internet Access. From 1998-2010 - Web Services and Content, Mobile Consumer Applications and since 2017 Blockchain.",
+      "Career and projects: Tech Crunch, Accelerated Digital Ventures, cScape, EasyNet, Cyberia,  RealNames, Venture Network, ICOBox, Crypterium,  R/Block, Fluz, EnergiMine, Archimedes Labs  and CINDX"
     ]
   },
   {
@@ -257,7 +257,7 @@ const advisers = [
     position: '25 years of consulting and entrepreneurial experience',
     fackt1: '$500m alternative payments business under leadership',
     fackt2: '200+ startups from 20 countries mentored',
-    linkedin: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
+    linkedin: 'https://www.linkedin.com/in/staehelin/',
     text: [
       "I'm an innovator and a leader who blends contagious optimism with pragmatic realism. I find opportunity where others see none.",
       `I've leveraged my ability to "see things differently" and "make things happen" in corporate, consulting and start-up environments - all giving me broad new perspectives that provide fodder for new transformative ideas. `,
@@ -354,7 +354,7 @@ const advisers = [
   },
   {
     img: Jason_King,
-    video: 'https://www.youtube.com/embed/RfW8fkvpbTo',
+    video: '',
     name: 'Jason King',
     src: 'https://www.linkedin.com/in/jasonking/',
     m: 'https://medium.com/cindx/the-cindx-team-jason-king-9a1b93d6aa8b',
@@ -371,7 +371,7 @@ const advisers = [
   },
   {
     img: Motti_Peer,
-    video: 'https://www.youtube.com/embed/RfW8fkvpbTo',
+    video: '',
     name: 'Motti Peer',
     src: 'https://www.linkedin.com/in/jasonking/',
     m: '',
@@ -385,7 +385,7 @@ const advisers = [
   },
   {
     img: Leonard_Grayver,
-    video: 'https://www.youtube.com/embed/RfW8fkvpbTo',
+    video: '',
     name: 'Leonard Grayver',
     src: 'https://www.linkedin.com/in/leonardgrayver/?locale=ru_RU',
     m: '',
@@ -470,7 +470,14 @@ class TeamAdvisersPartners extends React.Component {
           <div className="left_content">
             <div className="icon_content">
               <img className="icon-face" src={el.img} alt={"CINDX"}/>
-              <div onClick={() => this.showVideoInPopUp(el.video)}><img className="playButtonWhite" src={playButtonWhite} alt={"CINDX"}/></div>
+              <div onClick={() => this.showVideoInPopUp(el.video)}>
+                <img
+                  className="playButtonWhite"
+                  style={{display: el.video ? 'block' : 'none'}}
+                  src={playButtonWhite}
+                  alt={"CINDX"}
+                />
+              </div>
             </div>
             <div className="name_content">{el.name}</div>
             <hr/>
