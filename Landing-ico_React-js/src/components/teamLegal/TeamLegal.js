@@ -36,7 +36,9 @@ class TeamLegal extends React.Component {
     return(
       <div className="teamLegal">
         <div className="size">
-          <h2 className="header_blocks">And We Have A Great Team and Legal</h2>
+          <h2 className="header_blocks">
+            We Нave a Great Team and a Best-in-class <br/> Legal and Regulatory Organizational Framework
+          </h2>
           <RigthVideo video_show={this.showVideoInPopUp} />
           <div className="container">
             <div className="left">

@@ -38,7 +38,7 @@ export const MarketAnalytics = () => {
               <img src={block_3_img2} alt={"block_3_img2"}/>
             </div>
             <div className="item">
-              <h3>Rise of capital</h3>
+              <h3>Structure of investment</h3>
               <img src={block_3_img3} alt={"block_3_img3"}/>
             </div>
           </div>
@@ -57,7 +57,7 @@ export const MarketAnalytics = () => {
             </div>
             <div className="row">
               <a target="_blank" href={links.pr}><img src={block_3_ico_2} alt={"block_3_ico_2"}/></a>
-              <a target="_blank" href={links.pr}><span>PRESENTATIOM</span></a>
+              <a target="_blank" href={links.pr}><span>PRESENTATION</span></a>
             </div>
             <div className="row">
               <a target="_blank" href={links.op}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
@@ -101,7 +101,7 @@ export const MarketAnalytics = () => {
                 <img src={block_3_img2} alt={"block_3_img2"}/>
               </div>
               <div className="item">
-                <h3>Rise of capital</h3>
+                <h3>Structure of investment</h3>
                 <img src={block_3_img3} alt={"block_3_img3"}/>
               </div>
             </Slider>
@@ -122,7 +122,7 @@ export const MarketAnalytics = () => {
               </div>
               <div className="row">
                 <a target="_blank" href={links.pr}><img src={block_3_ico_2} alt={"block_3_ico_2"}/></a>
-                <a target="_blank" href={links.pr}><span>PRESENTATIOM</span></a>
+                <a target="_blank" href={links.pr}><span>PRESENTATION</span></a>
               </div>
               <div className="row">
                 <a target="_blank" href={links.op}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
@@ -131,6 +131,10 @@ export const MarketAnalytics = () => {
               <div className="row">
                 <a target="_blank" href={links.fm}><img src={block_3_ico_3} alt={"block_3_ico_3"}/></a>
                 <a target="_blank" href={links.fm}><span>FINANCIAL MODEL</span></a>
+              </div>
+              <div className="row">
+                <a target="_blank" href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+                <a target="_blank" href={links.ld}><span>LEGAL DOCS</span></a>
               </div>
             </div>
             <div className="clear" />

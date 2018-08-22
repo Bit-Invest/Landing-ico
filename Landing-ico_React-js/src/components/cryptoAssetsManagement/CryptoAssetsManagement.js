@@ -20,16 +20,14 @@ class CryptoAssetsManagement extends React.Component {
         <div className="size">
           <div className="row">
             <h2 className="header_blocks">
-              CINDX Is a Crypto Assets Management Hub. <br/>
-              We solve the problems of investors, <br/>
-              traders and developers
+              CINDX Is a Crypto Asset Management Hub
             </h2>
             {/* <div className="video" onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/ZLA5tMEJS7M')}>
               <img
                 src={play_button_youtube}
                 alt="CINDEX"
                 className="play"
-                
+
               />
             </div> */}
           </div>
@@ -38,7 +36,7 @@ class CryptoAssetsManagement extends React.Component {
               <p className="caption">СINDX.MARKETPLACE FOR INVESTORS</p>
               <hr/>
               <p>
-              • Do not worry about your knowledge and experience – the experts of crypto trading are here to help you
+              • Don’t worry about your knowledge and experience – the experts of crypto trading are here to help you
               </p>
               <p>
                 • Control your currency: your coins are kept in your wallet at all times
@@ -61,7 +59,7 @@ class CryptoAssetsManagement extends React.Component {
               <p className="caption">CINDX.TRADE FOR TRADERS</p>
               <hr/>
               <p>
-                • If you are a successful trader, you can attract a capital at $0 marketing costs
+                • you can attract capital with $0 marketing costs
               </p>
               <p>
                 • We provide you with Terminal, App Store, marketplace and other advanced tools to succeed in trading.
@@ -79,7 +77,7 @@ class CryptoAssetsManagement extends React.Component {
                 • CINDX.talk - a social network with a reward for useful content
               </p>
               <p>
-                • CINDX.hub - the component includes a vendor’s cabinet, as well as a hub for testing and integrating third-party software
+                • CINDX.hub - the component includes a vendor’s account, as well as a hub for testing and integrating third-party software
               </p>
               <p>
                 • CINDX.dao - a component that allows you to implement a voting system for the community based on decentralised autonomous organisation rules
