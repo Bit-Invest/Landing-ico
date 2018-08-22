@@ -510,18 +510,21 @@ class TeamAdvisersPartners extends React.Component {
   render() {
     const settings = {
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1
     };
     const settingsTeam2 = {
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1
     };
     const settingsTeam3 = {
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
@@ -534,8 +537,8 @@ class TeamAdvisersPartners extends React.Component {
     };
     const settingsOurParners = {
       arrows: false,
+      swipeToSlide: true,
       infinite: true,
-      speed: 500,
       slidesToShow: 5,
       slidesToScroll: 1,
       autoplay: true,
@@ -544,8 +547,8 @@ class TeamAdvisersPartners extends React.Component {
     };
     const settingsOurParners3 = {
       arrows: false,
+      swipeToSlide: true,
       infinite: true,
-      speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1,
       autoplay: true,

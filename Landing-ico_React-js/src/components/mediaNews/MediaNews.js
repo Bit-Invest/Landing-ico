@@ -400,7 +400,7 @@ const news = [
 
 export class MediaNews extends React.Component {
   mapNews = () => {
-    return news.map((el, i) => {
+    return news.reverse().map((el, i) => {
       return (
         <div key={i} className="item">
           <a target="_blank" href={el.videoSrc}>
@@ -419,7 +419,7 @@ export class MediaNews extends React.Component {
     })
   }
   mapMedia = () => {
-    return media.map((el, i) => {
+    return media.reverse().map((el, i) => {
       return (
         <div key={i} className="txt">
           <a href={el.src} target="_blank">
@@ -436,12 +436,14 @@ export class MediaNews extends React.Component {
   render() {
     const settings = {
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1
     };
     const settingsNews = {
       arrows: true,
+      swipeToSlide: true,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
@@ -449,6 +451,7 @@ export class MediaNews extends React.Component {
     };
     const settings2 = {
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1
@@ -456,12 +459,14 @@ export class MediaNews extends React.Component {
     const settingsNews2 = {
       arrows: true,
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1
     };
     const settings3 = {
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
@@ -469,6 +474,7 @@ export class MediaNews extends React.Component {
     const settingsNews3 = {
       arrows: true,
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1

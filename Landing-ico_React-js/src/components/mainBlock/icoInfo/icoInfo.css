@@ -11,7 +11,7 @@
 
 .ico-info__partners {
   margin-top: 10px;
-  width: 193px;
+  width: 230px;
 }
 
 .ico-info__ratings {
@@ -21,8 +21,8 @@
 }
 
 .ico-info__rating-icon {
-  width: 60px;
-  height: 46px;
+  width: 71px;
+  height: 55px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -40,27 +40,27 @@
 
 .ico-info__partner_bancor {
   margin-right: 18px;
-  width: 87px;
-  height: 22px;
+  width: 102px;
+  height: 26px;
 }
 
 .ico-info__partner_hotbit {
-  width: 88px;
-  height: 24px;
+  width: 103px;
+  height: 28px;
   display: none;
 }
 
 .ico-info__partner_local-coin {
   margin-top: 12px;
   margin-right: 12px;
-  width: 117px;
-  height: 26px;
+  width: 138px;
+  height: 30px;
 }
 
 .ico-info__partner_hbtop {
   margin-top: 14px;
-  width: 64px;
-  height: 24px;
+  width: 75px;
+  height: 28px;
   display: none;
 }
 
