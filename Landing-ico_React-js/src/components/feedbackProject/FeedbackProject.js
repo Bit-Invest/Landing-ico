@@ -109,7 +109,7 @@ const feedbackOnOurProject = [
   {
     img: Jason_King,
     name: 'Jason King',
-    position: 'Chief Commercial Officer',
+    position: 'Adviser',
     video: '',
     text: 'Jason King, Chief Commercial Officer, explains what attracts him to CINDX and talks about crucial advantages of the project'
   },
