@@ -1809,7 +1809,7 @@ body.compensate-for-scrollbar {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 767px) {
   .teamLegal .container {
     margin: 0 0 0 10%;
     padding: 40px 0 200px 0;
@@ -1859,7 +1859,7 @@ body.compensate-for-scrollbar {
 
   .size {
     padding-top: 40px;
-    margin-top: -3px;
+    margin-top: -7px;
   }
 
   .roadmap__buttons {
@@ -1871,7 +1871,7 @@ body.compensate-for-scrollbar {
   }
 
   .roadmap__line {
-    width: 100%;
+    width: 95%;
   }
 
   .roadmap__buttons .roadmap__button {
@@ -1903,7 +1903,7 @@ body.compensate-for-scrollbar {
   .roadmap__map .roadmap__years,
   .roadmap__map .roadmap__quartals,
   .roadmap__map .roadmap__circles {
-    width: 550px;
+    width: 650px;
   }
 
   .roadmap__image {
