@@ -138,7 +138,7 @@ const teamInfo = [
   {
     img: Jelena_Karzetskaja,
     name: 'Jelena Karzetskaja',
-    position: 'Compliance Officer',
+    position: 'Compliance Adviser',
     fackt1: 'holds several degrees in law',
     fackt2: 'judicial practice since 1997',
     fackt3: 'legal spheres: international law',

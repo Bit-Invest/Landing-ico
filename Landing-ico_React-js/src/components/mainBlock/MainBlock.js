@@ -10,7 +10,7 @@ export const MainBlock = props => (
     <div className={`${ROOT_CLASS}__content`}>
       <div className={`${ROOT_CLASS}__container-1`}>
         <div className={`${ROOT_CLASS}__header`}>
-          Make The Crypto Investments <br/>Easy, Secure and Fast.
+          Make Your Crypto Investments <br/> Easy, Secure and Fast.
           <div className={`${ROOT_CLASS}__header2`}>
             Join Our Security Token Sale
           </div>
