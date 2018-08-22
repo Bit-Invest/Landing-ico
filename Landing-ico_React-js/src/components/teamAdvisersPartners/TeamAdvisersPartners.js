@@ -380,7 +380,9 @@ const advisers = [
     fackt2: 'Motti is one of the leading forces in PR for Blockchain and Crypto, startups, VCs.',
     linkedin: 'https://www.linkedin.com/in/mottipeer/',
     text: [
-      'Motti founded various companies in the security and finance sectors. He has many years of experience as a money and hedge fund manager and holds an MBA in Finance and Marketing from Manchester University and a BA in Business Management from Fairleigh Dickinson University. He is a Co-CEO of Blonde 2.0, an award-winning global PR agency also named as one the startup nation’s “Movers and Shakers” on Forbes. As Co-CEO of Blonde 2.0, he is responsible for handling the Public Relations aspects, along with strategy and crisis management. With a team of 35 professionals, Blonde 2.0 is one of the leading forces in PR for Blockchain and Crypto, startups, VCs.',
+      'Motti founded various companies in the security and finance sectors. He has many years of experience as a money and hedge fund manager and holds an MBA in Finance and Marketing from Manchester University and a BA in Business Management from Fairleigh Dickinson University',
+      'He is a Co-CEO of Blonde 2.0, an award-winning global PR agency also named as one the startup nation’s “Movers and Shakers” on Forbes. As Co-CEO of Blonde 2.0, he is responsible for handling the Public Relations aspects, along with strategy and crisis management.',
+      'With a team of 35 professionals, Blonde 2.0 is one of the leading forces in PR for Blockchain and Crypto, startups, VCs.'
     ]
   },
   {
@@ -394,7 +396,9 @@ const advisers = [
     fackt2: 'Has substantial experience in venture capital fund formation',
     linkedin: 'https://www.linkedin.com/in/leonardgrayver/?locale=ru_RU',
     text: [
-      'Leonard Grayver is an experienced corporate attorney based in Silicon Valley, California. He is the chair of the corporate law group at Greenberg, LLP, a boutique law firm with offices in Southern and Northern California. He has represented venture capital funds, entrepreneurs, and startup companies in diverse industries, including medical devices, software, health care, electronics, IT, and alternative energy, for almost twenty years. In the last several years, Leonard also developed a robust practice focusing on cryptocurrency law and has served as counsel in a number of token sales offerings. Leonard earned a B.A. from University of California, Los Angeles, and a Juris Doctorate from UCLA School of Law.',
+      'Leonard Grayver was born in USSR, moved to US with his parents as a kid. While in Law school Leonard created a start-up and successfully raised more than 18 mln USD for financing.',
+      'Start-up has not survived but since then Leonard has helped more than 400 start-ups',
+      'Overall Leonard has more than 10 years of experience with VC financing, fund structuring, due diligence (representing both funds and LPs). His advise to all entrepreneurs - do not follow trends, follow your interests.'
     ]
   }
  ];
