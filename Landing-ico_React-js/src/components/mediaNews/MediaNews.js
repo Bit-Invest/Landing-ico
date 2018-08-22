@@ -111,7 +111,7 @@ const media = [
     type: 'coinfox',
     name: '5 Tips from CINDX Crypto Assets Management Hub: How to Avoid Being Cheated',
     text: 'The team behind the CINDX crypto assets management hub has created a helpful set of guidelines on how not to become victims of unfair play, so you can learn what should be primarily taken into account when evaluating ICOs before investing in them.',
-    src: 'http://www.coinfox.info/news/10108-cryptocurrencies-and-private-capital-management-cindx-platform-allows-easy-and-profitable-investment-in-cryptocurrencies'
+    src: 'http://www.coinfox.info/news/10194-5-tips-from-cindx-crypto-assets-management-hub-how-to-avoid-being-cheated'
   }
 ]
 
