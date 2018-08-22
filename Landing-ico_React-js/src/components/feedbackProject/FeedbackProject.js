@@ -23,18 +23,18 @@ import './feedbackProject.css';
 
 const feedbackOnOurProject = [
   {
-    img: Denis_Eskenazi,
-    name: 'Denis Eskenazi',
-    position: 'Product Marketing Director',
-    video: 'https://www.youtube.com/embed/OKdT6GiSGuY',
-    text: 'Denis Eskenazi, CINDX Product Marketing Director explains why he has joined CINDX'
-  },
-  {
     img: Val_Jerdes,
     name: 'Val Jerdes',
     position: 'Product Director',
     video: 'https://www.youtube.com/embed/ubN0rCtKj_E',
     text: 'Val Jerdes, CINDX Product Director talks about the key team members and how their expertise will help develop the project that can change the game of finance in a significant way'
+  },
+  {
+    img: Denis_Eskenazi,
+    name: 'Denis Eskenazi',
+    position: 'Product Marketing Director',
+    video: 'https://www.youtube.com/embed/OKdT6GiSGuY',
+    text: 'Denis Eskenazi, CINDX Product Marketing Director explains why he has joined CINDX'
   },
   {
     img: Philip_Staehelin,
@@ -146,12 +146,10 @@ class FeedbackProject extends React.Component {
   }
   render() {
     const settings = {
-      lazyLoad: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1,
-      initialSlide: 1
+      slidesToScroll: 1
     };
     return (
       <div className="block_6">

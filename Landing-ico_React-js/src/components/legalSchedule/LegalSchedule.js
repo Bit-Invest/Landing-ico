@@ -3,7 +3,86 @@ import Slider from "react-slick";
 import ico_check from '../../images/ico_check.png';
 import './LegalSchedule.css';
 
+const dataLegalSchedule = [
+  {
+    text: 'RECEIVED LICENSE (FVR000110) TO EXCHANGE VIRTUAL CURRENCY TO FIAT SERVICES',
+    version: '4.18',
+    isCheck: true
+  },
+  {
+    text: 'APPLIED FOR TRADEMARK REGISTRATION IN ESTONIA AND EU',
+    version: '5.18',
+    isCheck: true
+  },
+  {
+    text: 'LICENSE FFA000254 FOR OPERATING AS A FINANCIAL INSTITUTION',
+    version: '5.18',
+    isCheck: true
+  },
+  {
+    text: 'RECEIVED LICENSE FFA000254 FOR OPERATING AS A FINANCIAL INSTITUTION',
+    version: '5.18',
+    isCheck: true
+  },
+  {
+    text: 'WORKED OUT PROSPECTUS IN ACCORDANCE WITH ESTONIAN LAW',
+    version: '7.18',
+    isCheck: true
+  },
+  {
+    text: 'CLAIMED FSA LICENSE (ESTONIAN FINANCIAL SUPERVISION AUTHORITY) ',
+    version: '7.18',
+    isCheck: true
+  },
+  {
+    text: 'RECEIVED LICENSE FOR PROVIDING A VIRTUAL CURRENCY WALLET SERVICE',
+    version: '7.18',
+    isCheck: true
+  },
+  {
+    text: 'REGISTERED UNDER EXEMPTION D IN SEC',
+    version: '8.18',
+    isCheck: true
+  },
+  {
+    text: 'APPOINTED A PERSONAL DATA MANAGER TO MEET GDPR REQUIREMENTS',
+    version: '9.18',
+    isCheck: true
+  },
+  {
+    text: 'RECEIVED THE FSA LICENSE',
+    version: '10.18',
+    isCheck: false
+  },
+  {
+    text: 'REGISTERED THE PROSPECTUS EU 809-2004',
+    version: '10.18',
+    isCheck: false
+  },
+  {
+    text: 'ISSUED CINX SECURITY TOKENS',
+    version: '10.18',
+    isCheck: false
+  }
+]
+
 export class LegalSchedule extends React.Component {
+  mapDataLegal = () => {
+    return dataLegalSchedule.map((el, i) => (
+        <div className="item" key={i}>
+          <div className="cont_item one">
+            {el.isCheck ? <img src={ico_check} alt={"CINDEX"}/> : null}
+            <p>
+              {el.text}
+            </p>
+            <div className="numb">
+              {el.version}
+            </div>
+          </div>
+        </div>
+    ))
+  }
+
   render() {
     const settings = {
       infinite: true,
@@ -31,531 +110,21 @@ export class LegalSchedule extends React.Component {
               <div className="settings">
                 <div className="container">
                   <Slider {...settings}>
-                      <div className="item one">
-                        <div className="cont_item all">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            RECEIVED
-                            LICENSE
-                            (FVR000110)
-                            TO EXCHANGE
-                            VIRTUAL
-                            CURRENCY TO
-                            FIAT SERVICES
-                          </p>
-                          <div className="numb">
-                            4.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            APPLIED FOR
-                            TRADEMARK
-                            REGISTRATION
-                            IN ESTONIA
-                            AND EU
-                          </p>
-                          <div className="numb">
-                            5.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            LICENSE
-                            FFA000254
-                            FOR OPERATING
-                            AS A FINANCIAL
-                            INSTITUTION
-                          </p>
-                          <div className="numb">
-                            5.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            RECEIVED
-                            LICENSE
-                            FFA000254
-                            FOR
-                            OPERATING
-                            AS A FINANCIAL
-                            INSTITUTION
-                          </p>
-                          <div className="numb">
-                            5.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            WORKED OUT PROSPECTUS IN ACCORDANCE WITH ESTONIAN LAW
-                          </p>
-                          <div className="numb">
-                            7.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            CLAIMED FSA LICENSE (ESTONIAN FINANCIAL SUPERVISION AUTHORITY) 
-                          </p>
-                          <div className="numb">
-                            7.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            RECEIVED
-                            LICENSE FOR
-                            PROVIDING A
-                            VIRTUAL
-                            CURRENCY
-                            WALLET
-                            SERVICE
-                          </p>
-                          <div className="numb">
-                            7.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            REGISTERED
-                            UNDER
-                            EXEMPTION D
-                            IN SEC
-                          </p>
-                          <div className="numb">
-                            8.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            APPOINTED
-                            A PERSONAL
-                            DATA
-                            MANAGER
-                            TO MEET GDPR
-                            REQUIREMENTS
-                          </p>
-                          <div className="numb">
-                            9.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <p>
-                            RECEIVED
-                            THE FSA
-                            LICENSE
-                          </p>
-                          <div className="numb">
-                            10.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <p>
-                            REGISTERED
-                            THE
-                            PROSPECTUS
-                            EU 809-2004
-                          </p>
-                          <div className="numb">
-                            10.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <p>
-                            ISSUED
-                            CINX
-                            SECURITY
-                            TOKENS
-                          </p>
-                          <div className="numb">
-                            10.18
-                          </div>
-                        </div>
-                      </div>
+                    {this.mapDataLegal()}
                   </Slider>
                 </div>
               </div>
               <div className="settings2">
                 <div className="container">
-                <Slider {...settings2}>
-                      <div className="item one">
-                        <div className="cont_item all">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            RECEIVED
-                            LICENSE
-                            (FVR000110)
-                            TO EXCHANGE
-                            VIRTUAL
-                            CURRENCY TO
-                            FIAT SERVICES
-                          </p>
-                          <div className="numb">
-                            4.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            APPLIED FOR
-                            TRADEMARK
-                            REGISTRATION
-                            IN ESTONIA
-                            AND EU
-                          </p>
-                          <div className="numb">
-                            5.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            LICENSE
-                            FFA000254
-                            FOR OPERATING
-                            AS A FINANCIAL
-                            INSTITUTION
-                          </p>
-                          <div className="numb">
-                            5.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            RECEIVED
-                            LICENSE
-                            FFA000254
-                            FOR
-                            OPERATING
-                            AS A FINANCIAL
-                            INSTITUTION
-                          </p>
-                          <div className="numb">
-                            5.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            WORKED OUT PROSPECTUS IN ACCORDANCE WITH ESTONIAN LAW
-                          </p>
-                          <div className="numb">
-                            7.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            CLAIMED FSA LICENSE (ESTONIAN FINANCIAL SUPERVISION AUTHORITY) 
-                          </p>
-                          <div className="numb">
-                            7.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            RECEIVED
-                            LICENSE FOR
-                            PROVIDING A
-                            VIRTUAL
-                            CURRENCY
-                            WALLET
-                            SERVICE
-                          </p>
-                          <div className="numb">
-                            7.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            REGISTERED
-                            UNDER
-                            EXEMPTION D
-                            IN SEC
-                          </p>
-                          <div className="numb">
-                            8.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            APPOINTED
-                            A PERSONAL
-                            DATA
-                            MANAGER
-                            TO MEET GDPR
-                            REQUIREMENTS
-                          </p>
-                          <div className="numb">
-                            9.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <p>
-                            RECEIVED
-                            THE FSA
-                            LICENSE
-                          </p>
-                          <div className="numb">
-                            10.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <p>
-                            REGISTERED
-                            THE
-                            PROSPECTUS
-                            EU 809-2004
-                          </p>
-                          <div className="numb">
-                            10.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <p>
-                            ISSUED
-                            CINX
-                            SECURITY
-                            TOKENS
-                          </p>
-                          <div className="numb">
-                            10.18
-                          </div>
-                        </div>
-                      </div>
+                  <Slider {...settings2}>
+                    {this.mapDataLegal()}
                   </Slider>
                 </div>
               </div>
               <div className="settings3">
                 <div className="container">
-                <Slider {...settings3}>
-                      <div className="item one">
-                        <div className="cont_item all">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            RECEIVED
-                            LICENSE
-                            (FVR000110)
-                            TO EXCHANGE
-                            VIRTUAL
-                            CURRENCY TO
-                            FIAT SERVICES
-                          </p>
-                          <div className="numb">
-                            4.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            APPLIED FOR
-                            TRADEMARK
-                            REGISTRATION
-                            IN ESTONIA
-                            AND EU
-                          </p>
-                          <div className="numb">
-                            5.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            LICENSE
-                            FFA000254
-                            FOR OPERATING
-                            AS A FINANCIAL
-                            INSTITUTION
-                          </p>
-                          <div className="numb">
-                            5.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            RECEIVED
-                            LICENSE
-                            FFA000254
-                            FOR
-                            OPERATING
-                            AS A FINANCIAL
-                            INSTITUTION
-                          </p>
-                          <div className="numb">
-                            5.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            WORKED OUT PROSPECTUS IN ACCORDANCE WITH ESTONIAN LAW
-                          </p>
-                          <div className="numb">
-                            7.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            CLAIMED FSA LICENSE (ESTONIAN FINANCIAL SUPERVISION AUTHORITY) 
-                          </p>
-                          <div className="numb">
-                            7.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            RECEIVED
-                            LICENSE FOR
-                            PROVIDING A
-                            VIRTUAL
-                            CURRENCY
-                            WALLET
-                            SERVICE
-                          </p>
-                          <div className="numb">
-                            7.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            REGISTERED
-                            UNDER
-                            EXEMPTION D
-                            IN SEC
-                          </p>
-                          <div className="numb">
-                            8.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <img src={ico_check} alt={"CINDEX"}/>
-                          <p>
-                            APPOINTED
-                            A PERSONAL
-                            DATA
-                            MANAGER
-                            TO MEET GDPR
-                            REQUIREMENTS
-                          </p>
-                          <div className="numb">
-                            9.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <p>
-                            RECEIVED
-                            THE FSA
-                            LICENSE
-                          </p>
-                          <div className="numb">
-                            10.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <p>
-                            REGISTERED
-                            THE
-                            PROSPECTUS
-                            EU 809-2004
-                          </p>
-                          <div className="numb">
-                            10.18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="item">
-                        <div className="cont_item one">
-                          <p>
-                            ISSUED
-                            CINX
-                            SECURITY
-                            TOKENS
-                          </p>
-                          <div className="numb">
-                            10.18
-                          </div>
-                        </div>
-                      </div>
+                  <Slider {...settings3}>
+                    {this.mapDataLegal()}
                   </Slider>
                 </div>
               </div>

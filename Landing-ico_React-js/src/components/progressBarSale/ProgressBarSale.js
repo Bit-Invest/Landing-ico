@@ -2,10 +2,11 @@ import * as React from 'react';
 import './ProgressBarSale.css';
 
 export const ProgressBarSale = () => {
-  // const currentDate = new Date(2018, 10, 10)
-  // const startDate = new Date(2018, 7, 26)
-  // const finishDate = new Date(2018, 11, 17)
+  // const currentDate = new Date(2018, 9, 16)
+  // const startDate = new Date(2018, 7, 24)
+  // const finishDate = new Date(2018, 11, 19)
   // const currentProgress = ((currentDate - startDate) * 100) / (finishDate - startDate)
+
   return (
     <div className="progressBarSale">
       <div className="container">
@@ -18,7 +19,7 @@ export const ProgressBarSale = () => {
           <p className="sale-bonusses">Sale</p>
           <p className="cinx">1 CINX = $1</p>
         </div>
-        <div className="progressBar">{/* <div className="progress"></div> */}</div> 
+        <div className="progressBar">{/* <div className="progress" style={{ width: currentProgress > 0 ? (currentProgress - 3) + '%' : '0%' }}></div> */}</div>
         <div className="progress-data">
           <div className="data">
             <p className="amount">1.25</p>
