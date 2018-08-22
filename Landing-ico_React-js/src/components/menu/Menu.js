@@ -69,15 +69,6 @@ export class Menu extends React.Component {
           <div className="show-language">
             <a className="itemMini2">EN</a>
           </div>
-          {/*<div className="show-language">
-            <a className="itemMini2">FR</a>
-          </div>
-          <div className="show-language">
-            <a className="itemMini2">RU</a>
-          </div>
-          <div className="show-language">
-            <a className="itemMini2">PL</a>
-          </div>*/}
         </div>
       )
     } else {
@@ -90,13 +81,13 @@ export class Menu extends React.Component {
     if (isOpened) {
       return (
         <div className="showMenu">
-          <Join 
+          <Join
             text="Join Token Pre-Sale"
             className="itemMini joinpresale"
           />
-          <a href="#product" className="itemMini">Product</a>
-          <a href="#sale_details" className="itemMini">Sale Details</a>
-          <a href="#team" className="itemMini">Team</a>
+          <a onClick={this.openMenu} href="#product" className="itemMini">Product</a>
+          <a onClick={this.openMenu} href="#sale_details" className="itemMini">Sale Details</a>
+          <a onClick={this.openMenu} href="#team" className="itemMini">Team</a>
           <div onClick={this.openPublicDocs} className="drop-down">
             <a>Public Docs </a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
@@ -130,7 +121,7 @@ export class Menu extends React.Component {
             </div>
             {this.renderPublicDocs()}
             <a target='_blank' href={links.mvp} className="item">Test MVP</a>
-            <Join 
+            <Join
               text="Join Pre-Sale"
               className="btn"
             />
@@ -141,7 +132,7 @@ export class Menu extends React.Component {
             {this.renderLanguage()}
           </div>
           <div className="menu-768px">
-             <Join 
+             <Join
               text="Join Pre-Sale"
               className="btn"
             />
