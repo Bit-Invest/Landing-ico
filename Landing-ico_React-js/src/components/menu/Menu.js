@@ -102,7 +102,7 @@ export class Menu extends React.Component {
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
           {this.renderPublicDocs()}
-          <a className="itemMini">Test MVP</a>
+          <a href={links.mvp} target="_blank" className="itemMini">Test MVP</a>
           <div onClick={this.openLanguage} className="drop-down">
             <a>EN</a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>

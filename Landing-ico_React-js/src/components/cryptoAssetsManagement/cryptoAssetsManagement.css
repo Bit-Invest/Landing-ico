@@ -156,16 +156,20 @@
   }
   .problemBlock {
     display: table;
+    /* flex-direction: column-reverse; */
     width: 90%;
     margin: 0 auto;
     padding-bottom: 70px;
+  }
+  .problemBlockMobile {
+    display: flex;
+    flex-direction: column-reverse;
   }
   .cryptoAssetsManagement .txt {
     width: 100%;
     margin: 0;
   }
   .cryptoAssetsManagement .problemBlock .video_block {
-    display: table;
     width: 100%;
   }
   .cryptoAssetsManagement .problemBlock .video_block .img {

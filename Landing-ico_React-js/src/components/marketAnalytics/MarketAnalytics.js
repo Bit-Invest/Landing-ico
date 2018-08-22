@@ -13,7 +13,6 @@ import './MarketAnalytics.css';
 export const MarketAnalytics = () => {
   const settings = {
     arrows: false,
-    lazyLoad: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -30,7 +29,7 @@ export const MarketAnalytics = () => {
           <div className="clear" />
           <div className="owl_1 owl-carousel owl-theme">
             <div className="item">
-              <h3>Global Aum</h3>
+              <h3>Global AUM</h3>
               <img src={block_3_img} alt={"block_3_img"}/>
             </div>
             <div className="item">
@@ -93,7 +92,7 @@ export const MarketAnalytics = () => {
           <div className="owl_1 owl-carousel owl-theme">
             <Slider {...settings}>
               <div className="item">
-                <h3>Global Aum</h3>
+                <h3>Global AUM</h3>
                 <img src={block_3_img} alt={"block_3_img"}/>
               </div>
               <div className="item">

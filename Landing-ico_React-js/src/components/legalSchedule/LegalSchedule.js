@@ -86,18 +86,21 @@ export class LegalSchedule extends React.Component {
   render() {
     const settings = {
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 6,
       slidesToScroll: 1
     };
     const settings2 = {
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1
     };
     const settings3 = {
       infinite: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1

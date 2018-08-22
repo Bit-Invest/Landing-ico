@@ -50,7 +50,7 @@ class CryptoAssetsManagement extends React.Component {
               <a target="_blank" href={links.mvp} className="btn">TEST MVP</a>
             </div>
           </div>
-          <div className="problemBlock">
+          <div className="problemBlock problemBlockMobile">
             <div className="video_block">
               <div className="mockup2"></div>
               <a target='_blank' href={links.mvp} className="btn">TEST MVP</a>
