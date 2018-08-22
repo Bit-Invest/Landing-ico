@@ -44,7 +44,7 @@ export class Join extends React.Component {
     const { props } = this;
 
     return(
-      <a target="_blank" href={links.joinpresale+`?gaid=${gaid}`} className={props.className}>
+      <a target="_blank" href={links.joinpresale+`&gaid=${gaid}`} className={props.className}>
         {props.text}
       </a>
     )
