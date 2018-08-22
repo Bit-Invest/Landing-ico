@@ -64,7 +64,7 @@ export const links = {
   fm: 'https://drive.google.com/open?id=12WBENK_OsaTOU1-StqvIkQkhYZiMkk3b',
   ld: 'https://drive.google.com/open?id=16bY_MyZW9Q4DdlL_KpnoaaCxP5tLJ55i',
   buytokens: 'https://my.cindx.io/registration' + `?clickid=${linkSearch['clickid']}`,
-  lD: 'https://drive.google.com/file/d/1y9wtZmpoJ_rpDJG-EtfI07xrICrr1CGu/view?usp=sharing',
+  lD: 'https://drive.google.com/open?id=1hj3AYFGtQeR6wjOnhtXikdT6BhCkAObM',
   gaid: getGAID,
   clickid
 };

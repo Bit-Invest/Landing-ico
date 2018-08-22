@@ -14,6 +14,7 @@ export const MarketAnalytics = () => {
   const settings = {
     arrows: false,
     infinite: true,
+    swipeToSlide: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

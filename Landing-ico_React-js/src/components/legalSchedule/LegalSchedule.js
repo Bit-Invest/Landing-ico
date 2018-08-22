@@ -42,7 +42,7 @@ const dataLegalSchedule = [
   {
     text: 'REGISTERED UNDER EXEMPTION D IN SEC',
     version: '8.18',
-    isCheck: true
+    isCheck: false
   },
   {
     text: 'APPOINTED A PERSONAL DATA MANAGER TO MEET GDPR REQUIREMENTS',

@@ -112,6 +112,8 @@
   align-items: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .mail-form__play {
   width: 40px;

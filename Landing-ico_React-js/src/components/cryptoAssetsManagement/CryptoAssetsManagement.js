@@ -59,7 +59,7 @@ class CryptoAssetsManagement extends React.Component {
               <p className="caption">CINDX.TRADE FOR TRADERS</p>
               <hr/>
               <p>
-                • you can attract capital with $0 marketing costs
+                • You can attract capital with $0 marketing costs
               </p>
               <p>
                 • We provide you with Terminal, App Store, marketplace and other advanced tools to succeed in trading.
