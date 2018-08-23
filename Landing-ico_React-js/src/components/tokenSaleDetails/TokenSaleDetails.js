@@ -69,17 +69,62 @@ const TokenAllocation = () => {
   );
 };
 
-const TokenInfo = () => {
-  return(
-    <div className="cont_1">
-      <p>{ indexLngObj[lng]['tokenSaleDetails#9'] } <span>CINX</span></p>
-      <p>{ indexLngObj[lng]['tokenSaleDetails#10'] } <span>26.08.2018</span></p>
-      <p>{ indexLngObj[lng]['tokenSaleDetails#11'] } <span>51,500,000</span></p>
-      <p>{ indexLngObj[lng]['tokenSaleDetails#12'] } <span>$ 1.00=1.00</span></p>
-      <p><span>CINXO=1.00 CINX</span></p>
-      <p>{ indexLngObj[lng]['tokenSaleDetails#13'] } <span>{ indexLngObj[lng]['tokenSaleDetails#14'] }</span></p>
-    </div>
-  );
+class TokenInfo extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      prompt: false
+    }
+  }
+
+  openPrompt = () => {
+    this.setState({ prompt: !this.state.prompt });
+  }
+
+
+  showPrompt = () => {
+    const { prompt } = this.state;
+    if ( prompt ) {
+      return (
+        <div onClick={this.openPrompt} className="prompt">
+          <p>
+            During the token sale, investors purchase utility tokens – options [CINXO], which give them the right to receive security tokens [CINX] in the future.
+          </p>
+          <p>
+            Security tokens [CINX] will be issued and distributed following the prospect of emission published on the website of FSA of Estonia https://www.fi.ee/ and cindx.io after the end of the token sale, but no later than Q1 2019.
+          </p>
+          <p>
+            The holder of [CINXO] tokens has the right but no obligation to exchange options for security tokens with a ratio of 1:1 after completing the KYC procedure with identification signature, address confirmation and supply of other documents (see the KYC diagram).
+          </p>
+          <p>
+            Tokens [CINXO] grant the same rights as security tokens apart from the right to participate in revenue distribution with a lock-up and voting on the platform.
+          </p>
+        </div>
+      )
+    }
+    else {
+      return ( <div className="closePrompt"></div> )
+    }
+  }
+  render () {
+    return(
+      <div className="cont_1">
+        <p>Token Name: <span>CINX</span></p>
+        <p>Token Pre-Sale start: <span>26.08.2018</span></p>
+        <p>Total Emission: <span>51,500,000</span></p>
+        <p>Price Per Token: <span>$ 1.00=1.00</span></p>
+        <div className="row">
+          <p><span>CINXO=1.00 CINX</span></p>
+          <div
+            onClick={this.openPrompt}
+           className="promptCircle"
+          >?</div>
+        </div>
+        <p>Minimal Investment: <span>$ 50 equivalent</span></p>
+        {this.showPrompt()}
+      </div>
+    );
+  }
 };
 
 const Docs = () => {

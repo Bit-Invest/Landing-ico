@@ -16,7 +16,8 @@ import { Roadmap } from '@components/roadmap';
 import { CanvasMouns } from '@components/animate';
 import { ProgressBarSale } from '@components/progressBarSale/ProgressBarSale';
 import { Menu } from '@components/menu/Menu';
-import RoadsShow from './components/roadsShow/RoadsShow'
+import RoadsShow from './components/roadsShow/RoadsShow';
+import { SocIcons } from '@components/socIcons/SocIcons';
 import './App.css';
 
 export const App = props => (
@@ -40,7 +41,7 @@ export const App = props => (
       <MediaNews />
       <TeamAdvisersPartners />
       <JoinTokenPreSale />
+      <SocIcons />
     </div>
-    {/* <PopUpManager /> */}
   </div>
 );
