@@ -5,22 +5,24 @@ import block_2_img_2 from '../../images/block_2_img_2.png';
 import block_2_img_3 from '../../images/block_2_img_3.png';
 import block_2_img_4 from '../../images/block_2_img_4.png';
 import './howCindxWorks.css';
+import { lng } from '../../links.js'
+import indexLngObj from '../../lngs/index'
 
 const HowCindxWorksInfo = {
   name: [
-    'Investors', 'Traders', 'Vendors', 'CINDX'
+    indexLngObj[lng]['howCindxWorks#1'], indexLngObj[lng]['howCindxWorks#2'], indexLngObj[lng]['howCindxWorks#3'], 'CINDX'
   ],
   text1: [
-    'increase their crypto earnings with the portfolio management skills of top traders',
-    'earn commissions from the investors that follow them based on their performance and trade strategy',
-    'sell advanced trading tools, like trade robots and news widgets.',
-    'collects commissions and subscription fees'
+    indexLngObj[lng]['howCindxWorks#4'],
+    indexLngObj[lng]['howCindxWorks#5'],
+    indexLngObj[lng]['howCindxWorks#6'],
+    indexLngObj[lng]['howCindxWorks#7']
   ],
   text2: [
-    'I’m joining CINDX with crypto assets that  I want to be traded',
-    'I’m joining CINDX with trading expertise that will benefit investors',
-    'Im joining CINDX with trading apps that will help investors',
-    'We’re here to make trading easy, secure, and profitable'
+    indexLngObj[lng]['howCindxWorks#8'],
+    indexLngObj[lng]['howCindxWorks#9'],
+    indexLngObj[lng]['howCindxWorks#10'],
+    indexLngObj[lng]['howCindxWorks#11']
   ],
   icon: [
     block_2_img_1, block_2_img_2, block_2_img_3, block_2_img_4
@@ -30,7 +32,7 @@ const HowCindxWorksInfo = {
 export const HowCindxWorks = props => (
   <div className="block_2">
     <div className="size">
-      <h2 className="header_blocks">In a Nutshell: How CINDX Works</h2>
+      <h2 className="header_blocks">{ indexLngObj[lng]['howCindxWorks#12'] }</h2>
         <div className="container">
           <div className="cont_row">
             <HowCindxWorksChild

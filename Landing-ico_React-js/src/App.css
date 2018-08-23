@@ -1685,6 +1685,9 @@ body.compensate-for-scrollbar {
       margin-top: 50px;
       width: 500px;
     }
+    .block_3 .carusel .cont_1 {
+      padding-bottom: 20px;
+    }
     .block_3 .carusel .cont_1,
     .block_3 .carusel .cont_2,
     .block_3 .carusel .cont_3 {

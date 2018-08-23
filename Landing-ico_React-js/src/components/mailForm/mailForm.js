@@ -6,7 +6,8 @@ import { showPopUp, changeUrlPopupVideo } from '../../store/store';
 import { bindActionCreators } from 'redux';
 import play_button_youtube from '../../media/play_button_youtube.png';
 import { connect } from 'react-redux';
-import {links} from '../../links.js';
+import { links, lng } from '../../links.js';
+import indexLngObj from '../../lngs/index'
 import './mailForm.css';
 
 const ROOT_CLASS = 'mail-form';
@@ -49,7 +50,7 @@ class MailForm extends React.Component {
 
     if(!email){
       error = 0;
-      status_text = 'Wrong email';
+      status_text = indexLngObj[lng]['mailForm#1'];
     }
 
     if(error !== false){
@@ -62,7 +63,7 @@ class MailForm extends React.Component {
     } else {
       this.setState({
         submitStatus: 3,
-        submitStatusText: 'sending ..'
+        submitStatusText: indexLngObj[lng]['mailForm#2']
       });
     }
 
@@ -73,12 +74,12 @@ class MailForm extends React.Component {
         if(responseJson.status == 1 || responseJson.status == 2) {
           this.setState({
             submitStatus: 1,
-            submitStatusText: 'Already was or is not valid, try again'
+            submitStatusText: indexLngObj[lng]['mailForm#3']
           });
         } else if (responseJson.status == 0) {
           this.setState({
             submitStatus: 2,
-            submitStatusText: 'Your email has been sent successfully'
+            submitStatusText: indexLngObj[lng]['mailForm#4']
           });
         }
       })
@@ -86,7 +87,7 @@ class MailForm extends React.Component {
         console.error(error);
         this.setState({
           submitStatus: 3,
-          submitStatusText: 'an error occurred, try again'
+          submitStatusText: indexLngObj[lng]['mailForm#5']
         });
       });
   }
@@ -107,30 +108,30 @@ class MailForm extends React.Component {
         <div className={`${ROOT_CLASS}__content`}>
           <div style={{display: !email ? 'none' : null }} className={`${ROOT_CLASS}__contentagree`}>
             <div className={`${ROOT_CLASS}__contentagreescroll`}>
-              <p className="boldtext">GDRP Сompliance</p>
-              <p>Personal data provided via Subscription form and KYC procedure will be collected in the full compliance with GDRP</p>
-              <p>The Data Protection Officer  of the project is  Mrs. Sofja Pevzner-Belositski. Contact details: dpo@cindx.io. Any data subject may, at any time, contact Data Protection Officer of directly with any request related to data protection.</p>
-              <p>Your personal data provided via Subscription form and KYC procedure will be shared to our partners:</p>
-              <p>ICO Promo</p>
-              <p>Privacy Policy</p>
-              <p>Sum & Substance</p>
-              <p>Privacy Policy</p>
-              <p>By default, the personal data provided by subscriber are kept by CINDX, ICO Promo and Sum & Substance for 5 years after registration of subscriber in the system</p>
-              <p>If you do not agree to this privacy policy, please do not use our site.</p>
-              <p>By using our site, you consent to the collection and use of information by us. Owing to the global nature of the internet infrastructure, the information you provide may be transferred in transit to countries outside the European Economic Area that do not have similar protections in place regarding your data and its use as set out in this policy.</p>
-              <p>However, we have taken the steps outlined above to try to improve the security of your information. By submitting your information you consent to these transfers</p>
-              <p>I agree to process my <a href={links.lD} target="_blank" >personal data</a></p>
+              <p className="boldtext">{ indexLngObj[lng]['mailForm#6'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#7'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#8'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#9'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#10'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#11'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#12'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#11'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#13'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#14'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#15'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#16'] }</p>
+              <p>{ indexLngObj[lng]['mailForm#17'] } <a href={links.lD} target="_blank" >{ indexLngObj[lng]['mailForm#18'] }</a></p>
             </div>
           </div>
           <div style={{display: email ? 'none' : null }} className="timerContent">
             <div className={`${ROOT_CLASS}__title`}>
-              Security Token Sale Starts with
+              { indexLngObj[lng]['mailForm#19'] }
             </div>
             <div className={`${ROOT_CLASS}__bonus`}>
-              25% BONUS
+              { indexLngObj[lng]['mailForm#20'] }
             </div>
             <div className={`${ROOT_CLASS}__description`}>
-            Get it before everyone else does<br/>Token sale starts in
+              { indexLngObj[lng]['mailForm#21'] } <br/> { indexLngObj[lng]['mailForm#22'] }
             </div>
             <div className={`${ROOT_CLASS}__timer`}>
               <Timer />
@@ -138,7 +139,7 @@ class MailForm extends React.Component {
             <div className={`${ROOT_CLASS}__cost`}>
               <div className={`${ROOT_CLASS}__now`}>
                 <div className={`${ROOT_CLASS}__cost-title`}>
-                  Start from $1
+                  { indexLngObj[lng]['mailForm#23'] }
                 </div>
                 <div className={`${ROOT_CLASS}__cost-value`}>
                   {props.now} CINX
@@ -147,7 +148,7 @@ class MailForm extends React.Component {
               <div className={`${ROOT_CLASS}__arrows`}></div>
               <div className={`${ROOT_CLASS}__later`}>
                 <div className={`${ROOT_CLASS}__cost-title`}>
-                  1$ later
+                  { indexLngObj[lng]['mailForm#24'] }
                 </div>
                 <div className={`${ROOT_CLASS}__cost-value`}>
                   {props.later} CINX
@@ -157,7 +158,7 @@ class MailForm extends React.Component {
           </div>
           <div className={`${ROOT_CLASS}__input ${ (submitStatus === 0 || submitStatus === 1) ? "errorRed" : null }`}>
             <Input
-              placeholder="Your Email"
+              placeholder={ indexLngObj[lng]['mailForm#25'] }
               onChange={this.onChange}
             />
           </div>
@@ -165,7 +166,7 @@ class MailForm extends React.Component {
             <div className={`button button_gradient ${!email ? null : "focus_bun_grdn"}`}
               onClick={this.sendSubcribe}
             >
-              { !email ? "JOIN PRE-SALE" : "AGREE & SUBMIT" }
+              { !email ? indexLngObj[lng]['mailForm#26'] : indexLngObj[lng]['mailForm#27'] }
             </div>
           </div>
           {

@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Button } from '@components/button';
 import './Roadmap.css';
+import { lng } from '../../links'
+import indexLngObj from '../../lngs/index'
 
 const ROOT_CLASS = 'roadmap';
 
@@ -29,11 +31,11 @@ export const Roadmap = props => {
     <div className={`${ROOT_CLASS} ${ROOT_CLASS}__headcontainer`} id="exitAnimate">
       <div className="size">
         <div className={`${ROOT_CLASS}__header`}>
-          <div className="header_blocks">Roadmap</div>
+          <div className="header_blocks">{ indexLngObj[lng]['roadmap#1'] }</div>
           <div className={`${ROOT_CLASS}__buttons`}>
             <div className={`${ROOT_CLASS}__button`}>
               <Button
-                title="$3.8 M SCENARIO"
+                title={ "$3.8 M " + indexLngObj[lng]['roadmap#2'] }
                 theme={`${props.currentButton === '3.8m' ? 'gradient' : ''}`}
                 payload={{name: '3.8m'}}
                 onClick={props.onClickButton}
@@ -41,7 +43,7 @@ export const Roadmap = props => {
             </div>
             <div className={`${ROOT_CLASS}__button`}>
               <Button
-                title="$12 M SCENARIO"
+                title={ "$12 M " + indexLngObj[lng]['roadmap#2'] }
                 theme={`${props.currentButton === '12m' ? 'gradient' : ''}`}
                 payload={{name: '12m'}}
                 onClick={props.onClickButton}
@@ -49,7 +51,7 @@ export const Roadmap = props => {
             </div>
             <div className={`${ROOT_CLASS}__button`}>
               <Button
-                title="$21 M SCENARIO"
+                title={ "$21 M " + indexLngObj[lng]['roadmap#2'] }
                 theme={`${props.currentButton === '21m' ? 'gradient' : ''}`}
                 payload={{name: '21m'}}
                 onClick={props.onClickButton}

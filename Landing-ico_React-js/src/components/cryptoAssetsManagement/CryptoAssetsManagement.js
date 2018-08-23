@@ -5,6 +5,8 @@ import { showPopUp, changeUrlPopupVideo } from '../../store/store';
 import {links} from '../../links.js';
 import play_button_youtube from '../../media/play_button_youtube.png';
 import './cryptoAssetsManagement.css';
+import { lng } from '../../links'
+import indexLngObj from '../../lngs/index'
 
 class CryptoAssetsManagement extends React.Component {
   showVideoInPopUp = (url) => {
@@ -20,7 +22,7 @@ class CryptoAssetsManagement extends React.Component {
         <div className="size">
           <div className="row">
             <h2 className="header_blocks">
-              CINDX Is a Crypto Asset Management Hub
+              { indexLngObj[lng]['cryptoAssetsManagement#1'] }
             </h2>
             {/* <div className="video" onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/ZLA5tMEJS7M')}>
               <img
@@ -33,59 +35,59 @@ class CryptoAssetsManagement extends React.Component {
           </div>
           <div className="problemBlock">
             <div className="txt">
-              <p className="caption">СINDX.MARKETPLACE FOR INVESTORS</p>
+              <p className="caption">{ indexLngObj[lng]['cryptoAssetsManagement#2'] }</p>
               <hr/>
               <p>
-              • Don’t worry about your knowledge and experience – the experts of crypto trading are here to help you
+              • { indexLngObj[lng]['cryptoAssetsManagement#3'] }
               </p>
               <p>
-                • Control your currency: your coins are kept in your wallet at all times
+                • { indexLngObj[lng]['cryptoAssetsManagement#4'] }
               </p>
               <p>
-                • Only pay if you earn: you will only be charged fees if your portfolio makes money
+                • { indexLngObj[lng]['cryptoAssetsManagement#5'] }
               </p>
             </div>
             <div className="video_block">
               <div className="mockup1"></div>
-              <a target="_blank" href={links.mvp} className="btn">TEST MVP</a>
+              <a target="_blank" href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
             </div>
           </div>
           <div className="problemBlock problemBlockMobile">
             <div className="video_block">
               <div className="mockup2"></div>
-              <a target='_blank' href={links.mvp} className="btn">TEST MVP</a>
+              <a target='_blank' href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
             </div>
             <div className="txt2">
-              <p className="caption">CINDX.TRADE FOR TRADERS</p>
+              <p className="caption">{ indexLngObj[lng]['cryptoAssetsManagement#7'] }</p>
               <hr/>
               <p>
-                • You can attract capital with $0 marketing costs
+                • { indexLngObj[lng]['cryptoAssetsManagement#8'] }
               </p>
               <p>
-                • We provide you with Terminal, App Store, marketplace and other advanced tools to succeed in trading.
+                • { indexLngObj[lng]['cryptoAssetsManagement#9'] }
               </p>
               <p>
-              • CINDX helps to monetize your reputation and expertise. Your trade history and influence are transparent.
+              • { indexLngObj[lng]['cryptoAssetsManagement#10'] }
               </p>
             </div>
           </div>
           <div className="problemBlock">
             <div className="txt">
-              <p className="caption">CINDX.TALK, CINDX.HUB & CINDX.DAO</p>
+              <p className="caption">{ indexLngObj[lng]['cryptoAssetsManagement#11'] }</p>
               <hr/>
               <p>
-                • CINDX.talk - a social network with a reward for useful content
+                • { indexLngObj[lng]['cryptoAssetsManagement#12'] }
               </p>
               <p>
-                • CINDX.hub - the component includes a vendor’s account, as well as a hub for testing and integrating third-party software
+                • { indexLngObj[lng]['cryptoAssetsManagement#13'] }
               </p>
               <p>
-                • CINDX.dao - a component that allows you to implement a voting system for the community based on decentralised autonomous organisation rules
+                • { indexLngObj[lng]['cryptoAssetsManagement#14'] }
               </p>
             </div>
             <div className='video_block'>
               <div className="mockup3"></div>
-              <a target="_blank" href={links.mvp} className="btn">TEST MVP</a>
+              <a target="_blank" href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
             </div>
           </div>
         </div>

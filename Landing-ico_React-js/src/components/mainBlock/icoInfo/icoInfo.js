@@ -13,23 +13,25 @@ import rating_topicolist2 from '../../../media/rating_topicolist2.png';
 import rating_icomarks from '../../../media/rating_icomarks.png';
 import rating_icobench from '../../../media/rating_icobench.png';
 import './icoInfo.css';
+import { lng } from '../../../links'
+import indexLngObj from '../../../lngs/index'
 
 const ROOT_CLASS = 'ico-info';
 
 export const IcoInfo = props => (
   <div className={ROOT_CLASS}>
     <div className={`${ROOT_CLASS}__progress-bar`}>
-      <div className={`${ROOT_CLASS}__accept`}>We accept:</div>
+      <div className={`${ROOT_CLASS}__accept`}>{ indexLngObj[lng]['icoInfo#1'] }</div>
       <img className={`${ROOT_CLASS}__currency_icons`} src={currency_icons} alt={"CINDEX"}/>
-      <div className={`${ROOT_CLASS}__amount`}>Hard Cap: <span>$21,000,000</span></div>
-      <div className={`${ROOT_CLASS}__amount`}>Soft Cap Milestone: <span>$1,100,000 / $3,800,000</span></div>
+      <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#2'] } <span>$21,000,000</span></div>
+      <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>$1,100,000 / $3,800,000</span></div>
       <div className={`${ROOT_CLASS}__progressBar`}>
         <div className={`${ROOT_CLASS}__progress`}></div>
       </div>
     </div>
     <div className={`${ROOT_CLASS}__signed-partners`}>
       <div className={`${ROOT_CLASS}__title`}>
-        Listing Agreements are Signed With:
+        { indexLngObj[lng]['icoInfo#4'] }
       </div>
       <div className={`${ROOT_CLASS}__partners`}>
         <img

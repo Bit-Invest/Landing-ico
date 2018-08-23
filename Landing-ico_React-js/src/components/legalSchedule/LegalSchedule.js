@@ -2,65 +2,67 @@ import * as React from 'react';
 import Slider from "react-slick";
 import ico_check from '../../images/ico_check.png';
 import './LegalSchedule.css';
+import { lng } from '../../links.js'
+import indexLngObj from '../../lngs/index'
 
 const dataLegalSchedule = [
   {
-    text: 'RECEIVED LICENSE (FVR000110) TO EXCHANGE VIRTUAL CURRENCY TO FIAT SERVICES',
+    text: indexLngObj[lng]['legalSchedule#2'],
     version: '4.18',
     isCheck: true
   },
   {
-    text: 'APPLIED FOR TRADEMARK REGISTRATION IN ESTONIA AND EU',
+    text: indexLngObj[lng]['legalSchedule#3'],
     version: '5.18',
     isCheck: true
   },
   {
-    text: 'LICENSE FFA000254 FOR OPERATING AS A FINANCIAL INSTITUTION',
+    text: indexLngObj[lng]['legalSchedule#4'],
     version: '5.18',
     isCheck: true
   },
   {
-    text: 'RECEIVED LICENSE FFA000254 FOR OPERATING AS A FINANCIAL INSTITUTION',
+    text: indexLngObj[lng]['legalSchedule#5'],
     version: '5.18',
     isCheck: true
   },
   {
-    text: 'WORKED OUT PROSPECTUS IN ACCORDANCE WITH ESTONIAN LAW',
+    text: indexLngObj[lng]['legalSchedule#6'],
     version: '7.18',
     isCheck: true
   },
   {
-    text: 'CLAIMED FSA LICENSE (ESTONIAN FINANCIAL SUPERVISION AUTHORITY) ',
+    text: indexLngObj[lng]['legalSchedule#7'],
     version: '7.18',
     isCheck: true
   },
   {
-    text: 'RECEIVED LICENSE FOR PROVIDING A VIRTUAL CURRENCY WALLET SERVICE',
+    text: indexLngObj[lng]['legalSchedule#8'],
     version: '7.18',
     isCheck: true
   },
   {
-    text: 'REGISTERED UNDER EXEMPTION D IN SEC',
+    text: indexLngObj[lng]['legalSchedule#9'],
     version: '8.18',
     isCheck: false
   },
   {
-    text: 'APPOINTED A PERSONAL DATA MANAGER TO MEET GDPR REQUIREMENTS',
+    text: indexLngObj[lng]['legalSchedule#10'],
     version: '9.18',
     isCheck: true
   },
   {
-    text: 'RECEIVED THE FSA LICENSE',
+    text: indexLngObj[lng]['legalSchedule#11'],
     version: '10.18',
     isCheck: false
   },
   {
-    text: 'REGISTERED THE PROSPECTUS EU 809-2004',
+    text: indexLngObj[lng]['legalSchedule#12'],
     version: '10.18',
     isCheck: false
   },
   {
-    text: 'ISSUED CINX SECURITY TOKENS',
+    text: indexLngObj[lng]['legalSchedule#13'],
     version: '10.18',
     isCheck: false
   }
@@ -108,7 +110,7 @@ export class LegalSchedule extends React.Component {
     return (
       <div className="block_5">
         <div className="size">
-          <h2 className="header_blocks">Legal Schedule</h2>
+          <h2 className="header_blocks">{ indexLngObj[lng]['legalSchedule#1'] }</h2>
             <div className="block_arrow_relative">
               <div className="settings">
                 <div className="container">

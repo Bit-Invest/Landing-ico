@@ -3,28 +3,29 @@ import { ProblemSolvingChild } from './problemSolvingChild/ProblemSolvingChild';
 import block_1_row_1 from '../../images/block_1_row_1.png';
 import block_1_row_2 from '../../images/block_1_row_2.png';
 import block_1_row_3 from '../../images/block_1_row_3.png';
-import { links } from '../../links.js';
+import { lng, links } from '../../links.js';
+import indexLngObj from '../../lngs/index'
 import './problemSolving.css';
 
 const ProblemSolvingInfo = {
-  caption: ['Time', 'Trust', 'Uncertainty'],
+  caption: [ indexLngObj[lng]['problemSolving#1'], indexLngObj[lng]['problemSolving#2'], indexLngObj[lng]['problemSolving#3'] ],
   text1: [
-    'I have some money to put in the crypto game, but don’t have the time to research and contact professional traders to manage my portfolio',
-    'I have always felt uncomfortable with the idea of handing my money over to someone else to make a profit',
-    'The technology surrounding crypto trading is not user-friendly. I cant figure out how to trade my coins'
+    indexLngObj[lng]['problemSolving#4'],
+    indexLngObj[lng]['problemSolving#5'],
+    indexLngObj[lng]['problemSolving#6']
   ],
   icon: [
     block_1_row_1, block_1_row_2, block_1_row_3
   ],
   text2: [
-    'CINDX provides the access to rated and trustworthy traders',
-    'On CINDX  platform, your funds will never leave your wallet',
-    'You earn right along with the best traders on the market'
+    indexLngObj[lng]['problemSolving#7'],
+    indexLngObj[lng]['problemSolving#8'],
+    indexLngObj[lng]['problemSolving#9']
   ],
   text3: [
-    'Traders on CINDX are rated according to their history of trading success. Choose the trader that’s right for you quickly',
-    'Our decentralized system and smart contracts allow your funds to be managed without being transferred to another trader',
-    'Every investor in CINDX has the opportunity to have their funds managed by the most succesful traders on the market'
+    indexLngObj[lng]['problemSolving#10'],
+    indexLngObj[lng]['problemSolving#11'],
+    indexLngObj[lng]['problemSolving#12']
   ]
 };
 
@@ -34,8 +35,8 @@ export class ProblemSolving extends React.Component {
     return (
       <div className="block_1">
         <div className="size">
-          <h2 className="header_blocks">What kinds of problems does CINDX solve for investors?</h2>
-          <a target="_blank" href={links.mvp} className="sb">TEST MVP</a>
+          <h2 className="header_blocks">{ indexLngObj[lng]['problemSolving#13'] }</h2>
+          <a target="_blank" href={links.mvp} className="sb">{ indexLngObj[lng]['problemSolving#14'] }</a>
           <div className="container">
             <div className="clear" />
             <div className="cont_row">

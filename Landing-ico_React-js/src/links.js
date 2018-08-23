@@ -68,3 +68,5 @@ export const links = {
   gaid: getGAID,
   clickid
 };
+
+export const lng = 'en'

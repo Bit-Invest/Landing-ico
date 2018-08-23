@@ -20,98 +20,100 @@ import Alina_Vardanyan from '../../media/Alina_Vardanyan.jpg';
 import Bogdan_Fiedur from '../../media/Bogdan_Fiedur.e36a757d.jpg';
 import Jason_King from '../../media/Jason_King.png';
 import './feedbackProject.css';
+import { lng } from '../../links.js'
+import indexLngObj from '../../lngs/index'
 
 const feedbackOnOurProject = [
   {
     img: Val_Jerdes,
-    name: 'Val Jerdes',
-    position: 'Product Director',
+    name: indexLngObj[lng]['feedbackProject#2'],
+    position: indexLngObj[lng]['feedbackProject#3'],
     video: 'https://www.youtube.com/embed/ubN0rCtKj_E',
-    text: 'Val Jerdes, CINDX Product Director talks about the key team members and how their expertise will help develop the project that can change the game of finance in a significant way'
+    text: indexLngObj[lng]['feedbackProject#4']
   },
   {
     img: Denis_Eskenazi,
-    name: 'Denis Eskenazi',
-    position: 'Product Marketing Director',
+    name: indexLngObj[lng]['feedbackProject#5'],
+    position: indexLngObj[lng]['feedbackProject#6'],
     video: 'https://www.youtube.com/embed/OKdT6GiSGuY',
-    text: 'Denis Eskenazi, CINDX Product Marketing Director explains why he has joined CINDX'
+    text: indexLngObj[lng]['feedbackProject#7']
   },
   {
     img: Philip_Staehelin,
-    name: 'Philip Staehelin',
-    position: 'Adviser',
+    name: indexLngObj[lng]['feedbackProject#8'],
+    position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/gMYQzVyXHZI',
-    text: 'Philip Staehelin, Adviser of CINDX project, explains how the cryptocurrency revolution can help even inexperienced investors and tells about the breakthrough that CINDX project prepared for the crypto market'
+    text: indexLngObj[lng]['feedbackProject#10']
   },
   {
     img: Andrzej_Cichowlaz1,
-    name: 'Andrzej Cichowlaz',
-    position: 'Marketing Specialist',
+    name: indexLngObj[lng]['feedbackProject#11'],
+    position: indexLngObj[lng]['feedbackProject#12'],
     video: 'https://www.youtube.com/embed/uegvB7uIA0g',
-    text: 'Andrzej Cichowlaz, CINDX Marketing Manager tells why he believes in the project`s success'
+    text: indexLngObj[lng]['feedbackProject#13']
   },
   {
     img: Austin_Kimm,
-    name: 'Austin Kimm',
-    position: 'Adviser',
+    name: indexLngObj[lng]['feedbackProject#14'],
+    position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/5X8isxq6S00',
-    text: 'Austin Kimm, Adviser of CINDX project tells how CINDX makes trading cryptocurrency for profit simple and smart'
+    text: indexLngObj[lng]['feedbackProject#15']
   },
   {
     img: Amarpreet_Singh,
-    name: 'Amarpreet Singh',
-    position: 'Adviser',
+    name: indexLngObj[lng]['feedbackProject#16'],
+    position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/vsjxNki18DY',
-    text: 'Amarpreet Singh, CINDX Adviser explains how CINDX platform can bridge the gap between investors and traders'
+    text: indexLngObj[lng]['feedbackProject#17']
   },
   {
     img: Keith_Teare,
-    name: 'Keith Teare',
-    position: 'Adviser',
+    name: indexLngObj[lng]['feedbackProject#18'],
+    position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/qWpWbZUljdg',
-    text: 'Keith Teare, CINDX Adviser describes advantages of CINDX platform'
+    text: indexLngObj[lng]['feedbackProject#19']
   },
   {
     img: Mansur_Rasulov,
-    name: 'Mansur Rasulov',
-    position: 'Community Lead',
+    name: indexLngObj[lng]['feedbackProject#20'],
+    position: indexLngObj[lng]['feedbackProject#21'],
     video: 'https://www.youtube.com/embed/r5ZMoThs1T0',
-    text: 'Mansur Rasulov, CINDX Community Lead explains why he decided to become a part of CINDX team'
+    text: indexLngObj[lng]['feedbackProject#22']
   },
   {
     img: Sadie_Hutton,
-    name: 'Sadie Hutton',
-    position: 'Adviser',
+    name: indexLngObj[lng]['feedbackProject#23'],
+    position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/iQhcMhT13hs',
-    text: 'Sadie Hutton, CINDX Adviser explains how CINDX plantform is different from other automated trading platforms'
+    text: indexLngObj[lng]['feedbackProject#24']
   },
   {
     img: Graham_Doggart,
-    name: 'Graham Doggart',
-    position: 'Adviser',
+    name: indexLngObj[lng]['feedbackProject#25'],
+    position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/HWV5Hv2R6vA',
-    text: 'Graham Doggart, CINDX Adviser talks about strengths of CINDX platform'
+    text: indexLngObj[lng]['feedbackProject#26']
   },
   {
     img: Alina_Vardanyan,
-    name: 'Alina Vardanian',
-    position: 'Content Manager',
+    name: indexLngObj[lng]['feedbackProject#27'],
+    position: indexLngObj[lng]['feedbackProject#28'],
     video: 'https://www.youtube.com/embed/IATb_l1vLE4',
-    text: 'Alina Vardanian, CINDX Content Manager talks about the team spirit and what she loves about her job'
+    text: indexLngObj[lng]['feedbackProject#29']
   },
   {
     img: Bogdan_Fiedur,
-    name: 'Bogdan Fiedur',
-    position: 'CINDX Advisor',
+    name: indexLngObj[lng]['feedbackProject#30'],
+    position: indexLngObj[lng]['feedbackProject#31'],
     video: 'https://www.youtube.com/embed/oC-oTaBId7g',
-    text: 'Bogdan Fiedur, CINDX Advisor, explains how the CINDX project differs from other ICO projects'
+    text: indexLngObj[lng]['feedbackProject#32']
   },
   {
     img: Jason_King,
-    name: 'Jason King',
-    position: 'Adviser',
+    name: indexLngObj[lng]['feedbackProject#33'],
+    position: indexLngObj[lng]['feedbackProject#9'],
     video: '',
-    text: 'Jason King, Chief Commercial Officer, explains what attracts him to CINDX and talks about crucial advantages of the project'
+    text: indexLngObj[lng]['feedbackProject#34']
   },
 ]
 
@@ -155,7 +157,7 @@ class FeedbackProject extends React.Component {
     return (
       <div className="block_6">
         <div className="size">
-        <h2 className="header_blocks">Feedback On Our Project</h2>
+        <h2 className="header_blocks">{ indexLngObj[lng]['feedbackProject#1'] }</h2>
           <div className="block_arrow_relative">
           <div className="carusel-block">
               <Slider {...settings}>
