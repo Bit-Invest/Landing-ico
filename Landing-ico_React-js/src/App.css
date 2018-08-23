@@ -1845,6 +1845,10 @@ body.compensate-for-scrollbar {
     display: block;
   }
 
+  .menu .fixedSocIcon {
+    display: none;
+  }
+
   .block_5 .size:after {
     top: 355px;
   }

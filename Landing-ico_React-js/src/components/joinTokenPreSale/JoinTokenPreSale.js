@@ -72,7 +72,7 @@ export const JoinTokenPreSale = () => (
           <a target="_blank" href="https://www.reddit.com/r/cindx/">
             <img className="icon" src={reddit_icon} alt={"CINDEX"}/>
           </a>
-          <a target="_blank" href="https://t.me/cindx_official" target="_blank">
+          <a target="_blank" href="https://t.me/cindx_official">
             <img className="icon" src={telegram_icon} alt={"CINDEX"}/>
           </a>
           <a target="_blank" href="https://twitter.com/CINDXPlatform">

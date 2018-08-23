@@ -4,6 +4,14 @@ import menu from '../../images/menu.png';
 import arrow_public from '../../images/arrow_public.png';
 import {links} from '../../links.js';
 import { Join } from '../../links.js';
+import github_icon from '../../media/github_icon.png';
+import reddit_icon from '../../media/reddit_icon.png';
+import twitter_icon from '../../media/twitter_icon.png';
+import facebook_icon from '../../media/facebook_icon.png';
+import medium_icon from '../../media/medium_icon.png';
+import linkedin_icon from '../../media/linkedin_icon.png';
+import instagram_icon from '../../media/instagram_icon.png';
+import telegram_icon_white from '../../media/telegram_icon_white.png';
 import './Menu.css';
 
 export class Menu extends React.Component {
@@ -20,20 +28,35 @@ export class Menu extends React.Component {
     this.setState({ isOpened: !this.state.isOpened });
   }
 
-  openPublicDocs = () => {
+  clickPublicDocs = () => {
     this.setState({ publicDocs: !this.state.publicDocs });
-    console.log('ok');
+  }
+
+  openPublicDocs = () => {
+    this.setState({ publicDocs: true });
+  }
+
+  closePublicDocs = () => {
+    this.setState({ publicDocs: false });
+  }
+
+  clickLanguage = () => {
+    this.setState({ language: !this.state.language })
+  }
+
+  closeLanguage = () => {
+    this.setState({ language: false })
   }
 
   openLanguage = () => {
-    this.setState({ language: !this.state.language })
+    this.setState({ language: true })
   }
 
   renderPublicDocs = () => {
     const { publicDocs } = this.state;
     if (publicDocs) {
       return (
-        <div className="publicDocs">
+        <div onMouseLeave={this.closePublicDocs} className="publicDocs">
           <div className="show-publicDocs">
             <div className="doc_icon"></div>
             <a target="_blank" href={links.wp} className="itemMini2">WHITEPAPER</a>
@@ -65,7 +88,7 @@ export class Menu extends React.Component {
     const { language } = this.state;
     if (language) {
       return (
-        <div className="language">
+        <div onMouseLeave={this.closeLanguage} className="language">
           <div className="show-language">
             <a className="itemMini2">EN</a>
           </div>
@@ -88,13 +111,13 @@ export class Menu extends React.Component {
           <a onClick={this.openMenu} href="#product" className="itemMini">Product</a>
           <a onClick={this.openMenu} href="#sale_details" className="itemMini">Sale Details</a>
           <a onClick={this.openMenu} href="#team" className="itemMini">Team</a>
-          <div onClick={this.openPublicDocs} className="drop-down">
+          <div onClick={this.clickPublicDocs} className="drop-down">
             <a>Public Docs </a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
           {this.renderPublicDocs()}
           <a href={links.mvp} target="_blank" className="itemMini">Test MVP</a>
-          <div onClick={this.openLanguage} className="drop-down">
+          <div onClick={this.clickLanguage} className="drop-down">
             <a>EN</a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
@@ -115,21 +138,31 @@ export class Menu extends React.Component {
             <a href="#product" className="item">Product</a>
             <a href="#sale_details" className="item">Sale Details</a>
             <a href="#team" className="item">Team</a>
-            <div onClick={this.openPublicDocs} className="drop-down">
+            <div
+              onMouseLeave={this.closePublicDocs}
+              onMouseMove={this.openPublicDocs}
+              className="drop-down"
+            >
               <a className="item">Public Docs</a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
+              <div className="publickOnMouseLeave"></div>
+              {this.renderPublicDocs()}
             </div>
-            {this.renderPublicDocs()}
             <a target='_blank' href={links.mvp} className="item">Test MVP</a>
             <Join
               text="Join Pre-Sale"
               className="btn"
             />
-            <div onClick={this.openLanguage} className="drop-down">
+            <div
+              onMouseLeave={this.closeLanguage}
+              onMouseMove={this.openLanguage}
+              className="drop-down"
+            >
               <a>EN</a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
+              <div className="publickOnMouseLeave"></div>
+              {this.renderLanguage()}
             </div>
-            {this.renderLanguage()}
           </div>
           <div className="menu-768px">
              <Join
@@ -141,6 +174,29 @@ export class Menu extends React.Component {
             </a>
             {this.renderMenu()}
           </div>
+        </div>
+        <div className='fixedSocIcon'>
+          <a target="_blank" href="https://www.github.com/Bit-Invest/Cindx-frontend">
+            <img className="img" src={github_icon} alt="CINDX"/>
+          </a>
+          <a target="_blank" href="https://www.reddit.com/r/cindx/">
+            <img className="img" src={reddit_icon} alt="CINDX"/>
+          </a>
+          <a target="_blank" href="https://twitter.com/CINDXPlatform">
+            <img className="img" src={twitter_icon} alt="CINDX"/>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/cindx.io/">
+            <img className="img" src={facebook_icon} alt="CINDX"/>
+          </a>
+          <a target="_blank" href="https://medium.com/cindx">
+            <img className="img" src={medium_icon} alt="CINDX"/>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/company/cindx/">
+            <img className="img" src={linkedin_icon} alt="CINDX"/>
+          </a>
+          <a target="_blank" href="https://t.me/cindx_official">
+            <img className="img_2" src={telegram_icon_white} alt="CINDX"/>
+          </a>
         </div>
       </div>
     )
