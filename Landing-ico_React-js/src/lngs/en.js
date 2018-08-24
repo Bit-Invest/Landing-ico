@@ -124,7 +124,7 @@ const en = {
     'problemSolving#10': 'Traders on CINDX are rated according to their history of trading success. Choose the trader that’s right for you quickly',
     'problemSolving#11': 'Our decentralized system and smart contracts allow your funds to be managed without being transferred to another trader',
     'problemSolving#12': 'Every investor in CINDX has the opportunity to have their funds managed by the most succesful traders on the market',
-    'problemSolving#13': 'What kinds of problems does CINDX solve for investors?',
+    'problemSolving#13': 'What Kinds of Problems Does CINDX Solve for Investors?',
     'problemSolving#14': 'TEST MVP',
 
     'howCindxWorks#1': 'Investors',
