@@ -605,9 +605,9 @@ class TeamAdvisersPartners extends React.Component {
                 </Slider>
             </div>
             <div className="container3">
-                <Slider {...settingsOurParners3}>
-                  {this.mapOurPartners()}
-                </Slider>
+              <div className="slick-list">
+                {this.mapOurPartners()}
+              </div>
             </div>
           </div>
           <div className="clear" />

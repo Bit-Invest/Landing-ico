@@ -213,10 +213,12 @@
 }
 
 .block_8 .ourPartners .slick-list {
+  width: 100%;
   margin-top: 70px;
-  height: 170px;
-  border-radius: 10px;
+  height: 200px;
   background-color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 
 .block_8 .ourPartners .img {
@@ -244,10 +246,6 @@
   }
   .block_8 .advisers .slick-list {
     width: 940px;
-  }
-  .block_8 .ourPartners .slick-list {
-    width: 940px;
-    height: 140px;
   }
   .block_8 .ourPartners .img {
     height: 140px;
