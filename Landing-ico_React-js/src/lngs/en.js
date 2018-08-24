@@ -1,3 +1,4 @@
+// Английский
 const en = {
     'mainBlock#1': 'Make Your Crypto Investments',
     'mainBlock#2': 'Easy, Secure and Fast.',
@@ -155,7 +156,7 @@ const en = {
     'marketAnalytics#13': 'LEGAL DOCS',
     'marketAnalytics#14': 'Geographic Scope',
     'marketAnalytics#15': '25 million potential',
-    'marketAnalytics#16': 'blockchain wallets',
+    'marketAnalytics#16': 'clients',
     'marketAnalytics#17': '200,000 potential',
     'marketAnalytics#18': 'transactions every day',
     'marketAnalytics#19': 'More than 225 potential',
