@@ -261,10 +261,10 @@ const advisers = [
     fackt2: '200+ startups from 20 countries mentored',
     linkedin: 'https://www.linkedin.com/in/staehelin/',
     text: [
-      "I'm an innovator and a leader who blends contagious optimism with pragmatic realism. I find opportunity where others see none.",
-      'I\'ve leveraged my ability to "see things differently" and "make things happen" in corporate, consulting and start-up environments - all giving me broad new perspectives that provide fodder for new transformative ideas. ',
-      'Finding solutions to hard challenges is what gets me out of bed in the morning.',
-      'Career and projects: BCG, Spectacler, Transparency International, StartupYard, Bethreum, Gjirafa Inc, Direct People, CINDX'
+      "Philip has more than 25 years of experience in the corporate and consulting worlds. He served as the CEO of a $500m payments company, he was a Managing Partner in Roland Berger (a global, top-tier, management consulting firm), and he’s also held executive roles in T-Mobile, Accenture, A.T. Kearney and CA-IB Investment Bank (now UniCredit).",
+      `He’s also a co-owner of StartupYard (CEE's oldest tech startup accelerator), he’s an active angel investor, and he's launched a number of startups, including his latest venture - DOT Glasses – that aims to provide eyeglasses to the >1 billion people in the world that need glasses but can’t afford them (or have no access to them).
+      Philip is also a Board member of Transparency International CZ, as well as a Board member of Gjirafa – the fastest growing company in the Balkans, and he mentors startups throughout CEE, the Baltics and the Balkans, and is an Advisor to numerous startups as well as ICOs.`,
+      `Philip earned his MBA from INSEAD (Fontainebleau, France) and Bachelors degrees in Economics and International Affairs from the University of Colorado (Boulder, Colorado, USA).`,
     ]
   },
   {

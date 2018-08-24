@@ -90,6 +90,7 @@
   top: 70px;
   left: 200px;
   cursor: pointer;
+  z-index: 20;
 }
 
 .block_4 .cont_1 .closePrompt {

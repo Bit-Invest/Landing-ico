@@ -114,7 +114,7 @@ const media = [
     name: indexLngObj['en']['mediaNews#17'],
     text: indexLngObj['en']['mediaNews#18'],
     src: 'http://www.coinfox.info/news/10194-5-tips-from-cindx-crypto-assets-management-hub-how-to-avoid-being-cheated'
-  }
+  },
 ]
 
 const news = [
@@ -407,12 +407,12 @@ export class MediaNews extends React.Component {
         <div key={i} className="item">
           <a target="_blank" href={el.videoSrc}>
             <div className="txtNews">
-              <img className="img" src={el.screen} alt="CINDEX"/>
+              <img className="img" src={el.screen} alt="CINDX"/>
               <div className="content">
                 <h3>{el.name.substr(0, 35)} ...</h3>
                 <div className="clear" />
                 <p>{el.text.substr(0, 65)} ...</p>
-                <div className="news-class">{el.source}</div>
+                <p className="details">Details</p>
               </div>
             </div>
           </a>
@@ -428,7 +428,8 @@ export class MediaNews extends React.Component {
             <div className="bg">
                 <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
               <h3>{el.name.substr(0, 45)} ...</h3>
-              <p>{el.text.substr(0, 85)} ...</p>
+              <p>{el.text.substr(0, 95)} ...</p>
+              <p className="details">Details</p>
             </div>
           </a>
         </div>

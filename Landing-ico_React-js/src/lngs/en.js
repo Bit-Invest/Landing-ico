@@ -61,7 +61,8 @@ const en = {
     'progressBarSale#11': 'Dec 3',
     'progressBarSale#12': 'Dec 17',
 
-    'cryptoAssetsManagement#1': 'CINDX is a Crytpto Asset Management Hub. We solve the problems of investors, traders and developers',
+    'cryptoAssetsManagement#1.1': 'CINDX is a Crytpto Asset Management Hub. We solve the problems of investors,',
+    'cryptoAssetsManagement#1.2': 'traders and developers',
     'cryptoAssetsManagement#2': 'СINDX.MARKETPLACE FOR INVESTORS',
     'cryptoAssetsManagement#3': 'Don’t worry about your knowledge and experience – the experts of crypto trading are here to help you',
     'cryptoAssetsManagement#4': 'Control your currency: your coins are kept in your wallet at all times',
@@ -217,7 +218,7 @@ const en = {
     'legalSchedule#11': 'RECEIVED THE FSA LICENSE',
     'legalSchedule#12': 'REGISTERED THE PROSPECTUS EU 809-2004',
     'legalSchedule#13': 'ISSUED CINX SECURITY TOKENS',
-    
+
     'feedbackProject#1': 'Feedback On Our Project',
     'feedbackProject#2': 'Val Jerdes',
     'feedbackProject#3': 'Product Director',

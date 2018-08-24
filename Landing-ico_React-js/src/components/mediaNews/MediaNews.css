@@ -91,13 +91,18 @@
 .block_7 .txt .bg {
   color: black;
   width: 300px;
-  min-height: 330px;
+  min-height: 350px;
   padding: 20px;
   background: #FFFFFF;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  /* margin-left: 20px; */
+}
+
+.block_7 .txt .bg .details {
+  color: #6c5ed6;
+  padding-top: 20px;
+  margin: 0;
 }
 
 .block_7 .slick-slide {
@@ -147,7 +152,7 @@
 .block_7 .txtNews {
   color: black;
   width: 340px;
-  min-height: 420px;
+  min-height: 440px;
   border-radius: 10px;
   background-color: white;
   margin-left: 20px;
@@ -173,7 +178,14 @@
   padding: 20px;
 }
 
+.block_7 .txtNews .details {
+  color: #6c5ed6;
+  padding-top: 30px;
+  margin: 0;
+}
+
 .block_7 .txtNews h3 {
+  height: 50px;
   font-size: 18px;
   font-weight: 500;
   color: black;
