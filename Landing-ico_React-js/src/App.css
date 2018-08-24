@@ -1720,6 +1720,9 @@ body.compensate-for-scrollbar {
       text-align: center;
       margin: 50px 0;
     }
+    .block_4 .cont_1 .row .promptCircle {
+      display: none;
+    }
     .block_5 h2 {
       font-size: 32px;
       margin-left: 75px;

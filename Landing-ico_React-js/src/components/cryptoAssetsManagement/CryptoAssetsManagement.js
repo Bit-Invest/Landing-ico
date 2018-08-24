@@ -22,7 +22,9 @@ class CryptoAssetsManagement extends React.Component {
         <div className="size">
           <div className="row">
             <h2 className="header_blocks">
-              { indexLngObj[lng]['cryptoAssetsManagement#1'] }
+              { indexLngObj[lng]['cryptoAssetsManagement#1.1'] }
+              <br/>
+              { indexLngObj[lng]['cryptoAssetsManagement#1.2'] }
             </h2>
             {/* <div className="video" onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/ZLA5tMEJS7M')}>
               <img
