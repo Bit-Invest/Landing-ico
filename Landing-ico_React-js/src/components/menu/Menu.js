@@ -102,17 +102,17 @@ export class Menu extends React.Component {
             text="Join Token Pre-Sale"
             className="itemMini joinpresale"
           />
-          <a onClick={this.openMenu} href="#product" className="itemMini">Product</a>
-          <a onClick={this.openMenu} href="#sale_details" className="itemMini">Sale Details</a>
-          <a onClick={this.openMenu} href="#team" className="itemMini">Team</a>
+          <a onClick={this.openMenu} href="#product" className="itemMini">{ indexLngObj[lng]['menu#7'] }</a>
+          <a onClick={this.openMenu} href="#sale_details" className="itemMini">{ indexLngObj[lng]['menu#8'] }</a>
+          <a onClick={this.openMenu} href="#team" className="itemMini">{ indexLngObj[lng]['menu#9'] }</a>
           <div onClick={this.clickPublicDocs} className="drop-down">
-            <a>Public Docs </a>
+            <a>{ indexLngObj[lng]['menu#10'] }</a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
           {this.renderPublicDocs()}
-          <a href={links.mvp} target="_blank" className="itemMini">Test MVP</a>
+          <a href={links.mvp} target="_blank" className="itemMini">{ indexLngObj[lng]['menu#11'] }</a>
           <div onClick={this.clickLanguage} className="drop-down">
-            <a>EN</a>
+            <a>{ indexLngObj[lng]['menu#6'] }</a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
           {this.renderLanguage()}
@@ -129,20 +129,20 @@ export class Menu extends React.Component {
         <div className="container-menu">
           <a href="#top"><img className="logo" src={logo} alt={"CINDEX"}/></a>
           <div className="menu-item">
-            <a href="#product" className="item">Product</a>
-            <a href="#sale_details" className="item">Sale Details</a>
-            <a href="#team" className="item">Team</a>
+            <a href="#product" className="item">{ indexLngObj[lng]['menu#7'] }</a>
+            <a href="#sale_details" className="item">{ indexLngObj[lng]['menu#8'] }</a>
+            <a href="#team" className="item">{ indexLngObj[lng]['menu#9'] }</a>
             <div
               onMouseLeave={this.closePublicDocs}
               onMouseMove={this.openPublicDocs}
               className="drop-down"
             >
-              <a className="item">Public Docs</a>
+              <a className="item">{ indexLngObj[lng]['menu#10'] }</a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
               <div className="publickOnMouseLeave"></div>
               {this.renderPublicDocs()}
             </div>
-            <a target='_blank' href={links.mvp} className="item">Test MVP</a>
+            <a target='_blank' href={links.mvp} className="item">{ indexLngObj[lng]['menu#11'] }</a>
             <Join
               text="Join Pre-Sale"
               className="btn"
@@ -152,7 +152,7 @@ export class Menu extends React.Component {
               onMouseMove={this.openLanguage}
               className="drop-down"
             >
-              <a>EN</a>
+              <a>{ indexLngObj[lng]['menu#6'] }</a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
               <div className="publickOnMouseLeave"></div>
               {this.renderLanguage()}

@@ -199,6 +199,10 @@ const en = {
     'tokenSaleDetails#37': 'Dec 17 - Dec 26 - 0% Bonus',
     'tokenSaleDetails#38': 'buy tokens',
     'tokenSaleDetails#39': 'Token Sale Details',
+    'tokenSaleDetails#40': 'During the token sale, investors purchase utility tokens – options [CINXO], which give them the right to receive security tokens [CINX] in the future.',
+    'tokenSaleDetails#41': 'Security tokens [CINX] will be issued and distributed following the prospect of emission published on the website of FSA of Estonia https://www.fi.ee/ and cindx.io after the end of the token sale, but no later than Q1 2019.',
+    'tokenSaleDetails#42': 'The holder of [CINXO] tokens has the right but no obligation to exchange options for security tokens with a ratio of 1:1 after completing the KYC procedure with identification signature, address confirmation and supply of other documents (see the KYC diagram).',
+    'tokenSaleDetails#43': 'Tokens [CINXO] grant the same rights as security tokens apart from the right to participate in revenue distribution with a lock-up and voting on the platform.',
 
     'legalSchedule#1': 'Legal Schedule',
     'legalSchedule#2': 'RECEIVED LICENSE (FVR000110) TO EXCHANGE VIRTUAL CURRENCY TO FIAT SERVICES',
@@ -248,6 +252,8 @@ const en = {
     'feedbackProject#32': 'Bogdan Fiedur, CINDX Advisor, explains how the CINDX project differs from other ICO projects',
     'feedbackProject#33': 'Jason King',
     'feedbackProject#34': 'Jason King, Chief Commercial Officer, explains what attracts him to CINDX and talks about crucial advantages of the project',
+
+
 }
 
 export default en
