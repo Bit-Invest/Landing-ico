@@ -42,6 +42,8 @@ import Sadie_Hutton from '../../media/Sadie_Hutton.54ab2eaa.jpg';
 import Motti_Peer from '../../media/Motti_Peer.png';
 import Leonard_Grayver from '../../media/Leonard_Grayver.png';
 import './TeamAdvisersPartners.css';
+import { lng } from '../../links'
+import indexLngObj from '../../lngs/index'
 
 const teamInfo = [
   {
