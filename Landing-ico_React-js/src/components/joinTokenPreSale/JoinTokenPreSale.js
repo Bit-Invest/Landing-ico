@@ -1,5 +1,7 @@
 import * as React from 'react';
 import './JoinTokenPreSale.css';
+import { lng } from '../../links'
+import indexLngObj from '../../lngs/index'
 import bitcointalk_icon from '../../media/bitcointalk_icon.png';
 import youtube_icon from '../../media/youtube_icon.png';
 import instagram_icon from '../../media/instagram_icon.png';
@@ -16,45 +18,44 @@ import weibo_icon from '../../media/weibo_icon.png';
 import wechat_icon from '../../media/wechat_icon.png';
 import kakaotalk_icon from '../../media/kakaotalk_icon.png';
 
-
 export const JoinTokenPreSale = () => (
   <div className="block_9">
     <div className="size">
-      <h2 className="header_blocks">Join Token Pre-Sale now!</h2>
+      <h2 className="header_blocks">{ indexLngObj[lng]['joinTokenPreSale#1'] }</h2>
       <div className="container2">
         <Join
-          text="JOIN PRE-SALE"
+          text={ indexLngObj[lng]['joinTokenPreSale#2'] }
           className="sb"
         />
         <a target="_blank" href={links.mvp} className="sb_2">
-          TEST MVP
+          { indexLngObj[lng]['joinTokenPreSale#3'] }
         </a>
         <div className="adress">
           <div className="adress_left">
-            <div className="caption">Head Office</div>
+            <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#4'] }</div>
             <p>
-              Harjumaa, Erika 14, <br/>
-              Talinn, 10416, Estonia
+              { indexLngObj[lng]['joinTokenPreSale#5'] } <br/>
+              { indexLngObj[lng]['joinTokenPreSale#6'] }
             </p>
             <a href="mailto:hello@cindx.io">
               <p>
-                Business inquiries | hello@cindx.io
+                { indexLngObj[lng]['joinTokenPreSale#7'] }
               </p>
             </a>
             <a target="_blank" href={links.lD}>
               <p className="lD">
-                Legal Disclaimer
+                { indexLngObj[lng]['joinTokenPreSale#8'] }
               </p>
             </a>
           </div>
           <div className="adress_right">
-            <div className="caption">Development and Marketing</div>
+            <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#9'] }</div>
             <p>
-              Presnenskaya naberezhnaya, 8 building 1, <br/>
-              Moscow, 123112, Russia
+              { indexLngObj[lng]['joinTokenPreSale#10'] } <br/>
+              { indexLngObj[lng]['joinTokenPreSale#11'] }
             </p>
             <p>
-              Careers | Join our team | <a href="mailto:hr@cindx.io">hr@cindx.io</a>
+              { indexLngObj[lng]['joinTokenPreSale#12'] } | <a href="mailto:hr@cindx.io">hr@cindx.io</a>
             </p>
           </div>
         </div>

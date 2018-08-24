@@ -48,112 +48,112 @@ import indexLngObj from '../../lngs/index'
 const teamInfo = [
   {
     img: Yuriy_Avdeev,
-    name: 'Yuriy Avdeev',
-    position: 'Chief Executive Officer',
-    fackt1: '13 years in entrepreneurship',
-    fackt2: '9 ventures',
-    fackt3: '$2m for crypto management',
+    name: indexLngObj[lng]['teamAdvisersPartners#4'],
+    position: indexLngObj[lng]['teamAdvisersPartners#5'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#6'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#7'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#8'],
     src: 'https://www.linkedin.com/in/yuriyavdeev/',
     m: ''
   },
   {
     img: Val_Jerdes,
-    name: 'Val Jerdes',
-    position: 'Product Director',
-    fackt1: '20 years in entrepreneurship',
-    fackt2: '3 successful exits',
-    fackt3: '4x returns for portfolios',
+    name: indexLngObj[lng]['teamAdvisersPartners#9'],
+    position: indexLngObj[lng]['teamAdvisersPartners#10'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#11'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#12'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#13'],
     src: 'https://www.linkedin.com/in/valjerdes/',
     m: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61'
   },
   {
     img: Mofassair_Hossain,
-    name: 'Mofassair Hossain',
-    position: 'Chief Marketing Officer',
-    fackt1: 'Investor and Adviser of 15+ ICOs',
-    fackt2: 'Top Adviser at ICO Bench',
-    fackt3: 'GBAP Member',
+    name: indexLngObj[lng]['teamAdvisersPartners#14'],
+    position: indexLngObj[lng]['teamAdvisersPartners#15'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#16'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#17'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#18'],
     src: 'https://www.linkedin.com/in/md-mofassair-hossain-515a90148',
     m: 'https://medium.com/cindx/cindx-team-mofassair-hossain-72661ba3474e'
   },
   {
     img: Artur_Shamalov,
-    name: 'Artur Shamalov',
-    position: 'Investment Director',
-    fackt1: '15 years in entrepreneurship',
-    fackt2: '5000 clients of mixcart.ru',
-    fackt3: 'mail.ru invested in dc-daily.ru',
+    name: indexLngObj[lng]['teamAdvisersPartners#19'],
+    position: indexLngObj[lng]['teamAdvisersPartners#20'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#21'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#22'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#23'],
     src: 'https://www.linkedin.com/in/artur-shamalov/',
     m: 'https://medium.com/cindx/cindx-team-artur-shamalov-52c9dae3b3c9'
 
   },
   {
     img: Denis_Eskenazi,
-    name: 'Denis Eskenazi',
-    position: 'Product Marketing Director',
-    fackt1: '7 years in entrepreneurship',
-    fackt2: '$2m attracted for clients',
-    fackt3: '10 years in branding',
+    name: indexLngObj[lng]['teamAdvisersPartners#24'],
+    position: indexLngObj[lng]['teamAdvisersPartners#25'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#26'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#27'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#28'],
     src: 'https://ru.linkedin.com/in/denis-eskenazi-03b81726',
     m: 'https://medium.com/cindx/denis-eskenazi-ac67e81d8c50'
   },
   {
     img: Ibraghim_Haniev,
-    name: 'Ibraghim Haniev',
-    position: 'Tech Lead',
-    fackt1: '6 years in entrepreneurship',
-    fackt2: '200+ developed site',
-    fackt3: 'Information Security focus',
+    name: indexLngObj[lng]['teamAdvisersPartners#29'],
+    position: indexLngObj[lng]['teamAdvisersPartners#30'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#31'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#32'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#33'],
     src: 'https://www.linkedin.com/in/ibrahimhaniev/',
     m: 'https://medium.com/cindx/cindx-team-ibraghim-haniev-17f67defd1ba'
   },
   {
     img: Airat,
-    name: 'Airat Shaikhulov',
-    position: 'Head of Quantitative Research',
-    fackt1: 'Dr of science at MSU',
-    fackt2: 'Aton-line navigator developer',
-    fackt3: 'Head of algorithmic trading',
+    name: indexLngObj[lng]['teamAdvisersPartners#34'],
+    position: indexLngObj[lng]['teamAdvisersPartners#35'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#36'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#37'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#38'],
     src: 'https://www.linkedin.com/in/airatshayhulov/',
     m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-airat-shayhulov-b980078cdc6f'
   },
   {
     img: Sofja_Pevzner,
-    name: 'Sofja Pevzner',
-    position: 'Personal Data Officer',
-    fackt1: '5 years in entrepreneurship',
-    fackt2: 'Permisson of estonian AML office',
-    fackt3: '8 years of legal work expirience',
+    name: indexLngObj[lng]['teamAdvisersPartners#39'],
+    position: indexLngObj[lng]['teamAdvisersPartners#40'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#41'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#42'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#43'],
     src: 'https://www.linkedin.com/in/sofja-pevzner-70831963/',
     m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-sofja-pevzner-8386e8e88407'
   },
   {
     img: Dave_Gutierrez,
-    name: 'Dave Gutierrez',
-    position: 'Investment Relations Officer',
-    fackt1: '5 years in aircraft leasing',
-    fackt2: '3 years in investment promotion',
-    fackt3: '2 years in russian deals abroad',
+    name: indexLngObj[lng]['teamAdvisersPartners#44'],
+    position: indexLngObj[lng]['teamAdvisersPartners#45'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#46'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#47'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#48'],
     src: 'https://www.linkedin.com/in/davidgutierrezcindx/',
     m: 'https://medium.com/cindx/cindx-team-david-gutierrez-deeeaf66c992'
   },
   {
     img: Jelena_Karzetskaja,
-    name: 'Jelena Karzetskaja',
-    position: 'Compliance Adviser',
-    fackt1: 'holds several degrees in law',
-    fackt2: 'judicial practice since 1997',
-    fackt3: 'legal spheres: international law',
+    name: indexLngObj[lng]['teamAdvisersPartners#49'],
+    position: indexLngObj[lng]['teamAdvisersPartners#50'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#51'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#52'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#53'],
     src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
     m: ''
   },
   {
     img: Wang_Dong,
-    name: 'Wang Dong',
-    position: 'Specialist in Chinese market ',
-    fackt1: '3 years in php/ JavaScript',
-    fackt2: '5 years in SEO/SMM/media buyer',
-    fackt3: '2 years in token sale in China',
+    name: indexLngObj[lng]['teamAdvisersPartners#54'],
+    position: indexLngObj[lng]['teamAdvisersPartners#55'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#56'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#57'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#58'],
     src: '',
     m: ''
   }
@@ -222,25 +222,25 @@ const advisers = [
     video: 'https://www.youtube.com/embed/qWpWbZUljdg',
     src: 'https://linkedin.com/in/kteare',
     m: 'https://medium.com/cindx/cindx-advisers-keith-teare-1041410275d0',
-    name: 'Keith Teare',
-    position: 'Founder and Executive Chairman at Accelerated Digital Ventures',
-    fackt1: 'Adviser to ICOBox, Crypterium, EnergiMine, etc.',
-    fackt2: 'Founding shareholder of TechCrunch',
+    name: indexLngObj[lng]['teamAdvisersPartners#59'],
+    position: indexLngObj[lng]['teamAdvisersPartners#60'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#61'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#62'],
     linkedin: 'https://linkedin.com/in/kteare',
     text: [
-      "I am Executive Chairman and Chair of the Investment Committee at Accelerated Digital Ventures - a UK Venture Company. I was born and raised in the UK. ",
-      "Previously I was founder and a partner at Archimedes Labs in Palo Alto, California. I love working with founders, teams, designers and engineers to create products, tell stories, and turn them into reality. I have founded or co-founded many companies myself since the early 1980s. Some were successfully sold, others IPO'd.",
-      "Two of my companies were Unicorns - valued by others at more than $1 billion. I have always focused on the point at which change is happening. In the 1980's networking and databases. In the 1994-1998 period, Internet Access. From 1998-2010 - Web Services and Content, Mobile Consumer Applications and since 2017 Blockchain.",
-      "Career and projects: Tech Crunch, Accelerated Digital Ventures, cScape, EasyNet, Cyberia,  RealNames, Venture Network, ICOBox, Crypterium,  R/Block, Fluz, EnergiMine, Archimedes Labs  and CINDX"
+      indexLngObj[lng]['teamAdvisersPartners#63'],
+      indexLngObj[lng]['teamAdvisersPartners#64'],
+      indexLngObj[lng]['teamAdvisersPartners#65'],
+      indexLngObj[lng]['teamAdvisersPartners#66']
     ]
   },
   {
     img: Austin_Kimm,
     video: 'https://www.youtube.com/embed/5X8isxq6S00',
-    name: 'Austin Kimm',
+    name: indexLngObj[lng]['teamAdvisersPartners#67'],
     src: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
     m: 'https://medium.com/cindx/cindx-advisers-austin-kimm-fa417a929e32',
-    position: 'International Financial Services CEO',
+    position: indexLngObj[lng]['teamAdvisersPartners#67'],
     fackt1: '30+ years of financial service experience',
     fackt2: 'Created companies with a worth of $500m',
     linkedin: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
@@ -562,7 +562,7 @@ class TeamAdvisersPartners extends React.Component {
       <div className="block_8" id="team">
         <div className="size">
           <div className="team">
-            <h2 className="header_blocks">Team of 50+ Members</h2>
+            <h2 className="header_blocks">{ indexLngObj[lng]['teamAdvisersPartners#1'] }</h2>
             <div className="block_arrow_relative">
               <div className="settings">
                 <Slider {...settings}>
@@ -587,7 +587,7 @@ class TeamAdvisersPartners extends React.Component {
           </div>
           <div className="clear" />
           <div className="advisers">
-            <h2 className="header_blocks">Advisers</h2>
+            <h2 className="header_blocks">{ indexLngObj[lng]['teamAdvisersPartners#2'] }</h2>
             <div className="block_arrow_relative">
               <div className="settings2_1">
                 <Slider {...settingsAdvisers}>
@@ -598,7 +598,7 @@ class TeamAdvisersPartners extends React.Component {
           </div>
           <div className="clear" />
           <div className="ourPartners">
-            <h2 className="header_blocks">Our Partners</h2>
+            <h2 className="header_blocks">{ indexLngObj[lng]['teamAdvisersPartners#3'] }</h2>
             <div className="container2">
                 <Slider {...settingsOurParners}>
                   {this.mapOurPartners()}

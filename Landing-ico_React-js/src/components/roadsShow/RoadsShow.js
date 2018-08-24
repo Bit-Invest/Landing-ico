@@ -196,6 +196,10 @@ class RoadsShow extends Component {
         
     }
 
+    componentWillUnmount = () => {
+        window.removeEventListener('resize', this.handleResize)
+    }
+
     renderRoadShowPopup = (i) => {
         const filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
         if (window.innerWidth >= 1201)

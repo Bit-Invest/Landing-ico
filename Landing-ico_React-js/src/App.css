@@ -2077,11 +2077,25 @@ body.compensate-for-scrollbar {
   }
 
   .block_6 .slick-next, .block_6 .slick-prev {
-    display: none!important;
+    margin-top: -45px;
+  }
+
+  .block_6 .slick-prev {
+    margin-left: -110px;
+  }
+
+  .block_6 .slick-next {
+    margin-left: -50px;
   }
 
   .block_6 .carusel-block .slick-list {
     margin: 0 5%;
+  }
+
+  .block_6 h2 {
+    width: 53%!important;
+    margin: 0 7%!important;
+    font-size: 20px!important;
   }
 
   .block_6 .left .name .feed-back-div {
@@ -2147,12 +2161,22 @@ body.compensate-for-scrollbar {
     margin-left: -140px;
   }
 
+  .block_8 .slick-prev, .block_8 .slick-next {
+    margin-top: -70px;
+  }
+
   .block_8 {
     padding-bottom: 20px;
   }
 
   .block_8 .block_arrow_relative {
     margin-bottom: 50px;
+  }
+
+  .block_8 h2 {
+    font-size: 26px!important;
+    width: 53%!important;
+    margin: 0 7%!important;
   }
 
   .block_8 .advisers .slick-slider {
@@ -2248,5 +2272,18 @@ body.compensate-for-scrollbar {
     flex-direction: column;
     margin: 30px 0px 70px 5%;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .block_6 .slick-next, .block_6 .slick-prev {
+    margin-top: -65px;
+  }
+}
+
+
+@media screen and (max-width: 535px) {
+  .block_8 .slick-next, .block_8 .slick-prev {
+    margin-top: -90px;
   }
 }
