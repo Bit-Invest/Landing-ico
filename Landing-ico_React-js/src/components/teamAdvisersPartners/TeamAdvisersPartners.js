@@ -262,9 +262,9 @@ const advisers = [
     linkedin: 'https://www.linkedin.com/in/staehelin/',
     text: [
       "I'm an innovator and a leader who blends contagious optimism with pragmatic realism. I find opportunity where others see none.",
-      `I've leveraged my ability to "see things differently" and "make things happen" in corporate, consulting and start-up environments - all giving me broad new perspectives that provide fodder for new transformative ideas. `,
-      `Finding solutions to hard challenges is what gets me out of bed in the morning.`,
-      `Career and projects: BCG, Spectacler, Transparency International, StartupYard, Bethreum, Gjirafa Inc, Direct People, CINDX`
+      'I\'ve leveraged my ability to "see things differently" and "make things happen" in corporate, consulting and start-up environments - all giving me broad new perspectives that provide fodder for new transformative ideas. ',
+      'Finding solutions to hard challenges is what gets me out of bed in the morning.',
+      'Career and projects: BCG, Spectacler, Transparency International, StartupYard, Bethreum, Gjirafa Inc, Direct People, CINDX'
     ]
   },
   {
