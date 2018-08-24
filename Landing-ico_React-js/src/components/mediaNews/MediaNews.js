@@ -62,57 +62,57 @@ const media = [
   {
     screen: MediaAmbcrypto,
     type: 'ambcrypto',
-    name: indexLngObj['en']['mediaNews#3'],
-    text: indexLngObj['en']['mediaNews#4'],
+    name: indexLngObj['en']['mediaNews#1_1'],
+    text: indexLngObj['en']['mediaNews#1_2'],
     src: 'https://ambcrypto.com/how-cindx-is-democratizing-the-modern-financial-system-2/'
   },
   {
     screen: MediaBitcoinist,
     type: 'bitcoinist',
-    name: indexLngObj['en']['mediaNews#5'],
-    text: indexLngObj['en']['mediaNews#6'],
+    name: indexLngObj['en']['mediaNews#1_3'],
+    text: indexLngObj['en']['mediaNews#1_4'],
     src: 'https://bitcoinist.com/cindx-announces-plans-for-ico-pre-sale-amidst-release-of-revolutionary-crypto-trading-hub-that-allows-users-to-follow-expert-traders/'
   },
   {
     screen: MediaTokendesk,
     type: 'tokendesk',
-    name: indexLngObj['en']['mediaNews#7'],
-    text: indexLngObj['en']['mediaNews#8'],
+    name: indexLngObj['en']['mediaNews#1_5'],
+    text: indexLngObj['en']['mediaNews#1_6'],
     src: 'https://www.tokendesk.io/how-cindx-is-democratizing-the-modern-financial-system/'
   },
   {
     screen: MediaBtcmanager,
     type: 'btcmanager',
-    name: indexLngObj['en']['mediaNews#9'],
-    text: indexLngObj['en']['mediaNews#10'],
+    name: indexLngObj['en']['mediaNews#1_7'],
+    text: indexLngObj['en']['mediaNews#1_8'],
     src: 'https://btcmanager.com/how-cindx-is-democratizing-the-modern-financial-system/'
   },
   {
     screen: MediaBlockonomi,
     type: 'blockonomi',
-    name: indexLngObj['en']['mediaNews#11'],
-    text: indexLngObj['en']['mediaNews#12'],
+    name: indexLngObj['en']['mediaNews#1_9'],
+    text: indexLngObj['en']['mediaNews#1_10'],
     src: 'https://blockonomi.com/cindxico-pre-sale/'
   },
   {
     screen: MediaBitcoingarden,
     type: 'bitcoingarden',
-    name: indexLngObj['en']['mediaNews#13'],
-    text: indexLngObj['en']['mediaNews#14'],
+    name: indexLngObj['en']['mediaNews#1_11'],
+    text: indexLngObj['en']['mediaNews#1_12'],
     src: 'https://bitcoingarden.org/cindx-announces-plans-for-ico-pre-sale-amidst-release-of-revolutionary-crypto-trading-hub-that-allows-users-to-follow-expert-traders/'
   },
   {
     screen: MediaDigitaljournal,
     type: 'digitaljournal',
-    name: indexLngObj['en']['mediaNews#15'],
-    text: indexLngObj['en']['mediaNews#16'],
+    name: indexLngObj['en']['mediaNews#1_13'],
+    text: indexLngObj['en']['mediaNews#1_14'],
     src: 'http://www.digitaljournal.com/pr/3881157'
   },
   {
     screen: MediaCoinfox,
     type: 'coinfox',
-    name: indexLngObj['en']['mediaNews#17'],
-    text: indexLngObj['en']['mediaNews#18'],
+    name: indexLngObj['en']['mediaNews#1_15'],
+    text: indexLngObj['en']['mediaNews#1_16'],
     src: 'http://www.coinfox.info/news/10194-5-tips-from-cindx-crypto-assets-management-hub-how-to-avoid-being-cheated'
   },
 ]
@@ -121,281 +121,281 @@ const news = [
   {
     videoSrc: 'https://www.youtube.com/watch?v=c4ruJPvo5sI',
     screen: CINDX_meets_Ian_Balina,
-    name: indexLngObj['en']['mediaNews#19'],
-    text: indexLngObj['en']['mediaNews#20'],
+    name: indexLngObj['en']['mediaNews#2_1'],
+    text: indexLngObj['en']['mediaNews#2_2'],
     source: 'www.youtube.com'
   },
   {
     videoSrc: 'https://www.youtube.com/watch?v=P6qAzbwOMXs',
     screen: CINDX_took_part_in_Moscow_ICO_Summit_2018,
-    name: indexLngObj['en']['mediaNews#21'],
-    text: indexLngObj['en']['mediaNews#22'],
+    name: indexLngObj['en']['mediaNews#2_3'],
+    text: indexLngObj['en']['mediaNews#2_4'],
     source: 'www.youtube.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-legal-how-cindx-is-ensuring-legal-compliance-ee5fdf8a7642',
     screen: How_CINDX_is_ensuring_legal_compliance,
-    name: indexLngObj['en']['mediaNews#23'],
-    text: indexLngObj['en']['mediaNews#24'],
+    name: indexLngObj['en']['mediaNews#2_5'],
+    text: indexLngObj['en']['mediaNews#2_6'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-advisers-keith-teare-1041410275d0',
     screen: Keith_Teare,
-    name: indexLngObj['en']['mediaNews#25'],
-    text: indexLngObj['en']['mediaNews#26'],
+    name: indexLngObj['en']['mediaNews#2_7'],
+    text: indexLngObj['en']['mediaNews#2_8'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/meet-worlds-first-financial-crypto-social-network-connect-with-people-as-you-grow-your-wealth-76a3cea9a06c',
     screen: Meet_worlds_first_financial_crypto_social_network,
-    name: indexLngObj['en']['mediaNews#27'],
-    text: indexLngObj['en']['mediaNews#28'],
+    name: indexLngObj['en']['mediaNews#2_9'],
+    text: indexLngObj['en']['mediaNews#2_10'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/denis-eskenazi-ac67e81d8c50',
     screen: Denis_Eskenazi,
-    name: indexLngObj['en']['mediaNews#29'],
-    text: indexLngObj['en']['mediaNews#30'],
+    name: indexLngObj['en']['mediaNews#2_11'],
+    text: indexLngObj['en']['mediaNews#2_12'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-legal-how-cindx-is-ensuring-legal-compliance-4e075b5d34',
     screen: CINDX_crypto_currency_exchange_license,
-    name: indexLngObj['en']['mediaNews#31'],
-    text: indexLngObj['en']['mediaNews#32'],
+    name: indexLngObj['en']['mediaNews#2_13'],
+    text: indexLngObj['en']['mediaNews#2_14'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-advisers-austin-kimm-fa417a929e32',
     screen: Austin_Kimm,
-    name: indexLngObj['en']['mediaNews#33'],
-    text: indexLngObj['en']['mediaNews#34'],
+    name: indexLngObj['en']['mediaNews#2_15'],
+    text: indexLngObj['en']['mediaNews#2_16'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/the-strategic-meeting-of-the-international-cindx-team-9ce14f49912e',
     screen: The_strategic_meeting_of_the_international_CINDX_team,
-    name: indexLngObj['en']['mediaNews#35'],
-    text: indexLngObj['en']['mediaNews#36'],
+    name: indexLngObj['en']['mediaNews#2_17'],
+    text: indexLngObj['en']['mediaNews#2_18'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-team-artur-shamalov-52c9dae3b3c9',
     screen: Artur_Shamalov,
-    name: indexLngObj['en']['mediaNews#37'],
-    text: indexLngObj['en']['mediaNews#38'],
+    name: indexLngObj['en']['mediaNews#2_19'],
+    text: indexLngObj['en']['mediaNews#2_20'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-legal-the-issuance-of-cinx-tokens-381a26b9c12d',
     screen: The_issuance_of_CINX_tokens,
-    name: indexLngObj['en']['mediaNews#39'],
-    text: indexLngObj['en']['mediaNews#40'],
+    name: indexLngObj['en']['mediaNews#2_21'],
+    text: indexLngObj['en']['mediaNews#2_22'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-advisers-amarpreet-singh-29c1edb22dda',
     screen: Amarpreet_Singh,
-    name: indexLngObj['en']['mediaNews#41'],
-    text: indexLngObj['en']['mediaNews#42'],
+    name: indexLngObj['en']['mediaNews#2_23'],
+    text: indexLngObj['en']['mediaNews#2_24'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-activity-the-meeting-with-the-international-cindx-partners-1aec5a24c4b1',
     screen: CINDX_meets_Vangoo_Capital_Partners_Fund,
-    name: indexLngObj['en']['mediaNews#43'],
-    text: indexLngObj['en']['mediaNews#44'],
+    name: indexLngObj['en']['mediaNews#2_25'],
+    text: indexLngObj['en']['mediaNews#2_26'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-team-mofassair-hossain-72661ba3474e',
     screen: Mofassair_Hossain,
-    name: indexLngObj['en']['mediaNews#45'],
-    text: indexLngObj['en']['mediaNews#46'],
+    name: indexLngObj['en']['mediaNews#2_27'],
+    text: indexLngObj['en']['mediaNews#2_28'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/https-medium-com-cindx-cindx-legal-kyc-procedure-2bbfe073511d',
     screen: How_CINDX_ensures_safety_for_its_users_KYC,
-    name: indexLngObj['en']['mediaNews#47'],
-    text: indexLngObj['en']['mediaNews#48'],
+    name: indexLngObj['en']['mediaNews#2_29'],
+    text: indexLngObj['en']['mediaNews#2_30'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-advisers-philip-staehelin-810df12247bc',
     screen: Philip_Staehelin,
-    name: indexLngObj['en']['mediaNews#49'],
-    text: indexLngObj['en']['mediaNews#50'],
+    name: indexLngObj['en']['mediaNews#2_31'],
+    text: indexLngObj['en']['mediaNews#2_32'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-negotiates-with-9coin-and-vangoo-capital-partners-646087fff49f',
     screen: CINDX_meets_9coin_Digital_Asses_Exchange,
-    name: indexLngObj['en']['mediaNews#51'],
-    text: indexLngObj['en']['mediaNews#52'],
+    name: indexLngObj['en']['mediaNews#2_33'],
+    text: indexLngObj['en']['mediaNews#2_34'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/the-cindx-team-jason-king-9a1b93d6aa8b',
     screen: Jason_King,
-    name: indexLngObj['en']['mediaNews#53'],
-    text: indexLngObj['en']['mediaNews#54'],
+    name: indexLngObj['en']['mediaNews#2_35'],
+    text: indexLngObj['en']['mediaNews#2_36'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/https-medium-com-cindx-cindx-presents-the-project-during-private-investors-meeting-c886660a8387',
     screen: CINDX_Presents_the_project_during_RICLUB_private_investors_meeting,
-    name: indexLngObj['en']['mediaNews#55'],
-    text: indexLngObj['en']['mediaNews#56'],
+    name: indexLngObj['en']['mediaNews#2_37'],
+    text: indexLngObj['en']['mediaNews#2_38'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-sofja-pevzner-8386e8e88407',
     screen: Sofja_Pevzner,
-    name: indexLngObj['en']['mediaNews#57'],
-    text: indexLngObj['en']['mediaNews#58'],
+    name: indexLngObj['en']['mediaNews#2_39'],
+    text: indexLngObj['en']['mediaNews#2_40'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-advisers-tyler-sanford-a58eefa42a95',
     screen: Tyler_Sanford,
-    name: indexLngObj['en']['mediaNews#59'],
-    text: indexLngObj['en']['mediaNews#60'],
+    name: indexLngObj['en']['mediaNews#2_41'],
+    text: indexLngObj['en']['mediaNews#2_42'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-project-some-key-points-to-observe-b82ce2bccb79',
     screen: CINDX_Key_points_to_observe,
-    name: indexLngObj['en']['mediaNews#61'],
-    text: indexLngObj['en']['mediaNews#62'],
+    name: indexLngObj['en']['mediaNews#2_43'],
+    text: indexLngObj['en']['mediaNews#2_44'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-airat-shayhulov-b980078cdc6f',
     screen: Airat_Shayhulov,
-    name: indexLngObj['en']['mediaNews#63'],
-    text: indexLngObj['en']['mediaNews#64'],
+    name: indexLngObj['en']['mediaNews#2_45'],
+    text: indexLngObj['en']['mediaNews#2_46'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-legal-operating-licence-f401cb580e7b',
     screen: CINDX_license_of_the_financial_consultant,
-    name: indexLngObj['en']['mediaNews#65'],
-    text: indexLngObj['en']['mediaNews#66'],
+    name: indexLngObj['en']['mediaNews#2_47'],
+    text: indexLngObj['en']['mediaNews#2_48'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-advisers-graham-doggart-a7f45b3e4ce4',
     screen: Graham_Doggart,
-    name: indexLngObj['en']['mediaNews#67'],
-    text: indexLngObj['en']['mediaNews#68'],
+    name: indexLngObj['en']['mediaNews#2_49'],
+    text: indexLngObj['en']['mediaNews#2_50'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-continues-the-roadshow-in-china-79d451184c63',
     screen: CINDX_continues_the_roadshow_in_China,
-    name: indexLngObj['en']['mediaNews#69'],
-    text: indexLngObj['en']['mediaNews#70'],
+    name: indexLngObj['en']['mediaNews#2_51'],
+    text: indexLngObj['en']['mediaNews#2_52'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-team-ibraghim-haniev-17f67defd1ba',
     screen: Ibraghim_Haniev,
-    name: indexLngObj['en']['mediaNews#71'],
-    text: indexLngObj['en']['mediaNews#72'],
+    name: indexLngObj['en']['mediaNews#2_53'],
+    text: indexLngObj['en']['mediaNews#2_54'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-advisers-sadie-hutton-6a8d68aa6fcf',
     screen: Sadie_Hutton,
-    name: indexLngObj['en']['mediaNews#73'],
-    text: indexLngObj['en']['mediaNews#74'],
+    name: indexLngObj['en']['mediaNews#2_55'],
+    text: indexLngObj['en']['mediaNews#2_56'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-talk-lots-of-features-to-take-you-on-a-new-journey-a4a0553eedb8',
     screen: CINDX_talk_a_service_that_will_help_people_become_wiser_in_taking_financial_decisions,
-    name: indexLngObj['en']['mediaNews#75'],
-    text: indexLngObj['en']['mediaNews#76'],
+    name: indexLngObj['en']['mediaNews#2_57'],
+    text: indexLngObj['en']['mediaNews#2_58'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61',
     screen: Val_Jerdes,
-    name: indexLngObj['en']['mediaNews#77'],
-    text: indexLngObj['en']['mediaNews#78'],
+    name: indexLngObj['en']['mediaNews#2_59'],
+    text: indexLngObj['en']['mediaNews#2_60'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-advisers-bogdan-fiedur-16897ad954ad',
     screen: Bogdan_Fiedur,
-    name: indexLngObj['en']['mediaNews#79'],
-    text: indexLngObj['en']['mediaNews#80'],
+    name: indexLngObj['en']['mediaNews#2_61'],
+    text: indexLngObj['en']['mediaNews#2_62'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-legal-know-more-about-the-cinx-token-a-security-token-for-numerous-reasons-488ff75a8202',
     screen: Welcome_to_CINX_Token_Distribution_its_not_an_ICO_its_an_STO,
-    name: indexLngObj['en']['mediaNews#81'],
-    text: indexLngObj['en']['mediaNews#82'],
+    name: indexLngObj['en']['mediaNews#2_63'],
+    text: indexLngObj['en']['mediaNews#2_64'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/https-medium-com-cindx-cindx-celebrates-the-aa-rating-ec5532f29d5d',
     screen: CINDX_celebrates_the_AA_Rating_from_Top_ICO_List_Audit,
-    name: indexLngObj['en']['mediaNews#83'],
-    text: indexLngObj['en']['mediaNews#84'],
+    name: indexLngObj['en']['mediaNews#2_65'],
+    text: indexLngObj['en']['mediaNews#2_66'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-weekly-digest-30-july-5-august-1159f1cd8d28',
     screen: CINDX_WEEKLY_DIGEST_30_July_5_August,
-    name: indexLngObj['en']['mediaNews#85'],
-    text: indexLngObj['en']['mediaNews#86'],
+    name: indexLngObj['en']['mediaNews#2_67'],
+    text: indexLngObj['en']['mediaNews#2_68'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-legal-virtual-currency-wallet-services-8978410e3172',
     screen: Virtual_Currency_Wallet_Services,
-    name: indexLngObj['en']['mediaNews#87'],
-    text: indexLngObj['en']['mediaNews#88'],
+    name: indexLngObj['en']['mediaNews#2_69'],
+    text: indexLngObj['en']['mediaNews#2_70'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/how-cindx-influences-crypto-trading-7501619904de',
     screen: How_CINDX_Influences_Crypto_Trading,
-    name: indexLngObj['en']['mediaNews#89'],
-    text: indexLngObj['en']['mediaNews#90'],
+    name: indexLngObj['en']['mediaNews#2_71'],
+    text: indexLngObj['en']['mediaNews#2_72'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-weekly-digest-6-august-12-august-7e12e324eb1f',
     screen: CINDX_Weekly_digest_06_08_18_12_08_18,
-    name: indexLngObj['en']['mediaNews#91'],
-    text: indexLngObj['en']['mediaNews#92'],
+    name: indexLngObj['en']['mediaNews#2_73'],
+    text: indexLngObj['en']['mediaNews#2_74'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/https-medium-com-cindx-cindx-gets-the-highest-5-0-rating-from-trackico-781a0a31971e',
     screen: CINDX_gets_5_0_rating_on_TrackICO,
-    name: indexLngObj['en']['mediaNews#93'],
-    text: indexLngObj['en']['mediaNews#94'],
+    name: indexLngObj['en']['mediaNews#2_75'],
+    text: indexLngObj['en']['mediaNews#2_76'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-team-david-gutierrez-deeeaf66c992',
     screen: David_Gutierrez,
-    name: indexLngObj['en']['mediaNews#95'],
-    text: indexLngObj['en']['mediaNews#96'],
+    name: indexLngObj['en']['mediaNews#2_77'],
+    text: indexLngObj['en']['mediaNews#2_78'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/icobench-gives-4-8-to-cindx-70aa244ca7c4',
     screen: ICObench_gives_4_8_to_CINDX,
-    name: indexLngObj['en']['mediaNews#97'],
-    text: indexLngObj['en']['mediaNews#98'],
+    name: indexLngObj['en']['mediaNews#2_79'],
+    text: indexLngObj['en']['mediaNews#2_80'],
     source: 'www.medium.com'
   },
 ];
