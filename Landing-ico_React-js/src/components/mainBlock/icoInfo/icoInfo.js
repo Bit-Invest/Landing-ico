@@ -10,8 +10,9 @@ import Hot from '@images/rating-hot.svg';
 import rating_topicolist from '../../../media/rating_topicolist.png';
 import rating_trackico from '../../../media/rating_trackico.png';
 import rating_topicolist2 from '../../../media/rating_topicolist2.png';
-import rating_icomarks from '../../../media/rating_icomarks.png';
-import rating_icobench from '../../../media/rating_icobench.png';
+import rating_icomarks from '../../../media/rating-icomarks.svg';
+import rating_icobench from '../../../media/rating-icobench.png';
+import rating_topicolisth from '../../../media/rating-topicolist.svg';
 import './icoInfo.css';
 import { lng } from '../../../links'
 import indexLngObj from '../../../lngs/index'
@@ -57,7 +58,8 @@ export const IcoInfo = props => (
         <img src={rating_topicolist2} className={`${ROOT_CLASS}__rating-icon ico_rating`} />
         <br/>
         <img src={rating_icomarks} className={`${ROOT_CLASS}__rating-icon`} />
-        <img src={rating_icobench} className={`${ROOT_CLASS}__rating-icon`} />
+        <img src={rating_icobench} className={`${ROOT_CLASS}__rating-icon`} /> 
+        <img src={rating_topicolisth} className={`${ROOT_CLASS}__rating-icon`} />
       </div>
     </div>
   </div>
