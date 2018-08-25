@@ -62,7 +62,7 @@ const en = {
     'progressBarSale#11': 'Dec 3',
     'progressBarSale#12': 'Dec 17',
 
-    'cryptoAssetsManagement#1.1': 'CINDX is a Crytpto Asset Management Hub. We solve the problems of investors,',
+    'cryptoAssetsManagement#1.1': 'CINDX is a Сrypto Asset Management Hub. We solve the problems of investors,',
     'cryptoAssetsManagement#1.2': 'traders and developers',
     'cryptoAssetsManagement#2': 'СINDX.MARKETPLACE FOR INVESTORS',
     'cryptoAssetsManagement#3': 'Don’t worry about your knowledge and experience – the experts of crypto trading are here to help you',
