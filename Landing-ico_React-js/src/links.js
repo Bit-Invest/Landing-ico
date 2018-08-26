@@ -1,10 +1,10 @@
 import * as React from 'react';
-import wp_url from './docs/Whitepaper_CINDX_Edited_V_1.5.3.pdf';
-import pr_url from './docs/Presentation_ENG_vers_08.25.pdf';
-import op_url from './docs/One_pager_ENG_vers_08_25.pdf';
-import fm_url from './docs/Financial_Model_08_06.pdf'; 
-import ld_url from './docs/Legal_Docs_ENG_vers_08.25.pdf'; 
-import lD_url from './docs/Legal_Disclaimer.pdf';
+import wp_url from './docs/wp.pdf';
+import pr_url from './docs/pr.pdf';
+import op_url from './docs/op.pdf';
+import fm_url from './docs/fm.pdf'; 
+import ld_url from './docs/ld.pdf'; 
+import lD_url from './docs/ld1.pdf';
 
 let linkSearch = [], splitSearch = window.location.search.replace('?','').split('&');
 for(let i in splitSearch){
