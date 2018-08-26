@@ -2,6 +2,13 @@
   width: max-content;
 }
 
+.mail-form .timerRepText {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 0;
+}
+
 .mail-form__contentagree {
   color: #666666;
   margin-bottom: 20px;

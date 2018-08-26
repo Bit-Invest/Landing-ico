@@ -7,65 +7,55 @@ import indexLngObj from '../../lngs/index'
 
 const dataLegalSchedule = [
   {
-    text: indexLngObj[lng]['legalSchedule#2'],
+    text: 'RECEIVED LICENSE (FVR000110) TO EXCHANGE VIRTUAL CURRENCY TO FIAT SERVICES',
     version: '4.18',
     isCheck: true
   },
   {
-    text: indexLngObj[lng]['legalSchedule#3'],
+    text: 'APPLIED FOR TRADEMARK REGISTRATION IN ESTONIA AND EU',
     version: '5.18',
     isCheck: true
   },
   {
-    text: indexLngObj[lng]['legalSchedule#4'],
+    text: 'RECEIVED LICENSE (FFA000254) FOR OPERATING AS A FINANCIAL INSTITUTION',
     version: '5.18',
     isCheck: true
   },
   {
-    text: indexLngObj[lng]['legalSchedule#5'],
-    version: '5.18',
-    isCheck: true
-  },
-  {
-    text: indexLngObj[lng]['legalSchedule#6'],
+    text: 'WORKED OUT PROSPECTUS IN ACCORDANCE WITH ESTONIAN LAW',
     version: '7.18',
     isCheck: true
   },
   {
-    text: indexLngObj[lng]['legalSchedule#7'],
-    version: '7.18',
+    text: 'RECEIVED LICENSE (FRK000284) FOR A VIRTUAL CURRENCY WALLET SERVICE',
+    version: '8.18',
     isCheck: true
   },
   {
-    text: indexLngObj[lng]['legalSchedule#8'],
-    version: '7.18',
+    text: 'APPOINTED A PERSONAL DATA MANAGER TO MEET GDPR REQUIREMENTS',
+    version: '8.18',
     isCheck: true
   },
   {
-    text: indexLngObj[lng]['legalSchedule#9'],
+    text: 'REGISTERED THE PROSPECTUS EU 809-2004',
     version: '8.18',
     isCheck: false
   },
   {
-    text: indexLngObj[lng]['legalSchedule#10'],
+    text: 'REGISTERED UNDER EXEMPTION D IN SEC',
     version: '9.18',
-    isCheck: true
-  },
-  {
-    text: indexLngObj[lng]['legalSchedule#11'],
-    version: '10.18',
     isCheck: false
   },
   {
-    text: indexLngObj[lng]['legalSchedule#12'],
-    version: '10.18',
+    text: 'RECEIVED THE FSA LICENSE',
+    version: '1.19',
     isCheck: false
   },
   {
-    text: indexLngObj[lng]['legalSchedule#13'],
-    version: '10.18',
+    text: 'ISSUED CINX SECURITY TOKENS',
+    version: '1.19',
     isCheck: false
-  }
+  },
 ]
 
 export class LegalSchedule extends React.Component {

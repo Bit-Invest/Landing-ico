@@ -46,7 +46,7 @@ const en = {
     'mailForm#23': 'Start from $1',
     'mailForm#24': '1$ later',
     'mailForm#25': 'Your Email',
-    'mailForm#26': 'JOIN PRE-SALE',
+    'mailForm#26': 'BUY CINX TOKENS',
     'mailForm#27': 'AGREE & SUBMIT',
 
     'progressBarSale#1': 'Bonuses',
@@ -209,7 +209,7 @@ const en = {
     'legalSchedule#1': 'Legal Schedule',
     'legalSchedule#2': 'RECEIVED LICENSE (FVR000110) TO EXCHANGE VIRTUAL CURRENCY TO FIAT SERVICES',
     'legalSchedule#3': 'APPLIED FOR TRADEMARK REGISTRATION IN ESTONIA AND EU',
-    'legalSchedule#4': 'LICENSE FFA000254 FOR OPERATING AS A FINANCIAL INSTITUTION',
+    'legalSchedule#4': 'RECEIVED LICENSE (FFA000254) FOR OPERATING AS A FINANCIAL INSTITUTION',
     'legalSchedule#5': 'RECEIVED LICENSE FFA000254 FOR OPERATING AS A FINANCIAL INSTITUTION',
     'legalSchedule#6': 'WORKED OUT PROSPECTUS IN ACCORDANCE WITH ESTONIAN LAW',
     'legalSchedule#7': 'CLAIMED FSA LICENSE (ESTONIAN FINANCIAL SUPERVISION AUTHORITY)',
@@ -537,7 +537,7 @@ const en = {
     'teamAdvisersPartners#169': 'Start-up has not survived but since then Leonard has helped more than 400 start-ups',
     'teamAdvisersPartners#170': 'Overall Leonard has more than 10 years of experience with VC financing, fund structuring, due diligence (representing both funds and LPs). His advise to all entrepreneurs - do not follow trends, follow your interests.',
 
-    'joinTokenPreSale#1': 'Join Token Pre-Sale now!',
+    'joinTokenPreSale#1': 'Join Token Pre-Sale Now!',
     'joinTokenPreSale#2': 'JOIN PRE-SALE',
     'joinTokenPreSale#3': 'TEST MVP',
     'joinTokenPreSale#4': 'Head Office',

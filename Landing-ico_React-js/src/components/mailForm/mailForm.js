@@ -95,6 +95,46 @@ class MailForm extends React.Component {
   render() {
     const { props } = this;
     const { email, submitStatus, submitStatusText } = this.state;
+    const end = new Date("2018/08/26 12:00:00 GMT-0000");
+    const now = new Date();
+    const distance = end - now;
+    const sale_step = distance > 0 ? 0 : 1;
+
+    const step_content = {
+      title1: [
+        'Security Token Sale Starts with',
+        'Security Token Sale Is Live',
+        'Security Token Sale Is Live'
+      ],
+      bonus: [
+        '40% BONUS',
+        '40% BONUS',
+        '25% BONUS'
+      ],
+      desc1: [
+        <div>for the first 100 buyers <br /> Token sale starts in</div> 
+      ],
+      timer: [
+        <Timer />,
+        <div className="timerRepText">BE THE EARLY BIRD</div>,
+        <Timer />,
+      ],
+      textDescFromPrice: [
+        'Starts from $1',
+        '$1 now',
+        '$1 now'
+      ],
+      fromPrice: [
+        '1.40',
+        '1.40',
+        '1.25'
+      ],
+      toPrice: [
+        '1.25',
+        '1.25',
+        '1.20'
+      ]
+    };
 
     return (
       <div className={ROOT_CLASS}>
@@ -125,24 +165,24 @@ class MailForm extends React.Component {
           </div>
           <div style={{display: email ? 'none' : null }} className="timerContent">
             <div className={`${ROOT_CLASS}__title`}>
-              { indexLngObj[lng]['mailForm#19'] }
+              { step_content.title1[sale_step] }
             </div>
             <div className={`${ROOT_CLASS}__bonus`}>
-              { indexLngObj[lng]['mailForm#20'] }
+              { step_content.bonus[sale_step] }
             </div>
             <div className={`${ROOT_CLASS}__description`}>
-              { indexLngObj[lng]['mailForm#21'] } <br/> { indexLngObj[lng]['mailForm#22'] }
+              { step_content.desc1[sale_step] }
             </div>
             <div className={`${ROOT_CLASS}__timer`}>
-              <Timer />
+              { step_content.timer[sale_step] }
             </div>
             <div className={`${ROOT_CLASS}__cost`}>
               <div className={`${ROOT_CLASS}__now`}>
                 <div className={`${ROOT_CLASS}__cost-title`}>
-                  { indexLngObj[lng]['mailForm#23'] }
+                  { step_content.textDescFromPrice[sale_step] }
                 </div>
                 <div className={`${ROOT_CLASS}__cost-value`}>
-                  {props.now} CINX
+                  {step_content.fromPrice[sale_step]} CINX
                 </div>
               </div>
               <div className={`${ROOT_CLASS}__arrows`}></div>
@@ -151,7 +191,7 @@ class MailForm extends React.Component {
                   { indexLngObj[lng]['mailForm#24'] }
                 </div>
                 <div className={`${ROOT_CLASS}__cost-value`}>
-                  {props.later} CINX
+                  {step_content.toPrice[sale_step]} CINX
                 </div>
               </div>
             </div>
