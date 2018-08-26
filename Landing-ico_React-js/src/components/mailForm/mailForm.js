@@ -160,7 +160,7 @@ class MailForm extends React.Component {
               <p>{ indexLngObj[lng]['mailForm#14'] }</p>
               <p>{ indexLngObj[lng]['mailForm#15'] }</p>
               <p>{ indexLngObj[lng]['mailForm#16'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#17'] } <a href={links.lD} target="_blank" >{ indexLngObj[lng]['mailForm#18'] }</a></p>
+              <p>{ indexLngObj[lng]['mailForm#17'] } <a href={links.pp} target="_blank" >{ indexLngObj[lng]['mailForm#18'] }</a></p>
             </div>
           </div>
           <div style={{display: email ? 'none' : null }} className="timerContent">

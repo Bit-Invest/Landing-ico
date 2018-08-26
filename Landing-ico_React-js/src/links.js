@@ -1,10 +1,4 @@
 import * as React from 'react';
-import wp_url from './docs/wp.pdf';
-import pr_url from './docs/pr.pdf';
-import op_url from './docs/op.pdf';
-import fm_url from './docs/fm.pdf'; 
-import ld_url from './docs/ld.pdf'; 
-import lD_url from './docs/ld1.pdf';
 
 let linkSearch = [], splitSearch = window.location.search.replace('?','').split('&');
 for(let i in splitSearch){
@@ -64,13 +58,14 @@ export const links = {
   anchor: '4',
   mvp: 'http://mvp.cindx.io/registration/sign-in',
   joinpresale: 'https://my.cindx.io/registration' + `?clickid=${linkSearch['clickid']}`,
-  wp: wp_url,
-  pr: pr_url,
-  op: op_url,
-  fm: fm_url,
-  ld: ld_url,
+  wp: 'https://static.cindx.io/Whitepaper_CINDX_Edited_V_1.5.3.pdf',
+  pr: 'https://static.cindx.io/Presentation_ENG_vers_08.25.pdf',
+  op: 'https://static.cindx.io/One_pager_ENG_vers_08_25.pdf',
+  fm: 'https://static.cindx.io/Financial_Model_08_25.pdf',
+  ld: 'https://static.cindx.io/Legal_Docs_ENG_vers_08.25.pdf',
   buytokens: 'https://my.cindx.io/registration' + `?clickid=${linkSearch['clickid']}`,
-  lD: lD_url,
+  lD: 'https://static.cindx.io/Legal_Disclaimer.pdf',
+  pp: 'https://static.cindx.io/Privacy_Policy.pdf',
   gaid: getGAID,
   clickid
 };
