@@ -6,7 +6,7 @@ for(let i in splitSearch){
   linkSearch[key_val_split[0]] = key_val_split[1];
 }
 
-const getGAID = function(){
+export const getGAID = function(){
   var match = document.cookie.match('(?:^|;)\\s*_ga=([^;]*)');
   var raw = (match) ? decodeURIComponent(match[1]) : null;
   if (raw) {

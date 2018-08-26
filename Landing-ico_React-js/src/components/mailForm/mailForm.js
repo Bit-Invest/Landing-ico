@@ -6,7 +6,7 @@ import { showPopUp, changeUrlPopupVideo } from '../../store/store';
 import { bindActionCreators } from 'redux';
 import play_button_youtube from '../../media/play_button_youtube.png';
 import { connect } from 'react-redux';
-import { links, lng } from '../../links.js';
+import { links, lng, getGAID } from '../../links.js';
 import indexLngObj from '../../lngs/index'
 import './mailForm.css';
 
@@ -81,6 +81,10 @@ class MailForm extends React.Component {
             submitStatus: 2,
             submitStatusText: indexLngObj[lng]['mailForm#4']
           });
+
+          setTimeout(()=>{
+            window.location.href = `${links.joinpresale}&gaid=${getGAID()}&mail=${email}`;
+          }, 1000);
         }
       })
       .catch((error) => {
