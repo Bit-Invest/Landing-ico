@@ -26,6 +26,11 @@
   padding-left: 20px;
 }
 
+.mail-form__contentagreescroll p {
+  margin: 0px;
+  margin-top: 20px;
+}
+
 .mail-form__contentagreescroll .boldtext {
   font-weight: 700;
   margin-top: 0;
@@ -35,6 +40,8 @@
   text-decoration: underline;
   color: #2ba4fc;
 }
+
+
 
 .mail-form__content {
   line-height: normal;
