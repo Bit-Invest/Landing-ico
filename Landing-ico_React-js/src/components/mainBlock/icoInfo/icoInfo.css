@@ -20,6 +20,10 @@
   width: 250px;
 }
 
+.ico-info__href-rating-icon {
+  display: block;
+}
+
 .ico-info__rating-icon {
   width: 71px;
   height: 55px;

@@ -53,13 +53,23 @@ export const IcoInfo = props => (
         />
       </div>
       <div className={`${ROOT_CLASS}__ratings`}>
-        <img src={rating_topicolist} className={`${ROOT_CLASS}__rating-icon`} />
-        <img src={rating_trackico} className={`${ROOT_CLASS}__rating-icon`} />
+        <a target="_blank" href='https://topicolist.com/' className={`${ROOT_CLASS}__href-rating-icon`}>
+          <img src={rating_topicolist} className={`${ROOT_CLASS}__rating-icon`} />
+        </a>
+        <a target="_blank" href='https://www.trackico.io/ico/cindx/#statistics' className={`${ROOT_CLASS}__href-rating-icon`}>
+          <img src={rating_trackico} className={`${ROOT_CLASS}__rating-icon`} />
+        </a>
         <img src={rating_topicolist2} className={`${ROOT_CLASS}__rating-icon ico_rating`} />
         <br/>
-        <img src={rating_icomarks} className={`${ROOT_CLASS}__rating-icon`} />
-        <img src={rating_icobench} className={`${ROOT_CLASS}__rating-icon`} /> 
-        <img src={rating_topicolisth} className={`${ROOT_CLASS}__rating-icon`} />
+        <a target="_blank" href='https://icomarks.com/ico/cindx' className={`${ROOT_CLASS}__href-rating-icon`}>
+          <img src={rating_icomarks} className={`${ROOT_CLASS}__rating-icon`} />
+        </a>
+        <a target="_blank" href='https://icobench.com/ico/cindx' className={`${ROOT_CLASS}__href-rating-icon`}>
+          <img src={rating_icobench} className={`${ROOT_CLASS}__rating-icon`} />
+        </a>
+        <a target="_blank" href='https://icoholder.com/en/cindx-22233' className={`${ROOT_CLASS}__href-rating-icon`}>
+          <img src={rating_topicolisth} className={`${ROOT_CLASS}__rating-icon`} />
+        </a>
       </div>
     </div>
   </div>
