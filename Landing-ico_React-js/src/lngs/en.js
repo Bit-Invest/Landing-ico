@@ -365,6 +365,12 @@ const en = {
     'mediaNews#2_84': 'Enjoy reading what inspired Yuriy Avdeev to create a project that will help all participants of the crypto market to be profitably engaged - CINDX.',
     'mediaNews#2_85': 'Weekly digest (13.08.18 - 19.08.18)',
     'mediaNews#2_86': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don\'t miss!',
+    'mediaNews#2_87': 'Dip your Toe in Crypto',
+    'mediaNews#2_88': "It is never late to change your mind. It’s no surprise that Wall Street bankers change their minds in favour of crypto. Enjoy reading CINDX review on the current market situation!",
+    'mediaNews#2_89': 'Yuriy Avdeev, CEO of the CINDX project',
+    'mediaNews#2_90': 'Enjoy reading what inspired Yuriy Avdeev to create a project that will help all participants of the crypto market to be profitably engaged - CINDX.',
+    'mediaNews#2_91': 'Weekly digest (13.08.18 - 19.08.18)',
+    'mediaNews#2_92': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don"t miss',
 
     'teamAdvisersPartners#1': 'Team of 50+ Members',
     'teamAdvisersPartners#2': 'Advisers',

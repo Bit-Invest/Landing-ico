@@ -406,6 +406,27 @@ const news = [
     text: indexLngObj['en']['mediaNews#2_80'],
     source: 'www.medium.com'
   },
+  {
+    videoSrc: 'https-medium-com-cindx-dip-your-toe-in-crypto-3c8f54650e06',
+    screen: ICObench_gives_4_8_to_CINDX, // заменить
+    name: indexLngObj['en']['mediaNews#2_87'],
+    text: indexLngObj['en']['mediaNews#2_88'],
+    source: 'www.medium.com'
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/cindx-team-yuriy-avdeev-e7a747d4c2e3',
+    screen: ICObench_gives_4_8_to_CINDX, // заменить
+    name: indexLngObj['en']['mediaNews#2_89'],
+    text: indexLngObj['en']['mediaNews#2_90'],
+    source: 'www.medium.com'
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/cindx-weekly-digest-13-august-19-august-7d965ab073c0',
+    screen: ICObench_gives_4_8_to_CINDX, // заменить
+    name: indexLngObj['en']['mediaNews#2_91'],
+    text: indexLngObj['en']['mediaNews#2_92'],
+    source: 'www.medium.com'
+  },
 ];
 
 export class MediaNews extends React.Component {
