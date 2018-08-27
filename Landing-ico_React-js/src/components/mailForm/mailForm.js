@@ -116,7 +116,7 @@ class MailForm extends React.Component {
         '25% BONUS'
       ],
       desc1: [
-        <div>for the first 100 buyers <br /> Token sale starts in</div> 
+        <div>for the first 100 buyers <br /> Token sale starts in</div>
       ],
       timer: [
         <Timer />,
@@ -153,17 +153,12 @@ class MailForm extends React.Component {
           <div style={{display: !email ? 'none' : null }} className={`${ROOT_CLASS}__contentagree`}>
             <div className={`${ROOT_CLASS}__contentagreescroll`}>
               <p className="boldtext">{ indexLngObj[lng]['mailForm#6'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#7'] }</p>
+              <p style={{margin: 0}}>{ indexLngObj[lng]['mailForm#7'] }</p>
               <p>{ indexLngObj[lng]['mailForm#8'] }</p>
+              <a target="_blank" href="http://support@icopromo.com">support@icopromo.com</a>
               <p>{ indexLngObj[lng]['mailForm#9'] }</p>
+              <a target="_blank" href="https://sumsub.com/privacy-and-cookie-policy">Privacy Policy</a>
               <p>{ indexLngObj[lng]['mailForm#10'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#11'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#12'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#11'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#13'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#14'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#15'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#16'] }</p>
               <p>{ indexLngObj[lng]['mailForm#17'] } <a href={links.pp} target="_blank" >{ indexLngObj[lng]['mailForm#18'] }</a></p>
             </div>
           </div>
