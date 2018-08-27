@@ -147,6 +147,8 @@
 
 .block_5 .slick-slider {
   position: static;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .block_5 .slick-next,

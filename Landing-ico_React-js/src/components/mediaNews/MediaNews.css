@@ -106,8 +106,9 @@
 
 .block_7 .txt .bg .details {
   color: #6c5ed6;
-  padding-top: 20px;
   margin: 0;
+  position: absolute;
+  bottom: 20px;
 }
 
 .block_7 .slick-slide {
@@ -187,6 +188,8 @@
   color: #6c5ed6;
   padding-top: 30px;
   margin: 0;
+  position: absolute;
+  bottom: 20px;
 }
 
 .block_7 .txtNews h3 {
