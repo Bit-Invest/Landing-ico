@@ -9,6 +9,7 @@ import MediaBitcoinist from '../../media/media/Bitcoinist.png'
 import MediaTokendesk from '../../media/media/tokendesk.png'
 import MediaBtcmanager from '../../media/media/BTCManager.png'
 import MediaBlockonomi from '../../media/media/blockonomi-logo.png'
+import MediaCNN from '../../media/media/CCN.png'
 import { lng } from '../../links'
 import indexLngObj from '../../lngs/index'
 
@@ -59,6 +60,13 @@ import MediaCoinfox from '../../media/media/CoinFox.png'
 import './MediaNews.css';
 
 const media = [
+  {
+    screen: MediaCNN,
+    type: 'cnn',
+    name: indexLngObj['en']['mediaNews#1_19'],
+    text: indexLngObj['en']['mediaNews#1_20'],
+    src: 'https://www.ccn.com/cindx-crypto-asset-management-hub-adopts-bancor-protocol/'
+  },
   {
     screen: MediaAmbcrypto,
     type: 'ambcrypto',
@@ -114,7 +122,7 @@ const media = [
     name: indexLngObj['en']['mediaNews#1_15'],
     text: indexLngObj['en']['mediaNews#1_16'],
     src: 'http://www.coinfox.info/news/10194-5-tips-from-cindx-crypto-assets-management-hub-how-to-avoid-being-cheated'
-  },
+  }
 ]
 
 const news = [
@@ -396,6 +404,27 @@ const news = [
     screen: ICObench_gives_4_8_to_CINDX,
     name: indexLngObj['en']['mediaNews#2_79'],
     text: indexLngObj['en']['mediaNews#2_80'],
+    source: 'www.medium.com'
+  },
+  {
+    videoSrc: 'https-medium-com-cindx-dip-your-toe-in-crypto-3c8f54650e06',
+    screen: ICObench_gives_4_8_to_CINDX, // заменить
+    name: indexLngObj['en']['mediaNews#2_87'],
+    text: indexLngObj['en']['mediaNews#2_88'],
+    source: 'www.medium.com'
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/cindx-team-yuriy-avdeev-e7a747d4c2e3',
+    screen: ICObench_gives_4_8_to_CINDX, // заменить
+    name: indexLngObj['en']['mediaNews#2_89'],
+    text: indexLngObj['en']['mediaNews#2_90'],
+    source: 'www.medium.com'
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/cindx-weekly-digest-13-august-19-august-7d965ab073c0',
+    screen: ICObench_gives_4_8_to_CINDX, // заменить
+    name: indexLngObj['en']['mediaNews#2_91'],
+    text: indexLngObj['en']['mediaNews#2_92'],
     source: 'www.medium.com'
   },
 ];

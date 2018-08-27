@@ -54,7 +54,7 @@ const teamInfo = [
     fackt2: indexLngObj[lng]['teamAdvisersPartners#7'],
     fackt3: indexLngObj[lng]['teamAdvisersPartners#8'],
     src: 'https://www.linkedin.com/in/yuriyavdeev/',
-    m: ''
+    m: 'https://medium.com/cindx/cindx-team-yuriy-avdeev-e7a747d4c2e3'
   },
   {
     img: Val_Jerdes,

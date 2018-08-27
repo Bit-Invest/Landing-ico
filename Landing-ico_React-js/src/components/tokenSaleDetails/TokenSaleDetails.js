@@ -78,7 +78,11 @@ class TokenInfo extends React.Component {
   }
 
   openPrompt = () => {
-    this.setState({ prompt: !this.state.prompt });
+    this.setState({ prompt: true });
+  }
+
+  closePrompt = () => {
+    this.setState({ prompt: false });
   }
 
 
@@ -86,7 +90,7 @@ class TokenInfo extends React.Component {
     const { prompt } = this.state;
     if ( prompt ) {
       return (
-        <div onClick={this.openPrompt} className="prompt">
+        <div onMouseLeave={this.closePrompt} className="prompt">
           <p>
             { indexLngObj[lng]['tokenSaleDetails#40'] }
           </p>
@@ -112,11 +116,11 @@ class TokenInfo extends React.Component {
         <p>{ indexLngObj[lng]['tokenSaleDetails#9'] } <span>CINX</span></p>
         <p>{ indexLngObj[lng]['tokenSaleDetails#10'] } <span>26.08.2018</span></p>
         <p>{ indexLngObj[lng]['tokenSaleDetails#11'] } <span>51,500,000</span></p>
-        <p>{ indexLngObj[lng]['tokenSaleDetails#12'] } <span>$ 1.00=1.00</span></p>
+        <p>{ indexLngObj[lng]['tokenSaleDetails#12'] } </p>
         <div className="row">
-          <p><span>CINXO=1.00 CINX</span></p>
+          <p><span>$1.00 = 1.00 CINXO = 1.00 CINX</span></p>
           <div
-            onClick={this.openPrompt}
+            onMouseEnter={this.openPrompt}
            className="promptCircle"
           >?</div>
         </div>
