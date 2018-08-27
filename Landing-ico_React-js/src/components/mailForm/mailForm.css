@@ -109,7 +109,7 @@
   margin-top: 10.1px;
 }
 .mail-form__video {
-  background-image: url(../../media/mainBlock_screen.png);
+  background-image: url(../../media/new_mainBlock_screen.png);
   width: 429px;
   height: 140px;
   margin: 0 auto;
@@ -121,11 +121,13 @@
   border-top-right-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .mail-form__play {
   width: 40px;
   height: 40px;
   cursor: pointer;
+  display: none;
 }
 
 .button_gradient.focus_bun_grdn:hover {

@@ -16,13 +16,7 @@ import indexLngObj from '../../lngs/index'
 
 const RigthVideo = (props) => {
   return (
-    <div className="right" onClick={() => props.video_show('https://www.youtube.com/embed/5Iy_etsH7zo')}>
-      <img
-        src={play_button_youtube}
-        alt="CINDEX"
-        className="play"
-      />
-    </div>
+    <div className="right" onClick={() => props.video_show('https://www.youtube.com/embed/5Iy_etsH7zo')}></div>
   );
 };
 

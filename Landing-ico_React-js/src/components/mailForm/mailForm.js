@@ -142,7 +142,7 @@ class MailForm extends React.Component {
 
     return (
       <div className={ROOT_CLASS}>
-        <div className={`${ROOT_CLASS}__video`} onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/nmh_BfGHORE')}>
+        <div className={`${ROOT_CLASS}__video`} onClick={() => this.showVideoInPopUp('https://player.vimeo.com/video/286746544')}>
           <img
             src={play_button_youtube}
             alt="CINDEX"

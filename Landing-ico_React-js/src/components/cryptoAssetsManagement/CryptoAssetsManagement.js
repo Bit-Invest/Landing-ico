@@ -7,8 +7,12 @@ import play_button_youtube from '../../media/play_button_youtube.png';
 import './cryptoAssetsManagement.css';
 import { lng } from '../../links'
 import indexLngObj from '../../lngs/index'
+import PopUpDisc from '../popUpDisc/PopUpDisc'
 
 class CryptoAssetsManagement extends React.Component {
+  state = {
+    isOpenDisc: true
+  }
   showVideoInPopUp = (url) => {
     this.props.changeUrlPopupVideo(url)
     this.props.showPopUp()
@@ -26,14 +30,14 @@ class CryptoAssetsManagement extends React.Component {
               <br/>
               { indexLngObj[lng]['cryptoAssetsManagement#1.2'] }
             </h2>
-            {/* <div className="video" onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/ZLA5tMEJS7M')}>
+            <div className="video" onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/nmh_BfGHORE')}>
               <img
                 src={play_button_youtube}
                 alt="CINDEX"
                 className="play"
 
               />
-            </div> */}
+            </div>
           </div>
           <div className="problemBlock">
             <div className="txt">
@@ -93,6 +97,7 @@ class CryptoAssetsManagement extends React.Component {
             </div>
           </div>
         </div>
+        {/* <PopUpDisc /> */}
       </div>
     )
   }

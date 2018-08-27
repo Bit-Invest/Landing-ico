@@ -35,7 +35,7 @@ class PopUpManager extends React.Component {
       <div className={this.buildRootClass()} onClick={this.onClickClose}>
         <div className="wrapper-video-popup">
           <div onClick={this.onClickClose} className="close"></div>
-          <div className="showPopUp">
+          <div className={this.buildUrlPoup() !== 'https://player.vimeo.com/video/286746544' ? 'showPopUp' : 'showAnotherPopUp' }>
             <iframe src={this.buildUrlPoup()}></iframe>
           </div>
         </div>

@@ -27,6 +27,7 @@
 	bottom: 0;
 	height: 70%;
 	animation: guyAnimate 6s;
+	animation-delay: 1.5s;
 	opacity: 0;
 }
 
