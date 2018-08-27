@@ -1,6 +1,6 @@
 // Английский
 const en = {
-    'mainBlock#1': 'Make Your Crypto Investments',
+    'mainBlock#1': 'Making Crypto Investments',
     'mainBlock#2': 'Easy, Secure and Fast.',
     'mainBlock#3': 'Join Our Security Token Sale',
 
@@ -276,6 +276,8 @@ const en = {
     'mediaNews#1_16': 'The team behind the CINDX crypto assets management hub has created a helpful set of guidelines on how not to become victims of unfair play, so you can learn what should be primarily taken into account when evaluating ICOs before investing in them.',
     'mediaNews#1_17': 'CINDX Crypto Asset Management Hub Adopts Bancor Protocol',
     'mediaNews#1_18': 'CINDX is delighted to announce that a number of new integrations with top industry players are underway, each of which will make the life of the users of the platform easier and richer. These new integrations include the decision to adopt the Bancor protocol to provide continuous liquidity for the CINDX platform.',
+    'mediaNews#1_19': 'CINDX Crypto Asset Management Hub Adopts Bancor Protocol',
+    'mediaNews#1_20': 'CINDX is delighted to announce that a number of new integrations with top industry players are underway, each of which will make the life of the users of the platform easier and richer. These new integrations include the decision to adopt the Bancor protocol to provide continuous liquidity for the CINDX platform.',
     // News
     'mediaNews#2_1': 'CINDX meets Ian Balina',
     'mediaNews#2_2': 'CINDX pitch to the one of the TOP10 crypto gurus in the world in the Cryptobazar event.',
