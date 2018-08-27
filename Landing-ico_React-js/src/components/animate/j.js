@@ -4,6 +4,7 @@ import mouns from '../../images/mountain_new23.70fbb83c.svg';
 import sun from '../../images/Sun.svg';
 import kabinka_2 from '../../images/kabinka_2.1ee5cce3.svg';
 import finish_guy_gif from '../../images/finish_guy.gif';
+import guy_gif from '../../media/Guy.f182b798.gif';
 
 var resizeFunc = (function() {
   var pen = 0;
@@ -512,8 +513,19 @@ var resizeFunc = (function() {
 
   getOffsetExitAnimate();
 
+  var anm_blocks = document.getElementById('animateHtml');
+
   (function() {
+    var menu_fixed = false;
     window.onscroll = function() {
+      if(window.scrollY>50&&!menu_fixed){
+        menu_fixed = true;
+        anm_blocks.style.display = 'none';
+      }else if(window.scrollY<50&&menu_fixed){
+        menu_fixed = false;
+        anm_blocks.style.display = 'block';
+      }
+
       var vh = window.innerHeight;
       var th_scroll = window.scrollY == 0 ? 1 : window.scrollY;
 
@@ -523,8 +535,29 @@ var resizeFunc = (function() {
         window.requestAnimationFrame(animateDraw);
       }
     };
-  })()
+  })();
 
+  function html_rr() {
+    anm_blocks.innerHTML = null;
+    var guy_anm_parent = document.createElement('div');
+    guy_anm_parent.className = 'guy_anm_parent';
+    guy_anm_parent.style['width'] =   ((pr_px(120, 0) * .17)) + 'px';
+    guy_anm_parent.style['height'] = ((pr_px(120, 0) * .04 * 1.2)) + 'px';
+    guy_anm_parent.style['left'] =  ((pr_px(100, 0) - (pr_px(120, 0) * .025)) - (pr_px(58.75, 0))) + 'px';
+    guy_anm_parent.style['top'] =     ((pr_px(100, 1) - (pr_px(120, 0) * .04 * .7) - (pr_px(2.8, 0)))) + 'px';
+    var guyImage = new Image();
+    guyImage.src = guy_gif;
+    var guy_anm_bl = document.createElement('img');
+    guy_anm_bl.src = guyImage.src;
+    guy_anm_bl.onload = function() {
+      guy_anm_bl.className = 'guy_anm_bl';
+      //start_time_anm[0]();
+    };
+    guy_anm_parent.appendChild(guy_anm_bl);
+    anm_blocks.appendChild(guy_anm_parent);
+  };
+
+  html_rr();
   init();
 });
 
