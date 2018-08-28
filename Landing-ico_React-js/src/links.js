@@ -70,4 +70,39 @@ export const links = {
   clickid
 };
 
-export const lng = 'en';
+/*
+const localizations = {
+  'ar': 14902153,
+  'en': 14903217,
+  'zn': 14902301,
+  'fr': 14902241,
+  'de': 14902193,
+  'ko': 14902273,
+  'ja': 14902253,
+  'es': 14902205,
+  'tr': 14902169,
+  'vi': 14902297,
+  'pt': 14902289,
+};
+*/
+
+/*
+Ar arbic
+Zn chine
+Fr france
+De - germany
+Ko - korea
+Ja - japan
+Es Испания
+Tr турецкий
+Vi вьетнамский
+Pt Португалия
+*/
+
+export const list_lngs = 'en zn'; //языки который мы используем нужно тут указать
+const user_lng = window.localStorage.getItem('loc') || navigator.language || 'en';
+const user_loc = user_lng.split('_')[0].split('-')[0];
+const loc = ((list_lngs.indexOf(user_loc) != -1) ? user_loc : 'en');
+
+export const lng = loc;
+

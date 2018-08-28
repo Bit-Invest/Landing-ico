@@ -5,8 +5,8 @@ import arrow_public from '../../images/arrow_public.png';
 import {links} from '../../links.js';
 import { Join } from '../../links.js';
 import './Menu.css';
-import { lng } from '../../links'
-import indexLngObj from '../../lngs/index'
+import { lng, list_lngs } from '../../links';
+import indexLngObj from '../../lngs/index';
 
 export class Menu extends React.Component {
   constructor(props){
@@ -78,14 +78,25 @@ export class Menu extends React.Component {
     }
   }
 
+  changeLoc = (e) => {
+    window.localStorage.setItem('loc', e);
+    window.location.reload();
+  }
+
   renderLanguage = () => {
     const { language } = this.state;
     if (language) {
       return (
         <div onMouseLeave={this.closeLanguage} className="language">
-          <div className="show-language">
-            <a className="itemMini2">{ indexLngObj[lng]['menu#6'] }</a>
-          </div>
+          {
+            (list_lngs.split(' ')).map((e, i) => {
+              return (
+                <div className="show-language" key={i} value={e} onClick={()=>this.changeLoc(e)}> 
+                  <a className="itemMini2">{ e.toUpperCase() }</a>
+                </div>
+              )
+            })
+          }
         </div>
       )
     } else {
@@ -152,7 +163,7 @@ export class Menu extends React.Component {
               onMouseMove={this.openLanguage}
               className="drop-down"
             >
-              <a>{ indexLngObj[lng]['menu#6'] }</a>
+              <a>{ lng.toUpperCase() }</a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
               <div className="publickOnMouseLeave"></div>
               {this.renderLanguage()}
