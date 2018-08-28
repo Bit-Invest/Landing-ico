@@ -150,6 +150,7 @@ class FeedbackProject extends React.Component {
     const settings = {
       infinite: true,
       swipeToSlide: true,
+      lazyLoad: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1

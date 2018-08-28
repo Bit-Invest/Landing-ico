@@ -205,6 +205,10 @@
   font-weight: 300;
 }
 
+.block_7 .txt .bg {
+  width: 340px;
+}
+
 .block_7 .txtNews .news-class {
   color: #6c5ed6;
   text-decoration: none;
@@ -215,7 +219,7 @@
 
 @media (max-width: 1023px) {
   .block_7 .txt .bg {
-    width: 260px;
+    width: 300px;
   }
   .block_7  .slick-slider {
     width: 940px;

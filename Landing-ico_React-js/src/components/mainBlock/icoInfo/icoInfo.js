@@ -25,7 +25,7 @@ export const IcoInfo = props => (
       <div className={`${ROOT_CLASS}__accept`}>{ indexLngObj[lng]['icoInfo#1'] }</div>
       <img className={`${ROOT_CLASS}__currency_icons`} src={currency_icons} alt={"CINDEX"}/>
       <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#2'] } <span>$21,000,000</span></div>
-      <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>$1,100,000 / $3,800,000</span></div>
+      <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>$1,138,000 / $3,800,000</span></div>
       <div className={`${ROOT_CLASS}__progressBar`}>
         <div className={`${ROOT_CLASS}__progress`}></div>
       </div>

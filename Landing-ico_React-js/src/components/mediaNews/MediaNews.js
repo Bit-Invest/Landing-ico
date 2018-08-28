@@ -407,7 +407,7 @@ const news = [
     source: 'www.medium.com'
   },
   {
-    videoSrc: 'https-medium-com-cindx-dip-your-toe-in-crypto-3c8f54650e06',
+    videoSrc: 'https://medium.com/cindx/dip-your-toe-in-crypto-3c8f54650e06',
     screen: ICObench_gives_4_8_to_CINDX, // заменить
     name: indexLngObj['en']['mediaNews#2_87'],
     text: indexLngObj['en']['mediaNews#2_88'],
@@ -469,6 +469,7 @@ export class MediaNews extends React.Component {
     const settings = {
       infinite: true,
       swipeToSlide: true,
+      lazyLoad: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1
@@ -476,6 +477,7 @@ export class MediaNews extends React.Component {
     const settingsNews = {
       arrows: true,
       swipeToSlide: true,
+      lazyLoad: true,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
@@ -484,13 +486,15 @@ export class MediaNews extends React.Component {
     const settings2 = {
       infinite: true,
       swipeToSlide: true,
+      lazyLoad: true,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     };
     const settingsNews2 = {
       arrows: true,
       infinite: true,
+      lazyLoad: true,
       swipeToSlide: true,
       speed: 500,
       slidesToShow: 2,
@@ -499,6 +503,7 @@ export class MediaNews extends React.Component {
     const settings3 = {
       infinite: true,
       swipeToSlide: true,
+      lazyLoad: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
@@ -507,6 +512,7 @@ export class MediaNews extends React.Component {
       arrows: true,
       infinite: true,
       swipeToSlide: true,
+      lazyLoad: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
