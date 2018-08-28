@@ -1593,7 +1593,7 @@ body.compensate-for-scrollbar {
     right: 0;
     top: 0;
     height: 38px;
-    width: 24px;
+    width: 21px;
     margin-top: -98px;
   }
 
@@ -1752,6 +1752,13 @@ body.compensate-for-scrollbar {
       display: flex;
       justify-content: center;
     }
+    .block_5 .slick-slider {
+      width: 100%;
+    }
+    .block_5 .container {
+      margin: 0;
+      margin-top: 70px;
+    }
     .block_5 h2 {
       font-size: 32px;
       margin-left: 75px;
@@ -1762,8 +1769,7 @@ body.compensate-for-scrollbar {
     }
     .block_5 .settings2 {
       display: block;
-      margin: 0 75px;
-      width: 620px;
+      width: 80%;
       margin: 0 auto;
     }
     .block_5 .settings2 .cont_item {
@@ -2108,7 +2114,9 @@ body.compensate-for-scrollbar {
   .block_5 .slick-next, .block_5 .slick-prev {
     display: none!important;
   }
-
+  .block_5 .slick-slider {
+    width: 85%;
+  }
   .block_5 .settings2 {
     display: none;
   }
