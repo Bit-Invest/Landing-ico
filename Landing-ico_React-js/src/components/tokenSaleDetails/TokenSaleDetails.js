@@ -2,7 +2,7 @@ import * as React from 'react';
 import block_3_ico_1 from '../../images/block_3_ico_1.png';
 import block_3_ico_2 from '../../images/block_3_ico_2.png';
 import block_3_ico_3 from '../../images/block_3_ico_3.png';
-import imageCircle from '../../images/block_4_cont_4_img.png'
+import imageCircle from '../../images/block_4_cont_4_img.png';
 
 import { links, Join, lng } from '../../links.js';
 import indexLngObj from '../../lngs/index'
@@ -90,19 +90,40 @@ class TokenInfo extends React.Component {
     const { prompt } = this.state;
     if ( prompt ) {
       return (
-        <div onMouseLeave={this.closePrompt} className="prompt">
-          <p>
-            { indexLngObj[lng]['tokenSaleDetails#40'] }
-          </p>
-          <p>
-            { indexLngObj[lng]['tokenSaleDetails#41'] }
-          </p>
-          <p>
-            { indexLngObj[lng]['tokenSaleDetails#42'] }
-          </p>
-          <p>
-            { indexLngObj[lng]['tokenSaleDetails#43'] }
-          </p>
+        <div className="pop-up">
+          <div className='bg'>
+            <div onMouseLeave={this.closePrompt} className="mobile-pop-up-block">
+              <div onClick={this.closePrompt} className="close-pop-up">x</div>
+              <div className="prompt">
+                <p>
+                  { indexLngObj[lng]['tokenSaleDetails#40'] }
+                </p>
+                <p>
+                  { indexLngObj[lng]['tokenSaleDetails#41'] }
+                </p>
+                <p>
+                  { indexLngObj[lng]['tokenSaleDetails#42'] }
+                </p>
+                <p>
+                  { indexLngObj[lng]['tokenSaleDetails#43'] }
+                </p>
+              </div>
+            </div>
+          </div>
+          <div onMouseLeave={this.closePrompt} className="prompt desktop-prompt">
+            <p>
+              { indexLngObj[lng]['tokenSaleDetails#40'] }
+            </p>
+            <p>
+              { indexLngObj[lng]['tokenSaleDetails#41'] }
+            </p>
+            <p>
+              { indexLngObj[lng]['tokenSaleDetails#42'] }
+            </p>
+            <p>
+              { indexLngObj[lng]['tokenSaleDetails#43'] }
+            </p>
+          </div>
         </div>
       )
     }

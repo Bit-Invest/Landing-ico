@@ -1716,8 +1716,41 @@ body.compensate-for-scrollbar {
       text-align: center;
       margin: 50px 0;
     }
-    .block_4 .cont_1 .row .promptCircle {
+    .block_4 .cont_1 .mobile-pop-up-block  {
+      display: block;
+      width: 490px;
+      height: auto;
+      position: relative;
+      left: 0;
+      cursor: pointer;
+      z-index: 20;
+    }
+    .block_4 .cont_1 .prompt {
+      width: 469px;
+      height: 302.7px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      position: relative;
+      top: 200px;
+      left: 0;
+      cursor: pointer;
+      z-index: 20;
+    }
+    .block_4 .cont_1 .desktop-prompt {
       display: none;
+    }
+    .block_4 .cont_1 .bg {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      display: flex;
+      justify-content: center;
     }
     .block_5 h2 {
       font-size: 32px;
@@ -2030,6 +2063,15 @@ body.compensate-for-scrollbar {
     flex-direction: column-reverse;
     margin: 0 5%;
     width: auto;
+  }
+
+  .block_4 .cont_1 .prompt {
+    width: 100%;
+    height: auto;
+  }
+
+  .block_4 .cont_1 .mobile-pop-up-block {
+    width: 90%;
   }
 
   .block_4 .cont_5 {

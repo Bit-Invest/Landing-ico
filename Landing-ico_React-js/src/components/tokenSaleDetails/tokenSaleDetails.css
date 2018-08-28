@@ -80,21 +80,36 @@
     position: relative;
 }
 
+.block_4 .cont_1 .mobile-pop-up-block {
+  display: none;
+}
+
+.block_4 .cont_1 .close-pop-up {
+  color: silver;
+  font-size: 43px;
+  font-weight: 300;
+  cursor: pointer;
+  z-index: 20;
+  float: right;
+  top: 150px;
+  position: relative;
+}
+
+.block_4 .cont_1 .bg {
+  display: none;
+}
+
 .block_4 .cont_1 .prompt {
   width: 469px;
-  height: 302.7px;
+  height: 303px;
   background-color: #ffffff;
   border-radius: 20px;
   padding: 20px;
   position: absolute;
   top: 70px;
-  left: 200px;
+  left: 275px;
   cursor: pointer;
   z-index: 20;
-}
-
-.block_4 .cont_1 .closePrompt {
-  display: none;
 }
 
 .block_4 .cont_1 .prompt p {
