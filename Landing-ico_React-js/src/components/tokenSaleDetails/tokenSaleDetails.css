@@ -149,6 +149,14 @@
   cursor: pointer;
 }
 
+.promptCircle:hover .pop-up {
+    display: block;
+}
+
+.promptCircle .pop-up {
+    display: none;
+}
+
 .block_4 .cont_1 p span
 {
     font-weight: bold;
@@ -513,6 +521,9 @@ z-index: 2;
 }
 
 @media (max-width: 1023px) {
+  .promptCircle {
+      display: none!important;
+  }
   .block_4 .left_block4 {
     width: 100%;
   }

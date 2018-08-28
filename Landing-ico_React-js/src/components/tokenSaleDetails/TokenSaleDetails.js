@@ -85,7 +85,6 @@ class TokenInfo extends React.Component {
     this.setState({ prompt: false });
   }
 
-
   showPrompt = () => {
     const { prompt } = this.state;
     if ( prompt ) {
@@ -140,13 +139,46 @@ class TokenInfo extends React.Component {
         <p>{ indexLngObj[lng]['tokenSaleDetails#12'] } </p>
         <div className="row">
           <p><span>$1.00 = 1.00 CINXO = 1.00 CINX</span></p>
-          <div
-            onMouseEnter={this.openPrompt}
-           className="promptCircle"
-          >?</div>
+          <div className="promptCircle">
+            <span>?</span>
+            <div className="pop-up">
+              <div className="bg">
+                <div className="mobile-pop-up-block">
+                  <div className="close-pop-up">x</div>
+                  <div className="prompt">
+                    <p>
+                      { indexLngObj[lng]['tokenSaleDetails#40'] }
+                    </p>
+                    <p>
+                      { indexLngObj[lng]['tokenSaleDetails#41'] }
+                    </p>
+                    <p>
+                      { indexLngObj[lng]['tokenSaleDetails#42'] }
+                    </p>
+                    <p>
+                      { indexLngObj[lng]['tokenSaleDetails#43'] }
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="prompt desktop-prompt">
+                <p>
+                  { indexLngObj[lng]['tokenSaleDetails#40'] }
+                </p>
+                <p>
+                  { indexLngObj[lng]['tokenSaleDetails#41'] }
+                </p>
+                <p>
+                  { indexLngObj[lng]['tokenSaleDetails#42'] }
+                </p>
+                <p>
+                  { indexLngObj[lng]['tokenSaleDetails#43'] }
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <p>{ indexLngObj[lng]['tokenSaleDetails#13'] } <span>{ indexLngObj[lng]['tokenSaleDetails#14'] }</span></p>
-        {this.showPrompt()}
       </div>
     );
   }
