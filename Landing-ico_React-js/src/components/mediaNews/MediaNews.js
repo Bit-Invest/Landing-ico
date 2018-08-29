@@ -32,6 +32,9 @@ import CINDX_Presents_the_project_during_RICLUB_private_investors_meeting from '
 import CINDX_took_part_in_Moscow_ICO_Summit_2018 from '../../news/CINDX_took_part_in_Moscow_ICO_Summit_2018.png';
 import CINDX_Weekly_digest_06_08_18_12_08_18 from '../../news/CINDX_Weekly_digest_(06.08.18 - 12.08.18).jpeg';
 import CINDX_WEEKLY_DIGEST_30_July_5_August from '../../news/CINDX_WEEKLY_DIGEST_30_July—5_August.jpeg';
+import Dip_your_Toe_in_Crypto from '../../news/Dip_your_Toe_in_Crypto.png'
+import Weekly_digest from '../../news/Weekly_digest.jpg'
+import Yuriy_Avdeev_CEO_of_the_CINDX_project from '../../news/Yuriy_Avdeev_CEO_of_the_CINDX_project.jpg'
 import CINDX_talk_a_service_that_will_help_people_become_wiser_in_taking_financial_decisions from '../../news/CINDX_talk_a_service_that_will_help_people_become_wiser_in_taking_financial_decisions.jpeg';
 import David_Gutierrez from '../../news/David_Gutierrez.jpeg';
 import Denis_Eskenazi from '../../news/Denis_Eskenazi.jpeg';
@@ -408,21 +411,21 @@ const news = [
   },
   {
     videoSrc: 'https://medium.com/cindx/dip-your-toe-in-crypto-3c8f54650e06',
-    screen: ICObench_gives_4_8_to_CINDX, // заменить
+    screen: Dip_your_Toe_in_Crypto,
     name: indexLngObj['en']['mediaNews#2_87'],
     text: indexLngObj['en']['mediaNews#2_88'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-team-yuriy-avdeev-e7a747d4c2e3',
-    screen: ICObench_gives_4_8_to_CINDX, // заменить
+    screen: Yuriy_Avdeev_CEO_of_the_CINDX_project,
     name: indexLngObj['en']['mediaNews#2_89'],
     text: indexLngObj['en']['mediaNews#2_90'],
     source: 'www.medium.com'
   },
   {
     videoSrc: 'https://medium.com/cindx/cindx-weekly-digest-13-august-19-august-7d965ab073c0',
-    screen: ICObench_gives_4_8_to_CINDX, // заменить
+    screen: Weekly_digest,
     name: indexLngObj['en']['mediaNews#2_91'],
     text: indexLngObj['en']['mediaNews#2_92'],
     source: 'www.medium.com'
