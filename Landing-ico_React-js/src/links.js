@@ -51,6 +51,25 @@ export class Join extends React.Component {
   }
 }
 
+export const list_lngs = 'en zn ko tr'; //языки который мы используем нужно тут указать
+const user_lng = window.localStorage.getItem('loc') || navigator.language || 'en';
+const user_loc = user_lng.split('_')[0].split('-')[0];
+const loc = ((list_lngs.indexOf(user_loc) != -1) ? user_loc : 'en');
+
+export const lng = loc;
+
+const list_hasDocs = 'zn en';
+const doc_forUser = ((list_hasDocs.indexOf(loc) != -1) ? loc : 'en');
+
+
+const docs = {
+  wp: `https://static.cindx.io/${doc_forUser}/whitepaper.pdf`,
+  pr: `https://static.cindx.io/${doc_forUser}/pres.pdf`,
+  fm: `https://static.cindx.io/${doc_forUser}/f_model.pdf`,
+  ld: `https://static.cindx.io/${doc_forUser}/legal_docs.pdf`,
+  op: `https://static.cindx.io/${doc_forUser}/one_pager.pdf`,
+};
+
 export const links = {
   anchor: '1',
   anchor: '2',
@@ -98,11 +117,4 @@ Tr турецкий
 Vi вьетнамский
 Pt Португалия
 */
-
-export const list_lngs = 'en zn ko tr'; //языки который мы используем нужно тут указать
-const user_lng = window.localStorage.getItem('loc') || navigator.language || 'en';
-const user_loc = user_lng.split('_')[0].split('-')[0];
-const loc = ((list_lngs.indexOf(user_loc) != -1) ? user_loc : 'en');
-
-export const lng = loc;
 
