@@ -125,6 +125,7 @@
 {
   font-size: 18px;
   font-weight: 500;
+  min-height: 69px;
 }
 
 .block_7 .txt p
@@ -193,7 +194,7 @@
 }
 
 .block_7 .txtNews h3 {
-  height: 50px;
+  min-height: 59px;
   font-size: 18px;
   font-weight: 500;
   color: black;

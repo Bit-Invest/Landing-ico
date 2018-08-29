@@ -432,15 +432,30 @@ const news = [
 export class MediaNews extends React.Component {
   mapNews = () => {
     return news.reverse().map((el, i) => {
+      const arrName = el.name.split(' ')
+      const arrText = el.text.split(' ')
+      let newName = ''
+      let newText = ''
+
+      arrName.forEach(nameEl => {
+        if (newName.length < 70) {
+          newName += nameEl + ' '
+        }
+      })
+      arrText.forEach(textEl => {
+        if (newText.length < 106) {
+          newText += textEl + ' '
+        }
+      })
       return (
         <div key={i} className="item">
           <a target="_blank" href={el.videoSrc}>
             <div className="txtNews">
               <img className="img" src={el.screen} alt="CINDX"/>
               <div className="content">
-                <h3>{el.name.substr(0, 35)} ...</h3>
+                <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
                 <div className="clear" />
-                <p>{el.text.substr(0, 65)} ...</p>
+                <p>{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
                 <p className="details">Details</p>
               </div>
             </div>
@@ -451,13 +466,28 @@ export class MediaNews extends React.Component {
   }
   mapMedia = () => {
     return media.map((el, i) => {
+      const arrName = el.name.split(' ')
+      const arrText = el.text.split(' ')
+      let newName = ''
+      let newText = ''
+
+      arrName.forEach(nameEl => {
+        if (newName.length < 76) {
+          newName += nameEl + ' '
+        }
+      })
+      arrText.forEach(textEl => {
+        if (newText.length < 105) {
+          newText += textEl + ' '
+        }
+      })
       return (
         <div key={i} className="txt">
           <a href={el.src} target="_blank">
             <div className="bg">
                 <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
-              <h3>{el.name.substr(0, 45)} ...</h3>
-              <p>{el.text.substr(0, 95)} ...</p>
+              <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
+              <p>{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
               <p className="details">Details</p>
             </div>
           </a>

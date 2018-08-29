@@ -144,7 +144,7 @@ class TokenInfo extends React.Component {
             <div className="pop-up">
               <div className="bg">
                 <div className="mobile-pop-up-block">
-                  <div className="close-pop-up">x</div>
+                  <div className="close-pop-up"></div>
                   <div className="prompt">
                     <p>
                       { indexLngObj[lng]['tokenSaleDetails#40'] }

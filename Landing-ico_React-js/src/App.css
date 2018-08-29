@@ -1732,7 +1732,7 @@ body.compensate-for-scrollbar {
       border-radius: 20px;
       padding: 20px;
       position: relative;
-      top: 200px;
+      top: 0;
       left: 0;
       cursor: pointer;
       z-index: 20;
@@ -1751,6 +1751,7 @@ body.compensate-for-scrollbar {
       z-index: 9;
       display: flex;
       justify-content: center;
+      align-items: center;
     }
     .block_5 .slick-slider {
       width: 100%;
