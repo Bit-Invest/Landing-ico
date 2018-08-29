@@ -120,7 +120,7 @@ class MailForm extends React.Component {
       ],
       timer: [
         <Timer />,
-        <div className="timerRepText">{ indexLngObj[lng]['mailForm#22'] }</div>,
+        <div className="timerRepText">{ indexLngObj[lng]['mailForm#31'] }</div>,
         <Timer />,
       ],
       textDescFromPrice: [
