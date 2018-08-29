@@ -92,7 +92,9 @@ export class Menu extends React.Component {
             (list_lngs.split(' ')).map((e, i) => {
               return (
                 <div className="show-language" key={i} value={e} onClick={()=>this.changeLoc(e)}> 
-                  <a className="itemMini2">{ e.toUpperCase() }</a>
+                  <a className="itemMini2">{ 
+                    ({en:'English',zn:'简体中文',ko:'한국어',tr:'Türkçe'}[e] || e).toUpperCase() 
+                  }</a>
                 </div>
               )
             })
