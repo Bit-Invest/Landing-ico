@@ -99,34 +99,34 @@ class MailForm extends React.Component {
   render() {
     const { props } = this;
     const { email, submitStatus, submitStatusText } = this.state;
-    const end = new Date("2018/08/26 12:00:00 GMT-0000");
+    const end = new Date("2018/09/16 12:00:00 GMT-0000");
     const now = new Date();
     const distance = end - now;
-    const sale_step = distance > 0 ? 0 : 1;
+    const sale_step = 2;
 
     const step_content = {
       title1: [
         'Security Token Sale Starts with',
         'Security Token Sale Is Live',
-        'Security Token Sale Is Live'
+        indexLngObj[lng]['mailForm#19']
       ],
       bonus: [
         '40% BONUS',
         '40% BONUS',
-        '25% BONUS'
+        indexLngObj[lng]['mailForm#20']
       ],
       desc1: [
-        <div>for the first 100 buyers <br /> Token sale starts in</div>
+        <div>{ indexLngObj[lng]['mailForm#29'] } <br /> { indexLngObj[lng]['mailForm#30'] }</div>
       ],
       timer: [
         <Timer />,
-        <div className="timerRepText">BE THE EARLY BIRD</div>,
+        <div className="timerRepText">{ indexLngObj[lng]['mailForm#22'] }</div>,
         <Timer />,
       ],
       textDescFromPrice: [
         'Starts from $1',
         '$1 now',
-        '$1 now'
+        indexLngObj[lng]['mailForm#23']
       ],
       fromPrice: [
         '1.40',

@@ -48,6 +48,10 @@ const zn = {
     'mailForm#25': '您的电子邮箱',
     'mailForm#26': '参与预售',
     'mailForm#27': '同意和提交',
+    'mailForm#28': 'for the first 100 buyers',
+    'mailForm#29': 'Token sale starts in',
+    'mailForm#30': 'BE THE EARLY BIRD',
+    'mailForm#31': 'Security Token Sale Is Live',
 
     'progressBarSale#1': '奖金',
     'progressBarSale#2': 'CINX',

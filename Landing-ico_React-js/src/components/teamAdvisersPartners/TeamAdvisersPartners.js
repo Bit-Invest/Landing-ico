@@ -240,167 +240,167 @@ const advisers = [
     name: indexLngObj[lng]['teamAdvisersPartners#67'],
     src: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
     m: 'https://medium.com/cindx/cindx-advisers-austin-kimm-fa417a929e32',
-    position: indexLngObj[lng]['teamAdvisersPartners#67'],
-    fackt1: '30+ years of financial service experience',
-    fackt2: 'Created companies with a worth of $500m',
+    position: indexLngObj[lng]['teamAdvisersPartners#68'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#69'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#70'],
     linkedin: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
     text: [
-      "Experienced results proven financial services CEO with a particular focus on building insurance businesses in developing markets where I have successfully built companies with a current valuation in excess $500m, most recently in Russia (10 years), as well as other non insurance senior management roles, including CEO of Russia's largest internet sales employment platform, Workle, and a wide range of fintech start up C level positions including Crypterium, the world's first digital cryptobank.",
-      "Most recently in Russia (10 years), as well as other non insurance senior management roles, including CEO of Russia's largest internet sales employment platform, Workle, and a wide range of fintech start up C level positions including Crypterium, the world's first digital cryptobank.",
-      "Career and projects: Aviva, Commercial Union UK, Reinaissance Insurance, Kimm Health & Leisure Ltd, Workle, Crypterium, CryptoIndex, CINDX"
+      indexLngObj[lng]['teamAdvisersPartners#71'],
+      indexLngObj[lng]['teamAdvisersPartners#72'],
+      indexLngObj[lng]['teamAdvisersPartners#73']
     ]
   },
   {
     img: Philip_Staehelin,
     video: 'https://www.youtube.com/embed/gMYQzVyXHZI',
-    name: 'Philip Staehelin',
+    name: indexLngObj[lng]['teamAdvisersPartners#74'],
     src: 'https://www.linkedin.com/in/staehelin/',
     m: 'https://medium.com/cindx/cindx-advisers-philip-staehelin-810df12247bc',
-    position: '25 years of consulting and entrepreneurial experience',
-    fackt1: '$500m alternative payments business under leadership',
-    fackt2: '200+ startups from 20 countries mentored',
+    position: indexLngObj[lng]['teamAdvisersPartners#75'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#76'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#77'],
     linkedin: 'https://www.linkedin.com/in/staehelin/',
     text: [
-      "Philip has more than 25 years of experience in the corporate and consulting worlds. He served as the CEO of a $500m payments company, he was a Managing Partner in Roland Berger (a global, top-tier, management consulting firm), and he’s also held executive roles in T-Mobile, Accenture, A.T. Kearney and CA-IB Investment Bank (now UniCredit).",
-      `He’s also a co-owner of StartupYard (CEE's oldest tech startup accelerator), he’s an active angel investor, and he's launched a number of startups, including his latest venture - DOT Glasses – that aims to provide eyeglasses to the >1 billion people in the world that need glasses but can’t afford them (or have no access to them).
-      Philip is also a Board member of Transparency International CZ, as well as a Board member of Gjirafa – the fastest growing company in the Balkans, and he mentors startups throughout CEE, the Baltics and the Balkans, and is an Advisor to numerous startups as well as ICOs.`,
-      `Philip earned his MBA from INSEAD (Fontainebleau, France) and Bachelors degrees in Economics and International Affairs from the University of Colorado (Boulder, Colorado, USA).`,
+      indexLngObj[lng]['teamAdvisersPartners#78'],
+      indexLngObj[lng]['teamAdvisersPartners#79'],
+      indexLngObj[lng]['teamAdvisersPartners#80'],
+      indexLngObj[lng]['teamAdvisersPartners#81']
     ]
   },
   {
     img: Amarpreet_Singh,
     video: 'https://www.youtube.com/embed/vsjxNki18DY',
-    name: 'Amarpreet Singh',
+    name: indexLngObj[lng]['teamAdvisersPartners#82'],
     src: 'https://www.linkedin.com/in/amarpreetsingh2/',
     m: 'https://medium.com/cindx/cindx-advisers-amarpreet-singh-29c1edb22dda',
-    position: 'Senior Adviser of Global Blockchain Foundation',
-    fackt1: 'Experience in Microsoft, The World Bank and Airbus',
-    fackt2: 'Advisery Board Member of Blockchain projects',
+    position: indexLngObj[lng]['teamAdvisersPartners#83'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#84'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#85'],
     linkedin: 'https://www.linkedin.com/in/amarpreetsingh2/',
     text: [
-      "Technology/Digital enthusiast and a seasoned professional with years of experience in Tech industry – operations, consulting and innovation.",
-      "He is a certified Cloud (Microsoft and AWS) specialist. Known for versatility and flexibility. Excellent analytic, strategic, leadership skills and a team player at its best.",
-      "Specialties: Technology Consulting, Operations, Cloud Computing, Fintech, Innovation, ERP, Machine Learning, Account Management, Partner Development, Business Development and Strategy",
-      "Amarpreet Singh has a very diversified work and educational background. He holds three Masters degrees and has lived/worked/studied in India, Singapore, France, China, South Africa, Korea, Canada.",
-      "Career and projects: Microsoft, The World Bank, Airbus, TokenAsia Platform, GOeurika, CINDX "
+      indexLngObj[lng]['teamAdvisersPartners#86'],
+      indexLngObj[lng]['teamAdvisersPartners#87'],
+      indexLngObj[lng]['teamAdvisersPartners#88'],
+      indexLngObj[lng]['teamAdvisersPartners#89'],
+      indexLngObj[lng]['teamAdvisersPartners#90']
     ]
   },
   {
     img: Tyler_Sanford,
     video: '',
-    name: 'Tyler Sanford',
+    name: indexLngObj[lng]['teamAdvisersPartners#91'],
     src: 'https://www.linkedin.com/in/tylersanford/',
     m: 'https://medium.com/cindx/cindx-advisers-tyler-sanford-a58eefa42a95',
-    position: '8 Years Digital Marketing in Yelp and Zenefits',
-    fackt1: '12 ICO’s over $225M raised',
-    fackt2: 'Early adopter of blockchain',
+    position: indexLngObj[lng]['teamAdvisersPartners#92'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#93'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#94'],
     linkedin: 'https://www.linkedin.com/in/tylersanford/',
     text: [
-      "Growing up as an Athlete has given me a skill set that I've been able to apply to my careers and personal life.",
-      "I have been very fortunate to see the results of going that extra mile, while learning to deal with the highs and lows that go along with all professional careers.",
-      "I'm an extremely self-motivated individual, always looking to continue my growth of knowledge and talents in all aspects of business.",
-      "Always up for a challenge, my motivation comes from overcoming obstacles to reach my goals",
-      "Career and projects: IPG Holdings, DataBlockChain, TraXion by Puma Technologies, ELYSIAN, Etherinc, FTEC Foundation,  CINDX"
+      indexLngObj[lng]['teamAdvisersPartners#95'],
+      indexLngObj[lng]['teamAdvisersPartners#96'],
+      indexLngObj[lng]['teamAdvisersPartners#97'],
+      indexLngObj[lng]['teamAdvisersPartners#98'],
+      indexLngObj[lng]['teamAdvisersPartners#99']
     ]
   },
   {
     img: Bogdan_Fiedur,
     video: 'https://www.youtube.com/embed/oC-oTaBId7g',
-    name: 'Bogdan Fiedur',
+    name: indexLngObj[lng]['teamAdvisersPartners#125'],
     src: 'https://www.linkedin.com/in/bogdanfiedur/',
     m: 'https://medium.com/cindx/cindx-advisers-bogdan-fiedur-16897ad954ad',
-    position: 'Blockchain and cryptocurrency expert, investor, entrepreneur',
-    fackt1: 'Co-Founder of bitJob and President of Blockchainexperts.io',
-    fackt2: 'ICO Adviser, ICOBench Expert',
+    position: indexLngObj[lng]['teamAdvisersPartners#126'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#127'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#128'],
     linkedin: 'https://www.linkedin.com/in/bogdanfiedur/',
     text: [
-      "Bogdan Fiedur is a smart contract developer, crypto-investor, entrepreneur and President of http://blockchainexperts.io . He has over 20 years of IT experience in building e-commerce websites and has been involved in blockchain development during last 3 years.",
-      "He is also an ICO adviser working with 20 successful ICOs to date and deeply involved in offering presentation and workshops on blockchain and smart contract programming in his local crypto community of Winnipeg.",
-      "Bogdan now focuses on the Blockchain industry and offers advice, consulting services and connections to Blockchain experts. Most recently Bogdan has co-founded ‘Bitjob’, a freelancer blockchain platform for students and participated in several ICO projects as a team member. e.g. PayPie.com.",
-      "Career and projects: US Blockchain Association, Tuurnt, Trends Project, BiNeuro, Zichain, Graphen Tech, CyClean, Swachhcoin, CINDX"
+      indexLngObj[lng]['teamAdvisersPartners#129'],
+      indexLngObj[lng]['teamAdvisersPartners#130'],
+      indexLngObj[lng]['teamAdvisersPartners#131'],
+      indexLngObj[lng]['teamAdvisersPartners#132']
     ]
   },
   {
     img: Graham_Doggart,
     video: 'https://www.youtube.com/embed/HWV5Hv2R6vA',
-    name: 'Graham Doggart',
+    name: indexLngObj[lng]['teamAdvisersPartners#133'],
     src: 'https://www.linkedin.com/in/grahamdoggart/',
     m: 'https://medium.com/cindx/cindx-advisers-graham-doggart-a7f45b3e4ce4',
-    position: '20 years of enterprise development, fintech marketing compliance',
-    fackt1: 'Executed campaigns with a worth of $100m',
-    fackt2: 'Adviser for 10+ blockchain projects this year',
+    position: indexLngObj[lng]['teamAdvisersPartners#134'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#135'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#136'],
     linkedin: 'https://www.linkedin.com/in/grahamdoggart/',
     text: [
-      "I am chairman of a Stealth Cryptocurrency Project and co-founder and lead strategist at Dynamic Abundance, a Blockchain and Fintech Advisery since 2012. ",
-      "I specialise in the structuring and packaging of token offerings and have worked with numerous blockchain, cryptocurrency and ICO projects internationally. ",
-      "For more than 20 years I have provided tech management consultation, legal and financial compliance advice, growth strategies, investor relations, as well as design and authorship of materials.",
-      "Career and projects: Stealth Cryptocurrency Project, Dynamic Abundance, ELYSIAN, Fox Trading FX, Profede, Worltdopoly, CINDX"
+      indexLngObj[lng]['teamAdvisersPartners#137'],
+      indexLngObj[lng]['teamAdvisersPartners#138'],
+      indexLngObj[lng]['teamAdvisersPartners#139'],
+      indexLngObj[lng]['teamAdvisersPartners#140'],
     ]
   },
   {
     img: Sadie_Hutton,
     video: 'https://www.youtube.com/embed/iQhcMhT13hs',
-    name: 'Sadie Hutton',
+    name: indexLngObj[lng]['teamAdvisersPartners#141'],
     src: 'https://www.linkedin.com/in/sadie-hutton/',
     m: 'https://medium.com/cindx/cindx-advisers-sadie-hutton-6a8d68aa6fcf',
-    position: '25 years in senior management and management consulting',
-    fackt1: 'Multimillion-dollar fundraiser with campaigns with a worth of £75m',
-    fackt2: 'ICO Adviser of 8 projects',
+    position: indexLngObj[lng]['teamAdvisersPartners#142'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#143'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#144'],
     linkedin: 'https://www.linkedin.com/in/sadie-hutton/',
     text: [
-      'I am the founder of Dynamic Abundance, a blockchain advisery.',
-      'Preferring a “hands-on” approach, I am a specialist in ICO analysis, project management, all key aspects of the ICO process. I am skilled in business management and growth, which enable me to see a project from inception through to delivery. I am a problem solver by nature, and I take any project I am involved with personally. I like to win!',
-      'With over 20 years of management experience I built up a powerful network, I actively advise on finance, tech, sales, marketing and quality assurance for high-level blockchain projects.',
-      'Career and projects: Dynamic Abundance, ELYSIAN, Worldopoly, Confidential ICO,  Fox Trading FX, Profede, Market Digital, CINDX'
+      indexLngObj[lng]['teamAdvisersPartners#145'],
+      indexLngObj[lng]['teamAdvisersPartners#146'],
+      indexLngObj[lng]['teamAdvisersPartners#147'],
+      indexLngObj[lng]['teamAdvisersPartners#148']
     ]
   },
   {
     img: Jason_King,
     video: '',
-    name: 'Jason King',
+    name: indexLngObj[lng]['teamAdvisersPartners#149'],
     src: 'https://www.linkedin.com/in/jasonking/',
     m: 'https://medium.com/cindx/the-cindx-team-jason-king-9a1b93d6aa8b',
-    position: '20 years of excecutive experience',
-    fackt1: 'Led businesses operations in 30 countries',
-    fackt2: 'Responsible over $500m P&L',
+    position: indexLngObj[lng]['teamAdvisersPartners#150'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#151'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#152'],
     linkedin: 'https://www.linkedin.com/in/jasonking/',
     text: [
-      'For almost 20 years, Jason has been a senior technology, media and telecoms executive involved in structuring and brokering commercial deals, negotiating wins, building markets and positioning organizations for success.',
-      'The core theme in his career has been to successfully drive business restructuring, transformation and turnaround programs - by leading the right people and teams towards the most profitable goals.',
-      'In addition to his interests in private equity and startup companies, Jason has worked in various groups including Deutsche Telekom, Telenor and UPC Liberty Global and Veon.',
-      'Jason has either worked or has led business directly in over 30 countries and has previously held commercial P&L responsibilities in the $500M-$1B range.',
+      indexLngObj[lng]['teamAdvisersPartners#153'],
+      indexLngObj[lng]['teamAdvisersPartners#154'],
+      indexLngObj[lng]['teamAdvisersPartners#155'],
+      indexLngObj[lng]['teamAdvisersPartners#156']
     ]
   },
   {
     img: Motti_Peer,
     video: '',
-    name: 'Motti Peer',
+    name: indexLngObj[lng]['teamAdvisersPartners#157'],
     src: 'https://www.linkedin.com/in/jasonking/',
     m: '',
-    position: 'Co-founder of Blonde 2.0, award-winning global PR agency',
-    fackt1: 'Founder of various companies in the security and finance sectors',
-    fackt2: 'Motti is one of the leading forces in PR for Blockchain and Crypto, startups, VCs.',
+    position: indexLngObj[lng]['teamAdvisersPartners#158'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#159'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#160'],
     linkedin: 'https://www.linkedin.com/in/mottipeer/',
     text: [
-      'Motti founded various companies in the security and finance sectors. He has many years of experience as a money and hedge fund manager and holds an MBA in Finance and Marketing from Manchester University and a BA in Business Management from Fairleigh Dickinson University',
-      'He is a Co-CEO of Blonde 2.0, an award-winning global PR agency also named as one the startup nation’s “Movers and Shakers” on Forbes. As Co-CEO of Blonde 2.0, he is responsible for handling the Public Relations aspects, along with strategy and crisis management.',
-      'With a team of 35 professionals, Blonde 2.0 is one of the leading forces in PR for Blockchain and Crypto, startups, VCs.'
+      indexLngObj[lng]['teamAdvisersPartners#161'],
+      indexLngObj[lng]['teamAdvisersPartners#162'],
+      indexLngObj[lng]['teamAdvisersPartners#163']
     ]
   },
   {
     img: Leonard_Grayver,
     video: '',
-    name: 'Leonard Grayver',
+    name: indexLngObj[lng]['teamAdvisersPartners#164'],
     src: 'https://www.linkedin.com/in/leonardgrayver/?locale=ru_RU',
     m: '',
-    position: 'Сhair of Greenberg Whitcombe Takeuchi Gibson & Grayver LLP',
-    fackt1: 'Represented and advised a number of successful ICOs',
-    fackt2: 'Has substantial experience in venture capital fund formation',
+    position: indexLngObj[lng]['teamAdvisersPartners#165'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#166'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#167'],
     linkedin: 'https://www.linkedin.com/in/leonardgrayver/?locale=ru_RU',
     text: [
-      'Leonard Grayver was born in USSR, moved to US with his parents as a kid. While in Law school Leonard created a start-up and successfully raised more than 18 mln USD for financing.',
-      'Start-up has not survived but since then Leonard has helped more than 400 start-ups',
-      'Overall Leonard has more than 10 years of experience with VC financing, fund structuring, due diligence (representing both funds and LPs). His advise to all entrepreneurs - do not follow trends, follow your interests.'
+      indexLngObj[lng]['teamAdvisersPartners#168'],
+      indexLngObj[lng]['teamAdvisersPartners#169'],
+      indexLngObj[lng]['teamAdvisersPartners#170']
     ]
   }
  ];
