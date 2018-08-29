@@ -283,7 +283,7 @@ export const TokenSaleDetails = () => (
             <TokenAllocation />
             <TokenInfo />
             <div className="progressBar_block4">
-              <ProgressBar money="1,138,000" percent="4"/>
+              <ProgressBar money="1,159,345" percent="4"/>
             </div>
             <Docs />
           </div>
