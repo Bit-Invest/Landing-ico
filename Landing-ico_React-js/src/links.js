@@ -99,7 +99,7 @@ Vi вьетнамский
 Pt Португалия
 */
 
-export const list_lngs = 'en zn'; //языки который мы используем нужно тут указать
+export const list_lngs = 'en zn ko tr'; //языки который мы используем нужно тут указать
 const user_lng = window.localStorage.getItem('loc') || navigator.language || 'en';
 const user_loc = user_lng.split('_')[0].split('-')[0];
 const loc = ((list_lngs.indexOf(user_loc) != -1) ? user_loc : 'en');

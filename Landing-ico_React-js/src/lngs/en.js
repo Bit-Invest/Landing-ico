@@ -42,10 +42,6 @@ const en = {
     'mailForm#25': 'Your Email',
     'mailForm#26': 'BUY CINX TOKENS',
     'mailForm#27': 'AGREE & SUBMIT',
-    'mailForm#28': 'for the first 100 buyers',
-    'mailForm#29': 'Token sale starts in',
-    'mailForm#30': 'BE THE EARLY BIRD',
-    'mailForm#31': 'Security Token Sale Is Live',
 
     'progressBarSale#1': 'Bonuses',
     'progressBarSale#2': 'in CINX',
