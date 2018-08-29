@@ -61,7 +61,6 @@ export const lng = loc;
 const list_hasDocs = 'zn en';
 const doc_forUser = ((list_hasDocs.indexOf(loc) != -1) ? loc : 'en');
 
-
 const docs = {
   wp: `https://static.cindx.io/${doc_forUser}/whitepaper.pdf`,
   pr: `https://static.cindx.io/${doc_forUser}/pres.pdf`,
@@ -77,11 +76,11 @@ export const links = {
   anchor: '4',
   mvp: 'http://mvp.cindx.io/registration/sign-in',
   joinpresale: 'https://my.cindx.io/registration' + `?clickid=${linkSearch['clickid']}`,
-  wp: 'https://static.cindx.io/Whitepaper_CINDX_Edited_V_1.5.3.pdf',
-  pr: 'https://static.cindx.io/Presentation_ENG_vers_08.25.pdf',
-  op: 'https://static.cindx.io/One_pager_ENG_vers_08_25.pdf',
-  fm: 'https://static.cindx.io/Financial_Model_08_25.pdf',
-  ld: 'https://static.cindx.io/Legal_Docs_ENG_vers_08.25.pdf',
+  wp: docs.wp,
+  pr: docs.pr,
+  op: docs.op,
+  fm: docs.fm,
+  ld: docs.ld,
   buytokens: 'https://my.cindx.io/registration' + `?clickid=${linkSearch['clickid']}`,
   lD: 'https://static.cindx.io/Legal_Disclaimer.pdf',
   pp: 'https://static.cindx.io/Privacy_Policy.pdf',
