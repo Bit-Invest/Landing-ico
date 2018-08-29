@@ -38,7 +38,7 @@ const en = {
     'mailForm#21': 'Get it before everyone else does',
     'mailForm#22': 'Token sale starts in',
     'mailForm#23': '$1 now',
-    'mailForm#24': '1$ later',
+    'mailForm#24': '$1 later',
     'mailForm#25': 'Your Email',
     'mailForm#26': 'BUY CINX TOKENS',
     'mailForm#27': 'AGREE & SUBMIT',
