@@ -56,7 +56,7 @@ export const IcoInfo = props => {
           />
         </div>
         <div className={`${ROOT_CLASS}__ratings`}>
-          <a target="_blank" href='https://topicolist.com/' className={`${ROOT_CLASS}__href-rating-icon`}>
+          <a target="_blank" href='https://topicolist.com/cindx/' className={`${ROOT_CLASS}__href-rating-icon`}>
             <img src={rating_topicolist} className={`${ROOT_CLASS}__rating-icon`} />
           </a>
           <a target="_blank" href='https://www.trackico.io/ico/cindx/#statistics' className={`${ROOT_CLASS}__href-rating-icon`}>
