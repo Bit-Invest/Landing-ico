@@ -114,8 +114,7 @@
   color: #fff;
   transition: box-shadow 0.3s;
   float: right;
-  margin-top: 80px;
-  margin-right: 135px;
+  margin-top: 30px;
 }
 .problemBlock .btn:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
