@@ -12,12 +12,12 @@ export const ProgressBarSale = () => {
   return (
     <div className="progressBarSale">
       <div className="container">
-        <div className="left-block-bonuses">
+        <div className={`left-block-bonuses ${lng === 'tr' ? 'tr-left-block-bonuses' : null}`}>
           <div>{ indexLngObj[lng]['progressBarSale#1'] }</div>
           <div>{ indexLngObj[lng]['progressBarSale#2'] }</div>
         </div>
         <div className='saleName'>
-          <p className="pre-sale">{ indexLngObj[lng]['progressBarSale#3'] }</p>
+          <p className="pe-sale">{ indexLngObj[lng]['progressBarSale#3'] }</p>
           <p className="sale-bonusses">{ indexLngObj[lng]['progressBarSale#4'] }</p>
           <p className="cinx">1 CINX = $1</p>
         </div>

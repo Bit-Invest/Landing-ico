@@ -144,6 +144,9 @@
   flex-direction: column;
   box-shadow: 0 0 40px black;
 }
+.menu .trPublicDocs {
+  right: 330px;
+}
 .menu .drop-down .publickOnMouseLeave {
   position: absolute;
   background-color: transparent;

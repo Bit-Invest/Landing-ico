@@ -422,7 +422,7 @@ const en = {
     'teamAdvisersPartners#53': 'legal spheres: international law',
     'teamAdvisersPartners#54': 'Wang Dong',
     'teamAdvisersPartners#55': 'Specialist in Chinese market',
-    'teamAdvisersPartners#56': '3 years in php/ JavaScript',
+    'teamAdvisersPartners#56': '3 years in PHP/JavaScript',
     'teamAdvisersPartners#57': '5 years in SEO/SMM/media buyer',
     'teamAdvisersPartners#58': '2 years in token sale in China',
     // advisers

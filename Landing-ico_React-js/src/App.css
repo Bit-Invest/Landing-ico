@@ -1632,6 +1632,9 @@ body.compensate-for-scrollbar {
     .progressBarSale .progressBar {
       width: 480px;
     }
+    .progressBarSale .tr-left-block-bonuses {
+      left: -130px;
+    }
 
     .progressBarSale .container .sale-bonusses {
       padding-right: 150px;

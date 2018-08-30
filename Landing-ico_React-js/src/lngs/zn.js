@@ -420,7 +420,7 @@ const zn = {
     'teamAdvisersPartners#53': '法律领域：国际法',
     'teamAdvisersPartners#54': 'Wang Dong',
     'teamAdvisersPartners#55': '中国区块链市场专家',
-    'teamAdvisersPartners#56': '3年php/JavaScript经验',
+    'teamAdvisersPartners#56': '3年PHP/JavaScript经验',
     'teamAdvisersPartners#57': '5年SEO/SMM/媒介采购员经验',
     'teamAdvisersPartners#58': '2年中国区块链开发和代币销售经验',
     // advisers

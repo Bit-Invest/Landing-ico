@@ -15,6 +15,9 @@
   top: 21px;
   text-align: right;
 }
+.progressBarSale .tr-left-block-bonuses {
+  left: -150px;
+}
 .progressBarSale .container .saleName {
   display: flex;
   justify-content: space-between;

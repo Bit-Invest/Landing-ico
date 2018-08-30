@@ -50,7 +50,7 @@ export class Menu extends React.Component {
     const { publicDocs } = this.state;
     if (publicDocs) {
       return (
-        <div onMouseLeave={this.closePublicDocs} className="publicDocs">
+        <div onMouseLeave={this.closePublicDocs} className={`publicDocs ${lng === 'tr' ? 'trPublicDocs' : null}`}>
           <div className="show-publicDocs">
             <div className="doc_icon"></div>
             <a target="_blank" href={links.wp} className="itemMini2">{ indexLngObj[lng]['menu#1'] }</a>

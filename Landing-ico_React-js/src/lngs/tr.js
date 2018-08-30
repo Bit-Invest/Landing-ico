@@ -419,7 +419,7 @@ const tr = {
     'teamAdvisersPartners#53': `yasal konular: uluslararası hukuk`,
     'teamAdvisersPartners#54': `Wang Dong`,
     'teamAdvisersPartners#55': `Çin Blok Zinciri Piyasası Uzmanı`,
-    'teamAdvisersPartners#56': `3 yıllık php/ JavaScript deneyimi`,
+    'teamAdvisersPartners#56': `3 yıllık PHP/JavaScript deneyimi`,
     'teamAdvisersPartners#57': `5 yıllık SEO/SMM/medya satın alma deneyimi`,
     'teamAdvisersPartners#58': `2 yıllık Blok Zinciri geliştirme ve Çin'de token satışı deneyimi`,
     // advisers
