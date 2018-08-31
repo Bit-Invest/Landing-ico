@@ -78,7 +78,7 @@
 
 .ico-info__row {
   display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .ico-info__accept {
@@ -95,11 +95,11 @@
 }
 
 .ico-info__btcbit_logg {
+  position: absolute;
+  margin-top: 20px;
   width: 63px;
   height: 18px;
-  margin-top: 20px;
-  margin-bottom: 7px;
-  margin-left: 84px;
+  left: 165px;
 }
 
 .ico-info__currency_icons {
