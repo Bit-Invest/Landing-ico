@@ -475,10 +475,6 @@ background : -ms-linear-gradient(0deg, rgba(242, 135, 183, 1) 0%, rgba(108, 94, 
 
 background : linear-gradient(90deg, rgba(242, 135, 183, 1) 0%, rgba(108, 94, 214, 1) 100%);
 
-width : 140px;
-
-/* height : 40px; */
-
 border-radius : 50px;
 
 -moz-border-radius : 50px;

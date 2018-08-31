@@ -24,8 +24,7 @@
   background : -ms-linear-gradient(0deg, rgba(242, 135, 183, 1) 0%, rgba(108, 94, 214, 1) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F287B7', endColorstr='#6C5ED6' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(242, 135, 183, 1) 0%, rgba(108, 94, 214, 1) 100%);
-  width : 120px;
-  height : 40px;
+  padding: 0 27px;
   border-radius : 24px;
   -moz-border-radius : 24px;
   -webkit-border-radius : 24px;
