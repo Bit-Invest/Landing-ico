@@ -20,13 +20,12 @@
 
 .roadmap__buttons {
   margin: 80px auto 0 auto;
-  width: 541px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .roadmap__button {
-  width: 166.7px;
+  margin-left: 20px;
 }
 
 .roadmap__map {

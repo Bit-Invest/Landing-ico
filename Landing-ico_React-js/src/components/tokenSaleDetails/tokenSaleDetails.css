@@ -24,13 +24,15 @@
 .block_4 .left_block4 {
   width: 45%;
   float: left;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   margin-right: 5%;
 }
 
 .block_4 .right_block4 {
   width: 45%;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
 .block_4 .progressBar_block4 {
@@ -505,7 +507,7 @@ transition: box-shadow 0.3s;
 
 margin-top: 35px;
 
-margin-right: 310px;
+max-width: 200px;
 
 position: relative;
 
