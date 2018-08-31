@@ -93,7 +93,7 @@ export class Menu extends React.Component {
               return (
                 <div className="show-language" key={i} value={e} onClick={()=>this.changeLoc(e)}> 
                   <a className="itemMini2">{ 
-                    ({en:'English',zn:'简体中文',ko:'한국어',tr:'Türkçe'}[e] || e).toUpperCase() 
+                    ({en:'English',zn:'简体中文',ko:'한국어',tr:'Türkçe',fr:'Français',vi:'Tiếng Việt',pt:'Português-PT',ja:'日本語'}[e] || e).toUpperCase() 
                   }</a>
                 </div>
               )
