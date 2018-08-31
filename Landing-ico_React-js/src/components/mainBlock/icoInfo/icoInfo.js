@@ -28,9 +28,9 @@ export const IcoInfo = props => {
       <div className={`${ROOT_CLASS}__progress-bar`}>
         <div className={`${ROOT_CLASS}__row`}>
           <div className={`${ROOT_CLASS}__accept`}>{ indexLngObj[lng]['icoInfo#1'] }</div>
-          <a className={`${ROOT_CLASS}__href_btcbit`} target="_blank" href="https://btcbit.net">
+          {/* <a className={`${ROOT_CLASS}__href_btcbit`} target="_blank" href="https://btcbit.net"> */}
             <img className={`${ROOT_CLASS}__btcbit_logg`} src={btcbit_logo_head} alt="CINDX" />
-          </a>
+          {/* </a> */}
         </div>
         <img className={`${ROOT_CLASS}__currency_icons`} src={currency_icons} alt={"CINDX"}/>
         <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#2'] } <span>$21,000,000</span></div>
