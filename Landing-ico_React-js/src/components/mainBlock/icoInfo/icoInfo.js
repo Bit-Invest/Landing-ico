@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ProgressBar } from '@components/progressBar';
 import currency_icons from '../../../images/currency_icons.png'
+import btcbit_logo_head from '../../../images/btcbit_logo_head.png'
 import BancorLogo from '../../../media/bancor_logo.png';
 import HBLogo from '../../../media/hb_logo.png';
 import Hotbit from '../../../media/hotbit_logo.757f4b29.png';
@@ -25,8 +26,11 @@ export const IcoInfo = props => {
   return (
     <div className={ROOT_CLASS}>
       <div className={`${ROOT_CLASS}__progress-bar`}>
-        <div className={`${ROOT_CLASS}__accept`}>{ indexLngObj[lng]['icoInfo#1'] }</div>
-        <img className={`${ROOT_CLASS}__currency_icons`} src={currency_icons} alt={"CINDEX"}/>
+        <div className={`${ROOT_CLASS}__row`}>
+          <div className={`${ROOT_CLASS}__accept`}>{ indexLngObj[lng]['icoInfo#1'] }</div>
+          <img className={`${ROOT_CLASS}__btcbit_logg`} src={btcbit_logo_head} alt="CINDX" />
+        </div>
+        <img className={`${ROOT_CLASS}__currency_icons`} src={currency_icons} alt={"CINDX"}/>
         <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#2'] } <span>$21,000,000</span></div>
         <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>$1,178,867 / $3,800,000</span></div>
         <div className={`${ROOT_CLASS}__progressBar`}>

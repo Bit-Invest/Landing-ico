@@ -76,12 +76,25 @@
   margin-right: 10px;
 }
 
+.ico-info__row {
+  display: flex;
+  align-items: center;
+}
+
 .ico-info__accept {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 100;
   color: #ffffff;
+}
+
+.ico-info__btcbit_logg {
+  width: 63px;
+  height: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 90px;
 }
 
 .ico-info__currency_icons {
