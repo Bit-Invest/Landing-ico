@@ -53,7 +53,7 @@
 .road-show-popup {
     position: absolute;
     width: 345px;
-    bottom: 180px;
+    bottom: 150px;
     left: 18.6%;
 }
 
@@ -82,11 +82,17 @@
 }
 
 .road-popup-video {
-    width: 100%;
-    min-height: 171px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: red;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.road-show-popup .img {
+  width: 100%;
+  height: auto;
 }
 
 .road-popup-triangle {

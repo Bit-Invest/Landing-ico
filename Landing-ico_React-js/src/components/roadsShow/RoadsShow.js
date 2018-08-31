@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
+import Beijing from '../../images/Beijing.jpg'
+import Vegas from '../../images/Vegas.jpg'
+import Picture_Singapor from '../../images/Picture_Singapor.jpg'
+import Shanghai1 from '../../images/Shanghai1.jpg'
+import Shanghai2 from '../../images/Shanghai2.jpg'
 import './RoadsShow.css'
 
 let dataRoadShow = [
@@ -8,7 +13,7 @@ let dataRoadShow = [
         date: '30.08',
         data: 'Borderless Blockchain Technology Summit 2018',
         video: {
-            img: '',
+            img: Shanghai1,
             src: 'http://bc.bbzgroup.cn/'
         },
         text: 'CINDX has signed a participation contract as a Gold Sponsor for the Borderless Blockchain Technology Summit 2018 that will take place on August 30th in Shanghai. The Summit has invited the blockchain industry’s best speakers and entrepreneurs from all over the world. Each of the presenters will share their ideas and industry insight with representatives of the largest blockchain projects, including CINDX.'
@@ -18,7 +23,7 @@ let dataRoadShow = [
         date: '9-12.09',
         data: 'Blockchainer China Tour',
         video: {
-            img: '',
+            img: Shanghai2,
             src: 'http://www.blockchainer.vip/'
         },
         text: 'Renewed interest in the Chinese blockchain industry has re-established China as a global crypto hub.  Therefore, we’re pleased to announce that the CINDX roadshow will continue with a presentation in Shanghai from the  9th to the 11th of September.  Meetings with private investors and representatives of Asian companies have also been arranged as part of the roadshow. We are excited to make more industry connections and to expand CINDX’ industry presence.'
@@ -28,7 +33,7 @@ let dataRoadShow = [
         date: '13-16.09',
         data: 'Blockchainer China Tour',
         video: {
-            img: '',
+            img: Beijing,
             src: 'http://www.blockchainer.vip/'
         },
         text: 'The newest developments in the Chinese blockchain industry are pointing towards a new chapter in the cryptocurrency economy. For this reason, CINDX is continuing to conduct active work in Asia. From the 12th to the 16th of September, representatives from CINDX are going to Beijing for a series of meeting with private investors and large investment funds.'
@@ -38,7 +43,7 @@ let dataRoadShow = [
         date: '19-20.09',
         data: 'Consensus 2018',
         video: {
-            img: '',
+            img: Picture_Singapor,
             src: 'https://www.coindesk.com/events/consensus-singapore-2018/'
         },
         text: 'The CINDX team will visit the Consensus 2018 Conference that will take place in Singapore on the 19th and 20th of September. Consensus has attracted more than 8,000 attendees, 50% of which are from outside the United States. The Consensus 2018 Conference has been described as the answer to the growing demand for specialised content and enhanced networking opportunities.'
@@ -48,7 +53,7 @@ let dataRoadShow = [
         date: '21-24.10',
         data: 'Money 20/20 ',
         video: {
-            img: '',
+            img: Vegas,
             src: 'https://us.money2020.com/'
         },
         text: 'The “Money Revolution” is underway at the Money 20/20 conference that will take place in Las Vegas from the 21st to the 24th of October. Participants will fearlessly tackle the mission of creating a simpler, fairer and more inclusive financial system for individuals, businesses, and society. Our team will represent CINDX platform, alongside a number of other leading blockchain projects.'
@@ -393,7 +398,7 @@ class RoadsShow extends Component {
                 <div className='road__circles'>
                     <div className="road-show-popup">
                         <div className="road-popup-video">
-                            <img src={this.state.valuePopUp.video.img} />
+                            <img className="img" src={this.state.valuePopUp.video.img} />
                         </div>
                         <div className="road-popup-text">{this.state.valuePopUp.text}</div>
                         <div className="road-popup-triangle"></div>

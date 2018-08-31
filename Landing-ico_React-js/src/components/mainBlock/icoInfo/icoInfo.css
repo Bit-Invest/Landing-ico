@@ -89,12 +89,17 @@
   color: #ffffff;
 }
 
+.ico-info__href_btcbit {
+  cursor: pointer;
+  display: block;
+}
+
 .ico-info__btcbit_logg {
   width: 63px;
   height: 18px;
   margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: 90px;
+  margin-bottom: 7px;
+  margin-left: 84px;
 }
 
 .ico-info__currency_icons {
