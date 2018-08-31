@@ -5,8 +5,8 @@ const vi = {
     'mainBlock#3': 'Tham gia đợt bán token chứng khoán của chúng tôi',
 
     'icoInfo#1': 'Chúng tôi đồng ý:',
-    'icoInfo#2': 'Vốn cứng: 21.000.000 đô la',
-    'icoInfo#3': 'Mốc vốn mềm: 1.100.000 đô la/3.800.000 đô la',
+    'icoInfo#2': 'Vốn cứng:',
+    'icoInfo#3': 'Mốc vốn mềm:',
     'icoInfo#4': 'Liệt kê các thỏa thuận được ký với',
 
     'menu#1': 'SÁCH TRẮNG',
