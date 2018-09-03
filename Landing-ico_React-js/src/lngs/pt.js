@@ -44,7 +44,7 @@ const pt = {
     'mailForm#21': 'Agarre a oportunidade antes dos outros A oferta expira em',
     'mailForm#22': 'Token sale starts in',
     'mailForm#23': 'Start from $1',
-    'mailForm#24': '1$ later',
+    'mailForm#24': '$1 later',
     'mailForm#25': 'O seu e-mail',
     'mailForm#26': 'Aderir à Pré-venda',
     'mailForm#27': 'AGREE & SUBMIT',

@@ -44,7 +44,7 @@ const fr = {
     'mailForm#21': 'Obtenez-le avant les autres L\'offre expire dans',
     'mailForm#22': 'Token sale starts in',
     'mailForm#23': 'Start from $1',
-    'mailForm#24': '1$ later',
+    'mailForm#24': '$1 later',
     'mailForm#25': 'Votre adresse e-mail',
     'mailForm#26': 'S\'inscrire à la pré-vente ',
     'mailForm#27': 'AGREE & SUBMIT',

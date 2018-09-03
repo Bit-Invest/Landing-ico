@@ -44,7 +44,7 @@ const ja = {
     'mailForm#21': 'Get it before everyone else does',
     'mailForm#22': 'Token sale starts in',
     'mailForm#23': 'Start from $1',
-    'mailForm#24': '1$ later',
+    'mailForm#24': '$1 later',
     'mailForm#25': 'メールアドレス',
     'mailForm#26': 'プレセールに参加する',
     'mailForm#27': 'AGREE & SUBMIT',

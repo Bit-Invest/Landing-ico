@@ -60,6 +60,11 @@ import Welcome_to_CINX_Token_Distribution_its_not_an_ICO_its_an_STO from '../../
 import MediaBitcoingarden from '../../media/media/bitcoingarden_logo.png'
 import MediaDigitaljournal from '../../media/media/digital_journal_transp.png'
 import MediaCoinfox from '../../media/media/CoinFox.png'
+import You_Can_Now_Buy_CINX_Tokens_with_Fiat_Money from '../../news/You_Can_Now_Buy_CINX_Tokens_with_Fiat_Money.jpeg'
+import Borderless_Blockchain_Technology_Summit_Post_Event_Report from '../../news/Borderless_Blockchain_Technology_Summit_Post_Event_Report.jpg'
+import CINDX_Platform_Promo_Presentation from '../../news/CINDX_Platform_Promo_Presentation.jpg'
+import CINDX_continues_its_regular_Weekly_Digest_column from '../../news/CINDX_continues_its_regular_Weekly_Digest_column.jpg'
+import CINDX_meets_Chain_Partners from '../../news/CINDX_meets_Chain_Partners.jpeg'
 import './MediaNews.css';
 
 const media = [
@@ -428,6 +433,41 @@ const news = [
     screen: Weekly_digest,
     name: indexLngObj['en']['mediaNews#2_91'],
     text: indexLngObj['en']['mediaNews#2_92'],
+    source: 'www.medium.com'
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/cindx-meets-chain-partners-5dd9ee71f7c0',
+    screen: CINDX_meets_Chain_Partners,
+    name: 'CINDX meets Chain Partners',
+    text: 'Allowing fiat investments in a token sale is an uncommon practice in the cryptocurrency industry. However, CINDX understood the importance of opening the sale to investors who wished to pay in fiat — a whole new class of investors is now welcome to take part in the STO.',
+    source: 'www.medium.com'
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/cindx-promo-video-f24a5944e2ef',
+    screen: CINDX_Platform_Promo_Presentation,
+    name: ' CINDX Platform Promo Presentation',
+    text: 'We have created a new video explaining the killer features and advantages of the CINDX platform.',
+    source: 'www.medium.com'
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/weekly-digest-20-august-26-august-d286c516ca24',
+    screen: CINDX_continues_its_regular_Weekly_Digest_column,
+    name: 'CINDX continues its regular Weekly Digest column.',
+    text: 'The most exciting and long-awaited event of the past week was certainly the start of CINDX Pre-Sale with a generous 40% bonus! Every day we see more and more people take interest in our project and we are delighted to welcome first investors on board!',
+    source: 'www.medium.com'
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/borderless-blockchain-technology-summit-924a40a1f43e',
+    screen: Borderless_Blockchain_Technology_Summit_Post_Event_Report,
+    name: 'Borderless Blockchain Technology Summit Post-Event Report',
+    text: 'CINDX is excited to share post-event report after its participation as a Gold Sponsor at the Borderless Blockchain Technology Summit that took place yesterday in Shanghai.',
+    source: 'www.medium.com'
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/making-cinx-tokens-more-accessible-688a693107d5',
+    screen: You_Can_Now_Buy_CINX_Tokens_with_Fiat_Money,
+    name: 'You Can Now Buy CINX Tokens with Fiat Money',
+    text: 'Allowing fiat investments in a token sale is an uncommon practice in the cryptocurrency industry. However, CINDX understood the importance of opening the sale to investors who wished to pay in fiat — a whole new class of investors is now welcome to take part in the STO.',
     source: 'www.medium.com'
   },
 ];

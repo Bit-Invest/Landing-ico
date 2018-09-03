@@ -32,7 +32,7 @@
 .block_5 .size:after {
   content: '';
   position: absolute;
-  top: 416px;
+  bottom: 125px;
   width: 90%;
   left: 5%;
   height: 1px;
@@ -196,7 +196,7 @@
   .block_5 .size:after {
     content: '';
     position: absolute;
-    top: 412px;
+    bottom: 125px;
     height: 1px;
     background: #fff;
   }

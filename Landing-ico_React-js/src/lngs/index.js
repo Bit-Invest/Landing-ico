@@ -7,6 +7,9 @@ import fr from './fr'
 import ja from './ja'
 import pt from './pt'
 import vi from './vi'
+import ar from './ar'
+import de from './de'
+import es from './es'
 
 const indexLngObj = { 
     en,
@@ -17,7 +20,10 @@ const indexLngObj = {
     fr,
     ja,
     pt,
-    vi
+    vi,
+    ar,
+    de,
+    es
 }
 
 export default indexLngObj

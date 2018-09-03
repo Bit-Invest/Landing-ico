@@ -44,7 +44,7 @@ const ko = {
     'mailForm#21': '다른 누구보다 먼저 가져가세요',
     'mailForm#22': '토큰 판매 시작 ',
     'mailForm#23': '현재 $1로는 ',
-    'mailForm#24': '나중에는 1$로는',
+    'mailForm#24': '나중에는 $1로는',
     'mailForm#25': '이메일',
     'mailForm#26': '프리세일에 참여하세요!',
     'mailForm#27': '동의 & 제출',

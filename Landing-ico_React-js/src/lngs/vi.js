@@ -44,7 +44,7 @@ const vi = {
     'mailForm#21': 'Nhận token trước những người khác Ưu đãi hết hạn trong',
     'mailForm#22': 'Token sale starts in',
     'mailForm#23': 'Start from $1',
-    'mailForm#24': '1$ later',
+    'mailForm#24': '$1 later',
     'mailForm#25': 'Email của bạn',
     'mailForm#26': 'Tham gia đợt bán trước',
     'mailForm#27': 'AGREE & SUBMIT',
