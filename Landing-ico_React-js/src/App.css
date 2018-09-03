@@ -2330,6 +2330,11 @@ body.compensate-for-scrollbar {
   .block_6 .slick-next, .block_6 .slick-prev {
     margin-top: -65px;
   }
+
+  .menu .language {
+    max-height: 45vw;
+    overflow-y: scroll;
+  }
 }
 
 
