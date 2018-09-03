@@ -83,7 +83,7 @@ class MailForm extends React.Component {
           });
 
           setTimeout(()=>{
-            window.location.href = `${links.joinpresale}&gaid=${getGAID()}&mail=${email}`;
+            window.location.href = `${links.joinpresale}&gaid=${getGAID()}&mail=${email}&lang=${lng}`;
           }, 1000);
         }
       })

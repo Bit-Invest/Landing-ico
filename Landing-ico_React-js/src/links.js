@@ -22,35 +22,6 @@ export const getGAID = function(){
 let clickid = linkSearch['clickid'];
 let gaid = getGAID;
 
-export class Join extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      gaid: null
-    };
-
-    setTimeout(this.getGaidAssync,1000);
-  }
-
-  getGaidAssync = () => {
-    this.setState({
-      gaid: getGAID()
-    });
-  }
-
-  render() {
-    const { gaid } = this.state;
-    const { props } = this;
-
-    return(
-      <a target="_blank" href={links.joinpresale+`&gaid=${gaid}`} className={props.className}>
-        {props.text}
-      </a>
-    )
-  }
-}
-
 export const list_lngs = 'en zn ko tr fr ja vi pt'; //языки который мы используем нужно тут указать
 const user_lng = window.localStorage.getItem('loc') || navigator.language || 'en';
 const user_loc = user_lng.split('_')[0].split('-')[0];
@@ -116,4 +87,34 @@ Tr турецкий
 Vi вьетнамский
 Pt Португалия
 */
+
+export class Join extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      gaid: null
+    };
+
+    setTimeout(this.getGaidAssync,1000);
+  }
+
+  getGaidAssync = () => {
+    this.setState({
+      gaid: getGAID()
+    });
+  }
+
+  render() {
+    const { gaid } = this.state;
+    const { props } = this;
+
+    return(
+      <a target="_blank" href={links.joinpresale+`&gaid=${gaid}&lang=${loc}`} className={props.className}>
+        {props.text}
+      </a>
+    )
+  }
+}
+
 
