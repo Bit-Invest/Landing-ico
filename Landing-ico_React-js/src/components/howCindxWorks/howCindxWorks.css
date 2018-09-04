@@ -86,7 +86,7 @@
   }
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1023px) {
   .block_2 h2 {
     font-size: 32px;
     margin-left: 70px;
