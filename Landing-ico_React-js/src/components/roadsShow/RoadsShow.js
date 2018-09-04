@@ -322,8 +322,10 @@ class RoadsShow extends Component {
         window.removeEventListener('resize', this.handleResize)
     }
 
-    renderRoadShowPopup = (i) => {
-        const filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
+    renderRoadShowPopup = (i, isAfterChange = false) => {
+        const filterEl = (isAfterChange) ?
+            dataRoadShow.filter((filEl, fillI) => fillI === i - 1) :
+            dataRoadShow.filter((filEl, fillI) => fillI === i)
         if (window.innerWidth >= 1201)
             this.slider.slickGoTo(i - 1)
         if (window.innerWidth >= 1001)
@@ -345,10 +347,13 @@ class RoadsShow extends Component {
             slidesToScroll: 1,
             swipeToSlide: true,
             afterChange: (i) => {
-                if ((i + 1) === dataRoadShow.length) {
-                    i = 0
+                let isAfterChange = false
+                i = i + 1
+                if (i === dataRoadShow.length) {
+                    i = 1
+                    isAfterChange = true
                 }
-                this.renderRoadShowPopup(i + 1)
+                this.renderRoadShowPopup(i, isAfterChange)
             }
         }
 
@@ -359,10 +364,13 @@ class RoadsShow extends Component {
             slidesToScroll: 1,
             swipeToSlide: true,
             afterChange: (i) => {
-                if ((i + 1) === dataRoadShow.length) {
-                    i = 0
+                let isAfterChange = false
+                i = i + 1
+                if (i === dataRoadShow.length) {
+                    i = 1
+                    isAfterChange = true
                 }
-                this.renderRoadShowPopup(i + 1)
+                this.renderRoadShowPopup(i, isAfterChange)
             }
         }
 
@@ -373,10 +381,13 @@ class RoadsShow extends Component {
             slidesToScroll: 1,
             swipeToSlide: true,
             afterChange: (i) => {
-                if ((i + 1) === dataRoadShow.length) {
-                    i = 0
+                let isAfterChange = false
+                i = i + 1
+                if (i === dataRoadShow.length) {
+                    i = 1
+                    isAfterChange = true
                 }
-                this.renderRoadShowPopup(i + 1)
+                this.renderRoadShowPopup(i, isAfterChange)
             }
         }
 
@@ -387,10 +398,13 @@ class RoadsShow extends Component {
             slidesToScroll: 1,
             swipeToSlide: true,
             afterChange: (i) => {
-                if ((i + 1) === dataRoadShow.length) {
-                    i = 0
+                let isAfterChange = false
+                i = i + 1
+                if (i === dataRoadShow.length) {
+                    i = 1
+                    isAfterChange = true
                 }
-                this.renderRoadShowPopup(i + 1)
+                this.renderRoadShowPopup(i, isAfterChange)
             }
         }
 
