@@ -59,7 +59,7 @@ let dataRoadShow = [
         text: 'The “Money Revolution” is underway at the Money 20/20 conference that will take place in Las Vegas from the 21st to the 24th of October. Participants will fearlessly tackle the mission of creating a simpler, fairer and more inclusive financial system for individuals, businesses, and society. Our team will represent CINDX platform, alongside a number of other leading blockchain projects.'
     },
 ]
-dataRoadShow = [...dataRoadShow, ...dataRoadShow, ...dataRoadShow]
+// dataRoadShow = [...dataRoadShow, ...dataRoadShow, ...dataRoadShow]
 
 // {
 //     place: 'Singapore',
@@ -287,7 +287,7 @@ dataRoadShow = [...dataRoadShow, ...dataRoadShow, ...dataRoadShow]
 
 class RoadsShow extends Component {
     state = {
-        valuePopUp: dataRoadShow[2]
+        valuePopUp: dataRoadShow[1]
     }
 
     renderRoadShow = () => {
@@ -311,19 +311,11 @@ class RoadsShow extends Component {
     }
 
     handleResize = () => {
-        let i = 0
-        let filterEl
-        if (window.innerWidth >= 801) {
-            i = 2
-            filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
-        } else if (window.innerWidth < 801)  {
-            i = 1
-            filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
-        }
+        let i = 1
+        let filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
         this.setState({
             valuePopUp: filterEl[0]
         })
-
     }
 
     componentWillUnmount = () => {
@@ -333,17 +325,13 @@ class RoadsShow extends Component {
     renderRoadShowPopup = (i) => {
         const filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
         if (window.innerWidth >= 1201)
-            this.slider.slickGoTo(i - 2)
+            this.slider.slickGoTo(i - 1)
         if (window.innerWidth >= 1001)
-            this.slider1.slickGoTo(i - 2)
-        if (window.innerWidth >= 801)
-            this.slider2.slickGoTo(i - 2)
-        if (window.innerWidth >= 601)
+            this.slider1.slickGoTo(i - 1)
+        if (window.innerWidth >= 768)
+            this.slider2.slickGoTo(i - 1)
+        if (window.innerWidth < 768)
             this.slider3.slickGoTo(i - 1)
-        if (window.innerWidth >= 451)
-            this.slider4.slickGoTo(i - 1)
-        if (window.innerWidth < 451)
-            this.slider5.slickGoTo(i - 1)
         this.setState({
             valuePopUp: filterEl[0]
         })
@@ -353,48 +341,76 @@ class RoadsShow extends Component {
         const settings = {
             infinite: true,
             speed: 500,
-            slidesToShow: 11,
-            slidesToScroll: 1
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            swipeToSlide: true,
+            afterChange: (i) => {
+                if ((i + 1) === dataRoadShow.length) {
+                    i = 0
+                }
+                this.renderRoadShowPopup(i + 1)
+            }
         }
 
         const settings2 = {
             infinite: true,
             speed: 500,
-            slidesToShow: 9,
-            slidesToScroll: 1
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            swipeToSlide: true,
+            afterChange: (i) => {
+                if ((i + 1) === dataRoadShow.length) {
+                    i = 0
+                }
+                this.renderRoadShowPopup(i + 1)
+            }
         }
 
         const settings3 = {
             infinite: true,
             speed: 500,
-            slidesToShow: 7,
-            slidesToScroll: 1
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            swipeToSlide: true,
+            afterChange: (i) => {
+                if ((i + 1) === dataRoadShow.length) {
+                    i = 0
+                }
+                this.renderRoadShowPopup(i + 1)
+            }
         }
 
         const settings4 = {
             infinite: true,
             speed: 500,
-            slidesToShow: 5,
-            slidesToScroll: 1
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            swipeToSlide: true,
+            afterChange: (i) => {
+                if ((i + 1) === dataRoadShow.length) {
+                    i = 0
+                }
+                this.renderRoadShowPopup(i + 1)
+            }
         }
 
-        const settings5 = {
-            infinite: true,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1
-        }
+        // const settings5 = {
+        //     infinite: true,
+        //     speed: 500,
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1
+        // }
 
-        const settings6 = {
-            infinite: true,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1
-        }
+        // const settings6 = {
+        //     infinite: true,
+        //     speed: 500,
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1
+        // }
 
         return (
             <div className="road-show-block">
-                <div className="header_blocks">RoadsShow</div>
+                <div className="header_blocks">Roadshow</div>
                 <div className='road__circles'>
                     <div className="road-show-popup">
                         <div className="road-popup-video">
@@ -421,16 +437,6 @@ class RoadsShow extends Component {
                     </div>
                     <div className="road__settings road__setting4">
                         <Slider ref={slider => (this.slider3 = slider)} {...settings4}>
-                            { this.renderRoadShow() }
-                        </Slider>
-                    </div>
-                    <div className="road__settings road__setting5">
-                        <Slider ref={slider => (this.slider4 = slider)} {...settings5}>
-                            { this.renderRoadShow() }
-                        </Slider>
-                    </div>
-                    <div className="road__settings road__setting6">
-                        <Slider ref={slider => (this.slider5 = slider)} {...settings6}>
                             { this.renderRoadShow() }
                         </Slider>
                     </div>
