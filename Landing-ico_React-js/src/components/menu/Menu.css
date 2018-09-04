@@ -195,7 +195,7 @@
   display: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1110px) {
   .menu .publicDocs {
     box-shadow: none;
   }
@@ -204,7 +204,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1110px) {
   .menu .publicDocs {
     position: relative;
     top: 0px;
@@ -263,6 +263,8 @@
     flex-direction: column;
     padding-left: 25px;
     padding-top: 0px;
+    max-height: 260px;
+    overflow-y: scroll;
   }
   .menu .language .itemMini2 {
     color: white;

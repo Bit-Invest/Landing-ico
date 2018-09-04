@@ -1585,7 +1585,7 @@ body.compensate-for-scrollbar {
    */
 .owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
 
-@media (max-width: 1023px) {
+@media (max-width: 1110px) {
 
   .block_6 .slick-next,
   .block_6 .slick-prev {
@@ -1818,11 +1818,14 @@ body.compensate-for-scrollbar {
       width: 100%;
     }
     .block_8 .advisers .right_content {
-      height: 750px;
+      height: 820px;
+    }
+    .block_8 .advisers .left_content {
+      height: 820px;
     }
     .block_8 .advisers .right_content {
       width: 400px;
-      height: 750px;
+      height: 820px;
       padding: 5% 20px 0 20px;
     }
     .block_8 .advisers .right_content p {
@@ -1851,10 +1854,10 @@ body.compensate-for-scrollbar {
   }
 
   .header_blocks {
-    padding: 0 !important;
-    width: 80% !important;
+    width: 100% !important;
     margin: 0 auto !important;
-    display: table !important;
+    word-wrap: break-word;
+    padding: 0 5%!important;
   }
 }
 
@@ -2056,6 +2059,14 @@ body.compensate-for-scrollbar {
     margin: 5% 0;
   }
 
+  .block_4 .sb_duo_info_br {
+    width: 100%;
+  }
+
+  .block_4 .sb_duo_info {
+    width: 110%;
+  }
+
   .block_4 .cont_3 .row p {
     width: 40%;
     line-height: 1.5;
@@ -2064,6 +2075,7 @@ body.compensate-for-scrollbar {
 
   .block_4 .cont_1 {
     margin: 0 5%;
+    width: 90%;
   }
 
   .progress-bar {
@@ -2326,7 +2338,22 @@ body.compensate-for-scrollbar {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 905px) {
+  .block_6 h2 {
+    width: 70%;
+  }
+
+  .block_6 .slick-next, .block_6 .slick-prev {
+    margin-top: -160px;
+  }
+}
+
 @media screen and (max-width: 466px) {
+  .block_4 .block_4-cinxo-info {
+    display: flex;
+    flex-direction: column;
+  }
+
   .block_6 .slick-next, .block_6 .slick-prev {
     margin-top: -65px;
   }

@@ -186,7 +186,7 @@
     background-repeat: no-repeat;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1110px) {
   .block_6 .carusel-block {
     width: 770px;
   }

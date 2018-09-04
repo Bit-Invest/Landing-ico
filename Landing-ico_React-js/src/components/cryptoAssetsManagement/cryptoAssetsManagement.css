@@ -119,12 +119,12 @@
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1110px) {
   .cryptoAssetsManagement .row {
     display: block;
   }
   .cryptoAssetsManagement .header_blocks {
-    width: 100%;
+    width: 99%;
     display: block;
   }
   .cryptoAssetsManagement .video {
@@ -155,10 +155,10 @@
 
 @media screen and (max-width: 767px) {
   .cryptoAssetsManagement .header_blocks {
-    width: 80%;
-    padding: 0 !important;
+    width: 100% !important;
     margin: 0 auto !important;
-    display: table !important;
+    word-wrap: break-word;
+    padding: 0 5%!important;
   }
   .cryptoAssetsManagement .video {
     width: 100%;

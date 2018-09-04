@@ -3,7 +3,6 @@
     width: 100%;
     height: 100%;
     padding-bottom: 70px;
-    display: none;
 }
 
 .wrapper-road {
@@ -92,7 +91,9 @@
 
 .road-show-popup .img {
   width: 100%;
-  height: auto;
+  height: 160px;
+  background-size: cover;
+  background-position: center center;
 }
 
 .road-popup-triangle {

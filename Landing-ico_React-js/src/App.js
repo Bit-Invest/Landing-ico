@@ -31,7 +31,7 @@ export const App = props => (
       <CryptoAssetsManagement />
       <TeamLegal />
       <Roadmap />
-      {/*<RoadsShow />*/}
+      <RoadsShow />
       <ProblemSolving />
       <HowCindxWorks />
       <MarketAnalytics />

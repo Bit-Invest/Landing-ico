@@ -398,7 +398,8 @@ class RoadsShow extends Component {
                 <div className='road__circles'>
                     <div className="road-show-popup">
                         <div className="road-popup-video">
-                            <img className="img" src={this.state.valuePopUp.video.img} />
+                            <div className="img" style={{ backgroundImage: `url(${this.state.valuePopUp.video.img})` }}></div>
+                            {/* <img className="img" src={} /> */}
                         </div>
                         <div className="road-popup-text">{this.state.valuePopUp.text}</div>
                         <div className="road-popup-triangle"></div>

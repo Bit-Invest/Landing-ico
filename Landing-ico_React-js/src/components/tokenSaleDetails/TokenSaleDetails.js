@@ -178,7 +178,7 @@ class TokenInfo extends React.Component {
             </div>
           </div>
         </div>
-        <p>{ indexLngObj[lng]['tokenSaleDetails#13'] } <span>{ indexLngObj[lng]['tokenSaleDetails#14'] }</span></p>
+        <p className="block_4-cinxo-info">{ indexLngObj[lng]['tokenSaleDetails#13'] } <span>{ indexLngObj[lng]['tokenSaleDetails#14'] }</span></p>
       </div>
     );
   }

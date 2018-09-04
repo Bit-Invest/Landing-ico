@@ -12,7 +12,7 @@ export const ProgressBarSale = () => {
   return (
     <div className="progressBarSale">
       <div className="container">
-        <div className={`left-block-bonuses ${(lng === 'tr' || lng === 'ja') ? 'tr-left-block-bonuses' : null}`}>
+        <div className={`left-block-bonuses ${(lng === 'tr' || lng === 'ja' || lng === 'pt') ? 'tr-left-block-bonuses' : null}`}>
           <div>{ indexLngObj[lng]['progressBarSale#1'] }</div>
           <div>{ indexLngObj[lng]['progressBarSale#2'] }</div>
         </div>
