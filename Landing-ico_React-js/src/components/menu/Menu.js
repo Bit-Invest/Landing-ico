@@ -136,7 +136,7 @@ export class Menu extends React.Component {
           {this.renderPublicDocs()}
           <a href={links.mvp} target="_blank" className="itemMini">{ indexLngObj[lng]['menu#11'] }</a>
           <div onClick={this.clickLanguage} className="drop-down">
-            <a>{ indexLngObj[lng]['menu#6'] }</a>
+            <a>{ lng.toUpperCase() }</a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
           {this.renderLanguage()}
