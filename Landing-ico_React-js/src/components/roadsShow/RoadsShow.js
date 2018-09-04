@@ -322,18 +322,24 @@ class RoadsShow extends Component {
         window.removeEventListener('resize', this.handleResize)
     }
 
-    renderRoadShowPopup = (i, isAfterChange = false) => {
-        const filterEl = (isAfterChange) ?
-            dataRoadShow.filter((filEl, fillI) => fillI === i - 1) :
-            dataRoadShow.filter((filEl, fillI) => fillI === i)
+    renderRoadShowPopup = (i) => {
+        const filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
         if (window.innerWidth >= 1201)
-            this.slider.slickGoTo(i - 1)
+            (i === 0) ?
+                this.slider.slickGoTo(dataRoadShow.length - 1) :
+                this.slider.slickGoTo(i - 1)
         if (window.innerWidth >= 1001)
-            this.slider1.slickGoTo(i - 1)
+            (i === 0) ?
+                this.slider1.slickGoTo(dataRoadShow.length - 1) :
+                this.slider1.slickGoTo(i - 1)
         if (window.innerWidth >= 768)
-            this.slider2.slickGoTo(i - 1)
+            (i === 0) ?
+                this.slider2.slickGoTo(dataRoadShow.length - 1) :
+                this.slider2.slickGoTo(i - 1)
         if (window.innerWidth < 768)
-            this.slider3.slickGoTo(i - 1)
+            (i === 0) ?
+                this.slider3.slickGoTo(dataRoadShow.length - 1) :
+                this.slider3.slickGoTo(i - 1)
         this.setState({
             valuePopUp: filterEl[0]
         })
@@ -347,13 +353,13 @@ class RoadsShow extends Component {
             slidesToScroll: 1,
             swipeToSlide: true,
             afterChange: (i) => {
-                let isAfterChange = false
-                i = i + 1
-                if (i === dataRoadShow.length) {
-                    i = 1
-                    isAfterChange = true
+                if (i + 1 === dataRoadShow.length) {
+                    i = 0
+                    this.renderRoadShowPopup(i)
+                } else {
+                    this.renderRoadShowPopup(i + 1)
                 }
-                this.renderRoadShowPopup(i, isAfterChange)
+                
             }
         }
 
@@ -364,13 +370,12 @@ class RoadsShow extends Component {
             slidesToScroll: 1,
             swipeToSlide: true,
             afterChange: (i) => {
-                let isAfterChange = false
-                i = i + 1
-                if (i === dataRoadShow.length) {
-                    i = 1
-                    isAfterChange = true
+                if (i + 1 === dataRoadShow.length) {
+                    i = 0
+                    this.renderRoadShowPopup(i)
+                } else {
+                    this.renderRoadShowPopup(i + 1)
                 }
-                this.renderRoadShowPopup(i, isAfterChange)
             }
         }
 
@@ -381,13 +386,12 @@ class RoadsShow extends Component {
             slidesToScroll: 1,
             swipeToSlide: true,
             afterChange: (i) => {
-                let isAfterChange = false
-                i = i + 1
-                if (i === dataRoadShow.length) {
-                    i = 1
-                    isAfterChange = true
+                if (i + 1 === dataRoadShow.length) {
+                    i = 0
+                    this.renderRoadShowPopup(i)
+                } else {
+                    this.renderRoadShowPopup(i + 1)
                 }
-                this.renderRoadShowPopup(i, isAfterChange)
             }
         }
 
@@ -398,13 +402,12 @@ class RoadsShow extends Component {
             slidesToScroll: 1,
             swipeToSlide: true,
             afterChange: (i) => {
-                let isAfterChange = false
-                i = i + 1
-                if (i === dataRoadShow.length) {
-                    i = 1
-                    isAfterChange = true
+                if (i + 1 === dataRoadShow.length) {
+                    i = 0
+                    this.renderRoadShowPopup(i)
+                } else {
+                    this.renderRoadShowPopup(i + 1)
                 }
-                this.renderRoadShowPopup(i, isAfterChange)
             }
         }
 
