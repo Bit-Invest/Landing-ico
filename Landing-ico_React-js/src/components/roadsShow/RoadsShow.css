@@ -53,7 +53,7 @@
     position: absolute;
     width: 345px;
     bottom: 150px;
-    left: 32.3vw;
+    left: calc(213px + 432 * ((100vw - 768px) / 1152));
 }
 
 .road-popup-text {
@@ -126,12 +126,6 @@
     display: none;
 }
 
-@media screen and (max-width: 1023px) {
-    .road-show-block {
-        padding-top: 40px;
-    }
-}
-
 @media screen and (min-width: 1001px) and (max-width: 1201px) {
     .road__setting {
         display: none;
@@ -139,10 +133,6 @@
 
     .road__setting2 {
         display: block;
-    }
-
-    .road-show-popup {
-        left: 30.3vw;
     }
 }
 
@@ -153,10 +143,6 @@
 
     .road__setting3 {
         display: block;
-    }
-
-    .road-show-popup {
-        left: 29vw;
     }
 }
 

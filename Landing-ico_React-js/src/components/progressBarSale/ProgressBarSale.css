@@ -66,6 +66,14 @@
   font-weight: 300;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1110px) {
+  .progressBarSale .tr-left-block-bonuses {
+    left: -150px;
+    width: 119px;
+    top: 10px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .progressBarSale {
     display: none;

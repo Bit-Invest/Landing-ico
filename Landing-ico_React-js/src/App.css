@@ -1936,6 +1936,7 @@ body.compensate-for-scrollbar {
   .roadmap__buttons .roadmap__button {
     width: 90%;
     padding: 10px 0;
+    margin-left: 0;
   }
 
   .roadmap__map {
@@ -2241,7 +2242,7 @@ body.compensate-for-scrollbar {
 
   .block_8 h2 {
     font-size: 26px!important;
-    width: 53%!important;
+    width: 59%!important;
     margin: 0 7%!important;
   }
 

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
-import Beijing from '../../images/Beijing.jpg'
-import Vegas from '../../images/Vegas.jpg'
-import Picture_Singapor from '../../images/Picture_Singapor.jpg'
-import Shanghai1 from '../../images/Shanghai1.jpg'
-import Shanghai2 from '../../images/Shanghai2.jpg'
+import Beijing from '../../images/RoadShowImg/Beijing.jpg'
+import Vegas from '../../images/RoadShowImg/Vegas.jpg'
+import Picture_Singapor from '../../images/RoadShowImg/Picture_Singapor.jpg'
+import Shanghai1 from '../../images/RoadShowImg/Shanghai1.jpg'
+import Shanghai2 from '../../images/RoadShowImg/Shanghai2.jpg'
 import './RoadsShow.css'
 
 let dataRoadShow = [

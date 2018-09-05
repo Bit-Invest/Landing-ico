@@ -130,18 +130,16 @@
 
 
 @media screen and (max-width: 767px) {
+  .road-show-block .header_blocks {
+    margin: 50px auto!important;
+  }
+
   .roadmap__circles {
     margin-top: 13px;
   }
   .roadmap__circle.active:after {
     content: '';
     top: 30px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .roadmap__headcontainer {
-    padding-top: 40px !important;
   }
 }
 

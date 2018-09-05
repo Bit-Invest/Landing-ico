@@ -67,7 +67,7 @@
 }
 
 .block_1 .cont_row .row span {
-  min-height: 100px;
+  min-height: 144px;
 }
 
 .block_1 .cont_row .row:last-child
@@ -106,7 +106,7 @@
 
 .block_1 .cont_row .row h3
 {
-    height: 65px;
+    min-height: 92px;
     font-size: 18px;
     font-weight: 500;
 }

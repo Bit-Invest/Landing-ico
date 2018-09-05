@@ -5,8 +5,8 @@ const de = {
     'mainBlock#3': 'Nehmen Sie an unserem Security-Token-Verkauf teil',
 
     'icoInfo#1': 'Wir akzeptieren:',
-    'icoInfo#2': 'Hard Cap: 21.000.000 USD',
-    'icoInfo#3': 'Soft-Cap-Meilensteine: 1.100.000 USD/3.800.000 USD',
+    'icoInfo#2': 'Hard Cap:D',
+    'icoInfo#3': 'Soft-Cap-Meilensteine:',
     'icoInfo#4': 'Notierungsabkommen unterzeichnet mit ',
 
     'menu#1': 'WHITEPAPER',
@@ -90,7 +90,7 @@ const de = {
     'teamLegal#10': 'RECHTLICHE DOKUMENTE',
 
     'roadmap#1': 'Roadmap',
-    'roadmap#2': 'Szenario: 3,8 Mio. USD',
+    'roadmap#2': 'Szenario',
     'roadmap#3': 'We are building the base for the CINDX platform. At this step, the Minimum Viable Product (MVP) is developed. The MVP allows an access to exchanges and replication protocol. A large portion of our resources is allocated to the scalability and security of the platform.',
     'roadmap#4': 'The CINDX.alpha version of the platform will be released. This includes a blockchain architecture and a basic system of settlement via smart contracts. The CINDX.market and CINDX.trade components will be  going through some alterations to add functionalities.  ',
     'roadmap#5': 'Based on the blockchain architecture of the CINDX.alpha version, we will produce the CINDX.talk component. This will allow users to communicate, learn and earn with useful content. Additionally, an analytical module will be added to the CINDX.core component of the platform to analyze the market information and present it to the third-party services.      ',
