@@ -173,7 +173,7 @@ const tr = {
     'tokenSaleDetails#9': `Token Adı: CINX`,
     'tokenSaleDetails#10': `Token Ön Satışı başlangıcı:`,
     'tokenSaleDetails#11': `Toplam İhraç:`,
-    'tokenSaleDetails#12': `Token Fiyatı: 1,00$=1,00:`,
+    'tokenSaleDetails#12': `Token Fiyatı:`,
     'tokenSaleDetails#13': `CINXO=1,00 CINX`,
     'tokenSaleDetails#14': `Minimum Yatırım: 50$'a eşdeğer`,
     'tokenSaleDetails#15': `TANITIM`,
@@ -513,8 +513,8 @@ const tr = {
 
     'joinTokenPreSale#1': `Token Ön Satışına Katılın!`,
     'joinTokenPreSale#2': `Ön Satışa Katılın`,
-    'joinTokenPreSale#3': `MVP'yi Test Edin `,
-    'joinTokenPreSale#4': `Merkez Ofis `,
+    'joinTokenPreSale#3': `MVP'yi Test Edin`,
+    'joinTokenPreSale#4': `Merkez Ofis`,
     'joinTokenPreSale#5': `Harjumaa, Erika 14,`,
     'joinTokenPreSale#6': `Talinn, 10416, Estonia`,
     'joinTokenPreSale#7': `Ticari Konular | hello@cindx.io`,
@@ -522,7 +522,7 @@ const tr = {
     'joinTokenPreSale#9': `Geliştirme ve Pazarlama`,
     'joinTokenPreSale#10': `Presnenskaya naberezhnaya, 8 building 1,`,
     'joinTokenPreSale#11': `Moscow, 123112, Russia`,
-    'joinTokenPreSale#12': `Kariyer | Ekibimize Katılın |`,
+    'joinTokenPreSale#12': `Kariyer | Ekibimize Katılın`,
 }
 
 export default tr

@@ -154,6 +154,21 @@
   height: 20px;
   top: 80px;
 }
+.menu .menu-flags {
+  background-size: cover;
+  width: 32px;
+  height: 20px;
+  margin-right: 10px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.menu .menu-lang {
+  position: relative;
+  top: 1px;
+}
+.menu .menu-lang-flags {
+  display: flex;
+}
 .menu .language {
   position: absolute;
   padding: 0 17px;
@@ -177,6 +192,8 @@
   font-size: 16px;
   font-weight: 300;
   color: #7962d4;
+  position: relative;
+  top: 2px;
 }
 .menu .publicDocs .itemMini2 {
   font-size: 16px;
@@ -205,6 +222,10 @@
 }
 
 @media (max-width: 1110px) {
+  .showMenu {
+    max-height: 450px;
+    overflow-y: scroll;
+  }
   .menu .publicDocs {
     position: relative;
     top: 0px;
@@ -236,20 +257,20 @@
 
   }
   .menu .drop-down {
-    height: 0px;
+    height: 0;
     padding-top: 0;
     margin-left: 0px;
     padding-left: 25px;
     padding-bottom: 0px;
-    height: 40px;
+    margin: 20px 0;
   }
   .menu .drop-down:hover {
+    height: 0;
     border-left: 4px solid #7f00e3;
     border-bottom: 0px;
     padding-left: 21px;
     padding-bottom: 0px;
     padding-top: 0;
-    height: 40px;
   }
   .menu .language {
     position: relative;
@@ -263,15 +284,12 @@
     flex-direction: column;
     padding-left: 25px;
     padding-top: 0px;
-    max-height: 260px;
-    overflow-y: scroll;
   }
   .menu .language .itemMini2 {
     color: white;
   }
   .menu .language .show-language {
-    margin-top: 25px;
-    margin-bottom: 0px;
+    margin: 20px 0;
     color: white;
   }
 }

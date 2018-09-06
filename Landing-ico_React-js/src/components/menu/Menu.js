@@ -7,6 +7,7 @@ import { Join } from '../../links.js';
 import './Menu.css';
 import { lng, list_lngs } from '../../links';
 import indexLngObj from '../../lngs/index';
+import flags from './objFlags'
 
 export class Menu extends React.Component {
   constructor(props){
@@ -83,6 +84,12 @@ export class Menu extends React.Component {
     window.location.reload();
   }
 
+  renderFlag = (lng) => {
+    return (
+      <div className="menu-flags" style={{ backgroundImage: `url(${flags[lng]})` }}></div>
+    )
+  } 
+
   renderLanguage = () => {
     const { language } = this.state;
     if (language) {
@@ -91,7 +98,8 @@ export class Menu extends React.Component {
           {
             (list_lngs.split(' ')).map((e, i) => {
               return (
-                <div className="show-language" key={i} value={e} onClick={()=>this.changeLoc(e)}> 
+                <div className="show-language" key={i} value={e} onClick={()=>this.changeLoc(e)}>
+                  {this.renderFlag(e)}
                   <a className="itemMini2">{ 
                     ({en:'English',
                       zn:'简体中文',
@@ -136,7 +144,7 @@ export class Menu extends React.Component {
           {this.renderPublicDocs()}
           <a href={links.mvp} target="_blank" className="itemMini">{ indexLngObj[lng]['menu#11'] }</a>
           <div onClick={this.clickLanguage} className="drop-down">
-            <a>{ lng.toUpperCase() }</a>
+            <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
           {this.renderLanguage()}
@@ -176,7 +184,7 @@ export class Menu extends React.Component {
               onMouseMove={this.openLanguage}
               className="drop-down"
             >
-              <a>{ lng.toUpperCase() }</a>
+              <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
               <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
               <div className="publickOnMouseLeave"></div>
               {this.renderLanguage()}

@@ -80,7 +80,7 @@ export class RoadmapContainer extends React.Component {
     super(props);
     this.state = {
       currentButton: '21m',
-      currentImage: 6
+      currentImage: 1
     }
   }
 

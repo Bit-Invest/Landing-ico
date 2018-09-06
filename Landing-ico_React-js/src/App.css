@@ -2362,10 +2362,10 @@ body.compensate-for-scrollbar {
     margin-top: -65px;
   }
 
-  .menu .language {
+  /* .menu .language {
     max-height: 45vw;
     overflow-y: scroll;
-  }
+  } */
 }
 
 

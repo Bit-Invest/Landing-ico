@@ -3,6 +3,8 @@ import { Button } from '@components/button';
 import './Roadmap.css';
 import { lng } from '../../links'
 import indexLngObj from '../../lngs/index'
+// import roadmapLike from '../../images/roadmapLike.svg'
+import roadMapLike from '../../images/roadMapLike.svg'
 
 const ROOT_CLASS = 'roadmap';
 
@@ -20,7 +22,10 @@ export const Roadmap = props => {
           onClick={() => {props.onClickQuartal(i)}}
           key={i}
         >
-          <div className={`${ROOT_CLASS}__disc`} />
+          { i < 1 ?
+            <img src={roadMapLike} style={{ width: '100%', height: '100%' }} /> :
+            <div className={`${ROOT_CLASS}__disc`} ></div>
+          }
         </div>
       ));
     }
