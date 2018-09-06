@@ -137,7 +137,7 @@
   padding: 0 17px;
   padding-top: 17px;
   top: 90px;
-  right: 258px;
+  right: 300px;
   color: #7962d4;
   border-radius: 5%;
   background-color: white;
@@ -145,7 +145,7 @@
   box-shadow: 0 0 40px black;
 }
 .menu .trPublicDocs {
-  right: 330px;
+  right: 380px;
 }
 .menu .drop-down .publickOnMouseLeave {
   position: absolute;
@@ -155,7 +155,7 @@
   top: 80px;
 }
 .menu .menu-flags {
-  background-size: cover;
+  background-size: contain;
   width: 32px;
   height: 20px;
   margin-right: 10px;
