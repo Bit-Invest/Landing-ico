@@ -59,7 +59,6 @@ let dataRoadShow = [
         text: 'The “Money Revolution” is underway at the Money 20/20 conference that will take place in Las Vegas from the 21st to the 24th of October. Participants will fearlessly tackle the mission of creating a simpler, fairer and more inclusive financial system for individuals, businesses, and society. Our team will represent CINDX platform, alongside a number of other leading blockchain projects.'
     },
 ]
-// dataRoadShow = [...dataRoadShow, ...dataRoadShow, ...dataRoadShow]
 
 // {
 //     place: 'Singapore',
@@ -282,9 +281,6 @@ let dataRoadShow = [
 //     text: '"ACCESS Makuhari Messe International Exhibition Hall 1 https://www.m-messe.co.jp/en/access/ Address: 2-1, Nakase, Mihama-ku, Chiba-city, 261-8550 Japan"'
 // }
 
-
-
-
 class RoadsShow extends Component {
     state = {
         valuePopUp: dataRoadShow[1]
@@ -430,10 +426,12 @@ class RoadsShow extends Component {
                 <div className="header_blocks">Roadshow</div>
                 <div className='road__circles'>
                     <div className="road-show-popup">
-                        <div className="road-popup-video">
-                            <div className="img" style={{ backgroundImage: `url(${this.state.valuePopUp.video.img})` }}></div>
-                        </div>
-                        <div className="road-popup-text">{this.state.valuePopUp.text}</div>
+                        <a className="road-show-a" href={this.state.valuePopUp.video.src} target="_blank">
+                            <div className="road-popup-video">
+                                <div className="img" style={{ backgroundImage: `url(${this.state.valuePopUp.video.img})` }}></div>
+                            </div>
+                            <div className="road-popup-text">{this.state.valuePopUp.text}</div>
+                        </a>
                         <div className="road-popup-triangle"></div>
                     </div>
                     <div className='road__line' />
