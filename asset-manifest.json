@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.6f7af077.css",
-  "main.css.map": "static/css/main.6f7af077.css.map",
-  "main.js": "static/js/main.4bdff606.js",
-  "main.js.map": "static/js/main.4bdff606.js.map",
+  "main.css": "static/css/main.76efb18b.css",
+  "main.css.map": "static/css/main.76efb18b.css.map",
+  "main.js": "static/js/main.40ab3701.js",
+  "main.js.map": "static/js/main.40ab3701.js.map",
   "static/media/1.svg": "static/media/1.7dfa2b82.svg",
   "static/media/2.svg": "static/media/2.5ab10e7c.svg",
   "static/media/3.svg": "static/media/3.a9e4699c.svg",
@@ -148,6 +148,7 @@
   "static/media/rating-icomarks.svg": "static/media/rating-icomarks.d2ab5e1d.svg",
   "static/media/rating-stable.svg": "static/media/rating-stable.cbe5675f.svg",
   "static/media/rating-topicolist.svg": "static/media/rating-topicolist.862eb35e.svg",
+  "static/media/roadMapLike.svg": "static/media/roadMapLike.24642804.svg",
   "static/media/sum_and_substance1.png": "static/media/sum_and_substance1.0146fead.png",
   "static/media/tokendesk.png": "static/media/tokendesk.f020e026.png",
   "static/media/twigagroup.png": "static/media/twigagroup.1754e365.png"
