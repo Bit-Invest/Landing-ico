@@ -43,7 +43,7 @@ const es = {
     'mailForm#20': '25% BONUS',
     'mailForm#21': 'Get it before everyone else does',
     'mailForm#22': 'Token sale starts in',
-    'mailForm#23': 'Start from $1',
+    'mailForm#23': 'Start from 1$',
     'mailForm#24': '1$ later',
     'mailForm#25': 'Su correo electrónico',
     'mailForm#26': 'Apuntarse a la preventa',

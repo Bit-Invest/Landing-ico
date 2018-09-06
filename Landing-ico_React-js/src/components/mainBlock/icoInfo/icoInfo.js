@@ -21,7 +21,7 @@ import indexLngObj from '../../../lngs/index'
 const ROOT_CLASS = 'ico-info';
 
 export const IcoInfo = props => {
-  const startSum = 1231560
+  const startSum = 1238560
   const finishSum = 3800000
   return (
     <div className={ROOT_CLASS}>
@@ -34,7 +34,7 @@ export const IcoInfo = props => {
         </div>
         <img className={`${ROOT_CLASS}__currency_icons`} src={currency_icons} alt={"CINDX"}/>
         <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#2'] } <span>$21,000,000</span></div>
-        <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>$1,231,560 / $3,800,000</span></div>
+        <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>$1,238,560 / $3,800,000</span></div>
         <div className={`${ROOT_CLASS}__progressBar`}>
           <div className={`${ROOT_CLASS}__progress`} style={{ width: ((startSum / finishSum) * 100) + '%' }}></div>
         </div>

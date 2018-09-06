@@ -1663,7 +1663,7 @@ body.compensate-for-scrollbar {
       margin-bottom: 50px;
     }
     .block_3 {
-      padding: 50px;
+      padding: 0 50px 50px 50px;
     }
     .block_3 .statick {
       display: none;
