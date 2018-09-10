@@ -1,10 +1,19 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
-import Beijing from '../../images/RoadShowImg/Beijing.jpg'
-import Vegas from '../../images/RoadShowImg/Vegas.jpg'
-import Picture_Singapor from '../../images/RoadShowImg/Picture_Singapor.jpg'
-import Shanghai1 from '../../images/RoadShowImg/Shanghai1.jpg'
-import Shanghai2 from '../../images/RoadShowImg/Shanghai2.jpg'
+import Beijing13_16_09 from '../../images/RoadShowImg/Beijing13-16-09.jpg'
+import Shanghai30_08 from '../../images/RoadShowImg/Shanghai30-08.jpg'
+import Shanghai7_8_09 from '../../images/RoadShowImg/Shanghai7-8-09.jpg'
+import Shanghai9_12_09 from '../../images/RoadShowImg/Shanghai9-12-09.jpg'
+import Singapore14_09 from '../../images/RoadShowImg/Singapore14-09.jpg'
+import Moscow15_09 from '../../images/RoadShowImg/Moscow15-09.jpg'
+import Seoul16_19_09 from '../../images/RoadShowImg/Seoul16-19-09.jpg'
+import Shanghai18_09 from '../../images/RoadShowImg/Shanghai18-09.jpg'
+import Singapore19_09 from '../../images/RoadShowImg/Singapore19-09.jpg'
+import Singapore21_09 from '../../images/RoadShowImg/Singapore21-09.jpg'
+import Bangkok25_26_09 from '../../images/RoadShowImg/Bangkok25-26-09.jpg'
+import Tokyo28_29_09 from '../../images/RoadShowImg/Tokyo28-29-09.jpg'
+import Kuala_Lumpur27_28_09 from '../../images/RoadShowImg/Kuala-Lumpur27-28-09.jpg'
+import Las_Vegas21_24_10 from '../../images/RoadShowImg/Las-Vegas21-24-10.jpg'
 import './RoadsShow.css'
 
 let dataRoadShow = [
@@ -12,274 +21,147 @@ let dataRoadShow = [
         place: 'Shanghai',
         date: '30.08',
         data: 'Borderless Blockchain Technology Summit 2018',
+        report: {
+            text: 'Post-Event Report',
+            link: 'https://medium.com/cindx/borderless-blockchain-technology-summit-924a40a1f43e'
+        },
         video: {
-            img: Shanghai1,
+            img: Shanghai30_08,
             src: 'http://bc.bbzgroup.cn/'
         },
-        text: 'CINDX has signed a participation contract as a Gold Sponsor for the Borderless Blockchain Technology Summit 2018 that will take place on August 30th in Shanghai. The Summit has invited the blockchain industry’s best speakers and entrepreneurs from all over the world. Each of the presenters will share their ideas and industry insight with representatives of the largest blockchain projects, including CINDX.'
+        text: 'CINDX has signed a participation contract as a Gold Sponsor for the Borderless Blockchain Technology Summit 2018. The Summit has invited the blockchain industry’s best speakers and entrepreneurs from all over the world.'
+    },
+    {
+        place: 'Shanghai',
+        date: '7-8.09',
+        data: 'SLUSH SHANGHAI',
+        video: {
+            img: Shanghai7_8_09,
+            src: 'http://shanghai.slush.org/'
+        },
+        text: 'Slush Shanghai 2018 will attract 15,000 attendees, including 1,000 startups, 500 investors, as well as 500 domestic and foreign media all gathered in one of the most iconic cities in the world.'
     },
     {
         place: 'Shanghai',
         date: '9-12.09',
         data: 'Blockchainer China Tour',
         video: {
-            img: Shanghai2,
+            img: Shanghai9_12_09,
             src: 'http://www.blockchainer.vip/'
         },
-        text: 'Renewed interest in the Chinese blockchain industry has re-established China as a global crypto hub.  Therefore, we’re pleased to announce that the CINDX roadshow will continue with a presentation in Shanghai from the  9th to the 11th of September.  Meetings with private investors and representatives of Asian companies have also been arranged as part of the roadshow. We are excited to make more industry connections and to expand CINDX’ industry presence.'
+        text: 'CINDX has made meeting arrangements with a number of private investors and representatives of well-known investment funds such as JRR Crypto Fund, LD Capital, J One Capital, Consensus Investment. Additionally, CINDX will attend Wanxiang Blockchain Summit. The Summit will invite representatives from various industries to share their insight regarding the solutions empowered by blockchain technology, envisioning the true value of blockchain technology in future industrial application.'
     },
     {
         place: 'Bejing',
         date: '13-16.09',
         data: 'Blockchainer China Tour',
         video: {
-            img: Beijing,
+            img: Beijing13_16_09,
             src: 'http://www.blockchainer.vip/'
         },
-        text: 'The newest developments in the Chinese blockchain industry are pointing towards a new chapter in the cryptocurrency economy. For this reason, CINDX is continuing to conduct active work in Asia. From the 12th to the 16th of September, representatives from CINDX are going to Beijing for a series of meeting with private investors and large investment funds.'
+        text: 'CINDX is going to Beijing for a series of meetings with private investors, large investment funds and exchanges such as BlockVC, FBG, Node Capital, Huobi Exchange, Roots Capital, DFund.'
     },
     {
         place: 'Singapore',
-        date: '19-20.09',
-        data: 'Consensus 2018',
+        date: '14.09',
+        data: 'SLUSH SINGAPORE',
         video: {
-            img: Picture_Singapor,
+            img: Singapore14_09,
+            src: 'http://singapore.slush.org/'
+        },
+        text: 'Slush is the world’s leading startup event where founders and tech talent meet with top-tier international investors, executives, and media.'
+    },
+    {
+        place: 'Moscow',
+        date: '15.09',
+        data: 'CRYPTO EXPO MOSCOW',
+        video: {
+            img: Moscow15_09,
+            src: 'https://cryptoexpo.moscow/'
+        },
+        text: 'Crypto EXPO Moscow is #1 space where the crypto world comes live. Worldwide сrypto markets, blockchains and ICO came all in one to Moscow to open the world of mysterious and at the same time trendy topic - crypto money. This huge expo-forum is not just about building a network between crypto companies and gurus from all over the world but more so about getting to know what crypto world is actually about.'
+    },
+    {
+        place: 'Seoul',
+        date: '16-19.09',
+        data: 'BLOCKSEOUL',
+        video: {
+            img: Seoul16_19_09,
+            src: 'https://www.blockseoul.com/'
+        },
+        text: 'Block Seoul, one of the largest blockchain conferences of its kind, a connection hub for a diverse range of ICOs, investors, financial institutions, and VCs.'
+    },
+    {
+        place: 'Shanghai',
+        date: '18.09',
+        data: 'BLOCKCHAIN PRACTITIONER CHINA SUMMIT 2018',
+        video: {
+            img: Shanghai18_09,
+            src: 'http://sh.bpc-events.com/'
+        },
+        text: 'Blockchain Practitioner China Summit 2018 will gather blockchain elite across the globe, including blockchain industrial associations, institutes, Fintech companies, blockchain technology innovators from more than 20 countries'
+    },
+    {
+        place: 'Singapore',
+        date: '19.09',
+        data: 'CONSENSUS: SINGAPORE 2018',
+        video: {
+            img: Singapore19_09,
             src: 'https://www.coindesk.com/events/consensus-singapore-2018/'
         },
-        text: 'The CINDX team will visit the Consensus 2018 Conference that will take place in Singapore on the 19th and 20th of September. Consensus has attracted more than 8,000 attendees, 50% of which are from outside the United States. The Consensus 2018 Conference has been described as the answer to the growing demand for specialised content and enhanced networking opportunities.'
+        text: 'Consensus: Singapore will feature 75+ speakers and 50+ sponsors across 2 days of powerful insights, industry announcements, and cross-industry networking opportunities.'
+    },
+    {
+        place: 'Singapore',
+        date: '21.09',
+        data: 'TOKENMATCH',
+        video: {
+            img: Singapore21_09,
+            src: 'https://tokenmatch.net/'
+        },
+        text: 'At Tokenmatch, an elite group of ICO teams present to small groups of investors that have the capacity and mandate to deploy capital. Investors come by invitation only and ICO teams are preselected through a rigorous process.'
+    },
+    {
+        place: 'Bangkok',
+        date: '25-26.09',
+        data: 'ASEAN DIGITAL 5.0 DIGITAL ECONOMY. THINK ASIA.',
+        video: {
+            img: Bangkok25_26_09,
+            src: 'https://aseandigital.io/'
+        },
+        text: 'As economies worldwide have been transcending fast and to ensure our digital preparedness, Digital ASEAN which consists of consultants and enthusiasts step forward aiming to bridge the gap in digital transformations between businesses, community and government. Digital ASEAN visions to be the head organization to lead in promoting digital economy conferences, forums, summits and all sorts of events with the support of international organizations and individuals.'
+    },
+    {
+        place: 'Tokyo',
+        date: '28-29.09',
+        data: 'TEAMZ BLOCKCHAIN SUMMIT',
+        video: {
+            img: Tokyo28_29_09,
+            src: 'https://summit.teamz.co.jp/'
+        },
+        text: 'TEAMZ Blockchain Summit connects trusted investors, blockchain projects, exchanges, media, and influencers in all sectors to contribute to the emerging global blockchain ecosystem. With the aim of closing deals, creating business alliances and network expansion, over 2000 participants from more than 50 countries will the summit.'
+    },
+    {
+        place: 'Kuala Lumpur',
+        date: '27-28.09',
+        data: 'DAIBC: INVESTMENTS & PROJECT SHOWCASES',
+        video: {
+            img: Kuala_Lumpur27_28_09,
+            src: 'http://www.szwgroup.com/ibdac-kuala-lumpur/index.aspx'
+        },
+        text: 'In 2018, new blockchain initiatives are launched every day. With many projects set to release a working product or application, and a likely flood of newly converted institutional money. However, this exponentially growing market will continue to strongly highlight whether Blockchains can or could support a decentralised world. DAIBC: Investments & Project Showcases will help to select a project to invest.'
     },
     {
         place: 'Las Vegas',
         date: '21-24.10',
         data: 'Money 20/20 ',
         video: {
-            img: Vegas,
+            img: Las_Vegas21_24_10,
             src: 'https://us.money2020.com/'
         },
         text: 'The “Money Revolution” is underway at the Money 20/20 conference that will take place in Las Vegas from the 21st to the 24th of October. Participants will fearlessly tackle the mission of creating a simpler, fairer and more inclusive financial system for individuals, businesses, and society. Our team will represent CINDX platform, alongside a number of other leading blockchain projects.'
     },
 ]
-
-// {
-//     place: 'Singapore',
-//     date: '14.09',
-//     data: 'Slush',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: 'At Slush Singapore 2018, 60 top-class startups will have an opportunity to showcase their businesses to investors, media and potential clients at the Demo Area. Being at the heart of the conference, Demo Stands are a fantastic platform to capture the interest of over 3,000 attendees.'
-// },
-// {
-//     place: 'Seoul',
-//     date: '16-19.09',
-//     data: 'Blockseoul',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"10min pitch, booth, 3 tickets stand"'
-// },
-// {
-//     place: 'Shanghai',
-//     date: '18.09',
-//     data: 'Blockchain Practitioner Conference China ',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '//Booth 2m*2m Panel speech 1/2 Ad 12000 Booth 2m*2m Keynote speech 1/2 Ad 14000'
-// },
-// {
-//     place: 'Stockholm',
-//     date: '19.09 ',
-//     data: 'Blockchain & Bitcoin Conference',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '//'
-// },
-// {
-//     place: 'Singapore',
-//     date: '19.09',
-//     data: 'CONSENSUS Coindesk',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"SPONSORED NEWSLETTER @ $10,000 Take advantage of our branded newsletter by starting the narrative leading up to the Conference and reaching our 170,000+ subscriber base"'
-// },
-// {
-//     place: 'Beijing China',
-//     date: '19-20.09',
-//     data: '5th Annual Block Chain Finance & Fin-tech China',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"Moderator of panel, 8 tickets, 2m*2m stand, 2 diner passes 2 tickets 2m*2m stand + 2 stuff tickets"'
-// },
-// {
-//     place: 'Moscow',
-//     date: '25.09',
-//     data: 'INTERNATIONAL BLOCKCHAIN SUMMIT',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"Stand 2meter+roll up + 2 tickets 1550 Stand 3 meter + roll up + 4 tickets VIP 2300"'
-// },
-// {
-//     place: 'Banghok',
-//     date: '25-26.09',
-//     data: 'Digital economy. Think Asia',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"5 Minutes Stage Time 2 VIP Event Pass 2 B2B Networking Cruise Dinner Wristband 1 Networking Table"'
-// },
-// {
-//     place: 'Kuala Lumpur',
-//     date: '27-28.09',
-//     data: 'Blockchain Project Showcases',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"in Malaysia Kuala lumpur at September 27,28 this year,you will see 100+ investors from VC/PE,Family office etc. Exhibition Sponsor: 8000USD Customized exhibit Space (3MX2M) One on one meeting with investors from VC,Capital Speech Sponsor:10000USD Keynote Speech (30 Minutes) One on one meeting with investors from VC,Capital"'
-// },
-// {
-//     place: 'Tokyo',
-//     date: '28-29.09',
-//     data: 'TEAMZ Blockchain Summit.',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"Investors, guest speakers kick-off party on Sep 27th (2 people/project) Booth (3m×2m) for Day 1 Lunch with investors, guest speakers for Day 1 (2 people/project) Summit pass for Day 1 & Day 2"'
-// },
-// {
-//     place: 'Malta',
-//     date: '03-05.10',
-//     data: 'Delta Summit',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"30 min Masterclass / Demo / Sponsor Presentation on MAIN STAGE  50 words company profile in event brochure  Social media post for Speaker + for company promo as official sponsor"'
-// },
-// {
-//     place: 'London',
-//     date: '9-10.10',
-//     data: 'PayExpo',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"As the UK’s largest payments event, PayExpo is essential for anyone involved and interested in making payments faster, easier and more secure. //Stand 6 aq m only 2 tickets"'
-// },
-// {
-//     place: 'Shanghai',
-//     date: '15-16.10',
-//     data: 'IFPI2018: FinTech Future',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '// Lottery machine for investors cards'
-// },
-// {
-//     place: 'Barselona',
-//     date: '16-18.10',
-//     data: 'ICO 2018',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '// special event for ICO investors'
-// },
-// {
-//     place: 'Las Vegas',
-//     date: '21-24.10',
-//     data: 'Money20/20',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"Money20/20 is the anchor event on the industry calendar where C-Level Executives, renowned speakers, innovators and disruptors from across the world unite to drive change in the future of money. // 70% of booths are booked."'
-// },
-// {
-//     place: 'Dubai',
-//     date: '24-25.10',
-//     data: 'WORLD blockchain summit',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"ICO Grand Slam is a great platform for those companies who are prepared to launch their ICO and the ones who are still planning on their ICO. They can pitch in ront of global investors including VCs, angel investors and key government authorities – and stand a chance to raise funds of upto US$ 2 million. Pitch only 6000 Pitch+table 10000"'
-// },
-// {
-//     place: 'Beijing China',
-//     date: '24-25.10',
-//     data: 'BlockChain World Forum',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '//'
-// },
-// {
-//     place: 'Austin USA',
-//     date: '26-27.10',
-//     data: 'Texas Bitcoin Conference 2018',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '//'
-// },
-// {
-//     place: 'Malta',
-//     date: '1-2.11',
-//     data: 'MALTA BLOCKCHAIN SUMMIT',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"includes 3 min Pitch on stage in front of savvy investors 2 metre booth (2*2 wall + table + 2 chairs) October 20 – Deadline for applications. October 21 – Top applicants will be invited to pitch. November 1-2 – ICO Pitch Competition (winners will be announced at the end of the conference). $100k PRIZE"'
-// },
-// {
-//     place: 'Dubai',
-//     date: '14-15.11',
-//     data: 'Dubai Decentralized 2.0',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '10 min speech'
-// },
-// {
-//     place: 'Moscow',
-//     date: '20.11',
-//     data: 'Blockchain Conference Russia',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '//'
-// },
-// {
-//     place: 'Tokyo',
-//     date: '8.12',
-//     data: 'Blockchain & Criptocurrency',
-//     video: {
-//         img: '',
-//         src: ''
-//     },
-//     text: '"ACCESS Makuhari Messe International Exhibition Hall 1 https://www.m-messe.co.jp/en/access/ Address: 2-1, Nakase, Mihama-ku, Chiba-city, 261-8550 Japan"'
-// }
 
 class RoadsShow extends Component {
     state = {
@@ -430,8 +312,11 @@ class RoadsShow extends Component {
                             <div className="road-popup-video">
                                 <div className="img" style={{ backgroundImage: `url(${this.state.valuePopUp.video.img})` }}></div>
                             </div>
-                            <div className="road-popup-text">{this.state.valuePopUp.text}</div>
                         </a>
+                        <div className="road-popup-text">
+                            <div>{this.state.valuePopUp.text}</div>
+                            { this.state.valuePopUp.report ? <a target="_blank" href={this.state.valuePopUp.report.link}>{this.state.valuePopUp.report.text}</a> : null }
+                        </div>
                         <div className="road-popup-triangle"></div>
                     </div>
                     <div className='road__line' />

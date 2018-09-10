@@ -535,9 +535,9 @@ const en = {
     'teamAdvisersPartners#165': 'Сhair of Greenberg Whitcombe Takeuchi Gibson & Grayver LLP',
     'teamAdvisersPartners#166': 'Represented and advised a number of successful ICOs',
     'teamAdvisersPartners#167': 'Has substantial experience in venture capital fund formation',
-    'teamAdvisersPartners#168': 'Leonard Grayver was born in USSR, moved to US with his parents as a kid. While in Law school Leonard created a start-up and successfully raised more than 18 mln USD for financing.',
-    'teamAdvisersPartners#169': 'Start-up has not survived but since then Leonard has helped more than 400 start-ups',
-    'teamAdvisersPartners#170': 'Overall Leonard has more than 10 years of experience with VC financing, fund structuring, due diligence (representing both funds and LPs). His advise to all entrepreneurs - do not follow trends, follow your interests.',
+    'teamAdvisersPartners#168': 'Leonard Grayver is an experienced corporate attorney based in Silicon Valley, California. He is the chair of the corporate law group at Greenberg, LLP, a boutique law firm with offices in Southern and Northern California.',
+    'teamAdvisersPartners#169': 'He has represented venture capital funds, entrepreneurs, and startup companies in diverse industries, including medical devices, software, healthcare, electronics, IT, and alternative energy, for almost twenty years. In the last several years, Leonard also developed a robust practice focusing on cryptocurrency law and has served as counsel in a number of token sales offerings.',
+    'teamAdvisersPartners#170': 'Leonard earned a B.A. from University of California, Los Angeles, and a Juris Doctorate from UCLA School of Law.',
 
     'joinTokenPreSale#1': 'Join Token Pre-Sale Now!',
     'joinTokenPreSale#2': 'JOIN PRE-SALE',

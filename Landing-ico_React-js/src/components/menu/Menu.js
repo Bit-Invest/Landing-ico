@@ -90,7 +90,7 @@ export class Menu extends React.Component {
     )
   } 
 
-  renderLanguage = () => {
+  renderLanguage = (removeLng) => {
     const { language } = this.state;
     if (language) {
       return (
@@ -147,7 +147,7 @@ export class Menu extends React.Component {
             <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
-          {this.renderLanguage()}
+          {this.renderLanguage(lng)}
         </div>
       )
     } else {

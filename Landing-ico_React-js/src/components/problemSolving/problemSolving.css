@@ -116,3 +116,9 @@
   font-size: 16px;
   font-weight: 300;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1140px) {
+  .block_1 .cont_row .row {
+    width: 31%!important;
+  }
+}

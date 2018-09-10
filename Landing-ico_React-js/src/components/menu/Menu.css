@@ -238,15 +238,18 @@
     flex-direction: column;
     padding-left: 25px;
     padding-top: 0px;
+    padding-bottom: 190px;
   }
   .menu .publicDocs .doc_icon {
     background-image: url(../../images/doc_icon.png);
     margin-right: 5px;
     margin-left: 0px;
   }
+  .menu .publicDocs .show-publicDocs:first-of-type {
+    margin-bottom: 20px;
+  }
   .menu .publicDocs .show-publicDocs {
-    margin-top: 25px;
-    margin-bottom: 0px;
+    margin: 20px 0;
   }
   .menu .publicDocs .itemMini2 {
     color: white;

@@ -446,14 +446,14 @@ const news = [
     source: 'www.medium.com',
     centered: false
   },
-  {
-    videoSrc: 'https://medium.com/cindx/cindx-team-david-gutierrez-deeeaf66c992',
-    screen: David_Gutierrez,
-    name: indexLngObj['en']['mediaNews#2_77'],
-    text: indexLngObj['en']['mediaNews#2_78'],
-    source: 'www.medium.com',
-    centered: true
-  },
+  // {
+  //   videoSrc: 'https://medium.com/cindx/cindx-team-david-gutierrez-deeeaf66c992',
+  //   screen: David_Gutierrez,
+  //   name: indexLngObj['en']['mediaNews#2_77'],
+  //   text: indexLngObj['en']['mediaNews#2_78'],
+  //   source: 'www.medium.com',
+  //   centered: true
+  // },
   {
     videoSrc: 'https://medium.com/cindx/icobench-gives-4-8-to-cindx-70aa244ca7c4',
     screen: ICObench_gives_4_8_to_CINDX,

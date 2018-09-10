@@ -737,6 +737,7 @@ width: 720px;
 
     .block_8 .advisers .right_content {
       width: 640px;
+      padding: 10% 60px 0;
     }
 
     .block_8 .advisers .left_content .text_content {
@@ -1820,15 +1821,12 @@ body.compensate-for-scrollbar {
     .block_8 .advisers .slick-list {
       width: 100%;
     }
-    .block_8 .advisers .right_content {
-      height: 820px;
-    }
     .block_8 .advisers .left_content {
-      height: 820px;
+      height: 870px;
     }
     .block_8 .advisers .right_content {
       width: 400px;
-      height: 820px;
+      height: 870px;
       padding: 5% 20px 0 20px;
     }
     .block_8 .advisers .right_content p {
