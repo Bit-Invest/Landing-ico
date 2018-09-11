@@ -65,6 +65,52 @@
   font-size: 14px;
   font-weight: 300;
 }
+.container__dock-block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.container__dock-block .download_public_doc {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 30px;
+  margin-bottom: 12px;
+}
+
+.wrapper__doc {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 21px 0;
+}
+
+.container__row {
+  display: flex;
+  justify-content: center;
+}
+
+.container__row .row {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.container__dock-block .row:first-of-type {
+  margin-left: 32px;
+}
+
+.container__dock-block .row:last-of-type {
+  margin-right: 32px;
+}
+
+.row_span_a {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  margin-left: 9px;
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1110px) {
   .progressBarSale .tr-left-block-bonuses {

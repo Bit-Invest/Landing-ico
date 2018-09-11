@@ -22,6 +22,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { saveMoney } from './store/store'
 import axios from 'axios'
+import { DocPopup } from './components/DocPopup/DocPopup'
 import './App.css';
 
 class App extends React.Component {
@@ -41,6 +42,7 @@ class App extends React.Component {
       <div className="App">
         <CanvasMouns />
         <PopUpManager />
+        <DocPopup />
         <div className="contentText">
           <Menu />
           <MainBlock />
