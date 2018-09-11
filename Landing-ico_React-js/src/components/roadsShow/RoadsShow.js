@@ -315,7 +315,7 @@ class RoadsShow extends Component {
                         </a>
                         <div className="road-popup-text">
                             <div>{this.state.valuePopUp.text}</div>
-                            { this.state.valuePopUp.report ? <a target="_blank" href={this.state.valuePopUp.report.link}>{this.state.valuePopUp.report.text}</a> : null }
+                            { this.state.valuePopUp.report ? <a className="road-show__report" target="_blank" href={this.state.valuePopUp.report.link}>{this.state.valuePopUp.report.text}</a> : null }
                         </div>
                         <div className="road-popup-triangle"></div>
                     </div>

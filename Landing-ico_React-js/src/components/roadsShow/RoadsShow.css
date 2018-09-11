@@ -68,7 +68,12 @@
     border-bottom-right-radius: 10px;
     min-height: 250px;
     width: 100%;
+    position: relative;
+}
 
+.road-show__report {
+    position: absolute;
+    bottom: 20px;
 }
 
 .road-show-block .slick-initialized .slick-slide {

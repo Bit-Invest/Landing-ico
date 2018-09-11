@@ -66,6 +66,12 @@ import Borderless_Blockchain_Technology_Summit_Post_Event_Report from '../../new
 import CINDX_Platform_Promo_Presentation from '../../news/CINDX_Platform_Promo_Presentation.jpg'
 import CINDX_continues_its_regular_Weekly_Digest_column from '../../news/CINDX_continues_its_regular_Weekly_Digest_column.jpg'
 import CINDX_meets_Chain_Partners from '../../news/CINDX_meets_Chain_Partners.jpeg'
+import CINDX_gained_a_status_of_a_Joint_Stock_Company from '../../news/CINDX_gained_a_status_of_a_Joint_Stock_Company.jpg'
+import Weekly_digest_27_08_18_02_09_18 from '../../news/Weekly_digest_27_08_18_02_09_18.jpg'
+import APAC_is_the_Frontrunner_in_Blockchain_Adoption from '../../news/APAC_is_the_Frontrunner_in_Blockchain_Adoption.jpg'
+import Leonard_Grayver from '../../news/Leonard_Grayver.jpg'
+import CINDX_KYC_TUTORIAL from '../../news/CINDX_KYC_TUTORIAL.png'
+import CINDX_ROADSHOW_IN_CHINA_NEW_STAGE from '../../news/CINDX_ROADSHOW_IN_CHINA_NEW_STAGE.jpg'
 import './MediaNews.css';
 
 const media = [
@@ -523,6 +529,54 @@ const news = [
     screen: You_Can_Now_Buy_CINX_Tokens_with_Fiat_Money,
     name: 'You Can Now Buy CINX Tokens with Fiat Money',
     text: 'Allowing fiat investments in a token sale is an uncommon practice in the cryptocurrency industry. However, CINDX understood the importance of opening the sale to investors who wished to pay in fiat — a whole new class of investors is now welcome to take part in the STO.',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/weekly-digest-27-august-2-september-c4c6b3688a11',
+    screen: Weekly_digest_27_08_18_02_09_18,
+    name: 'Weekly digest (27.08.18 - 02.09.18)',
+    text: 'CINDX is on the path to successfully completing its STO! Every day, the CINDX team strives to improve the CINDX platform, to strengthen the legal status and to support and spread CINDX’ brand identity across the international space. For last week’s most important CINDX news updates, please visit our Medium blog!',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/legal-joint-stock-company-e4877893bddb',
+    screen: CINDX_gained_a_status_of_a_Joint_Stock_Company,
+    name: 'CINDX got a status of a Joint Stock Company',
+    text: 'CINDX is currently in a phase of major growth. As such, legal compliance and regular communication with regulators has taken top priority. At the moment, CINDX has completed the process of restructuring itself to a Joint Stock Company. The team at CINDX has taken great pains to ensure that this legal transition has happened smoothly. Learn more about CINDX and Join the Sale!',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/apac-the-frontrunner-in-blockchain-adoption-af85be64876b',
+    screen: APAC_is_the_Frontrunner_in_Blockchain_Adoption,
+    name: 'APAC is the Frontrunner in Blockchain Adoption',
+    text: 'CINDX Research: Asia-Pacific is Adopting Blockchain Development Faster than any other Geography',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/advisers-leonard-grayver-4eb7657268b8',
+    screen: Leonard_Grayver,
+    name: 'Leonard Grayver, the co-chair of corporate and international law practice at Greenberg, Whitcombe, Takeuchi, Gibson & Grayver LLP',
+    text: 'Leonard Grayver brings litigation experience in a combination of international corporate and employment law to the CINDX team. Read what inspires him the most about CINDX in our blog!',
+    source: 'www.medium.com',
+    centered: false
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/kyc-tutorial-a697393191dd',
+    screen: CINDX_KYC_TUTORIAL,
+    name: 'CINDX KYC Tutorial',
+    text: ' We have prepared the 4-steps guideline to help you easily pass KYC procedure. Hurry up to get KYC-verification and take your 25% bonuses — the largest bonus possible!',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/roadshow-in-china-new-stage-322ca7ecbc95',
+    screen: CINDX_ROADSHOW_IN_CHINA_NEW_STAGE,
+    name: 'CINDX ROADSHOW IN CHINA. NEW STAGE',
+    text: ' Take a look at the amazing plans CINDX has for its roadshow in China!',
     source: 'www.medium.com',
     centered: true
   },
