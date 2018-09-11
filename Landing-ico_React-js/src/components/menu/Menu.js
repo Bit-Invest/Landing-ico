@@ -98,22 +98,27 @@ export class Menu extends React.Component {
           {
             (list_lngs.split(' ')).map((e, i) => {
               return (
-                <div className="show-language" key={i} value={e} onClick={()=>this.changeLoc(e)}>
-                  {this.renderFlag(e)}
-                  <a className="itemMini2">{ 
-                    ({en:'English',
-                      zn:'简体中文',
-                      ko:'한국어',
-                      tr:'Türkçe',
-                      fr:'Français',
-                      vi:'Tiếng Việt',
-                      pt:'Português',
-                      ja:'日本語',
-                      ar:'العربية',
-                      de:'Deutsch',
-                      es:'Español'
-                    }[e] || e).toUpperCase() 
-                  }</a>
+                <div key={i} value={e} onClick={()=>this.changeLoc(e)}>
+                  { e !== removeLng ?
+                    <div className="show-language">
+                      {this.renderFlag(e)}
+                      <a className="itemMini2">{ 
+                        ({en:'English',
+                          zn:'简体中文',
+                          ko:'한국어',
+                          tr:'Türkçe',
+                          fr:'Français',
+                          vi:'Tiếng Việt',
+                          pt:'Português',
+                          ja:'日本語',
+                          ar:'العربية',
+                          de:'Deutsch',
+                          es:'Español'
+                        }[e] || e).toUpperCase() 
+                      }</a>
+                    </div> : 
+                    null 
+                }
                 </div>
               )
             })

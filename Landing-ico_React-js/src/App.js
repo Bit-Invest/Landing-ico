@@ -18,30 +18,54 @@ import { ProgressBarSale } from '@components/progressBarSale/ProgressBarSale';
 import { Menu } from '@components/menu/Menu';
 import RoadsShow from './components/roadsShow/RoadsShow';
 import { SocIcons } from '@components/socIcons/SocIcons';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { saveMoney } from './store/store'
+import axios from 'axios'
 import './App.css';
 
-export const App = props => (
-  <div className="App">
-    <CanvasMouns />
-    <PopUpManager />
-    <div className="contentText">
-      <Menu />
-      <MainBlock />
-      <ProgressBarSale />
-      <CryptoAssetsManagement />
-      <TeamLegal />
-      <Roadmap />
-      <RoadsShow />
-      <ProblemSolving />
-      <HowCindxWorks />
-      <MarketAnalytics />
-      <TokenSaleDetails />
-      <LegalSchedule />
-      <FeedbackProject />
-      <MediaNews />
-      <TeamAdvisersPartners />
-      <JoinTokenPreSale />
-      <SocIcons />
-    </div>
-  </div>
-);
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  componentDidMount() {
+    axios.get('https://cindx.io/raised')
+      .then(res => {
+        this.props.saveMoney(res.data.value)
+      })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <CanvasMouns />
+        <PopUpManager />
+        <div className="contentText">
+          <Menu />
+          <MainBlock />
+          <ProgressBarSale />
+          <CryptoAssetsManagement />
+          <TeamLegal />
+          <Roadmap />
+          <RoadsShow />
+          <ProblemSolving />
+          <HowCindxWorks />
+          <MarketAnalytics />
+          <TokenSaleDetails />
+          <LegalSchedule />
+          <FeedbackProject />
+          <MediaNews />
+          <TeamAdvisersPartners />
+          <JoinTokenPreSale />
+          <SocIcons />
+        </div>
+      </div>
+    )
+  }
+}
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({saveMoney}, dispatch);
+
+export default connect(null, mapDispatchToProps)(App)

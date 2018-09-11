@@ -3,6 +3,7 @@ import block_3_ico_1 from '../../images/block_3_ico_1.png';
 import block_3_ico_2 from '../../images/block_3_ico_2.png';
 import block_3_ico_3 from '../../images/block_3_ico_3.png';
 import imageCircle from '../../images/block_4_cont_4_img.png';
+import { connect } from 'react-redux';
 
 import { links, Join, lng } from '../../links.js';
 import indexLngObj from '../../lngs/index'
@@ -274,26 +275,38 @@ const ButtonBuy = () => {
   );
 };
 
-export const TokenSaleDetails = () => (
-  <div className="block_4" id="sale_details">
-    <div className="size">
-      <h2 className="header_blocks">{ indexLngObj[lng]['tokenSaleDetails#39'] }</h2>
-        <div className="container">
-          <div className="left_block4">
-            <TokenAllocation />
-            <TokenInfo />
-            <div className="progressBar_block4">
-              <ProgressBar money="1,238,560" percent={5.6}/>
+const TokenSaleDetails = props => {
+  const outputValue = props.state ? String(props.state.money).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1,') : 0
+  return (
+    <div className="block_4" id="sale_details">
+      <div className="size">
+        <h2 className="header_blocks">{ indexLngObj[lng]['tokenSaleDetails#39'] }</h2>
+          <div className="container">
+            <div className="left_block4">
+              <TokenAllocation />
+              <TokenInfo />
+              <div className="progressBar_block4">
+                <ProgressBar money={outputValue} percent={5.6}/>
+              </div>
+              <Docs />
             </div>
-            <Docs />
+            <div className="right_block4">
+              <UseProceeds />
+              <TokenDeals />
+              <ButtonBuy />
+            </div>
+            <div className="clear" />
           </div>
-          <div className="right_block4">
-            <UseProceeds />
-            <TokenDeals />
-            <ButtonBuy />
-          </div>
-          <div className="clear" />
-        </div>
+      </div>
     </div>
-  </div>
-)
+  )
+}
+
+const mapStateToProps = state => ({
+  state: state
+})
+
+const connectedContainer =
+  connect(mapStateToProps)(TokenSaleDetails);
+
+export {connectedContainer as TokenSaleDetails}

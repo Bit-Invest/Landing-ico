@@ -4,10 +4,12 @@ import reducer from './reducers';
 export const SHOW_POP_UP = 'SHOW_POP_UP';
 export const HIDE_POP_UP = 'HIDE_POP_UP';
 export const CHANGE_URL_POP_UP_VIDEO = 'CHANGE_URL_POP_UP_VIDEO';
+export const SAVE_MONEY_SUCCESS = 'SAVE_MONEY_SUCCESS';
 
 const initialState = {
   currentPopUp: false,
-  urlPopUpVideo: ''
+  urlPopUpVideo: '',
+  money: 0
 };
 
 export function switchPopUp(state = initialState, action) {
@@ -26,6 +28,11 @@ export function switchPopUp(state = initialState, action) {
     return {
       ...state,
       urlPopUpVideo: action.payload.urlPopUpVideo
+    }
+  } else if (action.type === SAVE_MONEY_SUCCESS) {
+    return {
+      ...state,
+      money: action.money
     }
   }
 }
@@ -54,6 +61,13 @@ export const changeUrlPopupVideo = (url) => {
     payload: {
       urlPopUpVideo: url
     }
+  }
+}
+
+export const saveMoney = money => {
+  return {
+    type: SAVE_MONEY_SUCCESS, 
+    money: money
   }
 }
 

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { connect } from 'react-redux';
 import { ProgressBar } from '@components/progressBar';
 import currency_icons from '../../../images/currency_icons.png'
 import btcbit_logo_head from '../../../images/btcbit_logo_head.png'
@@ -20,8 +21,10 @@ import indexLngObj from '../../../lngs/index'
 
 const ROOT_CLASS = 'ico-info';
 
-export const IcoInfo = props => {
-  const startSum = 1238560
+const IcoInfo = props => {
+  const startSum = props.state ? props.state.money : 0
+  const outputValue = props.state ? String(props.state.money).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1,') : 0
+    
   const finishSum = 3800000
   return (
     <div className={ROOT_CLASS}>
@@ -34,7 +37,7 @@ export const IcoInfo = props => {
         </div>
         <img className={`${ROOT_CLASS}__currency_icons`} src={currency_icons} alt={"CINDX"}/>
         <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#2'] } <span>$21,000,000</span></div>
-        <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>$1,238,560 / $3,800,000</span></div>
+        <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>${outputValue} / $3,800,000</span></div>
         <div className={`${ROOT_CLASS}__progressBar`}>
           <div className={`${ROOT_CLASS}__progress`} style={{ width: ((startSum / finishSum) * 100) + '%' }}></div>
         </div>
@@ -84,3 +87,12 @@ export const IcoInfo = props => {
     </div>
   )
 };
+
+const mapStateToProps = state => ({
+  state: state
+})
+
+const connectedContainer =
+  connect(mapStateToProps)(IcoInfo);
+
+export {connectedContainer as IcoInfo}
