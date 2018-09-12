@@ -1954,7 +1954,7 @@ body.compensate-for-scrollbar {
   } */
 
   .wrapper__roadmap__map {
-    height: 130px;
+    height: 140px;
     overflow-y: hidden;
   }
 
