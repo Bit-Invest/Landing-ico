@@ -62,7 +62,7 @@ class DocPopup extends Component {
             })
         }
     
-        fetch(`https://cindx.io/subscribe/?email=${email}&loc=dc&clickid=${links.clickid}&loc=en&gaid=${links.gaid()}`)
+        fetch(`https://cindx.io/subscribe/?email=${email}&loc=dc&clickid=${links.clickid}&gaid=${links.gaid()}`)
             .then((response) => response.json())
             .then((responseJson) => {
                 if (responseJson.status === 1 || responseJson.status === 2) {

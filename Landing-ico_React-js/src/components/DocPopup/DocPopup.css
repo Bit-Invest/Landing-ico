@@ -39,8 +39,10 @@
 .showDocPopUp__textStatus {
     position: absolute;
     bottom: 10px;
-    padding-left: 10px;
+    padding: 0 10px;
+    text-align: center;
     left: 0;
+    width: 100%;
 }
 
 .wrapper-docPopup {
@@ -72,6 +74,7 @@
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;
+    border: 0;
 }
 
 .wrapper-docPopup .disc-button:hover {
