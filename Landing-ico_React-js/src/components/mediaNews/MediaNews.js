@@ -602,7 +602,7 @@ export class MediaNews extends React.Component {
       })
       return (
         <div key={i} className="item">
-          <a target="_blank" href={el.videoSrc}>
+          <a target="_blank" onClick={() => window.open(el.videoSrc)} href=''>
             <div className="txtNews">
               <div className="img" style={{ backgroundImage: `url(${el.screen})`, backgroundPosition: el.centered ? 'center center' : '0 0' }}></div>
               <div className="content">
@@ -636,9 +636,9 @@ export class MediaNews extends React.Component {
       })
       return (
         <div key={i} className="txt">
-          <a href={el.src} target="_blank">
+          <a onClick={() => window.open(el.src)} href='' target="_blank">
             <div className="bg">
-                <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
+              <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
               <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
               <p>{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
               <p className="details">Details</p>
@@ -698,7 +698,7 @@ export class MediaNews extends React.Component {
       lazyLoad: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     };
     return (
       <div className="block_7">

@@ -1942,7 +1942,7 @@ body.compensate-for-scrollbar {
     width: 100%;
     overflow-x: scroll;
     padding-left: 5%;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 
   .teamLegal .container .row .LC {
