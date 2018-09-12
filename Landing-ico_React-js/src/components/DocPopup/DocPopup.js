@@ -66,11 +66,13 @@ class DocPopup extends Component {
             .then((response) => response.json())
             .then((responseJson) => {
                 if (responseJson.status === 1 || responseJson.status === 2) {
+                    console.log('status 1 or 2', responseJson)
                     this.setState({
                         submitStatus: 1,
                         submitStatusText: 'Already was or is not valid, try again'
                     });
                 } else if (responseJson.status === 0) {
+                    console.log('status 0', responseJson)
                     this.setState({
                         submitStatus: 2,
                         submitStatusText: 'Your email has been sent successfully'

@@ -4,8 +4,10 @@ import block_3_ico_2 from '../../images/block_3_ico_2.png';
 import block_3_ico_3 from '../../images/block_3_ico_3.png';
 import imageCircle from '../../images/block_4_cont_4_img.png';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { showDocPopup } from '../../store/store';
 
-import { links, Join, lng } from '../../links.js';
+import { links, Join, lng, ab_val } from '../../links.js';
 import indexLngObj from '../../lngs/index'
 
 import { ProgressBar } from '@components/progressBar';
@@ -185,28 +187,35 @@ class TokenInfo extends React.Component {
   }
 };
 
-const Docs = () => {
+const Docs = props => {
+  const openPopup = (e) => {
+    if (ab_val === '1') {
+      e.preventDefault()
+      props.showDocPopup('')
+    }
+  }
+  
   return(
     <div className="cont_5">
       <div className="row">
-        <a target="_blank" href={links.wp}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-        <a target="_blank" href={links.wp}><span>{ indexLngObj[lng]['tokenSaleDetails#15'] }</span></a>
+        <a target="_blank" onClick={openPopup} href={links.wp}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+        <a target="_blank" onClick={openPopup} href={links.wp}><span>{ indexLngObj[lng]['tokenSaleDetails#15'] }</span></a>
       </div>
       <div className="row">
-        <a target="_blank" href={links.pr}><img src={block_3_ico_2} alt={"CINDEX"}/></a>
-        <a target="_blank" href={links.pr}><span>{ indexLngObj[lng]['tokenSaleDetails#16'] }</span></a>
+        <a target="_blank" onClick={openPopup} href={links.pr}><img src={block_3_ico_2} alt={"CINDEX"}/></a>
+        <a target="_blank" onClick={openPopup} href={links.pr}><span>{ indexLngObj[lng]['tokenSaleDetails#16'] }</span></a>
       </div>
       <div className="row">
-        <a target="_blank" href={links.op}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-        <a target="_blank" href={links.op}><span>{ indexLngObj[lng]['tokenSaleDetails#17'] }</span></a>
+        <a target="_blank" onClick={openPopup} href={links.op}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+        <a target="_blank" onClick={openPopup} href={links.op}><span>{ indexLngObj[lng]['tokenSaleDetails#17'] }</span></a>
       </div>
       <div className="row">
-        <a target="_blank" href={links.fm}><img src={block_3_ico_3} alt={"CINDEX"}/></a>
-        <a target="_blank" href={links.fm}><span>{ indexLngObj[lng]['tokenSaleDetails#18'] }</span></a>
+        <a target="_blank" onClick={openPopup} href={links.fm}><img src={block_3_ico_3} alt={"CINDEX"}/></a>
+        <a target="_blank" onClick={openPopup} href={links.fm}><span>{ indexLngObj[lng]['tokenSaleDetails#18'] }</span></a>
       </div>
       <div className="row">
-        <a target="_blank" href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-        <a target="_blank" href={links.ld}><span>{ indexLngObj[lng]['tokenSaleDetails#19'] }</span></a>
+        <a target="_blank" onClick={openPopup} href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+        <a target="_blank" onClick={openPopup} href={links.ld}><span>{ indexLngObj[lng]['tokenSaleDetails#19'] }</span></a>
       </div>
     </div>
   );
@@ -288,7 +297,7 @@ const TokenSaleDetails = props => {
               <div className="progressBar_block4">
                 <ProgressBar money={outputValue} percent={5.6}/>
               </div>
-              <Docs />
+              <Docs {...props} />
             </div>
             <div className="right_block4">
               <UseProceeds />
@@ -306,7 +315,12 @@ const mapStateToProps = state => ({
   state: state
 })
 
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({showDocPopup}, dispatch);
+
 const connectedContainer =
-  connect(mapStateToProps)(TokenSaleDetails);
+  connect(mapStateToProps, mapDispatchToProps)(TokenSaleDetails);
 
 export {connectedContainer as TokenSaleDetails}
+
+

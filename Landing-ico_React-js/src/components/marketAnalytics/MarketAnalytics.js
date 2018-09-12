@@ -6,13 +6,23 @@ import block_3_img from '../../images/block_3_img_1@2x.png';
 import block_3_img2 from '../../images/block_3_img_2@2x.png';
 import block_3_img3 from '../../images/block_3_img_3@2x.png';
 import block_3_man from '../../images/block_3_man.png';
-import {links} from '../../links.js';
+import {links, ab_val} from '../../links.js';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { showDocPopup } from '../../store/store';
 import Slider from "react-slick";
 import './MarketAnalytics.css';
 import { lng } from '../../links.js'
 import indexLngObj from '../../lngs/index'
 
-export const MarketAnalytics = () => {
+const MarketAnalytics = props => {
+  const openPopup = (e) => {
+    if (ab_val === '1') {
+      e.preventDefault()
+      props.showDocPopup('')
+    }
+  }
+
   const settings = {
     arrows: false,
     infinite: true,
@@ -59,24 +69,24 @@ export const MarketAnalytics = () => {
           </div>
           <div className="cont_3">
             <div className="row">
-              <a target="_blank" href={links.wp}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
-              <a target="_blank" href={links.wp}><span>{ indexLngObj[lng]['marketAnalytics#9'] }</span></a>
+              <a target="_blank" onClick={openPopup} href={links.wp}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
+              <a target="_blank" onClick={openPopup} href={links.wp}><span>{ indexLngObj[lng]['marketAnalytics#9'] }</span></a>
             </div>
             <div className="row">
-              <a target="_blank" href={links.pr}><img src={block_3_ico_2} alt={"block_3_ico_2"}/></a>
-              <a target="_blank" href={links.pr}><span>{ indexLngObj[lng]['marketAnalytics#10'] }</span></a>
+              <a target="_blank" onClick={openPopup} href={links.pr}><img src={block_3_ico_2} alt={"block_3_ico_2"}/></a>
+              <a target="_blank" onClick={openPopup} href={links.pr}><span>{ indexLngObj[lng]['marketAnalytics#10'] }</span></a>
             </div>
             <div className="row">
-              <a target="_blank" href={links.op}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
-              <a target="_blank" href={links.op}><span>{ indexLngObj[lng]['marketAnalytics#11'] }</span></a>
+              <a target="_blank" onClick={openPopup} href={links.op}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
+              <a target="_blank" onClick={openPopup} href={links.op}><span>{ indexLngObj[lng]['marketAnalytics#11'] }</span></a>
             </div>
             <div className="row">
-              <a target="_blank" href={links.fm}><img src={block_3_ico_3} alt={"block_3_ico_3"}/></a>
-              <a target="_blank" href={links.fm}><span>{ indexLngObj[lng]['marketAnalytics#12'] }</span></a>
+              <a target="_blank" onClick={openPopup} href={links.fm}><img src={block_3_ico_3} alt={"block_3_ico_3"}/></a>
+              <a target="_blank" onClick={openPopup} href={links.fm}><span>{ indexLngObj[lng]['marketAnalytics#12'] }</span></a>
             </div>
             <div className="row">
-              <a target="_blank" href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-              <a target="_blank" href={links.ld}><span>{ indexLngObj[lng]['marketAnalytics#13'] }</span></a>
+              <a target="_blank" onClick={openPopup} href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+              <a target="_blank" onClick={openPopup} href={links.ld}><span>{ indexLngObj[lng]['marketAnalytics#13'] }</span></a>
             </div>
           </div>
           </div>
@@ -130,24 +140,24 @@ export const MarketAnalytics = () => {
             </div>
             <div className="cont_3">
               <div className="row">
-                <a target="_blank" href={links.wp}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
-                <a target="_blank" href={links.wp}><span>{ indexLngObj[lng]['marketAnalytics#9'] }</span></a>
+                <a target="_blank" onClick={openPopup} href={links.wp}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
+                <a target="_blank" onClick={openPopup} href={links.wp}><span>{ indexLngObj[lng]['marketAnalytics#9'] }</span></a>
               </div>
               <div className="row">
-                <a target="_blank" href={links.pr}><img src={block_3_ico_2} alt={"block_3_ico_2"}/></a>
-                <a target="_blank" href={links.pr}><span>{ indexLngObj[lng]['marketAnalytics#10'] }</span></a>
+                <a target="_blank" onClick={openPopup} href={links.pr}><img src={block_3_ico_2} alt={"block_3_ico_2"}/></a>
+                <a target="_blank" onClick={openPopup} href={links.pr}><span>{ indexLngObj[lng]['marketAnalytics#10'] }</span></a>
               </div>
               <div className="row">
-                <a target="_blank" href={links.op}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
-                <a target="_blank" href={links.op}><span>{ indexLngObj[lng]['marketAnalytics#11'] }</span></a>
+                <a target="_blank" onClick={openPopup} href={links.op}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
+                <a target="_blank" onClick={openPopup} href={links.op}><span>{ indexLngObj[lng]['marketAnalytics#11'] }</span></a>
               </div>
               <div className="row">
-                <a target="_blank" href={links.fm}><img src={block_3_ico_3} alt={"block_3_ico_3"}/></a>
-                <a target="_blank" href={links.fm}><span>{ indexLngObj[lng]['marketAnalytics#12'] }</span></a>
+                <a target="_blank" onClick={openPopup} href={links.fm}><img src={block_3_ico_3} alt={"block_3_ico_3"}/></a>
+                <a target="_blank" onClick={openPopup} href={links.fm}><span>{ indexLngObj[lng]['marketAnalytics#12'] }</span></a>
               </div>
               <div className="row">
-                <a target="_blank" href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-                <a target="_blank" href={links.ld}><span>{ indexLngObj[lng]['marketAnalytics#13'] }</span></a>
+                <a target="_blank" onClick={openPopup} href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+                <a target="_blank" onClick={openPopup} href={links.ld}><span>{ indexLngObj[lng]['marketAnalytics#13'] }</span></a>
               </div>
             </div>
             <div className="clear" />
@@ -174,3 +184,11 @@ export const MarketAnalytics = () => {
     </div>
   )
 }
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({showDocPopup}, dispatch);
+
+const connectedContainer =
+  connect(null, mapDispatchToProps)(MarketAnalytics);
+
+export {connectedContainer as MarketAnalytics};

@@ -4,12 +4,15 @@ import menu from '../../images/menu.png';
 import arrow_public from '../../images/arrow_public.png';
 import {links} from '../../links.js';
 import { Join } from '../../links.js';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { showDocPopup } from '../../store/store';
 import './Menu.css';
-import { lng, list_lngs } from '../../links';
+import { lng, list_lngs, ab_val } from '../../links';
 import indexLngObj from '../../lngs/index';
 import flags from './objFlags'
 
-export class Menu extends React.Component {
+class Menu extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -47,30 +50,37 @@ export class Menu extends React.Component {
     this.setState({ language: true })
   }
 
+  openPopup = (e) => {
+    if (ab_val === '1') {
+      e.preventDefault()
+      this.props.showDocPopup('')
+    }
+  }
+
   renderPublicDocs = () => {
-    const { publicDocs } = this.state;
+    let { publicDocs } = this.state;
     if (publicDocs) {
       return (
         <div onMouseLeave={this.closePublicDocs} className={`publicDocs ${lng === 'tr' || lng === 'es' || lng === 'de' || lng === 'ar' ? 'trPublicDocs' : null}`}>
           <div className="show-publicDocs">
-            <div className="doc_icon"></div>
-            <a target="_blank" href={links.wp} className="itemMini2">{ indexLngObj[lng]['menu#1'] }</a>
+            <div className="doc_icon" onClick={this.openPopup}></div>
+            <a target="_blank" onClick={this.openPopup} href={links.wp} className="itemMini2">{ indexLngObj[lng]['menu#1'] }</a>
           </div>
           <div className="show-publicDocs">
-            <div className="doc_icon"></div>
-            <a target="_blank" href={links.pr} className="itemMini2">{ indexLngObj[lng]['menu#2'] }</a>
+            <div className="doc_icon" onClick={this.openPopup}></div>
+            <a target="_blank" onClick={this.openPopup} href={links.pr} className="itemMini2">{ indexLngObj[lng]['menu#2'] }</a>
           </div>
           <div className="show-publicDocs">
-            <div className="doc_icon"></div>
-            <a target="_blank" href={links.op} className="itemMini2">{ indexLngObj[lng]['menu#3'] }</a>
+            <div className="doc_icon" onClick={this.openPopup}></div>
+            <a target="_blank" onClick={this.openPopup} href={links.op} className="itemMini2">{ indexLngObj[lng]['menu#3'] }</a>
           </div>
           <div className="show-publicDocs">
-            <div className="doc_icon"></div>
-            <a target="_blank" href={links.fm} className="itemMini2">{ indexLngObj[lng]['menu#4'] }</a>
+            <div className="doc_icon" onClick={this.openPopup}></div>
+            <a target="_blank" onClick={this.openPopup} href={links.fm} className="itemMini2">{ indexLngObj[lng]['menu#4'] }</a>
           </div>
           <div className="show-publicDocs">
-            <div className="doc_icon"></div>
-            <a target="_blank" href={links.ld} className="itemMini2">{ indexLngObj[lng]['menu#5'] }</a>
+            <div className="doc_icon" onClick={this.openPopup}></div>
+            <a target="_blank" onClick={this.openPopup} href={links.ld} className="itemMini2">{ indexLngObj[lng]['menu#5'] }</a>
           </div>
         </div>
       )
@@ -210,3 +220,11 @@ export class Menu extends React.Component {
     )
   }
 }
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({showDocPopup}, dispatch);
+
+const connectedContainer =
+  connect(null, mapDispatchToProps)(Menu);
+
+export {connectedContainer as Menu};

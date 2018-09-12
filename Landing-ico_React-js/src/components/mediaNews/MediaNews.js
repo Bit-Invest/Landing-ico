@@ -602,7 +602,7 @@ export class MediaNews extends React.Component {
       })
       return (
         <div key={i} className="item">
-          <a target="_blank" onClick={() => window.open(el.videoSrc)} href=''>
+          <a target="_blank" onClick={() =>  window.innerWidth < 768 ? window.open(el.videoSrc) : null} href={el.videoSrc}>
             <div className="txtNews">
               <div className="img" style={{ backgroundImage: `url(${el.screen})`, backgroundPosition: el.centered ? 'center center' : '0 0' }}></div>
               <div className="content">
@@ -636,7 +636,7 @@ export class MediaNews extends React.Component {
       })
       return (
         <div key={i} className="txt">
-          <a onClick={() => window.open(el.src)} href='' target="_blank">
+          <a onClick={() => window.innerWidth < 768 ? window.open(el.src) : null} href={el.src} target="_blank">
             <div className="bg">
               <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
               <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
