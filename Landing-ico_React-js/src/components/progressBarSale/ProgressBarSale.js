@@ -10,10 +10,10 @@ import { bindActionCreators } from 'redux';
 import { showDocPopup } from '../../store/store';
 
 const ProgressBarSale = props => {
-  const currentDate = new Date()
-  const startDate = new Date(2018, 7, 24)
-  const finishDate = new Date(2018, 11, 19)
-  const currentProgress = ((currentDate - startDate) * 100) / (finishDate - startDate)
+  // const currentDate = new Date()
+  // const startDate = new Date(2018, 7, 24)
+  // const finishDate = new Date(2018, 11, 19)
+  // const currentProgress = ((currentDate - startDate) * 100) / (finishDate - startDate)
 
   const sendDoc = docValue => {
     props.showDocPopup(docValue)
@@ -61,7 +61,7 @@ const ProgressBarSale = props => {
           <p className="sale-bonusses">{ indexLngObj[lng]['progressBarSale#4'] }</p>
           <p className="cinx">1 CINX = $1</p>
         </div>
-        <div className="progressBar"><div className="progress" style={{ width: currentProgress > 0 ? (currentProgress - 3) + '%' : '0%' }}></div></div>
+        <div className="progressBar">{/*<div className="progress" style={{ width: currentProgress > 0 ? (currentProgress - 3) + '%' : '0%' }}></div>*/}</div>
         <div className="progress-data">
           <div className="data">
             <p className="amount">1.25</p>
