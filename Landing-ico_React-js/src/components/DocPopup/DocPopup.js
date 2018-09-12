@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { hideDocPopUp } from '../../store/store';
 import { Input } from '@components/input';
+import { links, getGAID, lng } from '../../links' 
 import './DocPopup.css'
 
 const ROOT_CLASS = 'showDocPopUp';
@@ -61,33 +62,31 @@ class DocPopup extends Component {
             })
         }
     
-        // fetch(`https://cindx.io/subscribe/?email=${email}&loc=${lng}&clickid=${links.clickid}&loc=en&gaid=${links.gaid()}`)
-        //   .then((response) => response.json())
-        //   .then((responseJson) => {
-        //     console.log(responseJson)
-        //     if(responseJson.status == 1 || responseJson.status == 2) {
-        //       this.setState({
-        //         submitStatus: 1,
-        //         submitStatusText: indexLngObj[lng]['mailForm#3']
-        //       });
-        //     } else if (responseJson.status == 0) {
-        //       this.setState({
-        //         submitStatus: 2,
-        //         submitStatusText: indexLngObj[lng]['mailForm#4']
-        //       });
-    
-        //       setTimeout(()=>{
-        //         window.location.href = `${links.joinpresale}&gaid=${getGAID()}&mail=${email}&lang=${lng}`;
-        //       }, 1000);
-        //     }
-        //   })
-        //   .catch((error) => {
-        //     console.error(error);
-        //     this.setState({
-        //       submitStatus: 3,
-        //       submitStatusText: indexLngObj[lng]['mailForm#5']
-        //     });
-        //   });
+        fetch(`https://cindx.io/subscribe/?email=${email}&loc=dc&clickid=${links.clickid}&loc=en&gaid=${links.gaid()}`)
+            .then((response) => response.json())
+            .then((responseJson) => {
+                if (responseJson.status === 1 || responseJson.status === 2) {
+                    this.setState({
+                        submitStatus: 1,
+                        submitStatusText: 'Already was or is not valid, try again'
+                    });
+                } else if (responseJson.status === 0) {
+                    this.setState({
+                        submitStatus: 2,
+                        submitStatusText: 'Your email has been sent successfully'
+                    });
+                    
+                    setTimeout(()=> {
+                        this.onClickClose()
+                    }, 1000);
+                }
+            })
+            .catch((error) => {
+                this.setState({
+                    submitStatus: 3,
+                    submitStatusText: 'an error occurred, try again'
+                });
+            });
       }
 
     onClickClose = () => {
@@ -106,7 +105,16 @@ class DocPopup extends Component {
                 <div className="wrapper-close-block" onClick={this.onClickClose}></div>
                 <div className="docPopup-content">
                     <div onClick={this.onClickClose} className="disc-close"></div>
-                    <div className="wrapper-docPopup">
+                    <form 
+                        className="wrapper-docPopup"
+                        onSubmit = {
+                            (e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                this.sendSubcribe();
+                            }
+                        }
+                    >
                         <div className="disc-text">
                             Want to get all documents on Your mail in 2 seconds?
                         </div>
@@ -117,9 +125,9 @@ class DocPopup extends Component {
                                 value={email}
                             />
                         </div>
-                        <div className="disc-button" onClick={this.sendSubcribe}>
+                        <button className="disc-button" type="submit" onClick={this.sendSubcribe}>
                             Send me docs
-                        </div>
+                        </button>
                         {
                             submitStatus !== 4 ?
                             <div
@@ -132,7 +140,7 @@ class DocPopup extends Component {
                                 {submitStatusText}
                             </div> : null
                         }
-                    </div>
+                    </form>
                 </div>
             </div>
         )
