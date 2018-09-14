@@ -49,6 +49,10 @@ const de = {
     'mailForm#26': 'Am Vorverkauf teilnehmen',
     'mailForm#27': 'AGREE & SUBMIT',
 
+    'docPopup#1': 'Erhalten Sie alle Dokumente in Ihrer e-Mail',
+    'docPopup#2': 'Geben Sie Ihre e-Mail',
+    'docPopup#3': 'Schickt mir docs',
+
     'progressBarSale#1': 'Verkaufsboni ',
     'progressBarSale#2': 'in CINX',
     'progressBarSale#3': 'Vorverkauf',

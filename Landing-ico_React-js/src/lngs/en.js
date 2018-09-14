@@ -43,6 +43,10 @@ const en = {
     'mailForm#26': 'BUY CINX TOKENS',
     'mailForm#27': 'AGREE & SUBMIT',
 
+    'docPopup#1': 'Receive all documents in your email',
+    'docPopup#2': 'Enter your email',
+    'docPopup#3': 'SEND ME DOCS',
+
     'progressBarSale#1': 'Bonuses',
     'progressBarSale#2': 'in CINX',
     'progressBarSale#3': 'Pre-Sale',

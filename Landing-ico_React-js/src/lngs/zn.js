@@ -49,6 +49,10 @@ const zn = {
     'mailForm#26': '参与预售',
     'mailForm#27': '同意和提交',
 
+    'docPopup#1': '把所有的文件收到你的邮箱',
+    'docPopup#2': '输入你的电子邮箱',
+    'docPopup#3': '把所有的文件发给我',
+
     'progressBarSale#1': '奖金',
     'progressBarSale#2': 'CINX',
     'progressBarSale#3': '预售',

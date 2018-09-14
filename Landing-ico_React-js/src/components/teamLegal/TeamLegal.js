@@ -67,32 +67,35 @@ class TeamLegal extends React.Component {
                   </a>
                 </div>
               </div>
-              <div className="dock_block">
-                <div className="dock">
-                  <div className="row">
-                    <a target="_blank" onClick={this.openPopup} href={links.wp}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-                    <a target="_blank" onClick={this.openPopup} href={links.wp}><span>{ indexLngObj[lng]['teamLegal#6'] }</span></a>
+              { ab_val !== '1' ?
+                <div className="dock_block">
+                  <div className="dock">
+                    <div className="row">
+                      <a target="_blank" onClick={this.openPopup} href={links.wp}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+                      <a target="_blank" onClick={this.openPopup} href={links.wp}><span>{ indexLngObj[lng]['teamLegal#6'] }</span></a>
+                    </div>
+                    <div className="row">
+                      <a target="_blank" onClick={this.openPopup} href={links.pr}><img src={block_3_ico_2} alt={"CINDEX"}/></a>
+                      <a target="_blank" onClick={this.openPopup} href={links.pr}><span>{ indexLngObj[lng]['teamLegal#7'] }</span></a>
+                    </div>
+                    <div className="row">
+                      <a target="_blank" onClick={this.openPopup} href={links.op}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+                      <a target="_blank" onClick={this.openPopup} href={links.op}><span>{ indexLngObj[lng]['teamLegal#8'] }</span></a>
+                    </div>
                   </div>
-                  <div className="row">
-                    <a target="_blank" onClick={this.openPopup} href={links.pr}><img src={block_3_ico_2} alt={"CINDEX"}/></a>
-                    <a target="_blank" onClick={this.openPopup} href={links.pr}><span>{ indexLngObj[lng]['teamLegal#7'] }</span></a>
+                  <div className="dock">
+                    <div className="row">
+                      <a target="_blank" onClick={this.openPopup} href={links.fm}><img src={block_3_ico_3} alt={"CINDEX"}/></a>
+                      <a target="_blank" onClick={this.openPopup} href={links.fm}><span>{ indexLngObj[lng]['teamLegal#9'] }</span></a>
+                    </div>
+                    <div className="row">
+                      <a target="_blank" onClick={this.openPopup} href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+                      <a target="_blank" onClick={this.openPopup} href={links.ld}><span>{ indexLngObj[lng]['teamLegal#10'] }</span></a>
+                    </div>
                   </div>
-                  <div className="row">
-                    <a target="_blank" onClick={this.openPopup} href={links.op}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-                    <a target="_blank" onClick={this.openPopup} href={links.op}><span>{ indexLngObj[lng]['teamLegal#8'] }</span></a>
-                  </div>
-                </div>
-                <div className="dock">
-                  <div className="row">
-                    <a target="_blank" onClick={this.openPopup} href={links.fm}><img src={block_3_ico_3} alt={"CINDEX"}/></a>
-                    <a target="_blank" onClick={this.openPopup} href={links.fm}><span>{ indexLngObj[lng]['teamLegal#9'] }</span></a>
-                  </div>
-                  <div className="row">
-                    <a target="_blank" onClick={this.openPopup} href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-                    <a target="_blank" onClick={this.openPopup} href={links.ld}><span>{ indexLngObj[lng]['teamLegal#10'] }</span></a>
-                  </div>
-                </div>
-              </div>
+                </div> :
+                null
+              }
             </div>
             <RigthVideo video_show={this.showVideoInPopUp} />
           </div>

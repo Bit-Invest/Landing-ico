@@ -49,6 +49,10 @@ const pt = {
     'mailForm#26': 'Aderir à Pré-venda',
     'mailForm#27': 'AGREE & SUBMIT',
 
+    'docPopup#1': 'Receba todos os documentos em seu e-mail',
+    'docPopup#2': 'Introduza o seu e-mail',
+    'docPopup#3': 'Envie-me docs',
+
     'progressBarSale#1':  'Bónus de venda',
     'progressBarSale#2':  'em CINX',
     'progressBarSale#3':  'Pré-venda',

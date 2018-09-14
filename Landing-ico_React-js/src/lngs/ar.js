@@ -49,6 +49,10 @@ const ar = {
     'mailForm#26': 'الانضمام إلى فعاليات الطرح الأولي ',
     'mailForm#27': 'AGREE & SUBMIT',
 
+    'docPopup#1': 'استلام جميع المستندات في بريدك الكتروني',
+    'docPopup#2': 'ادخل بريدك الكتروني',
+    'docPopup#3': 'أرسل لي مستندات',
+
     'progressBarSale#1': 'مكافآت البيع ',
     'progressBarSale#2': 'CINX في',
     'progressBarSale#3': 'الطرح الأولي',

@@ -49,6 +49,10 @@ const ja = {
     'mailForm#26': 'プレセールに参加する',
     'mailForm#27': 'AGREE & SUBMIT',
 
+    'docPopup#1': '電子メール内のすべてのドキュメントを受信する',
+    'docPopup#2': 'メールアドレスを入力',
+    'docPopup#3': '私にドキュメントを送信',
+
     'progressBarSale#1': 'セールボーナス',
     'progressBarSale#2': 'CINXで',
     'progressBarSale#3': 'プレセール',

@@ -6,7 +6,7 @@ import { showPopUp, changeUrlPopupVideo } from '../../store/store';
 import { bindActionCreators } from 'redux';
 import play_button_youtube from '../../media/play_button_youtube.png';
 import { connect } from 'react-redux';
-import { links, lng, getGAID } from '../../links.js';
+import { links, lng, getGAID, ab_val } from '../../links.js';
 import indexLngObj from '../../lngs/index'
 import './mailForm.css';
 
@@ -205,7 +205,7 @@ class MailForm extends React.Component {
             <div className={`button button_gradient ${!email ? null : "focus_bun_grdn"}`}
               onClick={this.sendSubcribe}
             >
-              { !email ? indexLngObj[lng]['mailForm#26'] : indexLngObj[lng]['mailForm#27'] }
+              { !email ? ab_val === '1' ? "JOIN US" : indexLngObj[lng]['mailForm#26'] : indexLngObj[lng]['mailForm#27'] }
             </div>
           </div>
           {

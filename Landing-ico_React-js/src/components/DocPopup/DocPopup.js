@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { hideDocPopUp } from '../../store/store';
 import { Input } from '@components/input';
-import { links, getGAID, lng } from '../../links' 
+import { links, getGAID, lng } from '../../links'
+import indexLngObj from '../../lngs/index'
 import './DocPopup.css'
 
 const ROOT_CLASS = 'showDocPopUp';
@@ -118,17 +119,17 @@ class DocPopup extends Component {
                         }
                     >
                         <div className="disc-text">
-                            Want to get all documents on Your mail in 2 seconds?
+                            { indexLngObj[lng]['docPopup#1'] }
                         </div>
                         <div className={`${ROOT_CLASS}__input ${ (submitStatus === 0 || submitStatus === 1) ? "errorRed" : null }`}>
                             <Input
-                                placeholder='Enter Your Email'
+                                placeholder={ indexLngObj[lng]['docPopup#2'] }
                                 onChange={this.onChange}
                                 value={email}
                             />
                         </div>
                         <button className="disc-button" type="submit" onClick={this.sendSubcribe}>
-                            Send me docs
+                            { indexLngObj[lng]['docPopup#3'] }
                         </button>
                         {
                             submitStatus !== 4 ?

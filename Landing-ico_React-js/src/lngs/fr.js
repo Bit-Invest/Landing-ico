@@ -49,6 +49,10 @@ const fr = {
     'mailForm#26': 'S\'inscrire à la pré-vente ',
     'mailForm#27': 'AGREE & SUBMIT',
 
+    'docPopup#1': 'Recevoir tous les documents dans votre email',
+    'docPopup#2': 'Entrez votre email',
+    'docPopup#3': 'Envoyez-moi docs',
+
     'progressBarSale#1': 'Bonuses',
     'progressBarSale#2': 'in CINX',
     'progressBarSale#3': 'Pré-vente',

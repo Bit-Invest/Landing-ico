@@ -49,6 +49,10 @@ const tr = {
     'mailForm#26': `Ön Satışa Katılın`,
     'mailForm#27': `KABUL & GÖNDER`,
 
+    'docPopup#1': 'E-postanıza tüm belgeleri alın',
+    'docPopup#2': 'E-postanızı girin',
+    'docPopup#3': 'Belgeleri gönder',
+
     'progressBarSale#1': `CINX`,
     'progressBarSale#2': `içinde Bonuslar`,
     'progressBarSale#3': `Ön Satış`,

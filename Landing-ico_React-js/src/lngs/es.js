@@ -49,6 +49,10 @@ const es = {
     'mailForm#26': 'Apuntarse a la preventa',
     'mailForm#27': 'AGREE & SUBMIT',
 
+    'docPopup#1': 'Reciba todos los documentos en su correo electrónico',
+    'docPopup#2': 'Ingrese su email',
+    'docPopup#3': 'Enviarme docs',
+
     'progressBarSale#1': 'Bonos',
     'progressBarSale#2': 'en CINX',
     'progressBarSale#3': 'Preventa',

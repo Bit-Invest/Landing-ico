@@ -49,6 +49,10 @@ const ko = {
     'mailForm#26': '프리세일에 참여하세요!',
     'mailForm#27': '동의 & 제출',
 
+    'docPopup#1': '귀하의 이메일에 있는 모든 문서를 수신',
+    'docPopup#2': '이메일을 입력',
+    'docPopup#3': '나에 게 문서 보내기',
+
     'progressBarSale#1': '보너스',
     'progressBarSale#2': 'CINX ',
     'progressBarSale#3': '프리세일',

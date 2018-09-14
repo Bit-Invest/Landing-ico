@@ -49,6 +49,10 @@ const vi = {
     'mailForm#26': 'Tham gia đợt bán trước',
     'mailForm#27': 'AGREE & SUBMIT',
 
+    'docPopup#1': 'Nhận tất cả các tài liệu trong email của bạn',
+    'docPopup#2': 'Nhập email của bạn',
+    'docPopup#3': 'Gửi cho tôi Docs',
+
     'progressBarSale#1': 'Bonuses',
     'progressBarSale#2': 'in CINX',
     'progressBarSale#3': 'Pre-Sale',
