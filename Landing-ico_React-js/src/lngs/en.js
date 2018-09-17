@@ -34,7 +34,7 @@ const en = {
     'mailForm#17': 'I agree to process my',
     'mailForm#18': 'personal data',
     'mailForm#19': 'Security Token Sale Is Live',
-    'mailForm#20': '25% BONUS',
+    'mailForm#20': '20% BONUS',
     'mailForm#21': 'Get it before everyone else does',
     'mailForm#22': 'Token sale starts in',
     'mailForm#23': '$1 now',

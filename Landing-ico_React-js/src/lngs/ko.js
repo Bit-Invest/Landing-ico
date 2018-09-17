@@ -40,7 +40,7 @@ const ko = {
     'mailForm#17': '개인정보 접근에',
     'mailForm#18': '동의합니다',
     'mailForm#19': '증권형 토큰(Security Token) 세일 시작',
-    'mailForm#20': '25% 보너스',
+    'mailForm#20': '20% 보너스',
     'mailForm#21': '다른 누구보다 먼저 가져가세요',
     'mailForm#22': '토큰 세일 시작 ',
     'mailForm#23': '현재 $1로는 ',

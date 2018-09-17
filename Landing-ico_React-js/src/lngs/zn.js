@@ -40,7 +40,7 @@ const zn = {
     'mailForm#17': '我同意处理',
     'mailForm#18': '我的个人数据',
     'mailForm#19': '证券型代币销售启动',
-    'mailForm#20': '25%奖金',
+    'mailForm#20': '20%奖金',
     'mailForm#21': '先到先得',
     'mailForm#22': '发售截至时间',
     'mailForm#23': '现在投入的1美元',

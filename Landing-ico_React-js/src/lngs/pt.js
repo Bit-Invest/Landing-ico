@@ -40,7 +40,7 @@ const pt = {
     'mailForm#17': 'I agree to process my',
     'mailForm#18': 'personal data',
     'mailForm#19': 'Venda de tokens segura e em direto',
-    'mailForm#20': '25% BONUS',
+    'mailForm#20': '20% BONUS',
     'mailForm#21': 'Agarre a oportunidade antes dos outros A oferta expira em',
     'mailForm#22': 'Token sale starts in',
     'mailForm#23': 'Start from $1',

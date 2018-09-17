@@ -40,7 +40,7 @@ const tr = {
     'mailForm#17': `Kişisel bilgilerimin işlenmesine`,
     'mailForm#18': `izin veriyorum`,
     'mailForm#19': `Menkul Kıymet Jetonu satışı, şununla başlıyor:`,
-    'mailForm#20': `25% BONUS`,
+    'mailForm#20': `20% BONUS`,
     'mailForm#21': `Herkesten önce edinin Teklifin kalan süresi:`,
     'mailForm#22': `Token satışı başlıyor`,
     'mailForm#23': `$1’dan başla`,

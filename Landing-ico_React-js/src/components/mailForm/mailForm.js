@@ -131,12 +131,12 @@ class MailForm extends React.Component {
       fromPrice: [
         '1.40',
         '1.40',
-        '1.25'
+        '1.20'
       ],
       toPrice: [
         '1.25',
         '1.25',
-        '1.20'
+        '1.17'
       ]
     };
 

@@ -40,7 +40,7 @@ const vi = {
     'mailForm#17': 'I agree to process my',
     'mailForm#18': 'personal data',
     'mailForm#19': 'Security Token Sale Starts with',
-    'mailForm#20': '25% BONUS',
+    'mailForm#20': '20% BONUS',
     'mailForm#21': 'Nhận token trước những người khác Ưu đãi hết hạn trong',
     'mailForm#22': 'Token sale starts in',
     'mailForm#23': 'Start from $1',
