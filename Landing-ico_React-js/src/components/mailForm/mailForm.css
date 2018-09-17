@@ -41,7 +41,19 @@
   color: #2ba4fc;
 }
 
+.mail-form__name-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
 
+.mail-form__name-text-span {
+  font-size: 14px;
+  text-align: center;
+  width: 80%;
+  
+}
 
 .mail-form__content {
   line-height: normal;
