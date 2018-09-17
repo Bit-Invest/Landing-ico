@@ -194,9 +194,9 @@ class MailForm extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
-          <div className={`${ROOT_CLASS}__name-text`}>
-            <span className={`${ROOT_CLASS}__name-text-span`}>Want to get the latest news and upcoming offers?</span>
+            <div className={`${ROOT_CLASS}__name-text`}>
+              <span className={`${ROOT_CLASS}__name-text-span`}>Want to get the latest news and upcoming offers?</span>
+            </div>
           </div>
           <div className={`${ROOT_CLASS}__input ${ (submitStatus === 0 || submitStatus === 1) ? "errorRed" : null }`}>
             <Input
