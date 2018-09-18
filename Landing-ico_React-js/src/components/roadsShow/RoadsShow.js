@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
-import Beijing13_16_09 from '../../images/RoadShowImg/Beijing13-16-09.jpg'
+import Beijing13_16_09 from '../../images/RoadShowImg/Beijing13-16-09.png'
 import Shanghai30_08 from '../../images/RoadShowImg/Shanghai30-08.jpg'
 import Shanghai7_8_09 from '../../images/RoadShowImg/Shanghai7-8-09.jpg'
 import Shanghai9_12_09 from '../../images/RoadShowImg/Shanghai9-12-09.jpg'
 import Singapore14_09 from '../../images/RoadShowImg/Singapore14-09.jpg'
 import Moscow15_09 from '../../images/RoadShowImg/Moscow15-09.jpg'
 import Seoul16_19_09 from '../../images/RoadShowImg/Seoul16-19-09.jpg'
-import Shanghai18_09 from '../../images/RoadShowImg/Shanghai18-09.jpg'
 import Singapore19_09 from '../../images/RoadShowImg/Singapore19-09.jpg'
 import Singapore21_09 from '../../images/RoadShowImg/Singapore21-09.jpg'
 import Bangkok25_26_09 from '../../images/RoadShowImg/Bangkok25-26-09.jpg'
@@ -92,16 +91,6 @@ let dataRoadShow = [
         text: 'Block Seoul, one of the largest blockchain conferences of its kind, a connection hub for a diverse range of ICOs, investors, financial institutions, and VCs.'
     },
     {
-        place: 'Shanghai',
-        date: '18.09',
-        data: 'BLOCKCHAIN PRACTITIONER CHINA SUMMIT 2018',
-        video: {
-            img: Shanghai18_09,
-            src: 'http://sh.bpc-events.com/'
-        },
-        text: 'Blockchain Practitioner China Summit 2018 will gather blockchain elite across the globe, including blockchain industrial associations, institutes, Fintech companies, blockchain technology innovators from more than 20 countries'
-    },
-    {
         place: 'Singapore',
         date: '19.09',
         data: 'CONSENSUS: SINGAPORE 2018',
@@ -132,16 +121,6 @@ let dataRoadShow = [
         text: 'As economies worldwide have been transcending fast and to ensure our digital preparedness, Digital ASEAN which consists of consultants and enthusiasts step forward aiming to bridge the gap in digital transformations between businesses, community and government. Digital ASEAN visions to be the head organization to lead in promoting digital economy conferences, forums, summits and all sorts of events with the support of international organizations and individuals.'
     },
     {
-        place: 'Tokyo',
-        date: '28-29.09',
-        data: 'TEAMZ BLOCKCHAIN SUMMIT',
-        video: {
-            img: Tokyo28_29_09,
-            src: 'https://summit.teamz.co.jp/'
-        },
-        text: 'TEAMZ Blockchain Summit connects trusted investors, blockchain projects, exchanges, media, and influencers in all sectors to contribute to the emerging global blockchain ecosystem. With the aim of closing deals, creating business alliances and network expansion, over 2000 participants from more than 50 countries will the summit.'
-    },
-    {
         place: 'Kuala Lumpur',
         date: '27-28.09',
         data: 'DAIBC: INVESTMENTS & PROJECT SHOWCASES',
@@ -150,6 +129,16 @@ let dataRoadShow = [
             src: 'http://www.szwgroup.com/ibdac-kuala-lumpur/index.aspx'
         },
         text: 'In 2018, new blockchain initiatives are launched every day. With many projects set to release a working product or application, and a likely flood of newly converted institutional money. However, this exponentially growing market will continue to strongly highlight whether Blockchains can or could support a decentralised world. DAIBC: Investments & Project Showcases will help to select a project to invest.'
+    },
+    {
+        place: 'Tokyo',
+        date: '28-29.09',
+        data: 'TEAMZ BLOCKCHAIN SUMMIT',
+        video: {
+            img: Tokyo28_29_09,
+            src: 'https://summit.teamz.co.jp/'
+        },
+        text: 'TEAMZ Blockchain Summit connects trusted investors, blockchain projects, exchanges, media, and influencers in all sectors to contribute to the emerging global blockchain ecosystem. With the aim of closing deals, creating business alliances and network expansion, over 2000 participants from more than 50 countries will the summit.'
     },
     {
         place: 'Las Vegas',
@@ -186,6 +175,49 @@ class RoadsShow extends Component {
     componentDidMount = () => {
         window.addEventListener('resize', this.handleResize)
         this.handleResize()
+        this.currentDateSlide()
+    }
+
+    currentDateSlide = () => {
+        const currentDate = new Date()
+        let currentMonth = `${currentDate.getMonth() + 1}`
+        let currentDay = `${currentDate.getDate()}`
+        
+        currentMonth = currentMonth.length === 1 ? `0${currentMonth}` : `${currentMonth}`
+
+        const filterObj = dataRoadShow.filter(el => {
+            const elDay = el.date.split('.')[0]
+            const elMonth = el.date.split('.')[1]
+            if (elDay.length > 2) {
+                return elMonth === currentMonth && (elDay.split('-')[0] <= currentDay && elDay.split('-')[1] >= currentDay)
+            } else {
+                return elMonth === currentMonth && elDay === currentDay
+            }
+
+        })
+
+        if (filterObj.length > 0) {
+            this.renderRoadShowPopup(dataRoadShow.indexOf(filterObj[0]))
+        } else {
+            const findDate = dataRoadShow.filter(el => {
+                const elDay = el.date.split('.')[0]
+                const elMonth = el.date.split('.')[1]
+
+                if (elDay.length > 2) {
+                    const elDate = new Date(2018, elMonth, elDay.split('-')[0])
+                    return currentDate.getTime() >= elDate.getTime()
+                } else {
+                    const elDate = new Date(2018, elMonth, elDay)
+                    return currentDate.getTime() >= elDate.getTime()
+                }
+            })
+
+            if (findDate.length === 0) {
+                this.renderRoadShowPopup(dataRoadShow.length - 1)
+            } else {
+                this.renderRoadShowPopup(dataRoadShow.indexOf(findDate[findDate.length - 1]))
+            }
+        }
     }
 
     handleResize = () => {
