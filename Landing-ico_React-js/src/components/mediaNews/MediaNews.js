@@ -76,7 +76,7 @@ import CINDX_ROADSHOW_IN_CHINA_NEW_STAGE from '../../news/CINDX_ROADSHOW_IN_CHIN
 import Weekly_digest_03_09_18_09_09_18 from '../../news/Weekly_digest_03_09_18_09_09_18.png'
 import How_CINDX_Can_Help_You_to_Fine_Tune_Your_Trading_Strategy from '../../news/How_CINDX_Can_Help_You_to_Fine_Tune_Your_Trading_Strategy.jpg'
 import MOTTI_PEER_Co_CEO_of_Blonde_2_0 from '../../news/MOTTI_PEER_Co_CEO_of_Blonde_2_0.jpg'
-import CINDX_ROADSHOW_SHANGHAI_BEIJING_SINGAPORE from '../../news/CINDX_ROADSHOW_SHANGHAI_BEIJING_SINGAPORE.png'
+import CINDX_ROADSHOW_SHANGHAI_BEIJING_SINGAPORE from '../../news/CINDX_ROADSHOW_SHANGHAI_BEIJING_SINGAPORE.jpg'
 import Join_the_CINDX_Meetup_in_Singapore from '../../news/Join_the_CINDX_Meetup_in_Singapore.jpg'
 import './MediaNews.css';
 
