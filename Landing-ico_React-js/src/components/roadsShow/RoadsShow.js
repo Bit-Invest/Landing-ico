@@ -11,7 +11,7 @@ import Singapore19_09 from '../../images/RoadShowImg/Singapore19-09.jpg'
 import Singapore21_09 from '../../images/RoadShowImg/Singapore21-09.jpg'
 import Bangkok25_26_09 from '../../images/RoadShowImg/Bangkok25-26-09.jpg'
 import Tokyo28_29_09 from '../../images/RoadShowImg/Tokyo28-29-09.jpg'
-import Kuala_Lumpur27_28_09 from '../../images/RoadShowImg/Kuala-Lumpur27-28-09.jpg'
+import Singapore22_09 from '../../images/RoadShowImg/Singapore22-09.jpg'
 import Las_Vegas21_24_10 from '../../images/RoadShowImg/Las-Vegas21-24-10.jpg'
 import './RoadsShow.css'
 
@@ -34,6 +34,10 @@ let dataRoadShow = [
         place: 'Shanghai',
         date: '7-8.09',
         data: 'SLUSH SHANGHAI',
+        report: {
+            text: 'Post-Event Report',
+            link: 'https://medium.com/cindx/roadshow-shanghai-beijing-singapore-40a748d9c9da'
+        },
         video: {
             img: Shanghai7_8_09,
             src: 'http://shanghai.slush.org/'
@@ -44,6 +48,10 @@ let dataRoadShow = [
         place: 'Shanghai',
         date: '9-12.09',
         data: 'Blockchainer China Tour',
+        report: {
+            text: 'Post-Event Report',
+            link: 'https://medium.com/cindx/roadshow-shanghai-beijing-singapore-40a748d9c9da'
+        },
         video: {
             img: Shanghai9_12_09,
             src: 'http://www.blockchainer.vip/'
@@ -54,6 +62,10 @@ let dataRoadShow = [
         place: 'Bejing',
         date: '13-16.09',
         data: 'Blockchainer China Tour',
+        report: {
+            text: 'Post-Event Report',
+            link: 'https://medium.com/cindx/roadshow-shanghai-beijing-singapore-40a748d9c9da'
+        },
         video: {
             img: Beijing13_16_09,
             src: 'http://www.blockchainer.vip/'
@@ -64,6 +76,10 @@ let dataRoadShow = [
         place: 'Singapore',
         date: '14.09',
         data: 'SLUSH SINGAPORE',
+        report: {
+            text: 'Post-Event Report',
+            link: 'https://medium.com/cindx/roadshow-shanghai-beijing-singapore-40a748d9c9da'
+        },
         video: {
             img: Singapore14_09,
             src: 'http://singapore.slush.org/'
@@ -111,6 +127,20 @@ let dataRoadShow = [
         text: 'At Tokenmatch, an elite group of ICO teams present to small groups of investors that have the capacity and mandate to deploy capital. Investors come by invitation only and ICO teams are preselected through a rigorous process.'
     },
     {
+        place: 'Singapore',
+        date: '22.09',
+        data: 'CINDX Meetup',
+        video: {
+            img: Singapore22_09,
+            src: 'https://medium.com/cindx/meetup-in-singapore-b3dcb4090d35'
+        },
+        details: {
+            text: 'Details',
+            link: 'https://medium.com/cindx/meetup-in-singapore-b3dcb4090d35'
+        },
+        text: 'The CINDX Meetup in Singapore is a fantastic opportunity to shed some light on the most common issues that crypto investors come across, discover crypto asset management and how the CINDX platform helps all crypto market participants. Join top CINDX management team members in exploring unprecedented opportunities to maximize profit in the cryptocurrency markets.'
+    },
+    {
         place: 'Bangkok',
         date: '25-26.09',
         data: 'ASEAN DIGITAL 5.0 DIGITAL ECONOMY. THINK ASIA.',
@@ -119,16 +149,6 @@ let dataRoadShow = [
             src: 'https://aseandigital.io/'
         },
         text: 'As economies worldwide have been transcending fast and to ensure our digital preparedness, Digital ASEAN which consists of consultants and enthusiasts step forward aiming to bridge the gap in digital transformations between businesses, community and government. Digital ASEAN visions to be the head organization to lead in promoting digital economy conferences, forums, summits and all sorts of events with the support of international organizations and individuals.'
-    },
-    {
-        place: 'Kuala Lumpur',
-        date: '27-28.09',
-        data: 'DAIBC: INVESTMENTS & PROJECT SHOWCASES',
-        video: {
-            img: Kuala_Lumpur27_28_09,
-            src: 'http://www.szwgroup.com/ibdac-kuala-lumpur/index.aspx'
-        },
-        text: 'In 2018, new blockchain initiatives are launched every day. With many projects set to release a working product or application, and a likely flood of newly converted institutional money. However, this exponentially growing market will continue to strongly highlight whether Blockchains can or could support a decentralised world. DAIBC: Investments & Project Showcases will help to select a project to invest.'
     },
     {
         place: 'Tokyo',
@@ -348,6 +368,7 @@ class RoadsShow extends Component {
                         <div className="road-popup-text">
                             <div>{this.state.valuePopUp.text}</div>
                             { this.state.valuePopUp.report ? <a className="road-show__report" target="_blank" href={this.state.valuePopUp.report.link}>{this.state.valuePopUp.report.text}</a> : null }
+                            { this.state.valuePopUp.details ? <a className="road-show__report" target="_blank" href={this.state.valuePopUp.details.link}>{this.state.valuePopUp.details.text}</a> : null }
                         </div>
                         <div className="road-popup-triangle"></div>
                     </div>

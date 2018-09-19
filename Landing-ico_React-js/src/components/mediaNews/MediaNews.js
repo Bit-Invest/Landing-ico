@@ -1,15 +1,16 @@
 import * as React from 'react';
 import Slider from "react-slick";
-import block_7_ava_bg from '../../images/block_7_ava_bg.png';
-import Medium from '../../media/news/Medium.png'
-import MediaMedium from '../../media/media/medium-logo.png'
-import MediaForbes from '../../media/media/forbes-logo.png'
 import MediaAmbcrypto from '../../media/media/AMBcrypto.png'
 import MediaBitcoinist from '../../media/media/Bitcoinist.png'
 import MediaTokendesk from '../../media/media/tokendesk.png'
 import MediaBtcmanager from '../../media/media/BTCManager.png'
 import MediaBlockonomi from '../../media/media/blockonomi-logo.png'
 import Investing from '../../media/media/investing.jpeg'
+import Сryptoninjas from '../../media/media/Cryptoninjas.png'
+import Coinannouncer from '../../media/media/Coinannouncer.png'
+import Cryptoreporter from '../../media/media/Cryptoreporter.jpg'
+import Bitcoinexchangeguide from '../../media/media/Bitcoinexchangeguide.jpeg'
+import Thestreet from '../../media/media/Thestreet.png'
 import MediaCNN from '../../media/media/CCN.png'
 import { lng } from '../../links'
 import indexLngObj from '../../lngs/index'
@@ -72,6 +73,11 @@ import APAC_is_the_Frontrunner_in_Blockchain_Adoption from '../../news/APAC_is_t
 import Leonard_Grayver from '../../news/Leonard_Grayver.jpg'
 import CINDX_KYC_TUTORIAL from '../../news/CINDX_KYC_TUTORIAL.png'
 import CINDX_ROADSHOW_IN_CHINA_NEW_STAGE from '../../news/CINDX_ROADSHOW_IN_CHINA_NEW_STAGE.jpg'
+import Weekly_digest_03_09_18_09_09_18 from '../../news/Weekly_digest_03_09_18_09_09_18.png'
+import How_CINDX_Can_Help_You_to_Fine_Tune_Your_Trading_Strategy from '../../news/How_CINDX_Can_Help_You_to_Fine_Tune_Your_Trading_Strategy.jpg'
+import MOTTI_PEER_Co_CEO_of_Blonde_2_0 from '../../news/MOTTI_PEER_Co_CEO_of_Blonde_2_0.jpg'
+import CINDX_ROADSHOW_SHANGHAI_BEIJING_SINGAPORE from '../../news/CINDX_ROADSHOW_SHANGHAI_BEIJING_SINGAPORE.png'
+import Join_the_CINDX_Meetup_in_Singapore from '../../news/Join_the_CINDX_Meetup_in_Singapore.jpg'
 import './MediaNews.css';
 
 const media = [
@@ -88,6 +94,41 @@ const media = [
     name: indexLngObj['en']['mediaNews#1_19'],
     text: indexLngObj['en']['mediaNews#1_20'],
     src: 'https://www.ccn.com/cindx-crypto-asset-management-hub-adopts-bancor-protocol/'
+  },
+  {
+    screen: Thestreet,
+    type: 'thestreet',
+    name: 'CINDX CEO Shares His Point of View on why Investors Should Treat Cryptocurrency and Blockchain Predictions with "Healthy Skepticism".',
+    text: 'Crypto isn\'t all it\'s cracked up to be. Citi analyst Josh Levin says to treat the many cryptocurrency and blockchain predictions with "healthy skepticism" and to remain "open minded".',
+    src: 'https://www.thestreet.com/technology/citi-analyst-treat-crypto-and-blockchain-with-healthy-skepticism-14695612'
+  },
+  {
+    screen: Bitcoinexchangeguide,
+    type: 'bitcoinexchangeguide',
+    name: 'CINDX Crypto Asset Manager For Traders Launches Security Token ICO',
+    text: 'CINDX, a digital currency startup, recently initiated the presale phase of its ICO token sale. Then proceeds from the ICO will be used to establish a multifunctional platform that enables crypto traders identify and follow their preferred expert investor based on trading statistics recorded on the blockchain.',
+    src: 'https://bitcoinexchangeguide.com/cindx-crypto-asset-manager-for-traders-launches-security-token-ico/'
+  },
+  {
+    screen: Cryptoreporter,
+    type: 'cryptoreporter',
+    name: 'Even Amateur Investors Can Make It Big with the Help of CINDX',
+    text: 'CINDX, the crypto asset management company, recently opened its ICO pre-sale and is introducing a multifunctional platform that allows anybody to invest in the crypto market while consistently earning returns. ',
+    src: 'https://www.crypto-reporter.com/press-releases/even-amateur-blockchain-investors-can-make-it-big-with-the-help-of-cindx-5339/'
+  },
+  {
+    screen: Coinannouncer,
+    type: 'coinannouncer',
+    name: 'Blockchain Investors Can Now Make It Big with the Help of CINDX',
+    text: 'Cryptocurrencies have certainly made their mark. The digital tokens have consistently shown that they have the potential to rise very high in value. The market is huge and investors are insatiable.',
+    src: 'https://www.coinannouncer.com/blockchain-investors-can-now-make-it-big-with-the-help-of-cindx/'
+  },
+  {
+    screen: Сryptoninjas,
+    type: 'cryptoninjas',
+    name: 'CINDX Beginning ICO for Crypto Asset Management and Social Network',
+    text: 'CINDX, a cryptocurrency project has now begun its security token ICO pre-sale to introduce a multifunctional platform that allows blockchain investors to choose an expert trader to follow based on trading stats recorded on the blockchain.',
+    src: 'https://www.cryptoninjas.net/2018/09/05/cindx-beginning-ico-for-crypto-asset-management-and-social-network/'
   },
   {
     screen: MediaAmbcrypto,
@@ -575,8 +616,50 @@ const news = [
   {
     videoSrc: 'https://medium.com/cindx/roadshow-in-china-new-stage-322ca7ecbc95',
     screen: CINDX_ROADSHOW_IN_CHINA_NEW_STAGE,
-    name: 'CINDX ROADSHOW IN CHINA. NEW STAGE',
+    name: 'CINDX Roadshow in China. New Stage.',
     text: ' Take a look at the amazing plans CINDX has for its roadshow in China!',
+    source: 'www.medium.com',
+    centered: true
+  },
+
+
+  {
+    videoSrc: 'https://medium.com/cindx/weekly-digest-3-september-9-september-1f89a622b9dc',
+    screen: Weekly_digest_03_09_18_09_09_18,
+    name: 'Weekly Digest (03.09.2018 - 09.09.2018)',
+    text: 'CINDX team continues its regular Weekly Digest column to highlight last week’s progress and achievements of the CINDX project.',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/how-cindx-can-help-you-to-fine-tune-your-trading-strategy-171752452b5b',
+    screen: How_CINDX_Can_Help_You_to_Fine_Tune_Your_Trading_Strategy,
+    name: 'How CINDX Can Help You to Fine-Tune Your Trading Strategy',
+    text: 'CINDX understands the issues that crypto investors and traders face. Learn more about the simple and proven solutions that CINDX offers them. Hurry up to join the CINDX Token Sale - there are only 3 days left to take advantage of the 25% token bonus!',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/advisers-motti-peer-f2c1d72008e9',
+    screen: MOTTI_PEER_Co_CEO_of_Blonde_2_0,
+    name: 'Motti Peer, Co-CEO of Blonde 2.0',
+    text: 'Talent and experience are not commodities—they are the lifeblood of any successful project. We at CINDX understand the importance of seeking the perspectives of experts, and are incredibly proud to present the CINDX advisers. This group of top-tier professionals provide CINDX with their extensive experience, knowledge, and wisdom.',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/roadshow-shanghai-beijing-singapore-40a748d9c9da',
+    screen: CINDX_ROADSHOW_SHANGHAI_BEIJING_SINGAPORE,
+    name: 'CINDX Roadshow: Shanghai, Beijing & Singapore',
+    text: 'CINDX is excited to share the interim results of CINDX Roadshow! Read about CINDX achievements in Shanghai, Beijing and Singapore. Stay with us - next stop, Seoul!',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/meetup-in-singapore-b3dcb4090d35',
+    screen: Join_the_CINDX_Meetup_in_Singapore,
+    name: 'Join the CINDX Meetup in Singapore!',
+    text: 'The CINDX team is thrilled to announce its first Singapore meetup on September 22! It’s going to be packed with practical cues on how to successfully obtain crypto asset management services and expert guidance on CINDX. We can’t wait to see you there!',
     source: 'www.medium.com',
     centered: true
   },
