@@ -38,7 +38,6 @@ import Dip_your_Toe_in_Crypto from '../../news/Dip_your_Toe_in_Crypto.png'
 import Weekly_digest from '../../news/Weekly_digest.jpg'
 import Yuriy_Avdeev_CEO_of_the_CINDX_project from '../../news/Yuriy_Avdeev_CEO_of_the_CINDX_project.jpg'
 import CINDX_talk_a_service_that_will_help_people_become_wiser_in_taking_financial_decisions from '../../news/CINDX_talk_a_service_that_will_help_people_become_wiser_in_taking_financial_decisions.jpeg';
-import David_Gutierrez from '../../news/David_Gutierrez.jpeg';
 import Denis_Eskenazi from '../../news/Denis_Eskenazi.jpeg';
 import Graham_Doggart from '../../news/Graham_Doggart.jpeg';
 import How_CINDX_ensures_safety_for_its_users_KYC from '../../news/How_CINDX_ensures_safety_for_its_users-KYC.jpeg';
@@ -188,7 +187,7 @@ const media = [
   }
 ]
 
-const news = [
+let news = [
   {
     videoSrc: 'https://www.youtube.com/watch?v=c4ruJPvo5sI',
     screen: CINDX_meets_Ian_Balina,
@@ -493,14 +492,6 @@ const news = [
     source: 'www.medium.com',
     centered: false
   },
-  // {
-  //   videoSrc: 'https://medium.com/cindx/cindx-team-david-gutierrez-deeeaf66c992',
-  //   screen: David_Gutierrez,
-  //   name: indexLngObj['en']['mediaNews#2_77'],
-  //   text: indexLngObj['en']['mediaNews#2_78'],
-  //   source: 'www.medium.com',
-  //   centered: true
-  // },
   {
     videoSrc: 'https://medium.com/cindx/icobench-gives-4-8-to-cindx-70aa244ca7c4',
     screen: ICObench_gives_4_8_to_CINDX,
@@ -621,8 +612,6 @@ const news = [
     source: 'www.medium.com',
     centered: true
   },
-
-
   {
     videoSrc: 'https://medium.com/cindx/weekly-digest-3-september-9-september-1f89a622b9dc',
     screen: Weekly_digest_03_09_18_09_09_18,
@@ -665,9 +654,15 @@ const news = [
   },
 ];
 
+news = news.reverse()
+
 export class MediaNews extends React.Component {
+  state = {
+    isLinkAccess: true
+  }
+
   mapNews = () => {
-    return news.reverse().map((el, i) => {
+    return news.map((el, i) => {
       const arrName = el.name.split(' ')
       const arrText = el.text.split(' ')
       let newName = ''
@@ -683,9 +678,10 @@ export class MediaNews extends React.Component {
           newText += textEl + ' '
         }
       })
+
       return (
         <div key={i} className="item">
-          <a target="_blank" onClick={() =>  window.innerWidth < 768 ? window.open(el.videoSrc) : null} href={el.videoSrc}>
+          <a target="_blank" onClick={() => this.openLink(el.videoSrc)}>
             <div className="txtNews">
               <div className="img" style={{ backgroundImage: `url(${el.screen})`, backgroundPosition: el.centered ? 'center center' : '0 0' }}></div>
               <div className="content">
@@ -700,6 +696,13 @@ export class MediaNews extends React.Component {
       );
     })
   }
+
+  openLink = (src) => {
+    if (this.state.isLinkAccess) {
+      window.open(src)
+    }
+  }
+
   mapMedia = () => {
     return media.map((el, i) => {
       const arrName = el.name.split(' ')
@@ -719,7 +722,7 @@ export class MediaNews extends React.Component {
       })
       return (
         <div key={i} className="txt">
-          <a onClick={() => window.innerWidth < 768 ? window.open(el.src) : null} href={el.src} target="_blank">
+          <a onClick={() => this.openLink(el.src)} href='' target="_blank">
             <div className="bg">
               <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
               <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
@@ -731,15 +734,24 @@ export class MediaNews extends React.Component {
       );
     })
   }
+
   render() {
+    let isLinkAccess = true
     const settings = {
       infinite: true,
       swipeToSlide: true,
       lazyLoad: true,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      beforeChange: () => {
+        this.setState({ isLinkAccess: false })
+      },
+      afterChange: () => {
+        this.setState({ isLinkAccess: true })
+      }
     };
+    console.log(isLinkAccess)
     const settingsNews = {
       arrows: true,
       swipeToSlide: true,
@@ -747,7 +759,13 @@ export class MediaNews extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      beforeChange: () => {
+        this.setState({ isLinkAccess: false })
+      },
+      afterChange: () => {
+        this.setState({ isLinkAccess: true })
+      }
     };
     const settings2 = {
       infinite: true,
@@ -756,6 +774,12 @@ export class MediaNews extends React.Component {
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1,
+      beforeChange: () => {
+        this.setState({ isLinkAccess: false })
+      },
+      afterChange: () => {
+        this.setState({ isLinkAccess: true })
+      }
     };
     const settingsNews2 = {
       arrows: true,
@@ -764,7 +788,13 @@ export class MediaNews extends React.Component {
       swipeToSlide: true,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      beforeChange: () => {
+        this.setState({ isLinkAccess: false })
+      },
+      afterChange: () => {
+        this.setState({ isLinkAccess: true })
+      }
     };
     const settings3 = {
       infinite: true,

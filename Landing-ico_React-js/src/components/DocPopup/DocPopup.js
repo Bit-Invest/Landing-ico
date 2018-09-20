@@ -128,7 +128,7 @@ class DocPopup extends Component {
                                 value={email}
                             />
                         </div>
-                        <button className="disc-button" type="submit" onClick={this.sendSubcribe}>
+                        <button className="disc-button" type="submit">
                             { indexLngObj[lng]['docPopup#3'] }
                         </button>
                         {
