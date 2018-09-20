@@ -79,6 +79,7 @@
 }
 .contentText {
   position: relative;
+  margin-bottom: -15%;
 }
 
 .size {
