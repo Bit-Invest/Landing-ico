@@ -136,6 +136,18 @@
     display: none;
 }
 
+@media screen and (max-width: 1023px) {
+    .road__circles {
+        margin-top: 580px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .road__circles {
+        margin-top: 570px;
+    }
+}
+
 @media screen and (min-width: 1001px) and (max-width: 1201px) {
     .road__setting {
         display: none;

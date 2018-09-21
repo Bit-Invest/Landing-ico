@@ -76,7 +76,7 @@ const fr = {
     'cryptoAssetsManagement#7': 'CINDX.TERMINAL POUR LES TRADERS',
     'cryptoAssetsManagement#8': 'Si vous êtes un trader à succès, vous pouvez attirer des capitaux sans aucun investissement dans le marketing',
     'cryptoAssetsManagement#9': 'Nous vous fournissons un terminal, un App Store, une place de marché et d\'autres outils de pointe pour vous aider à réussir dans le trading',
-    'cryptoAssetsManagement#10': 'CINDX aide à monétiser votre réputation et votre expertise. Votre historique de trading et votre influence sont visibles.',
+    'cryptoAssetsManagement#10': 'CINDX aide à monétiser votre réputation et votre expertise. Votre historique de trading et votre influence sont visibles',
     'cryptoAssetsManagement#11': 'CINDX.TALK, CINDX.HUB et CINDX.DAO',
     'cryptoAssetsManagement#12': 'CINDX.Talk - un réseau social avec une récompense pour le contenu utile',
     'cryptoAssetsManagement#13': 'CINDX.Hub - les composants comprennent un « compte vendeur » et une plateforme qui permet de tester et d\'intégrer des logiciels tiers ',

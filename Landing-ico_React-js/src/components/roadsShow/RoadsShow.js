@@ -59,7 +59,7 @@ let dataRoadShow = [
         text: 'CINDX has made meeting arrangements with a number of private investors and representatives of well-known investment funds such as JRR Crypto Fund, LD Capital, J One Capital, Consensus Investment. Additionally, CINDX will attend Wanxiang Blockchain Summit. The Summit will invite representatives from various industries to share their insight regarding the solutions empowered by blockchain technology, envisioning the true value of blockchain technology in future industrial application.'
     },
     {
-        place: 'Bejing',
+        place: 'Beijing',
         date: '13-16.09',
         data: 'Blockchainer China Tour',
         report: {
@@ -108,8 +108,12 @@ let dataRoadShow = [
     },
     {
         place: 'Singapore',
-        date: '19.09',
+        date: '19-20.09',
         data: 'CONSENSUS: SINGAPORE 2018',
+        report: {
+            text: 'Post-Event Report',
+            link: 'https://medium.com/cindx/consensus-singapore-e8dcb319d530'
+        },
         video: {
             img: Singapore19_09,
             src: 'https://www.coindesk.com/events/consensus-singapore-2018/'

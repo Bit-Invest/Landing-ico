@@ -77,6 +77,8 @@ import How_CINDX_Can_Help_You_to_Fine_Tune_Your_Trading_Strategy from '../../new
 import MOTTI_PEER_Co_CEO_of_Blonde_2_0 from '../../news/MOTTI_PEER_Co_CEO_of_Blonde_2_0.jpg'
 import CINDX_ROADSHOW_SHANGHAI_BEIJING_SINGAPORE from '../../news/CINDX_ROADSHOW_SHANGHAI_BEIJING_SINGAPORE.jpg'
 import Join_the_CINDX_Meetup_in_Singapore from '../../news/Join_the_CINDX_Meetup_in_Singapore.jpg'
+import CINDX_at_Consensus_Singapore from '../../news/CINDX_at_Consensus_Singapore.jpg'
+import Weekly_Digest_10_09_2018_16_09_2018 from '../../news/Weekly_Digest_10_09_2018_16_09_2018.jpg'
 import './MediaNews.css';
 
 const media = [
@@ -652,6 +654,23 @@ let news = [
     source: 'www.medium.com',
     centered: true
   },
+  {
+    videoSrc: 'https://medium.com/cindx/weekly-digest-10-september-16-september-6892c68f7b93',
+    screen: Weekly_Digest_10_09_2018_16_09_2018,
+    name: 'Weekly Digest (10.09.2018 - 16.09.2018)',
+    text: 'One more week with CINDX has gone by, so we have prepared a new weekly report for you! This was a very productive week: now you know how to pass CINDX KYC requirements, where the CINDX CEO spends his working days, and other very important information. Read our posts on Medium and don\'t forget to join CINDX STO to earn a 20 % token bonus today!',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/meetup-in-singapore-b3dcb4090d35',
+    screen: CINDX_at_Consensus_Singapore,
+    name: 'Join the CINDX Meetup in Singapore!',
+    text: 'The CINDX team is thrilled to announce its first Singapore meetup on September 22! It’s going to be packed with practical cues on how to successfully obtain crypto asset management services and expert guidance on CINDX. We can’t wait to see you there!',
+    source: 'www.medium.com',
+    centered: true
+  },
+
 ];
 
 news = news.reverse()

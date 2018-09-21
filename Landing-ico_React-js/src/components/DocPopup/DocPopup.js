@@ -120,6 +120,9 @@ class DocPopup extends Component {
                     >
                         <div className="disc-text">
                             { indexLngObj[lng]['docPopup#1'] }
+                            <div className="disc-light-text">
+                                Haven't received the email? Check Spam
+                            </div>
                         </div>
                         <div className={`${ROOT_CLASS}__input ${ (submitStatus === 0 || submitStatus === 1) ? "errorRed" : null }`}>
                             <Input

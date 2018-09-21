@@ -76,7 +76,7 @@ const tr = {
     'cryptoAssetsManagement#7': `BORSACILAR İÇİN CINDX.TERMINAL `,
     'cryptoAssetsManagement#8': `Başarılı bir yatırımcıysanız, pazarlama ve satış için herhangi bir yatırımda bulunmadan sermaye toplayabilirsiniz`,
     'cryptoAssetsManagement#9': `Yatırımlarda başarılı olmanız için size bir Terminal, Uygulama Merkezi, pazar ve farklı niteliklere sahip olan gelişmiş araçlar sunuyoruz`,
-    'cryptoAssetsManagement#10': `CINDX sayesinde itibarınızı ve uzmanlığınızı kazanca dönüştürebilirsiniz. Yatırım geçmişiniz ve etkiniz şeffaf bir şekilde paylaşılır. `,
+    'cryptoAssetsManagement#10': `CINDX sayesinde itibarınızı ve uzmanlığınızı kazanca dönüştürebilirsiniz. Yatırım geçmişiniz ve etkiniz şeffaf bir şekilde paylaşılır`,
     'cryptoAssetsManagement#11': `CINDX.TALK, CINDX.HUB & CINDX.DAO`,
     'cryptoAssetsManagement#12': `CINDX.talk - Kullanışlı içeriklerin ödüllendirildiği bir sosyal ağ`,
     'cryptoAssetsManagement#13': `CINDX.hub - Merkezimizdeki araçlar arasında "sağlayıcı kabini" özelliğinin yanı sıra, üçüncü taraf yazılımlarını test edip entegre edebileceğiniz bir alan da bulunuyor`,
