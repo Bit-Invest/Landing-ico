@@ -47,7 +47,16 @@
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 17%;
+  width: 147px;
+}
+.progressBarSale .progressBar .progress__tr {
+  width: 160px;
+}
+.progressBarSale .progressBar .progress__ar {
+  width: 152px;
+}
+.progressBarSale .progressBar .progress__es {
+  width: 160px;
 }
 .progressBarSale .container .progress-data {
   display: flex;
@@ -113,6 +122,42 @@
   color: rgba(255, 255, 255, 0.3);
   font-size: 16px;
   margin-left: 9px;
+}
+
+@media screen and (max-width: 1439px) {
+  .progressBarSale .progressBar .progress {
+    width: 130px;
+  }
+
+  .progressBarSale .progressBar .progress__tr {
+    width: 140px;
+  }
+
+  .progressBarSale .progressBar .progress__ar {
+    width: 134px;
+  }
+
+  .progressBarSale .progressBar .progress__es {
+    width: 143px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .progressBarSale .progressBar .progress {
+    width: 87px;
+  }
+
+  .progressBarSale .progressBar .progress__tr {
+    width: 98px;
+  }
+
+  .progressBarSale .progressBar .progress__ar {
+    width: 90px;
+  }
+
+  .progressBarSale .progressBar .progress__es {
+    width: 99px;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1110px) {

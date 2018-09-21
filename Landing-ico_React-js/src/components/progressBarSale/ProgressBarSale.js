@@ -56,7 +56,7 @@ const ProgressBarSale = props => {
           <p className="sale-bonusses">{ indexLngObj[lng]['progressBarSale#4'] }</p>
           <p className="cinx">1 CINX = $1</p>
         </div>
-        <div className="progressBar"><div className="progress"></div></div>
+        <div className="progressBar"><div className={`progress progress__${lng}`}></div></div>
         <div className="progress-data">
           <div className="data">
             <p className="amount">1.25</p>

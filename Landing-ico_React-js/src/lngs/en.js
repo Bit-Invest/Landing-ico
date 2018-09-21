@@ -248,10 +248,10 @@ const en = {
     'feedbackProject#28': 'Content Manager',
     'feedbackProject#29': 'Alina Vardanian, CINDX Content Manager talks about the team spirit and what she loves about her job',
     'feedbackProject#30': 'Bogdan Fiedur',
-    'feedbackProject#31': 'CINDX Advisor',
-    'feedbackProject#32': 'Bogdan Fiedur, CINDX Advisor, explains how the CINDX project differs from other ICO projects',
+    'feedbackProject#31': 'Adviser',
+    'feedbackProject#32': 'Bogdan Fiedur, CINDX Adviser, explains how the CINDX project differs from other ICO projects',
     'feedbackProject#33': 'Jason King',
-    'feedbackProject#34': 'Jason King, Chief Commercial Officer, explains what attracts him to CINDX and talks about crucial advantages of the project',
+    'feedbackProject#34': 'Jason King, Adviser, explains what attracts him to CINDX and talks about crucial advantages of the project',
 
     'mediaNews#1': 'Media',
     'mediaNews#2': 'News',

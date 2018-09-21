@@ -212,7 +212,7 @@
   display: none;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1150px) {
   .menu .publicDocs {
     box-shadow: none;
   }
@@ -221,7 +221,7 @@
   }
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1150px) {
   .showMenu {
     max-height: 450px;
     overflow-y: scroll;
