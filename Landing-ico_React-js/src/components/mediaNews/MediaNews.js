@@ -663,10 +663,10 @@ let news = [
     centered: true
   },
   {
-    videoSrc: 'https://medium.com/cindx/meetup-in-singapore-b3dcb4090d35',
+    videoSrc: 'https://medium.com/cindx/consensus-singapore-e8dcb319d530',
     screen: CINDX_at_Consensus_Singapore,
-    name: 'Join the CINDX Meetup in Singapore!',
-    text: 'The CINDX team is thrilled to announce its first Singapore meetup on September 22! It’s going to be packed with practical cues on how to successfully obtain crypto asset management services and expert guidance on CINDX. We can’t wait to see you there!',
+    name: 'CINDX at Consensus Singapore!',
+    text: 'Consensus Singapore gathers the blockchain industry’s best to offer enhanced networking opportunities and provide specialized content solutions for all entities in the crypto industry. CINDX is participating in the event as a leading fintech company. Read our Consensus post event review!',
     source: 'www.medium.com',
     centered: true
   },
