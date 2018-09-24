@@ -227,17 +227,18 @@ class RoadsShow extends Component {
                 const elDay = el.date.split('.')[0]
                 const elMonth = el.date.split('.')[1]
 
-                if (elDay.length > 2) {
-                    const elDate = new Date(2018, elMonth, elDay.split('-')[0])
-                    return currentDate.getTime() >= elDate.getTime()
-                } else {
-                    const elDate = new Date(2018, elMonth, elDay)
-                    return currentDate.getTime() >= elDate.getTime()
+                if (elMonth === currentMonth) {
+                    if (elDay.length > 2) {
+                        const elDate = elDay.split('-')[0]
+                        return currentDay >= elDate
+                    } else {
+                        return currentDay >= elDay
+                    }
                 }
             })
 
             if (findDate.length === 0) {
-                this.renderRoadShowPopup(dataRoadShow.length - 1)
+                this.renderRoadShowPopup(0)
             } else {
                 this.renderRoadShowPopup(dataRoadShow.indexOf(findDate[findDate.length - 1]))
             }
