@@ -677,7 +677,9 @@ news = news.reverse()
 
 export class MediaNews extends React.Component {
   state = {
-    isLinkAccess: true
+    isLinkAccess: true,
+    slideIndex: 0,
+    updateCount: 0
   }
 
   mapNews = () => {
@@ -756,16 +758,17 @@ export class MediaNews extends React.Component {
 
   render() {
     const settings = {
-      infinite: true,
+      arrows: true,
       swipeToSlide: true,
       lazyLoad: true,
+      infinite: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
       beforeChange: () => {
         this.setState({ isLinkAccess: false })
       },
-      afterChange: () => {
+      afterChange: (i) => {
         this.setState({ isLinkAccess: true })
       }
     };
@@ -785,9 +788,10 @@ export class MediaNews extends React.Component {
       }
     };
     const settings2 = {
+      arrows: true,
       infinite: true,
-      swipeToSlide: true,
       lazyLoad: true,
+      swipeToSlide: true,
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1,
@@ -814,12 +818,13 @@ export class MediaNews extends React.Component {
       }
     };
     const settings3 = {
+      arrows: true,
       infinite: true,
       swipeToSlide: true,
       lazyLoad: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     };
     const settingsNews3 = {
       arrows: true,

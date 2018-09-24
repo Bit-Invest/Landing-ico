@@ -19,7 +19,6 @@ import Airat from '../../media/Airat.jpg';
 import Sofja_Pevzner from '../../media/Sofja_Pevzner.jpg';
 import Dave_Gutierrez from '../../media/Dave_Gutierrez.jpg';
 import Jelena_Karzetskaja from '../../media/Jelena_Karzetskaja.png';
-import Wang_Dong from '../../media/Wang_Dong.png';
 // Our Parners icon
 import Progressor_logo from '../../media/Progressor_logo.png';
 import ICO_PROMO from '../../media/ico_promo.png';
@@ -127,16 +126,6 @@ const teamInfo = [
     src: 'https://www.linkedin.com/in/sofja-pevzner-70831963/',
     m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-sofja-pevzner-8386e8e88407'
   },
-  // {
-  //   img: Dave_Gutierrez,
-  //   name: indexLngObj[lng]['teamAdvisersPartners#44'],
-  //   position: indexLngObj[lng]['teamAdvisersPartners#45'],
-  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#46'],
-  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#47'],
-  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#48'],
-  //   src: 'https://www.linkedin.com/in/davidgutierrezcindx/',
-  //   m: 'https://medium.com/cindx/cindx-team-david-gutierrez-deeeaf66c992'
-  // },
   {
     img: Jelena_Karzetskaja,
     name: indexLngObj[lng]['teamAdvisersPartners#49'],
@@ -147,16 +136,6 @@ const teamInfo = [
     src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
     m: ''
   },
-  {
-    img: Wang_Dong,
-    name: indexLngObj[lng]['teamAdvisersPartners#54'],
-    position: indexLngObj[lng]['teamAdvisersPartners#55'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#56'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#57'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#58'],
-    src: '',
-    m: ''
-  }
  ];
 
 const ourPartners = [
