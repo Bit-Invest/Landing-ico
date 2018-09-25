@@ -1,20 +1,35 @@
 .teamLegal {
   padding: 0;
-  color: white;
-  background-image: linear-gradient(to top, #626f96, #2e164e);
-  background: none;
+  color: #fff;
+  background: linear-gradient(to left, rgba(100,73,155,0.7), rgba(0,178,220,0.7)), url(../../media/team-legal.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 .teamLegal .container {
-  padding: 60px 0 250px;
+  margin-top: 70px;
   display: flex;
-  margin: 0 110px;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 .teamLegal .container a {
-  color: white;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  margin-bottom: 30px;
+}
+.teamLegal .container a:last-of-type {
+  padding-right: 0;
 }
 .teamLegal .container .left {
-  display: inline-block;
-  /* margin-right: 15%; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 130px;
 }
 .teamLegal .container .row {
   flex-wrap: wrap;
@@ -47,27 +62,22 @@
   height: 16px;
   margin-right: 10px;
 }
-.teamLegal .right:nth-of-type(1) {
-  background-image: url(../../media/TeamLegal_screen.png);
-  background-size: cover;
-  min-width: 364px;
-  height: 182px;
-  margin: 60px auto;
-  display: none;
-  text-align: center;
-  border-radius: 10px;
-  background-position: center;
-}
 .teamLegal .right:nth-of-type(2) {
-  background-image: url(../../media/TeamLegal_screen.png);
+  background-image: url(../../media/team-legal.png);
   background-size: cover;
-  min-width: 364px;
-  height: 182px;
-  display: inline-block;
+  width: 540px;
+  height: 308.3px;
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teamLegal .right:nth-of-type(2) img {
+  width: 77px;
+  height: 77px;
 }
 .teamLegal .right .play {
   width: 40px;
@@ -79,16 +89,37 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 1023px) {
-  .teamLegal .right:nth-of-type(1) {
-    display: block;
-    width: 182px;
-  }
-  .teamLegal .right:nth-of-type(2) {
-    display: none;
+@media (max-width: 1439px) {
+  .teamLegal .container .left {
+    margin-bottom: 70px;
   }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1023px) {
+  .teamLegal .header_blocks {
+    width: 60%;
+  }
 
+  .teamLegal .container {
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .teamLegal .container .left {
+    display: block;
+  }
+  
+  .teamLegal .container {
+    margin-top: 50px;
+  }
+
+  .teamLegal .container .left {
+    margin-bottom: 65px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .teamLegal {
+    display: none;
+  }
 }

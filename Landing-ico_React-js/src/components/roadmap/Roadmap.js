@@ -33,11 +33,11 @@ export const Roadmap = props => {
   }
 
   return (
-    <div className={`${ROOT_CLASS} ${ROOT_CLASS}__headcontainer`} id="exitAnimate">
+    <div className={`${ROOT_CLASS} ${ROOT_CLASS}__headcontainer`}>
       <div className="size">
         <div className={`${ROOT_CLASS}__header`}>
           <div className="header_blocks">{ indexLngObj[lng]['roadmap#1'] }</div>
-          <div className={`${ROOT_CLASS}__buttons`}>
+          {/* <div className={`${ROOT_CLASS}__buttons`}>
             <div className={`${ROOT_CLASS}__button`}>
               <Button
                 title={ "$3.8 M " + indexLngObj[lng]['roadmap#2'] }
@@ -62,7 +62,7 @@ export const Roadmap = props => {
                 onClick={props.onClickButton}
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={ROOT_CLASS}>
           <div className={`${ROOT_CLASS}__content`}>
@@ -108,10 +108,12 @@ export const Roadmap = props => {
                 </div>
               </div>
             </div>
-            <p className={`${ROOT_CLASS}__text`}>
-              {props.descText}
-            </p>
-            <img className={`${ROOT_CLASS}__image`} src={props.imageSrc} alt="CINDEX"/>
+            <div className={`${ROOT_CLASS}__wrapper-content`}>
+              <p className={`${ROOT_CLASS}__text`}>
+                {props.descText}
+              </p>
+              <img className={`${ROOT_CLASS}__image`} src={props.imageSrc} alt="CINDEX"/>
+            </div>
           </div>
         </div>
       </div>

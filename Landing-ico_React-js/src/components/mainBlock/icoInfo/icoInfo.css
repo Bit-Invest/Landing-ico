@@ -12,6 +12,8 @@
 .ico-info__partners {
   margin-top: 10px;
   width: 230px;
+  display: flex;
+  align-items: center;
 }
 
 .ico-info__ratings {
@@ -29,6 +31,37 @@
   height: 55px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.ico-info__docs {
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.ico-info__doc {
+  display: flex;
+  padding: 10px 0;
+  border: 1px solid #fff;
+  width: 200px;
+  position: relative;
+  justify-content: center;
+  border-radius: 32px;
+}
+
+.ico-info__docs-icon {
+  position: absolute;
+  left: 16px;
+}
+
+.ico-info__doc:first-of-type {
+
+}
+
+.ico-info__doc span {
+  color: #fff;
+  font-size: 14px;
 }
 
 .ico_rating {
@@ -131,4 +164,10 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
+}
+
+@media screen and (max-width: 1023px) {
+  .ico-info__docs {
+    display: none;
+  }
 }

@@ -9,7 +9,9 @@
   margin-bottom: 110px;
 }
 .cryptoAssetsManagement .header_blocks {
-  width: 52%;
+  width: 75%;
+  display: flex!important;
+  flex-direction: column;
 }
 .cryptoAssetsManagement .video {
   background-size: cover;
@@ -30,8 +32,7 @@
   cursor: pointer;
 }
 .cryptoAssetsManagement .txt {
-  width: 40%;
-  margin-right: 10%;
+  width: 50%;
 }
 .cryptoAssetsManagement .txt2 {
   width: 40%;
@@ -54,26 +55,26 @@
   margin-bottom: 20px;
   font-weight: normal;
 }
-.cryptoAssetsManagement .problemBlock .video_block {
+.cryptoAssetsManagement .video_block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
-  margin-top: 50px;
+  /* width: 30%;
+  margin-top: 50px; */
 }
-.cryptoAssetsManagement .problemBlock .video_block .mockup1 {
+.cryptoAssetsManagement .video_block .mockup1 {
   background-size: cover;
   height: 222px;
   width: 380px;
   background-image: url(../../media/mockup1.png);
 }
-.cryptoAssetsManagement .problemBlock .video_block .mockup2 {
+.cryptoAssetsManagement .video_block .mockup2 {
   background-size: cover;
   height: 222px;
   width: 380px;
   background-image: url(../../media/mockup2.png);
 }
-.cryptoAssetsManagement .problemBlock .video_block .mockup3 {
+.cryptoAssetsManagement .video_block .mockup3 {
   background-size: cover;
   height: 284px;
   width: 300px;
@@ -81,15 +82,72 @@
 }
 .problemBlock {
   display: flex;
-  justify-content: center;
-  padding-bottom: 140px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10%;
 }
 
-.cryptoAssetsManagement .problemBlock:last-of-type .btn {
-  display: none;
+.problemBlock__wrapper-problem {
+  display: flex!important;
+  flex-direction: column;
 }
 
-.problemBlock .btn {
+.cryptoAssetsManagement .slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  width: auto;
+}
+
+.cryptoAssetsManagement .slick-dots li button::before {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.cryptoAssetsManagement .slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+.cryptoAssetsManagement .slick-next:before, [dir=rtl] .slick-prev:before {
+  content: ' ';
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+  transform: rotate(-45deg);
+}
+
+.cryptoAssetsManagement .slick-prev:before {
+  content: ' ';
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+  transform: rotate(135deg);
+}
+
+.cryptoAssetsManagement .slick-next {
+  right: 0;
+  top: 98%;
+  bottom: 0;
+  left: 19%;
+}
+
+.cryptoAssetsManagement .slick-prev {
+  right: 0;
+  top: 98%;
+  bottom: 0;
+  left: 10%;
+}
+
+.cryptoAssetsManagement .slick-slider {
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.cryptoAssetsManagement .btn {
   background : -moz-linear-gradient(0% 50% 0deg,rgba(242, 135, 183, 1) 0%,rgba(108, 94, 214, 1) 100%);
   background : -webkit-linear-gradient(0deg, rgba(242, 135, 183, 1) 0%, rgba(108, 94, 214, 1) 100%);
   background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(242, 135, 183, 1) ),color-stop(1,rgba(108, 94, 214, 1) ));
@@ -97,7 +155,7 @@
   background : -ms-linear-gradient(0deg, rgba(242, 135, 183, 1) 0%, rgba(108, 94, 214, 1) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F287B7', endColorstr='#6C5ED6' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(242, 135, 183, 1) 0%, rgba(108, 94, 214, 1) 100%);
-  padding: 0 27px;
+  padding: 0 45px;
   border-radius : 24px;
   -moz-border-radius : 24px;
   -webkit-border-radius : 24px;
@@ -113,9 +171,9 @@
   color: #fff;
   transition: box-shadow 0.3s;
   float: right;
-  margin-top: 30px;
+  margin-bottom: 124px;
 }
-.problemBlock .btn:hover {
+.cryptoAssetsManagement .btn:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -125,6 +183,7 @@
   }
   .cryptoAssetsManagement .header_blocks {
     width: 99%;
+    padding-right: 40px!important;
     display: block;
   }
   .cryptoAssetsManagement .video {
@@ -155,10 +214,12 @@
 
 @media screen and (max-width: 767px) {
   .cryptoAssetsManagement .header_blocks {
-    width: 100% !important;
+    width: 98% !important;
     margin: 0 auto !important;
     word-wrap: break-word;
     padding: 0 5%!important;
+    font-size: 26px!important;
+    display: block!important;
   }
   .cryptoAssetsManagement .video {
     width: 100%;

@@ -2,9 +2,6 @@ import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { showPopUp, changeUrlPopupVideo, showDocPopup } from '../../store/store';
-import block_3_ico_1 from '../../images/block_3_ico_1.png';
-import block_3_ico_2 from '../../images/block_3_ico_2.png';
-import block_3_ico_3 from '../../images/block_3_ico_3.png';
 import {links} from '../../links.js';
 import play_button_youtube from '../../media/play_button_youtube.png';
 import licensia_1 from '../../media/licensia_1.png';
@@ -16,7 +13,9 @@ import indexLngObj from '../../lngs/index'
 
 const RigthVideo = (props) => {
   return (
-    <div className="right" onClick={() => props.video_show('https://www.youtube.com/embed/5Iy_etsH7zo')}></div>
+    <div className="right" onClick={() => props.video_show('https://www.youtube.com/embed/5Iy_etsH7zo')}>
+      <img src={play_button_youtube} />
+    </div>
   );
 };
 
@@ -37,37 +36,26 @@ class TeamLegal extends React.Component {
     const { props } = this;
 
     return(
-      <div className="teamLegal">
+      <div className="teamLegal" id="exitAnimate">
         <div className="size">
           <h2 className="header_blocks">
             { indexLngObj[lng]['teamLegal#1'] } <br/> { indexLngObj[lng]['teamLegal#2'] }
           </h2>
-          <RigthVideo video_show={this.showVideoInPopUp} />
           <div className="container">
             <div className="left">
-              <div className='row'>
-                <div>
-                  <a className="LC" target="_blank" href="https://drive.google.com/open?id=1nulb7NnAQJJHGF09v9VdZC5tUQJPOV4u">
-                    <img className="img" src={licensia_1} alt="CINDEX"/>
-                    <p>{ indexLngObj[lng]['teamLegal#3'] }</p>
-                  </a>
-                </div>
-                <div>
-                  <a className="LC" target="_blank" href="https://drive.google.com/open?id=1VvZSFwaR_LVJZBRp_v8GZ6w5erbDr1VF">
-                    <img className="img" src={licensia_2} alt="CINDEX"/>
-                    <p>{ indexLngObj[lng]['teamLegal#4'] }</p>
-                  </a>
-                </div>
-              </div>
-              <div className='row'>
-                <div>
-                  <a className="LC" target="_blank" href="https://drive.google.com/open?id=1yNU430cKV_3wsGBkBDxqI1DhXVnqdOLM">
-                    <img className="img" src={licensia_3} alt="CINDEX"/>
-                    <p>{ indexLngObj[lng]['teamLegal#5'] }</p>
-                  </a>
-                </div>
-              </div>
-              { ab_val !== '1' ?
+              <a className="LC" target="_blank" href="https://drive.google.com/open?id=1nulb7NnAQJJHGF09v9VdZC5tUQJPOV4u">
+                <img className="img" src={licensia_1} alt="CINDEX"/>
+                <p>{ indexLngObj[lng]['teamLegal#3'] }</p>
+              </a>
+              <a className="LC" target="_blank" href="https://drive.google.com/open?id=1VvZSFwaR_LVJZBRp_v8GZ6w5erbDr1VF">
+                <img className="img" src={licensia_2} alt="CINDEX"/>
+                <p>{ indexLngObj[lng]['teamLegal#4'] }</p>
+              </a>
+              <a className="LC" target="_blank" href="https://drive.google.com/open?id=1yNU430cKV_3wsGBkBDxqI1DhXVnqdOLM">
+                <img className="img" src={licensia_3} alt="CINDEX"/>
+                <p>{ indexLngObj[lng]['teamLegal#5'] }</p>
+              </a>
+              {/* { ab_val !== '1' ?
                 <div className="dock_block">
                   <div className="dock">
                     <div className="row">
@@ -95,7 +83,7 @@ class TeamLegal extends React.Component {
                   </div>
                 </div> :
                 null
-              }
+              } */}
             </div>
             <RigthVideo video_show={this.showVideoInPopUp} />
           </div>
