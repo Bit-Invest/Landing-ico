@@ -22,7 +22,7 @@ export const getGAID = function(){
 let clickid = linkSearch['clickid'];
 let gaid = getGAID;
 
-linkSearch['ab_val'] || window.localStorage.getItem('ab_val') ? window.localStorage.setItem('ab_val', 1) : null
+(linkSearch['ab_val'] || window.localStorage.getItem('ab_val')) ? window.localStorage.setItem('ab_val', 1) : ''
 export const ab_val = window.localStorage.getItem('ab_val')
 
 export const list_lngs = 'en zn ko tr fr ja vi pt ar de es'; //языки который мы используем нужно тут указать
