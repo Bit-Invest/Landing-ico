@@ -33,6 +33,7 @@
 }
 .cryptoAssetsManagement .txt {
   width: 50%;
+  margin-bottom: 180px;
 }
 .cryptoAssetsManagement .txt2 {
   width: 40%;
@@ -58,9 +59,11 @@
 .cryptoAssetsManagement .video_block {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* width: 30%;
-  margin-top: 50px; */
+  align-items: flex-start;
+  margin-left: 10%;
+  position: relative;
+  bottom: 190px;
+  margin-bottom: 20px;
 }
 .cryptoAssetsManagement .video_block .mockup1 {
   background-size: cover;
@@ -141,10 +144,51 @@
 }
 
 .cryptoAssetsManagement .slick-slider {
-  max-width: 1440px;
   width: 100%;
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
+}
+
+.problemBlock__wrapper {
+  position: relative;
+}
+
+.problemBlock__img-slides {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.problemBlock__slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.problemBlock__slide-0 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.problemBlock__slide-1 {
+  position: absolute;
+  bottom: -30px;
+  left: 50px;
+  z-index: 2;
+}
+.problemBlock__slide-2 {
+  position: absolute;
+  bottom: -60px;
+  left: 100px;
+  z-index: 1;
+}
+.problemBlock__slide-img {
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 572.5px;
+  height: 435.8px;
 }
 
 .cryptoAssetsManagement .btn {
@@ -171,7 +215,6 @@
   color: #fff;
   transition: box-shadow 0.3s;
   float: right;
-  margin-bottom: 124px;
 }
 .cryptoAssetsManagement .btn:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
