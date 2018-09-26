@@ -45,7 +45,7 @@ import How_CINDX_Influences_Crypto_Trading from '../../news/How_CINDX_Influences
 import How_CINDX_is_ensuring_legal_compliance from '../../news/How_CINDX_is_ensuring_legal_compliance.jpeg';
 import Ibraghim_Haniev from '../../news/Ibraghim_Haniev.jpeg';
 import ICObench_gives_4_8_to_CINDX from '../../news/ICObench_gives_4_8_to_CINDX.png';
-import Jason_King from '../../news/Jason_King.jpeg';
+import Jason_King from '../../news/Jason_King.jpg';
 import Keith_Teare from '../../news/Keith_Teare.jpeg';
 import Meet_worlds_first_financial_crypto_social_network from '../../news/Meet_worlds_first_financial_crypto_social_network.jpeg';
 import Mofassair_Hossain from '../../news/Mofassair_Hossain.jpeg';
@@ -79,6 +79,12 @@ import CINDX_ROADSHOW_SHANGHAI_BEIJING_SINGAPORE from '../../news/CINDX_ROADSHOW
 import Join_the_CINDX_Meetup_in_Singapore from '../../news/Join_the_CINDX_Meetup_in_Singapore.jpg'
 import CINDX_at_Consensus_Singapore from '../../news/CINDX_at_Consensus_Singapore.jpg'
 import Weekly_Digest_10_09_2018_16_09_2018 from '../../news/Weekly_Digest_10_09_2018_16_09_2018.jpg'
+import Tokenmatch from '../../news/Tokenmatch.jpg'
+import AGORA_Dubai from '../../news/AGORA_Dubai.jpg'
+import ASEAN from '../../news/ASEAN.jpg'
+import AERUM from '../../news/AERUM.jpg'
+import CINDX_TEAM_JELENA_KARZETSKAJA from '../../news/CINDX_TEAM_JELENA_KARZETSKAJA.png'
+import Weekly_Digest_17_09_2018_23_09_2018 from '../../news/Weekly_Digest_17_09_2018_23_09_2018.jpg'
 import './MediaNews.css';
 
 const media = [
@@ -670,7 +676,64 @@ let news = [
     source: 'www.medium.com',
     centered: true
   },
+  {
+    videoSrc: 'https://medium.com/cindx/erc-1400-the-new-token-standard-a5a49779554e',
+    screen: CINDX_at_Consensus_Singapore,
+    name: 'ERC-1400: New Token Standard that can Bridge the Gap between Crypto and Fiat Securities',
+    text: 'There are many debates raging on various aspects of crypto token credibility. As far as Security Token Offerings (STO) are concerned, some fiat analysts believe that Security Tokens should not be legally classified as securities.',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://www.facebook.com/cindx.io/posts/1678058212323570',
+    screen: Tokenmatch,
+    name: 'CINDX Makes Pitch at TokenMatch!',
+    text: 'CINDX is at TokenMatch! This exclusive meeting is organised specially for investors and ICO teams that have been preselected through a rigorous process.',
+    source: 'www.facebook.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://www.facebook.com/cindx.io/posts/1681524395310285',
+    screen: AGORA_Dubai,
+    name: 'CINDX Attends Agora International Crypto Currencies Investment Congress in Dubai',
+    text: 'CINDX Roadshow successfully traveled through China, Korea, and Singapore, and is now moving forward to the UAE! Today, Denis Eskenazi and Artur Shamalov are presenting CINDX at the Agora International Crypto Currencies Investment Congress in Dubai!',
+    source: 'www.facebook.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://www.facebook.com/cindx.io/posts/1682625761866815',
+    screen: ASEAN,
+    name: 'CINDX CEO Yuriy Avdeev Makes his Pitch at the ASEANDIGITAL 5.0 SUMMIT',
+    text: 'The CINDX Roadshow takes another stage! Today, CINDX CEO Yuriy Avdeev pitched at the ASEANDIGITAL 5.0 SUMMIT in Bangkok. The event aims to bridge the gap in digital transformations between businesses, communities, and governments.',
+    source: 'www.facebook.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://www.facebook.com/cindx.io/photos//1682888825173842',
+    screen: AERUM,
+    name: 'New Partnership Opportunity',
+    text: 'CINDX CEO Yuriy Avdeev met with Ross Kishenkov, CСO of Aerum, an infrastructure project working to develop an Ethereum-compatible \'Blockchain 3.0\' — a high-performance, scalable, decentralised platform for B2B and B2C applications.',
+    source: 'www.facebook.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/team-jelena-karzetskaja-94e8c4286924',
+    screen: CINDX_TEAM_JELENA_KARZETSKAJA,
+    name: 'CINDX TEAM Jelena Karzetskaya',
+    text: 'We continue to introduce the CINDX team, explore each team member’s point of view, find out what our team members are particularly excited about, and why each of them has decided to join CINDX. Please welcome Jelena Karzetskaya, CINDX Compliance Adviser.',
+    source: 'www.medium.com',
+    centered: true
+  },
 
+
+  {
+    videoSrc: 'https://medium.com/cindx/weekly-digest-17-september-23-september-b76cdadecd6c',
+    screen: Weekly_Digest_17_09_2018_23_09_2018,
+    name: 'Weekly Digest (17.09.2018 - 23.09.2018)',
+    text: 'We have prepared a new weekly report for you! A lot has happened. Read our posts on Medium and don’t forget to join CINDX STO to earn a 20 % token bonus today!',
+    source: 'www.medium.com',
+    centered: true
+  },
 ];
 
 news = news.reverse()
