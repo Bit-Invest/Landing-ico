@@ -7,6 +7,7 @@ import imageCircle_1 from '../../images/block_4_cont_3_img.svg';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { showDocPopup } from '../../store/store';
+import { MailForm } from '../mailForm'
 
 import { links, Join, lng, ab_val } from '../../links.js';
 import indexLngObj from '../../lngs/index'
@@ -353,6 +354,7 @@ const TokenSaleDetails = props => {
               </div> */}
             </div>
             <div className="right_block4">
+              <MailForm isTokenDetails={true} />
               {/* <TokenDeals />
               <ButtonBuy /> */}
             </div>

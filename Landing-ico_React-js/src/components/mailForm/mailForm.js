@@ -142,13 +142,16 @@ class MailForm extends React.Component {
 
     return (
       <div className={ROOT_CLASS}>
-        <div className={`${ROOT_CLASS}__video`} onClick={() => this.showVideoInPopUp('https://player.vimeo.com/video/286746544')}>
-          <img
-            src={play_button_youtube}
-            alt="CINDEX"
-            className={`${ROOT_CLASS}__play`}
-          />
-        </div>
+        { !this.props.isTokenDetails ?
+          <div className={`${ROOT_CLASS}__video`} onClick={() => this.showVideoInPopUp('https://player.vimeo.com/video/286746544')}>
+            <img
+              src={play_button_youtube}
+              alt="CINDEX"
+              className={`${ROOT_CLASS}__play`}
+            />
+          </div> :
+          null
+        }
         <div className={`${ROOT_CLASS}__content`}>
           <div style={{display: !email ? 'none' : null }} className={`${ROOT_CLASS}__contentagree`}>
             <div className={`${ROOT_CLASS}__contentagreescroll`}>

@@ -6,12 +6,17 @@
   overflow: hidden;
 }
 
-.block_4 * {
-  color: white;
-}
-
 .block_4 .container {
   margin-top: 40px;
+}
+
+.block_4 h2, 
+.block_4 li,
+.block_4 .cont_1 p,
+.block_4 .cont_5 a,
+.block_4 .progress-container .saleName p,
+.block_4 .progress-container .progress-data .data {
+    color: #fff;
 }
 
 .block_4 .left_block4 {
@@ -25,7 +30,8 @@
 .block_4 .right_block4 {
   width: 45%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding-top: 95px;
 }
 
 .block_4 .progressBar_block4 {
@@ -622,8 +628,7 @@ z-index: 2;
     width: 62px;
     height: 89px;
     top: -75px;
-    right: 0;
-    margin-right: -650px;
+    right: -120%;
     background: url(../../images/block_4_img_bg_2.png) no-repeat;
     background-size: cover;
 }
@@ -658,7 +663,7 @@ z-index: 2;
 }
 
 .token-info__right-block {
-    margin-left: 55px;
+    margin-left: 35px;
 }
 
 .block_4 .progress-container {
@@ -738,7 +743,9 @@ z-index: 2;
   .block_4 .left_block4 {
     width: 48%;
   }
-  
+  .block_4 .token-info:after {
+      right: -110%;
+  }
 }
 
 @media (max-width: 1023px) {
