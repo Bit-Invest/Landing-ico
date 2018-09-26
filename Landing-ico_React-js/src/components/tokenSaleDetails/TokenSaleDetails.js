@@ -245,25 +245,29 @@ const Docs = props => {
   
   return(
     <div className="cont_5">
-      <div className="row">
-        <a target="_blank" onClick={openPopup} href={links.wp}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-        <a target="_blank" onClick={openPopup} href={links.wp}><span>{ indexLngObj[lng]['tokenSaleDetails#15'] }</span></a>
+      <div className="cont_5_docs__left-side">
+        <div className="row">
+          <a target="_blank" onClick={openPopup} href={links.wp}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+          <a target="_blank" onClick={openPopup} href={links.wp}><span>{ indexLngObj[lng]['tokenSaleDetails#15'] }</span></a>
+        </div>
+        <div className="row">
+          <a target="_blank" onClick={openPopup} href={links.pr}><img src={block_3_ico_2} alt={"CINDEX"}/></a>
+          <a target="_blank" onClick={openPopup} href={links.pr}><span>{ indexLngObj[lng]['tokenSaleDetails#16'] }</span></a>
+        </div>
+        <div className="row">
+          <a target="_blank" onClick={openPopup} href={links.op}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+          <a target="_blank" onClick={openPopup} href={links.op}><span>{ indexLngObj[lng]['tokenSaleDetails#17'] }</span></a>
+        </div>
       </div>
-      <div className="row">
-        <a target="_blank" onClick={openPopup} href={links.pr}><img src={block_3_ico_2} alt={"CINDEX"}/></a>
-        <a target="_blank" onClick={openPopup} href={links.pr}><span>{ indexLngObj[lng]['tokenSaleDetails#16'] }</span></a>
-      </div>
-      <div className="row">
-        <a target="_blank" onClick={openPopup} href={links.op}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-        <a target="_blank" onClick={openPopup} href={links.op}><span>{ indexLngObj[lng]['tokenSaleDetails#17'] }</span></a>
-      </div>
-      <div className="row">
-        <a target="_blank" onClick={openPopup} href={links.fm}><img src={block_3_ico_3} alt={"CINDEX"}/></a>
-        <a target="_blank" onClick={openPopup} href={links.fm}><span>{ indexLngObj[lng]['tokenSaleDetails#18'] }</span></a>
-      </div>
-      <div className="row">
-        <a target="_blank" onClick={openPopup} href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-        <a target="_blank" onClick={openPopup} href={links.ld}><span>{ indexLngObj[lng]['tokenSaleDetails#19'] }</span></a>
+      <div className="cont_5_docs__right-side">
+        <div className="row">
+          <a target="_blank" onClick={openPopup} href={links.fm}><img src={block_3_ico_3} alt={"CINDEX"}/></a>
+          <a target="_blank" onClick={openPopup} href={links.fm}><span>{ indexLngObj[lng]['tokenSaleDetails#18'] }</span></a>
+        </div>
+        <div className="row">
+          <a target="_blank" onClick={openPopup} href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
+          <a target="_blank" onClick={openPopup} href={links.ld}><span>{ indexLngObj[lng]['tokenSaleDetails#19'] }</span></a>
+        </div>
       </div>
     </div>
   );
@@ -341,12 +345,12 @@ const TokenSaleDetails = props => {
           <div className="container">
             <div className="left_block4">
               <TokenInfo />
+              <Docs {...props} />
               <ProgressBar props={props.state} />
               <TokenProgressBarSale />
               {/* <div className="progressBar_block4">
                 <ProgressBar money={outputValue} percent={5.6}/>
-              </div>
-              <Docs {...props} /> */}
+              </div> */}
             </div>
             <div className="right_block4">
               {/* <TokenDeals />
