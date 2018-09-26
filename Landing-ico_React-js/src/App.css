@@ -1843,6 +1843,10 @@ body.compensate-for-scrollbar {
       height: 95px;
     }
 
+    .block_8 .ourPartners .btcbit-promo {
+      height: 95px!important;
+    }
+
     .block_8 .ourPartners .ico-promo {
       height: 33px!important;
     }

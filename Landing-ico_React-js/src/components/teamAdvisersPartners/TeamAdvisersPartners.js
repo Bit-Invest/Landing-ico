@@ -432,9 +432,15 @@ class TeamAdvisersPartners extends React.Component {
 
   mapOurPartners = () => {
     return ourPartners.map((el, i) => {
+      const promo = (el.img === ICO_PROMO || el.img === civic_logo_horz_BIG || el.img === Greenberg) ? 'ico-promo' : ''
+      const newPromo = (el.img === BtcBit) ? 'btcbit-promo' : ''
       return (
         <div key={i}>
-          <img className={`img ${(el.img === ICO_PROMO || el.img === civic_logo_horz_BIG || el.img === Greenberg) ? 'ico-promo' : ''}`} src={el.img} alt="CINDX"/>
+          <img
+            className={`img ${promo} ${newPromo}`} 
+            src={el.img} 
+            alt="CINDX"
+          />
         </div>
       );
     })
