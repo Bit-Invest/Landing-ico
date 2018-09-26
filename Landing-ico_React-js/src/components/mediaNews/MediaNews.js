@@ -710,7 +710,7 @@ let news = [
     centered: true
   },
   {
-    videoSrc: 'https://www.facebook.com/cindx.io/photos//1682888825173842',
+    videoSrc: 'https://www.facebook.com/cindx.io/photos/1682888825173842',
     screen: AERUM,
     name: 'New Partnership Opportunity',
     text: 'CINDX CEO Yuriy Avdeev met with Ross Kishenkov, CСO of Aerum, an infrastructure project working to develop an Ethereum-compatible \'Blockchain 3.0\' — a high-performance, scalable, decentralised platform for B2B and B2C applications.',
