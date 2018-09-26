@@ -85,6 +85,7 @@ import ASEAN from '../../news/ASEAN.jpg'
 import AERUM from '../../news/AERUM.jpg'
 import CINDX_TEAM_JELENA_KARZETSKAJA from '../../news/CINDX_TEAM_JELENA_KARZETSKAJA.png'
 import Weekly_Digest_17_09_2018_23_09_2018 from '../../news/Weekly_Digest_17_09_2018_23_09_2018.jpg'
+import ERC_1400 from '../../news/ERC_1400.jpg'
 import './MediaNews.css';
 
 const media = [
@@ -678,7 +679,7 @@ let news = [
   },
   {
     videoSrc: 'https://medium.com/cindx/erc-1400-the-new-token-standard-a5a49779554e',
-    screen: CINDX_at_Consensus_Singapore,
+    screen: ERC_1400,
     name: 'ERC-1400: New Token Standard that can Bridge the Gap between Crypto and Fiat Securities',
     text: 'There are many debates raging on various aspects of crypto token credibility. As far as Security Token Offerings (STO) are concerned, some fiat analysts believe that Security Tokens should not be legally classified as securities.',
     source: 'www.medium.com',
@@ -724,8 +725,6 @@ let news = [
     source: 'www.medium.com',
     centered: true
   },
-
-
   {
     videoSrc: 'https://medium.com/cindx/weekly-digest-17-september-23-september-b76cdadecd6c',
     screen: Weekly_Digest_17_09_2018_23_09_2018,

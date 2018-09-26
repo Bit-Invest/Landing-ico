@@ -37,9 +37,9 @@ const dataLegalSchedule = [
     isCheck: true
   },
   {
-    text: 'REGISTERED THE PROSPECTUS EU 809-2004',
+    text: 'Applied for Prospectus EU 809-2004 registration',
     version: '8.18',
-    isCheck: false
+    isCheck: true
   },
   {
     text: 'REGISTERED UNDER EXEMPTION D IN SEC',

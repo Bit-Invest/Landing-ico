@@ -17,7 +17,6 @@ import Denis_Eskenazi from '../../media/Denis_Eskenazi.e8b0d64b.jpg';
 import Ibraghim_Haniev from '../../media/Ibraghim_Haniev.77b0aa4e.jpg';
 import Airat from '../../media/Airat.jpg';
 import Sofja_Pevzner from '../../media/Sofja_Pevzner.jpg';
-import Dave_Gutierrez from '../../media/Dave_Gutierrez.jpg';
 import Jelena_Karzetskaja from '../../media/Jelena_Karzetskaja.png';
 // Our Parners icon
 import Progressor_logo from '../../media/Progressor_logo.png';
@@ -25,10 +24,11 @@ import ICO_PROMO from '../../media/ico_promo.png';
 import sum_and_substance_1 from '../../media/sum_and_substance1.png';
 import twigagroup from '../../media/twigagroup.png';
 import Tradingview from '../../media/Tradingview.png';
-import ICO_Rating from '../../media/ICO_Rating.png';
-import Top_ICO from '../../media/Top_ICO_List.png';
 import Yellow_Door from '../../media/Yellow Door.png';
 import Innova8 from '../../media/Innova8.png';
+import BtcBit from '../../media/BtcBit.jpg';
+import civic_logo_horz_BIG from '../../media/civic_logo_horz_BIG.png';
+import Greenberg from '../../media/Greenberg.png';
 // Advicer icon
 import Keith_Teare from '../../media/Keith_Teare.1e7599ac.jpg';
 import Austin_Kimm from '../../media/Austin_Kimm.caf37ff2.jpg';
@@ -170,18 +170,6 @@ const ourPartners = [
    href: 'https://www.tradingview.com/'
  },
  {
-   img: ICO_Rating,
-   name: 'ICORating',
-   position: 'Rating Agency',
-   href: 'https://icorating.com/'
- },
- {
-   img: Top_ICO,
-   name: 'Topicolist',
-   position: 'Rating Agency',
-   href: 'https://topicolist.com/'
- },
- {
    img: Yellow_Door,
    name: 'Yellow Door',
    position: 'Silicon Valley Accelerator',
@@ -193,6 +181,15 @@ const ourPartners = [
    position: 'Global Ventures',
    href: 'http://www.innov8globaladvisory.com/'
  },
+ {
+  img: BtcBit,
+},
+{
+  img: civic_logo_horz_BIG,
+},
+{
+  img: Greenberg,
+},
 ];
 
 const advisers = [
@@ -437,7 +434,7 @@ class TeamAdvisersPartners extends React.Component {
     return ourPartners.map((el, i) => {
       return (
         <div key={i}>
-          <img className={`img ${(el.img === ICO_PROMO) ? 'ico-promo' : ''}`} src={el.img} alt="CINDX"/>
+          <img className={`img ${(el.img === ICO_PROMO || el.img === civic_logo_horz_BIG || el.img === Greenberg) ? 'ico-promo' : ''}`} src={el.img} alt="CINDX"/>
         </div>
       );
     })
