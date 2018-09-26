@@ -165,7 +165,7 @@ const en = {
     'tokenSaleDetails#3': 'Bounty',
     'tokenSaleDetails#4': 'Advisers',
     'tokenSaleDetails#5': 'Reserve',
-    'tokenSaleDetails#6': 'Traders Recruitment Program',
+    'tokenSaleDetails#6': 'Community Grants',
     'tokenSaleDetails#7': 'Token Liquidity Support',
     'tokenSaleDetails#8': 'Available for Sale',
     'tokenSaleDetails#9': 'Token Name:',

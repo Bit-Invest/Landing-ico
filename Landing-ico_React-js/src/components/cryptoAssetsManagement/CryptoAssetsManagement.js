@@ -18,19 +18,22 @@ const problemData = [
     header: indexLngObj[lng]['cryptoAssetsManagement#2'],
     text1: indexLngObj[lng]['cryptoAssetsManagement#3'],
     text2: indexLngObj[lng]['cryptoAssetsManagement#4'],
-    text3: indexLngObj[lng]['cryptoAssetsManagement#5']
+    text3: indexLngObj[lng]['cryptoAssetsManagement#5'],
+    mobileSrc: crypto1
   },
   {
     header: indexLngObj[lng]['cryptoAssetsManagement#7'],
     text1: indexLngObj[lng]['cryptoAssetsManagement#8'],
     text2: indexLngObj[lng]['cryptoAssetsManagement#9'],
-    text3: indexLngObj[lng]['cryptoAssetsManagement#10']
+    text3: indexLngObj[lng]['cryptoAssetsManagement#10'],
+    mobileSrc: crypto2
   },
   {
     header: indexLngObj[lng]['cryptoAssetsManagement#11'],
     text1: indexLngObj[lng]['cryptoAssetsManagement#12'],
     text2: indexLngObj[lng]['cryptoAssetsManagement#13'],
-    text3: indexLngObj[lng]['cryptoAssetsManagement#14']
+    text3: indexLngObj[lng]['cryptoAssetsManagement#14'],
+    mobileSrc: crypto3
   }
 ]
 
@@ -52,7 +55,22 @@ class CryptoAssetsManagement extends React.Component {
   }
   
   renderImgSlides = () => {
-    return cryptoArr.map((el, i) => {
+    let currentCryptoArr = []
+    switch (this.state.currentCrypto) {
+      case 0:
+        currentCryptoArr = [ crypto1, crypto2, crypto3 ]
+        break;
+      case 1:
+        currentCryptoArr = [ crypto2, crypto3, crypto1 ]
+        break;
+      case 2:
+        currentCryptoArr = [ crypto3, crypto1, crypto2 ]
+        break;
+      default:
+        currentCryptoArr = cryptoArr
+        break;
+    }
+    return currentCryptoArr.map((el, i) => {
       return (
         <div className={`problemBlock__slide problemBlock__slide-${i}`} key={i}>
           <div style={{ backgroundImage: `url(${el})` }} className='problemBlock__slide-img'></div>
@@ -65,6 +83,33 @@ class CryptoAssetsManagement extends React.Component {
     return problemData.map((el, i) => {
       return (
         <div className="problemBlock__wrapper-problem" key={i}>
+          <div className="problemBlock">
+            <div className="txt">
+              <p className="caption">{ el.header }</p>
+              <hr/>
+              <p>
+                • { el.text1 }
+              </p>
+              <p>
+                • { el.text2 }
+              </p>
+              <p>
+                • { el.text3 }
+              </p>
+            </div>
+          </div>
+        </div>
+      )
+    })
+  }
+
+  renderMobileProblemBlock = () => {
+    return problemData.map((el, i) => {
+      return (
+        <div className="problemBlock__wrapper-problem" key={i}>
+          <div className="problemBlock__wrapper-img">
+            <img src={el.mobileSrc} />
+          </div>
           <div className="problemBlock">
             <div className="txt">
               <p className="caption">{ el.header }</p>
@@ -98,7 +143,16 @@ class CryptoAssetsManagement extends React.Component {
       slidesToScroll: 1,
       dots: true,
       fade: true,
+      beforeChange: () => {
+        
+      },
+      afterChange: (i) => {
+        this.setState({
+          currentCrypto: i
+        })
+      }
     };
+
 
     return (
       <div name="product" id="product" className="cryptoAssetsManagement">
@@ -119,9 +173,16 @@ class CryptoAssetsManagement extends React.Component {
           </div>
           <div className="problemBlock__wrapper">
             <div className="problemBlock__slider">
-              <Slider { ...settings }>
-                { this.renderProblemBlock() }
-              </Slider>
+              <div className="problemBlock__desktop">
+                <Slider { ...settings }>
+                  { this.renderProblemBlock() }
+                </Slider>
+              </div>
+              <div className="problemBlock__mobile">
+                <Slider { ...settings }>
+                  { this.renderMobileProblemBlock() }
+                </Slider>
+              </div>
               <div className='video_block'>
                 <a target="_blank" href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
               </div>

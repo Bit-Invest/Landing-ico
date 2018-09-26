@@ -1,6 +1,6 @@
 .block_4
 {
-  padding-bottom: 350px;
+  padding-bottom: 90px;
   position: relative;
   background : -moz-linear-gradient(50% 0% -90deg,rgba(76, 32, 115, 1) 0%,rgba(8, 159, 195, 1) 100%);
   background : -webkit-linear-gradient(-90deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
@@ -162,6 +162,7 @@
 .block_4 .cont_1 .row {
   display: flex;
   align-items: center;
+  margin-top: -15px;
 }
 
 .block_4 .cont_1 .row .promptCircle {
@@ -354,6 +355,78 @@
     line-height: 25px;
 }
 
+.block_4 .cont_4_1
+{
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.block_4 .cont_4_1 h2
+{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.block_4 .cont_4_1 .graph {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block_4 .cont_4_1 .graph-image
+{
+    display: block;
+    width: 210px;
+    height: 210px;
+}
+
+.block_4 .cont_4_1 .graph ul
+{
+    display: block;
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.block_4 .cont_4_1 .graph ul li {
+  display: block;
+  font-size: 13.5px;
+  margin: 20px 0;
+}
+
+.block_4 .cont_4_1 .graph ul li span
+{
+    width: 13.5px;
+    height: 13.5px;
+    background: #009CFF;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
+    border-radius: 13.5px;
+    margin-top: -4px;
+}
+
+.block_4 .cont_4_1 .graph ul li:nth-child(2) span
+{
+    background: #FF77CB;
+}
+
+.block_4 .cont_4_1 .graph ul li:nth-child(3) span
+{
+    background: #6600FF;
+}
+
+.block_4 .cont_4_1 .graph ul li:nth-child(4) span
+{
+    background: #77F7FF;
+}
+
+.block_4 .cont_4_1 .graph ul li:nth-child(5) span
+{
+    background: #C777FF;
+}
+
 .block_4 .cont_4
 {
   width: 100%;
@@ -385,12 +458,13 @@
     display: block;
     list-style: none;
     padding-left: 20px;
+    margin-top: 0;
 }
 
 .block_4 .cont_4 .graph ul li {
   display: block;
   font-size: 13.5px;
-  margin: 16px 0;
+  margin: 20px 0;
 }
 
 .block_4 .cont_4 .graph ul li span
@@ -539,6 +613,109 @@ z-index: 2;
 /* .promptCircle:hover {
     display: none;
 } */
+
+.token-info {
+    display: flex;
+}
+
+.progress-bar {
+    margin-top: 50px;
+}
+
+.progress-bar__amount {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+}
+  
+.progress-bar__amount span {
+    font-weight: 500;
+}
+
+.progress-bar__progressBar {
+    width: 90%;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 17px;
+}
+  
+.progress-bar__progress {
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
+.token-info__right-block {
+    margin-left: 55px;
+}
+
+.block_4 .progress-container {
+    position: relative;
+    margin-top: 50px;
+    width: 90%;
+}
+.block_4 .tr-left-block-bonuses {
+    left: -150px;
+}
+.block_4 .progress-container .saleName {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.block_4 .progress-container .saleName p {
+    margin: 0;
+}
+.block_4 .progress-container .cinx {
+
+    font-weight: 500;
+}
+.block_4 .progress-container .sale-bonusses {
+    position: absolute;
+    left: 28%;
+}
+.block_4 .progressBar {
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 17px;
+}
+.block_4 .progressBar .progress {
+    height: 20px;
+    /* border-radius: 17px; */
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 18%;
+}
+.block_4 .progressBar .progress__tr {
+    width: 20%;
+}
+.block_4 .progressBar .progress__ar {
+    width: 19%;
+}
+.block_4 .progressBar .progress__es {
+    width: 21%;
+}
+.block_4 .progress-container .progress-data {
+    display: flex;
+    justify-content: space-between;
+}
+.block_4 .progress-container .progress-data .data {
+    text-align: center;
+    margin-top: 5px;
+}
+.block_4 .progress-container .progress-data .data p {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 500;
+}
+.block_4 .progress-container .progress-data .data .amount {
+    font-size: 14px;
+    font-weight: 300;
+}
 
 @media (max-width: 1439px) {
   .block_4 .cont_3 .row p {
