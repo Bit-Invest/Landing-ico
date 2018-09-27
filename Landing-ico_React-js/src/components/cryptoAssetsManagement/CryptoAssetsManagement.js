@@ -33,6 +33,7 @@ const problemData = [
     text1: indexLngObj[lng]['cryptoAssetsManagement#12'],
     text2: indexLngObj[lng]['cryptoAssetsManagement#13'],
     text3: indexLngObj[lng]['cryptoAssetsManagement#14'],
+    isMockup: true,
     mobileSrc: crypto3
   }
 ]
@@ -46,7 +47,8 @@ const cryptoArr = [
 class CryptoAssetsManagement extends React.Component {
   state = {
     isOpenDisc: true,
-    currentCrypto: 0
+    currentCrypto: 0,
+    isChange: false,
   }
 
   showVideoInPopUp = (url) => {
@@ -70,9 +72,14 @@ class CryptoAssetsManagement extends React.Component {
         currentCryptoArr = cryptoArr
         break;
     }
+
     return currentCryptoArr.map((el, i) => {
+      const animationClass0 = this.state.isChange && i === 0 ? 'problemBlock__slide-start-animation-0' : ''
+      const animationClass1 = this.state.isChange && i === 1 ? 'problemBlock__slide-start-animation-1' : ''
+      const animationClass2 = this.state.isChange && i === 2 ? 'problemBlock__slide-start-animation-2' : ''
+
       return (
-        <div className={`problemBlock__slide problemBlock__slide-${i}`} key={i}>
+        <div className={`problemBlock__slide problemBlock__slide-${i} ${animationClass0} ${animationClass1} ${animationClass2}`} key={i}>
           <div style={{ backgroundImage: `url(${el})` }} className='problemBlock__slide-img'></div>
         </div>
       )
@@ -87,15 +94,25 @@ class CryptoAssetsManagement extends React.Component {
             <div className="txt">
               <p className="caption">{ el.header }</p>
               <hr/>
-              <p>
-                • { el.text1 }
-              </p>
-              <p>
-                • { el.text2 }
-              </p>
-              <p>
-                • { el.text3 }
-              </p>
+              <div className="problemBlock__wrapper-mockup">
+                { el.isMockup ?
+                  <div className='video-block'>
+                    <div className='mockup3'></div>
+                  </div> :
+                  null
+                }
+                <div className="problemBlock__content-p">
+                  <p>
+                    • { el.text1 }
+                  </p>
+                  <p>
+                    • { el.text2 }
+                  </p>
+                  <p>
+                    • { el.text3 }
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -114,6 +131,12 @@ class CryptoAssetsManagement extends React.Component {
             <div className="txt">
               <p className="caption">{ el.header }</p>
               <hr/>
+              { el.isMockup ?
+                <div className='video-block'>
+                  <div className='mockup3'></div>
+                </div> :
+                null
+              }
               <p>
                 • { el.text1 }
               </p>
@@ -134,25 +157,27 @@ class CryptoAssetsManagement extends React.Component {
     const { props } = this;
 
     const settings = {
-      arrows: true,
-      swipeToSlide: true,
+      arrows: false,
       lazyLoad: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: true,
+      dots: false,
       fade: true,
+      adaptiveHeight: true,
       beforeChange: () => {
-        
+        // this.setState({
+
+        // })
       },
       afterChange: (i) => {
         this.setState({
+          isChange: true,
           currentCrypto: i
         })
       }
     };
-
 
     return (
       <div name="product" id="product" className="cryptoAssetsManagement">
@@ -174,7 +199,7 @@ class CryptoAssetsManagement extends React.Component {
           <div className="problemBlock__wrapper">
             <div className="problemBlock__slider">
               <div className="problemBlock__desktop">
-                <Slider { ...settings }>
+                <Slider ref={slider => this.slider = slider} { ...settings }>
                   { this.renderProblemBlock() }
                 </Slider>
               </div>
@@ -183,7 +208,7 @@ class CryptoAssetsManagement extends React.Component {
                   { this.renderMobileProblemBlock() }
                 </Slider>
               </div>
-              <div className='video_block'>
+              <div className={`video_block ${this.state.currentCrypto === 2 ? 'video_block_last' : ''}`}>
                 <a target="_blank" href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
               </div>
             </div>

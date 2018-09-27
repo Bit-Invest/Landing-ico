@@ -4,6 +4,7 @@
   position: relative;
   background: linear-gradient(#471f6d, #0896b8);
   overflow: hidden;
+  margin-bottom: -1px;
 }
 
 .block_4 .container {

@@ -6,7 +6,131 @@
 }
 
 .social-media__wrapper {
-    widows: 1130px;
+    width: 1210px;
+    padding: 80px 40px;
 }
 
-/* 1130px */
+.social-media__header {
+    font-size: 32px;
+    color: #fff;
+}
+
+.social-media__left-block {
+    display: flex;
+    margin-right: 30px;
+}
+
+.social-media__right-block {
+    display: flex;
+}
+
+.social-media__icons {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.social-media__icons a {
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
+.social-media__icons a:last-of-type {
+    padding-right: 0;
+}
+
+.social-media__icon {
+    width: 59px;
+    height: 59px;
+}
+
+.social-media__btc {
+    background: url('../../images/social-media/bitcoin-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__youtube {
+    background: url('../../images/social-media/youtube-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__instagram {
+    background: url('../../images/social-media/instagram-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__reddit {
+    background: url('../../images/social-media/reddit-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__tel {
+    background: url('../../images/social-media/telegram-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__twitter {
+    background: url('../../images/social-media/twitter-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__github {
+    background: url('../../images/social-media/github-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__facebook {
+    background: url('../../images/social-media/facebook-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__medium {
+    background: url('../../images/social-media/medium-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__linkedin {
+    background: url('../../images/social-media/linkedin-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__wechat {
+    background: url('../../images/social-media/wechat-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__kakaotalk {
+    background: url('../../images/social-media/kakaotalk-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.social-media__weibo {
+    background: url('../../images/social-media/weibo-icon.svg') no-repeat 0 0;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1439px) {
+    .social-media__wrapper {
+        width: 830px;
+    }
+
+    .social-media__icons {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .social-media__header {
+        width: 440px;
+    }
+
+    .social-media__wrapper {
+        width: 680px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .social-media {
+        display: none;
+    }
+}

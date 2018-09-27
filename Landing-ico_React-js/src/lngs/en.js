@@ -547,14 +547,14 @@ const en = {
     'joinTokenPreSale#2': 'JOIN PRE-SALE',
     'joinTokenPreSale#3': 'TEST MVP',
     'joinTokenPreSale#4': 'Head Office',
-    'joinTokenPreSale#5': 'Harjumaa, Erika 14,',
-    'joinTokenPreSale#6': 'Talinn, 10416, Estonia',
-    'joinTokenPreSale#7': 'Business inquiries | hello@cindx.io',
+    'joinTokenPreSale#5': 'Estonia, Talinn',
+    'joinTokenPreSale#6': '10416, Harjumaa, Erika 14',
+    'joinTokenPreSale#7': 'Business inquiries - hello@cindx.io',
     'joinTokenPreSale#8': 'Legal Disclaimer',
     'joinTokenPreSale#9': 'Development and Marketing',
-    'joinTokenPreSale#10': 'Presnenskaya naberezhnaya, 8 building 1,',
-    'joinTokenPreSale#11': 'Moscow, 123112, Russia',
-    'joinTokenPreSale#12': 'Careers | Join our team',
+    'joinTokenPreSale#10': 'Russia, Moscow',
+    'joinTokenPreSale#11': '123112, Presnenskaya naberezhnaya, 8 / 1',
+    'joinTokenPreSale#12': 'Careers - ',
 }
 
 export default en

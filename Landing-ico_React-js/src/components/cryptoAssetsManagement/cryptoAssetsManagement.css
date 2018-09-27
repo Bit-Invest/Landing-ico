@@ -62,8 +62,11 @@
   align-items: flex-start;
   margin-left: 10%;
   position: relative;
-  bottom: 190px;
+  bottom: 160px;
   margin-bottom: 20px;
+}
+.cryptoAssetsManagement .video_block_last {
+  margin-left: 25.5%;
 }
 .cryptoAssetsManagement .video_block .mockup1 {
   background-size: cover;
@@ -71,16 +74,23 @@
   width: 380px;
   background-image: url(../../media/mockup1.png);
 }
+.problemBlock__wrapper-mockup {
+  display: flex;
+}
+.problemBlock__wrapper-mockup .video-block {
+  margin-right: 5%;
+}
 .cryptoAssetsManagement .video_block .mockup2 {
   background-size: cover;
   height: 222px;
   width: 380px;
   background-image: url(../../media/mockup2.png);
 }
-.cryptoAssetsManagement .video_block .mockup3 {
-  background-size: cover;
-  height: 284px;
-  width: 300px;
+.cryptoAssetsManagement .video-block .mockup3 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 200px;
   background-image: url(../../media/mockup3.png);
 }
 .problemBlock {
@@ -164,7 +174,7 @@
 .problemBlock__img-slides {
   position: absolute;
   right: 49%;
-  top: 72%;
+  top: -25px;
 }
 
 .problemBlock__slide {
@@ -175,20 +185,20 @@
 
 .problemBlock__slide-0 {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: 3;
 }
 .problemBlock__slide-1 {
   position: absolute;
-  bottom: -30px;
+  top: 30px;
   left: 50px;
   z-index: 2;
   opacity: 0.6;
 }
 .problemBlock__slide-2 {
   position: absolute;
-  bottom: -60px;
+  top: 60px;
   left: 100px;
   z-index: 1;
   opacity: 0.4;
@@ -200,6 +210,76 @@
   width: 572.5px;
   height: 435.8px;
   transition: .8s;
+}
+@keyframes moveSlide0 {
+  0% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  33% {
+    opacity: 0;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+  }
+
+  66% {
+    top: 80px;
+    left: 120px;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  100% {
+    top: 60px;
+    left: 100px;
+    opacity: 0.4;
+    z-index: 1;
+  }
+}
+@keyframes moveSlide1 {
+  0% {
+    top: 30px;
+    left: 50px;
+    opacity: 0.6;
+    z-index: 2;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 3;
+  }
+}
+@keyframes moveSlide2 {
+  0% {
+    top: 60px;
+    left: 100px;
+    opacity: 0.4;
+    z-index: 1;
+  }
+
+  100% {
+    top: 30px;
+    left: 50px;
+    opacity: 0.6;
+    z-index: 2;
+  }
+}
+.problemBlock__slide-start-animation-0 {
+  animation: moveSlide0 .8s;
+}
+
+.problemBlock__slide-start-animation-1 {
+  animation: moveSlide1 .8s;
+}
+
+.problemBlock__slide-start-animation-2 {
+  animation: moveSlide2 .8s;
 }
 
 .cryptoAssetsManagement .btn {
@@ -243,7 +323,7 @@
 
   .problemBlock__img-slides {
     right: 49%;
-    top: 58%;
+    top: 0;
   }
 
   .cryptoAssetsManagement .txt {
@@ -282,8 +362,9 @@
     height: 293.9px;
   }
   .problemBlock__img-slides {
-    bottom: -20%;
-    right: 72%;
+    bottom: 36%;
+    top: auto;
+    right: 66%;
   }
   .cryptoAssetsManagement .video_block {
     margin-bottom: 20px;
@@ -324,9 +405,9 @@
     width: 310px;
     background-image: url(../../media/mockup2.png);
   }
-  .cryptoAssetsManagement .problemBlock .video_block .mockup3 {
+  .cryptoAssetsManagement .problemBlock .video-block .mockup3 {
     background-size: cover;
-    height: 284px;
+    height: 271px;
     width: 300px;
     background-image: url(../../media/mockup3.png);
   }
@@ -341,6 +422,10 @@
   }
   .problemBlock__img-slides {
     display: none;
+  }
+  .problemBlock__wrapper-mockup .video-block {
+    display: flex;
+    justify-content: center;
   }
   .problemBlock__wrapper-img {
     width: 100%;

@@ -758,10 +758,6 @@ width: 720px;
       margin: 0 auto;
     }
 
-    .block_9 .container2 {
-      margin: 70px 45px 0;
-    }
-
   }
 
     .block_6 .owl-carousel .owl-nav .owl-next,
@@ -1917,7 +1913,7 @@ body.compensate-for-scrollbar {
 
   .size {
     padding-top: 40px;
-    margin-top: -7px;
+    margin-top: -2px;
   }
 
   .roadmap__buttons {
@@ -2223,9 +2219,12 @@ body.compensate-for-scrollbar {
     margin-bottom: 50px;
   }
 
+  .block_8 .team h2  {
+    width: 59%!important; 
+  }
+
   .block_8 h2 {
     font-size: 26px!important;
-    width: 59%!important;
     margin: 0 7%!important;
   }
 
@@ -2241,6 +2240,7 @@ body.compensate-for-scrollbar {
     width: 90%;
     margin-left: 5%;
     border-radius: 10px;
+    height: 770px;
   }
 
   .block_8 .advisers .slick-list {
@@ -2299,29 +2299,6 @@ body.compensate-for-scrollbar {
 
   .block_8 .settings2_1 .slick-next, .block_8 .settings2_1 .slick-prev {
     margin-top: -22px;
-  }
-
-  .block_9 {
-    display: block!important;
-  }
-
-  .block_9 .adress {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 40px 0 0 0;
-  }
-
-  .block_9 a.sb_2 {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .block_9 .container2 {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0px 70px 5%;
-    width: 90%;
   }
 }
 
