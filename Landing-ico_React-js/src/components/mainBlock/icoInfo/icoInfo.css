@@ -171,3 +171,10 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .ico-info__amount {
+    display: flex;
+    flex-direction: column;
+  }
+}

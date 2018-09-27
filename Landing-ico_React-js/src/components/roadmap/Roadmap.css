@@ -9,7 +9,7 @@
 .roadmap__headcontainer {
   margin: 0px !important;
   padding: 0px !important;
-  background: linear-gradient(180deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
+  background: linear-gradient(#2b004b 0%, #7c77b7 80%, #9ad3e7 100%);
 }
 
 .roadmap__headcontainer:before {
@@ -104,6 +104,7 @@
   margin: 0 auto;
   margin-top: 50px;
   width: 600px;
+  height: 100%;
 }
 
 .roadmap__disc {
@@ -217,9 +218,10 @@
     width: 860px;
   }
   .roadmap__text {
-    width: 50%;
+    width: 55%;
+    padding-right: 10%;
   }
   .roadmap__image {
-    width: 50%;
+    width: 30%;
   }
 }

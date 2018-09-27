@@ -353,7 +353,7 @@ const TokenSaleDetails = props => {
                 <ProgressBar money={outputValue} percent={5.6}/>
               </div> */}
             </div>
-            <div className="right_block4">
+            <div className="right_block4 right_block4_mail-form">
               <MailForm isTokenDetails={true} />
               {/* <TokenDeals />
               <ButtonBuy /> */}

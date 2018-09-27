@@ -2084,7 +2084,7 @@ body.compensate-for-scrollbar {
 
   .progress-bar {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: 0 5%;
     width: auto;
   }
@@ -2096,23 +2096,6 @@ body.compensate-for-scrollbar {
 
   .block_4 .cont_1 .mobile-pop-up-block {
     width: 90%;
-  }
-
-  .block_4 .cont_5 {
-    display: flex;
-    flex-direction: column;
-    margin: 0 5%;
-    margin-top: 40px;
-  }
-
-  .block_4 .cont_4 {
-    margin: 0 5%;
-    width: auto;
-  }
-
-  .block_4 .cont_4 {
-    margin: 0 5%;
-    width: auto;
   }
 
   .block_4 .cont_2 {

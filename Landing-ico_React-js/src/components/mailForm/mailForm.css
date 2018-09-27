@@ -48,6 +48,13 @@
   margin-top: -10px;
 }
 
+.mail-form__top-name-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
 .mail-form__name-text-span {
   font-size: 14px;
   text-align: center;
@@ -62,6 +69,10 @@
   width: 459.2px;
   border-radius: 10px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mail-form__content-token-sale {
+  width: 460px!important;
 }
 
 .mail-form__title {
@@ -169,6 +180,10 @@
   color: #ff4040;
 }
 
+.mail-form__name-text-span-token-sale {
+  width: 255px;
+}
+
 .mail-form__textStatus.loading {
   color: #666666;
 }
@@ -189,6 +204,18 @@
   }
   .mail-form__button {
     margin-top : 10.1px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .mail-form__content-token-sale {
+    width: 300px!important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .mail-form__content-token-sale {
+    display: none;
   }
 }
 

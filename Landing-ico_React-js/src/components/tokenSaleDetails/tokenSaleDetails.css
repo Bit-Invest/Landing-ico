@@ -8,6 +8,8 @@
 
 .block_4 .container {
   margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .block_4 h2, 
@@ -24,14 +26,16 @@
   float: left;
   display: flex;
   flex-direction: column;
-  margin-right: 5%;
 }
 
 .block_4 .right_block4 {
   width: 45%;
   display: flex;
   justify-content: center;
-  padding-top: 95px;
+}
+
+.block_4 .right_block4_mail-form {
+    padding-top: 95px;
 }
 
 .block_4 .progressBar_block4 {
@@ -749,17 +753,78 @@ z-index: 2;
 }
 
 @media (max-width: 1023px) {
+    .block_4 .cont_4_1 {
+        margin-top: 10px;
+    }
+    .block_4 .cont_4 {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .block_4 .right_block4_mail-form {
+        padding-top: 0;
+    }
+    .block_4 .container {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
   
   .block_4 .left_block4 {
-    width: 100%;
+    width: 75%;
   }
   .block_4 .right_block4 {
-    width: 100%;
+    width: 75%;
   }
 }
 
 @media (max-width: 767px) {
-  .block_4 a.sb {
-    margin-left: 20px;
-  }
+    .block_4 {
+        padding-bottom: 70px;
+    }
+    .block_4 .cont_1 p {
+        padding: 7px 0;
+    }
+    .progress-bar__progressBar {
+        width: 100%;
+    }
+    .token-info {
+        flex-direction: column;
+        margin-top: -30px;
+    }
+    .block_4 .progress-container {
+        display: none;
+    }
+    .token-info__right-block {
+        margin: 0;
+        bottom: 188px;
+        margin-bottom: -188px;
+        position: relative;
+    }
+    .block_4 .cont_4 {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .block_4 .cont_4_1 {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .block_4 .cont_5 {
+        margin: 20px 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .progress-bar__amount {
+        display: flex;
+        flex-direction: column;
+    }
+    .block_4 .cont_5_docs__right-side {
+        margin-left: 0;
+    }
+    .block_4 .left_block4 {
+        width: 100%;
+    }
+    .block_4 .right_block4 {
+        width: 100%;
+    }
 }
