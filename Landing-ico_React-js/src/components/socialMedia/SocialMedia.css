@@ -1,0 +1,12 @@
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to left, #64499b, #00b2dc);
+}
+
+.social-media__wrapper {
+    widows: 1130px;
+}
+
+/* 1130px */

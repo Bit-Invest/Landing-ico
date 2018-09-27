@@ -661,9 +661,12 @@ z-index: 2;
   
 .progress-bar__progress {
     height: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-top-left-radius: 17px;
-    border-bottom-left-radius: 17px;
+    background: url('../../images/bg_progressbar.png') repeat-x;
+    background-size: contain;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    /* border-top-left-radius: 17px; */
+    /* border-bottom-left-radius: 17px; */
+    border-radius: 17px;
 }
 
 .token-info__right-block {
@@ -703,20 +706,22 @@ z-index: 2;
 }
 .block_4 .progressBar .progress {
     height: 20px;
-    /* border-radius: 17px; */
-    border-top-left-radius: 17px;
-    border-bottom-left-radius: 17px;
+    /* border-top-left-radius: 17px; */
+    /* border-bottom-left-radius: 17px; */
     background-color: rgba(255, 255, 255, 0.1);
-    width: 18%;
-}
-.block_4 .progressBar .progress__tr {
-    width: 20%;
-}
-.block_4 .progressBar .progress__ar {
+    background: url('../../images/bg_progressbar.png') repeat-x;
+    background-size: contain;
+    border-radius: 17px;
     width: 19%;
 }
-.block_4 .progressBar .progress__es {
+.block_4 .progressBar .progress__tr {
     width: 21%;
+}
+.block_4 .progressBar .progress__ar {
+    width: 20%;
+}
+.block_4 .progressBar .progress__es {
+    width: 22%;
 }
 .block_4 .progress-container .progress-data {
     display: flex;

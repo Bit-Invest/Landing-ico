@@ -25,6 +25,7 @@ import axios from 'axios'
 import { DocPopup } from './components/DocPopup/DocPopup'
 import OurTopRatings  from './components/ourTopRatings/OurTopRatings'
 import MediaAboutUs from './components/mediaAboutUs/MediaAboutUs'
+import SocialMedia from './components/socialMedia/SocialMedia'
 import './App.css';
 
 class App extends React.Component {
@@ -59,6 +60,7 @@ class App extends React.Component {
           {/* <HowCindxWorks /> */}
           {/* <MarketAnalytics /> */}
           <TokenSaleDetails />
+          <SocialMedia />
           {/* <LegalSchedule /> */}
           {/* <FeedbackProject /> */}
           {/* <MediaNews /> */}

@@ -153,17 +153,20 @@
 
 .ico-info__progressBar {
   width: 400px;
-  height: 34px;
+  height: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 17px;
 }
 
 .ico-info__progress {
   width: 30%;
-  height: 34px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-top-left-radius: 17px;
-  border-bottom-left-radius: 17px;
+  height: 20px;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* border-top-left-radius: 17px; */
+  /* border-bottom-left-radius: 17px; */
+  background: url('../../../images/bg_progressbar.png') repeat-x;
+  background-size: contain;
+  border-radius: 17px;
 }
 
 @media screen and (max-width: 1023px) {
