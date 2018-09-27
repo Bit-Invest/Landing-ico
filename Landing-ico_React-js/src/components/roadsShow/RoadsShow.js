@@ -178,7 +178,8 @@ let dataRoadShow = [
 
 class RoadsShow extends Component {
     state = {
-        valuePopUp: dataRoadShow[1]
+        valuePopUp: dataRoadShow[1],
+        currentI: 1
     }
 
     renderRoadShow = () => {
@@ -246,11 +247,7 @@ class RoadsShow extends Component {
     }
 
     handleResize = () => {
-        let i = 1
-        let filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
-        this.setState({
-            valuePopUp: filterEl[0]
-        })
+        this.renderRoadShowPopup(this.state.currentI)
     }
 
     componentWillUnmount = () => {
@@ -276,6 +273,7 @@ class RoadsShow extends Component {
                 this.slider3.slickGoTo(dataRoadShow.length - 1) :
                 this.slider3.slickGoTo(i - 1)
         this.setState({
+            currentI: i,
             valuePopUp: filterEl[0]
         })
     }
