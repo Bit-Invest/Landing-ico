@@ -249,17 +249,17 @@
   }
 }
 
-.problemBlock__slide-start-animation-0 {
+.problemBlock__slide-animation-0 {
   animation: moveSlide0 .8s;
   animation-fill-mode: forwards;
 }
 
-.problemBlock__slide-start-animation-1 {
+.problemBlock__slide-animation-1 {
   animation: moveSlide1 .8s;
   animation-fill-mode: forwards;
 }
 
-.problemBlock__slide-start-animation-2 {
+.problemBlock__slide-animation-2 {
   animation: moveSlide2 .8s;
   animation-fill-mode: forwards;
 }
@@ -284,6 +284,32 @@
 .problemBlock__dot:hover,
 .problemBlock__dot-active {
   background-color: #fff;
+}
+
+.problemBlock__more-block {
+  opacity: 0;
+  width: 572.5px;
+  height: 435.8px;
+  /* background-color: rgba(255,255,255,0.5); */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.more-block__search-icon {
+  background: url('../../images/search-icon.svg') no-repeat 0 0;
+  background-size: cover;
+  position: absolute;
+  width: 57px;
+  height: 57px;
+}
+
+.problemBlock__more-block:hover {
+  opacity: 1;
 }
 
 .cryptoAssetsManagement .btn {
@@ -320,6 +346,7 @@
   .cryptoAssetsManagement .video_block {
     margin-left: 4%;
   }
+  .problemBlock__more-block,
   .problemBlock__slide-img {
     width: 390.5px;
     height: 297.5px;
@@ -346,7 +373,6 @@
     bottom: 140px;
     margin-bottom: -95px;
   }
-  
 }
 
 @media (max-width: 1023px) {
