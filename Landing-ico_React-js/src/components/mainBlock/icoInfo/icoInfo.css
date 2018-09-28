@@ -48,6 +48,13 @@
   position: relative;
   justify-content: center;
   border-radius: 32px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.ico-info__doc:hover {
+  background-color: #fff;
+  color: #6e5fd6;
 }
 
 .ico-info__docs-icon {
@@ -55,12 +62,20 @@
   left: 16px;
 }
 
+.ico-info__docs-icon i {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 14px;
+  height: 16px;
+  display: flex;
+}
+
 .ico-info__doc:first-of-type {
 
 }
 
 .ico-info__doc span {
-  color: #fff;
   font-size: 14px;
 }
 
@@ -169,13 +184,16 @@
   border-radius: 17px;
 }
 
-@media screen and (max-width: 1023px) {
-  .ico-info__docs {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 767px) {
+  .ico-info__docs {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .ico-info__doc:first-of-type {
+    margin-bottom: 20px;
+  }
+
   .ico-info__amount {
     display: flex;
     flex-direction: column;

@@ -41,7 +41,7 @@ const problemData = [
 const cryptoArr = [
   crypto1,
   crypto2,
-  crypto3,
+  crypto3
 ]
 
 class CryptoAssetsManagement extends React.Component {
@@ -55,31 +55,37 @@ class CryptoAssetsManagement extends React.Component {
     this.props.changeUrlPopupVideo(url)
     this.props.showPopUp()
   }
-  
+
+  // componentDidMount = () => {
+  //   setInterval(() => {
+  //     this.nextSlide()
+  //   }, 2000)
+  // }
+
+  // componentWillUnmount = () => {
+  //   clearInterval()
+  // }
+
   renderImgSlides = () => {
     let currentCryptoArr = []
-    switch (this.state.currentCrypto) {
+    switch(this.state.currentCrypto) {
       case 0:
-        currentCryptoArr = [ crypto1, crypto2, crypto3 ]
+        currentCryptoArr = cryptoArr
         break;
       case 1:
-        currentCryptoArr = [ crypto2, crypto3, crypto1 ]
+        currentCryptoArr = [ crypto2, crypto3, crypto1]
         break;
       case 2:
-        currentCryptoArr = [ crypto3, crypto1, crypto2 ]
+        currentCryptoArr = [ crypto3, crypto1, crypto2]
         break;
       default:
         currentCryptoArr = cryptoArr
         break;
     }
-
+    
     return currentCryptoArr.map((el, i) => {
-      const animationClass0 = this.state.isChange && i === 0 ? 'problemBlock__slide-start-animation-0' : ''
-      const animationClass1 = this.state.isChange && i === 1 ? 'problemBlock__slide-start-animation-1' : ''
-      const animationClass2 = this.state.isChange && i === 2 ? 'problemBlock__slide-start-animation-2' : ''
-
       return (
-        <div className={`problemBlock__slide problemBlock__slide-${i} ${animationClass0} ${animationClass1} ${animationClass2}`} key={i}>
+        <div className={`problemBlock__slide problemBlock__slide-${i}`} key={i}>
           <div style={{ backgroundImage: `url(${el})` }} className='problemBlock__slide-img'></div>
         </div>
       )
@@ -153,6 +159,27 @@ class CryptoAssetsManagement extends React.Component {
     })
   }
 
+  nextSlide = () => {
+    this.slider.slickNext()
+    if (this.slider.innerSlider.state.currentSlide === cryptoArr.length - 1)
+      this.slider.props.afterChange(0)
+    else
+      this.slider.props.afterChange(this.slider.innerSlider.state.currentSlide + 1)
+  }
+
+  prevSlide = () => {
+    this.slider.slickPrev()
+    if (this.slider.innerSlider.state.currentSlide === 0)
+      this.slider.props.afterChange(cryptoArr.length - 1)
+    else
+      this.slider.props.afterChange(this.slider.innerSlider.state.currentSlide - 1)
+  }
+
+  dotsSlide = (i) => {
+    this.slider.slickGoTo(i)
+    this.slider.props.afterChange(i)
+  }
+
   render() {
     const { props } = this;
 
@@ -166,18 +193,12 @@ class CryptoAssetsManagement extends React.Component {
       dots: false,
       fade: true,
       adaptiveHeight: true,
-      beforeChange: () => {
-        // this.setState({
-
-        // })
-      },
       afterChange: (i) => {
         this.setState({
-          isChange: true,
           currentCrypto: i
         })
       }
-    };
+    }
 
     return (
       <div name="product" id="product" className="cryptoAssetsManagement">
@@ -210,6 +231,15 @@ class CryptoAssetsManagement extends React.Component {
               </div>
               <div className={`video_block ${this.state.currentCrypto === 2 ? 'video_block_last' : ''}`}>
                 <a target="_blank" href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
+              </div>
+              <div className="video_block problemBlock__switch-slide">
+                <div className="problemBlock__arrow problemBlock__left-arrow" onClick={this.prevSlide}></div>
+                <div className="problemBlock__dots">
+                  <span className={`problemBlock__dot ${this.state.currentCrypto === 0 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(0)}></span>
+                  <span className={`problemBlock__dot ${this.state.currentCrypto === 1 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(1)}></span>
+                  <span className={`problemBlock__dot ${this.state.currentCrypto === 2 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(2)}></span>
+                </div>
+                <div className="problemBlock__arrow problemBlock__right-arrow" onClick={this.nextSlide}></div>
               </div>
             </div>
             <div className="problemBlock__img-slides">

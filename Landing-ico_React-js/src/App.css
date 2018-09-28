@@ -2211,10 +2211,6 @@ body.compensate-for-scrollbar {
     margin-top: -70px;
   }
 
-  .block_8 {
-    padding-bottom: 20px;
-  }
-
   .block_8 .block_arrow_relative {
     margin-bottom: 50px;
   }
@@ -2266,7 +2262,6 @@ body.compensate-for-scrollbar {
   .block_8 .ourPartners .container3 .slick-list {
     width: 100%;
     height: auto;
-    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

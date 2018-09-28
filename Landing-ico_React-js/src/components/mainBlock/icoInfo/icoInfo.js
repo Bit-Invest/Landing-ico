@@ -67,11 +67,11 @@ const IcoInfo = props => {
         </div>
         <div className={`${ROOT_CLASS}__docs`}>
           <div className={`${ROOT_CLASS}__doc`}>
-            <div className={`${ROOT_CLASS}__docs-icon`}><img src={block_3_ico_1} alt={"CINDEX"}/></div>
+            <div className={`${ROOT_CLASS}__docs-icon`}><i style={{ backgroundImage: `url(${block_3_ico_1})` }} /></div>
             <span className={`${ROOT_CLASS}__docs-name`}>WHITEPAPER</span>
           </div>
           <div className={`${ROOT_CLASS}__doc`}>
-            <div className={`${ROOT_CLASS}__docs-icon`}><img src={block_3_ico_1} alt={"CINDEX"}/></div>
+            <div className={`${ROOT_CLASS}__docs-icon`}><i style={{ backgroundImage: `url(${block_3_ico_1})` }} /></div>
             <span className={`${ROOT_CLASS}__docs-name`}>ONE PAGER</span>
           </div>
         </div>

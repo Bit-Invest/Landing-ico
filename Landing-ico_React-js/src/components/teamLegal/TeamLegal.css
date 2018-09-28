@@ -9,6 +9,7 @@
   height: 100%;
   position: relative;
   z-index: 6;
+  background-attachment: fixed;
 }
 .teamLegal .container {
   margin-top: 70px;
