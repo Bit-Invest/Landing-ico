@@ -134,7 +134,7 @@ const teamInfo = [
     fackt2: indexLngObj[lng]['teamAdvisersPartners#52'],
     fackt3: indexLngObj[lng]['teamAdvisersPartners#53'],
     src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
-    m: ''
+    m: 'https://medium.com/cindx/team-jelena-karzetskaja-94e8c4286924'
   },
  ];
 
