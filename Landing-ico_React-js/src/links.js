@@ -25,9 +25,6 @@ let clickid = window.localStorage.getItem('clickid');
 let gaid = getGAID;
 export const ab_val = window.localStorage.getItem('ab_val');
 
-linkSearch['ab_val'] ? window.localStorage.setItem('ab_val', linkSearch['ab_val']) : ''
-export const ab_val = window.localStorage.getItem('ab_val')
-
 export const list_lngs = 'en zn ko tr fr ja vi pt ar de es'; //языки который мы используем нужно тут указать
 const user_lng = window.localStorage.getItem('loc') || navigator.language || 'en';
 const user_loc = user_lng.split('_')[0].split('-')[0];
