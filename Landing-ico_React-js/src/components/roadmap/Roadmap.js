@@ -36,7 +36,7 @@ export class Roadmap extends React.Component {
   componentDidMount = () => {
     setTimeout(() => {
       this.setState({ isChange: false })
-    }, 300)
+    }, 100)
   }
 
   renderCircles = () => {
@@ -59,7 +59,6 @@ export class Roadmap extends React.Component {
   }
 
   render() {
-    console.log('FIX')
     return (
       <div className={`${ROOT_CLASS} ${ROOT_CLASS}__headcontainer`}>
         { this.state.isOpen ?
