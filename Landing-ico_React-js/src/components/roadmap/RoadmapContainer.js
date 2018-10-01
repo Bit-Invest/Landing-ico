@@ -93,6 +93,8 @@ export class RoadmapContainer extends React.Component {
   }
 
   render() {
+    console.log(IMAGES[this.state.currentButton].images[this.state.currentImage])
+
     return (
       <Roadmap
         currentButton={this.state.currentButton}

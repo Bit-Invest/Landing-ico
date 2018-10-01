@@ -131,7 +131,6 @@ class CryptoAssetsManagement extends React.Component {
     }
 
     return currentCryptoArr.map((el, i) => {
-      console.log(this.state.isChange)
       const animation0 = this.state.isChange && i === 0 ? 'problemBlock__slide-animation-0' : ''
       const animation1 = this.state.isChange && i === 1 ? 'problemBlock__slide-animation-1' : ''
       const animation2 = this.state.isChange && i === 2 ? 'problemBlock__slide-animation-2' : ''
@@ -229,7 +228,7 @@ class CryptoAssetsManagement extends React.Component {
 
   nextSlide = () => {
     const slider = window.innerWidth > 767 ? this.slider : this.mobileSlider
-    console.log("THIS IS NEW")
+
     slider.slickNext()
 
     slider.innerSlider.state.currentSlide === cryptoArr.length - 1 ?
