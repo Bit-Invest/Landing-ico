@@ -6,6 +6,9 @@ import { showPopUp, changeUrlPopupVideo } from '../../store/store';
 import crypto0 from '../../images/crypto/crypto1.png'
 import crypto1 from '../../images/crypto/crypto2.png'
 import crypto2 from '../../images/crypto/crypto3.png'
+import cryptoMore0 from '../../images/crypto/DASHBOARD1111.png'
+import cryptoMore1 from '../../images/crypto/DASHBOARD2222.png'
+import cryptoMore2 from '../../images/crypto/DASHBOARD3333.png'
 import {links} from '../../links.js';
 import Rectangle_White_opacity from '../../images/Rectangle_White_opacity.png'
 // import play_button_youtube from '../../media/play_button_youtube.png';
@@ -51,9 +54,18 @@ const problemData = [
 ]
 
 const cryptoArr = [
-  crypto0,
-  crypto1,
-  crypto2
+  {
+    preview: crypto0,
+    more: cryptoMore0
+  },
+  {
+    preview: crypto1,
+    more: cryptoMore1
+  },
+  {
+    preview: crypto2,
+    more: cryptoMore2
+  },
 ]
 
 class CryptoAssetsManagement extends React.Component {
@@ -76,13 +88,39 @@ class CryptoAssetsManagement extends React.Component {
     if (!this.state.isDefault) {
       switch(this.state.currentCrypto) {
         case 0:
-          currentCryptoArr = [ crypto2, crypto0, crypto1]
+          currentCryptoArr = [
+            {
+              preview: crypto2,
+              more: cryptoMore2
+            }, 
+            {
+              preview: crypto0,
+              more: cryptoMore0
+            }, 
+            {
+              preview: crypto1,
+              more: cryptoMore1
+            }
+          ]
           break;
         case 1:
-          currentCryptoArr = [ crypto0, crypto1, crypto2]
+          currentCryptoArr = cryptoArr
           break;
         case 2:
-          currentCryptoArr = [ crypto1, crypto2, crypto0]
+          currentCryptoArr = [
+            {
+              preview: crypto1,
+              more: cryptoMore1
+            }, 
+            {
+              preview: crypto2,
+              more: cryptoMore2
+            }, 
+            {
+              preview: crypto0,
+              more: cryptoMore0
+            }
+          ]
           break;
         default:
           currentCryptoArr = cryptoArr
@@ -108,7 +146,7 @@ class CryptoAssetsManagement extends React.Component {
               onClick={
                 () => {
                   if (window.innerWidth >= 1024)
-                    this.setState({ isOpen: true, imageSrc: el })
+                    this.setState({ isOpen: true, imageSrc: el.more })
                 }
               } 
             >
@@ -116,7 +154,7 @@ class CryptoAssetsManagement extends React.Component {
             </div> : 
             null
           }
-          <div style={{ backgroundImage: `url(${el})` }} className='problemBlock__slide-img'></div>
+          <div style={{ backgroundImage: `url(${el.preview})` }} className='problemBlock__slide-img'></div>
         </div>
       )
     })

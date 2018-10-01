@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { ProgressBar } from '@components/progressBar';
 import currency_icons from '../../../images/currency_icons.png'
 import btcbit_logo_head from '../../../images/btcbit_logo_head.png'
 import block_3_ico_1 from '../../../images/block_3_ico_1.png';
@@ -8,16 +7,10 @@ import BancorLogo from '../../../media/bancor_logo.png';
 import HBLogo from '../../../media/hb_logo.png';
 import Hotbit from '../../../media/hotbit_logo.757f4b29.png';
 import Localcoin from '../../../media/localcoin_logo.png';
-import Stable from '@images/rating-stable.svg';
-import Hot from '@images/rating-hot.svg';
-import rating_topicolist from '../../../media/rating_topicolist.png';
-import rating_trackico from '../../../media/rating_trackico.png';
-import rating_topicolist2 from '../../../media/rating_topicolist2.png';
-import rating_icomarks from '../../../media/rating-icomarks.svg';
-import rating_icobench from '../../../media/rating-icobench.png';
-import rating_topicolisth from '../../../media/rating-topicolist.svg';
 import './icoInfo.css';
-import { lng } from '../../../links'
+import { bindActionCreators } from 'redux';
+import { showDocPopup } from '../../../store/store';
+import { lng, links, ab_val } from '../../../links'
 import indexLngObj from '../../../lngs/index'
 
 const ROOT_CLASS = 'ico-info';
@@ -27,6 +20,14 @@ const IcoInfo = props => {
   const outputValue = props.state ? String(props.state.money).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1,') : 0
     
   const finishSum = 3800000
+
+  const openPopup = (e) => {
+    if (ab_val === '1') {
+      e.preventDefault()
+      props.showDocPopup('')
+    }
+  }
+
   return (
     <div className={ROOT_CLASS}>
       <div className={`${ROOT_CLASS}__progress-bar`}>
@@ -75,12 +76,16 @@ const IcoInfo = props => {
         </div>
         <div className={`${ROOT_CLASS}__docs`}>
           <div className={`${ROOT_CLASS}__doc`}>
-            <div className={`${ROOT_CLASS}__docs-icon`}><i style={{ backgroundImage: `url(${block_3_ico_1})` }} /></div>
-            <span className={`${ROOT_CLASS}__docs-name`}>WHITEPAPER</span>
+            <a target="_blank" onClick={openPopup} href={links.wp}>
+              <div className={`${ROOT_CLASS}__docs-icon`}><i style={{ backgroundImage: `url(${block_3_ico_1})` }} /></div>
+              <span className={`${ROOT_CLASS}__docs-name`}>{ indexLngObj[lng]['tokenSaleDetails#15'] }</span>
+            </a>
           </div>
           <div className={`${ROOT_CLASS}__doc`}>
-            <div className={`${ROOT_CLASS}__docs-icon`}><i style={{ backgroundImage: `url(${block_3_ico_1})` }} /></div>
-            <span className={`${ROOT_CLASS}__docs-name`}>ONE PAGER</span>
+            <a target="_blank" onClick={openPopup} href={links.op}>
+              <div className={`${ROOT_CLASS}__docs-icon`}><i style={{ backgroundImage: `url(${block_3_ico_1})` }} /></div>
+              <span className={`${ROOT_CLASS}__docs-name`}>{ indexLngObj[lng]['tokenSaleDetails#17'] }</span>
+            </a>
           </div>
         </div>
         {/* <div className={`${ROOT_CLASS}__ratings`}>
@@ -111,7 +116,10 @@ const mapStateToProps = state => ({
   state: state
 })
 
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({showDocPopup}, dispatch);
+
 const connectedContainer =
-  connect(mapStateToProps)(IcoInfo);
+  connect(mapStateToProps, mapDispatchToProps)(IcoInfo);
 
 export {connectedContainer as IcoInfo}
