@@ -274,11 +274,9 @@ class CryptoAssetsManagement extends React.Component {
       fade: true,
       adaptiveHeight: true,
       beforeChange: () => {
-        setTimeout(() => {
-          this.setState({
-            isChange: true
-          })
-        }, 0)
+        this.setState({
+          isChange: true
+        })
       },
       afterChange: (i) => {
         this.setState({
@@ -289,7 +287,7 @@ class CryptoAssetsManagement extends React.Component {
       },
       finishAnimation: () => {
         this.setState({
-          isChange: false
+          isChange: true
         })
       },
       responsive: [
