@@ -1,0 +1,132 @@
+.main-block {
+  padding-top: 40.4px;
+  padding-bottom: 64.1px;
+  background: linear-gradient(180deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
+  background: none;
+}
+
+.main-block__ico-info-l {
+  display: none;
+}
+
+.main-block__ico-info-m {
+  width: max-content;
+
+  margin: 30.1px auto 0 auto;
+}
+
+.main-block__form {
+  width: max-content;
+  margin: 46px auto 0 auto;
+}
+
+.main-block__header {
+  padding-top: 0px;
+  margin: 0 auto;
+  width: 620px;
+  font-family: Geometria;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.main-block__header2 {
+  font-weight: 300;
+  font-size: 32px;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .main-block {
+    padding-top: 50px;
+    padding-bottom: 43px;
+  }
+  .main-block__header {
+    width: 454px;
+  }
+  .main-block__content {
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-block__ico-info-m {
+    display: none;
+  }
+  .main-block__ico-info-l {
+    margin-top: 30.2px;
+    display: block;
+  }
+  .main-block__form {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-block {
+    padding-top: 100px;
+    padding-bottom: 92.2px;
+  }
+  .main-block__content {
+    width: 1135px;
+  }
+  .main-block__header {
+    width: 670px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .main-block__content {
+    padding-top: 90px;
+  } 
+}
+
+@media screen and (max-width: 1023px) {
+  .main-block__header {
+    padding-top: 0px;
+  } 
+}
+
+@media screen and (max-width: 767px) {
+  .main-block__content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .main-block__header {
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 90%;
+    word-wrap: break-word;
+  }
+  .main-block__form {
+    width: 100%;
+  }
+  .mail-form {
+    width: 100%;
+  }
+  .mail-form__video {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .mail-form__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-block__ico-info-m {
+    width: 80%;
+  }
+  .ico-info {
+    width: 100%;
+  }
+  .ico-info__progressBar {
+    width: 100%;
+  }
+  .main-block__form {
+    margin-top: 20px;
+  }
+}
+
+
