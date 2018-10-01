@@ -418,6 +418,16 @@
     background: #C777FF;
 }
 
+.block_4 .cont_4_1 .graph ul li:nth-child(6) span
+{
+    background: #00ff7f;
+}
+
+.block_4 .cont_4_1 .graph ul li:nth-child(7) span
+{
+    background: #ff6b00;
+}
+
 .block_4 .cont_4
 {
   width: 100%;

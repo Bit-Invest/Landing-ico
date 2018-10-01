@@ -130,7 +130,6 @@ class CryptoAssetsManagement extends React.Component {
       currentCryptoArr = cryptoArr
     }
 
-    
     return currentCryptoArr.map((el, i) => {
       const animation0 = this.state.isChange && i === 0 ? 'problemBlock__slide-animation-0' : ''
       const animation1 = this.state.isChange && i === 1 ? 'problemBlock__slide-animation-1' : ''
@@ -265,6 +264,7 @@ class CryptoAssetsManagement extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: false,
+      swipeToSlide: false,
       fade: true,
       adaptiveHeight: true,
       beforeChange: () => {
@@ -283,15 +283,13 @@ class CryptoAssetsManagement extends React.Component {
         {
           breakpoint: 768,
           settings: {
-            arrows: false,
             lazyLoad: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
             swipeToSlide: true,
-            dots: false,
-            fade: true,
+            fade: false,
             adaptiveHeight: true,
             afterChange: (i) => {
               this.setState({
@@ -311,14 +309,6 @@ class CryptoAssetsManagement extends React.Component {
               <span>{ indexLngObj[lng]['cryptoAssetsManagement#1.1'] } </span>
               <span>{ indexLngObj[lng]['cryptoAssetsManagement#1.2'] }</span>
             </h2>
-            {/* <div className="video" onClick={() => this.showVideoInPopUp('https://www.youtube.com/embed/nmh_BfGHORE')}>
-              <img
-                src={play_button_youtube}
-                alt="CINDEX"
-                className="play"
-
-              />
-            </div> */}
           </div>
           <div className="problemBlock__wrapper">
             <div className="problemBlock__slider">
@@ -336,13 +326,25 @@ class CryptoAssetsManagement extends React.Component {
                 <a target="_blank" href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
               </div>
               <div className="video_block problemBlock__switch-slide">
-                <div className="problemBlock__arrow problemBlock__left-arrow" onClick={this.prevSlide}></div>
+                <div className="problemBlock__arrow problemBlock__left-arrow" onClick={this.prevSlide}>
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" width="20" height="20">
+                    <g>
+                      <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225   c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" fill="#FFFFFF"/>
+                    </g>
+                  </svg>
+                </div>
                 <div className="problemBlock__dots">
                   <span className={`problemBlock__dot ${this.state.currentCrypto === 0 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(0)}></span>
                   <span className={`problemBlock__dot ${this.state.currentCrypto === 1 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(1)}></span>
                   <span className={`problemBlock__dot ${this.state.currentCrypto === 2 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(2)}></span>
                 </div>
-                <div className="problemBlock__arrow problemBlock__right-arrow" onClick={this.nextSlide}></div>
+                <div className="problemBlock__arrow problemBlock__right-arrow" onClick={this.nextSlide}>
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 129 129" width="21" height="21">
+                    <g>
+                      <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" fill="#FFFFFF"/>
+                    </g>
+                  </svg>
+                </div>
               </div>
             </div>
             <div className="problemBlock__img-slides">

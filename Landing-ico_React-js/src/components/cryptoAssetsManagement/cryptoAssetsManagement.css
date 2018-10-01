@@ -115,21 +115,7 @@
 }
 
 .problemBlock__arrow {
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 7px;
   cursor: pointer;
-}
-
-.problemBlock__left-arrow {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.problemBlock__right-arrow {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
 }
 
 .problemBlock__desktop {
@@ -267,6 +253,8 @@
 .problemBlock__dots {
   display: flex;
   margin: 0 15px;
+  position: relative;
+  bottom: 3px;
 }
 
 .problemBlock__dot:nth-last-of-type(2) {
