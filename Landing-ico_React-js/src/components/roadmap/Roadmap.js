@@ -154,7 +154,10 @@ export class Roadmap extends React.Component {
                         this.setState({ isOpen: true })
                     }
                   } 
-                  className={`${ROOT_CLASS}__image ${this.state.isChange ? 'change' : ''}`} 
+                  className={`${ROOT_CLASS}__image`}
+                  style={{
+                    display: this.state.isChange ? 'flex' : 'block'
+                  }}
                   src={this.props.imageSrc} 
                   alt="CINDEX"
                 />
