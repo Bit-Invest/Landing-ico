@@ -290,7 +290,6 @@
   opacity: 0;
   width: 572.5px;
   height: 435.8px;
-  /* background-color: rgba(255,255,255,0.5); */
   position: absolute;
   display: flex;
   justify-content: center;
@@ -308,7 +307,7 @@
   height: 57px;
 }
 
-.problemBlock__more-block:hover {
+.problemBlock__slide:hover .problemBlock__more-block {
   opacity: 1;
 }
 
@@ -377,8 +376,9 @@
 
 @media (max-width: 1023px) {
   .cryptoAssetsManagement .video_block_last {
-    margin-left: 38%;
-    bottom: 255px!important;
+    margin-bottom: 50px;
+    margin-left: calc(360px + 35 * ((100vw - 768px) / 255));
+    bottom: calc(170px + 70 * ((100vw - 768px) / 255))!important;
   }
   .cryptoAssetsManagement .row {
     margin-bottom: 50px;
@@ -388,7 +388,7 @@
     height: 293.9px;
   }
   .problemBlock__img-slides {
-    bottom: 36%;
+    bottom: 32%;
     top: auto;
     right: 66%;
   }

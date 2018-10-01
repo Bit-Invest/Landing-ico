@@ -41,7 +41,7 @@
 @media screen and (min-width: 1024px) {
   .main-block {
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
   .main-block__header {
     width: 454px;

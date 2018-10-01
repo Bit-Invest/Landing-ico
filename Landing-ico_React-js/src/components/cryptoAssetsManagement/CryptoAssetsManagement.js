@@ -59,29 +59,20 @@ class CryptoAssetsManagement extends React.Component {
     this.props.showPopUp()
   }
 
-  componentDidMount = () => {
-    window.addEventListener('resize', this._handlerResize)
-    this._handlerResize()
+  // componentDidMount = () => {
   //   const autoPlayInterval = setInterval(() => {
   //     this.nextSlide()
   //   }, 2500)
 
   //   this.setState({ autoPlayInterval: autoPlayInterval })
-  }
+  // }
 
   // componentWillUnmount = () => {
   //   clearInterval(this.state.autoPlayInterval)
   // }
 
-  _handlerResize = () => {
-    this.setState({
-      widthScreen: window.innerWidth
-    })
-  }
-
   renderImgSlides = () => {
     let currentCryptoArr = []
-    let svgBg = null
 
     if (!this.state.isDefault) {
       switch(this.state.currentCrypto) {
@@ -101,26 +92,7 @@ class CryptoAssetsManagement extends React.Component {
     } else {
       currentCryptoArr = cryptoArr
     }
-    
-    if (this.state.widthScreen > 1439) {
-      svgBg = (
-        <div className="problemBlock__more-block">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 573 435" preserveAspectRatio="none">
-            <polygon fill="rgba(255,255,255,0.5)" points="0,437 85,52 573,0 500,430"/>
-          </svg>
-          <div className="more-block__search-icon"></div>
-        </div>
-      )
-    } else if (this.state.widthScreen > 1023) {
-      svgBg = (
-        <div className="problemBlock__more-block">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 391 298" preserveAspectRatio="none">
-            <polygon fill="rgba(255,255,255,0.5)" points="0,298 85,52 391,0 391,298"/>
-          </svg>
-          <div className="more-block__search-icon"></div>
-        </div>
-      )
-    }
+
     
     return currentCryptoArr.map((el, i) => {
       const animation0 = this.state.isChange && i === 0 ? 'problemBlock__slide-animation-0' : ''
@@ -129,7 +101,6 @@ class CryptoAssetsManagement extends React.Component {
 
       return (
         <div className={`problemBlock__slide problemBlock__slide-${i} ${animation0} ${animation1} ${animation2}`} key={i}>
-          { i === 0 ? svgBg : null }
           <div style={{ backgroundImage: `url(${el})` }} className='problemBlock__slide-img'></div>
         </div>
       )
@@ -204,24 +175,30 @@ class CryptoAssetsManagement extends React.Component {
   }
 
   nextSlide = () => {
-    this.slider.slickNext()
-    if (this.slider.innerSlider.state.currentSlide === cryptoArr.length - 1)
-      this.slider.props.afterChange(0)
-    else
-      this.slider.props.afterChange(this.slider.innerSlider.state.currentSlide + 1)
+    const slider = window.innerWidth > 767 ? this.slider : this.mobileSlider
+
+    slider.slickNext()
+
+    slider.innerSlider.state.currentSlide === cryptoArr.length - 1 ?
+      slider.props.afterChange(0) :
+      slider.props.afterChange(slider.innerSlider.state.currentSlide + 1)
   }
 
   prevSlide = () => {
-    this.slider.slickPrev()
-    if (this.slider.innerSlider.state.currentSlide === 0)
-      this.slider.props.afterChange(cryptoArr.length - 1)
-    else
-      this.slider.props.afterChange(this.slider.innerSlider.state.currentSlide - 1)
+    const slider = window.innerWidth > 767 ? this.slider : this.mobileSlider
+  
+    slider.slickPrev()
+
+    slider.innerSlider.state.currentSlide === 0 ?
+      slider.props.afterChange(cryptoArr.length - 1) :
+      slider.props.afterChange(slider.innerSlider.state.currentSlide - 1)
   }
 
   dotsSlide = (i) => {
-    this.slider.slickGoTo(i)
-    this.slider.props.afterChange(i)
+    const slider = window.innerWidth > 767 ? this.slider : this.mobileSlider
+
+    slider.slickGoTo(i)
+    slider.props.afterChange(i)
   }
 
   render() {
@@ -248,7 +225,29 @@ class CryptoAssetsManagement extends React.Component {
           isChange: false,
           isDefault: false
         })
-      }
+      },
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            lazyLoad: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            swipeToSlide: true,
+            dots: false,
+            fade: true,
+            adaptiveHeight: true,
+            afterChange: (i) => {
+              this.setState({
+                currentCrypto: i,
+              })
+            }
+          }
+        }
+      ]
     }
 
     return (
@@ -276,7 +275,7 @@ class CryptoAssetsManagement extends React.Component {
                 </Slider>
               </div>
               <div className="problemBlock__mobile">
-                <Slider { ...settings }>
+                <Slider ref={slider => this.mobileSlider = slider} { ...settings }>
                   { this.renderMobileProblemBlock() }
                 </Slider>
               </div>

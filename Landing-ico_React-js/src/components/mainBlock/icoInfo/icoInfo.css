@@ -163,6 +163,14 @@
   font-weight: 100;
 }
 
+.ico-info__desktop-amount-progressBar {
+
+}
+
+.ico-info__mobile-amount-progressBar {
+  display: none;
+}
+
 .ico-info__amount span {
   font-weight: 500;
 }
@@ -197,6 +205,36 @@
 
   .ico-info__amount {
     display: flex;
-    flex-direction: column;
+  }
+
+  .ico-info__progressBar,
+  .ico-info__progress {
+    height: 34px;
+    position: relative;
+  }
+
+  .ico-info__progress {
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 0;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+  }
+
+  .ico-info__progress span {
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    top: 8px;
+  }
+
+  .ico-info__desktop-amount-progressBar {
+    display: none;
+  }
+  
+  .ico-info__mobile-amount-progressBar {
+    display: block;
   }
 }

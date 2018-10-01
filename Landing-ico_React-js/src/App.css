@@ -1843,6 +1843,9 @@ body.compensate-for-scrollbar {
       height: 33px!important;
     }
 
+    .block_8 .ourPartners .btcbit-promo {
+      height: 95px!important;
+    }
   }
 
 @media screen and (max-width: 767px) {

@@ -38,9 +38,17 @@ const IcoInfo = props => {
         </div>
         <img className={`${ROOT_CLASS}__currency_icons`} src={currency_icons} alt={"CINDX"}/>
         <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#2'] } <span>$21,000,000</span></div>
-        <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>${outputValue} / $3,800,000</span></div>
-        <div className={`${ROOT_CLASS}__progressBar`}>
-          <div className={`${ROOT_CLASS}__progress`} style={{ width: ((startSum / finishSum) * 100) + '%' }}></div>
+        <div className={`${ROOT_CLASS}__desktop-amount-progressBar`}>
+          <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>${outputValue} / $3,800,000</span></div>
+          <div className={`${ROOT_CLASS}__progressBar`}>
+            <div className={`${ROOT_CLASS}__progress`} style={{ width: ((startSum / finishSum) * 100) + '%' }}></div>
+          </div>
+        </div>
+        <div className={`${ROOT_CLASS}__mobile-amount-progressBar`}>
+          <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>$3,800,000</span></div>
+          <div className={`${ROOT_CLASS}__progressBar`}>
+            <div className={`${ROOT_CLASS}__progress`} style={{ width: ((startSum / finishSum) * 100) + '%' }}><span>${outputValue}</span></div>
+          </div>
         </div>
       </div>
       <div className={`${ROOT_CLASS}__signed-partners`}>

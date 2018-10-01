@@ -389,7 +389,16 @@ class TeamAdvisersPartners extends React.Component {
     return teamInfo.map((el, i) => {
       return (
         <div key={i} className="item">
-          <img className="img" src={el.img} alt="CINDX"/>
+          <div className="img" style={{ backgroundImage: `url(${el.img})` }}>
+            <div onClick={() => this.showVideoInPopUp(el.video)}>
+              <img
+                className="playButtonWhite"
+                style={{display: el.video ? 'block' : 'none'}}
+                src={playButtonWhite}
+                alt={"CINDX"}
+              />
+            </div>
+          </div>
           <h3>{el.name}</h3>
           <p className="position">{el.position}</p>
           <hr />
@@ -413,7 +422,16 @@ class TeamAdvisersPartners extends React.Component {
     return teamInfo.map((el, i) => {
       return (
         <div key={i} className="item">
-          <img className="img" src={el.img} alt="CINDX"/>
+          <div className="img" style={{ backgroundImage: `url(${el.img})` }}>
+            <div onClick={() => this.showVideoInPopUp(el.video)}>
+              <img
+                className="playButtonWhite"
+                style={{display: el.video ? 'block' : 'none'}}
+                src={playButtonWhite}
+                alt={"CINDX"}
+              />
+            </div>
+          </div>
           <h3>{el.name}</h3>
           <p className="position">{el.position}</p>
           <hr />
@@ -436,7 +454,7 @@ class TeamAdvisersPartners extends React.Component {
   mapOurPartners = () => {
     return ourPartners.map((el, i) => {
       return (
-        <div key={i}>
+        <div key={i} className="our-partners">
           <img className={`img ${(el.img === ICO_PROMO) ? 'ico-promo' : ''}`} src={el.img} alt="CINDX"/>
         </div>
       );
