@@ -29,7 +29,7 @@
   display: none;
 }
 
-.ourPartners .our-partners {
+.ourPartners .ourPartners__image-block {
   display: flex!important;
   justify-content: center;
 }

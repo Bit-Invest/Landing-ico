@@ -20,9 +20,10 @@ export const getGAID = function(){
 };
 
 linkSearch['clickid'] ? window.localStorage.setItem('clickid', linkSearch['clickid']) : ''
+linkSearch['ab_val'] ? window.localStorage.setItem('ab_val', 1) : ''
 let clickid = window.localStorage.getItem('clickid');
 let gaid = getGAID;
-export const ab_val = linkSearch['ab_val']
+export const ab_val = window.localStorage.getItem('ab_val');
 
 export const list_lngs = 'en zn ko tr fr ja vi pt ar de es'; //языки который мы используем нужно тут указать
 const user_lng = window.localStorage.getItem('loc') || navigator.language || 'en';

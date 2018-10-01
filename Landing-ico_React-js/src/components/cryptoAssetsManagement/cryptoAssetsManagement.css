@@ -286,15 +286,15 @@
   background-color: #fff;
 }
 
-.problemBlock__more-block {
+.problemBlock__slide-more-search {
   opacity: 0;
   width: 572.5px;
   height: 435.8px;
+  background-size: cover;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -307,7 +307,7 @@
   height: 57px;
 }
 
-.problemBlock__slide:hover .problemBlock__more-block {
+.problemBlock__slide:hover .problemBlock__slide-more-search {
   opacity: 1;
 }
 
@@ -346,7 +346,8 @@
     margin-left: 4%;
   }
   .problemBlock__more-block,
-  .problemBlock__slide-img {
+  .problemBlock__slide-img,
+  .problemBlock__slide-more-search {
     width: 390.5px;
     height: 297.5px;
   }
@@ -382,6 +383,9 @@
   }
   .cryptoAssetsManagement .row {
     margin-bottom: 50px;
+  }
+  .problemBlock__slide-more-search {
+    display: none;
   }
   .problemBlock__slide-img {
     width: 386.1px;

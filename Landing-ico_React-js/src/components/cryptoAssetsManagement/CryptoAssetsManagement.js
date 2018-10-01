@@ -7,11 +7,23 @@ import crypto0 from '../../images/crypto/crypto1.png'
 import crypto1 from '../../images/crypto/crypto2.png'
 import crypto2 from '../../images/crypto/crypto3.png'
 import {links} from '../../links.js';
+import Rectangle_White_opacity from '../../images/Rectangle_White_opacity.png'
 // import play_button_youtube from '../../media/play_button_youtube.png';
 import './cryptoAssetsManagement.css';
 import { lng } from '../../links'
 import indexLngObj from '../../lngs/index'
-import PopUpDisc from '../popUpDisc/PopUpDisc'
+
+const Popup = (props) => {
+  return (
+    <div className="popup-for-img" onClick={props.onClick}>
+      <div className="popup-for-img__close-bg" ></div>
+      <div className="popup-for-img__content">
+        <div className="popup-for-img__close"></div>
+        <img className="popup-for-img__img" src={props.src} alt="INVISIBLE_IMAGE" />
+      </div>
+    </div>
+  )
+}
 
 const problemData = [
   {
@@ -46,30 +58,17 @@ const cryptoArr = [
 
 class CryptoAssetsManagement extends React.Component {
   state = {
-    isOpenDisc: true,
+    isOpen: false,
     currentCrypto: 0,
     isChange: false,
     isDefault: true,
-    autoPlayInterval: null,
-    widthScreen: null
+    imageSrc: ''
   }
 
   showVideoInPopUp = (url) => {
     this.props.changeUrlPopupVideo(url)
     this.props.showPopUp()
   }
-
-  // componentDidMount = () => {
-  //   const autoPlayInterval = setInterval(() => {
-  //     this.nextSlide()
-  //   }, 2500)
-
-  //   this.setState({ autoPlayInterval: autoPlayInterval })
-  // }
-
-  // componentWillUnmount = () => {
-  //   clearInterval(this.state.autoPlayInterval)
-  // }
 
   renderImgSlides = () => {
     let currentCryptoArr = []
@@ -98,9 +97,25 @@ class CryptoAssetsManagement extends React.Component {
       const animation0 = this.state.isChange && i === 0 ? 'problemBlock__slide-animation-0' : ''
       const animation1 = this.state.isChange && i === 1 ? 'problemBlock__slide-animation-1' : ''
       const animation2 = this.state.isChange && i === 2 ? 'problemBlock__slide-animation-2' : ''
+      const startSlide = this.state.isDefault ? 0 : 1
 
       return (
         <div className={`problemBlock__slide problemBlock__slide-${i} ${animation0} ${animation1} ${animation2}`} key={i}>
+          { i === startSlide ? 
+            <div 
+              className="problemBlock__slide-more-search" 
+              style={{ backgroundImage: `url(${Rectangle_White_opacity})` }}
+              onClick={
+                () => {
+                  if (window.innerWidth >= 1024)
+                    this.setState({ isOpen: true, imageSrc: el })
+                }
+              } 
+            >
+              <span className="more-block__search-icon"></span>
+            </div> : 
+            null
+          }
           <div style={{ backgroundImage: `url(${el})` }} className='problemBlock__slide-img'></div>
         </div>
       )
@@ -297,7 +312,13 @@ class CryptoAssetsManagement extends React.Component {
             </div>
           </div>
         </div>
-        {/* <PopUpDisc /> */}
+        { this.state.isOpen ?
+          <Popup
+            onClick={() => this.setState({ isOpen: false })}
+            src={this.state.imageSrc}
+          /> :
+          null
+        }
       </div>
     )
   }
