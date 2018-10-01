@@ -21,80 +21,87 @@ import kakaotalk_icon from '../../media/kakaotalk_icon.png';
 export const JoinTokenPreSale = () => (
   <div className="block_9">
     <div className="size">
-      <h2 className="header_blocks">{ indexLngObj[lng]['joinTokenPreSale#1'] }</h2>
+      {/* <h2 className="header_blocks">{ indexLngObj[lng]['joinTokenPreSale#1'] }</h2> */}
       <div className="container2">
-        <Join
+        {/* <Join
           text={ indexLngObj[lng]['joinTokenPreSale#2'] }
           className="sb"
-        />
-        <a target="_blank" href={links.mvp} className="sb_2">
+        /> */}
+        {/* <a target="_blank" href={links.mvp} className="sb_2">
           { indexLngObj[lng]['joinTokenPreSale#3'] }
-        </a>
+        </a> */}
+        <div className="icons_wrapper">
+          <div className="caption">Follow us:</div>
+          <div className="icon_block">
+            <a target="_blank" href="https://bitcointalk.org/index.php?topic=4421275.0">
+              <img className="icon" src={bitcointalk_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/cindx">
+              <img className="icon" src={youtube_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/cindx.io/">
+              <img className="icon" src={instagram_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://www.reddit.com/r/cindx/">
+              <img className="icon" src={reddit_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://t.me/cindx_official">
+              <img className="icon" src={telegram_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://twitter.com/CINDXPlatform">
+              <img className="icon" src={twitter_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://www.github.com/Bit-Invest/Cindx-frontend">
+              <img className="icon" src={github_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/cindx.io/">
+              <img className="icon" src={facebook_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://medium.com/cindx">
+              <img className="icon" src={medium_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/cindx/">
+              <img className="icon" src={linkedin_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://m.weibo.cn/profile/6606802462">
+              <img className="icon" src={wechat_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://m.weibo.cn/profile/6606802462">
+              <img className="icon" src={kakaotalk_icon} alt={"CINDEX"}/>
+            </a>
+            <a target="_blank" href="https://m.weibo.cn/profile/6606802462">
+              <img className="icon" src={weibo_icon} alt={"CINDEX"}/>
+            </a>
+          </div>
+        </div>
         <div className="adress">
           <div className="adress_left">
             <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#4'] }</div>
-            <p>
-              { indexLngObj[lng]['joinTokenPreSale#5'] } <br/>
-              { indexLngObj[lng]['joinTokenPreSale#6'] }
-            </p>
+            <div className="address__text">
+              <div>{ indexLngObj[lng]['joinTokenPreSale#5'] }</div>
+              <div>{ indexLngObj[lng]['joinTokenPreSale#6'] }</div>
+            </div>
             <a href="mailto:hello@cindx.io">
               <p>
                 { indexLngObj[lng]['joinTokenPreSale#7'] }
               </p>
             </a>
-            <a target="_blank" href={links.lD}>
+            {/* <a target="_blank" href={links.lD}>
               <p className="lD">
                 { indexLngObj[lng]['joinTokenPreSale#8'] }
               </p>
-            </a>
+            </a> */}
           </div>
           <div className="adress_right">
             <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#9'] }</div>
+            <div className="address__text">
+              <div>{ indexLngObj[lng]['joinTokenPreSale#10'] }</div>
+              <div>{ indexLngObj[lng]['joinTokenPreSale#11'] }</div>
+            </div>
             <p>
-              { indexLngObj[lng]['joinTokenPreSale#10'] } <br/>
-              { indexLngObj[lng]['joinTokenPreSale#11'] }
-            </p>
-            <p>
-              { indexLngObj[lng]['joinTokenPreSale#12'] } | <a href="mailto:hr@cindx.io">hr@cindx.io</a>
+              { indexLngObj[lng]['joinTokenPreSale#12'] } <a href="mailto:hr@cindx.io">hr@cindx.io</a>
             </p>
           </div>
-        </div>
-        <div className="clear" />
-        <div className="icon_block">
-          <a target="_blank" href="https://bitcointalk.org/index.php?topic=4421275.0">
-            <img className="icon" src={bitcointalk_icon} alt={"CINDEX"}/>
-          </a>
-          <a target="_blank" href="https://www.youtube.com/cindx">
-            <img className="icon" src={youtube_icon} alt={"CINDEX"}/>
-          </a>
-          <a target="_blank" href="https://www.instagram.com/cindx.io/">
-            <img className="icon" src={instagram_icon} alt={"CINDEX"}/>
-          </a>
-          <a target="_blank" href="https://www.reddit.com/r/cindx/">
-            <img className="icon" src={reddit_icon} alt={"CINDEX"}/>
-          </a>
-          <a target="_blank" href="https://t.me/cindx_official">
-            <img className="icon" src={telegram_icon} alt={"CINDEX"}/>
-          </a>
-          <a target="_blank" href="https://twitter.com/CINDXPlatform">
-            <img className="icon" src={twitter_icon} alt={"CINDEX"}/>
-          </a>
-          <a target="_blank" href="https://www.github.com/Bit-Invest/Cindx-frontend">
-            <img className="icon" src={github_icon} alt={"CINDEX"}/>
-          </a>
-          <br/>
-          <a target="_blank" href="https://www.facebook.com/cindx.io/">
-            <img className="icon" src={facebook_icon} alt={"CINDEX"}/>
-          </a>
-          <a target="_blank" href="https://medium.com/cindx">
-            <img className="icon" src={medium_icon} alt={"CINDEX"}/>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/company/cindx/">
-            <img className="icon" src={linkedin_icon} alt={"CINDEX"}/>
-          </a>
-          <a target="_blank" href="https://m.weibo.cn/profile/6606802462">
-            <img className="icon" src={weibo_icon} alt={"CINDEX"}/>
-          </a>
         </div>
       </div>
     </div>

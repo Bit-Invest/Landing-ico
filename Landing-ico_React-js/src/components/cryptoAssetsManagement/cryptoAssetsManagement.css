@@ -9,7 +9,9 @@
   margin-bottom: 110px;
 }
 .cryptoAssetsManagement .header_blocks {
-  width: 52%;
+  width: 75%;
+  display: flex!important;
+  flex-direction: column;
 }
 .cryptoAssetsManagement .video {
   background-size: cover;
@@ -30,8 +32,8 @@
   cursor: pointer;
 }
 .cryptoAssetsManagement .txt {
-  width: 40%;
-  margin-right: 10%;
+  width: 38%;
+  margin-bottom: 180px;
 }
 .cryptoAssetsManagement .txt2 {
   width: 40%;
@@ -54,42 +56,262 @@
   margin-bottom: 20px;
   font-weight: normal;
 }
-.cryptoAssetsManagement .problemBlock .video_block {
+.cryptoAssetsManagement .video_block {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 30%;
-  margin-top: 50px;
+  align-items: flex-start;
+  margin-left: 10%;
+  position: relative;
+  bottom: 160px;
+  margin-bottom: -80px;
 }
-.cryptoAssetsManagement .problemBlock .video_block .mockup1 {
+.cryptoAssetsManagement .video_block_last {
+  margin-left: 25.5%;
+}
+.cryptoAssetsManagement .video_block .mockup1 {
   background-size: cover;
   height: 222px;
   width: 380px;
   background-image: url(../../media/mockup1.png);
 }
-.cryptoAssetsManagement .problemBlock .video_block .mockup2 {
+.problemBlock__wrapper-mockup {
+  display: flex;
+}
+.problemBlock__wrapper-mockup .video-block {
+  margin-right: 5%;
+}
+.cryptoAssetsManagement .video_block .mockup2 {
   background-size: cover;
   height: 222px;
   width: 380px;
   background-image: url(../../media/mockup2.png);
 }
-.cryptoAssetsManagement .problemBlock .video_block .mockup3 {
-  background-size: cover;
-  height: 284px;
-  width: 300px;
+.cryptoAssetsManagement .video-block .mockup3 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 200px;
   background-image: url(../../media/mockup3.png);
 }
 .problemBlock {
   display: flex;
-  justify-content: center;
-  padding-bottom: 140px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10%;
+  transition: 0.8s;
 }
 
-.cryptoAssetsManagement .problemBlock:last-of-type .btn {
+.problemBlock__mobile {
   display: none;
 }
 
-.problemBlock .btn {
+.problemBlock__switch-slide {
+  display: flex;
+  bottom: 0!important;
+  margin-bottom: 80px!important;
+  flex-direction: row!important;
+  margin-top: 30px;
+  align-items: center!important;
+}
+
+.problemBlock__arrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.problemBlock__left-arrow {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.problemBlock__right-arrow {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.problemBlock__desktop {
+  display: block;
+}
+
+.problemBlock__wrapper-problem {
+  display: flex!important;
+  flex-direction: column;
+}
+
+.problemBlock__wrapper {
+  position: relative;
+}
+
+.problemBlock__img-slides {
+  position: absolute;
+  right: 49%;
+  top: -25px;
+}
+
+.problemBlock__slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.8s;
+}
+
+.problemBlock__slide-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: 0.8s;
+}
+.problemBlock__slide-1 {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: 2;
+  opacity: 0.6;
+  transition: 0.8s;
+}
+.problemBlock__slide-2 {
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  z-index: 1;
+  opacity: 0.4;
+  transition: 0.8s;
+}
+.problemBlock__slide-img {
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 572.5px;
+  height: 435.8px;
+  transition: 0.8s;
+}
+@keyframes moveSlide0 {
+  0% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 3;
+  }
+
+  33% {
+    opacity: 0;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+  }
+
+  66% {
+    top: 80px;
+    left: 120px;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  100% {
+    top: 60px;
+    left: 100px;
+    opacity: 0.4;
+    z-index: 1;
+  }
+}
+@keyframes moveSlide1 {
+  0% {
+    top: 30px;
+    left: 50px;
+    opacity: 0.6;
+    z-index: 2;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 3;
+  }
+}
+@keyframes moveSlide2 {
+  0% {
+    top: 60px;
+    left: 100px;
+    opacity: 0.4;
+    z-index: 1;
+  }
+
+  100% {
+    top: 30px;
+    left: 50px;
+    opacity: 0.6;
+    z-index: 2;
+  }
+}
+
+.problemBlock__slide-animation-0 {
+  animation: moveSlide0 .8s;
+  animation-fill-mode: forwards;
+}
+
+.problemBlock__slide-animation-1 {
+  animation: moveSlide1 .8s;
+  animation-fill-mode: forwards;
+}
+
+.problemBlock__slide-animation-2 {
+  animation: moveSlide2 .8s;
+  animation-fill-mode: forwards;
+}
+
+.problemBlock__dots {
+  display: flex;
+  margin: 0 15px;
+}
+
+.problemBlock__dot:nth-last-of-type(2) {
+  margin: 0 12px;
+}
+
+.problemBlock__dot {
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.problemBlock__dot:hover,
+.problemBlock__dot-active {
+  background-color: #fff;
+}
+
+.problemBlock__slide-more-search {
+  opacity: 0;
+  width: 572.5px;
+  height: 435.8px;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.more-block__search-icon {
+  background: url('../../images/search-icon.svg') no-repeat 0 0;
+  background-size: cover;
+  position: absolute;
+  width: 57px;
+  height: 57px;
+}
+
+.problemBlock__slide:hover .problemBlock__slide-more-search {
+  opacity: 1;
+}
+
+.cryptoAssetsManagement .btn {
   background : -moz-linear-gradient(0% 50% 0deg,rgba(242, 135, 183, 1) 0%,rgba(108, 94, 214, 1) 100%);
   background : -webkit-linear-gradient(0deg, rgba(242, 135, 183, 1) 0%, rgba(108, 94, 214, 1) 100%);
   background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(242, 135, 183, 1) ),color-stop(1,rgba(108, 94, 214, 1) ));
@@ -97,7 +319,7 @@
   background : -ms-linear-gradient(0deg, rgba(242, 135, 183, 1) 0%, rgba(108, 94, 214, 1) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F287B7', endColorstr='#6C5ED6' ,GradientType=0)";
   background : linear-gradient(90deg, rgba(242, 135, 183, 1) 0%, rgba(108, 94, 214, 1) 100%);
-  padding: 0 27px;
+  padding: 0 45px;
   border-radius : 24px;
   -moz-border-radius : 24px;
   -webkit-border-radius : 24px;
@@ -113,18 +335,85 @@
   color: #fff;
   transition: box-shadow 0.3s;
   float: right;
-  margin-top: 30px;
 }
-.problemBlock .btn:hover {
+.cryptoAssetsManagement .btn:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1439px) {
+  .problemBlock,
+  .cryptoAssetsManagement .video_block {
+    margin-left: 4%;
+  }
+  .problemBlock__more-block,
+  .problemBlock__slide-img,
+  .problemBlock__slide-more-search {
+    width: 390.5px;
+    height: 297.5px;
+  }
+
+  .problemBlock__img-slides {
+    right: 49%;
+    top: 0;
+  }
+
+  .cryptoAssetsManagement .txt {
+    width: 48%;
+  }
+
+  .cryptoAssetsManagement .video_block_last {
+    margin-left: 25.5%;
+  }
+
+  .problemBlock__switch-slide {
+    margin-bottom: 60px!important;
+  }
+
+  .cryptoAssetsManagement .video_block {
+    bottom: 140px;
+    margin-bottom: -95px;
+  }
+}
+
 @media (max-width: 1023px) {
+  .cryptoAssetsManagement .video_block_last {
+    margin-bottom: 50px;
+    margin-left: calc(360px + 35 * ((100vw - 768px) / 255));
+    bottom: calc(170px + 70 * ((100vw - 768px) / 255))!important;
+  }
+  .cryptoAssetsManagement .row {
+    margin-bottom: 50px;
+  }
+  .problemBlock__slide-more-search {
+    display: none;
+  }
+  .problemBlock__slide-img {
+    width: 386.1px;
+    height: 293.9px;
+  }
+  .problemBlock__img-slides {
+    bottom: 32%;
+    top: auto;
+    right: 66%;
+  }
+  .cryptoAssetsManagement .video_block {
+    bottom: 170px;
+  }
+  .cryptoAssetsManagement .txt {
+    width: 90%;
+  }
+  .cryptoAssetsManagement .slick-dots {
+    left: 7%;
+  }
+  .cryptoAssetsManagement .slick-next {
+    left: 18%;
+  }
   .cryptoAssetsManagement .row {
     display: block;
   }
   .cryptoAssetsManagement .header_blocks {
     width: 99%;
+    padding-right: 40px!important;
     display: block;
   }
   .cryptoAssetsManagement .video {
@@ -145,32 +434,81 @@
     width: 310px;
     background-image: url(../../media/mockup2.png);
   }
-  .cryptoAssetsManagement .problemBlock .video_block .mockup3 {
+  .cryptoAssetsManagement .problemBlock .video-block .mockup3 {
     background-size: cover;
-    height: 284px;
+    height: 271px;
     width: 300px;
     background-image: url(../../media/mockup3.png);
   }
 }
 
 @media screen and (max-width: 767px) {
+  .problemBlock__mobile {
+    display: block;
+  }
+  .problemBlock__desktop {
+    display: none;
+  }
+  .problemBlock__img-slides {
+    display: none;
+  }
+  .problemBlock__wrapper-mockup .video-block {
+    display: flex;
+    justify-content: center;
+  }
+  .problemBlock__wrapper-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .problemBlock__wrapper-img img {
+    width: 90%;
+    height: 100%;
+  }
+  .cryptoAssetsManagement .video-block {
+    display: flex;
+    justify-content: center;
+  }
+  .cryptoAssetsManagement .video_block:nth-last-of-type(2) {
+    display: none;
+  }
+  .problemBlock__switch-slide {
+    margin-top: -8%!important;
+    margin-bottom: 90px!important;
+    margin-left: 0!important;
+    display: flex;
+    justify-content: center;
+  }
   .cryptoAssetsManagement .header_blocks {
-    width: 100% !important;
+    width: 98% !important;
     margin: 0 auto !important;
     word-wrap: break-word;
     padding: 0 5%!important;
+    font-size: 26px!important;
+    display: block!important;
   }
   .cryptoAssetsManagement .video {
     width: 100%;
     padding: 0;
     margin: 40px auto 0;
   }
-  .problemBlock {
-    display: table;
-    /* flex-direction: column-reverse; */
-    width: 90%;
+  .cryptoAssetsManagement .slick-slider {
+    margin-bottom: 80px;
+  }
+  .cryptoAssetsManagement .slick-next {
+    left: auto;
+    right: 25%;
+  }
+  .cryptoAssetsManagement .slick-dots {
+    left: auto;
     margin: 0 auto;
-    padding-bottom: 70px;
+    position: relative;
+    padding-right: 10%;
+  }
+  .problemBlock {
+    margin: 0 5%;
+    padding-bottom: 50px;
   }
   .problemBlockMobile {
     display: flex;

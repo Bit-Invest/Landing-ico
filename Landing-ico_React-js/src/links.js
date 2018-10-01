@@ -20,8 +20,10 @@ export const getGAID = function(){
 };
 
 linkSearch['clickid'] ? window.localStorage.setItem('clickid', linkSearch['clickid']) : ''
+linkSearch['ab_val'] ? window.localStorage.setItem('ab_val', 1) : ''
 let clickid = window.localStorage.getItem('clickid');
 let gaid = getGAID;
+export const ab_val = window.localStorage.getItem('ab_val');
 
 linkSearch['ab_val'] ? window.localStorage.setItem('ab_val', linkSearch['ab_val']) : ''
 export const ab_val = window.localStorage.getItem('ab_val')

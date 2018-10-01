@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { showPopUp, changeUrlPopupVideo } from '../../store/store';
-import ava_1 from '../../images/ava_1.png';
 import playButtonWhite from '../../images/play_button_white.png';
 import linkedin_icon_social from '../../images/linkedin_icon_social.png';
 import medium_icon_social from '../../images/medium_icon_social.png';
@@ -139,57 +138,57 @@ const teamInfo = [
  ];
 
 const ourPartners = [
- {
-   img: Progressor_logo,
-   name: 'Progressor',
-   position: 'Legal support',
-   href: 'https://progressor.ee/'
- },
- {
-   img: ICO_PROMO,
-   name: 'ICO Promo',
-   position: 'Merchant services',
-   href: 'https://icopromo.com/'
- },
- {
-   img: sum_and_substance_1,
-   name: 'Sum & Substance',
-   position: 'Security & Compliance',
-   href: 'https://sumsub.com/'
- },
- {
-   img: twigagroup,
-   name: 'Twiga Communication Group',
-   position: 'Digital & PR',
-   href: 'http://twiga.ru/'
- },
- {
-   img: Tradingview,
-   name: 'Tradingview',
-   position: 'Market data',
-   href: 'https://www.tradingview.com/'
- },
- {
-   img: Yellow_Door,
-   name: 'Yellow Door',
-   position: 'Silicon Valley Accelerator',
-   href: 'http://yellowdoor.ru/'
- },
- {
-   img: Innova8,
-   name: 'Innov8 Global Advisory',
-   position: 'Global Ventures',
-   href: 'http://www.innov8globaladvisory.com/'
- },
- {
-  img: BtcBit,
-},
-{
-  img: civic_logo_horz_BIG,
-},
-{
-  img: Greenberg,
-},
+  {
+    img: Progressor_logo,
+    name: 'Progressor',
+    position: 'Legal support',
+    href: 'https://progressor.ee/'
+  },
+  {
+    img: ICO_PROMO,
+    name: 'ICO Promo',
+    position: 'Merchant services',
+    href: 'https://icopromo.com/'
+  },
+  {
+    img: sum_and_substance_1,
+    name: 'Sum & Substance',
+    position: 'Security & Compliance',
+    href: 'https://sumsub.com/'
+  },
+  {
+    img: twigagroup,
+    name: 'Twiga Communication Group',
+    position: 'Digital & PR',
+    href: 'http://twiga.ru/'
+  },
+  {
+    img: Tradingview,
+    name: 'Tradingview',
+    position: 'Market data',
+    href: 'https://www.tradingview.com/'
+  },
+  {
+    img: Yellow_Door,
+    name: 'Yellow Door',
+    position: 'Silicon Valley Accelerator',
+    href: 'http://yellowdoor.ru/'
+  },
+  {
+    img: Innova8,
+    name: 'Innov8 Global Advisory',
+    position: 'Global Ventures',
+    href: 'http://www.innov8globaladvisory.com/'
+  },
+  {
+    img: BtcBit,
+  },
+  {
+    img: civic_logo_horz_BIG,
+  },
+  {
+    img: Greenberg,
+  },
 ];
 
 const advisers = [
@@ -386,7 +385,16 @@ class TeamAdvisersPartners extends React.Component {
     return teamInfo.map((el, i) => {
       return (
         <div key={i} className="item">
-          <img className="img" src={el.img} alt="CINDX"/>
+          <div className="img" style={{ backgroundImage: `url(${el.img})` }}>
+            <div onClick={() => this.showVideoInPopUp(el.video)}>
+              <img
+                className="playButtonWhite"
+                style={{display: el.video ? 'block' : 'none'}}
+                src={playButtonWhite}
+                alt={"CINDX"}
+              />
+            </div>
+          </div>
           <h3>{el.name}</h3>
           <p className="position">{el.position}</p>
           <hr />
@@ -410,7 +418,16 @@ class TeamAdvisersPartners extends React.Component {
     return teamInfo.map((el, i) => {
       return (
         <div key={i} className="item">
-          <img className="img" src={el.img} alt="CINDX"/>
+          <div className="img" style={{ backgroundImage: `url(${el.img})` }}>
+            <div onClick={() => this.showVideoInPopUp(el.video)}>
+              <img
+                className="playButtonWhite"
+                style={{display: el.video ? 'block' : 'none'}}
+                src={playButtonWhite}
+                alt={"CINDX"}
+              />
+            </div>
+          </div>
           <h3>{el.name}</h3>
           <p className="position">{el.position}</p>
           <hr />
@@ -435,7 +452,7 @@ class TeamAdvisersPartners extends React.Component {
       const promo = (el.img === ICO_PROMO || el.img === civic_logo_horz_BIG || el.img === Greenberg) ? 'ico-promo' : ''
       const newPromo = (el.img === BtcBit) ? 'btcbit-promo' : ''
       return (
-        <div key={i}>
+        <div key={i} className="ourPartners__image-block">
           <img
             className={`img ${promo} ${newPromo}`} 
             src={el.img} 

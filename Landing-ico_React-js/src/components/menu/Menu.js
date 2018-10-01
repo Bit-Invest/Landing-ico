@@ -146,7 +146,7 @@ class Menu extends React.Component {
       return (
         <div className="showMenu">
           <Join
-            text="Join Token Pre-Sale"
+            text="Log in"
             className="itemMini joinpresale"
           />
           <a onClick={this.openMenu} href="#product" className="itemMini">{ indexLngObj[lng]['menu#7'] }</a>
@@ -191,7 +191,7 @@ class Menu extends React.Component {
             </div>
             <a target='_blank' href={links.mvp} className="item">{ indexLngObj[lng]['menu#11'] }</a>
             <Join
-              text="Join Pre-Sale"
+              text="Log in"
               className="btn"
             />
             <div
@@ -207,7 +207,7 @@ class Menu extends React.Component {
           </div>
           <div className="menu-768px">
              <Join
-              text="Join Pre-Sale"
+              text="Log in"
               className="btn"
             />
             <a onClick={this.openMenu} className="menu-item-burger">

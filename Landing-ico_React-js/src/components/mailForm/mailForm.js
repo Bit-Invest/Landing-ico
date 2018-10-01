@@ -142,14 +142,17 @@ class MailForm extends React.Component {
 
     return (
       <div className={ROOT_CLASS}>
-        <div className={`${ROOT_CLASS}__video`} onClick={() => this.showVideoInPopUp('https://player.vimeo.com/video/286746544')}>
-          <img
-            src={play_button_youtube}
-            alt="CINDEX"
-            className={`${ROOT_CLASS}__play`}
-          />
-        </div>
-        <div className={`${ROOT_CLASS}__content`}>
+        { !this.props.isTokenDetails ?
+          <div className={`${ROOT_CLASS}__video`} onClick={() => this.showVideoInPopUp('https://player.vimeo.com/video/286746544')}>
+            <img
+              src={play_button_youtube}
+              alt="CINDEX"
+              className={`${ROOT_CLASS}__play`}
+            />
+          </div> :
+          null
+        }
+        <div className={`${ROOT_CLASS}__content ${this.props.isTokenDetails ? `${ROOT_CLASS}__content-token-sale` : ''}`}>
           <div style={{display: !email ? 'none' : null }} className={`${ROOT_CLASS}__contentagree`}>
             <div className={`${ROOT_CLASS}__contentagreescroll`}>
               <p className="boldtext">{ indexLngObj[lng]['mailForm#6'] }</p>
@@ -168,6 +171,9 @@ class MailForm extends React.Component {
             </div>
             <div className={`${ROOT_CLASS}__bonus`}>
               { step_content.bonus[sale_step] }
+            </div>
+            <div className={`${ROOT_CLASS}__top-name-text`}>
+              <span className={`${ROOT_CLASS}__name-text-span ${this.props.isTokenDetails ? `${ROOT_CLASS}__name-text-span-token-sale` : ''}`}>Get it before everyone else does Offer expires within</span>
             </div>
             <div className={`${ROOT_CLASS}__description`}>
               { step_content.desc1[sale_step] }
@@ -195,7 +201,7 @@ class MailForm extends React.Component {
               </div>
             </div>
             <div className={`${ROOT_CLASS}__name-text`}>
-              <span className={`${ROOT_CLASS}__name-text-span`}>Want to get the latest news and upcoming offers?</span>
+              <span className={`${ROOT_CLASS}__name-text-span ${this.props.isTokenDetails ? `${ROOT_CLASS}__name-text-span-token-sale` : ''}`}>Want to get the latest news and upcoming offers?</span>
             </div>
           </div>
           <div className={`${ROOT_CLASS}__input ${ (submitStatus === 0 || submitStatus === 1) ? "errorRed" : null }`}>

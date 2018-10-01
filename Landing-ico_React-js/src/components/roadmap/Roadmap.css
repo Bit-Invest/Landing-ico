@@ -9,7 +9,22 @@
 .roadmap__headcontainer {
   margin: 0px !important;
   padding: 0px !important;
-  background: linear-gradient(180deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
+  background: linear-gradient(#2b004b 0%, #7c77b7 60%, #9ad3e7 100%);
+  position: relative;
+}
+
+.roadmap__headcontainer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: url('../../images/mountain.png') no-repeat;
+  background-size: 600px;
+  background-position: right 0 bottom 0px;
+  pointer-events: none;
 }
 
 .roadmap__title {
@@ -91,6 +106,7 @@
   margin: 0 auto;
   margin-top: 50px;
   width: 600px;
+  height: 100%;
 }
 
 .roadmap__disc {
@@ -137,6 +153,71 @@
   margin-right: 5px;
 }
 
+.popup-for-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.popup-for-img__close-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.popup-for-img__content {
+  position: relative;
+  width: 670px;
+  z-index: 2;
+}
+
+.popup-for-img__img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.popup-for-img__close {
+  position: absolute;
+  top: -7%;
+  right: -5%;
+  width: 21px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.popup-for-img__close:hover {
+  opacity: 1;
+}
+
+.popup-for-img__close:before, .popup-for-img__close:after {
+  position: absolute;
+  left: 9px;
+  top: 7px;
+  content: ' ';
+  height: 25px;
+  width: 3px;
+  background-color: #fff;
+}
+
+.popup-for-img__close:before {
+  transform: rotate(45deg);
+}
+
+.popup-for-img__close:after {
+  transform: rotate(-45deg);
+}
+
 
 @media screen and (max-width: 767px) {
   .road-show-block .header_blocks {
@@ -149,6 +230,10 @@
   .roadmap__circle.active:after {
     content: '';
     top: 30px;
+  }
+
+  .roadmap__content {
+    padding-bottom: 50px;
   }
 }
 
@@ -182,7 +267,21 @@
   }
 }
 
+@media screen and (max-width: 1439px) {
+  .roadmap__wrapper-content {
+    flex-wrap: wrap;
+  }
+
+  .roadmap__headcontainer:before {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1440px) {
+  .roadmap__wrapper-content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .roadmap__map {
     width: 904px;
   }
@@ -190,9 +289,10 @@
     width: 860px;
   }
   .roadmap__text {
-    width: 800px;
+    width: 55%;
+    padding-right: 10%;
   }
   .roadmap__image {
-    width: 904px;
+    width: 30%;
   }
 }

@@ -12,6 +12,8 @@
 .ico-info__partners {
   margin-top: 10px;
   width: 230px;
+  display: flex;
+  align-items: center;
 }
 
 .ico-info__ratings {
@@ -29,6 +31,53 @@
   height: 55px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.ico-info__docs {
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.ico-info__doc {
+  display: flex;
+  padding: 10px 0;
+  border: 1px solid #fff;
+  width: 200px;
+  position: relative;
+  justify-content: center;
+  border-radius: 32px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.ico-info__doc:hover {
+  background-color: #fff;
+  color: #6e5fd6;
+}
+
+.ico-info__docs-icon {
+  position: absolute;
+  left: 16px;
+}
+
+.ico-info__docs-icon i {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 14px;
+  height: 16px;
+  display: flex;
+}
+
+.ico-info__doc:first-of-type {
+
+}
+
+.ico-info__doc span {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .ico_rating {
@@ -114,21 +163,78 @@
   font-weight: 100;
 }
 
+.ico-info__desktop-amount-progressBar {
+
+}
+
+.ico-info__mobile-amount-progressBar {
+  display: none;
+}
+
 .ico-info__amount span {
   font-weight: 500;
 }
 
 .ico-info__progressBar {
   width: 400px;
-  height: 34px;
+  height: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 17px;
 }
 
 .ico-info__progress {
   width: 30%;
-  height: 34px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-top-left-radius: 17px;
-  border-bottom-left-radius: 17px;
+  height: 20px;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* border-top-left-radius: 17px; */
+  /* border-bottom-left-radius: 17px; */
+  background: url('../../../images/bg_progressbar.png') repeat-x;
+  background-size: contain;
+  border-radius: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  .ico-info__docs {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .ico-info__doc:first-of-type {
+    margin-bottom: 20px;
+  }
+
+  .ico-info__amount {
+    display: flex;
+  }
+
+  .ico-info__progressBar,
+  .ico-info__progress {
+    height: 34px;
+    position: relative;
+  }
+
+  .ico-info__progress {
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 0;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+  }
+
+  .ico-info__progress span {
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    top: 8px;
+  }
+
+  .ico-info__desktop-amount-progressBar {
+    display: none;
+  }
+  
+  .ico-info__mobile-amount-progressBar {
+    display: block;
+  }
 }

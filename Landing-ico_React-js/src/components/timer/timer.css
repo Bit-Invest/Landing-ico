@@ -1,6 +1,7 @@
 .timer {
   display: flex;
   font-weight: 600;
+  justify-content: space-around;
 }
 
 .timer__title, .timer__value {

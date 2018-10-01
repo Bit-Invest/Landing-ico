@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { ProgressBar } from '@components/progressBar';
 import currency_icons from '../../../images/currency_icons.png'
 import btcbit_logo_head from '../../../images/btcbit_logo_head.png'
+import block_3_ico_1 from '../../../images/block_3_ico_1.png';
 import BancorLogo from '../../../media/bancor_logo.png';
 import HBLogo from '../../../media/hb_logo.png';
 import Hotbit from '../../../media/hotbit_logo.757f4b29.png';
@@ -37,9 +38,17 @@ const IcoInfo = props => {
         </div>
         <img className={`${ROOT_CLASS}__currency_icons`} src={currency_icons} alt={"CINDX"}/>
         <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#2'] } <span>$21,000,000</span></div>
-        <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>${outputValue} / $3,800,000</span></div>
-        <div className={`${ROOT_CLASS}__progressBar`}>
-          <div className={`${ROOT_CLASS}__progress`} style={{ width: ((startSum / finishSum) * 100) + '%' }}></div>
+        <div className={`${ROOT_CLASS}__desktop-amount-progressBar`}>
+          <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>${outputValue} / $3,800,000</span></div>
+          <div className={`${ROOT_CLASS}__progressBar`}>
+            <div className={`${ROOT_CLASS}__progress`} style={{ width: ((startSum / finishSum) * 100) + '%' }}></div>
+          </div>
+        </div>
+        <div className={`${ROOT_CLASS}__mobile-amount-progressBar`}>
+          <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>$3,800,000</span></div>
+          <div className={`${ROOT_CLASS}__progressBar`}>
+            <div className={`${ROOT_CLASS}__progress`} style={{ width: ((startSum / finishSum) * 100) + '%' }}><span>${outputValue}</span></div>
+          </div>
         </div>
       </div>
       <div className={`${ROOT_CLASS}__signed-partners`}>
@@ -64,7 +73,17 @@ const IcoInfo = props => {
             className={`${ROOT_CLASS}__partner ${ROOT_CLASS}__partner_hbtop`}
           />
         </div>
-        <div className={`${ROOT_CLASS}__ratings`}>
+        <div className={`${ROOT_CLASS}__docs`}>
+          <div className={`${ROOT_CLASS}__doc`}>
+            <div className={`${ROOT_CLASS}__docs-icon`}><i style={{ backgroundImage: `url(${block_3_ico_1})` }} /></div>
+            <span className={`${ROOT_CLASS}__docs-name`}>WHITEPAPER</span>
+          </div>
+          <div className={`${ROOT_CLASS}__doc`}>
+            <div className={`${ROOT_CLASS}__docs-icon`}><i style={{ backgroundImage: `url(${block_3_ico_1})` }} /></div>
+            <span className={`${ROOT_CLASS}__docs-name`}>ONE PAGER</span>
+          </div>
+        </div>
+        {/* <div className={`${ROOT_CLASS}__ratings`}>
           <a target="_blank" href='https://topicolist.com/cindx/' className={`${ROOT_CLASS}__href-rating-icon`}>
             <img src={rating_topicolist} className={`${ROOT_CLASS}__rating-icon`} />
           </a>
@@ -82,7 +101,7 @@ const IcoInfo = props => {
           <a target="_blank" href='https://icoholder.com/en/cindx-22233' className={`${ROOT_CLASS}__href-rating-icon`}>
             <img src={rating_topicolisth} className={`${ROOT_CLASS}__rating-icon`} />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   )

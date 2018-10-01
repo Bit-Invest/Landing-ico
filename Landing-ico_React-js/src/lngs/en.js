@@ -6,8 +6,8 @@ const en = {
 
     'icoInfo#1': 'We accept:',
     'icoInfo#2': 'Hard Cap:',
-    'icoInfo#3': 'Soft Cap Milestone:',
-    'icoInfo#4': 'Listing Agreements are Signed With:',
+    'icoInfo#3': 'Soft Cap Milestone: ',
+    'icoInfo#4': 'Listing Agreements are Signed With: ',
 
     'menu#1': 'WHITEPAPER',
     'menu#2': 'PRESENTATION',
@@ -60,8 +60,8 @@ const en = {
     'progressBarSale#11': 'Dec 3',
     'progressBarSale#12': 'Dec 17',
 
-    'cryptoAssetsManagement#1.1': 'CINDX is a Сrypto Asset Management Hub. We solve the problems of investors,',
-    'cryptoAssetsManagement#1.2': 'traders and developers',
+    'cryptoAssetsManagement#1.1': 'CINDX is a Сrypto Asset Management Hub.',
+    'cryptoAssetsManagement#1.2': 'We solve the problems of investors, traders and developers',
     'cryptoAssetsManagement#2': 'СINDX.MARKETPLACE FOR INVESTORS',
     'cryptoAssetsManagement#3': 'Don’t worry about your knowledge and experience – the experts of crypto trading are here to help you',
     'cryptoAssetsManagement#4': 'Control your currency: your coins are kept in your wallet at all times',
@@ -76,8 +76,8 @@ const en = {
     'cryptoAssetsManagement#13': 'CINDX.hub - the component includes a vendor’s account, as well as a hub for testing and integrating third-party software',
     'cryptoAssetsManagement#14': 'CINDX.dao - a component that allows you to implement a voting system for the community based on decentralised autonomous organisation rules',
 
-    'teamLegal#1': 'We Нave a Great Team and a Best-in-class',
-    'teamLegal#2': 'Legal and Regulatory Organizational Framework',
+    'teamLegal#1': 'We Have a Great Team and Legal Department',
+    // 'teamLegal#2': 'Legal and Regulatory Organizational Framework',
     'teamLegal#3': 'CRYPTOCURRENCY EXCHANGE LICENSE',
     'teamLegal#4': 'FINANCIAL INSTITUTION LICENSE',
     'teamLegal#5': 'CRYPTO WALLET LICENSE',
@@ -87,7 +87,7 @@ const en = {
     'teamLegal#9': 'FINANCIAL MODEL',
     'teamLegal#10': 'LEGAL DOCS',
 
-    'roadmap#1': 'Roadmap',
+    'roadmap#1': 'Roadmap for $21m Scenario',
     'roadmap#2': 'SCENARIO',
     'roadmap#3': 'We are building the base for the CINDX platform. At this step, the Minimum Viable Product (MVP) is developed. The MVP allows an access to exchanges and replication protocol. A large portion of our resources is allocated to the scalability and security of the platform.',
     'roadmap#4': 'The CINDX.alpha version of the platform will be released. This includes a blockchain architecture and a basic system of settlement via smart contracts. The CINDX.market and CINDX.trade components will be  going through some alterations to add functionalities.  ',
@@ -165,7 +165,7 @@ const en = {
     'tokenSaleDetails#3': 'Bounty',
     'tokenSaleDetails#4': 'Advisers',
     'tokenSaleDetails#5': 'Reserve',
-    'tokenSaleDetails#6': 'Traders Recruitment Program',
+    'tokenSaleDetails#6': 'Community Grants',
     'tokenSaleDetails#7': 'Token Liquidity Support',
     'tokenSaleDetails#8': 'Available for Sale',
     'tokenSaleDetails#9': 'Token Name:',
@@ -547,14 +547,14 @@ const en = {
     'joinTokenPreSale#2': 'JOIN PRE-SALE',
     'joinTokenPreSale#3': 'TEST MVP',
     'joinTokenPreSale#4': 'Head Office',
-    'joinTokenPreSale#5': 'Harjumaa, Erika 14,',
-    'joinTokenPreSale#6': 'Talinn, 10416, Estonia',
-    'joinTokenPreSale#7': 'Business inquiries | hello@cindx.io',
+    'joinTokenPreSale#5': 'Estonia, Talinn',
+    'joinTokenPreSale#6': '10416, Harjumaa, Erika 14',
+    'joinTokenPreSale#7': 'Business inquiries - hello@cindx.io',
     'joinTokenPreSale#8': 'Legal Disclaimer',
     'joinTokenPreSale#9': 'Development and Marketing',
-    'joinTokenPreSale#10': 'Presnenskaya naberezhnaya, 8 building 1,',
-    'joinTokenPreSale#11': 'Moscow, 123112, Russia',
-    'joinTokenPreSale#12': 'Careers | Join our team',
+    'joinTokenPreSale#10': 'Russia, Moscow',
+    'joinTokenPreSale#11': '123112, Presnenskaya naberezhnaya, 8 / 1',
+    'joinTokenPreSale#12': 'Careers - ',
 }
 
 export default en

@@ -758,10 +758,6 @@ width: 720px;
       margin: 0 auto;
     }
 
-    .block_9 .container2 {
-      margin: 70px 45px 0;
-    }
-
   }
 
     .block_6 .owl-carousel .owl-nav .owl-next,
@@ -1851,6 +1847,9 @@ body.compensate-for-scrollbar {
       height: 33px!important;
     }
 
+    .block_8 .ourPartners .btcbit-promo {
+      height: 95px!important;
+    }
   }
 
 @media screen and (max-width: 767px) {
@@ -1921,7 +1920,7 @@ body.compensate-for-scrollbar {
 
   .size {
     padding-top: 40px;
-    margin-top: -7px;
+    margin-top: -2px;
   }
 
   .roadmap__buttons {
@@ -1971,6 +1970,7 @@ body.compensate-for-scrollbar {
 
   .roadmap__image {
     width: 80%;
+    height: 100%;
   }
 
   .roadmap__text {
@@ -2087,7 +2087,7 @@ body.compensate-for-scrollbar {
 
   .progress-bar {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: 0 5%;
     width: auto;
   }
@@ -2099,23 +2099,6 @@ body.compensate-for-scrollbar {
 
   .block_4 .cont_1 .mobile-pop-up-block {
     width: 90%;
-  }
-
-  .block_4 .cont_5 {
-    display: flex;
-    flex-direction: column;
-    margin: 0 5%;
-    margin-top: 40px;
-  }
-
-  .block_4 .cont_4 {
-    margin: 0 5%;
-    width: auto;
-  }
-
-  .block_4 .cont_4 {
-    margin: 0 5%;
-    width: auto;
   }
 
   .block_4 .cont_2 {
@@ -2235,17 +2218,16 @@ body.compensate-for-scrollbar {
     margin-top: -70px;
   }
 
-  .block_8 {
-    padding-bottom: 20px;
-  }
-
   .block_8 .block_arrow_relative {
     margin-bottom: 50px;
   }
 
+  .block_8 .team h2  {
+    width: 59%!important; 
+  }
+
   .block_8 h2 {
     font-size: 26px!important;
-    width: 59%!important;
     margin: 0 7%!important;
   }
 
@@ -2261,6 +2243,7 @@ body.compensate-for-scrollbar {
     width: 90%;
     margin-left: 5%;
     border-radius: 10px;
+    height: 770px;
   }
 
   .block_8 .advisers .slick-list {
@@ -2286,11 +2269,10 @@ body.compensate-for-scrollbar {
   .block_8 .ourPartners .container3 .slick-list {
     width: 100%;
     height: auto;
-    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0px 25px;
+    padding: 0px 25px 20px 25px;
   }
 
   .socIcons .fixedSocIcon .socIconsBlock {
@@ -2319,29 +2301,6 @@ body.compensate-for-scrollbar {
 
   .block_8 .settings2_1 .slick-next, .block_8 .settings2_1 .slick-prev {
     margin-top: -22px;
-  }
-
-  .block_9 {
-    display: block!important;
-  }
-
-  .block_9 .adress {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 40px 0 0 0;
-  }
-
-  .block_9 a.sb_2 {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  .block_9 .container2 {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0px 70px 5%;
-    width: 90%;
   }
 }
 
