@@ -230,6 +230,7 @@ class CryptoAssetsManagement extends React.Component {
     const slider = window.innerWidth > 767 ? this.slider : this.mobileSlider
 
     slider.slickNext()
+    slider.props.finishAnimation()
 
     slider.innerSlider.state.currentSlide === cryptoArr.length - 1 ?
       slider.props.afterChange(0) :
@@ -240,16 +241,21 @@ class CryptoAssetsManagement extends React.Component {
     const slider = window.innerWidth > 767 ? this.slider : this.mobileSlider
   
     slider.slickPrev()
+    slider.props.finishAnimation()
 
     slider.innerSlider.state.currentSlide === 0 ?
       slider.props.afterChange(cryptoArr.length - 1) :
       slider.props.afterChange(slider.innerSlider.state.currentSlide - 1)
+    
+    
   }
 
   dotsSlide = (i) => {
     const slider = window.innerWidth > 767 ? this.slider : this.mobileSlider
 
     slider.slickGoTo(i)
+    slider.props.finishAnimation()
+
     slider.props.afterChange(i)
   }
 
@@ -268,15 +274,22 @@ class CryptoAssetsManagement extends React.Component {
       fade: true,
       adaptiveHeight: true,
       beforeChange: () => {
-        this.setState({
-          isChange: true
-        })
+        setTimeout(() => {
+          this.setState({
+            isChange: true
+          })
+        }, 0)
       },
       afterChange: (i) => {
         this.setState({
           currentCrypto: i,
           isChange: false,
           isDefault: false
+        })
+      },
+      finishAnimation: () => {
+        this.setState({
+          isChange: false
         })
       },
       responsive: [
