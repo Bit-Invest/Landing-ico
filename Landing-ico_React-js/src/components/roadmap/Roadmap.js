@@ -53,7 +53,7 @@ export class Roadmap extends React.Component {
   }
 
   render() {
-    console.log('NEW', this.props.imageSrc)
+    console.log('NEW')
     return (
       <div className={`${ROOT_CLASS} ${ROOT_CLASS}__headcontainer`}>
         { this.state.isOpen ?

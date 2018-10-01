@@ -260,12 +260,6 @@
     width: 868px;
     left: 25px;
   }
-  .roadmap__text {
-    width: 620px;
-  }
-  .roadmap__image {
-    width: 620px;
-  }
 }
 
 @media screen and (max-width: 1439px) {
