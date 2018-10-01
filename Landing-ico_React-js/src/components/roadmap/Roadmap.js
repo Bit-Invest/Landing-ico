@@ -28,10 +28,16 @@ export class Roadmap extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isOpen: false
+      isOpen: false,
+      isChange: true
     }
   }
 
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({ isChange: false })
+    }, 300)
+  }
 
   renderCircles = () => {
     let result = [];
@@ -53,7 +59,7 @@ export class Roadmap extends React.Component {
   }
 
   render() {
-    console.log('NEW')
+    console.log('FIX')
     return (
       <div className={`${ROOT_CLASS} ${ROOT_CLASS}__headcontainer`}>
         { this.state.isOpen ?
@@ -148,7 +154,7 @@ export class Roadmap extends React.Component {
                         this.setState({ isOpen: true })
                     }
                   } 
-                  className={`${ROOT_CLASS}__image`} 
+                  className={`${ROOT_CLASS}__image ${this.state.isChange ? 'change' : ''}`} 
                   src={this.props.imageSrc} 
                   alt="CINDEX"
                 />
