@@ -222,6 +222,11 @@
   transform: rotate(-45deg);
 }
 
+@media screen and (min-width: 1440px) {
+  .roadmap__content {
+    padding-bottom: 0;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .road-show-block .header_blocks {
