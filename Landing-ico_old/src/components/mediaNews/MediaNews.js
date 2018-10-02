@@ -86,6 +86,9 @@ import AERUM from '../../news/AERUM.jpg'
 import CINDX_TEAM_JELENA_KARZETSKAJA from '../../news/CINDX_TEAM_JELENA_KARZETSKAJA.png'
 import Weekly_Digest_17_09_2018_23_09_2018 from '../../news/Weekly_Digest_17_09_2018_23_09_2018.jpg'
 import ERC_1400 from '../../news/ERC_1400.jpg'
+import Huobi_MENA from '../../news/Huobi_MENA.jpg'
+import investing_into_cryptocurrencies from '../../news/investing_into_cryptocurrencies.png'
+import st_place_in_the_pitch_competition from '../../news/st_place_in_the_pitch_competition.png'
 import './MediaNews.css';
 
 const media = [
@@ -704,8 +707,8 @@ let news = [
   {
     videoSrc: 'https://www.facebook.com/cindx.io/posts/1682625761866815',
     screen: ASEAN,
-    name: 'CINDX CEO Yuriy Avdeev Makes his Pitch at the ASEANDIGITAL 5.0 SUMMIT',
-    text: 'The CINDX Roadshow takes another stage! Today, CINDX CEO Yuriy Avdeev pitched at the ASEANDIGITAL 5.0 SUMMIT in Bangkok. The event aims to bridge the gap in digital transformations between businesses, communities, and governments.',
+    name: 'CINDX CEO Yuriy Avdeev Makes his Pitch at the ASEAN_DIGITAL 5.0 SUMMIT',
+    text: 'The CINDX Roadshow takes another stage! Today, CINDX CEO Yuriy Avdeev pitched at the ASEAN_DIGITAL 5.0 SUMMIT in Bangkok. The event aims to bridge the gap in digital transformations between businesses, communities, and governments.',
     source: 'www.facebook.com',
     centered: true
   },
@@ -730,6 +733,33 @@ let news = [
     screen: Weekly_Digest_17_09_2018_23_09_2018,
     name: 'Weekly Digest (17.09.2018 - 23.09.2018)',
     text: 'We have prepared a new weekly report for you! A lot has happened. Read our posts on Medium and don’t forget to join CINDX STO to earn a 20 % token bonus today!',
+    source: 'www.medium.com',
+    centered: true
+  },
+
+
+
+  {
+    videoSrc: 'https://www.facebook.com/cindx.io/photos/1683815501747841',
+    screen: Huobi_MENA,
+    name: 'CINDX meets Huobi MENA',
+    text: 'CINDX is an international company, spreading its presence in a growing number of blockchain-friendly countries. During our recent time in Dubai, we had the honour of meeting with Sultan Bin Kharsham Al Ali and Mohit Davar, Co-Founders and Directors at Huobi MENA.',
+    source: 'www.facebook.com',
+    centered: false
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/investing-into-cryptocurrencies-with-cindx-2a96aa2f7620',
+    screen: investing_into_cryptocurrencies,
+    name: 'Have you ever thought about investing into cryptocurrencies?',
+    text: 'Imagine a platform that would give you the chance really to plunge into the cryptocurrency world and to learn to profit in it. What would that platform be? Perhaps it would be CINDX.',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: 'https://medium.com/cindx/1st-place-in-the-pitch-competition-at-asean-digital-342dfb0ee61',
+    screen: st_place_in_the_pitch_competition,
+    name: 'CINDX Wins 1st Place and $30,000 in the Pitch Competition at ASEAN DIGITAL 5.0',
+    text: 'Awesome news! CINDX was named as the winner of the Pitch Competition organised by ASEAN Digital 5.0! The CINDX team takes pride in our project, and in this well-deserved award! It’s definitely not our last victory!',
     source: 'www.medium.com',
     centered: true
   },

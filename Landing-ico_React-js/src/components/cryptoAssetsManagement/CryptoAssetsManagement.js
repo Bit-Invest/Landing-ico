@@ -252,8 +252,6 @@ class CryptoAssetsManagement extends React.Component {
     const slider = window.innerWidth > 767 ? this.slider : this.mobileSlider
 
     slider.slickGoTo(i)
-    slider.props.finishAnimation()
-
     slider.props.afterChange(i)
   }
 
