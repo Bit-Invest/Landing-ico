@@ -34,7 +34,6 @@ export class Roadmap extends React.Component {
   }
 
   componentDidMount = () => {
-    console.log('NEW')
     setTimeout(() => {
       this.setState({ isChange: false })
     }, 300)
@@ -147,20 +146,20 @@ export class Roadmap extends React.Component {
                 <p className={`${ROOT_CLASS}__text`}>
                   {this.props.descText}
                 </p>
-                <img 
-                  onClick={
-                    () => {
-                      if (window.innerWidth >= 768)
-                        this.setState({ isOpen: true })
-                    }
-                  } 
-                  className={`${ROOT_CLASS}__image`}
-                  style={{
-                    display: this.state.isChange ? 'flex' : 'block'
-                  }}
-                  src={this.props.imageSrc} 
-                  alt="CINDEX"
-                />
+                { !this.state.isChange ?
+                  <img 
+                    onClick={
+                      () => {
+                        if (window.innerWidth >= 768)
+                          this.setState({ isOpen: true })
+                      }
+                    } 
+                    className={`${ROOT_CLASS}__image`}
+                    src={this.props.imageSrc} 
+                    alt="CINDEX"
+                  /> :
+                  null
+                }
               </div>
             </div>
           </div>
