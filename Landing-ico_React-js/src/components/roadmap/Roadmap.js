@@ -29,14 +29,7 @@ export class Roadmap extends React.Component {
     super(props)
     this.state = {
       isOpen: false,
-      isChange: true
     }
-  }
-
-  componentDidMount = () => {
-    setTimeout(() => {
-      this.setState({ isChange: false })
-    }, 300)
   }
 
   renderCircles = () => {
@@ -146,20 +139,17 @@ export class Roadmap extends React.Component {
                 <p className={`${ROOT_CLASS}__text`}>
                   {this.props.descText}
                 </p>
-                { !this.state.isChange ?
-                  <img 
-                    onClick={
-                      () => {
-                        if (window.innerWidth >= 768)
-                          this.setState({ isOpen: true })
-                      }
-                    } 
-                    className={`${ROOT_CLASS}__image`}
-                    src={this.props.imageSrc} 
-                    alt="CINDEX"
-                  /> :
-                  null
-                }
+                <img
+                  onClick={
+                    () => {
+                      if (window.innerWidth >= 768)
+                        this.setState({ isOpen: true })
+                    }
+                  }
+                  className={`${ROOT_CLASS}__image`}
+                  src={this.props.imageSrc}
+                  alt="CINDEX"
+                />
               </div>
             </div>
           </div>
