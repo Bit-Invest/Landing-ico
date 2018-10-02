@@ -36,7 +36,7 @@ export class Roadmap extends React.Component {
   componentDidMount = () => {
     setTimeout(() => {
       this.setState({ isChange: false })
-    }, 100)
+    }, 300)
   }
 
   renderCircles = () => {
