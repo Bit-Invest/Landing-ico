@@ -139,16 +139,15 @@ export class Roadmap extends React.Component {
                 <p className={`${ROOT_CLASS}__text`}>
                   {this.props.descText}
                 </p>
-                <img
+                <div
                   onClick={
                     () => {
                       if (window.innerWidth >= 768)
                         this.setState({ isOpen: true })
                     }
                   }
-                  className={`${ROOT_CLASS}__image`}
-                  src={this.props.imageSrc}
-                  alt="CINDEX"
+                  className={`${ROOT_CLASS}__image ${ROOT_CLASS}__image-${this.props.quartalCour}`}
+                  style={{ backgroundImage: `url(${this.props.imageSrc})` }}
                 />
               </div>
             </div>

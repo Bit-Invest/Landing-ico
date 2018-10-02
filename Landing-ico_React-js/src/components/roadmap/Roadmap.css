@@ -108,6 +108,9 @@
   width: 600px;
   height: 100%;
   cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 550px;
 }
 
 .roadmap__disc {
@@ -235,6 +238,11 @@
 
   .roadmap__content {
     padding-bottom: 50px;
+  }
+
+  .roadmap__image {
+    width: 80%;
+    height: 60vw;
   }
 }
 

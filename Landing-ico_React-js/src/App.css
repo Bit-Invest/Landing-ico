@@ -1968,11 +1968,6 @@ body.compensate-for-scrollbar {
     width: 650px;
   }
 
-  .roadmap__image {
-    width: 80%;
-    height: 100%;
-  }
-
   .roadmap__text {
     width: 87%!important;
   }
