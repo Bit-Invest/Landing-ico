@@ -22,10 +22,8 @@ const IcoInfo = props => {
   const finishSum = 3800000
 
   const openPopup = (e) => {
-    if (ab_val === '1') {
-      e.preventDefault()
-      props.showDocPopup('')
-    }
+    e.preventDefault()
+    props.showDocPopup('')
   }
 
   return (

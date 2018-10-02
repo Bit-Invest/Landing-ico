@@ -238,10 +238,8 @@ class TokenInfo extends React.Component {
 
 const Docs = props => {
   const openPopup = (e) => {
-    if (ab_val === '1') {
-      e.preventDefault()
-      props.showDocPopup('')
-    }
+    e.preventDefault()
+    props.showDocPopup('')
   }
   
   return(

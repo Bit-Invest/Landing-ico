@@ -62,7 +62,8 @@ const teamInfo = [
     fackt2: indexLngObj[lng]['teamAdvisersPartners#12'],
     fackt3: indexLngObj[lng]['teamAdvisersPartners#13'],
     src: 'https://www.linkedin.com/in/valjerdes/',
-    m: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61'
+    m: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61',
+    videoSrc: 'https://www.youtube.com/embed/ubN0rCtKj_E'
   },
   {
     img: Mofassair_Hossain,
@@ -93,7 +94,8 @@ const teamInfo = [
     fackt2: indexLngObj[lng]['teamAdvisersPartners#27'],
     fackt3: indexLngObj[lng]['teamAdvisersPartners#28'],
     src: 'https://ru.linkedin.com/in/denis-eskenazi-03b81726',
-    m: 'https://medium.com/cindx/denis-eskenazi-ac67e81d8c50'
+    m: 'https://medium.com/cindx/denis-eskenazi-ac67e81d8c50',
+    videoSrc: 'https://www.youtube.com/embed/OKdT6GiSGuY'
   },
   {
     img: Ibraghim_Haniev,
@@ -386,10 +388,10 @@ class TeamAdvisersPartners extends React.Component {
       return (
         <div key={i} className="item">
           <div className="img" style={{ backgroundImage: `url(${el.img})` }}>
-            <div onClick={() => this.showVideoInPopUp(el.video)}>
+            <div onClick={() => this.showVideoInPopUp(el.videoSrc)}>
               <img
                 className="playButtonWhite"
-                style={{display: el.video ? 'block' : 'none'}}
+                style={{display: el.videoSrc ? 'block' : 'none'}}
                 src={playButtonWhite}
                 alt={"CINDX"}
               />
@@ -419,10 +421,10 @@ class TeamAdvisersPartners extends React.Component {
       return (
         <div key={i} className="item">
           <div className="img" style={{ backgroundImage: `url(${el.img})` }}>
-            <div onClick={() => this.showVideoInPopUp(el.video)}>
+            <div onClick={() => this.showVideoInPopUp(el.videoSrc)}>
               <img
                 className="playButtonWhite"
-                style={{display: el.video ? 'block' : 'none'}}
+                style={{display: el.videoSrc ? 'block' : 'none'}}
                 src={playButtonWhite}
                 alt={"CINDX"}
               />
