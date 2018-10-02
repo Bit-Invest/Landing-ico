@@ -42,6 +42,8 @@ const en = {
     'mailForm#25': 'Your Email',
     'mailForm#26': 'BUY CINX TOKENS',
     'mailForm#27': 'AGREE & SUBMIT',
+    'mailForm#28': 'Get it before everyone else does Offer expires within',
+    'mailForm#29': 'Want to get the latest news and upcoming offers?',
 
     'docPopup#1': 'Receive all documents in your email',
     'docPopup#2': 'Enter your email',
@@ -59,6 +61,8 @@ const en = {
     'progressBarSale#10': 'Nov 19',
     'progressBarSale#11': 'Dec 3',
     'progressBarSale#12': 'Dec 17',
+
+    'ourTopRatings#1': 'Our Top Ratings',
 
     'cryptoAssetsManagement#1.1': 'CINDX is a Сrypto Asset Management Hub.',
     'cryptoAssetsManagement#1.2': 'We solve the problems of investors, traders and developers',
@@ -370,6 +374,8 @@ const en = {
     'mediaNews#2_91': 'Weekly digest (13.08.18 - 19.08.18)',
     'mediaNews#2_92': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don"t miss',
 
+    'socialMedia#1': 'For more information, follow us on social media:',
+
     'teamAdvisersPartners#1': 'Team of 50+ Members',
     'teamAdvisersPartners#2': 'Advisers',
     'teamAdvisersPartners#3': 'Our Partners',
@@ -555,6 +561,7 @@ const en = {
     'joinTokenPreSale#10': 'Russia, Moscow',
     'joinTokenPreSale#11': '123112, Presnenskaya naberezhnaya, 8 / 1',
     'joinTokenPreSale#12': 'Careers - ',
+    'joinTokenPreSale#13': 'Follow us:'
 }
 
 export default en

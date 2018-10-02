@@ -48,6 +48,8 @@ const ko = {
     'mailForm#25': '이메일',
     'mailForm#26': '프리세일에 참여하세요!',
     'mailForm#27': '동의 & 제출',
+    'mailForm#28': 'Get it before everyone else does Offer expires within',
+    'mailForm#29': 'Want to get the latest news and upcoming offers?',
 
     'docPopup#1': '귀하의 이메일에 있는 모든 문서를 수신',
     'docPopup#2': '이메일을 입력',
@@ -65,6 +67,8 @@ const ko = {
     'progressBarSale#10': '11 월 19일',
     'progressBarSale#11': '12 월 3일',
     'progressBarSale#12': '12 월 17일',
+
+    'ourTopRatings#1': 'Our Top Ratings',
 
     'cryptoAssetsManagement#1.1': 'CIDNX는 암호화 자산 관리 허브입니다. 투자자, 트 ,',
     'cryptoAssetsManagement#1.2': '트레이더, 개발자가 가지고 있는 문제를 해결합니다.',
@@ -369,6 +373,9 @@ const ko = {
     'mediaNews#2_85': 'Weekly digest (13.08.18 - 19.08.18)',
     'mediaNews#2_86': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don\'t miss!',
 
+
+    'socialMedia#1': 'For more information, follow us on social media:',
+
     'teamAdvisersPartners#1': '50명 이상으로 구성된 팀',
     'teamAdvisersPartners#2': '고문',
     'teamAdvisersPartners#3': '우리의 파트너 ',
@@ -555,6 +562,7 @@ const ko = {
     'joinTokenPreSale#10': 'Presnenskaya naberezhnaya, 8 building 1,',
     'joinTokenPreSale#11': 'Moscow, 123112, Russia',
     'joinTokenPreSale#12': '커리어 | 팀에 참여하세요 |',
+    'joinTokenPreSale#13': 'Follow us:'
 }
 
 export default ko

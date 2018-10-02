@@ -2,6 +2,9 @@ import React from 'react'
 
 import './SocialMedia.css'
 
+import { lng } from '../../links'
+import indexLngObj from '../../lngs/index'
+
 const ROOT_CLASS = 'social-media'
 
 const SocialMedia = () => {
@@ -9,7 +12,7 @@ const SocialMedia = () => {
         <div className={ROOT_CLASS}>
             <div className={`${ROOT_CLASS}__wrapper`}>
                 <div className={`${ROOT_CLASS}__header`}>
-                    For more information, follow us on social media:
+                    { indexLngObj[lng]['socialMedia#1'] }
                 </div>
                 <div className={`${ROOT_CLASS}__icons`}>
                     <div className={`${ROOT_CLASS}__left-block`}>

@@ -173,7 +173,7 @@ class MailForm extends React.Component {
               { step_content.bonus[sale_step] }
             </div>
             <div className={`${ROOT_CLASS}__top-name-text`}>
-              <span className={`${ROOT_CLASS}__name-text-span ${this.props.isTokenDetails ? `${ROOT_CLASS}__name-text-span-token-sale` : ''}`}>Get it before everyone else does Offer expires within</span>
+              <span className={`${ROOT_CLASS}__name-text-span ${this.props.isTokenDetails ? `${ROOT_CLASS}__name-text-span-token-sale` : ''}`}>{ indexLngObj[lng]['mailForm#28'] }</span>
             </div>
             <div className={`${ROOT_CLASS}__description`}>
               { step_content.desc1[sale_step] }
@@ -201,7 +201,7 @@ class MailForm extends React.Component {
               </div>
             </div>
             <div className={`${ROOT_CLASS}__name-text`}>
-              <span className={`${ROOT_CLASS}__name-text-span ${this.props.isTokenDetails ? `${ROOT_CLASS}__name-text-span-token-sale` : ''}`}>Want to get the latest news and upcoming offers?</span>
+              <span className={`${ROOT_CLASS}__name-text-span ${this.props.isTokenDetails ? `${ROOT_CLASS}__name-text-span-token-sale` : ''}`}>{ indexLngObj[lng]['mailForm#29'] }</span>
             </div>
           </div>
           <div className={`${ROOT_CLASS}__input ${ (submitStatus === 0 || submitStatus === 1) ? "errorRed" : null }`}>

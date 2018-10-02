@@ -46,7 +46,7 @@ const ProgressBarSale = props => {
         </div> : 
         null
       }
-      <div className="container">
+      {/* <div className="container">
         <div className={`left-block-bonuses ${(lng === 'tr' || lng === 'ja' || lng === 'pt') ? 'tr-left-block-bonuses' : null}`}>
           <div>{ indexLngObj[lng]['progressBarSale#1'] }</div>
           <div>{ indexLngObj[lng]['progressBarSale#2'] }</div>
@@ -91,7 +91,7 @@ const ProgressBarSale = props => {
             <p>{ indexLngObj[lng]['progressBarSale#12'] }</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

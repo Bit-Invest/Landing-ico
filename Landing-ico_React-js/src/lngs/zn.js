@@ -11,7 +11,7 @@ const zn = {
 
     'menu#1': '白皮书 ',
     'menu#2': '演示文稿',
-    'menu#3': 'ONE PAGER（单页报告） ',
+    'menu#3': '单页报告',
     'menu#4': '财务模型 ',
     'menu#5': '法律文件',
     'menu#6': 'EN',
@@ -48,6 +48,8 @@ const zn = {
     'mailForm#25': '您的电子邮箱',
     'mailForm#26': '参与预售',
     'mailForm#27': '同意和提交',
+    'mailForm#28': 'Get it before everyone else does Offer expires within',
+    'mailForm#29': 'Want to get the latest news and upcoming offers?',
 
     'docPopup#1': '把所有的文件收到你的邮箱',
     'docPopup#2': '输入你的电子邮箱',
@@ -65,6 +67,8 @@ const zn = {
     'progressBarSale#10': '11月19日',
     'progressBarSale#11': '12月3日',
     'progressBarSale#12': '12月17日',
+
+    'ourTopRatings#1': 'Our Top Ratings',
 
     'cryptoAssetsManagement#1.1': 'CINDX是一个加密货币资产管理中心。',
     'cryptoAssetsManagement#1.2': '我们致力于为投资者、交易者和开发商解决切实问题。 ',
@@ -182,7 +186,7 @@ const zn = {
     'tokenSaleDetails#14': '50美元等值',
     'tokenSaleDetails#15': '白皮书',
     'tokenSaleDetails#16': '演示文稿',
-    'tokenSaleDetails#17': 'ONE PAGER（单页报告） ',
+    'tokenSaleDetails#17': '单页报告',
     'tokenSaleDetails#18': '财务模型',
     'tokenSaleDetails#19': '法律文件',
     'tokenSaleDetails#20': '收益用途',
@@ -367,6 +371,10 @@ const zn = {
     'mediaNews#2_84': 'Enjoy reading what inspired Yuriy Avdeev to create a project that will help all participants of the crypto market to be profitably engaged - CINDX.',
     'mediaNews#2_85': 'Weekly digest (13.08.18 - 19.08.18)',
     'mediaNews#2_86': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don\'t miss!',
+
+
+
+    'socialMedia#1': 'For more information, follow us on social media:',
 
     'teamAdvisersPartners#1': '团队成员超过50人',
     'teamAdvisersPartners#2': '顾问',
@@ -553,6 +561,7 @@ const zn = {
     'joinTokenPreSale#10': 'Presnenskaya naberezhnaya, 8 building 1,',
     'joinTokenPreSale#11': 'Moscow, 123112, Russia',
     'joinTokenPreSale#12': '工作机会 | 加入我们',
+    'joinTokenPreSale#13': 'Follow us:'
 }
 
 export default zn;

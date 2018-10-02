@@ -31,7 +31,7 @@ export const JoinTokenPreSale = () => (
           { indexLngObj[lng]['joinTokenPreSale#3'] }
         </a> */}
         <div className="icons_wrapper">
-          <div className="caption">Follow us:</div>
+          <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#13'] }</div>
           <div className="icon_block">
             <a target="_blank" href="https://bitcointalk.org/index.php?topic=4421275.0">
               <img className="icon" src={bitcointalk_icon} alt={"CINDEX"}/>

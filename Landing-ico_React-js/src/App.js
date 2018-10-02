@@ -14,7 +14,7 @@ import { CryptoAssetsManagement } from './components/cryptoAssetsManagement/Cryp
 import { TeamLegal } from './components/teamLegal/TeamLegal';
 import { Roadmap } from '@components/roadmap';
 import { CanvasMouns } from '@components/animate';
-// import { ProgressBarSale } from '@components/progressBarSale/ProgressBarSale';
+import { ProgressBarSale } from '@components/progressBarSale/ProgressBarSale';
 import { Menu } from '@components/menu/Menu';
 // import RoadsShow from './components/roadsShow/RoadsShow';
 // import { SocIcons } from '@components/socIcons/SocIcons';
@@ -49,9 +49,9 @@ class App extends React.Component {
         <div className="contentText">
           <Menu />
           <MainBlock />
+          <ProgressBarSale />
           <OurTopRatings />
           <MediaAboutUs />
-          {/* <ProgressBarSale /> */}
           <CryptoAssetsManagement />
           <TeamLegal />
           <Roadmap />

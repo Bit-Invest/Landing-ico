@@ -1,5 +1,4 @@
 .progressBarSale {
-  padding: 50px 0;
   background-color: rgba(255, 255, 255, 0.05);
   color: white;
 }
@@ -78,7 +77,7 @@
 .container__dock-block {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  padding: 50px 0;
 }
 
 .container__dock-block .download_public_doc {

@@ -48,6 +48,8 @@ const tr = {
     'mailForm#25': `E-posta adresiniz`,
     'mailForm#26': `Ön Satışa Katılın`,
     'mailForm#27': `KABUL & GÖNDER`,
+    'mailForm#28': 'Get it before everyone else does Offer expires within',
+    'mailForm#29': 'Want to get the latest news and upcoming offers?',
 
     'docPopup#1': 'E-postanıza tüm belgeleri alın',
     'docPopup#2': 'E-postanızı girin',
@@ -65,6 +67,8 @@ const tr = {
     'progressBarSale#10': `Kasım 19`,
     'progressBarSale#11': `Aralık 3`,
     'progressBarSale#12': `Aralık 17`,
+
+    'ourTopRatings#1': 'Our Top Ratings',
 
     'cryptoAssetsManagement#1.1': `CINDX bir Kripto Varlık Yönetim Merkezidir.`,
     'cryptoAssetsManagement#1.2': `Yatırımcıların, borsacıların ve geliştiricilerin sorunlarına çözüm getiriyoruz.`,
@@ -367,6 +371,11 @@ const tr = {
     'mediaNews#2_85': `Weekly digest (13.08.18 - 19.08.18)`,
     'mediaNews#2_86': `CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don\'t miss!`,
 
+
+
+
+    'socialMedia#1': 'For more information, follow us on social media:',
+
     'teamAdvisersPartners#1': `50'den fazla üyeye sahip ekip`,
     'teamAdvisersPartners#2': `Danışmanlar`,
     'teamAdvisersPartners#3': `Ortaklarımız`,
@@ -527,6 +536,7 @@ const tr = {
     'joinTokenPreSale#10': `Presnenskaya naberezhnaya, 8 building 1,`,
     'joinTokenPreSale#11': `Moscow, 123112, Russia`,
     'joinTokenPreSale#12': `Kariyer | Ekibimize Katılın`,
+    'joinTokenPreSale#13': 'Follow us:'
 }
 
 export default tr

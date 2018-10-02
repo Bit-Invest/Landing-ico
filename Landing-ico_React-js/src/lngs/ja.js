@@ -48,6 +48,8 @@ const ja = {
     'mailForm#25': 'メールアドレス',
     'mailForm#26': 'プレセールに参加する',
     'mailForm#27': 'AGREE & SUBMIT',
+    'mailForm#28': 'Get it before everyone else does Offer expires within',
+    'mailForm#29': 'Want to get the latest news and upcoming offers?',
 
     'docPopup#1': '電子メール内のすべてのドキュメントを受信する',
     'docPopup#2': 'メールアドレスを入力',
@@ -65,6 +67,8 @@ const ja = {
     'progressBarSale#10': '11月19日',
     'progressBarSale#11': '12月3日',
     'progressBarSale#12': '12月17日',
+
+    'ourTopRatings#1': 'Our Top Ratings',
 
     'cryptoAssetsManagement#1.1': 'CIDNXは暗号資産管理ハブです。私たちは投資家・トレーダー・',
     'cryptoAssetsManagement#1.2': '開発者が抱える問題を解決します。',
@@ -368,6 +372,10 @@ const ja = {
     'mediaNews#2_85': 'Weekly digest (13.08.18 - 19.08.18)',
     'mediaNews#2_86': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don\'t miss!',
 
+
+
+    'socialMedia#1': 'For more information, follow us on social media:',
+
     'teamAdvisersPartners#1': '50名以上のメンバーから成るチーム',
     'teamAdvisersPartners#2': 'アドバイザー',
     'teamAdvisersPartners#3': '当社のパートナー',
@@ -553,6 +561,7 @@ const ja = {
     'joinTokenPreSale#10': 'Presnenskaya naberezhnaya, 8 building 1,',
     'joinTokenPreSale#11': 'Moscow, 123112, Russia',
     'joinTokenPreSale#12': '採用情報 | チームの一員に |',
+    'joinTokenPreSale#13': 'Follow us:'
 }
 
 export default ja

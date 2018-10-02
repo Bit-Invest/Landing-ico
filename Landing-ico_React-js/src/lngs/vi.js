@@ -48,6 +48,8 @@ const vi = {
     'mailForm#25': 'Email của bạn',
     'mailForm#26': 'Tham gia đợt bán trước',
     'mailForm#27': 'AGREE & SUBMIT',
+    'mailForm#28': 'Get it before everyone else does Offer expires within',
+    'mailForm#29': 'Want to get the latest news and upcoming offers?',
 
     'docPopup#1': 'Nhận tất cả các tài liệu trong email của bạn',
     'docPopup#2': 'Nhập email của bạn',
@@ -65,6 +67,8 @@ const vi = {
     'progressBarSale#10': 'Nov 19',
     'progressBarSale#11': 'Dec 3',
     'progressBarSale#12': 'Dec 17',
+
+    'ourTopRatings#1': 'Our Top Ratings',
 
     'cryptoAssetsManagement#1.1': 'CIDNX là Trung tâm quản lý tài sản điện tử. Chúng tôi giải quyết các vấn đề của nhà đầu tư,',
     'cryptoAssetsManagement#1.2': 'nhà giao dịch và nhà phát triển',
@@ -368,6 +372,10 @@ const vi = {
     'mediaNews#2_85': 'Weekly digest (13.08.18 - 19.08.18)',
     'mediaNews#2_86': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don\'t miss!',
 
+
+
+    'socialMedia#1': 'For more information, follow us on social media:',
+
     'teamAdvisersPartners#1': 'Đội ngũ hơn 50 thành viên',
     'teamAdvisersPartners#2': 'Advisers',
     'teamAdvisersPartners#3': 'Our Partners',
@@ -553,6 +561,7 @@ const vi = {
     'joinTokenPreSale#10': 'Presnenskaya naberezhnaya, 8 building 1,',
     'joinTokenPreSale#11': 'Moscow, 123112, Russia',
     'joinTokenPreSale#12': 'Careers | Join our team',
+    'joinTokenPreSale#13': 'Follow us:'
 }
 
 export default vi

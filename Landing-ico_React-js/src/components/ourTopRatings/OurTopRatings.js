@@ -7,6 +7,9 @@ import rating_icomarks from '../../media/rating-icomarks.png';
 import rating_icobench from '../../media/rating-icobench.png';
 import ico_holder from '../../media/rating-holder.png';
 
+import { lng } from '../../links'
+import indexLngObj from '../../lngs/index'
+
 import './OurTopRatings.css'
 
 const ROOT_CLASS = 'our-top-ratings'
@@ -15,7 +18,7 @@ const ourTopRatings = () => {
     return (
         <div className={ROOT_CLASS}>
             <div className={`${ROOT_CLASS}__wrapper-block`}>
-                <div className={`${ROOT_CLASS}__header_blocks`}>Our Top Ratings</div>
+                <div className={`${ROOT_CLASS}__header_blocks`}>{ indexLngObj[lng]['ourTopRatings#1'] }</div>
                 <div className={`${ROOT_CLASS}__wrapper-ratings`}>
                     <div className={`${ROOT_CLASS}__ratings`}>
                         <a target="_blank" href='https://topicolist.com/cindx/' className={`${ROOT_CLASS}__href-rating-icon`}>

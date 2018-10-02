@@ -34,19 +34,21 @@
 }
 
 .ico-info__docs {
-  width: 430px;
   display: flex;
-  justify-content: space-between;
   margin-top: 40px;
+  width: 470px;
 }
 
 .ico-info__doc {
   border: 1px solid #fff;
-  width: 200px;
   position: relative;
   border-radius: 32px;
   cursor: pointer;
   color: #fff;
+}
+
+.ico-info__doc:first-of-type {
+  margin-right: 30px;
 }
 
 .ico-info__doc a {
@@ -79,6 +81,10 @@
   display: flex;
 }
 
+.ico-info__signed-partners {
+  position: relative;
+}
+
 .ico-info__doc:first-of-type {
 
 }
@@ -86,6 +92,7 @@
 .ico-info__doc span {
   font-size: 14px;
   font-weight: 500;
+  padding: 0 50px;
 }
 
 .ico_rating {

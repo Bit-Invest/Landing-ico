@@ -48,6 +48,8 @@ const fr = {
     'mailForm#25': 'Votre adresse e-mail',
     'mailForm#26': 'S\'inscrire à la pré-vente ',
     'mailForm#27': 'AGREE & SUBMIT',
+    'mailForm#28': 'Get it before everyone else does Offer expires within',
+    'mailForm#29': 'Want to get the latest news and upcoming offers?',
 
     'docPopup#1': 'Recevoir tous les documents dans votre email',
     'docPopup#2': 'Entrez votre email',
@@ -65,6 +67,8 @@ const fr = {
     'progressBarSale#10': 'Nov 19',
     'progressBarSale#11': 'Dec 3',
     'progressBarSale#12': 'Dec 17',
+
+    'ourTopRatings#1': 'Our Top Ratings',
 
     'cryptoAssetsManagement#1.1': 'CIDNX est une plateforme de gestion d\'actifs crypto. Nous résolvons les problèmes des investisseurs,',
     'cryptoAssetsManagement#1.2': 'des traders et des développeurs',
@@ -368,6 +372,10 @@ const fr = {
     'mediaNews#2_85': 'Weekly digest (13.08.18 - 19.08.18)',
     'mediaNews#2_86': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don\'t miss!',
 
+
+
+    'socialMedia#1': 'For more information, follow us on social media:',
+    
     'teamAdvisersPartners#1': 'Équipe de plus de 50 personnes',
     'teamAdvisersPartners#2': 'Conseillers',
     'teamAdvisersPartners#3': 'Our Partners',
@@ -553,6 +561,7 @@ const fr = {
     'joinTokenPreSale#10': 'Presnenskaya naberezhnaya, 8 building 1,',
     'joinTokenPreSale#11': 'Moscow, 123112, Russia',
     'joinTokenPreSale#12': 'Careers | Join our team',
+    'joinTokenPreSale#13': 'Follow us:'
 }
 
 export default fr
