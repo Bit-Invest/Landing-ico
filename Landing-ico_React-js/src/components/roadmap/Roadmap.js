@@ -34,6 +34,7 @@ export class Roadmap extends React.Component {
   }
 
   componentDidMount = () => {
+    console.log('NEW')
     setTimeout(() => {
       this.setState({ isChange: false })
     }, 300)
