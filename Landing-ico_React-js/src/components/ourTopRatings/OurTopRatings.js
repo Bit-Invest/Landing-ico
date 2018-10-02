@@ -2,7 +2,7 @@ import React from 'react'
 
 import rating_topicolist from '../../media/rating-topicolist.png';
 import rating_trackico from '../../media/rating-trackico.png';
-import rating_icorating from '../../media/rating-icorating.png';
+// import rating_icorating from '../../media/rating-icorating.png';
 import rating_icomarks from '../../media/rating-icomarks.png';
 import rating_icobench from '../../media/rating-icobench.png';
 import ico_holder from '../../media/rating-holder.png';
@@ -27,9 +27,9 @@ const ourTopRatings = () => {
                         <a target="_blank" href='https://www.trackico.io/ico/cindx/#statistics' className={`${ROOT_CLASS}__href-rating-icon`}>
                             <div style={{ backgroundImage: `url(${rating_trackico})` }} className={`${ROOT_CLASS}__rating-icon`} ></div>
                         </a>
-                        <a target="_blank" href='https://www.trackico.io/ico/cindx/#statistics' className={`${ROOT_CLASS}__href-rating-icon`}>
+                        {/* <a target="_blank" href='https://www.trackico.io/ico/cindx/#statistics' className={`${ROOT_CLASS}__href-rating-icon`}>
                             <div style={{ backgroundImage: `url(${rating_icorating})` }} className={`${ROOT_CLASS}__rating-icon`} ></div>
-                        </a>
+                        </a> */}
                         <a target="_blank" href='https://icomarks.com/ico/cindx' className={`${ROOT_CLASS}__href-rating-icon`}>
                             <div style={{ backgroundImage: `url(${rating_icomarks})` }} className={`${ROOT_CLASS}__rating-icon`} ></div>
                         </a>
