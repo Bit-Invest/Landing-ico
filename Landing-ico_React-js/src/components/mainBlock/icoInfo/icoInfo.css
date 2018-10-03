@@ -212,6 +212,11 @@
   .ico-info__docs {
     flex-direction: column;
     margin-top: 20px;
+    width: 100%;
+  }
+
+  .ico-info__doc:first-of-type {
+    margin-right: 0;
   }
 
   .ico-info__doc:first-of-type {

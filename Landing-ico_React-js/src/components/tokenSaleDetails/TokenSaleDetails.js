@@ -43,11 +43,11 @@ const ProgressBar = (props) => {
   const startSum = props.props ? props.props.money : 0
   const outputValue = props.props ? String(props.props.money).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1,') : 0
     
-  const finishSum = 3800000
+  const finishSum = 21000000
 
   return (
     <div className={ROOT_CLASS}>
-      <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>${outputValue} / $3,800,000</span></div>
+      <div className={`${ROOT_CLASS}__amount`}>{ indexLngObj[lng]['icoInfo#3'] } <span>${outputValue} / $21,000,000</span></div>
       <div className={`${ROOT_CLASS}__progressBar`}>
         <div className={`${ROOT_CLASS}__progress`} style={{ width: ((startSum / finishSum) * 100) + '%' }}></div>
       </div>
