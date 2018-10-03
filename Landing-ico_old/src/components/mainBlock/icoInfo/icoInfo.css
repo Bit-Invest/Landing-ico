@@ -114,6 +114,11 @@
   font-weight: 100;
 }
 
+.ico-info__amount-bold {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .ico-info__amount span {
   font-weight: 500;
 }
