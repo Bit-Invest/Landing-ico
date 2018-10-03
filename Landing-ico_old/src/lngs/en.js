@@ -5,8 +5,8 @@ const en = {
     'mainBlock#3': 'Join Our Security Token Sale',
 
     'icoInfo#1': 'We accept:',
-    'icoInfo#2': 'Hard Cap:',
-    'icoInfo#3': 'Soft Cap Milestone:',
+    'icoInfo#2': 'Soft Cap Closed',
+    'icoInfo#3': 'Hard Cap Milestone:',
     'icoInfo#4': 'Listing Agreements are Signed With:',
 
     'menu#1': 'WHITEPAPER',
