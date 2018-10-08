@@ -779,21 +779,21 @@ Read our Review about Singapore’s blockchain industry and hurry up to join the
   },
   {
     videoSrc: `https://medium.com/cindx/cindx-closes-soft-cap-a6a346542314`,
-    screen: img_08_2,
+    screen: img_08_3, //
     name: `CINDX Closes SOFT CAP!`,
     text: `CINDX clinches $2,5 million investment deal and closes its SOFT CAP!!
 Haven't joined? Do it now! Grab  this opportunity and take part in the CINDX STO before the tokens are sold out! `,
     source: 'www.medium.com',
     centered: true
   },
-  {
+  /*{
     videoSrc: `https://medium.com/cindx/roadshow-report-asia-282b3327afff`,
-    screen: img_08_3,
+    screen: img_08_3, //
     name: `CINDX Roadshow Report: Asia`,
     text: `The CINDX team welcomes our colleagues back home to the office! Now it’s time to review the results of the CINDX Asian Roadshow. We have created a short overview of CINDX’ activities in the countries where it was represented. Read and join CINDX! More updates are on the way! `,
     source: 'www.medium.com',
     centered: true
-  },
+  },*/
   /*{
     videoSrc: `https://medium.com/cindx/cindx-partners-with-civic-technologies-e74969ebc310`,
     screen: st_place_in_the_pitch_competition,
@@ -809,16 +809,16 @@ Haven't joined? Do it now! Grab  this opportunity and take part in the CINDX STO
     text: `September was a huge month for CINDX, full of events along the Asian Roadshow and long hours spent on introducing CINDX to new private investors and investment funds. Read last week's full report! `,
     source: 'www.medium.com',
     centered: true
-  },
+  },*/
   {
     videoSrc: `https://medium.com/cindx/why-choose-cindx-the-top-10-reasons-ca05e1007df9`,
-    screen: st_place_in_the_pitch_competition,
+    screen: img_08_2,
     name: `Why Choose CINDX? The Top 10 Reasons that CINDX is Indispensable to Your Success`,
     text: `Read the ten most significant advantages that CINDX offers its users and hurry up to get your CINDX Token! Early participants in the CINDX STO will also receive token bonuses! `,
     source: 'www.medium.com',
     centered: true
   },
-  {
+  /*{
     videoSrc: `https://medium.com/cindx/if-blockchain-is-revolutionary-bitcoin-is-nothing-short-of-a-miracle-874372ea07bb`,
     screen: st_place_in_the_pitch_competition,
     name: `If Blockchain is Revolutionary, Bitcoin is Nothing Short of a Miracle`,
