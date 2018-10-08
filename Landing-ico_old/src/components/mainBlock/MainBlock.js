@@ -23,7 +23,7 @@ export const MainBlock = props => (
       </div>
       <div className={`${ROOT_CLASS}__container-2`}>
         <div className={`${ROOT_CLASS}__form`}>
-          <MailForm now={1.25} later={1.20} />
+          <MailForm />
         </div>
         <div className={`${ROOT_CLASS}__ico-info-m`}>
           <IcoInfo />

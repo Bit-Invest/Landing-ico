@@ -89,6 +89,11 @@ import ERC_1400 from '../../news/ERC_1400.jpg'
 import Huobi_MENA from '../../news/Huobi_MENA.jpg'
 import investing_into_cryptocurrencies from '../../news/investing_into_cryptocurrencies.png'
 import st_place_in_the_pitch_competition from '../../news/st_place_in_the_pitch_competition.png'
+
+import img_08_1 from '../../news/08/1.png';
+import img_08_2 from '../../news/08/2.png';
+import img_08_3 from '../../news/08/3.jpg';
+
 import './MediaNews.css';
 
 const media = [
@@ -762,7 +767,65 @@ let news = [
     text: 'Awesome news! CINDX was named as the winner of the Pitch Competition organised by ASEAN Digital 5.0! The CINDX team takes pride in our project, and in this well-deserved award! It’s definitely not our last victory!',
     source: 'www.medium.com',
     centered: true
+  }, ////////////////////////////////////
+  {
+    videoSrc: `https://medium.com/cindx/crypto-singapore-a0e01a6e7a61`,
+    screen: img_08_1,
+    name: `Blockchain in Singapore`,
+    text: `CINDX only just finished its Asian Roadshow, but the team is still basking in the excitement!.
+Read our Review about Singapore’s blockchain industry and hurry up to join the CINDX STO right now! `,
+    source: 'www.medium.com',
+    centered: true
   },
+  {
+    videoSrc: `https://medium.com/cindx/cindx-closes-soft-cap-a6a346542314`,
+    screen: img_08_2,
+    name: `CINDX Closes SOFT CAP!`,
+    text: `CINDX clinches $2,5 million investment deal and closes its SOFT CAP!!
+Haven't joined? Do it now! Grab  this opportunity and take part in the CINDX STO before the tokens are sold out! `,
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: `https://medium.com/cindx/roadshow-report-asia-282b3327afff`,
+    screen: img_08_3,
+    name: `CINDX Roadshow Report: Asia`,
+    text: `The CINDX team welcomes our colleagues back home to the office! Now it’s time to review the results of the CINDX Asian Roadshow. We have created a short overview of CINDX’ activities in the countries where it was represented. Read and join CINDX! More updates are on the way! `,
+    source: 'www.medium.com',
+    centered: true
+  },
+  /*{
+    videoSrc: `https://medium.com/cindx/cindx-partners-with-civic-technologies-e74969ebc310`,
+    screen: st_place_in_the_pitch_competition,
+    name: `CINDX Partners with Civic Technologies!`,
+    text: `Great news! CINDX Partners with Civic Technologies to bring ultra security and anonymity to KYC verification on the CINDX platform. The partnership brings trusted, secure identity services to crypto fund management and enables CINDX to provide anonymity to its users. `,
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: `https://medium.com/@cindx/weekly-digest-24-september-30-september-3bfc3f98f904`,
+    screen: st_place_in_the_pitch_competition,
+    name: `Weekly Digest (24.09.2018 - 30.09.2018)`,
+    text: `September was a huge month for CINDX, full of events along the Asian Roadshow and long hours spent on introducing CINDX to new private investors and investment funds. Read last week's full report! `,
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: `https://medium.com/cindx/why-choose-cindx-the-top-10-reasons-ca05e1007df9`,
+    screen: st_place_in_the_pitch_competition,
+    name: `Why Choose CINDX? The Top 10 Reasons that CINDX is Indispensable to Your Success`,
+    text: `Read the ten most significant advantages that CINDX offers its users and hurry up to get your CINDX Token! Early participants in the CINDX STO will also receive token bonuses! `,
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    videoSrc: `https://medium.com/cindx/if-blockchain-is-revolutionary-bitcoin-is-nothing-short-of-a-miracle-874372ea07bb`,
+    screen: st_place_in_the_pitch_competition,
+    name: `If Blockchain is Revolutionary, Bitcoin is Nothing Short of a Miracle`,
+    text: `The benefits of blockchain are countless, but the world is still quite skeptical of Bitcoin – it can be difficult to separate the truth from the doubt. Read about CINDX' exploration of Bitcoin, and enter the fascinating world of crypto right now! Join the CINDX Security Token Offering today! `,
+    source: 'www.medium.com',
+    centered: true
+  },*/
 ];
 
 news = news.reverse()
