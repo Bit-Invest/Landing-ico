@@ -7,7 +7,7 @@ const en = {
     'icoInfo#1': 'We accept:',
     'icoInfo#2': 'Soft Cap Closed',
     'icoInfo#3': 'Hard Cap Milestone:',
-    'icoInfo#4': 'Listing Agreements are Signed With:',
+    'icoInfo#4': 'Agreements are Signed With:',
 
     'menu#1': 'WHITEPAPER',
     'menu#2': 'PRESENTATION',
