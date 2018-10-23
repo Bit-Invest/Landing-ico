@@ -102,12 +102,13 @@ class MailForm extends React.Component {
     const end = new Date("2018/09/16 12:00:00 GMT-0000");
     const now = new Date();
     const distance = end - now;
-    const sale_step = 3;
+    const sale_step = 4;
 
     const step_content = {
       title1: [
         'Security Token Sale Starts with',
         'Security Token Sale Is Live',
+        indexLngObj[lng]['mailForm#19'],
         indexLngObj[lng]['mailForm#19'],
         indexLngObj[lng]['mailForm#19']
       ],
@@ -115,7 +116,8 @@ class MailForm extends React.Component {
         '40% BONUS',
         '40% BONUS',
         indexLngObj[lng]['mailForm#20'],
-        '17' + indexLngObj[lng]['mailForm#20'].replace('20','')
+        '17' + indexLngObj[lng]['mailForm#20'].replace('20',''),
+        '15' + indexLngObj[lng]['mailForm#20'].replace('20','')
       ],
       desc1: [
         <div>for the first 100 buyers <br /> Token sale starts in</div>
@@ -125,10 +127,12 @@ class MailForm extends React.Component {
         <div className="timerRepText">BE THE EARLY BIRD</div>,
         <Timer />,
         <Timer />,
+        <Timer />,
       ],
       textDescFromPrice: [
         'Starts from $1',
         '$1 now',
+        indexLngObj[lng]['mailForm#23'],
         indexLngObj[lng]['mailForm#23'],
         indexLngObj[lng]['mailForm#23']
       ],
@@ -136,13 +140,15 @@ class MailForm extends React.Component {
         '1.40',
         '1.40',
         '1.20',
-        '1.17'
+        '1.17',
+        '1.15'
       ],
       toPrice: [
         '1.25',
         '1.25',
         '1.17',
-        '1.15'
+        '1.15',
+        '1.13'
       ]
     };
 
