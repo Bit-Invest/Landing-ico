@@ -74,13 +74,6 @@ const feedbackOnOurProject = [
     text: indexLngObj[lng]['feedbackProject#19']
   },
   {
-    img: Mansur_Rasulov,
-    name: indexLngObj[lng]['feedbackProject#20'],
-    position: indexLngObj[lng]['feedbackProject#21'],
-    video: 'https://www.youtube.com/embed/r5ZMoThs1T0',
-    text: indexLngObj[lng]['feedbackProject#22']
-  },
-  {
     img: Sadie_Hutton,
     name: indexLngObj[lng]['feedbackProject#23'],
     position: indexLngObj[lng]['feedbackProject#9'],
