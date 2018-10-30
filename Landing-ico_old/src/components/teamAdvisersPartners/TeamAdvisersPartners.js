@@ -40,6 +40,10 @@ import Graham_Doggart from '../../media/Graham_Doggart.fd8f9df5.jpg';
 import Sadie_Hutton from '../../media/Sadie_Hutton.54ab2eaa.jpg';
 import Motti_Peer from '../../media/Motti_Peer.png';
 import Leonard_Grayver from '../../media/Leonard_Grayver.png';
+
+import Lincoln from '../../news/Lincoln.png';
+import Reinhard_Berger from '../../news/Reinhard_Berger.png';
+
 import './TeamAdvisersPartners.css';
 import { lng } from '../../links'
 import indexLngObj from '../../lngs/index'
@@ -378,8 +382,52 @@ const advisers = [
       indexLngObj[lng]['teamAdvisersPartners#169'],
       indexLngObj[lng]['teamAdvisersPartners#170']
     ]
+  },
+  {
+    img: Lincoln,
+    video: '',
+    name: 'Teo Lincoln',
+    src: 'https://www.linkedin.com/in/lincolnteo/',
+    m: '',
+    position: 'Founder and CEO of Intel Wise Group',
+    fackt1: 'Former Managing Director of DP Information Group',
+    fackt2: 'Advisor to Brunei’s central bank Authority Monetary Brunei Darussalam (AMBD)',
+    linkedin: 'https://www.linkedin.com/in/lincolnteo/',
+    text: [
+      `Lincoln is Founder and CEO of Intel Wise Group. `,
+      `Prior to this, he was Chief Operating Officer and Managing Director of DP Information Group – a subsidiary of Experian plc and managed multiple data repositories in South-East Asia (including Singapore, Malaysia, Indonesia, Vietnam and Brunei).`,
+      `Lincoln’s experience includes risk management and IT infrastructures with United Overseas Bank Group and Standard Chartered Bank.  As a statistician, he introduced credit scoring to multiple banks in Asia-Pacific and also found time to serve on project teams of the World Bank Group and the Asian Development Bank. Intel`,
+      `Under the umbrella of the Chongqing Connectivity Initiative, a Singapore and China Governments’ bilateral project, Intel Wise has curated data on more than 100+ million companies in China and helped companies globally with their compliance and due diligence needs.  More recently, the company has embarked on blockchain technology and developed platforms for alternative financial services and the trading of digital assets.`,
+      `In addition, Lincoln is also an Advisor to Brunei’s central bank Autoriti Monetary Brunei Darussalam (AMBD).`
+    ]
+  },
+  {
+    img: Reinhard_Berger,
+    video: '',
+    name: 'Reinhard Berger',
+    src: 'https://www.linkedin.com/in/reinhard-berger-90810613/',
+    m: '',
+    position: 'Reinhard Berger is the CEO of Pecunio Blockchain Technologies, a Dubai VC Firm focussed on innovative DLT technologies.',
+    fackt1: 'Consulted Credit Suisse, UBS and Invesco as a business architect at Accenture. Was a principal for Capgemini',
+    fackt2: 'Managed $250M in alternative assets via Invest Finance AG since 2003',
+    linkedin: 'https://www.linkedin.com/in/reinhard-berger-90810613/',
+    text: [
+      `He holds an MSc in Computer Science, an M.A in law, as well as an MBA from Danube University. `,
+      `Prior to Pecunio, Reinhard’s career began as a business architect for global consulting firm Accenture, with clients such as Credit Suisse, UBS and Invesco.`,
+      `He then served as a principal for French tech giant Capgemini. In 2003, Reinhard co-founded Alternative Invest Finance AG, an independent hedge fund operator, where he managed alternative assets in excess of $250M. `,
+      `An intuitive leader, natural mentor and true strategist at Pecuino’s helm.`,
+      ``,
+      ``
+    ]
   }
- ];
+];
+
+
+/*
+Lincoln
+Reinhard_Berger
+*/
+
 
 class TeamAdvisersPartners extends React.Component {
   mapTeam = () => {

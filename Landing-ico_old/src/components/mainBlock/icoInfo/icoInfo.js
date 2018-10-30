@@ -15,6 +15,7 @@ import rating_topicolist2 from '../../../media/rating_topicolist2.png';
 import rating_icomarks from '../../../media/rating-icomarks.svg';
 import rating_icobench from '../../../media/rating-icobench.png';
 import rating_topicolisth from '../../../media/rating-topicolist.svg';
+import rating_ico from '../../../media/ICO_Rating.png';
 import './icoInfo.css';
 import { lng } from '../../../links'
 import indexLngObj from '../../../lngs/index'
@@ -81,6 +82,9 @@ const IcoInfo = props => {
           </a>
           <a target="_blank" href='https://icoholder.com/en/cindx-22233' className={`${ROOT_CLASS}__href-rating-icon`}>
             <img src={rating_topicolisth} className={`${ROOT_CLASS}__rating-icon`} />
+          </a>
+          <a target="_blank" href='https://icorating.com/ico/cindx-cinx/' className={`${ROOT_CLASS}__href-rating-icon`}>
+            <img src={rating_ico} className={`${ROOT_CLASS}__rating-icon`} />
           </a>
         </div>
       </div>
