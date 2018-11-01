@@ -546,7 +546,7 @@ const zn = {
     'joinTokenPreSale#3': '测试MVP',
     'joinTokenPreSale#4': '总部',
     'joinTokenPreSale#5': 'Harjumaa, Erika 14,',
-    'joinTokenPreSale#6': 'Talinn, 10416, Estonia',
+    'joinTokenPreSale#6': 'Tallin, 10416, Estonia',
     'joinTokenPreSale#7': '咨询洽谈 | hello@cindx.io',
     'joinTokenPreSale#8': 'Legal Disclaimer',
     'joinTokenPreSale#9': '开发和营销',

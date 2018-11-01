@@ -546,7 +546,7 @@ const ja = {
     'joinTokenPreSale#3': 'MVPを試してみる ',
     'joinTokenPreSale#4': '本社',
     'joinTokenPreSale#5': 'Harjumaa, Erika 14,',
-    'joinTokenPreSale#6': 'Talinn, 10416, Estonia',
+    'joinTokenPreSale#6': 'Tallin, 10416, Estonia',
     'joinTokenPreSale#7': 'ビジネスに関するお問合せ | hello@cindx.io',
     'joinTokenPreSale#8': 'Legal Disclaimer',
     'joinTokenPreSale#9': '開発とマーケティング',

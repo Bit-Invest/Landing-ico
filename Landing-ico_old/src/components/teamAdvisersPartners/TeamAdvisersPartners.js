@@ -29,6 +29,7 @@ import Innova8 from '../../media/Innova8.png';
 import BtcBit from '../../media/BtcBit.jpg';
 import civic_logo_horz_BIG from '../../media/civic_logo_horz_BIG.png';
 import Greenberg from '../../media/Greenberg.png';
+import intel_Wise from '../../media/intel_Wise.png';
 // Advicer icon
 import Keith_Teare from '../../media/Keith_Teare.1e7599ac.jpg';
 import Austin_Kimm from '../../media/Austin_Kimm.caf37ff2.jpg';
@@ -194,7 +195,10 @@ const ourPartners = [
 {
   img: Greenberg,
 },
-];
+{
+  img: intel_Wise
+}
+].reverse();
 
 const advisers = [
   {
@@ -420,7 +424,7 @@ const advisers = [
       ``
     ]
   }
-];
+].reverse();
 
 
 /*

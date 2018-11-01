@@ -89,12 +89,14 @@ import ERC_1400 from '../../news/ERC_1400.jpg'
 import Huobi_MENA from '../../news/Huobi_MENA.jpg'
 import investing_into_cryptocurrencies from '../../news/investing_into_cryptocurrencies.png'
 import st_place_in_the_pitch_competition from '../../news/st_place_in_the_pitch_competition.png'
+import Lincoln_Teo_photo from '../../news/Lincoln_Teo.png'
 
 import img_08_1 from '../../news/08/1.png';
 import img_08_2 from '../../news/08/2.png';
 import img_08_3 from '../../news/08/3.jpg';
 
 import './MediaNews.css';
+
 
 const media = [
   {
@@ -825,7 +827,15 @@ Haven't joined? Do it now! Grab  this opportunity and take part in the CINDX STO
     text: `The benefits of blockchain are countless, but the world is still quite skeptical of Bitcoin – it can be difficult to separate the truth from the doubt. Read about CINDX' exploration of Bitcoin, and enter the fascinating world of crypto right now! Join the CINDX Security Token Offering today! `,
     source: 'www.medium.com',
     centered: true
-  },*/
+  },*/,
+  {
+    screen: Lincoln_Teo_photo,
+    videoSrc: `https://medium.com/cindx/cindx-advisers-lincoln-teo-b7d2eafd660f`,
+    name: `We’ve got a new adviser! `,
+    text: `Linkoln is an Advisor to Brunei’s central bank Authority Monetary Brunei Darussalam (AMBD). Read the full report in our Medium`,
+    source: `www.medium.com`,
+    centered: true
+  }
 ];
 
 news = news.reverse()

@@ -7,6 +7,7 @@ import medium_icon from '../../media/medium_icon.png';
 import linkedin_icon from '../../media/linkedin_icon.png';
 import instagram_icon from '../../media/instagram_icon.png';
 import telegram_icon_white from '../../media/telegram_icon_white.png';
+
 import './SocIcons.css';
 
 export const SocIcons = () => (

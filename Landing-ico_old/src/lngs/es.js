@@ -546,7 +546,7 @@ const es = {
     'joinTokenPreSale#3': 'Probar versión MVP',
     'joinTokenPreSale#4': 'Oficina central',
     'joinTokenPreSale#5': 'Harjumaa, Erika 14,',
-    'joinTokenPreSale#6': 'Talinn, 10416, Estonia',
+    'joinTokenPreSale#6': 'Tallin, 10416, Estonia',
     'joinTokenPreSale#7': 'Consultas de negocios | hello@cindx.io',
     'joinTokenPreSale#8': 'Nota legal',
     'joinTokenPreSale#9': 'Desarrollo y marketing',

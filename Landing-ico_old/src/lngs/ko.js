@@ -548,7 +548,7 @@ const ko = {
     'joinTokenPreSale#3': 'MVP 테스트 ',
     'joinTokenPreSale#4': '헤드 오피스 ',
     'joinTokenPreSale#5': 'Harjumaa, Erika 14,',
-    'joinTokenPreSale#6': 'Talinn, 10416, Estonia',
+    'joinTokenPreSale#6': 'Tallin, 10416, Estonia',
     'joinTokenPreSale#7': '비즈니스 문의 | hello@cindx.io',
     'joinTokenPreSale#8': 'Legal Disclaimer',
     'joinTokenPreSale#9': '개발 및 마케팅',

@@ -520,7 +520,7 @@ const tr = {
     'joinTokenPreSale#3': `MVP'yi Test Edin`,
     'joinTokenPreSale#4': `Merkez Ofis`,
     'joinTokenPreSale#5': `Harjumaa, Erika 14,`,
-    'joinTokenPreSale#6': `Talinn, 10416, Estonia`,
+    'joinTokenPreSale#6': `Tallin, 10416, Estonia`,
     'joinTokenPreSale#7': `Ticari Konular | hello@cindx.io`,
     'joinTokenPreSale#8': `Yasal Uyarı`,
     'joinTokenPreSale#9': `Geliştirme ve Pazarlama`,

@@ -546,7 +546,7 @@ const ar = {
     'joinTokenPreSale#3': 'اختبار الإصدار الأساسي للمنتج ',
     'joinTokenPreSale#4': 'المركز الرئيسي ',
     'joinTokenPreSale#5': 'Harjumaa, Erika 14,',
-    'joinTokenPreSale#6': 'Talinn, 10416, Estonia',
+    'joinTokenPreSale#6': 'Tallin, 10416, Estonia',
     'joinTokenPreSale#7': 'الاستفسارات المتعلّقة بالأعمال | hello@cindx.io',
     'joinTokenPreSale#8': 'Legal Disclaimer',
     'joinTokenPreSale#9': 'التطوير والتسويق',
