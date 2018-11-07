@@ -20,7 +20,7 @@ export class Timer extends React.Component {
   }
 
   timerCoursGet = () => {
-    var end = new Date("2018/11/6 12:00:00 GMT-0000");
+    var end = new Date("2018/11/19 12:00:00 GMT-0000");
     var _second = 1000;
     var _minute = _second * 60;
     var _hour = _minute * 60;
