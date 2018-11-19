@@ -90,6 +90,7 @@ import Huobi_MENA from '../../news/Huobi_MENA.jpg'
 import investing_into_cryptocurrencies from '../../news/investing_into_cryptocurrencies.png'
 import st_place_in_the_pitch_competition from '../../news/st_place_in_the_pitch_competition.png'
 import Lincoln_Teo_photo from '../../news/Lincoln_Teo.png'
+import Pecunio_CINDX from '../../news/Pecunio_&_CINDX.png'
 
 import img_08_1 from '../../news/08/1.png';
 import img_08_2 from '../../news/08/2.png';
@@ -835,6 +836,14 @@ Haven't joined? Do it now! Grab  this opportunity and take part in the CINDX STO
     text: `Linkoln is an Advisor to Brunei’s central bank Authority Monetary Brunei Darussalam (AMBD). Read the full report in our Medium`,
     source: `www.medium.com`,
     centered: true
+  },
+  {
+    screen: Pecunio_CINDX,
+    videoSrc: `https://medium.com/@cindx/pecunio-vc-fund-intends-to-invest-in-cindx-up-to-4-000-000-with-an-initial-round-of-1-500-000-ba0f4547c299`,
+    name: `Pecunio VC Fund intends to invest in CINDX up to $4,000,000 with an initial round of $1,500,000`,
+    text: `Our team pleased to announce a new strategic partner for our project.`,
+    source: `www.medium.com`,
+    centered: true 
   }
 ];
 

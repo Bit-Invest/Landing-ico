@@ -30,6 +30,8 @@ import BtcBit from '../../media/BtcBit.jpg';
 import civic_logo_horz_BIG from '../../media/civic_logo_horz_BIG.png';
 import Greenberg from '../../media/Greenberg.png';
 import intel_Wise from '../../media/intel_Wise.png';
+import Credits from '../../media/Credits.jpg';
+import WP_Pecunio from '../../media/WP_Pecunio.png';
 // Advicer icon
 import Keith_Teare from '../../media/Keith_Teare.1e7599ac.jpg';
 import Austin_Kimm from '../../media/Austin_Kimm.caf37ff2.jpg';
@@ -41,6 +43,7 @@ import Graham_Doggart from '../../media/Graham_Doggart.fd8f9df5.jpg';
 import Sadie_Hutton from '../../media/Sadie_Hutton.54ab2eaa.jpg';
 import Motti_Peer from '../../media/Motti_Peer.png';
 import Leonard_Grayver from '../../media/Leonard_Grayver.png';
+import William_Zhu from '../../media/William_Zhu.png';
 
 import Lincoln from '../../news/Lincoln.png';
 import Reinhard_Berger from '../../news/Reinhard_Berger.png';
@@ -144,60 +147,67 @@ const teamInfo = [
  ];
 
 const ourPartners = [
- {
-   img: Progressor_logo,
-   name: 'Progressor',
-   position: 'Legal support',
-   href: 'https://progressor.ee/'
- },
- {
-   img: ICO_PROMO,
-   name: 'ICO Promo',
-   position: 'Merchant services',
-   href: 'https://icopromo.com/'
- },
- {
-   img: sum_and_substance_1,
-   name: 'Sum & Substance',
-   position: 'Security & Compliance',
-   href: 'https://sumsub.com/'
- },
- {
-   img: twigagroup,
-   name: 'Twiga Communication Group',
-   position: 'Digital & PR',
-   href: 'http://twiga.ru/'
- },
- {
-   img: Tradingview,
-   name: 'Tradingview',
-   position: 'Market data',
-   href: 'https://www.tradingview.com/'
- },
- {
-   img: Yellow_Door,
-   name: 'Yellow Door',
-   position: 'Silicon Valley Accelerator',
-   href: 'http://yellowdoor.ru/'
- },
- {
-   img: Innova8,
-   name: 'Innov8 Global Advisory',
-   position: 'Global Ventures',
-   href: 'http://www.innov8globaladvisory.com/'
- },
- {
-  img: BtcBit,
-},
-{
-  img: civic_logo_horz_BIG,
-},
-{
-  img: Greenberg,
-},
-{
-  img: intel_Wise
-}
+   {
+     img: Progressor_logo,
+     name: 'Progressor',
+     position: 'Legal support',
+     href: 'https://progressor.ee/'
+   },
+   {
+     img: ICO_PROMO,
+     name: 'ICO Promo',
+     position: 'Merchant services',
+     href: 'https://icopromo.com/'
+   },
+   {
+     img: sum_and_substance_1,
+     name: 'Sum & Substance',
+     position: 'Security & Compliance',
+     href: 'https://sumsub.com/'
+   },
+   {
+     img: twigagroup,
+     name: 'Twiga Communication Group',
+     position: 'Digital & PR',
+     href: 'http://twiga.ru/'
+   },
+   {
+     img: Tradingview,
+     name: 'Tradingview',
+     position: 'Market data',
+     href: 'https://www.tradingview.com/'
+   },
+   {
+     img: Yellow_Door,
+     name: 'Yellow Door',
+     position: 'Silicon Valley Accelerator',
+     href: 'http://yellowdoor.ru/'
+   },
+   {
+     img: Innova8,
+     name: 'Innov8 Global Advisory',
+     position: 'Global Ventures',
+     href: 'http://www.innov8globaladvisory.com/'
+   },
+  {
+    img: BtcBit,
+  },
+  {
+    img: civic_logo_horz_BIG,
+  },
+  {
+    img: Greenberg,
+  },
+  {
+    img: intel_Wise
+  },
+  {
+    img: Credits
+  },
+  // {
+  //   img: WP_Pecunio,
+  //   height: 20
+  // }
 ].reverse();
 
 const advisers = [
@@ -423,6 +433,24 @@ const advisers = [
       ``,
       ``
     ]
+  },
+  {
+    img: William_Zhu,
+    video: '',
+    name: 'William Zhu',
+    src: 'https://www.linkedin.com/in/高峰-朱-196741173',
+    m: '',
+    position: 'Founder of The Blockchainer & J&C Capital',
+    fackt1: 'Guest Professor of Zhejiang University',
+    fackt2: 'Former Chairman of OTC Database (Shanghai)',
+    linkedin: 'https://www.linkedin.com/in/高峰-朱-196741173',
+    text: [
+      `Mr. Zhu is finance doctoral student, holds Bachelor of law & Master of Marketing. Now he is Executive Secretary General of Emerging Industries Institute (Shanghai), Guest Professor of Zhejiang University, and Expert Lecturer of Shanghai Municipal Tourism Administration.`,
+      `Previously, he was Chairman of OTC Database (Shanghai) Information Technology Co., Ltd.), General Manager of China UnionPay Smart Big Data and Internet Finance Research Institute, and CEO of CDMC.`,
+      `The Blockchainer provides to its customers comprehensive services such as: summit organization, global business tours, meetup host and customization, media & social media casting, VIP resource connection, localisation service.
+These six business segments provide core chain services around the head blockchain enterprise, building blockchain enterprises to expand the service ecosystem. The Blockchainer accelerates the network development of the business sector in the three dimensions of talent, organization and information.`,
+      `The Blockchainer has more than 10 years of experience in the science and technology finance team, is the earliest blockchain proponent and practitioner in China; is the earliest blockchain ecosystem core player in China; focusing on the blockchain field, providing in-depth and vertical global professional services; one of the industry’s most comprehensive network in blockchain industry upstream and downstream.`,
+    ]
   }
 ].reverse();
 
@@ -583,7 +611,7 @@ class TeamAdvisersPartners extends React.Component {
       infinite: true,
       slidesToShow: 5,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       speed: 2000,
       autoplaySpeed: 2000
     };
