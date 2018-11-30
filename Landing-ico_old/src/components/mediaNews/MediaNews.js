@@ -91,10 +91,15 @@ import investing_into_cryptocurrencies from '../../news/investing_into_cryptocur
 import st_place_in_the_pitch_competition from '../../news/st_place_in_the_pitch_competition.png'
 import Lincoln_Teo_photo from '../../news/Lincoln_Teo.png'
 import Pecunio_CINDX from '../../news/Pecunio_&_CINDX.png'
+import Banners_005 from '../../news/Banners.005_copy.png'
+import Prorocol from '../../news/prorocol.jpg'
+import Kosol_Saisanit_photo from '../../news/Kosol_Saisanit_photo.png'
 
 import img_08_1 from '../../news/08/1.png';
 import img_08_2 from '../../news/08/2.png';
 import img_08_3 from '../../news/08/3.jpg';
+
+
 
 import './MediaNews.css';
 
@@ -844,8 +849,32 @@ Haven't joined? Do it now! Grab  this opportunity and take part in the CINDX STO
     text: `Our team pleased to announce a new strategic partner for our project.`,
     source: `www.medium.com`,
     centered: true 
+  },
+  {
+    screen: Banners_005,
+    videoSrc: `https://medium.com/cindx/cindx-monthly-report-november-19a6ede104a3`,
+    name: `CINDX Monthly Report: November`,
+    text: `We are always seeking new ways to improve our work, and are eager to share last week’s achievements with you!`,
+    source: `www.medium.com`,
+    centered: true
+  },
+  {
+    screen: Prorocol,
+    videoSrc: `https://medium.com/cindx/zeus-protocol-partners-with-cindx-a-crypto-asset-management-hub-bc1325602c3`,
+    name: `Zeus Protocol Partners with CINDX, a Crypto Asset Management Hub!`,
+    text: `Zeus Protocol and CINDX, a Crypto Asset Management Hub that solves problems for investors, traders, and developers`,
+    source: `www.medium.com`,
+    centered: true
+  },
+  {
+    screen: Kosol_Saisanit_photo,
+    videoSrc: `https://medium.com/cindx/cindx-advisers-william-zhu-abb34353e927`,
+    name: `We've got a new adviser: Kosol Saisanit`,
+    text: `Mr. Saisanit has founded Power C Technology Co., Ltd, C Power Solutions Co., Ltd and CoachHub`,
+    source: `www.medium.com`,
+    centered: true
   }
-];
+]; 
 
 news = news.reverse()
 

@@ -18,6 +18,9 @@ import Ibraghim_Haniev from '../../media/Ibraghim_Haniev.77b0aa4e.jpg';
 import Airat from '../../media/Airat.jpg';
 import Sofja_Pevzner from '../../media/Sofja_Pevzner.jpg';
 import Jelena_Karzetskaja from '../../media/Jelena_Karzetskaja.png';
+
+
+
 // Our Parners icon
 import Progressor_logo from '../../media/Progressor_logo.png';
 import ICO_PROMO from '../../media/ico_promo.png';
@@ -32,6 +35,10 @@ import Greenberg from '../../media/Greenberg.png';
 import intel_Wise from '../../media/intel_Wise.png';
 import Credits from '../../media/Credits.jpg';
 import WP_Pecunio from '../../media/WP_Pecunio.png';
+import Logo_Zeus from '../../media/logo.7508f04a.png';
+
+
+
 // Advicer icon
 import Keith_Teare from '../../media/Keith_Teare.1e7599ac.jpg';
 import Austin_Kimm from '../../media/Austin_Kimm.caf37ff2.jpg';
@@ -204,10 +211,14 @@ const ourPartners = [
   {
     img: Credits
   },
-  // {
-  //   img: WP_Pecunio,
-  //   height: 20
-  // }
+  {
+    img: Logo_Zeus,
+    height: 50
+  },
+  {
+    img: WP_Pecunio,
+    height: 30
+  }
 ].reverse();
 
 const advisers = [
@@ -515,11 +526,14 @@ class TeamAdvisersPartners extends React.Component {
       const promo = (el.img === ICO_PROMO || el.img === civic_logo_horz_BIG || el.img === Greenberg) ? 'ico-promo' : ''
       const newPromo = (el.img === BtcBit) ? 'btcbit-promo' : ''
       return (
-        <div key={i}>
+        <div key={i} data-msg={el.height}>
           <img
             className={`img ${promo} ${newPromo}`} 
             src={el.img} 
             alt="CINDX"
+            style={{
+              maxHeight: el.height || null
+            }}
           />
         </div>
       );

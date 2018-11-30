@@ -8,6 +8,10 @@ import play_button_youtube from '../../media/play_button_youtube.png';
 import { connect } from 'react-redux';
 import { links, lng, getGAID, ab_val } from '../../links.js';
 import indexLngObj from '../../lngs/index'
+
+import asean_s from '../../media/ASEAN_s.png';
+import bb_s from '../../media/BB_S.png';
+
 import './mailForm.css';
 
 const ROOT_CLASS = 'mail-form';
@@ -257,6 +261,10 @@ class MailForm extends React.Component {
                   {submitStatusText}
               </div> : null
           }
+        </div>
+        <div className="newDivRatings">
+          <img src={asean_s} />
+          <img src={bb_s} />
         </div>
       </div>
     )

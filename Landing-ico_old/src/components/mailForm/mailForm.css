@@ -173,6 +173,17 @@
   color: #666666;
 }
 
+.newDivRatings {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.newDivRatings img {
+  height: 70px;
+  margin-right: 20px;
+}
+
 @media screen and (min-width: 1024px) {
   .mail-form__content {
     width: 300px;
