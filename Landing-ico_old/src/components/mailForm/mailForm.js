@@ -104,7 +104,7 @@ class MailForm extends React.Component {
     const { props } = this;
     const { email, submitStatus, submitStatusText } = this.state;
     const now = new Date();
-    const sale_step = 6;
+    const sale_step = 7;
 
 
     const step_content = {
@@ -126,7 +126,8 @@ class MailForm extends React.Component {
         '17' + indexLngObj[lng]['mailForm#20'].replace('20',''),
         '15' + indexLngObj[lng]['mailForm#20'].replace('20',''),
         '13' + indexLngObj[lng]['mailForm#20'].replace('20',''),
-        '10' + indexLngObj[lng]['mailForm#20'].replace('20','')
+        '10' + indexLngObj[lng]['mailForm#20'].replace('20',''),
+        '5' + indexLngObj[lng]['mailForm#20'].replace('20','')
       ],
       desc1: [
         <div>for the first 100 buyers <br /> Token sale starts in</div>
@@ -142,10 +143,12 @@ class MailForm extends React.Component {
         <Timer />,
         <Timer />,
         <Timer />,
+        <Timer />,
       ],
       textDescFromPrice: [
         'Starts from $1',
         '$1 now',
+        indexLngObj[lng]['mailForm#23'],
         indexLngObj[lng]['mailForm#23'],
         indexLngObj[lng]['mailForm#23'],
         indexLngObj[lng]['mailForm#23'],

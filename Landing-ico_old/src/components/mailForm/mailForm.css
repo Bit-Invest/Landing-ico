@@ -175,12 +175,12 @@
 
 .newDivRatings {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 20px;
 }
 
 .newDivRatings img {
-  height: 70px;
+  height: 130px;
   margin-right: 20px;
 }
 
