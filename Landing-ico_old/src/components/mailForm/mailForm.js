@@ -128,7 +128,7 @@ class MailForm extends React.Component {
         '13' + indexLngObj[lng]['mailForm#20'].replace('20',''),
         '10' + indexLngObj[lng]['mailForm#20'].replace('20',''),
         '5' + indexLngObj[lng]['mailForm#20'].replace('20',''),
-        '1' + indexLngObj[lng]['mailForm#20'].replace('20','')
+        'IS OVER'
       ],
       desc1: [
         <div>for the first 100 buyers <br /> Token sale starts in</div>
@@ -207,65 +207,12 @@ class MailForm extends React.Component {
           </div>
           <div style={{display: email ? 'none' : null }} className="timerContent">
             <div className={`${ROOT_CLASS}__title`}>
-              { step_content.title1[sale_step] }
+              Security Token Sale
             </div>
             <div className={`${ROOT_CLASS}__bonus`}>
-              { step_content.bonus[sale_step] }
-            </div>
-            <div className={`${ROOT_CLASS}__description`}>
-              { step_content.desc1[sale_step] }
-            </div>
-            <div className={`${ROOT_CLASS}__timer`}>
-              { step_content.timer[sale_step] }
-            </div>
-            <div className={`${ROOT_CLASS}__cost`}>
-              <div className={`${ROOT_CLASS}__now`}>
-                <div className={`${ROOT_CLASS}__cost-title`}>
-                  { step_content.textDescFromPrice[sale_step] }
-                </div>
-                <div className={`${ROOT_CLASS}__cost-value`}>
-                  {step_content.fromPrice[sale_step]} CINX
-                </div>
-              </div>
-              <div className={`${ROOT_CLASS}__arrows`}></div>
-              <div className={`${ROOT_CLASS}__later`}>
-                <div className={`${ROOT_CLASS}__cost-title`}>
-                  { indexLngObj[lng]['mailForm#24'] }
-                </div>
-                <div className={`${ROOT_CLASS}__cost-value`}>
-                  {step_content.toPrice[sale_step]} CINX
-                </div>
-              </div>
-            </div>
-            <div className={`${ROOT_CLASS}__name-text`}>
-              <span className={`${ROOT_CLASS}__name-text-span`}>Want to get the latest news and upcoming offers?</span>
-            </div>
+              IS NOW OVER
+            </div>          
           </div>
-          <div className={`${ROOT_CLASS}__input ${ (submitStatus === 0 || submitStatus === 1) ? "errorRed" : null }`}>
-            <Input
-              placeholder={ indexLngObj[lng]['mailForm#25'] }
-              onChange={this.onChange}
-            />
-          </div>
-          <div className={`${ROOT_CLASS}__button`}>
-            <div className={`button button_gradient ${!email ? null : "focus_bun_grdn"}`}
-              onClick={this.sendSubcribe}
-            >
-              { !email ? ab_val === '1' ? "JOIN US" : indexLngObj[lng]['mailForm#26'] : indexLngObj[lng]['mailForm#27'] }
-            </div>
-          </div>
-          {
-            submitStatus !== 4 ?
-              <div
-                className={`${ROOT_CLASS}__textStatus ${
-                  (submitStatus === 0 || submitStatus ===1) ? "error" :
-                    (submitStatus === 3) ? "loading" :
-                      (submitStatus === 2) ? "success" : null
-                }
-                `}>
-                  {submitStatusText}
-              </div> : null
-          }
         </div>
         <div className="newDivRatings">
           <img src={asean_s} />
