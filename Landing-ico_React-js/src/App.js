@@ -50,7 +50,7 @@ class App extends React.Component {
           <Menu />
           <MainBlock />
           <ProgressBarSale />
-          <OurTopRatings />
+          {/*<OurTopRatings />*/}
           <MediaAboutUs />
           <CryptoAssetsManagement />
           <TeamLegal />
@@ -59,7 +59,7 @@ class App extends React.Component {
           {/* <ProblemSolving /> */}
           {/* <HowCindxWorks /> */}
           {/* <MarketAnalytics /> */}
-          <TokenSaleDetails />
+          {/* <TokenSaleDetails />*/}
           <SocialMedia />
           {/* <LegalSchedule /> */}
           {/* <FeedbackProject /> */}

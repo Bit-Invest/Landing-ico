@@ -37,7 +37,7 @@ class TeamLegal extends React.Component {
 
     return(
       <div className="teamLegal" id="exitAnimate">
-        <div className="size">
+        {/*<div className="size">
           <h2 className="header_blocks">
             { indexLngObj[lng]['teamLegal#1'] } <br/> { indexLngObj[lng]['teamLegal#2'] }
           </h2>
@@ -55,7 +55,7 @@ class TeamLegal extends React.Component {
                 <img className="img" src={licensia_3} alt="CINDEX"/>
                 <p>{ indexLngObj[lng]['teamLegal#5'] }</p>
               </a>
-              {/* { ab_val !== '1' ?
+              { { ab_val !== '1' ?
                 <div className="dock_block">
                   <div className="dock">
                     <div className="row">
@@ -83,11 +83,11 @@ class TeamLegal extends React.Component {
                   </div>
                 </div> :
                 null
-              } */}
+              } }
             </div>
             <RigthVideo video_show={this.showVideoInPopUp} />
           </div>
-        </div>
+        </div>*/}
       </div>
     )
   }

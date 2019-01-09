@@ -5,6 +5,7 @@ import { lng } from '../../links'
 import indexLngObj from '../../lngs/index'
 // import roadmapLike from '../../images/roadmapLike.svg'
 import roadMapLike from '../../images/roadMapLike.svg'
+import Gen_Image from '@images/New_CINDX_website-min.png';
 
 const ROOT_CLASS = 'roadmap';
 
@@ -32,38 +33,12 @@ export class Roadmap extends React.Component {
     }
   }
 
-  renderCircles = () => {
-    let result = [];
-    for (let i = 0; i < 7; i++) {
-      result.push((
-        <div
-          className={`${ROOT_CLASS}__circle ${i===this.props.quartalCour?'active':null}`}
-          onClick={() => {this.props.onClickQuartal(i)}}
-          key={i}
-        >
-          { i < 1 ?
-            <img src={roadMapLike} style={{ width: '100%', height: '100%' }} /> :
-            <div className={`${ROOT_CLASS}__disc`} ></div>
-          }
-        </div>
-      ));
-    }
-    return result;
-  }
-
   render() {
     return (
       <div className={`${ROOT_CLASS} ${ROOT_CLASS}__headcontainer`}>
-        { this.state.isOpen ?
-          <Popup
-            onClick={() => this.setState({ isOpen: false })}
-            src={this.props.imageSrc}
-          /> :
-          null
-        }
         <div className="size">
           <div className={`${ROOT_CLASS}__header`}>
-            <div className="header_blocks">{ indexLngObj[lng]['roadmap#1'] }</div>
+            <div className="header_blocks">Roadmap</div>
             {/* <div className={`${ROOT_CLASS}__buttons`}>
               <div className={`${ROOT_CLASS}__button`}>
                 <Button
@@ -91,7 +66,8 @@ export class Roadmap extends React.Component {
               </div>
             </div> */}
           </div>
-          <div className={ROOT_CLASS}>
+          <img src={Gen_Image} className="imageForRoadmap" />
+          {/*<div className={ROOT_CLASS}>
             <div className={`${ROOT_CLASS}__content`}>
               <div className={`wrapper__${ROOT_CLASS}__map`}>
                 <div className={`${ROOT_CLASS}__map`}>
@@ -151,7 +127,7 @@ export class Roadmap extends React.Component {
                 />
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
       </div>
     )

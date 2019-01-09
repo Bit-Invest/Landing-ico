@@ -140,8 +140,6 @@
 }
 .mail-form__video {
   background-image: url(../../media/new_mainBlock_screen.png);
-  width: 429px;
-  height: 140px;
   margin: 0 auto;
   cursor: pointer;
   display: flex;
@@ -188,13 +186,99 @@
   color: #666666;
 }
 
+.main-block__formStarted {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.main-block__formStarted input {
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 10px 20px;
+  background: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-block__formStarted .button_send {
+  text-transform: uppercase;
+  border: 2px solid white;
+  padding: 9px 30px;
+  border-radius: 100px;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.main-block__formStarted .button_send:hover {
+  background: linear-gradient(90deg,#f287b7,#6c5ed6);
+  border-color: rgba(0,0,0,0);
+}
+
+.main-block__prizes {
+  margin-top: 30px;
+}
+
+.main-block__prizes img {
+  max-height: 120px;
+  margin-right: 20px;
+}
+
+.main-block__cont {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.mail-form__legals {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px; 
+}
+
+.mail-form__item_legals {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.main-block .img_legal {
+  height: 30px;
+}
+
+.main-block .text_legal {
+  color: white;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .main-block__cont {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .main-block__formStarted .button_send {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .mail-form__content {
     width: 300px;
   }
   .mail-form__video {
-    width: 280px;
-    height: 140px;
+    width: 500px;
+    height: 250px;
+    border-radius: 0px;
   }
   .mail-form__cost {
     padding: 8.2px 20.3px 8.6px 20.3px;

@@ -10,6 +10,11 @@ import { links, lng, getGAID, ab_val } from '../../links.js';
 import indexLngObj from '../../lngs/index'
 import './mailForm.css';
 
+import first_block_2_row_1 from '@images/first_block_2_row_1.png';
+import first_block_2_row_2 from '@images/first_block_2_row_2.png';
+import first_block_2_row_3 from '@images/first_block_2_row_3.png';
+
+
 const ROOT_CLASS = 'mail-form';
 
 class MailForm extends React.Component {
@@ -126,110 +131,49 @@ class MailForm extends React.Component {
       textDescFromPrice: [
         'Starts from $1',
         '$1 now',
-        indexLngObj[lng]['mailForm#23']
+        indexLngObj[lng]['mailForm#23'],
       ],
       fromPrice: [
         '1.40',
         '1.40',
-        '1.20'
+        '1.20',
       ],
       toPrice: [
         '1.25',
         '1.25',
-        '1.17'
+        '1.17',
       ]
     };
 
     return (
       <div className={ROOT_CLASS}>
-        { !this.props.isTokenDetails ?
-          <div className={`${ROOT_CLASS}__video`} onClick={() => this.showVideoInPopUp('https://player.vimeo.com/video/286746544')}>
-            <img
-              src={play_button_youtube}
-              alt="CINDEX"
-              className={`${ROOT_CLASS}__play`}
-            />
-          </div> :
-          null
-        }
-        <div className={`${ROOT_CLASS}__content ${this.props.isTokenDetails ? `${ROOT_CLASS}__content-token-sale` : ''}`}>
-          <div style={{display: !email ? 'none' : null }} className={`${ROOT_CLASS}__contentagree`}>
-            <div className={`${ROOT_CLASS}__contentagreescroll`}>
-              <p className="boldtext">{ indexLngObj[lng]['mailForm#6'] }</p>
-              <p style={{margin: 0}}>{ indexLngObj[lng]['mailForm#7'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#8'] }</p>
-              <a target="_blank" href="http://support@icopromo.com">support@icopromo.com</a>
-              <p>{ indexLngObj[lng]['mailForm#9'] }</p>
-              <a target="_blank" href="https://sumsub.com/privacy-and-cookie-policy">Privacy Policy</a>
-              <p>{ indexLngObj[lng]['mailForm#10'] }</p>
-              <p>{ indexLngObj[lng]['mailForm#17'] } <a href={links.pp} target="_blank" >{ indexLngObj[lng]['mailForm#18'] }</a></p>
+        <div class={`${ROOT_CLASS}__legals`}>
+          <a  target="__blank" href="https://drive.google.com/open?id=1nulb7NnAQJJHGF09v9VdZC5tUQJPOV4u">
+            <div class={`${ROOT_CLASS}__item_legals`}>
+              <img src={first_block_2_row_1} class="img_legal" />
+              <div class="text_legal">CRYPTOCURRENCY EXCHANGE LICENSE</div>
             </div>
-          </div>
-          <div style={{display: email ? 'none' : null }} className="timerContent">
-            <div className={`${ROOT_CLASS}__title`}>
-              { step_content.title1[sale_step] }
+          </a>
+          <a  target="__blank" href="https://drive.google.com/open?id=1VvZSFwaR_LVJZBRp_v8GZ6w5erbDr1VF">
+            <div class={`${ROOT_CLASS}__item_legals`}>
+              <img src={first_block_2_row_2} class="img_legal" />
+              <div class="text_legal">FINANCIAL INSTITUTION LICENSE</div>
             </div>
-            <div className={`${ROOT_CLASS}__bonus`}>
-              { step_content.bonus[sale_step] }
+          </a>
+          <a  target="__blank" href="https://drive.google.com/open?id=1yNU430cKV_3wsGBkBDxqI1DhXVnqdOLM">
+            <div class={`${ROOT_CLASS}__item_legals`}>
+              <img src={first_block_2_row_3} class="img_legal" />
+              <div class="text_legal">CRYPTO WALLET LICENSE</div>
             </div>
-            <div className={`${ROOT_CLASS}__top-name-text`}>
-              <span className={`${ROOT_CLASS}__name-text-span ${this.props.isTokenDetails ? `${ROOT_CLASS}__name-text-span-token-sale` : ''}`}>{ indexLngObj[lng]['mailForm#28'] }</span>
-            </div>
-            <div className={`${ROOT_CLASS}__description`}>
-              { step_content.desc1[sale_step] }
-            </div>
-            <div className={`${ROOT_CLASS}__timer`}>
-              { step_content.timer[sale_step] }
-            </div>
-            <div className={`${ROOT_CLASS}__cost`}>
-              <div className={`${ROOT_CLASS}__now`}>
-                <div className={`${ROOT_CLASS}__cost-title`}>
-                  { step_content.textDescFromPrice[sale_step] }
-                </div>
-                <div className={`${ROOT_CLASS}__cost-value`}>
-                  {step_content.fromPrice[sale_step]} CINX
-                </div>
-              </div>
-              <div className={`${ROOT_CLASS}__arrows`}></div>
-              <div className={`${ROOT_CLASS}__later`}>
-                <div className={`${ROOT_CLASS}__cost-title`}>
-                  { indexLngObj[lng]['mailForm#24'] }
-                </div>
-                <div className={`${ROOT_CLASS}__cost-value`}>
-                  {step_content.toPrice[sale_step]} CINX
-                </div>
-              </div>
-            </div>
-            <div className={`${ROOT_CLASS}__name-text`}>
-              <span className={`${ROOT_CLASS}__name-text-span ${this.props.isTokenDetails ? `${ROOT_CLASS}__name-text-span-token-sale` : ''}`}>{ indexLngObj[lng]['mailForm#29'] }</span>
-            </div>
-          </div>
-          <div className={`${ROOT_CLASS}__input ${ (submitStatus === 0 || submitStatus === 1) ? "errorRed" : null }`}>
-            <Input
-              placeholder={ indexLngObj[lng]['mailForm#25'] }
-              onChange={this.onChange}
-            />
-          </div>
-          <div className={`${ROOT_CLASS}__button`}>
-            <div className={`button button_gradient ${!email ? null : "focus_bun_grdn"}`}
-              onClick={this.sendSubcribe}
-            >
-              { !email ? ab_val === '1' ? "JOIN US" : indexLngObj[lng]['mailForm#26'] : indexLngObj[lng]['mailForm#27'] }
-            </div>
-          </div>
-          {
-            submitStatus !== 4 ?
-              <div
-                className={`${ROOT_CLASS}__textStatus ${
-                  (submitStatus === 0 || submitStatus ===1) ? "error" :
-                    (submitStatus === 3) ? "loading" :
-                      (submitStatus === 2) ? "success" : null
-                }
-                `}>
-                  {submitStatusText}
-              </div> : null
-          }
+          </a>
         </div>
+        <div className={`${ROOT_CLASS}__video`} onClick={() => this.showVideoInPopUp('https://player.vimeo.com/video/286746544')}>
+          <img
+            src={play_button_youtube}
+            alt="CINDEX"
+            className={`${ROOT_CLASS}__play`}
+          />
+        </div> 
       </div>
     )
   }

@@ -222,6 +222,17 @@
   transform: rotate(-45deg);
 }
 
+.roadmap .size {
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmap .imageForRoadmap {
+  max-width: 800px;
+  margin: 50px auto;
+  width: 90%;
+}
+
 @media screen and (min-width: 1440px) {
   .roadmap__content {
     padding-bottom: 0;
@@ -282,7 +293,7 @@
 }
 
 @media screen and (max-width: 1439px) {
-  .roadmap__wrapper-content {
+  .roadmap__wrpper-content {
     flex-wrap: wrap;
   }
 
