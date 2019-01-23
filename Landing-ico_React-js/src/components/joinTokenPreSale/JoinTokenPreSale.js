@@ -92,7 +92,7 @@ export const JoinTokenPreSale = () => (
               </p>
             </a> */}
           </div>
-          <div className="adress_right">
+          {/*<div className="adress_right">
             <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#9'] }</div>
             <div className="address__text">
               <div>{ indexLngObj[lng]['joinTokenPreSale#10'] }</div>
@@ -101,7 +101,7 @@ export const JoinTokenPreSale = () => (
             <p>
               { indexLngObj[lng]['joinTokenPreSale#12'] } <a href="mailto:hr@cindx.io">hr@cindx.io</a>
             </p>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>

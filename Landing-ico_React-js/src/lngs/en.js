@@ -78,7 +78,7 @@ const en = {
     'cryptoAssetsManagement#11': 'CINDX.TALK, CINDX.HUB & CINDX.DAO',
     'cryptoAssetsManagement#12': 'CINDX.talk - a social network with a reward for useful content',
     'cryptoAssetsManagement#13': 'CINDX.hub - the component includes a vendor’s account, as well as a hub for testing and integrating third-party software',
-    'cryptoAssetsManagement#14': 'CINDX.dao - a component that allows you to implement a voting system for the community based on decentralised autonomous organisation rules',
+    'cryptoAssetsManagement#14': 'CINDX.loan - a component that allows to provide and invest in crypto backed P2P loan',
 
     'teamLegal#1': 'We Have a Great Team and Legal Department',
     // 'teamLegal#2': 'Legal and Regulatory Organizational Framework',

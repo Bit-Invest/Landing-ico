@@ -604,20 +604,20 @@ class TeamAdvisersPartners extends React.Component {
             </div>
           </div>
           <div className="clear" />
-          <div className="ourPartners">
-            <h2 className="header_blocks">{ indexLngObj[lng]['teamAdvisersPartners#3'] }</h2>
-            <div className="container2">
-                <Slider {...settingsOurParners}>
-                  {this.mapOurPartners()}
-                </Slider>
-            </div>
-            <div className="container3">
-              <div className="slick-list">
+          <div className="clear" />
+        </div>
+        <div className="ourPartners">
+          <h2 className="header_blocks">{ indexLngObj[lng]['teamAdvisersPartners#3'] }</h2>
+          <div className="container2">
+              <Slider {...settingsOurParners}>
                 {this.mapOurPartners()}
-              </div>
+              </Slider>
+          </div>
+          <div className="container3">
+            <div className="slick-list">
+              {this.mapOurPartners()}
             </div>
           </div>
-          <div className="clear" />
         </div>
       </div>
     );

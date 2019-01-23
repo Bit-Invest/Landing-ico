@@ -147,23 +147,23 @@ class MailForm extends React.Component {
 
     return (
       <div className={ROOT_CLASS}>
-        <div class={`${ROOT_CLASS}__legals`}>
-          <a  target="__blank" href="https://drive.google.com/open?id=1nulb7NnAQJJHGF09v9VdZC5tUQJPOV4u">
-            <div class={`${ROOT_CLASS}__item_legals`}>
-              <img src={first_block_2_row_1} class="img_legal" />
-              <div class="text_legal">CRYPTOCURRENCY EXCHANGE LICENSE</div>
+        <div className={`${ROOT_CLASS}__legals`}>
+          <a  target="__blank" href="http://static.cindx.io/en/crypto_currency_exchange_license.pdf">
+            <div className={`${ROOT_CLASS}__item_legals`}>
+              <img src={first_block_2_row_1} className="img_legal" />
+              <div className="text_legal">CRYPTOCURRENCY EXCHANGE LICENSE</div>
             </div>
           </a>
-          <a  target="__blank" href="https://drive.google.com/open?id=1VvZSFwaR_LVJZBRp_v8GZ6w5erbDr1VF">
-            <div class={`${ROOT_CLASS}__item_legals`}>
-              <img src={first_block_2_row_2} class="img_legal" />
-              <div class="text_legal">FINANCIAL INSTITUTION LICENSE</div>
+          <a  target="__blank" href="http://static.cindx.io/en/financial_institution_license.pdf">
+            <div className={`${ROOT_CLASS}__item_legals`}>
+              <img src={first_block_2_row_2} className="img_legal" />
+              <div className="text_legal">FINANCIAL INSTITUTION LICENSE</div>
             </div>
           </a>
-          <a  target="__blank" href="https://drive.google.com/open?id=1yNU430cKV_3wsGBkBDxqI1DhXVnqdOLM">
-            <div class={`${ROOT_CLASS}__item_legals`}>
-              <img src={first_block_2_row_3} class="img_legal" />
-              <div class="text_legal">CRYPTO WALLET LICENSE</div>
+          <a  target="__blank" href="http://static.cindx.io/en/crypto_wallet_license.pdf">
+            <div className={`${ROOT_CLASS}__item_legals`}>
+              <img src={first_block_2_row_3} className="img_legal" />
+              <div className="text_legal">CRYPTO WALLET LICENSE</div>
             </div>
           </a>
         </div>
