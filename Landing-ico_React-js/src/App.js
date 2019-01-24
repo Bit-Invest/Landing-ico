@@ -7,7 +7,7 @@ import { TokenSaleDetails } from './components/tokenSaleDetails/TokenSaleDetails
 // import { FeedbackProject } from './components/feedbackProject/FeedbackProject';
 import { JoinTokenPreSale } from './components/joinTokenPreSale/JoinTokenPreSale';
 import { PopUpManager } from './components/popUp/PopUpManager';
-// import { MediaNews } from './components/mediaNews/MediaNews';
+import { MediaNews } from './components/mediaNews/MediaNews';
 import { TeamAdvisersPartners } from './components/teamAdvisersPartners/TeamAdvisersPartners';
 import { MainBlock } from '@components/mainBlock';
 import { CryptoAssetsManagement } from './components/cryptoAssetsManagement/CryptoAssetsManagement';
@@ -29,17 +29,6 @@ import SocialMedia from './components/socialMedia/SocialMedia'
 import './App.css';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
-  componentDidMount() {
-    axios.get('https://cindx.io/raised')
-      .then(res => {
-        this.props.saveMoney(res.data.value)
-      })
-  }
-
   render() {
     return (
       <div className="App">
@@ -52,6 +41,7 @@ class App extends React.Component {
           <ProgressBarSale />
           {/*<OurTopRatings />*/}
           <MediaAboutUs />
+          <MediaNews />
           <CryptoAssetsManagement />
           <TeamLegal />
           <Roadmap />
@@ -63,7 +53,6 @@ class App extends React.Component {
           <SocialMedia />
           {/* <LegalSchedule /> */}
           {/* <FeedbackProject /> */}
-          {/* <MediaNews /> */}
           <TeamAdvisersPartners />
           <JoinTokenPreSale />
           {/* <SocIcons /> */}

@@ -1,7 +1,6 @@
 .block_7
 {
   padding: 0;
-  background: #6c5ed6;
 }
 
 .block_7 h2 {
@@ -248,6 +247,28 @@
   font-size: 16px;
   position: absolute;
   bottom: 20px;
+}
+
+.medium-widget-cindx {
+
+}
+
+.medium-widget-cindx .medium-widget__wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.medium-widget-cindx .medium-widget-article__title {
+  color: white;
+}
+
+.medium-widget-cindx .medium-widget-article__description {
+  color: white;
+}
+
+.medium-widget-cindx .medium-widget-article__date {
+  color: white;
 }
 
 @media (max-width: 1023px) {

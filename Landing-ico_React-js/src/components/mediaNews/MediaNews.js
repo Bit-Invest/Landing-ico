@@ -848,6 +848,12 @@ export class MediaNews extends React.Component {
     })
   }
 
+  componentDidMount() {
+    if (window.MediumWidget) {
+      window.MediumWidget.Init({renderTo: '.medium-widget-cindx', params: {"resource":"https://medium.com/cindx/the-trend-in-rating-systems-development-7a025cee518f","postsPerLine":2,"limit":6,"picture":"small","fields":["description","publishAt"],"ratio":"square"}})
+    }
+  }
+
   render() {
     const settings = {
       arrows: true,
@@ -929,7 +935,9 @@ export class MediaNews extends React.Component {
     };
     return (
       <div className="block_7">
-        <div className="size">
+        <h2 className="header_blocks">Media</h2>
+        <div className="medium-widget-cindx"></div>
+        {/*<div className="size">
           <h2 className="header_blocks">{ indexLngObj[lng]['mediaNews#1'] }</h2>
           <div className="block_arrow_relative">
             <div className="settings">
@@ -976,7 +984,7 @@ export class MediaNews extends React.Component {
             </div>
           </div>
           <div className="clear" />
-        </div>
+        </div>*/}
       </div>
     );
   }

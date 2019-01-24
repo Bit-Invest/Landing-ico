@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { showPopUp, changeUrlPopupVideo } from '../../store/store';
+import ava_1 from '../../images/ava_1.png';
 import playButtonWhite from '../../images/play_button_white.png';
 import linkedin_icon_social from '../../images/linkedin_icon_social.png';
 import medium_icon_social from '../../images/medium_icon_social.png';
@@ -17,6 +18,9 @@ import Ibraghim_Haniev from '../../media/Ibraghim_Haniev.77b0aa4e.jpg';
 import Airat from '../../media/Airat.jpg';
 import Sofja_Pevzner from '../../media/Sofja_Pevzner.jpg';
 import Jelena_Karzetskaja from '../../media/Jelena_Karzetskaja.png';
+
+
+
 // Our Parners icon
 import Progressor_logo from '../../media/Progressor_logo.png';
 import ICO_PROMO from '../../media/ico_promo.png';
@@ -28,6 +32,13 @@ import Innova8 from '../../media/Innova8.png';
 import BtcBit from '../../media/BtcBit.jpg';
 import civic_logo_horz_BIG from '../../media/civic_logo_horz_BIG.png';
 import Greenberg from '../../media/Greenberg.png';
+import intel_Wise from '../../media/intel_Wise.png';
+import Credits from '../../media/Credits.jpg';
+import WP_Pecunio from '../../media/WP_Pecunio.png';
+import Logo_Zeus from '../../media/logo.7508f04a.png';
+
+
+
 // Advicer icon
 import Keith_Teare from '../../media/Keith_Teare.1e7599ac.jpg';
 import Austin_Kimm from '../../media/Austin_Kimm.caf37ff2.jpg';
@@ -39,6 +50,11 @@ import Graham_Doggart from '../../media/Graham_Doggart.fd8f9df5.jpg';
 import Sadie_Hutton from '../../media/Sadie_Hutton.54ab2eaa.jpg';
 import Motti_Peer from '../../media/Motti_Peer.png';
 import Leonard_Grayver from '../../media/Leonard_Grayver.png';
+import William_Zhu from '../../media/William_Zhu.png';
+
+import Lincoln from '../../news/Lincoln.png';
+import Reinhard_Berger from '../../news/Reinhard_Berger.png';
+
 import './TeamAdvisersPartners.css';
 import { lng } from '../../links'
 import indexLngObj from '../../lngs/index'
@@ -62,8 +78,7 @@ const teamInfo = [
     fackt2: indexLngObj[lng]['teamAdvisersPartners#12'],
     fackt3: indexLngObj[lng]['teamAdvisersPartners#13'],
     src: 'https://www.linkedin.com/in/valjerdes/',
-    m: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61',
-    videoSrc: 'https://www.youtube.com/embed/H6hSOnoyFTY'
+    m: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61'
   },
   {
     img: Mofassair_Hossain,
@@ -94,8 +109,7 @@ const teamInfo = [
     fackt2: indexLngObj[lng]['teamAdvisersPartners#27'],
     fackt3: indexLngObj[lng]['teamAdvisersPartners#28'],
     src: 'https://ru.linkedin.com/in/denis-eskenazi-03b81726',
-    m: 'https://medium.com/cindx/denis-eskenazi-ac67e81d8c50',
-    videoSrc: 'https://www.youtube.com/embed/Dhl-fPrn-g8'
+    m: 'https://medium.com/cindx/denis-eskenazi-ac67e81d8c50'
   },
   {
     img: Ibraghim_Haniev,
@@ -140,48 +154,48 @@ const teamInfo = [
  ];
 
 const ourPartners = [
-  {
-    img: Progressor_logo,
-    name: 'Progressor',
-    position: 'Legal support',
-    href: 'https://progressor.ee/'
-  },
-  {
-    img: ICO_PROMO,
-    name: 'ICO Promo',
-    position: 'Merchant services',
-    href: 'https://icopromo.com/'
-  },
-  {
-    img: sum_and_substance_1,
-    name: 'Sum & Substance',
-    position: 'Security & Compliance',
-    href: 'https://sumsub.com/'
-  },
-  {
-    img: twigagroup,
-    name: 'Twiga Communication Group',
-    position: 'Digital & PR',
-    href: 'http://twiga.ru/'
-  },
-  {
-    img: Tradingview,
-    name: 'Tradingview',
-    position: 'Market data',
-    href: 'https://www.tradingview.com/'
-  },
-  {
-    img: Yellow_Door,
-    name: 'Yellow Door',
-    position: 'Silicon Valley Accelerator',
-    href: 'http://yellowdoor.ru/'
-  },
-  {
-    img: Innova8,
-    name: 'Innov8 Global Advisory',
-    position: 'Global Ventures',
-    href: 'http://www.innov8globaladvisory.com/'
-  },
+   {
+     img: Progressor_logo,
+     name: 'Progressor',
+     position: 'Legal support',
+     href: 'https://progressor.ee/'
+   },
+   {
+     img: ICO_PROMO,
+     name: 'ICO Promo',
+     position: 'Merchant services',
+     href: 'https://icopromo.com/'
+   },
+   {
+     img: sum_and_substance_1,
+     name: 'Sum & Substance',
+     position: 'Security & Compliance',
+     href: 'https://sumsub.com/'
+   },
+   {
+     img: twigagroup,
+     name: 'Twiga Communication Group',
+     position: 'Digital & PR',
+     href: 'http://twiga.ru/'
+   },
+   {
+     img: Tradingview,
+     name: 'Tradingview',
+     position: 'Market data',
+     href: 'https://www.tradingview.com/'
+   },
+   {
+     img: Yellow_Door,
+     name: 'Yellow Door',
+     position: 'Silicon Valley Accelerator',
+     href: 'http://yellowdoor.ru/'
+   },
+   {
+     img: Innova8,
+     name: 'Innov8 Global Advisory',
+     position: 'Global Ventures',
+     href: 'http://www.innov8globaladvisory.com/'
+   },
   {
     img: BtcBit,
   },
@@ -191,12 +205,26 @@ const ourPartners = [
   {
     img: Greenberg,
   },
-];
+  {
+    img: intel_Wise
+  },
+  {
+    img: Credits
+  },
+  {
+    img: Logo_Zeus,
+    height: 50
+  },
+  {
+    img: WP_Pecunio,
+    height: 30
+  }
+].reverse();
 
 const advisers = [
   {
     img: Keith_Teare,
-    video: 'https://www.youtube.com/embed/1JaUqtqCQ5w',
+    video: 'https://www.youtube.com/embed/qWpWbZUljdg',
     src: 'https://linkedin.com/in/kteare',
     m: 'https://medium.com/cindx/cindx-advisers-keith-teare-1041410275d0',
     name: indexLngObj[lng]['teamAdvisersPartners#59'],
@@ -213,7 +241,7 @@ const advisers = [
   },
   {
     img: Austin_Kimm,
-    video: 'https://www.youtube.com/embed/pkBoVl7Brds',
+    video: 'https://www.youtube.com/embed/5X8isxq6S00',
     name: indexLngObj[lng]['teamAdvisersPartners#67'],
     src: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
     m: 'https://medium.com/cindx/cindx-advisers-austin-kimm-fa417a929e32',
@@ -229,7 +257,7 @@ const advisers = [
   },
   {
     img: Philip_Staehelin,
-    video: 'https://www.youtube.com/embed/nN76RkbejGc',
+    video: 'https://www.youtube.com/embed/gMYQzVyXHZI',
     name: indexLngObj[lng]['teamAdvisersPartners#74'],
     src: 'https://www.linkedin.com/in/staehelin/',
     m: 'https://medium.com/cindx/cindx-advisers-philip-staehelin-810df12247bc',
@@ -246,7 +274,7 @@ const advisers = [
   },
   {
     img: Amarpreet_Singh,
-    video: 'https://www.youtube.com/embed/VKNEfob9sGA',
+    video: 'https://www.youtube.com/embed/vsjxNki18DY',
     name: indexLngObj[lng]['teamAdvisersPartners#82'],
     src: 'https://www.linkedin.com/in/amarpreetsingh2/',
     m: 'https://medium.com/cindx/cindx-advisers-amarpreet-singh-29c1edb22dda',
@@ -282,7 +310,7 @@ const advisers = [
   },
   {
     img: Bogdan_Fiedur,
-    video: 'https://www.youtube.com/embed/4kXgu60guic',
+    video: 'https://www.youtube.com/embed/oC-oTaBId7g',
     name: indexLngObj[lng]['teamAdvisersPartners#125'],
     src: 'https://www.linkedin.com/in/bogdanfiedur/',
     m: 'https://medium.com/cindx/cindx-advisers-bogdan-fiedur-16897ad954ad',
@@ -299,7 +327,7 @@ const advisers = [
   },
   {
     img: Graham_Doggart,
-    video: 'https://www.youtube.com/embed/uXTA_QLympE',
+    video: 'https://www.youtube.com/embed/HWV5Hv2R6vA',
     name: indexLngObj[lng]['teamAdvisersPartners#133'],
     src: 'https://www.linkedin.com/in/grahamdoggart/',
     m: 'https://medium.com/cindx/cindx-advisers-graham-doggart-a7f45b3e4ce4',
@@ -316,7 +344,7 @@ const advisers = [
   },
   {
     img: Sadie_Hutton,
-    video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
+    video: 'https://www.youtube.com/embed/iQhcMhT13hs',
     name: indexLngObj[lng]['teamAdvisersPartners#141'],
     src: 'https://www.linkedin.com/in/sadie-hutton/',
     m: 'https://medium.com/cindx/cindx-advisers-sadie-hutton-6a8d68aa6fcf',
@@ -379,24 +407,77 @@ const advisers = [
       indexLngObj[lng]['teamAdvisersPartners#169'],
       indexLngObj[lng]['teamAdvisersPartners#170']
     ]
+  },
+  {
+    img: Lincoln,
+    video: '',
+    name: 'Teo Lincoln',
+    src: 'https://www.linkedin.com/in/lincolnteo/',
+    m: '',
+    position: 'Founder and CEO of Intel Wise Group',
+    fackt1: 'Former Managing Director of DP Information Group',
+    fackt2: 'Advisor to Brunei’s central bank Authority Monetary Brunei Darussalam (AMBD)',
+    linkedin: 'https://www.linkedin.com/in/lincolnteo/',
+    text: [
+      `Lincoln is Founder and CEO of Intel Wise Group. `,
+      `Prior to this, he was Chief Operating Officer and Managing Director of DP Information Group – a subsidiary of Experian plc and managed multiple data repositories in South-East Asia (including Singapore, Malaysia, Indonesia, Vietnam and Brunei).`,
+      `Lincoln’s experience includes risk management and IT infrastructures with United Overseas Bank Group and Standard Chartered Bank.  As a statistician, he introduced credit scoring to multiple banks in Asia-Pacific and also found time to serve on project teams of the World Bank Group and the Asian Development Bank. Intel`,
+      `Under the umbrella of the Chongqing Connectivity Initiative, a Singapore and China Governments’ bilateral project, Intel Wise has curated data on more than 100+ million companies in China and helped companies globally with their compliance and due diligence needs.  More recently, the company has embarked on blockchain technology and developed platforms for alternative financial services and the trading of digital assets.`,
+      `In addition, Lincoln is also an Advisor to Brunei’s central bank Autoriti Monetary Brunei Darussalam (AMBD).`
+    ]
+  },
+  {
+    img: Reinhard_Berger,
+    video: '',
+    name: 'Reinhard Berger',
+    src: 'https://www.linkedin.com/in/reinhard-berger-90810613/',
+    m: '',
+    position: 'Reinhard Berger is the CEO of Pecunio Blockchain Technologies, a Dubai VC Firm focussed on innovative DLT technologies.',
+    fackt1: 'Consulted Credit Suisse, UBS and Invesco as a business architect at Accenture. Was a principal for Capgemini',
+    fackt2: 'Managed $250M in alternative assets via Invest Finance AG since 2003',
+    linkedin: 'https://www.linkedin.com/in/reinhard-berger-90810613/',
+    text: [
+      `He holds an MSc in Computer Science, an M.A in law, as well as an MBA from Danube University. `,
+      `Prior to Pecunio, Reinhard’s career began as a business architect for global consulting firm Accenture, with clients such as Credit Suisse, UBS and Invesco.`,
+      `He then served as a principal for French tech giant Capgemini. In 2003, Reinhard co-founded Alternative Invest Finance AG, an independent hedge fund operator, where he managed alternative assets in excess of $250M. `,
+      `An intuitive leader, natural mentor and true strategist at Pecuino’s helm.`,
+      ``,
+      ``
+    ]
+  },
+  {
+    img: William_Zhu,
+    video: '',
+    name: 'William Zhu',
+    src: 'https://www.linkedin.com/in/高峰-朱-196741173',
+    m: '',
+    position: 'Founder of The Blockchainer & J&C Capital',
+    fackt1: 'Guest Professor of Zhejiang University',
+    fackt2: 'Former Chairman of OTC Database (Shanghai)',
+    linkedin: 'https://www.linkedin.com/in/高峰-朱-196741173',
+    text: [
+      `Mr. Zhu is finance doctoral student, holds Bachelor of law & Master of Marketing. Now he is Executive Secretary General of Emerging Industries Institute (Shanghai), Guest Professor of Zhejiang University, and Expert Lecturer of Shanghai Municipal Tourism Administration.`,
+      `Previously, he was Chairman of OTC Database (Shanghai) Information Technology Co., Ltd.), General Manager of China UnionPay Smart Big Data and Internet Finance Research Institute, and CEO of CDMC.`,
+      `The Blockchainer provides to its customers comprehensive services such as: summit organization, global business tours, meetup host and customization, media & social media casting, VIP resource connection, localisation service.
+These six business segments provide core chain services around the head blockchain enterprise, building blockchain enterprises to expand the service ecosystem. The Blockchainer accelerates the network development of the business sector in the three dimensions of talent, organization and information.`,
+      `The Blockchainer has more than 10 years of experience in the science and technology finance team, is the earliest blockchain proponent and practitioner in China; is the earliest blockchain ecosystem core player in China; focusing on the blockchain field, providing in-depth and vertical global professional services; one of the industry’s most comprehensive network in blockchain industry upstream and downstream.`,
+    ]
   }
- ];
+].reverse();
+
+
+/*
+Lincoln
+Reinhard_Berger
+*/
+
 
 class TeamAdvisersPartners extends React.Component {
   mapTeam = () => {
     return teamInfo.map((el, i) => {
       return (
         <div key={i} className="item">
-          <div className="img" style={{ backgroundImage: `url(${el.img})` }}>
-            <div onClick={() => this.showVideoInPopUp(el.videoSrc)}>
-              <img
-                className="playButtonWhite"
-                style={{display: el.videoSrc ? 'block' : 'none'}}
-                src={playButtonWhite}
-                alt={"CINDX"}
-              />
-            </div>
-          </div>
+          <img className="img" src={el.img} alt="CINDX"/>
           <h3>{el.name}</h3>
           <p className="position">{el.position}</p>
           <hr />
@@ -420,16 +501,7 @@ class TeamAdvisersPartners extends React.Component {
     return teamInfo.map((el, i) => {
       return (
         <div key={i} className="item">
-          <div className="img" style={{ backgroundImage: `url(${el.img})` }}>
-            <div onClick={() => this.showVideoInPopUp(el.videoSrc)}>
-              <img
-                className="playButtonWhite"
-                style={{display: el.videoSrc ? 'block' : 'none'}}
-                src={playButtonWhite}
-                alt={"CINDX"}
-              />
-            </div>
-          </div>
+          <img className="img" src={el.img} alt="CINDX"/>
           <h3>{el.name}</h3>
           <p className="position">{el.position}</p>
           <hr />
@@ -454,11 +526,14 @@ class TeamAdvisersPartners extends React.Component {
       const promo = (el.img === ICO_PROMO || el.img === civic_logo_horz_BIG || el.img === Greenberg) ? 'ico-promo' : ''
       const newPromo = (el.img === BtcBit) ? 'btcbit-promo' : ''
       return (
-        <div key={i} className="ourPartners__image-block">
+        <div key={i} data-msg={el.height}>
           <img
             className={`img ${promo} ${newPromo}`} 
             src={el.img} 
             alt="CINDX"
+            style={{
+              maxHeight: el.height || null
+            }}
           />
         </div>
       );
@@ -604,20 +679,20 @@ class TeamAdvisersPartners extends React.Component {
             </div>
           </div>
           <div className="clear" />
-          <div className="clear" />
-        </div>
-        <div className="ourPartners">
-          <h2 className="header_blocks">{ indexLngObj[lng]['teamAdvisersPartners#3'] }</h2>
-          <div className="container2">
-              <Slider {...settingsOurParners}>
+          <div className="ourPartners">
+            <h2 className="header_blocks">{ indexLngObj[lng]['teamAdvisersPartners#3'] }</h2>
+            <div className="container2">
+                <Slider {...settingsOurParners}>
+                  {this.mapOurPartners()}
+                </Slider>
+            </div>
+            <div className="container3">
+              <div className="slick-list">
                 {this.mapOurPartners()}
-              </Slider>
-          </div>
-          <div className="container3">
-            <div className="slick-list">
-              {this.mapOurPartners()}
+              </div>
             </div>
           </div>
+          <div className="clear" />
         </div>
       </div>
     );
