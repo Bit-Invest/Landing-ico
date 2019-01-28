@@ -237,6 +237,10 @@
   margin: 15px 0;
 }
 
+.ourPartners .slick-slide {
+  display: flex!important;
+  justify-content: center!important;
+}
 
 @media (max-width: 1023px){
   .block_8 .ourPartners .carusel-block .img {

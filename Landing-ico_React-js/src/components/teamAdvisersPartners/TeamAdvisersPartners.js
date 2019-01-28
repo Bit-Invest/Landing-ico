@@ -19,8 +19,6 @@ import Airat from '../../media/Airat.jpg';
 import Sofja_Pevzner from '../../media/Sofja_Pevzner.jpg';
 import Jelena_Karzetskaja from '../../media/Jelena_Karzetskaja.png';
 
-
-
 // Our Parners icon
 import Progressor_logo from '../../media/Progressor_logo.png';
 import ICO_PROMO from '../../media/ico_promo.png';
@@ -36,6 +34,8 @@ import intel_Wise from '../../media/intel_Wise.png';
 import Credits from '../../media/Credits.jpg';
 import WP_Pecunio from '../../media/WP_Pecunio.png';
 import Logo_Zeus from '../../media/logo.7508f04a.png';
+import Pentaglobal from '../../media/pentaglobal.png';
+import Aerum from '../../media/AerumLogo.png';
 
 
 
@@ -218,6 +218,14 @@ const ourPartners = [
   {
     img: WP_Pecunio,
     height: 30
+  },
+  {
+    img: Pentaglobal,
+    height: 30
+  },
+  {
+    img: Aerum,
+    height: 30,
   }
 ].reverse();
 
@@ -629,6 +637,17 @@ class TeamAdvisersPartners extends React.Component {
       speed: 2000,
       autoplaySpeed: 2000
     };
+    const settingsOurParners2 = {
+      arrows: false,
+      swipeToSlide: true,
+      lazyLoad: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000
+    };
     const settingsOurParners3 = {
       arrows: false,
       swipeToSlide: true,
@@ -687,9 +706,12 @@ class TeamAdvisersPartners extends React.Component {
                 </Slider>
             </div>
             <div className="container3">
-              <div className="slick-list">
+              {/*<div className="slick-list">
                 {this.mapOurPartners()}
-              </div>
+              </div>*/}
+              <Slider {...settingsOurParners2}>
+                {this.mapOurPartners()}
+              </Slider>
             </div>
           </div>
           <div className="clear" />
