@@ -366,7 +366,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 800px) {
   .cryptoAssetsManagement .video_block_last {
     margin-bottom: 50px;
     margin-left: calc(360px + 35 * ((100vw - 768px) / 255));
@@ -433,7 +433,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .problemBlock__mobile {
     display: block;
   }
