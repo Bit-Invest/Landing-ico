@@ -45,6 +45,9 @@
 .cryptoAssetsManagement .problemBlock .txt2 .caption{
   font-size: 24px;
 }
+.caption2 {
+  font-size: 14px!important;
+}
 .cryptoAssetsManagement .problemBlock .txt  hr,
 .cryptoAssetsManagement .problemBlock .txt2 hr  {
   width: 100%;
@@ -263,15 +266,15 @@
 
 .problemBlock__dot {
   border-radius: 50%;
-  background-color: rgba(255,255,255,0.5);
-  width: 12px;
+  color: rgba(255,255,255,0.5);
   height: 12px;
+  line-height: 12px;
   cursor: pointer;
 }
 
 .problemBlock__dot:hover,
 .problemBlock__dot-active {
-  background-color: #fff;
+  color: #fff;
 }
 
 .problemBlock__slide-more-search {

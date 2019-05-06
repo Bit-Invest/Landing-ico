@@ -30,7 +30,7 @@ const user_lng = window.localStorage.getItem('loc') || navigator.language || 'en
 const user_loc = user_lng.split('_')[0].split('-')[0];
 const loc = ((list_lngs.indexOf(user_loc) != -1) ? user_loc : 'en');
 
-export const lng = loc;
+export const lng = 'en';//loc;
 
 const list_hasDocs = 'zn en tr ko';
 const doc_forUser = ((list_hasDocs.indexOf(loc) != -1) ? loc : 'en');

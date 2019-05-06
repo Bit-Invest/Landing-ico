@@ -31,6 +31,9 @@ const Popup = (props) => {
 const problemData = [
   {
     header: indexLngObj[lng]['cryptoAssetsManagement#2'],
+    header2: [
+      `CINDX.market is a marketplace for investors where they can evaluate and select strategies to follow or index to invest.`,
+    ],
     text1: indexLngObj[lng]['cryptoAssetsManagement#3'],
     text2: indexLngObj[lng]['cryptoAssetsManagement#4'],
     text3: indexLngObj[lng]['cryptoAssetsManagement#5'],
@@ -38,29 +41,34 @@ const problemData = [
   },
   {
     header: indexLngObj[lng]['cryptoAssetsManagement#7'],
+    header2: [
+      `CINDX.trade is a module for traders to trade crypto assets on different exchange in one place, analyse the market, automate trading and achieve outstanding gains.`,
+      `CINDX uses API for data collection and trades execution. API and secret keys are not less secure than users’ login and password. To protect CINDX users, we keep all the secret API keys in a separate database using bank- level encryption.`,
+    ],
     text1: indexLngObj[lng]['cryptoAssetsManagement#8'],
     text2: indexLngObj[lng]['cryptoAssetsManagement#9'],
     text3: indexLngObj[lng]['cryptoAssetsManagement#10'],
     mobileSrc: crypto1
   },
   {
-    header: indexLngObj[lng]['cryptoAssetsManagement#11'],
-    text1: indexLngObj[lng]['cryptoAssetsManagement#12'],
-    text2: indexLngObj[lng]['cryptoAssetsManagement#13'],
-    text3: indexLngObj[lng]['cryptoAssetsManagement#14'],
-    isMockup: true,
+    header: `CINDX.HUB`,
+    header2: [
+      `CINDX.hub is component for algorithmic strategies creating, historical testing and analysis with the number of ready to use solutions provided.`,
+    ],
+    text1: `HUB.Pro is an option for professional traders which allows to automate their trading strategies for 24/7 trading and earning.`,
+    text2: `HUB.Lite is an option for investors who can work with proven instruments with flexible risk settings.`,
     mobileSrc: crypto2
   }
 ]
 
 const cryptoArr = [
   {
-    preview: crypto0,
-    more: cryptoMore0
-  },
-  {
     preview: crypto1,
     more: cryptoMore1
+  },
+  {
+    preview: crypto0,
+    more: cryptoMore0
   },
   {
     preview: crypto2,
@@ -166,6 +174,11 @@ class CryptoAssetsManagement extends React.Component {
           <div className="problemBlock">
             <div className="txt">
               <p className="caption">{ el.header }</p>
+              {
+                el.header2.map(header2Text => (
+                  <p className="caption caption2">{header2Text}</p>
+                ))
+              }
               <hr/>
               <div className="problemBlock__wrapper-mockup">
                 { el.isMockup ?
@@ -174,17 +187,25 @@ class CryptoAssetsManagement extends React.Component {
                   </div> :
                   null
                 }
-                <div className="problemBlock__content-p">
-                  <p>
-                    • { el.text1 }
-                  </p>
-                  <p>
-                    • { el.text2 }
-                  </p>
-                  <p>
-                    • { el.text3 }
-                  </p>
-                </div>
+                { (el.text1 || el.text2 || el.text2) &&
+                  (<div className="problemBlock__content-p">
+                    { el.text1 &&
+                      (<p>
+                        • { el.text1 }
+                      </p>)
+                    }
+                    { el.text2 &&
+                      (<p>
+                        • { el.text2 }
+                      </p>)
+                    }
+                    { el.text3 &&
+                      (<p>
+                        • { el.text3 }
+                      </p>)
+                    }
+                  </div>)
+                }
               </div>
             </div>
           </div>
@@ -203,6 +224,7 @@ class CryptoAssetsManagement extends React.Component {
           <div className="problemBlock">
             <div className="txt">
               <p className="caption">{ el.header }</p>
+              <p className="caption caption2">{ el.header2 }</p>
               <hr/>
               { el.isMockup ?
                 <div className='video-block'>
@@ -210,15 +232,21 @@ class CryptoAssetsManagement extends React.Component {
                 </div> :
                 null
               }
-              <p>
-                • { el.text1 }
-              </p>
-              <p>
-                • { el.text2 }
-              </p>
-              <p>
-                • { el.text3 }
-              </p>
+              { el.text1 &&
+                (<p>
+                  • { el.text1 }
+                </p>)
+              }
+              { el.text2 &&
+                (<p>
+                  • { el.text2 }
+                </p>)
+              }
+              { el.text3 &&
+                (<p>
+                  • { el.text3 }
+                </p>)
+              }
             </div>
           </div>
         </div>
@@ -338,9 +366,9 @@ class CryptoAssetsManagement extends React.Component {
                   </svg>
                 </div>
                 <div className="problemBlock__dots">
-                  <span className={`problemBlock__dot ${this.state.currentCrypto === 0 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(0)}></span>
-                  <span className={`problemBlock__dot ${this.state.currentCrypto === 1 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(1)}></span>
-                  <span className={`problemBlock__dot ${this.state.currentCrypto === 2 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(2)}></span>
+                  <span className={`problemBlock__dot ${this.state.currentCrypto === 0 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(0)}>MARKET</span>
+                  <span className={`problemBlock__dot ${this.state.currentCrypto === 1 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(1)}>TRADE</span>
+                  <span className={`problemBlock__dot ${this.state.currentCrypto === 2 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(2)}>HUB</span>
                 </div>
                 <div className="problemBlock__arrow problemBlock__right-arrow" onClick={this.nextSlide}>
                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 129 129" width="21" height="21">

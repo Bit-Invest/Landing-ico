@@ -26,6 +26,7 @@ import { DocPopup } from './components/DocPopup/DocPopup'
 import OurTopRatings  from './components/ourTopRatings/OurTopRatings'
 import MediaAboutUs from './components/mediaAboutUs/MediaAboutUs'
 import SocialMedia from './components/socialMedia/SocialMedia'
+import { MvpBlock } from './components/mvpBlock/';
 import './App.css';
 
 class App extends React.Component {
@@ -45,6 +46,7 @@ class App extends React.Component {
           <CryptoAssetsManagement />
           <TeamLegal />
           <Roadmap />
+          <MvpBlock />
           {/* <RoadsShow /> */}
           {/* <ProblemSolving /> */}
           {/* <HowCindxWorks /> */}

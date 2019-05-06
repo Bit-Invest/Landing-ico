@@ -228,9 +228,10 @@
 }
 
 .roadmap .imageForRoadmap {
-  max-width: 800px;
+  width: 100%;
+  max-width: 900px;
   margin: 50px auto;
-  width: 90%;
+  z-index: 2;
 }
 
 @media screen and (min-width: 1440px) {

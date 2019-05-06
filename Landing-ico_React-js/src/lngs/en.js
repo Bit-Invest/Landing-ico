@@ -19,7 +19,7 @@ const en = {
     'menu#8': 'Sale Details',
     'menu#9': 'Team',
     'menu#10': 'Public Docs',
-    'menu#11': 'Test MVP',
+    'menu#11': 'MVP LIFE',
 
     'mailForm#1': 'Wrong email',
     'mailForm#2': 'sending ..',
@@ -66,11 +66,11 @@ const en = {
 
     'cryptoAssetsManagement#1.1': 'CINDX is a Сrypto Asset Management Hub.',
     'cryptoAssetsManagement#1.2': 'We solve the problems of investors, traders and developers',
-    'cryptoAssetsManagement#2': 'СINDX.MARKETPLACE FOR INVESTORS',
+    'cryptoAssetsManagement#2': 'СINDX.MARKET FOR INVESTORS',
     'cryptoAssetsManagement#3': 'Don’t worry about your knowledge and experience – the experts of crypto trading are here to help you',
     'cryptoAssetsManagement#4': 'Control your currency: your coins are kept in your wallet at all times',
     'cryptoAssetsManagement#5': 'Only pay if you earn: you will only be charged fees if your portfolio makes money',
-    'cryptoAssetsManagement#6': 'TEST MVP',
+    'cryptoAssetsManagement#6': 'MVP LIFE',
     'cryptoAssetsManagement#7': 'CINDX.TRADE FOR TRADERS',
     'cryptoAssetsManagement#8': 'You can attract capital with $0 marketing costs',
     'cryptoAssetsManagement#9': 'We provide you with Terminal, App Store, marketplace and other advanced tools to succeed in trading',
@@ -128,7 +128,7 @@ const en = {
     'problemSolving#11': 'Our decentralized system and smart contracts allow your funds to be managed without being transferred to another trader',
     'problemSolving#12': 'Every investor in CINDX has the opportunity to have their funds managed by the most successful traders on the market',
     'problemSolving#13': 'What Kinds of Problems Does CINDX Solve for Investors?',
-    'problemSolving#14': 'TEST MVP',
+    'problemSolving#14': 'MVP LIFE',
 
     'howCindxWorks#1': 'Investors',
     'howCindxWorks#2': 'Traders',
@@ -551,7 +551,7 @@ const en = {
 
     'joinTokenPreSale#1': 'Join Token Pre-Sale Now!',
     'joinTokenPreSale#2': 'JOIN PRE-SALE',
-    'joinTokenPreSale#3': 'TEST MVP',
+    'joinTokenPreSale#3': 'MVP LIFE',
     'joinTokenPreSale#4': 'Head Office',
     'joinTokenPreSale#5': 'Estonia, Talinn',
     'joinTokenPreSale#6': '10416, Harjumaa, Erika 14',
