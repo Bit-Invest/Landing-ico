@@ -129,6 +129,11 @@
   font-weight: bold;
 }
 
+.linkDoc {
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1439px) {
   .block_9 .container2 {
     flex-direction: column-reverse;

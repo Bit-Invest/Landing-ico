@@ -232,7 +232,7 @@ const ourPartners = [
 const advisers = [
   {
     img: Keith_Teare,
-    video: 'https://www.youtube.com/embed/qWpWbZUljdg',
+    video: 'https://www.youtube.com/embed/1JaUqtqCQ5w',
     src: 'https://linkedin.com/in/kteare',
     m: 'https://medium.com/cindx/cindx-advisers-keith-teare-1041410275d0',
     name: indexLngObj[lng]['teamAdvisersPartners#59'],
@@ -249,7 +249,7 @@ const advisers = [
   },
   {
     img: Austin_Kimm,
-    video: 'https://www.youtube.com/embed/5X8isxq6S00',
+    video: 'https://www.youtube.com/embed/pkBoVl7Brds',
     name: indexLngObj[lng]['teamAdvisersPartners#67'],
     src: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
     m: 'https://medium.com/cindx/cindx-advisers-austin-kimm-fa417a929e32',
@@ -265,7 +265,7 @@ const advisers = [
   },
   {
     img: Philip_Staehelin,
-    video: 'https://www.youtube.com/embed/gMYQzVyXHZI',
+    video: 'https://www.youtube.com/embed/nN76RkbejGc',
     name: indexLngObj[lng]['teamAdvisersPartners#74'],
     src: 'https://www.linkedin.com/in/staehelin/',
     m: 'https://medium.com/cindx/cindx-advisers-philip-staehelin-810df12247bc',
@@ -282,7 +282,7 @@ const advisers = [
   },
   {
     img: Amarpreet_Singh,
-    video: 'https://www.youtube.com/embed/vsjxNki18DY',
+    video: 'https://www.youtube.com/embed/VKNEfob9sGA',
     name: indexLngObj[lng]['teamAdvisersPartners#82'],
     src: 'https://www.linkedin.com/in/amarpreetsingh2/',
     m: 'https://medium.com/cindx/cindx-advisers-amarpreet-singh-29c1edb22dda',
@@ -318,7 +318,7 @@ const advisers = [
   },
   {
     img: Bogdan_Fiedur,
-    video: 'https://www.youtube.com/embed/oC-oTaBId7g',
+    video: 'https://www.youtube.com/embed/4kXgu60guic',
     name: indexLngObj[lng]['teamAdvisersPartners#125'],
     src: 'https://www.linkedin.com/in/bogdanfiedur/',
     m: 'https://medium.com/cindx/cindx-advisers-bogdan-fiedur-16897ad954ad',
@@ -335,7 +335,7 @@ const advisers = [
   },
   {
     img: Graham_Doggart,
-    video: 'https://www.youtube.com/embed/HWV5Hv2R6vA',
+    video: 'https://www.youtube.com/embed/uXTA_QLympE',
     name: indexLngObj[lng]['teamAdvisersPartners#133'],
     src: 'https://www.linkedin.com/in/grahamdoggart/',
     m: 'https://medium.com/cindx/cindx-advisers-graham-doggart-a7f45b3e4ce4',
@@ -352,7 +352,7 @@ const advisers = [
   },
   {
     img: Sadie_Hutton,
-    video: 'https://www.youtube.com/embed/iQhcMhT13hs',
+    video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
     name: indexLngObj[lng]['teamAdvisersPartners#141'],
     src: 'https://www.linkedin.com/in/sadie-hutton/',
     m: 'https://medium.com/cindx/cindx-advisers-sadie-hutton-6a8d68aa6fcf',

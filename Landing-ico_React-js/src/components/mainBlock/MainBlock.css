@@ -154,8 +154,19 @@
     width: 90%;
     word-wrap: break-word;
   }
+  .main-block__cont {
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 90%;
+    word-wrap: break-word;
+  }
+  .main-block__formStarted .button_send {
+    margin-top: 20px;
+  }
   .main-block__form {
-    width: 100%;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 90%;
   }
   .mail-form {
     width: 100%;

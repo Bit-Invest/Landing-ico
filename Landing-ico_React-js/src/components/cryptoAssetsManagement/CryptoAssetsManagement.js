@@ -1,20 +1,20 @@
 import * as React from 'react';
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { showPopUp, changeUrlPopupVideo } from '../../store/store';
-import crypto0 from '../../images/crypto/crypto1.png'
-import crypto1 from '../../images/crypto/crypto2.png'
-import crypto2 from '../../images/crypto/crypto3.png'
-import cryptoMore0 from '../../images/crypto/DASHBOARD1111.png'
-import cryptoMore1 from '../../images/crypto/DASHBOARD2222.png'
-import cryptoMore2 from '../../images/crypto/DASHBOARD3333.png'
+import crypto0 from '../../images/crypto/crypto1.png';
+import crypto1 from '../../images/crypto/crypto2.png';
+import crypto2 from '../../images/crypto/crypto3.png';
+import cryptoMore0 from '../../images/crypto/DASHBOARD1111.png';
+import cryptoMore1 from '../../images/crypto/DASHBOARD2222.png';
+import cryptoMore2 from '../../images/crypto/DASHBOARD3333.png';
 import {links} from '../../links.js';
-import Rectangle_White_opacity from '../../images/Rectangle_White_opacity.png'
+import Rectangle_White_opacity from '../../images/Rectangle_White_opacity.png';
 // import play_button_youtube from '../../media/play_button_youtube.png';
 import './cryptoAssetsManagement.css';
-import { lng } from '../../links'
-import indexLngObj from '../../lngs/index'
+import { lng } from '../../links';
+import indexLngObj from '../../lngs/index';
 
 const Popup = (props) => {
   return (
@@ -59,22 +59,22 @@ const problemData = [
     text2: `HUB.Lite is an option for investors who can work with proven instruments with flexible risk settings.`,
     mobileSrc: crypto2
   }
-]
+];
 
 const cryptoArr = [
   {
     preview: crypto1,
-    more: cryptoMore1
+    more: cryptoMore1,
   },
   {
     preview: crypto0,
-    more: cryptoMore0
+    more: cryptoMore0,
   },
   {
     preview: crypto2,
-    more: cryptoMore2
+    more: cryptoMore2,
   },
-]
+];
 
 class CryptoAssetsManagement extends React.Component {
   state = {
