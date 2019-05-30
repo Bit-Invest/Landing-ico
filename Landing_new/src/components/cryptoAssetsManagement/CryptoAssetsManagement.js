@@ -175,8 +175,8 @@ class CryptoAssetsManagement extends React.Component {
             <div className="txt">
               <p className="caption">{ el.header }</p>
               {
-                el.header2.map(header2Text => (
-                  <p className="caption caption2">{header2Text}</p>
+                el.header2.map((header2Text, index) => (
+                  <p className="caption caption2" key={index}>{header2Text}</p>
                 ))
               }
               <hr/>

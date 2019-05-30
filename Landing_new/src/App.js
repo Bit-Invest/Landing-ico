@@ -2,9 +2,9 @@ import * as React from 'react';
 import { ProblemSolving } from './components/problemSolving/ProblemSolving';
 import { HowCindxWorks } from './components/howCindxWorks/HowCindxWorks';
 import { MarketAnalytics } from './components/marketAnalytics/MarketAnalytics';
-import { TokenSaleDetails } from './components/tokenSaleDetails/TokenSaleDetails';
+// import { TokenSaleDetails } from './components/tokenSaleDetails/TokenSaleDetails';
 // import { LegalSchedule } from './components/legalSchedule/LegalSchedule';
-// import { FeedbackProject } from './components/feedbackProject/FeedbackProject';
+import { FeedbackProject } from './components/feedbackProject/FeedbackProject';
 import { JoinTokenPreSale } from './components/joinTokenPreSale/JoinTokenPreSale';
 import { PopUpManager } from './components/popUp/PopUpManager';
 import { MediaNews } from './components/mediaNews/MediaNews';
@@ -21,9 +21,9 @@ import { Menu } from '@components/menu/Menu';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { saveMoney } from './store/store'
-import axios from 'axios'
+// import axios from 'axios'
 import { DocPopup } from './components/DocPopup/DocPopup'
-import OurTopRatings  from './components/ourTopRatings/OurTopRatings'
+// import OurTopRatings  from './components/ourTopRatings/OurTopRatings'
 import MediaAboutUs from './components/mediaAboutUs/MediaAboutUs'
 import SocialMedia from './components/socialMedia/SocialMedia'
 import { MvpBlock } from './components/mvpBlock/';
@@ -42,13 +42,14 @@ class App extends React.Component {
           <ProgressBarSale />
           {/*<OurTopRatings />*/}
           <MediaAboutUs />
-          <MediaNews />
           <CryptoAssetsManagement />
           <ProblemSolving />
           <HowCindxWorks />
           <MarketAnalytics />
           <TeamLegal />
           <Roadmap />
+          <FeedbackProject />
+          <MediaNews />
           <MvpBlock />
           {/* <RoadsShow /> */}
           {/* <ProblemSolving /> */}

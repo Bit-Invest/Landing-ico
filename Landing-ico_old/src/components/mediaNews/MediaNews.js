@@ -99,8 +99,6 @@ import img_08_1 from '../../news/08/1.png';
 import img_08_2 from '../../news/08/2.png';
 import img_08_3 from '../../news/08/3.jpg';
 
-
-
 import './MediaNews.css';
 
 
