@@ -376,8 +376,8 @@ const en = {
 
     'socialMedia#1': 'For more information, follow us on social media:',
 
-    'teamAdvisersPartners#1': 'Team of 50+ Members',
-    'teamAdvisersPartners#2': 'Advisers',
+    'teamAdvisersPartners#1': 'Core team Members',
+    'teamAdvisersPartners#2': 'CINDX Advisers',
     'teamAdvisersPartners#3': 'Our Partners',
     // teamInfo
     'teamAdvisersPartners#4': 'Yuriy Avdeev',

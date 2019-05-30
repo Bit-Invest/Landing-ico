@@ -664,25 +664,9 @@ class TeamAdvisersPartners extends React.Component {
         <div className="size">
           <div className="team">
             <h2 className="header_blocks">{ indexLngObj[lng]['teamAdvisersPartners#1'] }</h2>
-            <div className="block_arrow_relative">
-              <div className="settings">
-                <Slider {...settings}>
-                  {this.mapTeam()}
-                </Slider>
-              </div>
-            </div>
-            <div className="block_arrow_relative">
-              <div className="settings2">
-                <Slider {...settingsTeam2}>
-                  {this.mapTeam2()}
-                </Slider>
-              </div>
-            </div>
-            <div className="block_arrow_relative">
-              <div className="settings3">
-                <Slider {...settingsTeam3}>
-                  {this.mapTeam2()}
-                </Slider>
+            <div className="teamArrayRelative block_arrow_relative">
+              <div className="teamArray settings">
+                {this.mapTeam()}
               </div>
             </div>
           </div>
