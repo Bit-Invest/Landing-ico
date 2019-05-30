@@ -141,7 +141,7 @@ const en = {
     'howCindxWorks#9': 'I’m joining CINDX with trading expertise that will benefit investors',
     'howCindxWorks#10': 'Im joining CINDX with trading apps that will help investors',
     'howCindxWorks#11': 'We’re here to make trading easy, secure, and profitable',
-    'howCindxWorks#12': 'In a Nutshell: How CINDX Works',
+    'howCindxWorks#12': 'How CINDX Works',
 
     'marketAnalytics#1': 'Market Analytics',
     'marketAnalytics#2': 'Global AUM',

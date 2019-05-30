@@ -1,7 +1,7 @@
 import * as React from 'react';
-// import { ProblemSolving } from './components/problemSolving/ProblemSolving';
-// import { HowCindxWorks } from './components/howCindxWorks/HowCindxWorks';
-// import { MarketAnalytics } from './components/marketAnalytics/MarketAnalytics';
+import { ProblemSolving } from './components/problemSolving/ProblemSolving';
+import { HowCindxWorks } from './components/howCindxWorks/HowCindxWorks';
+import { MarketAnalytics } from './components/marketAnalytics/MarketAnalytics';
 import { TokenSaleDetails } from './components/tokenSaleDetails/TokenSaleDetails';
 // import { LegalSchedule } from './components/legalSchedule/LegalSchedule';
 // import { FeedbackProject } from './components/feedbackProject/FeedbackProject';
@@ -44,6 +44,9 @@ class App extends React.Component {
           <MediaAboutUs />
           <MediaNews />
           <CryptoAssetsManagement />
+          <ProblemSolving />
+          <HowCindxWorks />
+          <MarketAnalytics />
           <TeamLegal />
           <Roadmap />
           <MvpBlock />
