@@ -9,6 +9,24 @@
   background: linear-gradient(#2b004b 0%, #0089BB 60%, #0089BB 100%);
 }
 
+.mvpBlock .btn {
+  padding: 0 25px;
+  height: 40px;
+  border-radius: 25px;
+  border: solid 1px #ffffff;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #6e5fd6;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  margin: 30px 0;
+}
+
 .mvpBlock:before {
   content: '';
   display: block;
@@ -123,7 +141,6 @@
 
 .mvpBlock-container-two .mvpBlock-formBlock .mvpBlock-content .mvpBlock-adjustments {
   width: 100%;
-  margin-top: 100px;
 }
 
 .mvpBlock-container-two .mvpBlock-formBlock .mvpBlock-content .mvpBlock-adjustments img {

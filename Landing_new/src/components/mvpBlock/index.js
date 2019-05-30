@@ -103,24 +103,9 @@ export class MvpBlock extends React.Component {
 	    			</div>
 	    			<div className={`${ROOT_CLASS}-formBlock`}>
 	    				<div className={`${ROOT_CLASS}-content`}>
-	    					<div className={`${ROOT_CLASS}-title`}>Join a close test of our terminal and marketplace Beta as it get publically available</div>
-	    					<div className={`${ROOT_CLASS}-tsform`}>
-	                <input className={`${ROOT_CLASS}-mail`} type="text" placeholder="EMAIL" onChange={this.onChange} />
-	                <div className={`${ROOT_CLASS}-buttonSend`} onClick={this.sendSubcribe} >JOIN TEST</div>
-					      </div>
-					      {
-                  submitStatus !== 4 ?
-                    <div
-                      className={`${ROOT_CLASS}-textStatus ${
-                        (submitStatus === 0 || submitStatus ===1) ? "error" :
-                          (submitStatus === 3) ? "loading" :
-                            (submitStatus === 2) ? "success" : null
-                      }
-                      `}>
-                        {submitStatusText}
-                    </div> : null
-                }
+	    					<div className={`${ROOT_CLASS}-title`}>We have launched our CINDX platform. Join us!</div>
                 <div className={`${ROOT_CLASS}-adjustments`}>
+                  <a className="btn">Sign Up</a>
 		    					<img src={Adjustments} />
 		    				</div>
 	    				</div>
