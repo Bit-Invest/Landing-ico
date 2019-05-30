@@ -45,9 +45,9 @@ const docs = {
 };
 
 export const links = {
-  anchor: '1',
-  anchor: '2',
-  anchor: '3',
+  // anchor: '1',
+  // anchor: '2',
+  // anchor: '3',
   anchor: '4',
   mvp: `http://mvp.cindx.io/`,
   joinpresale: 'https://my.cindx.io/registration' + `?clickid=${clickid}`,

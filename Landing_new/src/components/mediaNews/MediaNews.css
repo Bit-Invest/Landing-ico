@@ -1,0 +1,319 @@
+.block_7
+{
+  padding: 0;
+}
+
+.block_7 h2 {
+  margin-bottom: 70px;
+  font-size: 40px;
+  margin-left: 75px;
+}
+
+.block_7 .investing {
+  width: 61%;
+  margin-bottom: 30px;
+}
+
+.block_7 .thestreet {
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+.block_7 .bitcoinexchangeguide {
+  margin-bottom: 15px;
+  width: 60%;
+}
+
+.block_7 .cryptoreporter {
+  margin-bottom: 30px;
+  width: 30%;
+}
+
+.block_7 .coinannouncer {
+  margin-bottom: 22px;
+  width: 45%;
+}
+
+.block_7 .cryptoninjas {
+  margin-bottom: -18px;
+  margin-top: -16px;
+  width: 54%;
+}
+
+.block_7 .medium {
+  width: 57%;
+  margin-bottom: 30px;
+}
+
+.block_7 .forbes {
+  width: 46%;
+  margin-bottom: 30px;
+}
+
+.block_7 .ambcrypto {
+  margin-bottom: 30px;
+  width: 75%;
+}
+
+.block_7 .bitcoinist {
+  margin-bottom: 30px;
+  width: 75%;
+}
+
+.block_7 .tokendesk {
+  margin-bottom: 30px;
+  width: 65%;
+}
+
+.block_7 .btcmanager {
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+.block_7 .blockonomi {
+  margin-bottom: 30px;
+  width: 84%;
+}
+
+.block_7 .bitcoingarden {
+  margin-bottom: 20px;
+  width: 57%;
+}
+
+.block_7 .digitaljournal {
+  margin-bottom: 30px;
+  width: 85%;
+}
+
+.block_7 .cnn {
+  margin-bottom: 21px;
+  width: 41%;
+}
+
+.block_7 .coinfox {
+  margin-bottom: 0px;
+  width: 55%;
+}
+
+/*MEDIA*/
+
+.block_7 .settings,
+.block_7 .settingsNews {
+  margin-top: 70px;
+  padding-bottom: 80px;
+}
+
+.block_7 .settings2,
+.block_7 .settingsNews2 {
+  margin-top: 70px;
+  padding-bottom: 80px;
+}
+
+.block_7 .settings3,
+.block_7 .settingsNews3 {
+  margin-top: 70px;
+  padding-bottom: 80px;
+}
+
+.block_7 .settings2 {
+  display: none;
+}
+
+.block_7 .settings3 {
+  display: none;
+}
+
+.block_7 .txt .bg {
+  color: black;
+  width: 300px;
+  min-height: 350px;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.block_7 .txt .bg .details {
+  color: #6c5ed6;
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+}
+
+.block_7 .slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.block_7  .slick-slider {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.block_7 .txt h3
+{
+  font-size: 18px;
+  font-weight: 500;
+  min-height: 69px;
+}
+
+.block_7 .txt p
+{
+  color: #888e9c;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.block_7 .txt a
+{
+  color: #6c5ed6;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.block_7 hr {
+  display: block;
+  padding: 0;
+  border: 0;
+  width: auto;
+  height: 1px;
+  background: #fff;
+  margin: 0;
+}
+
+/*NEWS*/
+
+.block_7 .txtNews {
+  color: black;
+  width: 340px;
+  min-height: 440px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+
+.block_7 .settingsNews2 {
+  display: none;
+}
+
+.block_7 .settingsNews3 {
+  display: none;
+}
+
+.block_7 .img {
+  width: 340px;
+  height: 185px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.block_7 .txtNews .content {
+  padding: 20px;
+}
+
+.block_7 .txtNews .details {
+  color: #6c5ed6;
+  padding-top: 30px;
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+}
+
+.block_7 .txtNews h3 {
+  min-height: 59px;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.block_7 .txtNews p {
+  font-size: 16px;
+  color: #888e9c;
+  font-weight: 300;
+}
+
+.block_7 .txt .bg {
+  width: 340px;
+}
+
+.block_7 .txtNews .news-class {
+  color: #6c5ed6;
+  text-decoration: none;
+  font-size: 16px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.block_7__buttonMore {
+  color: #271B59;
+  background: white;
+  padding: 15px 40px;
+  display: inline-flex;
+  border-radius: 100px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.medium-widget-cindx {
+
+}
+
+.medium-widget-cindx .medium-widget__wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.medium-widget-cindx .medium-widget-article__title {
+  color: white;
+}
+
+.medium-widget-cindx .medium-widget-article__description {
+  color: white;
+}
+
+.medium-widget-cindx .medium-widget-article__date {
+  color: white;
+}
+
+.medium-widget-cindx .medium-widget-article__row {
+ flex-wrap: wrap;
+}
+
+.medium-widget-cindx .medium-widget-article__grid {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1023px) {
+  .block_7 .txt .bg {
+    width: 300px;
+  }
+  .block_7  .slick-slider {
+    width: 940px;
+    margin: 0 auto;
+  }
+  .block_7 .img {
+    width: 300px;
+  }
+  .block_7 .txtNews {
+    width: 300px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .block_7 {
+    display: none;
+  }
+}
+
+
+
+
+
+

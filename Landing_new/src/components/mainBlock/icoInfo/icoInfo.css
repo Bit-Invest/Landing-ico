@@ -1,0 +1,265 @@
+.ico-info {
+  width: 400px;
+}
+
+.ico-info__title {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.ico-info__partners {
+  margin-top: 10px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+}
+
+.ico-info__ratings {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.ico-info__href-rating-icon {
+  display: block;
+}
+
+.ico-info__rating-icon {
+  width: 71px;
+  height: 55px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.ico-info__docs {
+  display: flex;
+  margin-top: 40px;
+  width: 470px;
+}
+
+.ico-info__doc {
+  border: 1px solid #fff;
+  position: relative;
+  border-radius: 32px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.ico-info__doc:first-of-type {
+  margin-right: 30px;
+}
+
+.ico-info__doc a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10px 0;
+  border-radius: 32px;
+  position: relative;
+  justify-content: center;
+}
+
+.ico-info__doc a:hover {
+  background-color: #fff;
+  color: #6e5fd6;
+}
+
+.ico-info__docs-icon {
+  position: absolute;
+  left: 16px;
+}
+
+.ico-info__docs-icon i {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 14px;
+  height: 16px;
+  display: flex;
+}
+
+.ico-info__signed-partners {
+  position: relative;
+}
+
+.ico-info__doc:first-of-type {
+
+}
+
+.ico-info__doc span {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 50px;
+}
+
+.ico_rating {
+  display: none;
+}
+
+.ico-info__partner {
+  display: inline-block;
+  vertical-align: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ico-info__partner_bancor {
+  margin-right: 18px;
+  width: 102px;
+  height: 26px;
+}
+
+.ico-info__partner_hotbit {
+  width: 103px;
+  height: 28px;
+  display: none;
+}
+
+.ico-info__partner_local-coin {
+  margin-top: 12px;
+  margin-right: 12px;
+  width: 100px;
+}
+
+.ico-info__partner_hbtop {
+  margin-top: 14px;
+  width: 75px;
+  height: 28px;
+  display: none;
+}
+
+.ico-info__ratings {
+  margin-top: 22px;
+}
+
+.ico-info__rating_stable {
+  margin-right: 10px;
+}
+
+.ico-info__row {
+  display: flex;
+  position: relative;
+}
+
+.ico-info__accept {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.ico-info__href_btcbit {
+  cursor: pointer;
+  display: block;
+}
+
+.ico-info__btcbit_logg {
+  position: absolute;
+  margin-top: 20px;
+  width: 63px;
+  height: 18px;
+  left: 165px;
+}
+
+.ico-info__currency_icons {
+  width: 240px;
+  height: 44px;
+  margin-bottom: 30px;
+}
+
+.ico-info__amount {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 100;
+}
+
+.ico-info__amount-bold {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ico-info__desktop-amount-progressBar {
+
+}
+
+.ico-info__mobile-amount-progressBar {
+  display: none;
+}
+
+.ico-info__amount span {
+  font-weight: 500;
+}
+
+.ico-info__progressBar {
+  width: 400px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 17px;
+}
+
+.ico-info__progress {
+  width: 30%;
+  height: 20px;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* border-top-left-radius: 17px; */
+  /* border-bottom-left-radius: 17px; */
+  background: url('../../../images/bg_progressbar.png') repeat-x;
+  background-size: contain;
+  border-radius: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  .ico-info__docs {
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .ico-info__doc:first-of-type {
+    margin-right: 0;
+  }
+
+  .ico-info__doc:first-of-type {
+    margin-bottom: 20px;
+  }
+
+  .ico-info__amount {
+    display: flex;
+  }
+
+  .ico-info__progressBar,
+  .ico-info__progress {
+    height: 34px;
+    position: relative;
+  }
+
+  .ico-info__progress {
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 0;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+  }
+
+  .ico-info__progress span {
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    top: 8px;
+  }
+
+  .ico-info__desktop-amount-progressBar {
+    display: none;
+  }
+  
+  .ico-info__mobile-amount-progressBar {
+    display: block;
+  }
+}
