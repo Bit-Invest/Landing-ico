@@ -161,12 +161,6 @@ const ourPartners = [
      href: 'https://progressor.ee/'
    },
    {
-     img: ICO_PROMO,
-     name: 'ICO Promo',
-     position: 'Merchant services',
-     href: 'https://icopromo.com/'
-   },
-   {
      img: sum_and_substance_1,
      name: 'Sum & Substance',
      position: 'Security & Compliance',
