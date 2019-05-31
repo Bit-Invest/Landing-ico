@@ -63,13 +63,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 10%;
   position: relative;
-  bottom: 160px;
-  margin-bottom: -80px;
+  margin-top: 30px;
 }
 .cryptoAssetsManagement .video_block_last {
-  margin-left: 25.5%;
 }
 .cryptoAssetsManagement .video_block .mockup1 {
   background-size: cover;
@@ -111,10 +108,11 @@
 .problemBlock__switch-slide {
   display: flex;
   bottom: 0!important;
-  margin-bottom: 80px!important;
+  margin-bottom: 20px!important;
   flex-direction: row!important;
   margin-top: 30px;
   align-items: center!important;
+  margin-left: 10%;
 }
 
 .problemBlock__arrow {
@@ -258,6 +256,7 @@
   margin: 0 15px;
   position: relative;
   bottom: 3px;
+  font-size: 24px;
 }
 
 .problemBlock__dot:nth-last-of-type(2) {
@@ -265,10 +264,7 @@
 }
 
 .problemBlock__dot {
-  border-radius: 50%;
   color: rgba(255,255,255,0.5);
-  height: 12px;
-  line-height: 12px;
   cursor: pointer;
 }
 
@@ -361,8 +357,7 @@
   }
 
   .cryptoAssetsManagement .video_block {
-    bottom: 140px;
-    margin-bottom: -95px;
+
   }
 }
 
@@ -388,7 +383,6 @@
     right: 66%;
   }
   .cryptoAssetsManagement .video_block {
-    bottom: 170px;
   }
   .cryptoAssetsManagement .txt {
     width: 90%;
@@ -465,7 +459,6 @@
     display: none;
   }
   .problemBlock__switch-slide {
-    margin-top: -8%!important;
     margin-bottom: 90px!important;
     margin-left: 0!important;
     display: flex;

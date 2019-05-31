@@ -207,6 +207,9 @@ class CryptoAssetsManagement extends React.Component {
                   </div>)
                 }
               </div>
+              <div className={`video_block ${this.state.currentCrypto === 2 ? 'video_block_last' : ''}`}>
+                <a target="_blank" href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
+              </div>
             </div>
           </div>
         </div>
@@ -247,6 +250,9 @@ class CryptoAssetsManagement extends React.Component {
                   • { el.text3 }
                 </p>)
               }
+            </div>
+            <div className={`video_block ${this.state.currentCrypto === 2 ? 'video_block_last' : ''}`}>
+              <a target="_blank" href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
             </div>
           </div>
         </div>
@@ -344,22 +350,9 @@ class CryptoAssetsManagement extends React.Component {
           </div>
           <div className="problemBlock__wrapper">
             <div className="problemBlock__slider">
-              <div className="problemBlock__desktop">
-                <Slider ref={slider => this.slider = slider} { ...settings }>
-                  { this.renderProblemBlock() }
-                </Slider>
-              </div>
-              <div className="problemBlock__mobile">
-                <Slider ref={slider => this.mobileSlider = slider} { ...settings }>
-                  { this.renderMobileProblemBlock() }
-                </Slider>
-              </div>
-              <div className={`video_block ${this.state.currentCrypto === 2 ? 'video_block_last' : ''}`}>
-                <a target="_blank" href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
-              </div>
               <div className="video_block problemBlock__switch-slide">
                 <div className="problemBlock__arrow problemBlock__left-arrow" onClick={this.prevSlide}>
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" width="20" height="20">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" width="30" height="30">
                     <g>
                       <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225   c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" fill="#FFFFFF"/>
                     </g>
@@ -371,12 +364,22 @@ class CryptoAssetsManagement extends React.Component {
                   <span className={`problemBlock__dot ${this.state.currentCrypto === 2 ? 'problemBlock__dot-active' : ''}`} onClick={() => this.dotsSlide(2)}>HUB</span>
                 </div>
                 <div className="problemBlock__arrow problemBlock__right-arrow" onClick={this.nextSlide}>
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 129 129" width="21" height="21">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 129 129" width="30" height="30">
                     <g>
                       <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" fill="#FFFFFF"/>
                     </g>
                   </svg>
                 </div>
+              </div>
+              <div className="problemBlock__desktop">
+                <Slider ref={slider => this.slider = slider} { ...settings }>
+                  { this.renderProblemBlock() }
+                </Slider>
+              </div>
+              <div className="problemBlock__mobile">
+                <Slider ref={slider => this.mobileSlider = slider} { ...settings }>
+                  { this.renderMobileProblemBlock() }
+                </Slider>
               </div>
             </div>
             <div className="problemBlock__img-slides">
