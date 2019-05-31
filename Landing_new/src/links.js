@@ -55,6 +55,7 @@ export const links = {
   op: docs.op,
   fm: docs.fm,
   ld: docs.ld,
+  medium: 'https://medium.com/cindx',
   buytokens: 'https://my.cindx.io/registration' + `?clickid=${clickid}`,
   lD: 'https://static.cindx.io/Legal_Disclaimer.pdf',
   pp: 'https://static.cindx.io/Privacy_Policy.pdf',

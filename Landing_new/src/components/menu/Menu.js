@@ -12,10 +12,6 @@ import { lng, list_lngs, ab_val } from '../../links';
 import indexLngObj from '../../lngs/index';
 import flags from './objFlags'
 
-console.log({
-  links,
-})
-
 class Menu extends React.Component {
   constructor(props){
     super(props);
@@ -196,6 +192,7 @@ class Menu extends React.Component {
             <a target='_blank' href={links.mvp} className="item">{ indexLngObj[lng]['menu#11'] }</a>
             <a className="btn" target="_blank" href={links.wp}>White Paper</a>
             <a className="btn" target="_blank" href={links.op}>One Pager</a>
+            <a className="btn" target="_blank" href={links.medium}>Blog</a>
             {
               // <div
               //   onMouseLeave={this.closeLanguage}

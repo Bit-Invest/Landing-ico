@@ -61,8 +61,9 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 1440px;
   margin-top: 50px;
+  padding: 0 30px;
 }
 
 .mvpBlock-container-two .mvpBlock-screeImg {

@@ -24,7 +24,7 @@ import { saveMoney } from './store/store'
 // import axios from 'axios'
 import { DocPopup } from './components/DocPopup/DocPopup'
 // import OurTopRatings  from './components/ourTopRatings/OurTopRatings'
-import MediaAboutUs from './components/mediaAboutUs/MediaAboutUs'
+// import MediaAboutUs from './components/mediaAboutUs/MediaAboutUs'
 import SocialMedia from './components/socialMedia/SocialMedia'
 import { MvpBlock } from './components/mvpBlock/';
 import './App.css';
@@ -41,7 +41,7 @@ class App extends React.Component {
           <MainBlock />
           <ProgressBarSale />
           {/*<OurTopRatings />*/}
-          <MediaAboutUs />
+          {/*<MediaAboutUs />*/}
           <CryptoAssetsManagement />
           <ProblemSolving />
           <HowCindxWorks />

@@ -107,13 +107,13 @@ export class MainBlock extends React.Component {
                 Making Crypto Investments Easy, Secure and Fast.
               </div>
               <div className={`${ROOT_CLASS}__header3`}>
-                We will launch our Beta soon
+                Be the first to know about CINDX
               </div>
             </div>
             <div className={`${ROOT_CLASS}__cont`}>
               <div className={`${ROOT_CLASS}__formStarted`}>
                 <input type="text" placeholder="EMAIL" onChange={this.onChange} />
-                <div className="button_send" onClick={this.sendSubcribe} >Get started</div>
+                <div className="button_send" onClick={this.sendSubcribe}>Subscribe</div>
                 {
                   submitStatus !== 4 ?
                     <div

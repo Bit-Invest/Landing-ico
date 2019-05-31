@@ -36,7 +36,7 @@ class TeamLegal extends React.Component {
     const { props } = this;
 
     return(
-      <div className="teamLegal" id="exitAnimate">
+      <div className="teamLegal">
         {/*<div className="size">
           <h2 className="header_blocks">
             { indexLngObj[lng]['teamLegal#1'] } <br/> { indexLngObj[lng]['teamLegal#2'] }
