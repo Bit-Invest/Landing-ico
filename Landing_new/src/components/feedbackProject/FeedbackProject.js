@@ -25,32 +25,11 @@ import indexLngObj from '../../lngs/index'
 
 const feedbackOnOurProject = [
   {
-    img: Val_Jerdes,
-    name: indexLngObj[lng]['feedbackProject#2'],
-    position: indexLngObj[lng]['feedbackProject#3'],
-    video: 'https://www.youtube.com/embed/ubN0rCtKj_E',
-    text: indexLngObj[lng]['feedbackProject#4']
-  },
-  {
-    img: Denis_Eskenazi,
-    name: indexLngObj[lng]['feedbackProject#5'],
-    position: indexLngObj[lng]['feedbackProject#6'],
-    video: 'https://www.youtube.com/embed/OKdT6GiSGuY',
-    text: indexLngObj[lng]['feedbackProject#7']
-  },
-  {
-    img: Philip_Staehelin,
-    name: indexLngObj[lng]['feedbackProject#8'],
+    img: Keith_Teare,
+    name: indexLngObj[lng]['feedbackProject#18'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: 'https://www.youtube.com/embed/gMYQzVyXHZI',
-    text: indexLngObj[lng]['feedbackProject#10']
-  },
-  {
-    img: Andrzej_Cichowlaz1,
-    name: indexLngObj[lng]['feedbackProject#11'],
-    position: indexLngObj[lng]['feedbackProject#12'],
-    video: 'https://www.youtube.com/embed/uegvB7uIA0g',
-    text: indexLngObj[lng]['feedbackProject#13']
+    video: 'https://www.youtube.com/embed/qWpWbZUljdg',
+    text: indexLngObj[lng]['feedbackProject#19']
   },
   {
     img: Austin_Kimm,
@@ -60,6 +39,13 @@ const feedbackOnOurProject = [
     text: indexLngObj[lng]['feedbackProject#15']
   },
   {
+    img: Val_Jerdes,
+    name: indexLngObj[lng]['feedbackProject#2'],
+    position: indexLngObj[lng]['feedbackProject#3'],
+    video: 'https://www.youtube.com/embed/ubN0rCtKj_E',
+    text: indexLngObj[lng]['feedbackProject#4']
+  },
+  {
     img: Amarpreet_Singh,
     name: indexLngObj[lng]['feedbackProject#16'],
     position: indexLngObj[lng]['feedbackProject#9'],
@@ -67,39 +53,18 @@ const feedbackOnOurProject = [
     text: indexLngObj[lng]['feedbackProject#17']
   },
   {
-    img: Keith_Teare,
-    name: indexLngObj[lng]['feedbackProject#18'],
+    img: Philip_Staehelin,
+    name: indexLngObj[lng]['feedbackProject#8'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: 'https://www.youtube.com/embed/qWpWbZUljdg',
-    text: indexLngObj[lng]['feedbackProject#19']
+    video: 'https://www.youtube.com/embed/gMYQzVyXHZI',
+    text: indexLngObj[lng]['feedbackProject#10']
   },
   {
-    img: Mansur_Rasulov,
-    name: indexLngObj[lng]['feedbackProject#20'],
-    position: indexLngObj[lng]['feedbackProject#21'],
-    video: 'https://www.youtube.com/embed/r5ZMoThs1T0',
-    text: indexLngObj[lng]['feedbackProject#22']
-  },
-  {
-    img: Sadie_Hutton,
-    name: indexLngObj[lng]['feedbackProject#23'],
+    img: Jason_King,
+    name: indexLngObj[lng]['feedbackProject#33'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: 'https://www.youtube.com/embed/iQhcMhT13hs',
-    text: indexLngObj[lng]['feedbackProject#24']
-  },
-  {
-    img: Graham_Doggart,
-    name: indexLngObj[lng]['feedbackProject#25'],
-    position: indexLngObj[lng]['feedbackProject#9'],
-    video: 'https://www.youtube.com/embed/HWV5Hv2R6vA',
-    text: indexLngObj[lng]['feedbackProject#26']
-  },
-  {
-    img: Alina_Vardanyan,
-    name: indexLngObj[lng]['feedbackProject#27'],
-    position: indexLngObj[lng]['feedbackProject#28'],
-    video: 'https://www.youtube.com/embed/IATb_l1vLE4',
-    text: indexLngObj[lng]['feedbackProject#29']
+    video: '',
+    text: indexLngObj[lng]['feedbackProject#34']
   },
   {
     img: Bogdan_Fiedur,
@@ -109,11 +74,18 @@ const feedbackOnOurProject = [
     text: indexLngObj[lng]['feedbackProject#32']
   },
   {
-    img: Jason_King,
-    name: indexLngObj[lng]['feedbackProject#33'],
+    img: Graham_Doggart,
+    name: indexLngObj[lng]['feedbackProject#25'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: '',
-    text: indexLngObj[lng]['feedbackProject#34']
+    video: 'https://www.youtube.com/embed/HWV5Hv2R6vA',
+    text: indexLngObj[lng]['feedbackProject#26']
+  },
+  {
+    img: Sadie_Hutton,
+    name: indexLngObj[lng]['feedbackProject#23'],
+    position: indexLngObj[lng]['feedbackProject#9'],
+    video: 'https://www.youtube.com/embed/iQhcMhT13hs',
+    text: indexLngObj[lng]['feedbackProject#24']
   },
 ]
 

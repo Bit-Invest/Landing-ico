@@ -151,16 +151,20 @@ class Menu extends React.Component {
           />
           <a onClick={this.openMenu} href="#product" className="itemMini">{ indexLngObj[lng]['menu#7'] }</a>
           <a onClick={this.openMenu} href="#team" className="itemMini">{ indexLngObj[lng]['menu#9'] }</a>
+          <a onClick={this.openMenu} href="#top" className="itemMini">{ indexLngObj[lng]['menu#12'] }</a>
           <div onClick={this.clickPublicDocs} className="drop-down">
             <a>{ indexLngObj[lng]['menu#10'] }</a>
-            <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
+            <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
           </div>
           {this.renderPublicDocs()}
-          <a href={links.mvp} target="_blank" className="itemMini">{ 'SUBSCRIBE' }</a>
+          <a href={links.mvp} target="_blank" className="itemMini">{ indexLngObj[lng]['menu#11'] }</a>
+          <a className="itemMini" target="_blank" href={links.wp}>White Paper</a>
+          <a className="itemMini" target="_blank" href={links.op}>One Pager</a>
+          <a className="itemMini" target="_blank" href={links.medium}>Blog</a>
           {
             // <div onClick={this.clickLanguage} className="drop-down">
             //   <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
-            //   <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
+            //   <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
             // </div>
             // {this.renderLanguage(lng)}
           }
@@ -175,21 +179,22 @@ class Menu extends React.Component {
     return (
       <div className="menu">
         <div className="container-menu">
-          <a href="#top"><img className="logo" src={logo} alt={"CINDEX"}/></a>
+          <a href="#top"><img className="logo" src={logo} alt={"CINDX"}/></a>
           <div className="menu-item">
             <a href="#product" className="item">{ indexLngObj[lng]['menu#7'] }</a>
             <a href="#team" className="item">{ indexLngObj[lng]['menu#9'] }</a>
+            <a href="#top" className="item">{ indexLngObj[lng]['menu#12'] }</a>
             <div
               onMouseLeave={this.closePublicDocs}
               onMouseMove={this.openPublicDocs}
               className="drop-down"
             >
               <a className="item">{ indexLngObj[lng]['menu#10'] }</a>
-              <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
+              <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
               <div className="publickOnMouseLeave"></div>
               {this.renderPublicDocs()}
             </div>
-            <a target='_blank' href={links.mvp} className="item">{ 'SUBSCRIBE' }</a>
+            <a className="btn" target='_blank' href={links.mvp}>{ indexLngObj[lng]['menu#11'] }</a>
             <a className="btn" target="_blank" href={links.wp}>White Paper</a>
             <a className="btn" target="_blank" href={links.op}>One Pager</a>
             <a className="btn" target="_blank" href={links.medium}>Blog</a>
@@ -200,7 +205,7 @@ class Menu extends React.Component {
               //   className="drop-down"
               // >
               //   <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
-              //   <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
+              //   <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
               //   <div className="publickOnMouseLeave"></div>
               //   {this.renderLanguage()}
               // </div>
@@ -212,7 +217,7 @@ class Menu extends React.Component {
               className="btn"
             />
             <a onClick={this.openMenu} className="menu-item-burger">
-              <img className="menu-icon" src={menu} alt={"CINDEX"}/>
+              <img className="menu-icon" src={menu} alt={"CINDX"}/>
             </a>
             {this.renderMenu()}
           </div>

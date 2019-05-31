@@ -292,24 +292,24 @@ const advisers = [
       indexLngObj[lng]['teamAdvisersPartners#90']
     ]
   },
-  {
-    img: Tyler_Sanford,
-    video: '',
-    name: indexLngObj[lng]['teamAdvisersPartners#91'],
-    src: 'https://www.linkedin.com/in/tylersanford/',
-    m: 'https://medium.com/cindx/cindx-advisers-tyler-sanford-a58eefa42a95',
-    position: indexLngObj[lng]['teamAdvisersPartners#92'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#93'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#94'],
-    linkedin: 'https://www.linkedin.com/in/tylersanford/',
-    text: [
-      indexLngObj[lng]['teamAdvisersPartners#95'],
-      indexLngObj[lng]['teamAdvisersPartners#96'],
-      indexLngObj[lng]['teamAdvisersPartners#97'],
-      indexLngObj[lng]['teamAdvisersPartners#98'],
-      indexLngObj[lng]['teamAdvisersPartners#99']
-    ]
-  },
+  // {
+  //   img: Tyler_Sanford,
+  //   video: '',
+  //   name: indexLngObj[lng]['teamAdvisersPartners#91'],
+  //   src: 'https://www.linkedin.com/in/tylersanford/',
+  //   m: 'https://medium.com/cindx/cindx-advisers-tyler-sanford-a58eefa42a95',
+  //   position: indexLngObj[lng]['teamAdvisersPartners#92'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#93'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#94'],
+  //   linkedin: 'https://www.linkedin.com/in/tylersanford/',
+  //   text: [
+  //     indexLngObj[lng]['teamAdvisersPartners#95'],
+  //     indexLngObj[lng]['teamAdvisersPartners#96'],
+  //     indexLngObj[lng]['teamAdvisersPartners#97'],
+  //     indexLngObj[lng]['teamAdvisersPartners#98'],
+  //     indexLngObj[lng]['teamAdvisersPartners#99']
+  //   ]
+  // },
   {
     img: Bogdan_Fiedur,
     video: 'https://www.youtube.com/embed/4kXgu60guic',
@@ -378,22 +378,22 @@ const advisers = [
       indexLngObj[lng]['teamAdvisersPartners#156']
     ]
   },
-  {
-    img: Motti_Peer,
-    video: '',
-    name: indexLngObj[lng]['teamAdvisersPartners#157'],
-    src: 'https://www.linkedin.com/in/jasonking/',
-    m: 'https://medium.com/cindx/advisers-motti-peer-f2c1d72008e9',
-    position: indexLngObj[lng]['teamAdvisersPartners#158'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#159'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#160'],
-    linkedin: 'https://www.linkedin.com/in/mottipeer/',
-    text: [
-      indexLngObj[lng]['teamAdvisersPartners#161'],
-      indexLngObj[lng]['teamAdvisersPartners#162'],
-      indexLngObj[lng]['teamAdvisersPartners#163']
-    ]
-  },
+  // {
+  //   img: Motti_Peer,
+  //   video: '',
+  //   name: indexLngObj[lng]['teamAdvisersPartners#157'],
+  //   src: 'https://www.linkedin.com/in/jasonking/',
+  //   m: 'https://medium.com/cindx/advisers-motti-peer-f2c1d72008e9',
+  //   position: indexLngObj[lng]['teamAdvisersPartners#158'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#159'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#160'],
+  //   linkedin: 'https://www.linkedin.com/in/mottipeer/',
+  //   text: [
+  //     indexLngObj[lng]['teamAdvisersPartners#161'],
+  //     indexLngObj[lng]['teamAdvisersPartners#162'],
+  //     indexLngObj[lng]['teamAdvisersPartners#163']
+  //   ]
+  // },
   {
     img: Leonard_Grayver,
     video: '',

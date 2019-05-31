@@ -204,7 +204,7 @@ export class MainBlock extends React.Component {
                   <a target="_blank" href="https://m.weibo.cn/profile/6606802462">
                     <img className="icon" src={weibo_icon} alt={"CINDEX"}/>
                   </a>
-                  <a target="_blank" href="https://t.me/cindx_official">
+                  <a target="_blank" href="https://t.me/cindx_official" className="g_soc">
                     <img className="icon" src={telegram_icon} alt={"CINDEX"}/>
                     <span>7k +</span>
                   </a>
