@@ -376,7 +376,7 @@ const en = {
 
     'socialMedia#1': 'For more information, follow us on social media:',
 
-    'teamAdvisersPartners#1': 'Core team Members',
+    'teamAdvisersPartners#1': 'Core Team Members',
     'teamAdvisersPartners#2': 'CINDX Advisers',
     'teamAdvisersPartners#3': 'Our Partners',
     // teamInfo

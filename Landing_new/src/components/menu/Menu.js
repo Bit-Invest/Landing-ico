@@ -156,7 +156,7 @@ class Menu extends React.Component {
             <img className="arrow_public" src={arrow_public} alt={"CINDEX"}/>
           </div>
           {this.renderPublicDocs()}
-          <a href={links.mvp} target="_blank" className="itemMini">{ indexLngObj[lng]['menu#11'] }</a>
+          <a href={links.mvp} target="_blank" className="itemMini">{ 'SUBSCRIBE' }</a>
           {
             // <div onClick={this.clickLanguage} className="drop-down">
             //   <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
@@ -189,7 +189,7 @@ class Menu extends React.Component {
               <div className="publickOnMouseLeave"></div>
               {this.renderPublicDocs()}
             </div>
-            <a target='_blank' href={links.mvp} className="item">{ indexLngObj[lng]['menu#11'] }</a>
+            <a target='_blank' href={links.mvp} className="item">{ 'SUBSCRIBE' }</a>
             <a className="btn" target="_blank" href={links.wp}>White Paper</a>
             <a className="btn" target="_blank" href={links.op}>One Pager</a>
             <a className="btn" target="_blank" href={links.medium}>Blog</a>
