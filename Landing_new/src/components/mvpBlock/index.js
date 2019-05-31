@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { MailForm } from '@components/mailForm';
-import { lng } from '../../links'
+import { lng, links } from '../../links'
 import indexLngObj from '../../lngs/index';
 import SU from '@images/SU.png';
 import Adjustments from '@images/CINDX_LP_adjustments.png';
@@ -105,7 +105,7 @@ export class MvpBlock extends React.Component {
 	    				<div className={`${ROOT_CLASS}-content`}>
 	    					<div className={`${ROOT_CLASS}-title`}>We have launched our CINDX platform. Join us!</div>
                 <div className={`${ROOT_CLASS}-adjustments`}>
-                  <a className="btn">Sign Up</a>
+                  <a className="btn" href={links.mvp} target="_blank">Sign Up</a>
 		    					<img src={Adjustments} />
 		    				</div>
 	    				</div>
