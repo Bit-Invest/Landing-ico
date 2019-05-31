@@ -553,7 +553,7 @@ const en = {
     'joinTokenPreSale#2': 'JOIN PRE-SALE',
     'joinTokenPreSale#3': 'CINDX LIVE',
     'joinTokenPreSale#4': 'Head Office',
-    'joinTokenPreSale#5': 'Estonia, Talinn',
+    'joinTokenPreSale#5': 'Estonia, Tallinn',
     'joinTokenPreSale#6': '10416, Harjumaa, Erika 14',
     'joinTokenPreSale#7': 'Business inquiries - hello@cindx.io',
     'joinTokenPreSale#8': 'Legal Disclaimer',
