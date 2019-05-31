@@ -36,7 +36,6 @@ export class ProblemSolving extends React.Component {
       <div className="block_1" id="exitAnimate">
         <div className="size">
           <h2 className="header_blocks">{ indexLngObj[lng]['problemSolving#13'] }</h2>
-          <a target="_blank" href={links.mvp} className="sb">{ indexLngObj[lng]['problemSolving#14'] }</a>
           <div className="container">
             <div className="clear" />
             <div className="cont_row">

@@ -5,6 +5,42 @@
   background: none;
 }
 
+.main-block .icons_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-block .icons_wrapper .icon_block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  max-width: 500px;
+}
+
+.main-block .icons_wrapper .icon_block a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-block .icons_wrapper .icon_block img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.main-block .icons_wrapper .icon_block span {
+  display: flex;
+  color: #754ADD;
+  background: white;
+  padding: 5px;
+  height: 30px;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .main-block__header {
   max-width: 450px;
 }
@@ -143,6 +179,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .main-block .icons_wrapper {
+    display: none;
+  }
   .main-block__content {
     max-width: 500px;
     margin: 0 auto;
