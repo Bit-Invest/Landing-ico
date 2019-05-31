@@ -552,35 +552,39 @@ class TeamAdvisersPartners extends React.Component {
       return (
         <div key={i}>
           <div className="left_content">
-            <div className="icon_content">
-              <img className="icon-face" src={el.img} alt={"CINDX"}/>
-              <div onClick={() => this.showVideoInPopUp(el.video)}>
-                <img
-                  className="playButtonWhite"
-                  style={{display: el.video ? 'block' : 'none'}}
-                  src={playButtonWhite}
-                  alt={"CINDX"}
-                />
+            <div className="ts_content">
+              <div className="icon_content">
+                <img className="icon-face" src={el.img} alt={"CINDX"}/>
+                <div onClick={() => this.showVideoInPopUp(el.video)}>
+                  <img
+                    className="playButtonWhite"
+                    style={{display: el.video ? 'block' : 'none'}}
+                    src={playButtonWhite}
+                    alt={"CINDX"}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="name_content">{el.name}</div>
-            <hr/>
-            <div className="text_content">
-              <p>{el.position}</p>
-              <p>{el.fackt1}</p>
-              <p>{el.fackt2}</p>
-            </div>
-            <div className="block-soc-icon">
-              <a target="_blank"  style={{ display : el.linkedin ? 'block' : 'none' }} href={el.linkedin}>
-                <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
-              </a>
-              <a target="_blank"  style={{ display : el.m ? 'block' : 'none' }} href={el.m}>
-                <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
-              </a>
+              <div className="name_content">{el.name}</div>
+              <hr/>
+              <div className="text_content">
+                <p>{el.position}</p>
+                <p>{el.fackt1}</p>
+                <p>{el.fackt2}</p>
+              </div>
+              <div className="block-soc-icon">
+                <a target="_blank"  style={{ display : el.linkedin ? 'block' : 'none' }} href={el.linkedin}>
+                  <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
+                </a>
+                <a target="_blank"  style={{ display : el.m ? 'block' : 'none' }} href={el.m}>
+                  <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
+                </a>
+              </div>
             </div>
           </div>
           <div className="right_content">
-            {el.text.map((el, i)=><p key={i} className="right_content-text">{el}</p>)}
+            <div className="ts_content">
+              {el.text.map((el, i)=><p key={i} className="right_content-text">{el}</p>)}
+            </div>
           </div>
         </div>
       );

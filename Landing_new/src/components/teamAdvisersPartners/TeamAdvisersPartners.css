@@ -136,9 +136,14 @@
 .block_8 .advisers .left_content {
   float: left;
   width: 440px;
-  height: 740px;
+  height: 600px;
   background-color: #7b5590;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: scroll;
+  padding: 30px 0;
 }
 
 .block_8 .advisers .left_content .icon_content {
@@ -146,7 +151,7 @@
   height: 164px;
   background-color: white;
   border-radius: 50%;
-  margin: 50px auto;
+  margin: 5px auto 50px;
 }
 
 .block_8 .advisers .left_content .icon_content .icon-face {
@@ -199,9 +204,17 @@
 .block_8 .advisers .right_content {
   float: left;
   width: 720px;
-  height: 740px;
+  height: 600px;
   background-color: white;
-  padding: 15% 60px 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: scroll;
+  padding: 30px 0;
+}
+
+.block_8 .advisers .right_content .ts_content {
+  width: 80%;
 }
 
 .block_8 .advisers .right_content p {
