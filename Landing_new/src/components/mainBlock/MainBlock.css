@@ -8,6 +8,7 @@
 .main-block .icons_wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-block .icons_wrapper .icon_block {
