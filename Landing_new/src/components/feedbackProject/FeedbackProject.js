@@ -28,63 +28,63 @@ const feedbackOnOurProject = [
     img: Keith_Teare,
     name: indexLngObj[lng]['feedbackProject#18'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: 'https://www.youtube.com/embed/qWpWbZUljdg',
+    video: 'https://www.youtube.com/embed/1JaUqtqCQ5w',
     text: indexLngObj[lng]['feedbackProject#19']
   },
   {
     img: Austin_Kimm,
     name: indexLngObj[lng]['feedbackProject#14'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: 'https://www.youtube.com/embed/5X8isxq6S00',
+    video: 'https://www.youtube.com/embed/pkBoVl7Brds',
     text: indexLngObj[lng]['feedbackProject#15']
   },
   {
     img: Val_Jerdes,
     name: indexLngObj[lng]['feedbackProject#2'],
     position: indexLngObj[lng]['feedbackProject#3'],
-    video: 'https://www.youtube.com/embed/ubN0rCtKj_E',
+    video: 'https://www.youtube.com/embed/H6hSOnoyFTY',
     text: indexLngObj[lng]['feedbackProject#4']
   },
   {
     img: Amarpreet_Singh,
     name: indexLngObj[lng]['feedbackProject#16'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: 'https://www.youtube.com/embed/vsjxNki18DY',
+    video: 'https://www.youtube.com/embed/VKNEfob9sGA',
     text: indexLngObj[lng]['feedbackProject#17']
   },
   {
     img: Philip_Staehelin,
     name: indexLngObj[lng]['feedbackProject#8'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: 'https://www.youtube.com/embed/gMYQzVyXHZI',
+    video: 'https://www.youtube.com/embed/nN76RkbejGc',
     text: indexLngObj[lng]['feedbackProject#10']
   },
   {
     img: Jason_King,
     name: indexLngObj[lng]['feedbackProject#33'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: '',
+    video: 'https://www.youtube.com/embed/MHQzECP7izc',
     text: indexLngObj[lng]['feedbackProject#34']
   },
   {
     img: Bogdan_Fiedur,
     name: indexLngObj[lng]['feedbackProject#30'],
     position: indexLngObj[lng]['feedbackProject#31'],
-    video: 'https://www.youtube.com/embed/oC-oTaBId7g',
+    video: 'https://www.youtube.com/embed/4kXgu60guic',
     text: indexLngObj[lng]['feedbackProject#32']
   },
   {
     img: Graham_Doggart,
     name: indexLngObj[lng]['feedbackProject#25'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: 'https://www.youtube.com/embed/HWV5Hv2R6vA',
+    video: 'https://www.youtube.com/embed/uXTA_QLympE',
     text: indexLngObj[lng]['feedbackProject#26']
   },
   {
     img: Sadie_Hutton,
     name: indexLngObj[lng]['feedbackProject#23'],
     position: indexLngObj[lng]['feedbackProject#9'],
-    video: 'https://www.youtube.com/embed/iQhcMhT13hs',
+    video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
     text: indexLngObj[lng]['feedbackProject#24']
   },
 ]

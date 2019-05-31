@@ -363,7 +363,7 @@ const advisers = [
   },
   {
     img: Jason_King,
-    video: '',
+    video: 'https://www.youtube.com/embed/MHQzECP7izc',
     name: indexLngObj[lng]['teamAdvisersPartners#149'],
     src: 'https://www.linkedin.com/in/jasonking/',
     m: 'https://medium.com/cindx/the-cindx-team-jason-king-9a1b93d6aa8b',
