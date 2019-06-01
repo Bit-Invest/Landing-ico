@@ -17,7 +17,7 @@ import { CanvasMouns } from '@components/animate';
 import { ProgressBarSale } from '@components/progressBarSale/ProgressBarSale';
 import { Menu } from '@components/menu/Menu';
 import RoadsShow from './components/roadsShow/RoadsShow';
-// import { SocIcons } from '@components/socIcons/SocIcons';
+import { SocIcons } from '@components/socIcons/SocIcons';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { saveMoney } from './store/store'
@@ -61,7 +61,7 @@ class App extends React.Component {
           {/* <FeedbackProject /> */}
           <TeamAdvisersPartners />
           <JoinTokenPreSale />
-          {/* <SocIcons /> */}
+          <SocIcons />
         </div>
       </div>
     )

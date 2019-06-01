@@ -1,4 +1,7 @@
 import * as React from 'react';
+
+import { links } from '../../links.js';
+
 import github_icon from '../../media/github_icon.png';
 import reddit_icon from '../../media/reddit_icon.png';
 import twitter_icon from '../../media/twitter_icon.png';
@@ -9,32 +12,61 @@ import instagram_icon from '../../media/instagram_icon.png';
 import telegram_icon_white from '../../media/telegram_icon_white.png';
 import './SocIcons.css';
 
-export const SocIcons = () => (
-  <div className="socIcons">
-    <div className="fixedSocIcon">
-      <div className="socIconsBlock">
-        <a target="_blank" href="https://www.github.com/Bit-Invest/Cindx-frontend">
-          <img className="img" src={github_icon} alt="CINDX"/>
-        </a>
-        <a target="_blank" href="https://www.reddit.com/r/cindx/">
-          <img className="img" src={reddit_icon} alt="CINDX"/>
-        </a>
-        <a target="_blank" href="https://twitter.com/CINDXPlatform">
-          <img className="img" src={twitter_icon} alt="CINDX"/>
-        </a>
-        <a target="_blank" href="https://www.facebook.com/cindx.io/">
-          <img className="img" src={facebook_icon} alt="CINDX"/>
-        </a>
-        <a target="_blank" href="https://medium.com/cindx">
-          <img className="img" src={medium_icon} alt="CINDX"/>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/company/cindx/">
-          <img className="img" src={linkedin_icon} alt="CINDX"/>
-        </a>
-        <a target="_blank" href="https://t.me/cindx_official">
-          <img className="img_2" src={telegram_icon_white} alt="CINDX"/>
-        </a>
+export class SocIcons extends React.Component { 
+  constructor() {
+    super();
+
+    this.state = {
+      menuShow: false,
+    };
+  }
+
+  componentWillMount() {
+    document.onscroll = (e) => {
+      let doc = document.documentElement;
+      let top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+      let twoWindowTop = document.getElementById('product').offsetTop;
+      
+      if (top > twoWindowTop && !this.state.menuShow) {
+        this.setState({
+          menuShow: true,
+        });
+      }
+
+      if (twoWindowTop > top && this.state.menuShow) {
+        this.setState({
+          menuShow: false,
+        });
+      }
+    };
+  }
+
+  render() {
+    return(
+      <div className="socIcons" style={{display: this.state.menuShow ? 'block' : 'none'}}>
+        <div className="fixedSocIcon">
+          <div className="socIconsBlock">
+            <a target="_blank" href={links.soc.reddit}>
+              <img className="img" src={reddit_icon} alt="CINDX"/>
+            </a>
+            <a target="_blank" href={links.soc.twitter}>
+              <img className="img" src={twitter_icon} alt="CINDX"/>
+            </a>
+            <a target="_blank" href={links.soc.facebook}>
+              <img className="img" src={facebook_icon} alt="CINDX"/>
+            </a>
+            <a target="_blank" href={links.soc.medium}>
+              <img className="img" src={medium_icon} alt="CINDX"/>
+            </a>
+            <a target="_blank" href={links.soc.linkedin}>
+              <img className="img" src={linkedin_icon} alt="CINDX"/>
+            </a>
+            <a target="_blank" href={links.soc.telegram}>
+              <img className="img_2" src={telegram_icon_white} alt="CINDX"/>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-)
+    )
+  }
+}

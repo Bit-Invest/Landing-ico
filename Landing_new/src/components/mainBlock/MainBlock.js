@@ -168,28 +168,28 @@ export class MainBlock extends React.Component {
               <MailForm />
               <div className="icons_wrapper">
                 <div className="icon_block">
-                  <a target="_blank" href="https://www.youtube.com/cindx">
+                  <a target="_blank" href={links.soc.youtube}>
                     <img className="icon" src={youtube_icon} alt={"CINDEX"}/>
                   </a>
-                  <a target="_blank" href="https://www.instagram.com/cindx.io/">
+                  <a target="_blank" href={links.soc.instagram}>
                     <img className="icon" src={instagram_icon} alt={"CINDEX"}/>
                   </a>
-                  <a target="_blank" href="https://www.reddit.com/r/cindx/">
+                  <a target="_blank" href={links.soc.reddit}>
                     <img className="icon" src={reddit_icon} alt={"CINDEX"}/>
                   </a>
-                  <a target="_blank" href="https://twitter.com/CINDXPlatform">
+                  <a target="_blank" href={links.soc.twitter}>
                     <img className="icon" src={twitter_icon} alt={"CINDEX"}/>
                   </a>
-                  <a target="_blank" href="https://www.facebook.com/cindx.io/">
+                  <a target="_blank" href={links.soc.facebook}>
                     <img className="icon" src={facebook_icon} alt={"CINDEX"}/>
                   </a>
-                  <a target="_blank" href="https://medium.com/cindx">
+                  <a target="_blank" href={links.soc.medium}>
                     <img className="icon" src={medium_icon} alt={"CINDEX"}/>
                   </a>
-                  <a target="_blank" href="https://www.linkedin.com/company/cindx/">
+                  <a target="_blank" href={links.soc.linkedin}>
                     <img className="icon" src={linkedin_icon} alt={"CINDEX"}/>
                   </a>
-                  <a target="_blank" href="https://t.me/cindx_official" className="g_soc">
+                  <a target="_blank" href={links.soc.telegram} className="g_soc">
                     <img className="icon" src={telegram_icon} alt={"CINDEX"}/>
                     <span>7k +</span>
                   </a>

@@ -60,7 +60,17 @@ export const links = {
   lD: 'https://static.cindx.io/Legal_Disclaimer.pdf',
   pp: 'https://static.cindx.io/Privacy_Policy.pdf',
   gaid: getGAID,
-  clickid
+  clickid,
+  soc: {
+    youtube: 'https://www.youtube.com/channel/UCoFRxjo7E5UOq45wX1bri1w',
+    instagram: 'https://www.instagram.com/cindx.io/',
+    reddit: 'https://www.reddit.com/r/cindx/',
+    twitter: 'https://twitter.com/CINDXPlatform',
+    facebook: 'https://www.facebook.com/cindx.io/',
+    medium: 'https://medium.com/cindx',
+    linkedin: 'https://www.linkedin.com/company/cindx/',
+    telegram: 'https://t.me/cindx_official',
+  },
 };
 
 /*
