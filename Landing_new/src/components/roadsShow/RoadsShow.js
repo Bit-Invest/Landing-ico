@@ -176,230 +176,164 @@ let dataRoadShow = [
     },
 ]
 
-class RoadsShow extends Component {
-    state = {
-        valuePopUp: dataRoadShow[1],
-        currentI: 1
-    }
+export class RoadsShow extends React.Component {
+  state = {
+    isLinkAccess: true,
+    slideIndex: 0,
+    updateCount: 0
+  }
 
-    renderRoadShow = () => {
-        return dataRoadShow.map((el, i) => {
-            return (
-                <div key={i}>
-                    <div className="wrapper-road">
-                        <div className="road__circle" onClick={() => this.renderRoadShowPopup(i)}></div>
-                        <div className="road__class road__place">{el.place}</div>
-                        <div className="road__date">{el.date}</div>
-                        <div className="road__class road__data">{el.data}</div>
-                    </div>
-                </div>
-            )
-        })
-    }
+  mapMedia = () => {
+    return dataRoadShow.map((el, i) => {
+      const arrName = el.data.split(' ')
+      const arrText = el.text.split(' ')
+      let newName = ''
+      let newText = ''
 
-    componentDidMount = () => {
-        window.addEventListener('resize', this.handleResize)
-        this.handleResize()
-        this.currentDateSlide()
-    }
-
-    currentDateSlide = () => {
-        const currentDate = new Date()
-        let currentMonth = `${currentDate.getMonth() + 1}`
-        let currentDay = `${currentDate.getDate()}`
-        
-        currentMonth = currentMonth.length === 1 ? `0${currentMonth}` : `${currentMonth}`
-
-        const filterObj = dataRoadShow.filter(el => {
-            const elDay = el.date.split('.')[0]
-            const elMonth = el.date.split('.')[1]
-            if (elDay.length > 2) {
-                return elMonth === currentMonth && (elDay.split('-')[0] <= currentDay && elDay.split('-')[1] >= currentDay)
-            } else {
-                return elMonth === currentMonth && elDay === currentDay
-            }
-
-        })
-
-        if (filterObj.length > 0) {
-            this.renderRoadShowPopup(dataRoadShow.indexOf(filterObj[0]))
-        } else {
-            const findDate = dataRoadShow.filter(el => {
-                const elDay = el.date.split('.')[0]
-                const elMonth = el.date.split('.')[1]
-
-                if (elMonth === currentMonth) {
-                    if (elDay.length > 2) {
-                        const elDate = elDay.split('-')[0]
-                        return currentDay >= elDate
-                    } else {
-                        return currentDay >= elDay
-                    }
-                }
-            })
-
-            if (findDate.length === 0) {
-                this.renderRoadShowPopup(0)
-            } else {
-                this.renderRoadShowPopup(dataRoadShow.indexOf(findDate[findDate.length - 1]))
-            }
+      arrName.forEach(nameEl => {
+        if (newName.length < 70) {
+          newName += nameEl + ' '
         }
-    }
-
-    handleResize = () => {
-        this.renderRoadShowPopup(this.state.currentI)
-    }
-
-    componentWillUnmount = () => {
-        window.removeEventListener('resize', this.handleResize)
-    }
-
-    renderRoadShowPopup = (i) => {
-        const filterEl = dataRoadShow.filter((filEl, fillI) => fillI === i)
-        if (window.innerWidth >= 1201)
-            (i === 0) ?
-                this.slider.slickGoTo(dataRoadShow.length - 1) :
-                this.slider.slickGoTo(i - 1)
-        if (window.innerWidth >= 1001)
-            (i === 0) ?
-                this.slider1.slickGoTo(dataRoadShow.length - 1) :
-                this.slider1.slickGoTo(i - 1)
-        if (window.innerWidth >= 768)
-            (i === 0) ?
-                this.slider2.slickGoTo(dataRoadShow.length - 1) :
-                this.slider2.slickGoTo(i - 1)
-        if (window.innerWidth < 768)
-            (i === 0) ?
-                this.slider3.slickGoTo(dataRoadShow.length - 1) :
-                this.slider3.slickGoTo(i - 1)
-        this.setState({
-            currentI: i,
-            valuePopUp: filterEl[0]
-        })
-    }
-
-    render() {
-        const settings = {
-            infinite: true,
-            speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            swipeToSlide: true,
-            afterChange: (i) => {
-                if (i + 1 === dataRoadShow.length) {
-                    i = 0
-                    this.renderRoadShowPopup(i)
-                } else {
-                    this.renderRoadShowPopup(i + 1)
-                }
-                
-            }
+      })
+      arrText.forEach(textEl => {
+        if (newText.length < 106) {
+          newText += textEl + ' '
         }
+      })
 
-        const settings2 = {
-            infinite: true,
-            speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            swipeToSlide: true,
-            afterChange: (i) => {
-                if (i + 1 === dataRoadShow.length) {
-                    i = 0
-                    this.renderRoadShowPopup(i)
-                } else {
-                    this.renderRoadShowPopup(i + 1)
-                }
-            }
-        }
-
-        const settings3 = {
-            infinite: true,
-            speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            swipeToSlide: true,
-            afterChange: (i) => {
-                if (i + 1 === dataRoadShow.length) {
-                    i = 0
-                    this.renderRoadShowPopup(i)
-                } else {
-                    this.renderRoadShowPopup(i + 1)
-                }
-            }
-        }
-
-        const settings4 = {
-            infinite: true,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            swipeToSlide: true,
-            afterChange: (i) => {
-                if (i + 1 === dataRoadShow.length) {
-                    i = 0
-                    this.renderRoadShowPopup(i)
-                } else {
-                    this.renderRoadShowPopup(i + 1)
-                }
-            }
-        }
-
-        // const settings5 = {
-        //     infinite: true,
-        //     speed: 500,
-        //     slidesToShow: 3,
-        //     slidesToScroll: 1
-        // }
-
-        // const settings6 = {
-        //     infinite: true,
-        //     speed: 500,
-        //     slidesToShow: 3,
-        //     slidesToScroll: 1
-        // }
-
-        return (
-            <div className="road-show-block">
-                <div className="header_blocks">Roadshow</div>
-                <div className='road__circles'>
-                    <div className="road-show-popup">
-                        <a className="road-show-a" href={this.state.valuePopUp.video.src} target="_blank">
-                            <div className="road-popup-video">
-                                <div className="img" style={{ backgroundImage: `url(${this.state.valuePopUp.video.img})` }}></div>
-                            </div>
-                        </a>
-                        <div className="road-popup-text">
-                            <div>{this.state.valuePopUp.text}</div>
-                            { this.state.valuePopUp.report ? <a className="road-show__report" target="_blank" href={this.state.valuePopUp.report.link}>{this.state.valuePopUp.report.text}</a> : null }
-                            { this.state.valuePopUp.details ? <a className="road-show__report" target="_blank" href={this.state.valuePopUp.details.link}>{this.state.valuePopUp.details.text}</a> : null }
-                        </div>
-                        <div className="road-popup-triangle"></div>
-                    </div>
-                    <div className='road__line' />
-                    <div className="road__settings road__setting">
-                        <Slider ref={slider => (this.slider = slider)} {...settings}>
-                            { this.renderRoadShow() }
-                        </Slider>
-                    </div>
-                    <div className="road__settings road__setting2">
-                        <Slider ref={slider => (this.slider1 = slider)} {...settings2}>
-                            { this.renderRoadShow() }
-                        </Slider>
-                    </div>
-                    <div className="road__settings road__setting3">
-                        <Slider ref={slider => (this.slider2 = slider)} {...settings3}>
-                            { this.renderRoadShow() }
-                        </Slider>
-                    </div>
-                    <div className="road__settings road__setting4">
-                        <Slider ref={slider => (this.slider3 = slider)} {...settings4}>
-                            { this.renderRoadShow() }
-                        </Slider>
-                    </div>
-                </div>
+      return (
+        <div key={i} className="item">
+          <a target="_blank" href={(el.report || {link: 'https://medium.com/cindx/'}).link} onClick={()=>console.log(el.report)}>
+            <div className="txtNews">
+              <div className="img" style={{ backgroundImage: `url(${el.video.img})`, backgroundPosition: el.centered ? 'center center' : '0 0' }}></div>
+              <div className="content">
+                <h3>{(newName.length - 1) === el.data.length ? newName : newName + ' ...'}</h3>
+                <div className="clear" />
+                <p>{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
+                <p className="details">Details</p>
+              </div>
             </div>
-        )
+          </a>
+        </div>
+      );
+    })
+  }
+
+  openLink = (src) => {
+    if (this.state.isLinkAccess) {
+      window.open(src)
     }
+  }
+
+  render() {
+    const settings = {
+      arrows: true,
+      swipeToSlide: true,
+      lazyLoad: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      beforeChange: () => {
+        this.setState({ isLinkAccess: false })
+      },
+      afterChange: (i) => {
+        this.setState({ isLinkAccess: true })
+      }
+    };
+    const settingsNews = {
+      arrows: true,
+      swipeToSlide: true,
+      lazyLoad: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      beforeChange: () => {
+        this.setState({ isLinkAccess: false })
+      },
+      afterChange: () => {
+        this.setState({ isLinkAccess: true })
+      }
+    };
+    const settings2 = {
+      arrows: true,
+      infinite: true,
+      lazyLoad: true,
+      swipeToSlide: true,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 3,
+      beforeChange: () => {
+        this.setState({ isLinkAccess: false })
+      },
+      afterChange: () => {
+        this.setState({ isLinkAccess: true })
+      }
+    };
+    const settingsNews2 = {
+      arrows: true,
+      infinite: true,
+      lazyLoad: true,
+      swipeToSlide: true,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 3,
+      beforeChange: () => {
+        this.setState({ isLinkAccess: false })
+      },
+      afterChange: () => {
+        this.setState({ isLinkAccess: true })
+      }
+    };
+    const settings3 = {
+      arrows: true,
+      infinite: true,
+      swipeToSlide: true,
+      lazyLoad: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 3,
+    };
+    const settingsNews3 = {
+      arrows: true,
+      infinite: true,
+      swipeToSlide: true,
+      lazyLoad: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 3,
+    };
+    return (
+      <div className="block_7">
+        <div className="size">
+          <h2 className="header_blocks">Roadshow</h2>
+          <div className="block_arrow_relative">
+            <div className="settings">
+              <Slider {...settings}>
+                {this.mapMedia()}
+              </Slider>
+            </div>
+          </div>
+          <div className="block_arrow_relative">
+            <div className="settings2">
+              <Slider {...settings2}>
+                {this.mapMedia()}
+              </Slider>
+            </div>
+          </div>
+          <div className="block_arrow_relative">
+            <div className="settings3">
+              <Slider {...settings3}>
+                {this.mapMedia()}
+              </Slider>
+            </div>
+          </div>
+          <div className="clear" />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default RoadsShow

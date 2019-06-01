@@ -16,7 +16,7 @@ import { Roadmap } from '@components/roadmap';
 import { CanvasMouns } from '@components/animate';
 import { ProgressBarSale } from '@components/progressBarSale/ProgressBarSale';
 import { Menu } from '@components/menu/Menu';
-// import RoadsShow from './components/roadsShow/RoadsShow';
+import RoadsShow from './components/roadsShow/RoadsShow';
 // import { SocIcons } from '@components/socIcons/SocIcons';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -51,7 +51,7 @@ class App extends React.Component {
           <FeedbackProject />
           <MediaNews />
           <MvpBlock />
-          {/* <RoadsShow /> */}
+          <RoadsShow />
           {/* <ProblemSolving /> */}
           {/* <HowCindxWorks /> */}
           {/* <MarketAnalytics /> */}
