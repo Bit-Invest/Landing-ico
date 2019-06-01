@@ -123,7 +123,7 @@ export class MainBlock extends React.Component {
                 Making Crypto Investments Easy, Secure and Fast.
               </div>
               <div className={`${ROOT_CLASS}__header3`}>
-                Be the first to know about CINDX
+                Subscribe to the latest updates from Cindx 
               </div>
             </div>
             <div className={`${ROOT_CLASS}__cont`}>
