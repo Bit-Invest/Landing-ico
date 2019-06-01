@@ -48,10 +48,10 @@ class App extends React.Component {
           <MarketAnalytics />
           <TeamLegal />
           <Roadmap />
+          <RoadsShow />
           <FeedbackProject />
           <MediaNews />
           <MvpBlock />
-          <RoadsShow />
           {/* <ProblemSolving /> */}
           {/* <HowCindxWorks /> */}
           {/* <MarketAnalytics /> */}
