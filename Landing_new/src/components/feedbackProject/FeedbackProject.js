@@ -103,10 +103,13 @@ class FeedbackProject extends React.Component {
           <div className="left">
             <div className="name">
               <div className="feed-back-div" onClick={() => this.showVideoInPopUp(el.video)}>
-                <img className="playButtonWhite"
-                  src={playButtonWhite} alt={"CINDX"}
-                  style={{display: el.video ? 'block' : 'none'}}
-                />
+                <div className="playButtonWhite" style={{display: el.video ? 'block' : 'none'}}>video</div>
+                {
+                  // <img className="playButtonWhite"
+                  //   src={playButtonWhite} alt={"CINDX"}
+                  //   style={{display: el.video ? 'block' : 'none'}}
+                  // />
+                }
               </div>
               <h3>{el.name}</h3>
               <h4>{el.position}</h4>
@@ -134,9 +137,7 @@ class FeedbackProject extends React.Component {
           <div className="block_arrow_relative">
           <div className="carusel-block">
               <Slider {...settings}>
-
                 {this.feedbackOnOurProject()}
-
               </Slider>
             </div>
           </div>
