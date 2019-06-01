@@ -3,12 +3,12 @@ import Slider from 'react-slick';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { showPopUp, changeUrlPopupVideo } from '../../store/store';
-import crypto0 from '../../images/crypto/crypto1.png';
-import crypto1 from '../../images/crypto/crypto2.png';
-import crypto2 from '../../images/crypto/crypto3.png';
-import cryptoMore0 from '../../images/crypto/DASHBOARD1111.png';
-import cryptoMore1 from '../../images/crypto/DASHBOARD2222.png';
-import cryptoMore2 from '../../images/crypto/DASHBOARD3333.png';
+import crypto1 from '../../images/crypto/crypto1.png';
+import crypto2 from '../../images/crypto/crypto2.png';
+import crypto3 from '../../images/crypto/crypto3.png';
+import cryptoMore1 from '../../images/crypto/DASHBOARD1111.png';
+import cryptoMore2 from '../../images/crypto/DASHBOARD2222.png';
+import cryptoMore3 from '../../images/crypto/DASHBOARD3333.png';
 import {links} from '../../links.js';
 import Rectangle_White_opacity from '../../images/Rectangle_White_opacity.png';
 // import play_button_youtube from '../../media/play_button_youtube.png';
@@ -37,7 +37,7 @@ const problemData = [
     text1: indexLngObj[lng]['cryptoAssetsManagement#3'],
     text2: indexLngObj[lng]['cryptoAssetsManagement#4'],
     text3: indexLngObj[lng]['cryptoAssetsManagement#5'],
-    mobileSrc: crypto0
+    mobileSrc: crypto2
   },
   {
     header: indexLngObj[lng]['cryptoAssetsManagement#7'],
@@ -57,22 +57,22 @@ const problemData = [
     ],
     text1: `HUB.Pro is an option for professional traders which allows to automate their trading strategies for 24/7 trading and earning.`,
     text2: `HUB.Lite is an option for investors who can work with proven instruments with flexible risk settings.`,
-    mobileSrc: crypto2
+    mobileSrc: crypto3
   }
 ];
 
 const cryptoArr = [
   {
+    preview: crypto2,
+    more: cryptoMore2,
+  },
+  {
     preview: crypto1,
     more: cryptoMore1,
   },
   {
-    preview: crypto0,
-    more: cryptoMore0,
-  },
-  {
-    preview: crypto2,
-    more: cryptoMore2,
+    preview: crypto3,
+    more: cryptoMore3,
   },
 ];
 
@@ -91,56 +91,66 @@ class CryptoAssetsManagement extends React.Component {
   }
 
   renderImgSlides = () => {
-    let currentCryptoArr = []
+    let currentCryptoArr = cryptoArr || []
 
-    if (!this.state.isDefault) {
-      switch(this.state.currentCrypto) {
-        case 0:
-          currentCryptoArr = [
-            {
-              preview: crypto2,
-              more: cryptoMore2
-            }, 
-            {
-              preview: crypto0,
-              more: cryptoMore0
-            }, 
-            {
-              preview: crypto1,
-              more: cryptoMore1
-            }
-          ]
-          break;
-        case 1:
-          currentCryptoArr = cryptoArr
-          break;
-        case 2:
-          currentCryptoArr = [
-            {
-              preview: crypto1,
-              more: cryptoMore1
-            }, 
-            {
-              preview: crypto2,
-              more: cryptoMore2
-            }, 
-            {
-              preview: crypto0,
-              more: cryptoMore0
-            }
-          ]
-          break;
-        default:
-          currentCryptoArr = cryptoArr
-          break;
-      }
-    } else {
-      currentCryptoArr = cryptoArr
+    switch(this.state.currentCrypto) {
+      case 0:
+        currentCryptoArr = [
+          {
+            preview: crypto2,
+            more: cryptoMore2
+          }, 
+          {
+            preview: crypto1,
+            more: cryptoMore1
+          }, 
+          {
+            preview: crypto3,
+            more: cryptoMore3
+          }
+        ]
+        break;
+      case 1:
+        currentCryptoArr = [
+          {
+            preview: crypto1,
+            more: cryptoMore1
+          }, 
+          {
+            preview: crypto2,
+            more: cryptoMore2
+          }, 
+          {
+            preview: crypto3,
+            more: cryptoMore3
+          }
+        ]
+        break;
+      case 2:
+        currentCryptoArr = [
+          {
+            preview: crypto3,
+            more: cryptoMore3
+          }, 
+          {
+            preview: crypto2,
+            more: cryptoMore2
+          }, 
+          {
+            preview: crypto1,
+            more: cryptoMore1
+          }
+        ]
+        break;
+      default:
+        currentCryptoArr = cryptoArr
+        break;
     }
 
     return currentCryptoArr.map((el, i) => {
-      const animation0 = this.state.isChange && i === 0 ? 'problemBlock__slide-animation-0' : ''
-      const animation1 = this.state.isChange && i === 1 ? 'problemBlock__slide-animation-1' : ''
+      console.log(i)
+      const animation0 = this.state.isChange && i === 0 ? 'problemBlock__slide-animation-1' : ''
+      const animation1 = this.state.isChange && i === 1 ? 'problemBlock__slide-animation-0' : ''
       const animation2 = this.state.isChange && i === 2 ? 'problemBlock__slide-animation-2' : ''
       const startSlide = this.state.isDefault ? 0 : 1
 
