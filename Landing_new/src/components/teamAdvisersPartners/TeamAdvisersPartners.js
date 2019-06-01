@@ -227,23 +227,6 @@ const ourPartners = [
 
 const advisers = [
   {
-    img: Keith_Teare,
-    video: 'https://www.youtube.com/embed/1JaUqtqCQ5w',
-    src: 'https://linkedin.com/in/kteare',
-    m: 'https://medium.com/cindx/cindx-advisers-keith-teare-1041410275d0',
-    name: indexLngObj[lng]['teamAdvisersPartners#59'],
-    position: indexLngObj[lng]['teamAdvisersPartners#60'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#61'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#62'],
-    linkedin: 'https://linkedin.com/in/kteare',
-    text: [
-      indexLngObj[lng]['teamAdvisersPartners#63'],
-      indexLngObj[lng]['teamAdvisersPartners#64'],
-      indexLngObj[lng]['teamAdvisersPartners#65'],
-      indexLngObj[lng]['teamAdvisersPartners#66']
-    ]
-  },
-  {
     img: Austin_Kimm,
     video: 'https://www.youtube.com/embed/pkBoVl7Brds',
     name: indexLngObj[lng]['teamAdvisersPartners#67'],
@@ -260,20 +243,20 @@ const advisers = [
     ]
   },
   {
-    img: Philip_Staehelin,
-    video: 'https://www.youtube.com/embed/nN76RkbejGc',
-    name: indexLngObj[lng]['teamAdvisersPartners#74'],
-    src: 'https://www.linkedin.com/in/staehelin/',
-    m: 'https://medium.com/cindx/cindx-advisers-philip-staehelin-810df12247bc',
-    position: indexLngObj[lng]['teamAdvisersPartners#75'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#76'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#77'],
-    linkedin: 'https://www.linkedin.com/in/staehelin/',
+    img: Keith_Teare,
+    video: 'https://www.youtube.com/embed/1JaUqtqCQ5w',
+    src: 'https://linkedin.com/in/kteare',
+    m: 'https://medium.com/cindx/cindx-advisers-keith-teare-1041410275d0',
+    name: indexLngObj[lng]['teamAdvisersPartners#59'],
+    position: indexLngObj[lng]['teamAdvisersPartners#60'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#61'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#62'],
+    linkedin: 'https://linkedin.com/in/kteare',
     text: [
-      indexLngObj[lng]['teamAdvisersPartners#78'],
-      indexLngObj[lng]['teamAdvisersPartners#79'],
-      indexLngObj[lng]['teamAdvisersPartners#80'],
-      indexLngObj[lng]['teamAdvisersPartners#81']
+      indexLngObj[lng]['teamAdvisersPartners#63'],
+      indexLngObj[lng]['teamAdvisersPartners#64'],
+      indexLngObj[lng]['teamAdvisersPartners#65'],
+      indexLngObj[lng]['teamAdvisersPartners#66']
     ]
   },
   {
@@ -294,6 +277,23 @@ const advisers = [
       indexLngObj[lng]['teamAdvisersPartners#90']
     ]
   },
+  {
+    img: Philip_Staehelin,
+    video: 'https://www.youtube.com/embed/nN76RkbejGc',
+    name: indexLngObj[lng]['teamAdvisersPartners#74'],
+    src: 'https://www.linkedin.com/in/staehelin/',
+    m: 'https://medium.com/cindx/cindx-advisers-philip-staehelin-810df12247bc',
+    position: indexLngObj[lng]['teamAdvisersPartners#75'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#76'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#77'],
+    linkedin: 'https://www.linkedin.com/in/staehelin/',
+    text: [
+      indexLngObj[lng]['teamAdvisersPartners#78'],
+      indexLngObj[lng]['teamAdvisersPartners#79'],
+      indexLngObj[lng]['teamAdvisersPartners#80'],
+      indexLngObj[lng]['teamAdvisersPartners#81']
+    ]
+  },
   // {
   //   img: Tyler_Sanford,
   //   video: '',
@@ -312,6 +312,23 @@ const advisers = [
   //     indexLngObj[lng]['teamAdvisersPartners#99']
   //   ]
   // },
+  {
+    img: Jason_King,
+    video: 'https://www.youtube.com/embed/MHQzECP7izc',
+    name: indexLngObj[lng]['teamAdvisersPartners#149'],
+    src: 'https://www.linkedin.com/in/jasonking/',
+    m: 'https://medium.com/cindx/the-cindx-team-jason-king-9a1b93d6aa8b',
+    position: indexLngObj[lng]['teamAdvisersPartners#150'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#151'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#152'],
+    linkedin: 'https://www.linkedin.com/in/jasonking/',
+    text: [
+      indexLngObj[lng]['teamAdvisersPartners#153'],
+      indexLngObj[lng]['teamAdvisersPartners#154'],
+      indexLngObj[lng]['teamAdvisersPartners#155'],
+      indexLngObj[lng]['teamAdvisersPartners#156']
+    ]
+  },
   {
     img: Bogdan_Fiedur,
     video: 'https://www.youtube.com/embed/4kXgu60guic',
@@ -361,23 +378,6 @@ const advisers = [
       indexLngObj[lng]['teamAdvisersPartners#146'],
       indexLngObj[lng]['teamAdvisersPartners#147'],
       indexLngObj[lng]['teamAdvisersPartners#148']
-    ]
-  },
-  {
-    img: Jason_King,
-    video: 'https://www.youtube.com/embed/MHQzECP7izc',
-    name: indexLngObj[lng]['teamAdvisersPartners#149'],
-    src: 'https://www.linkedin.com/in/jasonking/',
-    m: 'https://medium.com/cindx/the-cindx-team-jason-king-9a1b93d6aa8b',
-    position: indexLngObj[lng]['teamAdvisersPartners#150'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#151'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#152'],
-    linkedin: 'https://www.linkedin.com/in/jasonking/',
-    text: [
-      indexLngObj[lng]['teamAdvisersPartners#153'],
-      indexLngObj[lng]['teamAdvisersPartners#154'],
-      indexLngObj[lng]['teamAdvisersPartners#155'],
-      indexLngObj[lng]['teamAdvisersPartners#156']
     ]
   },
   // {

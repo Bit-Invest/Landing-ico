@@ -95,7 +95,7 @@ export class MvpBlock extends React.Component {
 
     return(
     	<div className={`${ROOT_CLASS}`}>
-    		<div className={`${ROOT_CLASS}-titleMain`}>MVP</div>
+    		<div className={`${ROOT_CLASS}-titleMain`}>CINDX Live</div>
     		<div className={`${ROOT_CLASS}-container`}>
 	    		<div className={`${ROOT_CLASS}-container-two`}>
 	    			<div className={`${ROOT_CLASS}-screeImg`}>
