@@ -55,6 +55,8 @@ import William_Zhu from '../../media/William_Zhu.png';
 import Lincoln from '../../news/Lincoln.png';
 import Reinhard_Berger from '../../news/Reinhard_Berger.png';
 
+import Gen_Image from '@images/Collage_partners.png';
+
 import './TeamAdvisersPartners.css';
 import { lng } from '../../links'
 import indexLngObj from '../../lngs/index'
@@ -682,19 +684,24 @@ class TeamAdvisersPartners extends React.Component {
           <div className="clear" />
           <div className="ourPartners">
             <h2 className="header_blocks">{ indexLngObj[lng]['teamAdvisersPartners#3'] }</h2>
-            <div className="container2">
-                <Slider {...settingsOurParners}>
-                  {this.mapOurPartners()}
-                </Slider>
+            <div className="imageForPartners_parent">
+              <img src={Gen_Image} className="imageForPartners" />
             </div>
-            <div className="container3">
-              {/*<div className="slick-list">
-                {this.mapOurPartners()}
-              </div>*/}
-              <Slider {...settingsOurParners2}>
-                {this.mapOurPartners()}
-              </Slider>
-            </div>
+            {
+              // <div className="container2">
+              //   <Slider {...settingsOurParners}>
+              //     {this.mapOurPartners()}
+              //   </Slider>
+              // </div>
+              // <div className="container3">
+              //   {<div className="slick-list">
+              //     {this.mapOurPartners()}
+              //   </div>}
+              //   <Slider {...settingsOurParners2}>
+              //     {this.mapOurPartners()}
+              //   </Slider>
+              // </div>
+            }
           </div>
           <div className="clear" />
         </div>

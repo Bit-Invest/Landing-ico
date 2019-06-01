@@ -225,6 +225,25 @@
 
 
 /*OURPARTNERS*/
+.block_8 .ourPartners {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.block_8 .ourPartners .imageForPartners_parent {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 20px;
+}
+
+.block_8 .ourPartners .imageForPartners_parent .imageForPartners {
+  width: 90%;
+  object-fit: contain;
+  align-self: center;
+  flex: 0 0 auto;
+}
+
 .block_8 .ourPartners h2 {
   font-size: 40px;
   margin-top: 120px;
