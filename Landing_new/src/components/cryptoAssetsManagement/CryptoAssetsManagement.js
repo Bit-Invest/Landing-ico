@@ -148,29 +148,27 @@ class CryptoAssetsManagement extends React.Component {
     }
 
     return currentCryptoArr.map((el, i) => {
-      console.log(i)
       const animation0 = this.state.isChange && i === 0 ? 'problemBlock__slide-animation-1' : ''
       const animation1 = this.state.isChange && i === 1 ? 'problemBlock__slide-animation-0' : ''
       const animation2 = this.state.isChange && i === 2 ? 'problemBlock__slide-animation-2' : ''
       const startSlide = this.state.isDefault ? 0 : 1
 
+      console.log({i,startSlide,state:this.state,})
+
       return (
         <div className={`problemBlock__slide problemBlock__slide-${i} ${animation0} ${animation1} ${animation2}`} key={i}>
-          { i === startSlide ? 
-            <div 
-              className="problemBlock__slide-more-search" 
-              style={{ backgroundImage: `url(${Rectangle_White_opacity})` }}
-              onClick={
-                () => {
-                  if (window.innerWidth >= 1024)
-                    this.setState({ isOpen: true, imageSrc: el.more })
-                }
-              } 
-            >
-              <span className="more-block__search-icon"></span>
-            </div> : 
-            null
-          }
+          <div 
+            className="problemBlock__slide-more-search" 
+            style={{ backgroundImage: `url(${Rectangle_White_opacity})` }}
+            onClick={
+              () => {
+                if (window.innerWidth >= 1024)
+                  this.setState({ isOpen: true, imageSrc: el.more })
+              }
+            } 
+          >
+            <span className="more-block__search-icon"></span>
+          </div>
           <div style={{ backgroundImage: `url(${el.preview})` }} className='problemBlock__slide-img'></div>
         </div>
       )
