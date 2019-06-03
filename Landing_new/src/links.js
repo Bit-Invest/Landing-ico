@@ -71,6 +71,11 @@ export const links = {
     linkedin: 'https://www.linkedin.com/company/cindx/',
     telegram: 'https://t.me/cindx_official',
   },
+  common: {
+    marketAnalytics1: 'https://cryptofundresearch.com/cryptocurrency-funds-overview-infographic/',
+    marketAnalytics2: 'https://brokernotes.co/wp-content/uploads/2017/08/BN-research-report_2018-FINAL.pdf',
+    marketAnalytics3: 'Coinmarketcap.com',
+  },
 };
 
 /*

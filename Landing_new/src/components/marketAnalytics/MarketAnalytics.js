@@ -1,7 +1,4 @@
 import * as React from 'react';
-import block_3_ico_1 from '../../images/block_3_ico_1.png';
-import block_3_ico_2 from '../../images/block_3_ico_2.png';
-import block_3_ico_3 from '../../images/block_3_ico_3.png';
 import block_3_img from '../../images/block_3_img_1@2x.png';
 import block_3_img2 from '../../images/block_3_img_2@2x.png';
 import block_3_img3 from '../../images/block_3_img_3@2x.png';
@@ -45,14 +42,17 @@ const MarketAnalytics = props => {
             <div className="item">
               <h3>{ indexLngObj[lng]['marketAnalytics#2'] }</h3>
               <img src={block_3_img} alt={"block_3_img"}/>
+              <a target="_blank" className="reference" href={links.common.marketAnalytics1}>{indexLngObj[lng]['marketAnalytics#21']}</a>
             </div>
             <div className="item">
               <h3>{ indexLngObj[lng]['marketAnalytics#3'] }</h3>
               <img src={block_3_img2} alt={"block_3_img2"}/>
+              <a target="_blank" className="reference" href={links.common.marketAnalytics2}>{indexLngObj[lng]['marketAnalytics#21']}</a>
             </div>
             <div className="item">
               <h3>{ indexLngObj[lng]['marketAnalytics#4'] }</h3>
               <img src={block_3_img3} alt={"block_3_img3"}/>
+              <a target="_blank" className="reference" href={links.common.marketAnalytics3}>{indexLngObj[lng]['marketAnalytics#21']}</a>
             </div>
           </div>
           <div className="clear" />
@@ -68,26 +68,9 @@ const MarketAnalytics = props => {
             <div>{ indexLngObj[lng]['marketAnalytics#8'] }</div>
           </div>
           <div className="cont_3">
-            <div className="row">
-              <a target="_blank" onClick={openPopup} href={links.wp}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
-              <a target="_blank" onClick={openPopup} href={links.wp}><span>{ indexLngObj[lng]['marketAnalytics#9'] }</span></a>
-            </div>
-            <div className="row">
-              <a target="_blank" onClick={openPopup} href={links.pr}><img src={block_3_ico_2} alt={"block_3_ico_2"}/></a>
-              <a target="_blank" onClick={openPopup} href={links.pr}><span>{ indexLngObj[lng]['marketAnalytics#10'] }</span></a>
-            </div>
-            <div className="row">
-              <a target="_blank" onClick={openPopup} href={links.op}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
-              <a target="_blank" onClick={openPopup} href={links.op}><span>{ indexLngObj[lng]['marketAnalytics#11'] }</span></a>
-            </div>
-            <div className="row">
-              <a target="_blank" onClick={openPopup} href={links.fm}><img src={block_3_ico_3} alt={"block_3_ico_3"}/></a>
-              <a target="_blank" onClick={openPopup} href={links.fm}><span>{ indexLngObj[lng]['marketAnalytics#12'] }</span></a>
-            </div>
-            <div className="row">
-              <a target="_blank" onClick={openPopup} href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-              <a target="_blank" onClick={openPopup} href={links.ld}><span>{ indexLngObj[lng]['marketAnalytics#13'] }</span></a>
-            </div>
+            <div>{ indexLngObj[lng]['marketAnalytics#_9'] }</div>
+            <br />
+            <div>{ indexLngObj[lng]['marketAnalytics#_10'] }</div>
           </div>
           </div>
           <div className="other_geo">
@@ -115,14 +98,17 @@ const MarketAnalytics = props => {
               <div className="item">
                 <h3>{ indexLngObj[lng]['marketAnalytics#2'] }</h3>
                 <img src={block_3_img} alt={"block_3_img"}/>
+                <a target="_blank" className="reference" href={links.common.marketAnalytics1}>{indexLngObj[lng]['marketAnalytics#21']}</a>
               </div>
               <div className="item">
                 <h3>{ indexLngObj[lng]['marketAnalytics#3'] }</h3>
                 <img src={block_3_img2} alt={"block_3_img2"}/>
+                <a target="_blank" className="reference" href={links.common.marketAnalytics2}>{indexLngObj[lng]['marketAnalytics#21']}</a>
               </div>
               <div className="item">
                 <h3>{ indexLngObj[lng]['marketAnalytics#4'] }</h3>
                 <img src={block_3_img3} alt={"block_3_img3"}/>
+                <a target="_blank" className="reference" href={links.common.marketAnalytics3}>{indexLngObj[lng]['marketAnalytics#21']}</a>
               </div>
             </Slider>
           </div>
@@ -139,26 +125,9 @@ const MarketAnalytics = props => {
               <div>{ indexLngObj[lng]['marketAnalytics#8'] }</div>
             </div>
             <div className="cont_3">
-              <div className="row">
-                <a target="_blank" onClick={openPopup} href={links.wp}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
-                <a target="_blank" onClick={openPopup} href={links.wp}><span>{ indexLngObj[lng]['marketAnalytics#9'] }</span></a>
-              </div>
-              <div className="row">
-                <a target="_blank" onClick={openPopup} href={links.pr}><img src={block_3_ico_2} alt={"block_3_ico_2"}/></a>
-                <a target="_blank" onClick={openPopup} href={links.pr}><span>{ indexLngObj[lng]['marketAnalytics#10'] }</span></a>
-              </div>
-              <div className="row">
-                <a target="_blank" onClick={openPopup} href={links.op}><img src={block_3_ico_1} alt={"block_3_ico_1"}/></a>
-                <a target="_blank" onClick={openPopup} href={links.op}><span>{ indexLngObj[lng]['marketAnalytics#11'] }</span></a>
-              </div>
-              <div className="row">
-                <a target="_blank" onClick={openPopup} href={links.fm}><img src={block_3_ico_3} alt={"block_3_ico_3"}/></a>
-                <a target="_blank" onClick={openPopup} href={links.fm}><span>{ indexLngObj[lng]['marketAnalytics#12'] }</span></a>
-              </div>
-              <div className="row">
-                <a target="_blank" onClick={openPopup} href={links.ld}><img src={block_3_ico_1} alt={"CINDEX"}/></a>
-                <a target="_blank" onClick={openPopup} href={links.ld}><span>{ indexLngObj[lng]['marketAnalytics#13'] }</span></a>
-              </div>
+              <div>{ indexLngObj[lng]['marketAnalytics#_9'] }</div>
+              <br />
+              <div>{ indexLngObj[lng]['marketAnalytics#_10'] }</div>
             </div>
             <div className="clear" />
           <div className="other_geo">
