@@ -203,14 +203,24 @@ export class RoadsShow extends React.Component {
 
       return (
         <div key={i} className="item">
-          <a target="_blank" href={(el.report || {link: 'https://medium.com/cindx/'}).link} onClick={()=>console.log(el.report)}>
+          <a target="_blank" href={(el.report || {link: '/'}).link} onClick={
+            (e)=>{
+              if (!el.report) {
+                e.preventDefault()
+              }
+            }
+          }>
             <div className="txtNews">
               <div className="img" style={{ backgroundImage: `url(${el.video.img})`, backgroundPosition: el.centered ? 'center center' : '0 0' }}></div>
               <div className="content">
                 <h3>{(newName.length - 1) === el.data.length ? newName : newName + ' ...'}</h3>
                 <div className="clear" />
                 <p>{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
-                <p className="details">Details</p>
+                {
+                  el.report && (
+                    <p className="details">Details</p>
+                  ) 
+                }
               </div>
             </div>
           </a>
