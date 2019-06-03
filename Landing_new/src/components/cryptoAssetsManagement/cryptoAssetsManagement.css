@@ -6,7 +6,7 @@
 }
 .cryptoAssetsManagement .row {
   display: flex;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
 }
 .cryptoAssetsManagement .header_blocks {
   width: 75%;
@@ -51,7 +51,7 @@
 .cryptoAssetsManagement .problemBlock .txt  hr,
 .cryptoAssetsManagement .problemBlock .txt2 hr  {
   width: 100%;
-  margin: 40px 0;
+  margin: 40px 0 20px;
 }
 .cryptoAssetsManagement .problemBlock .txt  p,
 .cryptoAssetsManagement .problemBlock .txt2 p {
