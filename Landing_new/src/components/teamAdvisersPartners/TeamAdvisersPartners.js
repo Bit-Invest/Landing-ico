@@ -8,7 +8,7 @@ import playButtonWhite from '../../images/play_button_white.png';
 import linkedin_icon_social from '../../images/linkedin_icon_social.png';
 import medium_icon_social from '../../images/medium_icon_social.png';
 // Team icon
-import Yuriy_Avdeev from '../../media/Yuriy_Avdeev.5aa55970.jpg';
+import Yuriy_Avdeev from '../../media/Yuriy_Avdeev.5aa55970.png';
 import Jason_King from '../../media/Jason_King.jpg';
 import Val_Jerdes from '../../media/Val_Jerdes.f8ab5be3.jpg';
 import Mofassair_Hossain from '../../media/Mofassair_Hossain.11359d11.jpg';
