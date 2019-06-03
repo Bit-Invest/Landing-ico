@@ -144,8 +144,10 @@ export class MainBlock extends React.Component {
                   </div> : null
               }
               <div className={`${ROOT_CLASS}__prizes`}>
-                <img src={Asean_Prize} />
-                <img src={BB_S_Prize} />
+                <a target="_blank" href="https://medium.com/cindx/1st-place-in-the-pitch-competition-at-asean-digital-342dfb0ee61">
+                  <img src={Asean_Prize} />
+                  <img src={BB_S_Prize} />
+                </a>
               </div>
               <div className={`${ROOT_CLASS}__docs`}>
                 <a target="__blank" href="">

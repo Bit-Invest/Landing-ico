@@ -467,7 +467,7 @@ These six business segments provide core chain services around the head blockcha
       `The Blockchainer has more than 10 years of experience in the science and technology finance team, is the earliest blockchain proponent and practitioner in China; is the earliest blockchain ecosystem core player in China; focusing on the blockchain field, providing in-depth and vertical global professional services; one of the industry’s most comprehensive network in blockchain industry upstream and downstream.`,
     ]
   }
-].reverse();
+];
 
 
 /*

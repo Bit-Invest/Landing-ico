@@ -24,6 +24,12 @@
   bottom: 330px;
 }
 
+.socIcons .fixedSocIcon .socIconsBlock .item span {
+  background: white;
+  padding: 2px;
+  border-radius: 2px;
+}
+
 .socIcons .fixedSocIcon .socIconsBlock .img {
   width: 28px;
   height: 28px;

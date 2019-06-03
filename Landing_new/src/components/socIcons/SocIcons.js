@@ -46,23 +46,24 @@ export class SocIcons extends React.Component {
       <div className="socIcons" style={{display: this.state.menuShow ? 'block' : 'none'}}>
         <div className="fixedSocIcon">
           <div className="socIconsBlock">
-            <a target="_blank" href={links.soc.reddit}>
+            <a target="_blank" className="item" href={links.soc.reddit}>
               <img className="img" src={reddit_icon} alt="CINDX"/>
             </a>
-            <a target="_blank" href={links.soc.twitter}>
+            <a target="_blank" className="item" href={links.soc.twitter}>
               <img className="img" src={twitter_icon} alt="CINDX"/>
             </a>
-            <a target="_blank" href={links.soc.facebook}>
+            <a target="_blank" className="item" href={links.soc.facebook}>
               <img className="img" src={facebook_icon} alt="CINDX"/>
             </a>
-            <a target="_blank" href={links.soc.medium}>
+            <a target="_blank" className="item" href={links.soc.medium}>
               <img className="img" src={medium_icon} alt="CINDX"/>
             </a>
-            <a target="_blank" href={links.soc.linkedin}>
+            <a target="_blank" className="item" href={links.soc.linkedin}>
               <img className="img" src={linkedin_icon} alt="CINDX"/>
             </a>
-            <a target="_blank" href={links.soc.telegram}>
+            <a target="_blank" className="item" href={links.soc.telegram}>
               <img className="img_2" src={telegram_icon_white} alt="CINDX"/>
+              <span>7k +</span>
             </a>
           </div>
         </div>
