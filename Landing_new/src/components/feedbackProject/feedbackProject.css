@@ -231,6 +231,10 @@
   }
 }
 
+.block_6 .citaty {
+  margin: 10px 0;
+}
+
 @media (max-width: 1439px) {
   .block_6 {
     padding-bottom: 80px;

@@ -29,14 +29,16 @@ const feedbackOnOurProject = [
     name: indexLngObj[lng]['feedbackProject#18'],
     position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/1JaUqtqCQ5w',
-    text: indexLngObj[lng]['feedbackProject#19']
+    text: indexLngObj[lng]['feedbackProject#19'],
+    text2: '“By enabling a new trader to track the trades of experienced traders, CINDX removes the fear that inexperience will make failure inevitable.”',
   },
   {
     img: Austin_Kimm,
     name: indexLngObj[lng]['feedbackProject#14'],
     position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/pkBoVl7Brds',
-    text: indexLngObj[lng]['feedbackProject#15']
+    text: indexLngObj[lng]['feedbackProject#15'],
+    text2: '“CINDX makes “trader-investor” relationships personal again.”',
   },
   {
     img: Val_Jerdes,
@@ -50,42 +52,48 @@ const feedbackOnOurProject = [
     name: indexLngObj[lng]['feedbackProject#16'],
     position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/VKNEfob9sGA',
-    text: indexLngObj[lng]['feedbackProject#17']
+    text: indexLngObj[lng]['feedbackProject#17'],
+    text2: '“CINDX not only offers sophisticated tools for all the investors, traders, but also offers a platform, where we can just copy trade and we can piggyback on the experience of very experienced traders.”',
   },
   {
     img: Philip_Staehelin,
     name: indexLngObj[lng]['feedbackProject#8'],
     position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/nN76RkbejGc',
-    text: indexLngObj[lng]['feedbackProject#10']
+    text: indexLngObj[lng]['feedbackProject#10'],
+    text2: '“CINDX is a brilliant idea that addresses all of the pain points of cryptocurrency and token investing.”',
   },
   {
     img: Jason_King,
     name: indexLngObj[lng]['feedbackProject#33'],
     position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/MHQzECP7izc',
-    text: indexLngObj[lng]['feedbackProject#34']
+    text: indexLngObj[lng]['feedbackProject#34'],
+    text2: '“CINDX truly can demystify and uncover the cryptocurrency trading world for the mass market investor. This offers a fighting chance for the ordinary small investor to go in and take part in trades that match their profile in a fairer and more transparent way.”',
   },
   {
     img: Bogdan_Fiedur,
     name: indexLngObj[lng]['feedbackProject#30'],
     position: indexLngObj[lng]['feedbackProject#31'],
     video: 'https://www.youtube.com/embed/4kXgu60guic',
-    text: indexLngObj[lng]['feedbackProject#32']
+    text: indexLngObj[lng]['feedbackProject#32'],
+    text2: '“Any innovative solutions directed at simplifying the work of investors, managers and vendors represent a potentially disruptive model for the cryptocurrency investments market.”',
   },
   {
     img: Graham_Doggart,
     name: indexLngObj[lng]['feedbackProject#25'],
     position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/uXTA_QLympE',
-    text: indexLngObj[lng]['feedbackProject#26']
+    text: indexLngObj[lng]['feedbackProject#26'],
+    text2: '“Imagine that the investor could entrust his funds with somebody who is an expert in this market and allow them to trade, without surrendering control of their funds.”',
   },
   {
     img: Sadie_Hutton,
     name: indexLngObj[lng]['feedbackProject#23'],
     position: indexLngObj[lng]['feedbackProject#9'],
     video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
-    text: indexLngObj[lng]['feedbackProject#24']
+    text: indexLngObj[lng]['feedbackProject#24'],
+    text2: '“The whole protocol is creating a community with real support and intelligence for anyone participating.”',
   },
 ]
 
@@ -115,7 +123,10 @@ class FeedbackProject extends React.Component {
               <h4>{el.position}</h4>
               <hr />
             </div>
-            <p>{el.text}</p>
+            <p>
+              {el.text}
+              <div className="citaty">{el.text2}</div>
+            </p>
           </div>
         </div>
       );
