@@ -590,6 +590,18 @@ const en = {
     'teamAdvisersPartners#168': 'Leonard Grayver is an experienced corporate attorney based in Silicon Valley, California. He is the chair of the corporate law group at Greenberg, LLP, a boutique law firm with offices in Southern and Northern California.',
     'teamAdvisersPartners#169': 'He has represented venture capital funds, entrepreneurs, and startup companies in diverse industries, including medical devices, software, healthcare, electronics, IT, and alternative energy, for almost twenty years. In the last several years, Leonard also developed a robust practice focusing on cryptocurrency law and has served as counsel in a number of token sales offerings.',
     'teamAdvisersPartners#170': 'Leonard earned a B.A. from University of California, Los Angeles, and a Juris Doctorate from UCLA School of Law.',
+    'teamAdvisersPartners#171': 'Kosol Saisanit',
+    'teamAdvisersPartners#172': 'Founder of Power C Technology Co., Ltd, C Power Solutions Co., Ltd and CoachHub.',
+    'teamAdvisersPartners#173': 'Executive management expert and marketing specialist',
+    'teamAdvisersPartners#174': 'Brand Manager of one of the biggest FMCG companies in the South-East Asia region',
+    'teamAdvisersPartners#175': 'Mr. Saisanit is a graduate of the Thailand Assumption University and has an MBA in Executive management and BBA major in Marketing.',
+    'teamAdvisersPartners#176': 'Previously, he held the position of Brand Manager of Monde Nissin, one of the biggest players of the FMCG market in the South-East Asia region. Also, he had an extensive career in a real estate service company, CB Richard Ellis.',
+    'teamAdvisersPartners#177': 'His company, Power C Technology Co., Ltd, is an Energy Service Company (ESCO) with specialization in reducing Energy Losses and improving Power Quality through Innovative Technology. C Power Solutions Co., Ltd is an online-marketing branch, assisting a client in Online Branding, Strategic Plan, Marketing Communication Plan and Advisor in Marketing and Sales Plan.',
+    'teamAdvisersPartners#178': '',
+    'teamAdvisersPartners#179': '',
+    'teamAdvisersPartners#180': '',
+    'teamAdvisersPartners#181': '',
+
 
     'joinTokenPreSale#1': 'Join Token Pre-Sale Now!',
     'joinTokenPreSale#2': 'JOIN PRE-SALE',

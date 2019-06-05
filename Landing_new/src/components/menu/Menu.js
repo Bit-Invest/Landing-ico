@@ -76,10 +76,6 @@ class Menu extends React.Component {
           </div>
           <div className="show-publicDocs">
             <div className="doc_icon" onClick={this.openPopup}></div>
-            <a target="_blank" onClick={this.openPopup} href={links.fm} className="itemMini2">{ indexLngObj[lng]['menu#4'] }</a>
-          </div>
-          <div className="show-publicDocs">
-            <div className="doc_icon" onClick={this.openPopup}></div>
             <a target="_blank" onClick={this.openPopup} href={links.ld} className="itemMini2">{ indexLngObj[lng]['menu#5'] }</a>
           </div>
         </div>

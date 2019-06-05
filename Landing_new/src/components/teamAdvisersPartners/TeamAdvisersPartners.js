@@ -51,6 +51,7 @@ import Sadie_Hutton from '../../media/Sadie_Hutton.54ab2eaa.jpg';
 import Motti_Peer from '../../media/Motti_Peer.png';
 import Leonard_Grayver from '../../media/Leonard_Grayver.png';
 import William_Zhu from '../../media/William_Zhu.png';
+import Kosol_Saisanit from '../../media/Kosol.png';
 
 import Lincoln from '../../news/Lincoln.png';
 import Reinhard_Berger from '../../news/Reinhard_Berger.png';
@@ -466,7 +467,23 @@ const advisers = [
 These six business segments provide core chain services around the head blockchain enterprise, building blockchain enterprises to expand the service ecosystem. The Blockchainer accelerates the network development of the business sector in the three dimensions of talent, organization and information.`,
       `The Blockchainer has more than 10 years of experience in the science and technology finance team, is the earliest blockchain proponent and practitioner in China; is the earliest blockchain ecosystem core player in China; focusing on the blockchain field, providing in-depth and vertical global professional services; one of the industry’s most comprehensive network in blockchain industry upstream and downstream.`,
     ]
-  }
+  },
+  {
+    img: Kosol_Saisanit,
+    video: '',
+    name: indexLngObj[lng]['teamAdvisersPartners#171'],
+    src: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
+    m: 'https://medium.com/cindx/cindx-advisers-austin-kimm-fa417a929e32',
+    position: indexLngObj[lng]['teamAdvisersPartners#172'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#173'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#174'],
+    linkedin: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
+    text: [
+      indexLngObj[lng]['teamAdvisersPartners#175'],
+      indexLngObj[lng]['teamAdvisersPartners#176'],
+      indexLngObj[lng]['teamAdvisersPartners#177']
+    ]
+  },
 ];
 
 
