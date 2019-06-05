@@ -111,7 +111,7 @@ class FeedbackProject extends React.Component {
           <div className="left">
             <div className="name">
               <div className="feed-back-div" onClick={() => this.showVideoInPopUp(el.video)}>
-                <div className="playButtonWhite" style={{display: el.video ? 'block' : 'none'}}>video</div>
+                <div className="playButtonWhite" style={{display: el.video ? 'block' : 'none'}}>{indexLngObj[lng]['feedbackProject#35']}</div>
                 {
                   // <img className="playButtonWhite"
                   //   src={playButtonWhite} alt={"CINDX"}

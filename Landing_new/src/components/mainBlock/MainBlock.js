@@ -118,18 +118,19 @@ export class MainBlock extends React.Component {
         <div className={`${ROOT_CLASS}__content`}>
           <div className={`${ROOT_CLASS}__container-1`}>
             <div className={`${ROOT_CLASS}__header`}>
-              One-stop solution for crypto asset management. <br/>
+              {indexLngObj[lng]['mailForm#30']}
+              <br/>
               <div className={`${ROOT_CLASS}__header2`}>
-                Making Crypto Investments Easy, Secure and Fast.
+                {indexLngObj[lng]['mailForm#31']}
               </div>
               <div className={`${ROOT_CLASS}__header3`}>
-                Subscribe to the latest updates from Cindx 
+                {indexLngObj[lng]['mailForm#32']} 
               </div>
             </div>
             <div className={`${ROOT_CLASS}__cont`}>
               <div className={`${ROOT_CLASS}__formStarted`}>
                 <input type="text" placeholder="EMAIL" onChange={this.onChange} />
-                <div className="button_send" onClick={this.sendSubcribe}>Subscribe</div>
+                <div className="button_send" onClick={this.sendSubcribe}>{indexLngObj[lng]['mailForm#33']}</div>
               </div>
               {
                 submitStatus !== 4 ?
@@ -155,13 +156,13 @@ export class MainBlock extends React.Component {
                 <a target="__blank" href="">
                   <div className={`${ROOT_CLASS}__docs__item`}>
                     <img src={Doc_icon} />
-                    <div className="text_docs_item">PROSPECTUS</div>
+                    <div className="text_docs_item">{indexLngObj[lng]['mailForm#34']}</div>
                   </div>
                 </a>
                 <a target="__blank" href="">
                   <div className={`${ROOT_CLASS}__docs__item`}>
                     <img src={Doc_icon} />
-                    <div className="text_docs_item">TECH WHITEPAPER</div>
+                    <div className="text_docs_item">{indexLngObj[lng]['mailForm#35']}</div>
                   </div>            
                 </a>
               </div>

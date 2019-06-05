@@ -19,27 +19,27 @@ const ProgressBarSale = props => {
       { ab_val === '1' ?
         <div className="container__dock-block">
           <div className="wrapper__doc">
-            <div className="download_public_doc">Download Our Public Documents</div>
+            <div className="download_public_doc">{indexLngObj[lng]['progressBarSale#18']}</div>
             <div className="container__row">
               <div className="row" onClick={() => sendDoc('ONE PAGES')}>
                 <div target="_blank" className="row_img_a"><img src={block_3_ico_1} alt={"CINDEX"}/></div>
-                <div target="_blank" className="row_span_a"><span>ONE PAGER</span></div>
+                <div target="_blank" className="row_span_a"><span>{indexLngObj[lng]['progressBarSale#13']}</span></div>
               </div>
               <div className="row" onClick={() => sendDoc('PRESENTATION')}>
                 <div target="_blank" className="row_img_a"><img src={block_3_ico_2} alt={"CINDEX"}/></div>
-                <div target="_blank" className="row_span_a"><span>PRESENTATION</span></div>
+                <div target="_blank" className="row_span_a"><span>{indexLngObj[lng]['progressBarSale#14']}</span></div>
               </div>
               <div className="row" onClick={() => sendDoc('WHITEPAPER')}>
                 <div target="_blank" className="row_img_a"><img src={block_3_ico_1} alt={"CINDEX"}/></div>
-                <div target="_blank" className="row_span_a"><span>WHITEPAPER</span></div>
+                <div target="_blank" className="row_span_a"><span>{indexLngObj[lng]['progressBarSale#15']}</span></div>
               </div>
               <div className="row" onClick={() => sendDoc('FINANCIAL MODEL')}>
                 <div target="_blank" className="row_img_a"><img src={block_3_ico_3} alt={"CINDEX"}/></div>
-                <div target="_blank" className="row_span_a"><span>FINANCIAL MODEL</span></div>
+                <div target="_blank" className="row_span_a"><span>{indexLngObj[lng]['progressBarSale#16']}</span></div>
               </div>
               <div className="row" onClick={() => sendDoc('LEGAL DOCS')}>
                 <div target="_blank" className="row_img_a"><img src={block_3_ico_1} alt={"CINDEX"}/></div>
-                <div target="_blank" className="row_span_a"><span>LEGAL DOCS</span></div>
+                <div target="_blank" className="row_span_a"><span>{indexLngObj[lng]['progressBarSale#17']}</span></div>
               </div>
             </div>
           </div>

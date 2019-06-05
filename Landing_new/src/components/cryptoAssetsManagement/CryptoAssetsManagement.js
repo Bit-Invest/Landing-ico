@@ -32,7 +32,7 @@ const problemData = [
   {
     header: indexLngObj[lng]['cryptoAssetsManagement#2'],
     header2: [
-      `CINDX.market is a marketplace for investors where they can evaluate and select strategies to follow or index to invest.`,
+      indexLngObj[lng]['cryptoAssetsManagement#15'],
     ],
     text1: indexLngObj[lng]['cryptoAssetsManagement#3'],
     text2: indexLngObj[lng]['cryptoAssetsManagement#4'],
@@ -42,8 +42,8 @@ const problemData = [
   {
     header: indexLngObj[lng]['cryptoAssetsManagement#7'],
     header2: [
-      `CINDX.trade is a module for traders to trade crypto assets on different exchange in one place, analyse the market, automate trading and achieve outstanding gains.`,
-      `CINDX uses API for data collection and trades execution. API and secret keys are not less secure than users’ login and password. To protect CINDX users, we keep all the secret API keys in a separate database using bank- level encryption.`,
+      indexLngObj[lng]['cryptoAssetsManagement#16'],
+      indexLngObj[lng]['cryptoAssetsManagement#17'],
     ],
     text1: indexLngObj[lng]['cryptoAssetsManagement#8'],
     text2: indexLngObj[lng]['cryptoAssetsManagement#9'],
@@ -51,12 +51,12 @@ const problemData = [
     mobileSrc: crypto1
   },
   {
-    header: `CINDX.HUB`,
+    header: indexLngObj[lng]['cryptoAssetsManagement#18'],
     header2: [
-      `CINDX.hub is component for algorithmic strategies creating, historical testing and analysis with the number of ready to use solutions provided.`,
+      indexLngObj[lng]['cryptoAssetsManagement#19'],
     ],
-    text1: `HUB.Pro is an option for professional traders which allows to automate their trading strategies for 24/7 trading and earning.`,
-    text2: `HUB.Lite is an option for investors who can work with proven instruments with flexible risk settings.`,
+    text1: indexLngObj[lng]['cryptoAssetsManagement#20'],
+    text2: indexLngObj[lng]['cryptoAssetsManagement#21'],
     mobileSrc: crypto3
   }
 ];

@@ -95,7 +95,7 @@ export class MvpBlock extends React.Component {
 
     return(
     	<div className={`${ROOT_CLASS}`}>
-    		<div className={`${ROOT_CLASS}-titleMain`}>CINDX Live</div>
+    		<div className={`${ROOT_CLASS}-titleMain`}>{indexLngObj[lng]['mvpBlock#1']}</div>
     		<div className={`${ROOT_CLASS}-container`}>
 	    		<div className={`${ROOT_CLASS}-container-two`}>
 	    			<div className={`${ROOT_CLASS}-screeImg`}>
@@ -103,9 +103,9 @@ export class MvpBlock extends React.Component {
 	    			</div>
 	    			<div className={`${ROOT_CLASS}-formBlock`}>
 	    				<div className={`${ROOT_CLASS}-content`}>
-	    					<div className={`${ROOT_CLASS}-title`}>We have launched our CINDX platform. Join us!</div>
+	    					<div className={`${ROOT_CLASS}-title`}>{indexLngObj[lng]['mvpBlock#2']}</div>
                 <div className={`${ROOT_CLASS}-adjustments`}>
-                  <a className="btn" href={links.mvp} target="_blank">Sign Up</a>
+                  <a className="btn" href={links.mvp} target="_blank">{indexLngObj[lng]['mvpBlock#3']}</a>
 		    					<img src={Adjustments} />
 		    				</div>
 	    				</div>

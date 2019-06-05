@@ -38,7 +38,7 @@ export class Roadmap extends React.Component {
       <div className={`${ROOT_CLASS} ${ROOT_CLASS}__headcontainer`}>
         <div className="size">
           <div className={`${ROOT_CLASS}__header`}>
-            <div className="header_blocks">Roadmap</div>
+            <div className="header_blocks">{indexLngObj[lng]['roadmap#24']}</div>
             {/* <div className={`${ROOT_CLASS}__buttons`}>
               <div className={`${ROOT_CLASS}__button`}>
                 <Button
