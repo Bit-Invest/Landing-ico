@@ -141,10 +141,6 @@ class Menu extends React.Component {
     if (isOpened) {
       return (
         <div className="showMenu">
-          <Join
-            text="Join Token Pre-Sale"
-            className="itemMini joinpresale"
-          />
           <a onClick={this.openMenu} href="#product" className="itemMini">{ indexLngObj[lng]['menu#7'] }</a>
           <a onClick={this.openMenu} href="#team" className="itemMini">{ indexLngObj[lng]['menu#9'] }</a>
           <a onClick={this.openMenu} href="#top" className="itemMini">{ indexLngObj[lng]['menu#12'] }</a>
@@ -208,10 +204,6 @@ class Menu extends React.Component {
             }
           </div>
           <div className="menu-768px">
-             <Join
-              text="Join Pre-Sale"
-              className="btn"
-            />
             <a onClick={this.openMenu} className="menu-item-burger">
               <img className="menu-icon" src={menu} alt={"CINDX"}/>
             </a>
