@@ -498,7 +498,9 @@ class TeamAdvisersPartners extends React.Component {
     return teamInfo.map((el, i) => {
       return (
         <div key={i} className="item">
-          <img className="img" src={el.img} alt="CINDX"/>
+          <div className="img" style={{
+            'background-image': `url(${el.img})`,
+          }}></div>
           <h3>{el.name}</h3>
           <p className="position">{el.position}</p>
           <hr />

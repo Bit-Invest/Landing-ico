@@ -68,13 +68,15 @@
 }
 
 .block_8 .team .item .img {
-    margin: 0 auto;
-    display: block;
-    width: auto;
-    height:  140px;
-    margin-bottom: 15px;
-    border-radius: 50%;
-    border: 5px solid white;
+  margin: 0 auto;
+  display: block;
+  height: 140px;
+  width: 140px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-size: 101%;
+  background-position: -1%;
 }
 
 .block_8 .team .item h3 {
