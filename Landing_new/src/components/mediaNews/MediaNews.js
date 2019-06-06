@@ -866,7 +866,7 @@ Haven't joined? Do it now! Grab  this opportunity and take part in the CINDX STO
   },
   {
     screen: Kosol_Saisanit_photo,
-    videoSrc: `https://medium.com/cindx/cindx-advisers-william-zhu-abb34353e927`,
+    videoSrc: `https://medium.com/cindx/cindx-advisers-kosol-saisanit-209e05fd8aaf`,
     name: `We've got a new adviser: Kosol Saisanit`,
     text: `Mr. Saisanit has founded Power C Technology Co., Ltd, C Power Solutions Co., Ltd and CoachHub`,
     source: `www.medium.com`,
