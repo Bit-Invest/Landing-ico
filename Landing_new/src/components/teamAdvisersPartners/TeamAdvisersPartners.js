@@ -295,24 +295,6 @@ const advisers = [
       indexLngObj[lng]['teamAdvisersPartners#81']
     ]
   },
-  // {
-  //   img: Tyler_Sanford,
-  //   video: '',
-  //   name: indexLngObj[lng]['teamAdvisersPartners#91'],
-  //   src: 'https://www.linkedin.com/in/tylersanford/',
-  //   m: 'https://medium.com/cindx/cindx-advisers-tyler-sanford-a58eefa42a95',
-  //   position: indexLngObj[lng]['teamAdvisersPartners#92'],
-  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#93'],
-  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#94'],
-  //   linkedin: 'https://www.linkedin.com/in/tylersanford/',
-  //   text: [
-  //     indexLngObj[lng]['teamAdvisersPartners#95'],
-  //     indexLngObj[lng]['teamAdvisersPartners#96'],
-  //     indexLngObj[lng]['teamAdvisersPartners#97'],
-  //     indexLngObj[lng]['teamAdvisersPartners#98'],
-  //     indexLngObj[lng]['teamAdvisersPartners#99']
-  //   ]
-  // },
   {
     img: Jason_King,
     video: 'https://www.youtube.com/embed/MHQzECP7izc',
@@ -381,22 +363,6 @@ const advisers = [
       indexLngObj[lng]['teamAdvisersPartners#148']
     ]
   },
-  // {
-  //   img: Motti_Peer,
-  //   video: '',
-  //   name: indexLngObj[lng]['teamAdvisersPartners#157'],
-  //   src: 'https://www.linkedin.com/in/jasonking/',
-  //   m: 'https://medium.com/cindx/advisers-motti-peer-f2c1d72008e9',
-  //   position: indexLngObj[lng]['teamAdvisersPartners#158'],
-  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#159'],
-  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#160'],
-  //   linkedin: 'https://www.linkedin.com/in/mottipeer/',
-  //   text: [
-  //     indexLngObj[lng]['teamAdvisersPartners#161'],
-  //     indexLngObj[lng]['teamAdvisersPartners#162'],
-  //     indexLngObj[lng]['teamAdvisersPartners#163']
-  //   ]
-  // },
   {
     img: Leonard_Grayver,
     video: '',
@@ -416,56 +382,56 @@ const advisers = [
   {
     img: Lincoln,
     video: '',
-    name: 'Teo Lincoln',
+    name: indexLngObj[lng]['teamAdvisersPartners#178'],
     src: 'https://www.linkedin.com/in/lincolnteo/',
     m: '',
-    position: 'Founder and CEO of Intel Wise Group',
-    fackt1: 'Former Managing Director of DP Information Group',
-    fackt2: 'Advisor to Brunei’s central bank Authority Monetary Brunei Darussalam (AMBD)',
+    position: indexLngObj[lng]['teamAdvisersPartners#179'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#180'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#181'],
     linkedin: 'https://www.linkedin.com/in/lincolnteo/',
     text: [
-      `Lincoln is Founder and CEO of Intel Wise Group. `,
-      `Prior to this, he was Chief Operating Officer and Managing Director of DP Information Group – a subsidiary of Experian plc and managed multiple data repositories in South-East Asia (including Singapore, Malaysia, Indonesia, Vietnam and Brunei).`,
-      `Lincoln’s experience includes risk management and IT infrastructures with United Overseas Bank Group and Standard Chartered Bank.  As a statistician, he introduced credit scoring to multiple banks in Asia-Pacific and also found time to serve on project teams of the World Bank Group and the Asian Development Bank. Intel`,
-      `Under the umbrella of the Chongqing Connectivity Initiative, a Singapore and China Governments’ bilateral project, Intel Wise has curated data on more than 100+ million companies in China and helped companies globally with their compliance and due diligence needs.  More recently, the company has embarked on blockchain technology and developed platforms for alternative financial services and the trading of digital assets.`,
-      `In addition, Lincoln is also an Advisor to Brunei’s central bank Autoriti Monetary Brunei Darussalam (AMBD).`
+      indexLngObj[lng]['teamAdvisersPartners#182'],
+      indexLngObj[lng]['teamAdvisersPartners#183'],
+      indexLngObj[lng]['teamAdvisersPartners#184'],
+      indexLngObj[lng]['teamAdvisersPartners#185'],
+      indexLngObj[lng]['teamAdvisersPartners#186']
     ]
   },
   {
     img: Reinhard_Berger,
     video: '',
-    name: 'Reinhard Berger',
+    name: indexLngObj[lng]['teamAdvisersPartners#187'],
     src: 'https://www.linkedin.com/in/reinhard-berger-90810613/',
     m: '',
-    position: 'Reinhard Berger is the CEO of Pecunio Blockchain Technologies, a Dubai VC Firm focussed on innovative DLT technologies.',
-    fackt1: 'Consulted Credit Suisse, UBS and Invesco as a business architect at Accenture. Was a principal for Capgemini',
-    fackt2: 'Managed $250M in alternative assets via Invest Finance AG since 2003',
+    position: indexLngObj[lng]['teamAdvisersPartners#188'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#189'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#190'],
     linkedin: 'https://www.linkedin.com/in/reinhard-berger-90810613/',
     text: [
-      `He holds an MSc in Computer Science, an M.A in law, as well as an MBA from Danube University. `,
-      `Prior to Pecunio, Reinhard’s career began as a business architect for global consulting firm Accenture, with clients such as Credit Suisse, UBS and Invesco.`,
-      `He then served as a principal for French tech giant Capgemini. In 2003, Reinhard co-founded Alternative Invest Finance AG, an independent hedge fund operator, where he managed alternative assets in excess of $250M. `,
-      `An intuitive leader, natural mentor and true strategist at Pecuino’s helm.`,
-      ``,
-      ``
+      indexLngObj[lng]['teamAdvisersPartners#191'],
+      indexLngObj[lng]['teamAdvisersPartners#192'],
+      indexLngObj[lng]['teamAdvisersPartners#193'],
+      indexLngObj[lng]['teamAdvisersPartners#194']
     ]
   },
   {
     img: William_Zhu,
     video: '',
-    name: 'William Zhu',
+    name: indexLngObj[lng]['teamAdvisersPartners#100'],
     src: 'https://www.linkedin.com/in/高峰-朱-196741173',
     m: '',
-    position: 'Founder of The Blockchainer & J&C Capital',
-    fackt1: 'Guest Professor of Zhejiang University',
-    fackt2: 'Former Chairman of OTC Database (Shanghai)',
+    position: indexLngObj[lng]['teamAdvisersPartners#101'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#102'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#103'],
     linkedin: 'https://www.linkedin.com/in/高峰-朱-196741173',
     text: [
-      `Mr. Zhu is finance doctoral student, holds Bachelor of law & Master of Marketing. Now he is Executive Secretary General of Emerging Industries Institute (Shanghai), Guest Professor of Zhejiang University, and Expert Lecturer of Shanghai Municipal Tourism Administration.`,
-      `Previously, he was Chairman of OTC Database (Shanghai) Information Technology Co., Ltd.), General Manager of China UnionPay Smart Big Data and Internet Finance Research Institute, and CEO of CDMC.`,
-      `The Blockchainer provides to its customers comprehensive services such as: summit organization, global business tours, meetup host and customization, media & social media casting, VIP resource connection, localisation service.
-These six business segments provide core chain services around the head blockchain enterprise, building blockchain enterprises to expand the service ecosystem. The Blockchainer accelerates the network development of the business sector in the three dimensions of talent, organization and information.`,
-      `The Blockchainer has more than 10 years of experience in the science and technology finance team, is the earliest blockchain proponent and practitioner in China; is the earliest blockchain ecosystem core player in China; focusing on the blockchain field, providing in-depth and vertical global professional services; one of the industry’s most comprehensive network in blockchain industry upstream and downstream.`,
+      indexLngObj[lng]['teamAdvisersPartners#104'],
+      indexLngObj[lng]['teamAdvisersPartners#105'],
+      indexLngObj[lng]['teamAdvisersPartners#106'],
+      indexLngObj[lng]['teamAdvisersPartners#107'],
+      indexLngObj[lng]['teamAdvisersPartners#108'],
+      indexLngObj[lng]['teamAdvisersPartners#109'],
+      indexLngObj[lng]['teamAdvisersPartners#110'],
     ]
   },
   {

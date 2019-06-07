@@ -94,13 +94,13 @@ import Pecunio_CINDX from '../../news/Pecunio_&_CINDX.png'
 import Banners_005 from '../../news/Banners.005_copy.png'
 import Prorocol from '../../news/prorocol.jpg'
 import Kosol_Saisanit_photo from '../../news/Kosol_Saisanit_photo.png'
+import CD3105 from '../../images/CD3105.png'
 
 import img_08_1 from '../../news/08/1.png';
 import img_08_2 from '../../news/08/2.png';
 import img_08_3 from '../../news/08/3.jpg';
 
 import './MediaNews.css';
-
 
 const media = [
   {
@@ -790,32 +790,8 @@ Read our Review about Singapore’s blockchain industry and hurry up to join the
     text: `CINDX clinches $2,5 million investment deal and closes its SOFT CAP!!
 Haven't joined? Do it now! Grab  this opportunity and take part in the CINDX STO before the tokens are sold out! `,
     source: 'www.medium.com',
-    centered: true
+    centered: false
   },
-  /*{
-    urlLink: `https://medium.com/cindx/roadshow-report-asia-282b3327afff`,
-    screen: img_08_3, //
-    name: `CINDX Roadshow Report: Asia`,
-    text: `The CINDX team welcomes our colleagues back home to the office! Now it’s time to review the results of the CINDX Asian Roadshow. We have created a short overview of CINDX’ activities in the countries where it was represented. Read and join CINDX! More updates are on the way! `,
-    source: 'www.medium.com',
-    centered: true
-  },*/
-  /*{
-    urlLink: `https://medium.com/cindx/cindx-partners-with-civic-technologies-e74969ebc310`,
-    screen: st_place_in_the_pitch_competition,
-    name: `CINDX Partners with Civic Technologies!`,
-    text: `Great news! CINDX Partners with Civic Technologies to bring ultra security and anonymity to KYC verification on the CINDX platform. The partnership brings trusted, secure identity services to crypto fund management and enables CINDX to provide anonymity to its users. `,
-    source: 'www.medium.com',
-    centered: true
-  },
-  {
-    urlLink: `https://medium.com/@cindx/weekly-digest-24-september-30-september-3bfc3f98f904`,
-    screen: st_place_in_the_pitch_competition,
-    name: `Weekly Digest (24.09.2018 - 30.09.2018)`,
-    text: `September was a huge month for CINDX, full of events along the Asian Roadshow and long hours spent on introducing CINDX to new private investors and investment funds. Read last week's full report! `,
-    source: 'www.medium.com',
-    centered: true
-  },*/
   {
     urlLink: `https://medium.com/cindx/why-choose-cindx-the-top-10-reasons-ca05e1007df9`,
     screen: img_08_2,
@@ -824,14 +800,6 @@ Haven't joined? Do it now! Grab  this opportunity and take part in the CINDX STO
     source: 'www.medium.com',
     centered: true
   },
-  /*{
-    urlLink: `https://medium.com/cindx/if-blockchain-is-revolutionary-bitcoin-is-nothing-short-of-a-miracle-874372ea07bb`,
-    screen: st_place_in_the_pitch_competition,
-    name: `If Blockchain is Revolutionary, Bitcoin is Nothing Short of a Miracle`,
-    text: `The benefits of blockchain are countless, but the world is still quite skeptical of Bitcoin – it can be difficult to separate the truth from the doubt. Read about CINDX' exploration of Bitcoin, and enter the fascinating world of crypto right now! Join the CINDX Security Token Offering today! `,
-    source: 'www.medium.com',
-    centered: true
-  },*/,
   {
     screen: Lincoln_Teo_photo,
     urlLink: `https://medium.com/cindx/cindx-advisers-lincoln-teo-b7d2eafd660f`,
@@ -870,6 +838,14 @@ Haven't joined? Do it now! Grab  this opportunity and take part in the CINDX STO
     name: `We've got a new adviser: Kosol Saisanit`,
     text: `Mr. Saisanit has founded Power C Technology Co., Ltd, C Power Solutions Co., Ltd and CoachHub`,
     source: `www.medium.com`,
+    centered: true
+  },
+  {
+    screen: CD3105,
+    urlLink: 'https://medium.com/cindx/cindx-launches-testing-of-unique-rating-system-and-manager-dashboard-f5230093feec',
+    name: 'CINDX Launches Testing Of Unique Rating System and Manager Dashboard',
+    text: "The CINDX project is delighted to announce that it is launching closed product testing of its platform’s two main components consisting of the unique Rating System and Manager Dashboard.",
+    source: "www.medium.com",
     centered: true
   }
 ]; 
