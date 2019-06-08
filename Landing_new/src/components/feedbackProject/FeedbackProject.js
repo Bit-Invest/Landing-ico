@@ -26,74 +26,75 @@ import indexLngObj from '../../lngs/index'
 const feedbackOnOurProject = [
   {
     img: Keith_Teare,
-    name: indexLngObj[lng]['feedbackProject#18'],
-    position: indexLngObj[lng]['feedbackProject#9'],
+    name: indexLngObj[lng]['feedbackProject#28'],
+    position: indexLngObj[lng]['feedbackProject#29'],
     video: 'https://www.youtube.com/embed/1JaUqtqCQ5w',
-    text: 'Founder and Executive Chairman at Accelerated Digital Ventures',
-    text2: '“By enabling a new trader to track the trades of experienced traders, CINDX removes the fear that inexperience will make failure inevitable.”',
+    text: indexLngObj[lng]['feedbackProject#30'],
+    text2: indexLngObj[lng]['feedbackProject#32'],
   },
   {
     img: Austin_Kimm,
-    name: indexLngObj[lng]['feedbackProject#14'],
-    position: indexLngObj[lng]['feedbackProject#9'],
+    name: indexLngObj[lng]['feedbackProject#18'],
+    position: indexLngObj[lng]['feedbackProject#19'],
     video: 'https://www.youtube.com/embed/pkBoVl7Brds',
-    text: 'International Financial Services CEO',
-    text2: '“CINDX makes “trader-investor” relationships personal again.”',
+    text: indexLngObj[lng]['feedbackProject#20'],
+    text2: indexLngObj[lng]['feedbackProject#22'],
   },
   {
     img: Val_Jerdes,
     name: indexLngObj[lng]['feedbackProject#2'],
     position: indexLngObj[lng]['feedbackProject#3'],
     video: 'https://www.youtube.com/embed/H6hSOnoyFTY',
-    text: indexLngObj[lng]['feedbackProject#4']
+    text: indexLngObj[lng]['feedbackProject#4'],
+     text2: indexLngObj[lng]['feedbackProject#6'],
   },
   {
     img: Amarpreet_Singh,
-    name: indexLngObj[lng]['feedbackProject#16'],
-    position: indexLngObj[lng]['feedbackProject#9'],
+    name: indexLngObj[lng]['feedbackProject#23'],
+    position: indexLngObj[lng]['feedbackProject#24'],
     video: 'https://www.youtube.com/embed/VKNEfob9sGA',
-    text: 'Senior Adviser of Global Blockchain Foundation',
-    text2: '“CINDX not only offers sophisticated tools for all the investors, traders, but also offers a platform, where we can just copy trade and we can piggyback on the experience of very experienced traders.”',
+    text: indexLngObj[lng]['feedbackProject#25'],
+    text2: indexLngObj[lng]['feedbackProject#27'],
   },
   {
     img: Philip_Staehelin,
-    name: indexLngObj[lng]['feedbackProject#8'],
-    position: indexLngObj[lng]['feedbackProject#9'],
+    name: indexLngObj[lng]['feedbackProject#10'],
+    position: indexLngObj[lng]['feedbackProject#11'],
     video: 'https://www.youtube.com/embed/nN76RkbejGc',
-    text: 'Managing Partner of Roland Berger',
-    text2: '“CINDX is a brilliant idea that addresses all of the pain points of cryptocurrency and token investing.”',
+    text: indexLngObj[lng]['feedbackProject#12'],
+    text2: indexLngObj[lng]['feedbackProject#14'],
   },
   {
     img: Jason_King,
-    name: indexLngObj[lng]['feedbackProject#33'],
-    position: indexLngObj[lng]['feedbackProject#9'],
+    name: indexLngObj[lng]['feedbackProject#54'],
+    position: indexLngObj[lng]['feedbackProject#55'],
     video: 'https://www.youtube.com/embed/MHQzECP7izc',
-    text: 'Chief Executive Officer at Telenor ',
-    text2: '“CINDX truly can demystify and uncover the cryptocurrency trading world for the mass market investor. This offers a fighting chance for the ordinary small investor to go in and take part in trades that match their profile in a fairer and more transparent way.”',
+    text: indexLngObj[lng]['feedbackProject#56'],
+    text2: indexLngObj[lng]['feedbackProject#58'],
   },
   {
     img: Bogdan_Fiedur,
-    name: indexLngObj[lng]['feedbackProject#30'],
-    position: indexLngObj[lng]['feedbackProject#31'],
+    name: indexLngObj[lng]['feedbackProject#49'],
+    position: indexLngObj[lng]['feedbackProject#50'],
     video: 'https://www.youtube.com/embed/4kXgu60guic',
-    text: 'Co-Founder of bitJob and President of Blockchainexperts.io',
-    text2: '“Any innovative solutions directed at simplifying the work of investors, managers and vendors represent a potentially disruptive model for the cryptocurrency investments market.”',
+    text: indexLngObj[lng]['feedbackProject#51'],
+    text2: indexLngObj[lng]['feedbackProject#53'],
   },
   {
     img: Graham_Doggart,
-    name: indexLngObj[lng]['feedbackProject#25'],
-    position: indexLngObj[lng]['feedbackProject#9'],
+    name: indexLngObj[lng]['feedbackProject#41'],
+    position: indexLngObj[lng]['feedbackProject#42'],
     video: 'https://www.youtube.com/embed/uXTA_QLympE',
-    text: 'Founder and CPO at AuBit',
-    text2: '“Imagine that the investor could entrust his funds with somebody who is an expert in this market and allow them to trade, without surrendering control of their funds.”',
+    text: indexLngObj[lng]['feedbackProject#43'],
+    text2: indexLngObj[lng]['feedbackProject#45'],
   },
   {
     img: Sadie_Hutton,
-    name: indexLngObj[lng]['feedbackProject#23'],
-    position: indexLngObj[lng]['feedbackProject#9'],
+    name: indexLngObj[lng]['feedbackProject#36'],
+    position: indexLngObj[lng]['feedbackProject#37'],
     video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
-    text: 'Founder and CSO at AuBit',
-    text2: '“The whole protocol is creating a community with real support and intelligence for anyone participating.”',
+    text: indexLngObj[lng]['feedbackProject#38'],
+    text2: indexLngObj[lng]['feedbackProject#40'],
   },
 ]
 
@@ -111,7 +112,7 @@ class FeedbackProject extends React.Component {
           <div className="left">
             <div className="name">
               <div className="feed-back-div" onClick={() => this.showVideoInPopUp(el.video)}>
-                <div className="playButtonWhite" style={{display: el.video ? 'block' : 'none'}}>{indexLngObj[lng]['feedbackProject#35']}</div>
+                <div className="playButtonWhite" style={{display: el.video ? 'block' : 'none'}}>{indexLngObj[lng]['feedbackProject#_1']}</div>
                 {
                   // <img className="playButtonWhite"
                   //   src={playButtonWhite} alt={"CINDX"}

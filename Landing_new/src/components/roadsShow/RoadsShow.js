@@ -13,8 +13,8 @@ import Bangkok25_26_09 from '../../images/RoadShowImg/Bangkok25-26-09.jpg'
 import Tokyo28_29_09 from '../../images/RoadShowImg/Tokyo28-29-09.jpg'
 import Singapore22_09 from '../../images/RoadShowImg/Singapore22-09.jpg'
 import Las_Vegas21_24_10 from '../../images/RoadShowImg/Las-Vegas21-24-10.jpg'
-import road1 from '../../images/road1.png'
-import road2 from '../../images/road2.png'
+import road1 from '../../images/road1.PNG'
+import road2 from '../../images/road2.PNG'
 
 import './RoadsShow.css'
 
