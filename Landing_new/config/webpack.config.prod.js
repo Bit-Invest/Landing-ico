@@ -141,7 +141,7 @@ module.exports = {
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,
-              name: 'static/media/[name]',            },
+              name: 'static/media/[name]            },
           },
           // Process JS with Babel.
           {
