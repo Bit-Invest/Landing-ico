@@ -47,12 +47,12 @@ const MarketAnalytics = props => {
             <div className="item">
               <h3>{ indexLngObj[lng]['marketAnalytics#3'] }</h3>
               <img src={block_3_img2} alt={"block_3_img2"}/>
-              <a target="_blank" className="reference" href={links.common.marketAnalytics2}>{indexLngObj[lng]['marketAnalytics#21']}</a>
+              <a target="_blank" className="reference" href={links.common.marketAnalytics2}>{indexLngObj[lng]['marketAnalytics#22']}</a>
             </div>
             <div className="item">
               <h3>{ indexLngObj[lng]['marketAnalytics#4'] }</h3>
               <img src={block_3_img3} alt={"block_3_img3"}/>
-              <a target="_blank" className="reference" href={links.common.marketAnalytics3}>{indexLngObj[lng]['marketAnalytics#21']}</a>
+              <a target="_blank" className="reference" href={links.common.marketAnalytics3}>{indexLngObj[lng]['marketAnalytics#23']}</a>
             </div>
           </div>
           <div className="clear" />
@@ -103,12 +103,12 @@ const MarketAnalytics = props => {
               <div className="item">
                 <h3>{ indexLngObj[lng]['marketAnalytics#3'] }</h3>
                 <img src={block_3_img2} alt={"block_3_img2"}/>
-                <a target="_blank" className="reference" href={links.common.marketAnalytics2}>{indexLngObj[lng]['marketAnalytics#21']}</a>
+                <a target="_blank" className="reference" href={links.common.marketAnalytics2}>{indexLngObj[lng]['marketAnalytics#22']}</a>
               </div>
               <div className="item">
                 <h3>{ indexLngObj[lng]['marketAnalytics#4'] }</h3>
                 <img src={block_3_img3} alt={"block_3_img3"}/>
-                <a target="_blank" className="reference" href={links.common.marketAnalytics3}>{indexLngObj[lng]['marketAnalytics#21']}</a>
+                <a target="_blank" className="reference" href={links.common.marketAnalytics3}>{indexLngObj[lng]['marketAnalytics#23']}</a>
               </div>
             </Slider>
           </div>

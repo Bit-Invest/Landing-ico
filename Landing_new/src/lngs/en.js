@@ -185,7 +185,7 @@ const en = {
     'marketAnalytics#3': 'The Number of Online Traders by Region (thousands, people)',
     'marketAnalytics#4': 'Monthly Trading Volume on Cryptomarkets (millions, USD)',
     'marketAnalytics#5': 'The year 2018 saw an overall declining trend in the prices of cryptocurrencies, but the industry has continued to develop as new liquidity was directed into assets under fund management.',
-    'marketAnalytics#6': 'The latter factor was particularly prevalent in the last half of 2017, when Bitcoin, for example, increased in value nearly fourfold. The prices of the leading cryptocurrencies fell sharply in 2018. Despite this, the growth of new funds and fund inflows contributed to rising assets under management for the crypto fund industry as a whole.',
+    'marketAnalytics#6': '',
     'marketAnalytics#7': 'The growth in the number of online traders by regional segregation in 2017 and 2018. The leaders of 2018 were Asia and Europe mostly due to the advent of crypto trading, which has a low entry threshold for new participants.',
     'marketAnalytics#8': '',
     "marketAnalytics#_9": 'The volume of trading on the crypto market has already exceeded the volumes of the end of 2017, when cryptocurrencies were on hype. Despite the almost annual bear market, trading is developing very actively, as indicated by research data.',
