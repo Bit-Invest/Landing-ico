@@ -48,7 +48,7 @@ export const links = {
   // anchor: '2',
   // anchor: '3',
   anchor: '4',
-  mvp: `http://mvp.cindx.io/registration/sign-in?loc=${lng}`,
+  mvp: `http://live.cindx.io/registration/sign-in?loc=${lng}`,
   joinpresale: 'https://my.cindx.io/registration' + `?clickid=${clickid}`,
   wp: docs.wp,
   pr: docs.pr,
