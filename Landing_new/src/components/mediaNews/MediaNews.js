@@ -950,7 +950,7 @@ export class MediaNews extends React.Component {
               <div className="content">
                 <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
                 <div className="clear" />
-                <p>{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
+                <p className="textContent">{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
                 <p className="details">Details</p>
               </div>
             </div>
@@ -990,7 +990,7 @@ export class MediaNews extends React.Component {
             <div className="bg">
               <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
               <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
-              <p>{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
+              <p className="textContent">{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
               <p className="details">Details</p>
             </div>
           </a>

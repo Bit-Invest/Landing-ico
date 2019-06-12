@@ -352,12 +352,13 @@ export class RoadsShow extends React.Component {
               <div className="content">
                 <h3>{(newName.length - 1) === el.data.length ? newName : newName + ' ...'}</h3>
                 <div className="clear" />
-                <p>{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
+                <p className="textContent">{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
                 {
                   (el.report && el.report.link) && (
                     <p className="details">Details</p>
                   ) 
                 }
+                <div className={`statusEvent ${el.status.toUpperCase()}`}>{el.status}</div>
               </div>
             </div>
           </a>

@@ -7,6 +7,7 @@ import ava_1 from '../../images/ava_1.png';
 import playButtonWhite from '../../images/play_button_white.png';
 import linkedin_icon_social from '../../images/linkedin_icon_social.png';
 import medium_icon_social from '../../images/medium_icon_social.png';
+
 // Team icon
 import Yuriy_Avdeev from '../../media/Yuriy_Avdeev.5aa55970.png';
 import Jason_King from '../../media/Jason_King.jpg';
@@ -18,6 +19,8 @@ import Ibraghim_Haniev from '../../media/Ibraghim_Haniev.77b0aa4e.jpg';
 import Airat from '../../media/Airat.jpg';
 import Sofja_Pevzner from '../../media/Sofja_Pevzner.jpg';
 import Jelena_Karzetskaja from '../../media/Jelena_Karzetskaja.png';
+import Sergey_Potehin from '../../images/Sergey_Potehin.png';
+import Georg_Brich from '../../images/Georg_Brich.png';
 
 // Our Parners icon
 import Progressor_logo from '../../media/Progressor_logo.png';
@@ -37,18 +40,16 @@ import Logo_Zeus from '../../media/logo.7508f04a.png';
 import Pentaglobal from '../../media/pentaglobal.png';
 import Aerum from '../../media/AerumLogo.png';
 
-
-
 // Advicer icon
 import Keith_Teare from '../../media/Keith_Teare.1e7599ac.jpg';
 import Austin_Kimm from '../../media/Austin_Kimm.caf37ff2.jpg';
 import Philip_Staehelin from '../../media/Philip_Staehelin.49caf8a6.jpg';
 import Amarpreet_Singh from '../../media/Amarpreet_Singh.afa7b4f8.jpg';
-import Tyler_Sanford from '../../media/Tyler_Sanford.5d35cd71.jpg';
+// import Tyler_Sanford from '../../media/Tyler_Sanford.5d35cd71.jpg';
 import Bogdan_Fiedur from '../../media/Bogdan_Fiedur.e36a757d.jpg';
 import Graham_Doggart from '../../media/Graham_Doggart.fd8f9df5.jpg';
 import Sadie_Hutton from '../../media/Sadie_Hutton.54ab2eaa.jpg';
-import Motti_Peer from '../../media/Motti_Peer.png';
+// import Motti_Peer from '../../media/Motti_Peer.png';
 import Leonard_Grayver from '../../media/Leonard_Grayver.png';
 import William_Zhu from '../../media/William_Zhu.png';
 import Kosol_Saisanit from '../../media/Kosol.png';
@@ -125,6 +126,26 @@ const teamInfo = [
     m: 'https://medium.com/cindx/cindx-team-ibraghim-haniev-17f67defd1ba'
   },
   {
+    img: Sergey_Potehin,
+    name: indexLngObj[lng]['teamAdvisersPartners#59_1'],
+    position: indexLngObj[lng]['teamAdvisersPartners#60_1'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#61_1'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#62_1'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#63_1'],
+    src: '',
+    m: 'https://medium.com/cindx/cindx-team-sergey-potekhin-31451dbb6de3',
+  },
+  {
+    img: Georg_Brich,
+    name: indexLngObj[lng]['teamAdvisersPartners#64_1'],
+    position: indexLngObj[lng]['teamAdvisersPartners#65_1'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#66_1'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#67_1'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#68_1'],
+    src: '',
+    m: 'https://medium.com/cindx/cindx-attends-the-binance-meetup-moscow-event-81f41e8c4814',
+  },
+  {
     img: Airat,
     name: indexLngObj[lng]['teamAdvisersPartners#34'],
     position: indexLngObj[lng]['teamAdvisersPartners#35'],
@@ -154,7 +175,7 @@ const teamInfo = [
     src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
     m: 'https://medium.com/cindx/team-jelena-karzetskaja-94e8c4286924'
   },
- ];
+];
 
 const ourPartners = [
    {

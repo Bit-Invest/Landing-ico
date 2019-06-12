@@ -219,10 +219,7 @@
 
 .block_7 .txtNews .details {
   color: #6c5ed6;
-  padding-top: 30px;
   margin: 0;
-  position: absolute;
-  bottom: 20px;
 }
 
 .block_7 .txtNews h3 {
@@ -236,6 +233,10 @@
   font-size: 16px;
   color: #888e9c;
   font-weight: 300;
+}
+
+.block_7 .txtNews .textContent {
+  min-height: 80px;
 }
 
 .block_7 .txt .bg {
