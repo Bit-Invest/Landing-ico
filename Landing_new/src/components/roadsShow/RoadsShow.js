@@ -358,6 +358,7 @@ export class RoadsShow extends React.Component {
                     <p className="details">Details</p>
                   ) 
                 }
+                <p className="dateInfo">Date: {el.date}</p>
                 <div className={`statusEvent ${el.status.toUpperCase()}`}>{el.status}</div>
               </div>
             </div>
