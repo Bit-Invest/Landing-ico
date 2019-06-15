@@ -138,8 +138,6 @@
 .block_7 .txt .bg .details {
   color: #6c5ed6;
   margin: 0;
-  position: absolute;
-  bottom: 20px;
 }
 
 .block_7 .slick-slide {
@@ -156,16 +154,23 @@
 {
   font-size: 18px;
   font-weight: 500;
-  min-height: 69px;
+  min-height: 75px;
 }
 
-.block_7 .txt p
+.block_7 .txt p.textContent
 {
   color: #888e9c;
   font-size: 16px;
   margin-top: 20px;
   margin-bottom: 40px;
   font-weight: 300;
+  min-height: 80px;
+}
+
+.block_7 .txt .dateInfo
+{
+  color: #888e9c;
+  font-weight: normal;
 }
 
 .block_7 .txt a
@@ -223,7 +228,7 @@
 }
 
 .block_7 .txtNews h3 {
-  min-height: 59px;
+  min-height: 75px;
   font-size: 18px;
   font-weight: 500;
   color: black;
