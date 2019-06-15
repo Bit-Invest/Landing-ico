@@ -94,7 +94,7 @@ export class MainBlock extends React.Component {
           });
 
           setTimeout(()=>{
-            window.location.href = `http://mvp.cindx.io/`;
+            window.location.href = links.mvp;
           }, 1000);
         }
       })

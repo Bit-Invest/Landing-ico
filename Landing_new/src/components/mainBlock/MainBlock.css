@@ -24,10 +24,6 @@
   align-items: center;
 }
 
-.main-block .icons_wrapper .icon_block a.g_soc {
-  animation: pulseOpacity 1s infinite ease-in-out;
-}
-
 @keyframes pulseOpacity {
   from {opacity: .1;}
   to {opacity: 1;}

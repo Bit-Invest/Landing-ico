@@ -122,7 +122,12 @@
   margin-top: 70px;
   margin-bottom: 70px;
   display: flex;
+  flex-direction: column;
   width: 1146px;
+}
+
+.block_9 .container3 {
+  display: flex;
 }
 
 .block_9 .address__text div:first-of-type {
@@ -180,3 +185,68 @@
     margin-top: 0px;
   }
 }
+
+/**/
+
+.mail-block-footer {
+  margin: 0 0 35px 0;
+}
+
+.mail-block-footer .title {
+  font-weight: 300;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.mail-block-footer .mail-block-footer__formStarted {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.mail-block-footer .mail-block-footer__formStarted input {
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 10px 20px;
+  background: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mail-block-footer .mail-block-footer__formStarted .button_send {
+  text-transform: uppercase;
+  border: 2px solid white;
+  padding: 9px 30px;
+  border-radius: 100px;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.mail-block-footer .mail-block-footer__formStarted .button_send:hover {
+  background-color: #fff;
+  color: #6e5fd6;
+}
+
+.mail-block-footer .mail-block-footer__textStatus {
+  margin: 10px 0;
+}
+
+.mail-block-footer .mail-block-footer__textStatus.error {
+  color: #ff4040;
+}
+.mail-block-footer .mail-block-footer__textStatus.loading {
+  color: #666666;
+}
+.mail-block-footer .mail-block-footer__textStatus.success {
+  color: #8bc34a;
+}
+
+
+
+

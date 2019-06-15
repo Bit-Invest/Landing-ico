@@ -18,77 +18,182 @@ import weibo_icon from '../../media/weibo_icon.png';
 import wechat_icon from '../../media/wechat_icon.png';
 import kakaotalk_icon from '../../media/kakaotalk_icon.png';
 
+export class MailBlock extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      email: null,
+      submitStatus: 4, // 0 - пусто; 1 - не подходит почта; 2 - всё ок отправлено; 3 - отправляется
+      submitStatusText: null
+    };
+  }
+
+  onChange = (e) => {
+    let text = e.target.value;
+
+    if(text.length>0){
+      this.setState({
+        submitStatusText: null,
+        submitStatus: 4
+      });
+    }
+
+    this.setState({
+      email: text
+    });
+  }
+
+  sendSubcribe = () => {
+    const { email } = this.state;
+    let error = false;
+    let status_text = null;
+
+    if(!email){
+      error = 0;
+      status_text = indexLngObj[lng]['mailForm#1'];
+    }
+
+    if(error !== false){
+      this.setState({
+        submitStatus: error,
+        submitStatusText: status_text
+      });
+
+      return false;
+    } else {
+      this.setState({
+        submitStatus: 3,
+        submitStatusText: indexLngObj[lng]['mailForm#2']
+      });
+    }
+
+    fetch(`https://cindx.io/subscribe/?email=${email}&loc=en&clickid=default&loc=en&gaid=default`)
+      .then((response) => response.json())
+      .then((responseJson) => {
+        console.log(responseJson)
+        if(responseJson.status == 1 || responseJson.status == 2) {
+          this.setState({
+            submitStatus: 1,
+            submitStatusText: indexLngObj[lng]['mailForm#3']
+          });
+        } else if (responseJson.status == 0) {
+          this.setState({
+            submitStatus: 2,
+            submitStatusText: indexLngObj[lng]['mailForm#4']
+          });
+
+          setTimeout(()=>{
+            window.location.href = links.mvp;
+          }, 1000);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        this.setState({
+          submitStatus: 3,
+          submitStatusText: indexLngObj[lng]['mailForm#5']
+        });
+      });
+  }
+
+  render() {
+    const {
+      submitStatus,
+      submitStatusText
+    } = this.state;
+
+    return(
+      <div className="mail-block-footer">
+        <div className="title">{indexLngObj[lng]['joinTokenPreSale#16']}</div>
+        <div className={`mail-block-footer__formStarted`}>
+          <input type="text" placeholder="EMAIL" onChange={this.onChange} />
+          <div className="button_send" onClick={this.sendSubcribe}>{indexLngObj[lng]['joinTokenPreSale#17']}</div>
+        </div>
+        {
+          submitStatus !== 4 ?
+            <div
+              className={`mail-block-footer__textStatus ${
+                (submitStatus === 0 || submitStatus ===1) ? "error" :
+                  (submitStatus === 3) ? "loading" :
+                    (submitStatus === 2) ? "success" : null
+              }
+              `}>
+                {submitStatusText}
+            </div> : null
+        }
+      </div>
+    );
+  }
+}
+
 export const JoinTokenPreSale = () => (
   <div className="block_9">
     <div className="size">
       {/* <h2 className="header_blocks">{ indexLngObj[lng]['joinTokenPreSale#1'] }</h2> */}
       <div className="container2">
-        {/* <Join
-          text={ indexLngObj[lng]['joinTokenPreSale#2'] }
-          className="sb"
-        /> */}
-        {/* <a target="_blank" href={links.mvp} className="sb_2">
-          { indexLngObj[lng]['joinTokenPreSale#3'] }
-        </a> */}
-        <div className="icons_wrapper">
-          <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#13'] }</div>
-          <div className="icon_block">
-            <a target="_blank" href={links.soc.youtube}>
-              <img className="icon" src={youtube_icon} alt={"CINDEX"}/>
-            </a>
-            <a target="_blank" href={links.soc.instagram}>
-              <img className="icon" src={instagram_icon} alt={"CINDEX"}/>
-            </a>
-            <a target="_blank" href={links.soc.reddit}>
-              <img className="icon" src={reddit_icon} alt={"CINDEX"}/>
-            </a>
-            <a target="_blank" href={links.soc.telegram}>
-              <img className="icon" src={telegram_icon} alt={"CINDEX"}/>
-            </a>
-            <a target="_blank" href={links.soc.twitter}>
-              <img className="icon" src={twitter_icon} alt={"CINDEX"}/>
-            </a>
-            <a target="_blank" href={links.soc.facebook}>
-              <img className="icon" src={facebook_icon} alt={"CINDEX"}/>
-            </a>
-            <a target="_blank" href={links.soc.medium}>
-              <img className="icon" src={medium_icon} alt={"CINDEX"}/>
-            </a>
-            <a target="_blank" href={links.soc.linkedin}>
-              <img className="icon" src={linkedin_icon} alt={"CINDEX"}/>
-            </a>
-          </div>
-        </div>
-        <div className="adress">
-          <div className="adress_left">
-            <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#4'] }</div>
-            <div className="address__text">
-              <div>{ indexLngObj[lng]['joinTokenPreSale#5'] }</div>
-              <div>{ indexLngObj[lng]['joinTokenPreSale#6'] }</div>
+        <MailBlock />
+        <div className="container3">
+          <div className="icons_wrapper">
+            <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#13'] }</div>
+            <div className="icon_block">
+              <a target="_blank" href={links.soc.youtube}>
+                <img className="icon" src={youtube_icon} alt={"CINDEX"}/>
+              </a>
+              <a target="_blank" href={links.soc.instagram}>
+                <img className="icon" src={instagram_icon} alt={"CINDEX"}/>
+              </a>
+              <a target="_blank" href={links.soc.reddit}>
+                <img className="icon" src={reddit_icon} alt={"CINDEX"}/>
+              </a>
+              <a target="_blank" href={links.soc.telegram}>
+                <img className="icon" src={telegram_icon} alt={"CINDEX"}/>
+              </a>
+              <a target="_blank" href={links.soc.twitter}>
+                <img className="icon" src={twitter_icon} alt={"CINDEX"}/>
+              </a>
+              <a target="_blank" href={links.soc.facebook}>
+                <img className="icon" src={facebook_icon} alt={"CINDEX"}/>
+              </a>
+              <a target="_blank" href={links.soc.medium}>
+                <img className="icon" src={medium_icon} alt={"CINDEX"}/>
+              </a>
+              <a target="_blank" href={links.soc.linkedin}>
+                <img className="icon" src={linkedin_icon} alt={"CINDEX"}/>
+              </a>
             </div>
-            <a href="mailto:hello@cindx.io">
+          </div>
+          <div className="adress">
+            <div className="adress_left">
+              <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#4'] }</div>
+              <div className="address__text">
+                <div>{ indexLngObj[lng]['joinTokenPreSale#5'] }</div>
+                <div>{ indexLngObj[lng]['joinTokenPreSale#6'] }</div>
+              </div>
+              <a href="mailto:hello@cindx.io">
+                <p>
+                  { indexLngObj[lng]['joinTokenPreSale#7'] }
+                </p>
+              </a>
+              <a href="http://static.cindx.io/LD_LAST.pdf" target="__blank" className="linkDoc">{indexLngObj[lng]['joinTokenPreSale#14']}</a>
+              <a href="http://static.cindx.io/PP_LAST.pdf" target="__blank" className="linkDoc">{indexLngObj[lng]['joinTokenPreSale#15']}</a>
+              {/* <a target="_blank" href={links.lD}>
+                <p className="lD">
+                  { indexLngObj[lng]['joinTokenPreSale#8'] }
+                </p>
+              </a> */}
+            </div>
+            {/*<div className="adress_right">
+              <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#9'] }</div>
+              <div className="address__text">
+                <div>{ indexLngObj[lng]['joinTokenPreSale#10'] }</div>
+                <div>{ indexLngObj[lng]['joinTokenPreSale#11'] }</div>
+              </div>
               <p>
-                { indexLngObj[lng]['joinTokenPreSale#7'] }
+                { indexLngObj[lng]['joinTokenPreSale#12'] } <a href="mailto:hr@cindx.io">hr@cindx.io</a>
               </p>
-            </a>
-            <a href="http://static.cindx.io/LD_LAST.pdf" target="__blank" className="linkDoc">{indexLngObj[lng]['joinTokenPreSale#14']}</a>
-            <a href="http://static.cindx.io/PP_LAST.pdf" target="__blank" className="linkDoc">{indexLngObj[lng]['joinTokenPreSale#15']}</a>
-            {/* <a target="_blank" href={links.lD}>
-              <p className="lD">
-                { indexLngObj[lng]['joinTokenPreSale#8'] }
-              </p>
-            </a> */}
+            </div>*/}
           </div>
-          {/*<div className="adress_right">
-            <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#9'] }</div>
-            <div className="address__text">
-              <div>{ indexLngObj[lng]['joinTokenPreSale#10'] }</div>
-              <div>{ indexLngObj[lng]['joinTokenPreSale#11'] }</div>
-            </div>
-            <p>
-              { indexLngObj[lng]['joinTokenPreSale#12'] } <a href="mailto:hr@cindx.io">hr@cindx.io</a>
-            </p>
-          </div>*/}
         </div>
       </div>
     </div>
