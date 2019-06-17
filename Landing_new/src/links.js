@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-let linkSearch = [], splitSearch = window.location.search.replace('?','').split('&');
+let linkSearch = {}, splitSearch = window.location.search.replace('?','').split('&');
 for(let i in splitSearch){
   let key_val_split = splitSearch[i].split('=');
   linkSearch[key_val_split[0]] = key_val_split[1];
@@ -19,20 +19,18 @@ export const getGAID = function(){
   }
 };
 
-linkSearch['clickid'] ? window.localStorage.setItem('clickid', linkSearch['clickid']) : ''
-linkSearch['ab_val'] ? window.localStorage.setItem('ab_val', 1) : ''
 let clickid = window.localStorage.getItem('clickid');
-let gaid = getGAID;
 export const ab_val = window.localStorage.getItem('ab_val');
 
-export const list_lngs = 'en zn ko tr fr ja vi pt ar de es'; //языки который мы используем нужно тут указать
-const user_lng = window.localStorage.getItem('loc') || navigator.language || 'en';
+// export const list_lngs = 'en zn ko tr fr ja vi pt ar de es'; //языки который мы используем нужно тут указать
+export const list_lngs = 'en ko';
+const user_lng = linkSearch.loc || window.localStorage.getItem('loc') || navigator.language || 'en';
 const user_loc = user_lng.split('_')[0].split('-')[0];
 const loc = ((list_lngs.indexOf(user_loc) != -1) ? user_loc : 'en');
 
-export const lng = 'en';//loc;
+export const lng = loc;
 
-const list_hasDocs = 'zn en tr ko';
+const list_hasDocs = 'en'; //тут языки на которые есть доки
 const doc_forUser = ((list_hasDocs.indexOf(loc) != -1) ? loc : 'en');
 
 const docs = {
