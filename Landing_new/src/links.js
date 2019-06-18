@@ -23,7 +23,7 @@ let clickid = window.localStorage.getItem('clickid');
 export const ab_val = window.localStorage.getItem('ab_val');
 
 // export const list_lngs = 'en zn ko tr fr ja vi pt ar de es'; //языки который мы используем нужно тут указать
-export const list_lngs = 'en ko';
+export const list_lngs = linkSearch.loc === 'ko' ? 'en ko zn' : 'en zn';
 const user_lng = linkSearch.loc || window.localStorage.getItem('loc') || navigator.language || 'en';
 const user_loc = user_lng.split('_')[0].split('-')[0];
 const loc = ((list_lngs.indexOf(user_loc) != -1) ? user_loc : 'en');

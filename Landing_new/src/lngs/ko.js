@@ -1,6 +1,6 @@
 // Корейский
 const ko = {
-    'mainBlock#1': 'The one-stop solution for crypto asset management.',
+    'mainBlock#1': '원스톱 솔루션을 위한 암호화 자산 관리.',
     'mainBlock#2': '암호화 투자를 쉽고, 안전하고, 빠르게 합니다.',
     'mainBlock#3': '구독하에서 최신 업데이트 Cindx',
 
@@ -32,12 +32,6 @@ const ko = {
     'mailForm#8': '프로젝트 정보 관리 담당은 Sofja Pevzner-Belositski입니다. 연락처: dpo@cindx.io. 정보 제공자는 정보 보호 관련해서 언제든 정보 관리 담당에게 연락주시길 바랍니다.',
     'mailForm#9': '구독양식과 KYC 단계에 의해 제공된 당신의 개인정보는 파트너들에게 제공될 예정입니다: ',
     'mailForm#10': 'ICO promo',
-    'mailForm#11': '개인정보보호 정책',
-    'mailForm#12': 'Sum & Substance',
-    'mailForm#13': '기본적으로 구독자로부터 제공된 개인정보는 CINDX, ICO Promo and Sum & Substance 에 의해 시스템 등록 이후 5년간 보관됩니다',
-    'mailForm#14': '만약 개인정보보호 정책에 동의하지 않으신다면, 사이트를 이용하지 마시길 바랍니다.',
-    'mailForm#15': '우리 사이트를 이용하면서, 당신은 정보의 수집 및 사용에 동의하시는 겁니다. 글로벌 환경과 인터넷 환경때문에, 당신이 제공하는 정보는 이 정책의 규정과 다른 규정을 가진 유럽경제지역 외 지역으로 전달될 수 있습니다.',
-    'mailForm#16': '하지만, 더 나은 개인정보 보호를 위해 이러한 과정을 밟았습니다. 정보를 제공함으로써, 당신은 이러한 전달에 동의하게 됩니다. ',
     'mailForm#17': '개인정보 접근에',
     'mailForm#18': '동의합니다',
     'mailForm#19': '증권형 토큰(Security Token) 세일 시작',
@@ -64,26 +58,35 @@ const ko = {
     'mailForm#40': '',
     'mailForm#41': '',
 
+//   'docPopup#1': 'Receive all documents in your email',
+ //   'docPopup#2': 'Enter your email',
+ //   'docPopup#3': 'SEND ME DOCS',
 
- /*   'docPopup#1': '귀하의 이메일에 있는 모든 문서를 수신',
-    'docPopup#2': '이메일을 입력',
-    'docPopup#3': '나에 게 문서 보내기',
+ //   'progressBarSale#1': 'Bonuses',
+ //   'progressBarSale#2': 'in CINX',
+ //  'progressBarSale#3': 'Pre-Sale',
+ //   'progressBarSale#4': 'Sale',
+ //   'progressBarSale#5': 'Aug 26',
+ //   'progressBarSale#6': 'Sep 17',
+ //   'progressBarSale#7': 'Oct 8',
+ //   'progressBarSale#8': 'Oct 22',
+ //   'progressBarSale#9': 'Nov 6',
+ //   'progressBarSale#10': 'Nov 19',
+ //   'progressBarSale#11': 'Dec 3',
+ //   'progressBarSale#12': 'Dec 17',
+ //   'progressBarSale#13': 'ONE PAGER',
+ //   'progressBarSale#14': 'PRESENTATION',
+ //   'progressBarSale#15': 'WHITEPAPER',
+ //   'progressBarSale#16': 'FINANCIAL MODEL',
+ //   'progressBarSale#17': 'LEGAL DOCS',
+ //   'progressBarSale#18': 'Download Our Public Documents',
+ //   'progressBarSale#19': '',
+ //   'progressBarSale#20': '',
+ //   'progressBarSale#21': '',
+ //   'progressBarSale#22': '',
 
-    'progressBarSale#1': '보너스',
-    'progressBarSale#2': 'CINX ',
-    'progressBarSale#3': '프리세일',
-    'progressBarSale#4': '세일',
-    'progressBarSale#5': '8 월 26 일',
-    'progressBarSale#6': '9 월 17 일 ',
-    'progressBarSale#7': '10 월 8 일',
-    'progressBarSale#8': '10 월 22일',
-    'progressBarSale#9': '11 월 6일',
-    'progressBarSale#10': '11 월 19일',
-    'progressBarSale#11': '12 월 3일',
-    'progressBarSale#12': '12 월 17일',
+ //   'ourTopRatings#1': 'Our Top Ratings',
 
-    'ourTopRatings#1': 'Our Top Ratings',
-*/
     'cryptoAssetsManagement#1.1': 'CINDX는 암호화 자산 관리 허브입니다. 투자자, 트 ,',
     'cryptoAssetsManagement#1.2': '트레이더, 개발자가 가지고 있는 문제를 해결합니다.',
     'cryptoAssetsManagement#2': '투자자를 위한 CINDX.MARKETPLACE ',
@@ -111,14 +114,14 @@ const ko = {
     'cryptoAssetsManagement#24': '',
 
     'teamLegal#1': '우리는 최고의 실력과 팀워크를 가진 팀을 갖고 있습니다',
-//    'teamLegal#2': '법률 및 규정의 체계적.',
+//   'teamLegal#2': '법률 및 규정의 체계적.',
     'teamLegal#3': '암호화폐 거래 라이센스',
     'teamLegal#4': '금융기관 라이센스',
     'teamLegal#5': '암호화폐 지갑 라이센스',
     'teamLegal#6': '백서 ',
     'teamLegal#7': '프레젠테이션',
     'teamLegal#8': '요약 자료 ',
-//    'teamLegal#9': '금융 모델 ',
+//   'teamLegal#9': '금융 모델 ',
     'teamLegal#10':'법률 문서',
 
  /*   'roadmap#1': '로드맵 ',
@@ -145,6 +148,10 @@ const ko = {
     'roadmap#22': '이 단계에서 플랫폼의 큰 업데이트가 있습니다. 사용자들은 암호 화폐와 법정 화폐를 저장하고 교환할 수 있습니다. CINDX.trade는 극도로 유연한 명령 실행 및 리스크 관리 시스템을 포함합니다. CINDX.hub에는 지금까지의 시장 데이터 기반의 시험 시스템과 함께 거래 전략을 위한 본격적인 에디터가 있습니다. CINDX.dao가 토큰 소지인을 위한 투표 시스템을 받습니다 ',
     'roadmap#23': 'CINDX.talk에서 토큰화된 평가 및 제품 "알고리즘 매매"의 새로운 유형 그리고 교환과 다중 교환 주문 사이 자동 재정거래의 기능은 최종 버전에 추가됩니다. 코드 감사를 위한 우수한 플랫폼이 생성되며, CINDX.talk에서 토큰화 된 평가에 기반하여 커뮤니티 전문가 평가가 생성됩니다. ',
 */
+ 'roadmap#24': 'Roadmap',
+    //'roadmap#25': '',
+    //'roadmap#26': '',
+
     'problemSolving#1': '시간 ',
     'problemSolving#2': '신뢰 ',
     'problemSolving#3': '불확실성',
@@ -174,9 +181,9 @@ const ko = {
     'howCindxWorks#12': 'CINDX의 작동 원리',
 
     'marketAnalytics#1': '시장 분석',
-    'marketAnalytics#2': '관리중인 암호화 자산의 성장 (천 달러, USD)',
+    'marketAnalytics#2': '관리중인 암호화 자산의 성장 (수백만, 미화)',
     'marketAnalytics#3': '지역별 온라인 거래자 수 (천명, 명)',
-    'marketAnalytics#4': '암호 통화 시장의 월간 거래량 (백만 달러, 미화)',
+    'marketAnalytics#4': '암호 통화 시장의 월간 거래량 (에 대한 수십억, 미화)',
     'marketAnalytics#5': '2018 년에는 암호화 통화 가격이 전반적으로 하락하는 추세를 보였으 나 펀드 관리를 통해 새로운 유동성이 자산으로 유입되면서 업계는 계속 발전했습니다.',
     'marketAnalytics#6': '',
     'marketAnalytics#7': '2017 년과 2018 년의 지역별 인종 차별에 의한 온라인 상인 수의 증가. 2018 년의 지도자는 아시아와 유럽이었으며 주로 새로운 거래 참가자에 대한 진입 문턱이 낮은 암호 거래의 출현으로 인해 발생했습니다.',
@@ -317,7 +324,6 @@ const ko = {
     'feedbackProject#57': '비디오',
     'feedbackProject#58': '"CINDX 진정으로 이해하기 쉽게 알 수 있습을 암호화 통화 거래를 위한 세계 대중 시장의 투자자입니다. 이 제공하는 기회에 대한 일반 작은 투자자의 이동에 참여 거래에 일치하는 자신의 프로필을 공정하고 투명한 방법입니다."',
 
-
     'mediaNews#1': '미디어',
     'mediaNews#2': '뉴스',
     // Media (Не переводим)
@@ -449,7 +455,6 @@ const ko = {
     'mediaNews#2_93': 'Upcoming',
     'mediaNews#2_94': 'Ended',
  
-
     'socialMedia#1': '자세한 내용은 소셜 미디어에서 다음을 참조하십시오.',
 
     'teamAdvisersPartners#1': '핵심 팀 구성원',
@@ -469,7 +474,7 @@ const ko = {
     'teamAdvisersPartners#14': 'Mofassair Hossain',
     'teamAdvisersPartners#15': '최고 마케팅 경영자',
     'teamAdvisersPartners#16': '15개 이상 ICO의 투자자 및 고문',
-    'teamAdvisersPartners#17': 'ICO 벤치의 최고 고문',
+    'teamAdvisersPartners#17': '',
     'teamAdvisersPartners#18': 'GBAP 멤버',
     'teamAdvisersPartners#19': 'Artur Shamalov',
     'teamAdvisersPartners#20': '투자 이사',
@@ -521,6 +526,7 @@ const ko = {
     'teamAdvisersPartners#66_1': '거래 7 년',
     'teamAdvisersPartners#67_1': '에서 경험하는 금융 기술 건축물 프로젝트 개발',
     'teamAdvisersPartners#68_1': '5 년 자산 운용',
+   
     // advisers
     'teamAdvisersPartners#59': 'Keith Teare',
     'teamAdvisersPartners#60': 'Accelerated Digital Ventures의 창립자 및 집행위원장',
@@ -556,7 +562,7 @@ const ko = {
     'teamAdvisersPartners#90': '경력 및 프로젝트: Microsoft, The World Bank, Airbus, TokenAsia Platform, GOeurika, CINDX ',
     'teamAdvisersPartners#91': 'Tyler Sanford',
     'teamAdvisersPartners#92': 'Yelp와 Zenefits에서 8년간 디지털 마케팅',
-    'teamAdvisersPartners#93': '12개의 ICO를 통해 2억 2천 5백만 모금',
+    'teamAdvisersPartners#93': '',
     'teamAdvisersPartners#94': '블록체인 얼리 어답터',
     'teamAdvisersPartners#95': '운동 선수로 자라면서 경력과 개인 생활에 적용할 수 있는 스킬을 얻었습니다.',
     'teamAdvisersPartners#96': '경력을 추구하면서 경험한 최고점과 최저점을 다루는 법을 배우는 동안 항상 스스로 동기 부여하며, 비즈니스의 모든 측면에서 지식과 재능이 성장하는 것을 기대하고 있습니다',
@@ -584,11 +590,9 @@ const ko = {
     // 'teamAdvisersPartners#119': 'Early adopter of blockchain',
     // 'teamAdvisersPartners#120': 'Growing up as an Athlete has given me a skill set that I\'ve been able to apply to my careers and personal life.',
     // 'teamAdvisersPartners#121': 'I have been very fortunate to see the results of going that extra mile, while learning to deal with the highs and lows that go along with all professional careers.',
-    
     // 'teamAdvisersPartners#122': 'I\'m an extremely self-motivated individual, always looking to continue my growth of knowledge and talents in all aspects of business.',
     // 'teamAdvisersPartners#123': 'Always up for a challenge, my motivation comes from overcoming obstacles to reach my goals',
     // 'teamAdvisersPartners#124': 'Career and projects: IPG Holdings, DataBlockChain, TraXion by Puma Technologies, ELYSIAN, Etherinc, FTEC Foundation,  CINDX',
-
     'teamAdvisersPartners#125': 'Bogdan Fiedur',
     'teamAdvisersPartners#126': '블록체인 및 암호화폐 전문가, 투자자, 기업가',
     'teamAdvisersPartners#127': 'bitJob 공동 창립자 및 Blockchainexperts.io 대표',
@@ -612,7 +616,7 @@ const ko = {
     'teamAdvisersPartners#145': '블록체인 자문 회사인 Dynamic Abundance의 창립자입니다.',
     'teamAdvisersPartners#146': '직접 참여"하는 방식을 선호하며, ICO 분석, 프로젝트 관리, ICO 프로세스의 모든 주요 측면을 전문으로 합니다. 사업 관리 및 성장에 특화되어 있어서 프로젝트를 시작부터 끝까지 볼 수 있습니다. 선천적으로 문제 해결에 능하며 맡은 프로젝트는 개인적으로 받아 들입니다. 이기는 것을 좋아합니다!',
     'teamAdvisersPartners#147': '20년 이상의 경영 경험을 통해 강력한 네트워크를 구축하였습니다. 고급 블록체인 프로젝트에 대해 금융, 기술, 영업, 마케팅 및 품질 보증에 적극적으로 조언합니다. ',
-    'teamAdvisersPartners#148': '경력 및 프로젝트: Dynamic Abundance, ELYSIAN, Worldopoly, Confidential ICO, Fox Trading FX, Profede, Market Digital, CINDX',
+    'teamAdvisersPartners#148': '경력 및 프로젝트: Dynamic Abundance, ELYSIAN, Worldopoly, Fox Trading FX, Profede, Market Digital, CINDX',
     'teamAdvisersPartners#149': 'Jason King',
     'teamAdvisersPartners#150': '20년간 경영진 경력',
     'teamAdvisersPartners#151': '30개 국가에서 비즈니스 운영',

@@ -96,45 +96,45 @@ class Menu extends React.Component {
     )
   } 
 
-  // renderLanguage = (removeLng) => {
-  //   const { language } = this.state;
-  //   if (language) {
-  //     return (
-  //       <div onMouseLeave={this.closeLanguage} className="language">
-  //         {
-  //           (list_lngs.split(' ')).map((e, i) => {
-  //             return (
-  //               <div key={i} value={e} onClick={()=>this.changeLoc(e)}>
-  //                 { e !== removeLng ?
-  //                   <div className="show-language">
-  //                     {this.renderFlag(e)}
-  //                     <a className="itemMini2">{ 
-  //                       ({en:'English',
-  //                         zn:'简体中文',
-  //                         ko:'한국어',
-  //                         tr:'Türkçe',
-  //                         fr:'Français',
-  //                         vi:'Tiếng Việt',
-  //                         pt:'Português',
-  //                         ja:'日本語',
-  //                         ar:'العربية',
-  //                         de:'Deutsch',
-  //                         es:'Español'
-  //                       }[e] || e).toUpperCase() 
-  //                     }</a>
-  //                   </div> : 
-  //                   null 
-  //               }
-  //               </div>
-  //             )
-  //           })
-  //         }
-  //       </div>
-  //     )
-  //   } else {
-  //     return (<div className="publicDocs-hide"></div>)
-  //   }
-  // }
+  renderLanguage = (removeLng) => {
+    const { language } = this.state;
+    if (language) {
+      return (
+        <div onMouseLeave={this.closeLanguage} className="language">
+          {
+            (list_lngs.split(' ')).map((e, i) => {
+              return (
+                <div key={i} value={e} onClick={()=>this.changeLoc(e)}>
+                  { e !== removeLng ?
+                    <div className="show-language">
+                      {this.renderFlag(e)}
+                      <a className="itemMini2">{ 
+                        ({en:'English',
+                          zn:'简体中文',
+                          ko:'한국어',
+                          tr:'Türkçe',
+                          fr:'Français',
+                          vi:'Tiếng Việt',
+                          pt:'Português',
+                          ja:'日本語',
+                          ar:'العربية',
+                          de:'Deutsch',
+                          es:'Español'
+                        }[e] || e).toUpperCase() 
+                      }</a>
+                    </div> : 
+                    null 
+                }
+                </div>
+              )
+            })
+          }
+        </div>
+      )
+    } else {
+      return (<div className="publicDocs-hide"></div>)
+    }
+  }
 
   renderMenu = () => {
     const { isOpened } = this.state;
@@ -152,13 +152,11 @@ class Menu extends React.Component {
           <a className="itemMini" target="_blank" href={links.wp}>White Paper</a>
           <a className="itemMini" target="_blank" href={links.op}>One Pager</a>
           <a className="itemMini" target="_blank" href={links.medium}>Blog</a>
-          {
-            // <div onClick={this.clickLanguage} className="drop-down">
-            //   <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
-            //   <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
-            // </div>
-            // {this.renderLanguage(lng)}
-          }
+          <div onClick={this.clickLanguage} className="drop-down">
+            <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
+            <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
+          </div>
+          {this.renderLanguage(lng)}
         </div>
       )
     } else {
@@ -189,16 +187,16 @@ class Menu extends React.Component {
             <a className="btn" target="_blank" href={links.op}>One Pager</a>
             <a className="btn" target="_blank" href={links.medium}>Blog</a>
             {
-              // <div
-              //   onMouseLeave={this.closeLanguage}
-              //   onMouseMove={this.openLanguage}
-              //   className="drop-down"
-              // >
-              //   <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
-              //   <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
-              //   <div className="publickOnMouseLeave"></div>
-              //   {this.renderLanguage()}
-              // </div>
+              <div
+                onMouseLeave={this.closeLanguage}
+                onMouseMove={this.openLanguage}
+                className="drop-down"
+              >
+                <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
+                <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
+                <div className="publickOnMouseLeave"></div>
+                {this.renderLanguage()}
+              </div>
             }
           </div>
           <div className="menu-768px">
