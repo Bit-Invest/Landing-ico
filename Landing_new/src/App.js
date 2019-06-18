@@ -28,6 +28,8 @@ import { DocPopup } from './components/DocPopup/DocPopup'
 import SocialMedia from './components/socialMedia/SocialMedia'
 import { MvpBlock } from './components/mvpBlock/';
 import UrgentNews from './components/urgentNews/';
+import StartTimer from './components/startTimer/';
+
 import './App.css';
 
 class App extends React.Component {
@@ -39,6 +41,7 @@ class App extends React.Component {
         <DocPopup />
         <div className="contentText">
           <Menu />
+          <StartTimer />
           <MainBlock />
           <ProgressBarSale />
           {/*<OurTopRatings />*/}

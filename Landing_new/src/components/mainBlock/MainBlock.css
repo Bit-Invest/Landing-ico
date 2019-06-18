@@ -1,5 +1,4 @@
 .main-block {
-  padding-top: 40px;
   background: linear-gradient(180deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
   background: none;
 }
@@ -29,7 +28,7 @@
 }
 
 .main-block__content {
-  padding: 80px 40px 0;
+  padding: 50px 40px 0!important;
 }
 
 .main-block .icons_wrapper .icon_block img {
@@ -162,13 +161,11 @@
 
 @media screen and (min-width: 1024px) {
   .main-block {
-    padding-top: 50px;
   }
   .main-block__header {
     width: 454px;
   }
   .main-block__content {
-    padding-top: 50px;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -188,7 +185,6 @@
 
 @media screen and (min-width: 1440px) {
   .main-block {
-    padding-top: 100px;
   }
   .main-block__content {
     width: 1135px;
@@ -200,7 +196,6 @@
 
 @media screen and (max-width: 1439px) {
   .main-block__content {
-    padding-top: 90px;
   } 
 }
 
@@ -216,7 +211,6 @@
     margin: 0 auto;
   }
   .main-block__header {
-    padding-top: 50px;
     margin: 0 auto;
     width: 90%;
     word-wrap: break-word;
