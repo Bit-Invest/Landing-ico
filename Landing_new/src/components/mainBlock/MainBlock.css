@@ -132,6 +132,27 @@
   color: #8bc34a;
 }
 
+.main-block .qr_code {
+  object-fit: contain;
+}
+
+.main-block .qr_code img {
+  display: flex;
+  width: 200px;
+  margin: 10px 0;
+  align-self: center;
+  flex: 0 0 auto;
+}
+
+.main-block .qr_code.desktop {
+  display: flex;
+}
+
+.main-block .qr_code.mobile {
+  display: none;
+  margin-left: 5%;
+} 
+
 @media screen and (min-width: 1024px) {
   .main-block {
     padding-top: 50px;
@@ -235,6 +256,14 @@
   .main-block__form {
     margin-top: 20px;
   }
+
+  .main-block .qr_code.desktop {
+    display: none;
+  }
+
+  .main-block .qr_code.mobile {
+    display: flex;
+  } 
 }
 
 

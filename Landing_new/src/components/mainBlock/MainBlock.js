@@ -23,6 +23,7 @@ import { Join } from '../../links.js';
 import weibo_icon from '../../media/weibo_icon.png';
 import wechat_icon from '../../media/wechat_icon.png';
 import kakaotalk_icon from '../../media/kakaotalk_icon.png';
+import qr_code from '../../images/qr_code.jpg';
 
 import Doc_icon from '@images/Doc_icon2.png';
 
@@ -107,6 +108,12 @@ export class MainBlock extends React.Component {
       });
   }
 
+  renderQrCode = (atopClass) => lng === 'zn' ? (
+    <div className={`qr_code ${atopClass}`}>
+      <img alt="" src={qr_code} />
+    </div>
+  ) : null;
+
   render() {
     const {
       submitStatus,
@@ -152,6 +159,7 @@ export class MainBlock extends React.Component {
                   <img alt="BB_S_Prize" src={BB_S_Prize} />
                 </a>
               </div>
+              {this.renderQrCode('desktop')}
               <div className={`${ROOT_CLASS}__docs`}>
                 <a target="__blank" href="">
                   <div className={`${ROOT_CLASS}__docs__item`}>
@@ -202,6 +210,7 @@ export class MainBlock extends React.Component {
               </div>
             </div>
           </div>
+          {this.renderQrCode('mobile')}
         </div>
         <div className={`${ROOT_CLASS}__socials`}></div>
       </div>
