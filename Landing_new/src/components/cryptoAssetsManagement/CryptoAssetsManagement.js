@@ -259,7 +259,7 @@ class CryptoAssetsManagement extends React.Component {
                 </p>)
               }
             </div>
-            <div className={`video_block ${this.state.currentCrypto === 2 ? 'video_block_last' : ''}`}>
+            <div className={`video_block`}>
               <a target="_blank" href={links.mvp} className="btn">{ indexLngObj[lng]['cryptoAssetsManagement#6'] }</a>
             </div>
           </div>
