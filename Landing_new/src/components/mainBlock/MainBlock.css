@@ -28,6 +28,10 @@
   to {opacity: 1;}
 }
 
+.main-block__content {
+  padding: 80px 40px 0;
+}
+
 .main-block .icons_wrapper .icon_block img {
   width: 30px;
   height: 30px;
@@ -152,6 +156,10 @@
   margin-left: 5%;
 } 
 
+.main-block__content {
+  max-width: 1224px!important;
+}
+
 @media screen and (min-width: 1024px) {
   .main-block {
     padding-top: 50px;
@@ -208,7 +216,7 @@
     margin: 0 auto;
   }
   .main-block__header {
-    padding-top: 10px;
+    padding-top: 50px;
     margin: 0 auto;
     width: 90%;
     word-wrap: break-word;

@@ -122,7 +122,7 @@ export class MainBlock extends React.Component {
 
     return(
       <div className={ROOT_CLASS} id="top">
-        <div className={`${ROOT_CLASS}__content`}>
+        <div className={`size ${ROOT_CLASS}__content`}>
           <div className={`${ROOT_CLASS}__container-1`}>
             <div className={`${ROOT_CLASS}__header`}>
               {indexLngObj[lng]['mailForm#30']}

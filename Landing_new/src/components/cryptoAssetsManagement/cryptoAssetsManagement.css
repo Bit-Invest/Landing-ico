@@ -4,6 +4,9 @@
   color: white;
   background: none;
 }
+.cryptoAssetsManagement .header_blocks {
+  padding-top: 40px!important;
+}
 .cryptoAssetsManagement .row {
   display: flex;
   margin-bottom: 50px;

@@ -40,7 +40,7 @@ class UrgentNest extends React.Component {
   render() {
     return(
       <div className="urgentNews">
-        <div className="container">
+        <div className="size container">
           <div className="listUrgents">{this.renderNews()}</div>
           <a className="clickToAllUrgents" href={links.medium} target="_blank">View all posts</a>
         </div>
