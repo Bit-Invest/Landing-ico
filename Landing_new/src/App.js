@@ -27,6 +27,7 @@ import { DocPopup } from './components/DocPopup/DocPopup'
 // import MediaAboutUs from './components/mediaAboutUs/MediaAboutUs'
 import SocialMedia from './components/socialMedia/SocialMedia'
 import { MvpBlock } from './components/mvpBlock/';
+import UrgentNews from './components/urgentNews/';
 import './App.css';
 
 class App extends React.Component {
@@ -60,6 +61,7 @@ class App extends React.Component {
           {/* <LegalSchedule /> */}
           {/* <FeedbackProject /> */}
           <TeamAdvisersPartners />
+          <UrgentNews />
           <JoinTokenPreSale />
           <SocIcons />
         </div>

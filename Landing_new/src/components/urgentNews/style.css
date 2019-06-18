@@ -1,0 +1,63 @@
+.urgentNews {
+  background: #F1F1F1;
+  display: flex;
+  justify-content: center;
+}
+
+.urgentNews .container {
+  width: 90%;
+  max-width: 1440px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.urgentNews .listUrgents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.urgentNews .listUrgents .itemUrgent {
+  margin: 10px;
+  border-bottom: 2px solid #E3E3E3;
+  padding-bottom: 20px;
+}
+
+.urgentNews .listUrgents .itemUrgent .childItem {
+  margin: 5px 0;
+}
+
+.urgentNews .listUrgents .itemUrgent .titleOne {
+  font-weight: bold;
+  color: #020202;
+  font-size: 18px;
+}
+
+.urgentNews .listUrgents .itemUrgent .readingTime {
+  font-weight: bold;
+  color: #8F5FE3;
+}
+
+.urgentNews .listUrgents .itemUrgent .mainThought {
+
+}
+
+.urgentNews .listUrgents .itemUrgent .readMore {
+  color: #020202;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.urgentNews .container .clickToAllUrgents {
+  background: #020202;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  display: flex;
+  align-self: start; 
+  cursor: pointer;
+}
+
+
