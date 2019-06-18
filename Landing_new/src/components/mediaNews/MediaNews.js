@@ -909,13 +909,37 @@ Read our Review about Singapore’s blockchain industry and hurry up to join the
   }
 ]; 
 
-media = media.sort((curObjShow1, curObjShow2) => {
-  return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
-})
+const getBeautifulDate = (date) => {
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  const $date = new Date(date);
+  const monthIndex = $date.getMonth();
+  const monthStr = monthNames[monthIndex];
+  const day = $date.getUTCDate();
+  const year = $date.getUTCFullYear();
+  const yearStr = (`${year}`).substr(2, 2);
 
-news = news.sort((curObjShow1, curObjShow2) => {
-  return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
-})
+  return `${monthStr} ${day}, ${yearStr}`;
+};
+
+media = media
+  .sort((curObjShow1, curObjShow2) => {
+    return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
+  })
+  .map((curMedia) => ({
+    ...curMedia,
+    date: getBeautifulDate(curMedia.date),
+  }))
+
+news = news
+  .sort((curObjShow1, curObjShow2) => {
+    return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
+  })
+  .map((curNews) => ({
+    ...curNews,
+    date: getBeautifulDate(curNews.date),
+  }))
 
 export class MediaNews extends React.Component {
   state = {
@@ -989,7 +1013,9 @@ export class MediaNews extends React.Component {
         <div key={i} className="txt">
           <a href={el.src} target="_blank">
             <div className="bg">
-              <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
+              <div className="bg_img">
+                <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
+              </div>
               <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
               <p className="textContent">{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
               <p className="dateInfo">Date: {el.date}</p>

@@ -10,89 +10,80 @@
   margin-left: 75px;
 }
 
+.block_7 .bg > img {
+  /*height: 30px!important;
+  width: auto;*/
+}
+
+.block_7 .bg > .bg_img {
+  min-height: 100px;
+}
+
 .block_7 .investing {
   width: 61%;
-  margin-bottom: 30px;
 }
 
 .block_7 .thestreet {
-  margin-bottom: 20px;
   width: 60%;
 }
 
 .block_7 .bitcoinexchangeguide {
-  margin-bottom: 15px;
   width: 60%;
 }
 
 .block_7 .cryptoreporter {
-  margin-bottom: 30px;
   width: 30%;
 }
 
 .block_7 .coinannouncer {
-  margin-bottom: 22px;
   width: 45%;
 }
 
 .block_7 .cryptoninjas {
-  margin-bottom: -18px;
-  margin-top: -16px;
   width: 54%;
 }
 
 .block_7 .medium {
   width: 57%;
-  margin-bottom: 30px;
 }
 
 .block_7 .forbes {
   width: 46%;
-  margin-bottom: 30px;
 }
 
 .block_7 .ambcrypto {
-  margin-bottom: 30px;
   width: 75%;
 }
 
 .block_7 .bitcoinist {
-  margin-bottom: 30px;
   width: 75%;
 }
 
 .block_7 .tokendesk {
-  margin-bottom: 30px;
   width: 65%;
 }
 
 .block_7 .btcmanager {
-  margin-bottom: 20px;
   width: 75%;
 }
 
 .block_7 .blockonomi {
-  margin-bottom: 30px;
   width: 84%;
 }
 
 .block_7 .bitcoingarden {
-  margin-bottom: 20px;
   width: 57%;
 }
 
 .block_7 .digitaljournal {
-  margin-bottom: 30px;
   width: 85%;
 }
 
 .block_7 .cnn {
-  margin-bottom: 21px;
   width: 41%;
 }
 
 .block_7 .coinfox {
-  margin-bottom: 0px;
   width: 55%;
 }
 
@@ -225,6 +216,14 @@
 .block_7 .txtNews .details {
   color: #6c5ed6;
   margin: 0;
+}
+
+.block_7 .txtNews .noClickDetails {
+  color: transparent;
+  pointer-events: none;
+  margin: 0;
+  opacity: 0;
+  cursor: none;
 }
 
 .block_7 .txtNews h3 {

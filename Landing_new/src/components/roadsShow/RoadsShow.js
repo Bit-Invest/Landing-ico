@@ -309,9 +309,28 @@ let dataRoadShow = [{
 }, 
 ];
 
-dataRoadShow = dataRoadShow.sort((curObjShow1, curObjShow2) => {
-  return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
-})
+const getBeautifulDate = (date) => {
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  const $date = new Date(date);
+  const monthIndex = $date.getMonth();
+  const monthStr = monthNames[monthIndex];
+  const day = $date.getUTCDate();
+  const year = $date.getUTCFullYear();
+  const yearStr = (`${year}`).substr(2, 2);
+
+  return `${monthStr} ${day}, ${yearStr}`;
+};
+
+dataRoadShow = dataRoadShow
+  .sort((curObjShow1, curObjShow2) => {
+    return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
+  })
+  .map((curRoadshow) => ({
+    ...curRoadshow,
+    date: getBeautifulDate(curRoadshow.date),
+  }))
 
 export class RoadsShow extends React.Component {
   state = {
@@ -354,9 +373,11 @@ export class RoadsShow extends React.Component {
                 <div className="clear" />
                 <p className="textContent">{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
                 {
-                  (el.report && el.report.link) && (
+                  (el.report && el.report.link) ? (
                     <p className="details">Details</p>
-                  ) 
+                  ) : (
+                    <p className="noClickDetails">Details</p>
+                  )
                 }
                 <p className="dateInfo">Date: {el.date}</p>
                 <div className={`statusEvent ${el.status.toUpperCase()}`}>{el.status}</div>
