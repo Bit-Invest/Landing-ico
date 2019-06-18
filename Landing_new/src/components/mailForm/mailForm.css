@@ -150,6 +150,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 500px;
+  height: 250px;
 }
 .mail-form__play {
   width: 40px;

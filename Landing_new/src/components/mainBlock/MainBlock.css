@@ -1,6 +1,5 @@
 .main-block {
-  padding-top: 40.4px;
-  padding-bottom: 64.1px;
+  padding-top: 40px;
   background: linear-gradient(180deg, rgba(76, 32, 115, 1) 0%, rgba(8, 159, 195, 1) 100%);
   background: none;
 }
@@ -156,7 +155,6 @@
 @media screen and (min-width: 1024px) {
   .main-block {
     padding-top: 50px;
-    padding-bottom: 100px;
   }
   .main-block__header {
     width: 454px;
@@ -183,7 +181,6 @@
 @media screen and (min-width: 1440px) {
   .main-block {
     padding-top: 100px;
-    padding-bottom: 80px;
   }
   .main-block__content {
     width: 1135px;
@@ -239,6 +236,7 @@
   .mail-form__video {
     width: 80%;
     margin: 0 auto;
+    height: 180px;
   }
   .mail-form__content {
     width: 90%;
