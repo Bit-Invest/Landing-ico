@@ -141,7 +141,6 @@
 
 @media screen and (max-width: 1439px) {
   .block_9 .container2 {
-    flex-direction: column-reverse;
     width: 80%;
   }
 
@@ -164,6 +163,22 @@
   .block_9 .container2 {
     margin-top: 40px;
     width: 85%;
+  }
+
+  .mail-block-footer .mail-block-footer__formStarted {
+    flex-direction: column;
+  }
+
+  .block_9 .container3 {
+    flex-direction: column;
+  }
+
+  .block_9 .icon_block {
+    margin-bottom: 20px!important;
+  }
+
+  .mail-block-footer .mail-block-footer__formStarted .button_send {
+    margin-top: 10px;
   }
 
   .block_9 .adress {
