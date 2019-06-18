@@ -143,7 +143,6 @@ class Menu extends React.Component {
         <div className="showMenu">
           <a onClick={this.openMenu} href="#product" className="itemMini">{ indexLngObj[lng]['menu#7'] }</a>
           <a onClick={this.openMenu} href="#team" className="itemMini">{ indexLngObj[lng]['menu#9'] }</a>
-          <a onClick={this.openMenu} href="#top" className="itemMini">{ indexLngObj[lng]['menu#12'] }</a>
           <div onClick={this.clickPublicDocs} className="drop-down">
             <a>{ indexLngObj[lng]['menu#10'] }</a>
             <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
@@ -175,7 +174,6 @@ class Menu extends React.Component {
           <div className="menu-item">
             <a href="#product" className="item">{ indexLngObj[lng]['menu#7'] }</a>
             <a href="#team" className="item">{ indexLngObj[lng]['menu#9'] }</a>
-            <a href="#top" className="item">{ indexLngObj[lng]['menu#12'] }</a>
             <div
               onMouseLeave={this.closePublicDocs}
               onMouseMove={this.openPublicDocs}
