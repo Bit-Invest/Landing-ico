@@ -477,7 +477,7 @@ export class RoadsShow extends React.Component {
     return (
       <div className="block_7">
         <div className="size">
-          <h2 className="header_blocks">Roadshow</h2>
+          <h2 className="header_blocks">{indexLngObj[lng]['mediaNews#2_95']}</h2>
           <div className="block_arrow_relative">
             <div className="settings">
               <Slider {...settings}>

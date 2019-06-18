@@ -453,6 +453,7 @@ const zn = {
     'mediaNews#2_92': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don"t miss',
     'mediaNews#2_93': 'Upcoming',
     'mediaNews#2_94': 'Ended',
+    'mediaNews#2_95': '路演',
 
     'socialMedia#1': '欲了解更多信息，请在社交媒体上关注我们:',
 

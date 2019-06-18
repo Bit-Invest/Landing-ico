@@ -454,6 +454,7 @@ const ko = {
     'mediaNews#2_92': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don"t miss',
     'mediaNews#2_93': 'Upcoming',
     'mediaNews#2_94': 'Ended',
+    'mediaNews#2_95': '로드쇼',
  
     'socialMedia#1': '자세한 내용은 소셜 미디어에서 다음을 참조하십시오.',
 
