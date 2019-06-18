@@ -146,22 +146,22 @@ export class MainBlock extends React.Component {
               }
               <div className={`${ROOT_CLASS}__prizes`}>
                 <a target="_blank" href="https://medium.com/cindx/1st-place-in-the-pitch-competition-at-asean-digital-342dfb0ee61">
-                  <img src={Asean_Prize} />
+                  <img alt="Asean_Prize" src={Asean_Prize} />
                 </a>
                 <a target="_blank" href="https://medium.com/cindx/borderless-blockchain-technology-summit-924a40a1f43e">
-                  <img src={BB_S_Prize} />
+                  <img alt="BB_S_Prize" src={BB_S_Prize} />
                 </a>
               </div>
               <div className={`${ROOT_CLASS}__docs`}>
                 <a target="__blank" href="">
                   <div className={`${ROOT_CLASS}__docs__item`}>
-                    <img src={Doc_icon} />
+                    <img alt="" src={Doc_icon} />
                     <div className="text_docs_item">{indexLngObj[lng]['mailForm#34']}</div>
                   </div>
                 </a>
                 <a target="__blank" href="">
                   <div className={`${ROOT_CLASS}__docs__item`}>
-                    <img src={Doc_icon} />
+                    <img alt="" src={Doc_icon} />
                     <div className="text_docs_item">{indexLngObj[lng]['mailForm#35']}</div>
                   </div>            
                 </a>
@@ -174,28 +174,28 @@ export class MainBlock extends React.Component {
               <div className="icons_wrapper">
                 <div className="icon_block">
                   <a target="_blank" href={links.soc.youtube}>
-                    <img className="icon" src={youtube_icon} alt={"CINDEX"}/>
+                    <img alt="youtube link" className="icon" src={youtube_icon} />
                   </a>
                   <a target="_blank" href={links.soc.instagram}>
-                    <img className="icon" src={instagram_icon} alt={"CINDEX"}/>
+                    <img alt="instagram link" className="icon" src={instagram_icon} />
                   </a>
                   <a target="_blank" href={links.soc.reddit}>
-                    <img className="icon" src={reddit_icon} alt={"CINDEX"}/>
+                    <img alt="reddit link" className="icon" src={reddit_icon} />
                   </a>
                   <a target="_blank" href={links.soc.twitter}>
-                    <img className="icon" src={twitter_icon} alt={"CINDEX"}/>
+                    <img alt="twitter link" className="icon" src={twitter_icon} />
                   </a>
                   <a target="_blank" href={links.soc.facebook}>
-                    <img className="icon" src={facebook_icon} alt={"CINDEX"}/>
+                    <img alt="facebook link" className="icon" src={facebook_icon} />
                   </a>
                   <a target="_blank" href={links.soc.medium}>
-                    <img className="icon" src={medium_icon} alt={"CINDEX"}/>
+                    <img alt="medium link" className="icon" src={medium_icon} />
                   </a>
                   <a target="_blank" href={links.soc.linkedin}>
-                    <img className="icon" src={linkedin_icon} alt={"CINDEX"}/>
+                    <img alt="linkedin link" className="icon" src={linkedin_icon} />
                   </a>
                   <a target="_blank" href={links.soc.telegram} className="g_soc">
-                    <img className="icon" src={telegram_icon} alt={"CINDEX"}/>
+                    <img alt="telegram link" className="icon" src={telegram_icon} />
                     <span>7k +</span>
                   </a>
                 </div>
@@ -207,5 +207,5 @@ export class MainBlock extends React.Component {
       </div>
     );
   }
-}
+};
 

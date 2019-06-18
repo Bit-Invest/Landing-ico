@@ -15,11 +15,10 @@
 .urgentNews .listUrgents {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .urgentNews .listUrgents .itemUrgent {
-  margin: 10px;
+  margin: 20px;
   border-bottom: 2px solid #E3E3E3;
   padding-bottom: 20px;
 }
@@ -53,7 +52,7 @@
   background: #020202;
   color: white;
   padding: 10px 20px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 20px;
   display: flex;
   align-self: start; 
