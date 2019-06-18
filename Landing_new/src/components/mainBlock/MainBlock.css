@@ -203,9 +203,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .main-block .icons_wrapper {
-    display: none;
-  }
   .main-block__content {
     max-width: 500px;
     margin: 0 auto;
