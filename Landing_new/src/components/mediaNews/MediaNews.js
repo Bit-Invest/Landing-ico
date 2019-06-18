@@ -105,6 +105,11 @@ import IMG_1088 from '../../media/IMG_1088.PNG';
 import IMG_1089 from '../../media/IMG_1089.PNG';
 import IMG_1090 from '../../media/IMG_1090.PNG';
 
+import IMG_1205 from '../../media/IMG_1205.png';
+import IMG_1206 from '../../media/IMG_1206.png';
+import IMG_1207 from '../../media/IMG_1207.png';
+import IMG_1208 from '../../media/IMG_1208.png';
+
 import './MediaNews.css';
 
 let media = [
@@ -906,7 +911,43 @@ Read our Review about Singapore’s blockchain industry and hurry up to join the
     text: "The CINDX project is delighted to announce that it is launching closed product testing of its platform’s two main components consisting of the unique Rating System and Manager Dashboard.",
     source: "www.medium.com",
     centered: true
-  }
+  },
+  {
+    urlLink: "https://medium.com/cindx/cindx-is-launching-a-meme-contest-with-a-prize-fund-of-5-000-88daf7c496ec",
+    screen: IMG_1205,
+    date: '06.10.2019',
+    name: "CINDX Is Launching A Meme Contest With a Prize Fund of $5,000",
+    text: 'A call to all memelords and memers out there! The CINDX project is not all trading, but fun as well! That is why up until the end of June 2019, we are launching a contest for all those who think they have the creative skills to claim the grand prize from the $5,000 prize fund!’ ',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    urlLink: 'https://medium.com/cindx/the-cindx-trade-block-of-the-cindx-trading-system-6c4eb134f0d8',
+    screen: IMG_1206,
+    date: '06.10.2019',
+    name: 'The CINDX.TRADE Block of The CINDX Trading System',
+    text: 'The CINDX project is a revolutionary system designed to help anyone willing to enter the crypto market make profit by relying on the best strategies applied by the most experienced traders in the world.',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    urlLink: 'https://medium.com/cindx/the-initial-circulating-supply-of-cinxo-tokens-386ae92b57cd',
+    screen: IMG_1207,
+    date: '06.17.2019',
+    name: 'The Initial Circulating Supply of CINXO Tokens' ,
+    text: 'All the tokens of the team members, advisors, partners, and private investors are locked until the release of the CINX security tokens, which will be approved by Q3-Q4 of 2020.',
+    source: 'www.medium.com',
+    centered: true
+  },
+  {
+    urlLink: 'https://medium.com/cindx/cindx-token-benefits-for-token-holders-d3228205117c',
+    screen: IMG_1208,
+    date: '06.18.2019',
+    name: 'CINDX Token Benefits For Token Holders' ,
+    text: 'The CINDX project is a revolutionary trading platform designed for a broad range of crypto market participants seeking to make profit on the market by offering their expertise and knowledge for monetization. As part of the development process, the CINXO project team has released the CINXO ERC-20 standard tokens on the Ethereum network. The CINXO Tokens are designed as value carriers and will grant their holders a number of significant advantages.',
+    source: 'www.medium.com',
+    centered: true
+  },
 ]; 
 
 const getBeautifulDate = (date) => {
