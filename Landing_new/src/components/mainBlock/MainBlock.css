@@ -166,7 +166,7 @@
     width: 454px;
   }
   .main-block__content {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -212,13 +212,13 @@
   }
   .main-block__header {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     word-wrap: break-word;
   }
   .main-block__cont {
     padding-top: 10px;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     word-wrap: break-word;
   }
   .main-block__formStarted .button_send {
