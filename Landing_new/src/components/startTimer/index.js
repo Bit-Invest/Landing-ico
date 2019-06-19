@@ -75,7 +75,7 @@ export default class StartTimer extends React.Component {
                 <img alt="" className="logoIcon" src={BitForexIcon} /> 
                 <span>{indexLngObj[lng]['headerTimer#6']}</span>
               </span> 
-              <span>&#8194; starts in</span>              
+              <span>&#8194;starts in</span>              
             </div>
             <div className="timerText">{this.state.restTime}</div>
           </div>
