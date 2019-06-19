@@ -120,21 +120,8 @@ export class MainBlock extends React.Component {
             </div>
             <div className={`${ROOT_CLASS}__cont`}>
               <div className={`${ROOT_CLASS}__formStarted`}>
-                <input type="text" placeholder="EMAIL" onChange={this.onChange} />
-                <div className="button_send" onClick={this.sendSubcribe}>{indexLngObj[lng]['mailForm#33']}</div>
+                <a className="button_send" href={links.mvp} target="_blank">{indexLngObj[lng]['mailForm#33']}</a>
               </div>
-              {
-                submitStatus !== 4 ?
-                  <div
-                    className={`${ROOT_CLASS}__textStatus ${
-                      (submitStatus === 0 || submitStatus ===1) ? "error" :
-                        (submitStatus === 3) ? "loading" :
-                          (submitStatus === 2) ? "success" : null
-                    }
-                    `}>
-                      {submitStatusText}
-                  </div> : null
-              }
               <div className={`${ROOT_CLASS}__prizes`}>
                 <a target="_blank" href="https://medium.com/cindx/1st-place-in-the-pitch-competition-at-asean-digital-342dfb0ee61">
                   <img alt="Asean_Prize" src={Asean_Prize} />
