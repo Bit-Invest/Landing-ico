@@ -1,4 +1,6 @@
 import React from 'react';
+import { lng } from '../../links';
+import indexLngObj from '../../lngs/index';
 
 import BitForexIcon from '../../media/BitForex.png';
 
@@ -58,7 +60,7 @@ export default class StartTimer extends React.Component {
     }
 
     this.setState({
-      restTime: `${restDays}D:${restHours}H:${restMinutes}M:${restSeconds}S`,
+      restTime: `${restDays}${indexLngObj[lng]['headerTimer#2']}:${restHours}${indexLngObj[lng]['headerTimer#3']}:${restMinutes}${indexLngObj[lng]['headerTimer#4']}:${restSeconds}${indexLngObj[lng]['headerTimer#5']}`,
     });
   }
 
@@ -68,10 +70,10 @@ export default class StartTimer extends React.Component {
         <div className="size content">
           <div className="titleText">
             <div className="firstText">
-              <span>1h only CINDX Pre-IEO on</span> 
+              <span>{indexLngObj[lng]['headerTimer#1']}</span> 
               <span>
                 <img alt="" className="logoIcon" src={BitForexIcon} /> 
-                <span>Bitforex</span>
+                <span>{indexLngObj[lng]['headerTimer#6']}</span>
               </span> 
               <span>&#8194; starts in</span>              
             </div>

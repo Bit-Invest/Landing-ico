@@ -4,6 +4,13 @@ const en = {
     'mainBlock#2': 'Making Crypto Investments Easy, Secure and Fast.',
     'mainBlock#3': 'Subscribe to the latest updates from Cindx',
 
+    'headerTimer#1': '1h only CINDX Pre-IEO on',
+    'headerTimer#2': 'D',
+    'headerTimer#3': 'H',
+    'headerTimer#4': 'M',
+    'headerTimer#5': 'S',
+    'headerTimer#6': 'Bitforex',
+
 //    'icoInfo#1': 'We accept:',
 //    'icoInfo#2': 'Soft Cap Closed',
 //    'icoInfo#3': 'Hard Cap Milestone: ',

@@ -4,6 +4,13 @@ const ko = {
     'mainBlock#2': '암호화 투자를 쉽고, 안전하고, 빠르게 합니다.',
     'mainBlock#3': '구독하에서 최신 업데이트 Cindx',
 
+    'headerTimer#1': '1h only CINDX Pre-IEO on',
+    'headerTimer#2': 'D',
+    'headerTimer#3': 'H',
+    'headerTimer#4': 'M',
+    'headerTimer#5': 'S',
+    'headerTimer#6': 'Bitforex',
+
 //    'icoInfo#1': '동의합니다:',
 //    'icoInfo#2': '하드캡:',
 //    'icoInfo#3': '소프트캡 중요 지표:',

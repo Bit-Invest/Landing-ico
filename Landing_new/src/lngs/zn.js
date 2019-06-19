@@ -4,6 +4,13 @@ const zn = {
     'mainBlock#2': '让加密货币投资变得安全便捷',
     'mainBlock#3': '订阅 Cindx 的最新消息', // CINDX IS LIVE NOW!
 
+    'headerTimer#1': '1h only CINDX Pre-IEO on',
+    'headerTimer#2': 'D',
+    'headerTimer#3': 'H',
+    'headerTimer#4': 'M',
+    'headerTimer#5': 'S',
+    'headerTimer#6': 'Bitforex',
+
 //    'icoInfo#1': '我们接受：',
 //    'icoInfo#2': '硬上限：',
 //    'icoInfo#3': '软上限里程碑：',
