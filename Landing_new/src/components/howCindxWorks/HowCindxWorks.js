@@ -5,8 +5,8 @@ import block_2_img_2 from '../../images/block_2_img_2.png';
 import block_2_img_3 from '../../images/block_2_img_3.png';
 import block_2_img_4 from '../../images/block_2_img_4.png';
 import './howCindxWorks.css';
-import { lng } from '../../links.js'
-import indexLngObj from '../../lngs/index'
+import { lng } from '../../links.js';
+import indexLngObj from '../../lngs/index';
 
 const HowCindxWorksInfo = {
   name: [

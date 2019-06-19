@@ -1,13 +1,15 @@
 import * as React from 'react';
-import './ProgressBarSale.css';
-import { lng, links, ab_val } from '../../links'
-import indexLngObj from '../../lngs/index'
-import block_3_ico_1 from '../../images/block_3_ico_1.png';
-import block_3_ico_2 from '../../images/block_3_ico_2.png';
-import block_3_ico_3 from '../../images/block_3_ico_3.png';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { showDocPopup } from '../../store/store';
+import { lng, ab_val } from '../../links';
+import indexLngObj from '../../lngs/index';
+
+import block_3_ico_1 from '../../images/block_3_ico_1.png';
+import block_3_ico_2 from '../../images/block_3_ico_2.png';
+import block_3_ico_3 from '../../images/block_3_ico_3.png';
+
+import './ProgressBarSale.css';
 
 const ProgressBarSale = props => {
   const sendDoc = docValue => {

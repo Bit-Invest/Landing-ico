@@ -1,19 +1,18 @@
 import * as React from 'react';
-import { Input } from '@components/input';
-import { Button } from '@components/button';
 import { Timer } from '@components/timer';
 import { showPopUp, changeUrlPopupVideo } from '../../store/store';
 import { bindActionCreators } from 'redux';
-import play_button_youtube from '../../media/play_button_youtube.png';
 import { connect } from 'react-redux';
-import { links, lng, getGAID, ab_val } from '../../links.js';
-import indexLngObj from '../../lngs/index'
-import './mailForm.css';
+
+import { lng } from '../../links.js';
+import indexLngObj from '../../lngs/index';
 
 import first_block_2_row_1 from '@images/first_block_2_row_1.png';
 import first_block_2_row_2 from '@images/first_block_2_row_2.png';
 import first_block_2_row_3 from '@images/first_block_2_row_3.png';
+import play_button_youtube from '../../media/play_button_youtube.png';
 
+import './mailForm.css';
 
 const ROOT_CLASS = 'mail-form';
 
@@ -31,74 +30,6 @@ class MailForm extends React.Component {
   showVideoInPopUp = (url) => {
     this.props.changeUrlPopupVideo(url)
     this.props.showPopUp()
-  }
-
-  onChange = (e) => {
-    let text = e.target.value;
-
-    if(text.length>0){
-      this.setState({
-        submitStatusText: null,
-        submitStatus: 4
-      });
-    }
-
-    this.setState({
-      email: text
-    });
-  }
-
-  sendSubcribe = () => {
-    const { email } = this.state;
-    let error = false;
-    let status_text = null;
-
-    if(!email){
-      error = 0;
-      status_text = indexLngObj[lng]['mailForm#1'];
-    }
-
-    if(error !== false){
-      this.setState({
-        submitStatus: error,
-        submitStatusText: status_text
-      });
-
-      return false;
-    } else {
-      this.setState({
-        submitStatus: 3,
-        submitStatusText: indexLngObj[lng]['mailForm#2']
-      });
-    }
-
-    fetch(`https://cindx.io/subscribe/?email=${email}&loc=${lng}&clickid=${links.clickid}&loc=en&gaid=${links.gaid()}`)
-      .then((response) => response.json())
-      .then((responseJson) => {
-        console.log(responseJson)
-        if(responseJson.status == 1 || responseJson.status == 2) {
-          this.setState({
-            submitStatus: 1,
-            submitStatusText: indexLngObj[lng]['mailForm#3']
-          });
-        } else if (responseJson.status == 0) {
-          this.setState({
-            submitStatus: 2,
-            submitStatusText: indexLngObj[lng]['mailForm#4']
-          });
-
-          setTimeout(()=>{
-            window.location.href = `${links.joinpresale}&gaid=${getGAID()}&mail=${email}&lang=${lng}`;
-          }, 1000);
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-        this.setState({
-          submitStatus: 3,
-          submitStatusText: indexLngObj[lng]['mailForm#5']
-        });
-      });
   }
 
   render() {

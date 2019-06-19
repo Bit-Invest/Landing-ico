@@ -1,5 +1,10 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { showDocPopup } from '../../../store/store';
+import { lng, links } from '../../../links';
+import indexLngObj from '../../../lngs/index';
+
 import currency_icons from '../../../images/currency_icons.png'
 import btcbit_logo_head from '../../../images/btcbit_logo_head.png'
 import block_3_ico_1 from '../../../images/block_3_ico_1.png';
@@ -7,11 +12,8 @@ import BancorLogo from '../../../media/bancor_logo.png';
 import HBLogo from '../../../media/hb_logo.png';
 import Hotbit from '../../../media/hotbit_logo.757f4b29.png';
 import Localcoin from '../../../media/localcoin_logo.png';
+
 import './icoInfo.css';
-import { bindActionCreators } from 'redux';
-import { showDocPopup } from '../../../store/store';
-import { lng, links, ab_val } from '../../../links'
-import indexLngObj from '../../../lngs/index'
 
 const ROOT_CLASS = 'ico-info';
 

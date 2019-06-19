@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { MailForm } from '@components/mailForm';
 import { lng, links } from '../../links'
 import indexLngObj from '../../lngs/index';
+
 import SU from '@images/SU.png';
 import Adjustments from '@images/CINDX_LP_adjustments.png';
+
 import './main.css';
 
 const ROOT_CLASS = 'mvpBlock';

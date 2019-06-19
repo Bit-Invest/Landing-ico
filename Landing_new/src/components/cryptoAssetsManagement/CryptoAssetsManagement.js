@@ -11,7 +11,6 @@ import cryptoMore2 from '../../images/crypto/DASHBOARD2222.png';
 import cryptoMore3 from '../../images/crypto/DASHBOARD3333.png';
 import {links} from '../../links.js';
 import Rectangle_White_opacity from '../../images/Rectangle_White_opacity.png';
-// import play_button_youtube from '../../media/play_button_youtube.png';
 import './cryptoAssetsManagement.css';
 import { lng } from '../../links';
 import indexLngObj from '../../lngs/index';

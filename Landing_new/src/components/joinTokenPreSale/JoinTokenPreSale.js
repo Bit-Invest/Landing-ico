@@ -4,7 +4,6 @@ import { lng } from '../../links'
 import indexLngObj from '../../lngs/index';
 import mailerlite from 'mailerlite-js';
 
-import bitcointalk_icon from '../../media/bitcointalk_icon.png';
 import youtube_icon from '../../media/youtube_icon.png';
 import instagram_icon from '../../media/instagram_icon.png';
 import facebook_icon from '../../media/facebook_icon.png';
@@ -13,12 +12,7 @@ import telegram_icon from '../../media/telegram_icon.png';
 import twitter_icon from '../../media/twitter_icon.png';
 import medium_icon from '../../media/medium_icon.png';
 import linkedin_icon from '../../media/linkedin_icon.png';
-import github_icon from '../../media/github_icon.png';
 import { links } from '../../links.js';
-import { Join } from '../../links.js';
-import weibo_icon from '../../media/weibo_icon.png';
-import wechat_icon from '../../media/wechat_icon.png';
-import kakaotalk_icon from '../../media/kakaotalk_icon.png';
 
 mailerlite.init(links.mailerlite.apiKey);
 

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { hideDocPopUp } from '../../store/store';
 import { Input } from '@components/input';
-import { links, getGAID, lng } from '../../links'
+import { links, lng } from '../../links'
 import indexLngObj from '../../lngs/index'
 import './DocPopup.css'
 

@@ -1,10 +1,13 @@
 import * as React from 'react';
+import { lng } from '../../links.js';
+import indexLngObj from '../../lngs/index';
+
 import { ProblemSolvingChild } from './problemSolvingChild/ProblemSolvingChild';
+
 import block_1_row_1 from '../../images/block_1_row_1.png';
 import block_1_row_2 from '../../images/block_1_row_2.png';
 import block_1_row_3 from '../../images/block_1_row_3.png';
-import { lng, links } from '../../links.js';
-import indexLngObj from '../../lngs/index'
+
 import './problemSolving.css';
 
 const ProblemSolvingInfo = {

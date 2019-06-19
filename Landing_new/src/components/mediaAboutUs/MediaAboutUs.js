@@ -1,6 +1,6 @@
 import React from 'react'
-
 import Slider from "react-slick";
+
 import MediaAmbcrypto from '../../media/media/AMBcrypto.png'
 import MediaBitcoinist from '../../media/media/Bitcoinist.png'
 import MediaTokendesk from '../../media/media/tokendesk.png'

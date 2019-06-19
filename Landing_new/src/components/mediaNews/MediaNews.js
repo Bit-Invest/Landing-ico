@@ -1,19 +1,7 @@
 import * as React from 'react';
 import Slider from "react-slick";
-import MediaAmbcrypto from '../../media/media/AMBcrypto.png'
-import MediaBitcoinist from '../../media/media/Bitcoinist.png'
-import MediaTokendesk from '../../media/media/tokendesk.png'
-import MediaBtcmanager from '../../media/media/BTCManager.png'
-import MediaBlockonomi from '../../media/media/blockonomi-logo.png'
-import Investing from '../../media/media/investing.jpeg'
-import Сryptoninjas from '../../media/media/Cryptoninjas.png'
-import Coinannouncer from '../../media/media/Coinannouncer.png'
-import Cryptoreporter from '../../media/media/Cryptoreporter.jpg'
-import Bitcoinexchangeguide from '../../media/media/Bitcoinexchangeguide.jpeg'
-import Thestreet from '../../media/media/Thestreet.png'
-import MediaCNN from '../../media/media/CCN.png'
-import { lng } from '../../links'
-import indexLngObj from '../../lngs/index'
+import { lng } from '../../links';
+import indexLngObj from '../../lngs/index';
 
 // NEWS
 import Airat_Shayhulov from '../../news/Airat_Shayhulov.jpeg';
@@ -22,16 +10,13 @@ import Artur_Shamalov from '../../news/Artur_Shamalov.jpeg';
 import Austin_Kimm from '../../news/Austin_Kimm.jpeg';
 import Bogdan_Fiedur from '../../news/Bogdan_Fiedur.jpeg';
 import CINDX_Key_points_to_observe from '../../news/CINDX_Key_points_to_observe.jpeg';
-import CINDX_celebrates_the_AA_Rating_from_Top_ICO_List_Audit from '../../news/CINDX_celebrates_the_AA_Rating_from_Top_ICO_List_Audit.png';
 import CINDX_continues_the_roadshow_in_China from '../../news/CINDX_continues_the_roadshow_in_China.jpeg';
 import CINDX_crypto_currency_exchange_license from '../../news/CINDX_crypto_currency_exchange_license.jpeg';
 import CINDX_gets_5_0_rating_on_TrackICO from '../../news/CINDX_gets_5.0_rating_on_TrackICO.png';
 import CINDX_license_of_the_financial_consultant from '../../news/CINDX_license_of_the_financial_consultant.png';
 import CINDX_meets_9coin_Digital_Asses_Exchange from '../../news/CINDX_meets_9coin_Digital_Asses_Exchange.png';
-import CINDX_meets_Ian_Balina from '../../news/CINDX_meets_Ian_Balina.jpg';
 import CINDX_meets_Vangoo_Capital_Partners_Fund from '../../news/CINDX_meets_Vangoo_Capital_Partners_Fund.png';
 import CINDX_Presents_the_project_during_RICLUB_private_investors_meeting from '../../news/CINDX_Presents_the_project_during_RICLUB_private_investors_meeting.jpg';
-import CINDX_took_part_in_Moscow_ICO_Summit_2018 from '../../news/CINDX_took_part_in_Moscow_ICO_Summit_2018.png';
 import CINDX_Weekly_digest_06_08_18_12_08_18 from '../../news/CINDX_Weekly_digest_06_12.jpeg';
 import CINDX_WEEKLY_DIGEST_30_July_5_August from '../../news/CINDX_WEEKLY_DIGEST_30_July—5_August.jpeg';
 import Dip_your_Toe_in_Crypto from '../../news/Dip_your_Toe_in_Crypto.png'
@@ -57,20 +42,16 @@ import The_strategic_meeting_of_the_international_CINDX_team from '../../news/Th
 import Tyler_Sanford from '../../news/Tyler_Sanford.jpeg';
 import Val_Jerdes from '../../news/Val_Jerdes.jpeg';
 import Virtual_Currency_Wallet_Services from '../../news/Virtual_Currency_Wallet_Services.jpeg';
-import Welcome_to_CINX_Token_Distribution_its_not_an_ICO_its_an_STO from '../../news/Welcome_to_CINX_Token_Distribution_its_not_an_ICO_its_an_STO.jpeg';
-import MediaBitcoingarden from '../../media/media/bitcoingarden_logo.png'
-import MediaDigitaljournal from '../../media/media/digital_journal_transp.png'
-import MediaCoinfox from '../../media/media/CoinFox.png'
-import You_Can_Now_Buy_CINX_Tokens_with_Fiat_Money from '../../news/You_Can_Now_Buy_CINX_Tokens_with_Fiat_Money.jpeg'
+import MediaBitcoingarden from '../../media/bitcoingarden_logo.png'
+import MediaDigitaljournal from '../../media/digital_journal_transp.png'
+import MediaCoinfox from '../../media/CoinFox.png'
 import Borderless_Blockchain_Technology_Summit_Post_Event_Report from '../../news/Borderless_Blockchain_Technology_Summit_Post_Event_Report.jpg'
 import CINDX_Platform_Promo_Presentation from '../../news/CINDX_Platform_Promo_Presentation.jpg'
 import CINDX_continues_its_regular_Weekly_Digest_column from '../../news/CINDX_continues_its_regular_Weekly_Digest_column.jpg'
 import CINDX_meets_Chain_Partners from '../../news/CINDX_meets_Chain_Partners.jpeg'
-import CINDX_gained_a_status_of_a_Joint_Stock_Company from '../../news/CINDX_gained_a_status_of_a_Joint_Stock_Company.jpg'
 import Weekly_digest_27_08_18_02_09_18 from '../../news/Weekly_digest_27_08_18_02_09_18.jpg'
 import APAC_is_the_Frontrunner_in_Blockchain_Adoption from '../../news/APAC_is_the_Frontrunner_in_Blockchain_Adoption.jpg'
 import Leonard_Grayver from '../../news/Leonard_Grayver.jpg'
-import CINDX_KYC_TUTORIAL from '../../news/CINDX_KYC_TUTORIAL.png'
 import CINDX_ROADSHOW_IN_CHINA_NEW_STAGE from '../../news/CINDX_ROADSHOW_IN_CHINA_NEW_STAGE.jpg'
 import Weekly_digest_03_09_18_09_09_18 from '../../news/Weekly_digest_03_09_18_09_09_18.png'
 import How_CINDX_Can_Help_You_to_Fine_Tune_Your_Trading_Strategy from '../../news/How_CINDX_Can_Help_You_to_Fine_Tune_Your_Trading_Strategy.jpg'
@@ -95,10 +76,21 @@ import Banners_005 from '../../news/Banners.005_copy.png'
 import Prorocol from '../../news/prorocol.jpg'
 import Kosol_Saisanit_photo from '../../news/Kosol_Saisanit_photo.png'
 import CD3105 from '../../images/CD3105.png'
+import MediaAmbcrypto from '../../media/AMBcrypto.png'
+import MediaBitcoinist from '../../media/Bitcoinist.png'
+import MediaTokendesk from '../../media/tokendesk.png'
+import MediaBtcmanager from '../../media/BTCManager.png'
+import MediaBlockonomi from '../../media/blockonomi-logo.png'
+import Investing from '../../media/investing.jpeg'
+import Сryptoninjas from '../../media/Cryptoninjas.png'
+import Coinannouncer from '../../media/Coinannouncer.png'
+import Cryptoreporter from '../../media/Cryptoreporter.jpg'
+import Bitcoinexchangeguide from '../../media/Bitcoinexchangeguide.jpeg'
+import Thestreet from '../../media/Thestreet.png'
+import MediaCNN from '../../media/CCN.png'
 
 import img_08_1 from '../../news/08/1.png';
 import img_08_2 from '../../news/08/2.png';
-import img_08_3 from '../../news/08/3.jpg';
 
 import IMG_1087 from '../../media/IMG_1087.PNG';
 import IMG_1088 from '../../media/IMG_1088.PNG';

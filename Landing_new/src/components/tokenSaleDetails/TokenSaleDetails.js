@@ -1,18 +1,17 @@
 import * as React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { showDocPopup } from '../../store/store';
+import { MailForm } from '../mailForm';
+
+import { links, Join, lng } from '../../links.js';
+import indexLngObj from '../../lngs/index';
+
 import block_3_ico_1 from '../../images/block_3_ico_1.png';
 import block_3_ico_2 from '../../images/block_3_ico_2.png';
 import block_3_ico_3 from '../../images/block_3_ico_3.png';
 import imageCircle from '../../images/block_4_cont_4_img.png';
 import imageCircle_1 from '../../images/block_4_cont_3_img.svg';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { showDocPopup } from '../../store/store';
-import { MailForm } from '../mailForm'
-
-import { links, Join, lng, ab_val } from '../../links.js';
-import indexLngObj from '../../lngs/index'
-
-// import { ProgressBar } from '@components/progressBar';
 
 import './tokenSaleDetails.css';
 

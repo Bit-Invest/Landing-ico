@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Slider from 'react-slick'
 import { lng } from '../../links'
 import indexLngObj from '../../lngs/index'
@@ -24,7 +24,7 @@ import IMG_1085 from '../../media/IMG_1085.PNG';
 import IMG_1086 from '../../media/IMG_1086.PNG';
 import IMG_1074 from '../../media/IMG_1074.PNG';
 
-import './RoadsShow.css'
+import './RoadsShow.css';
 
 let dataRoadShow = [{
   place: 'Moscow',

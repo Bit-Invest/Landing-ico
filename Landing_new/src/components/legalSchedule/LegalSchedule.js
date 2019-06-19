@@ -1,9 +1,11 @@
 import * as React from 'react';
 import Slider from "react-slick";
+import { lng } from '../../links.js';
+import indexLngObj from '../../lngs/index';
+
 import ico_check from '../../images/ico_check.png';
+
 import './LegalSchedule.css';
-import { lng } from '../../links.js'
-import indexLngObj from '../../lngs/index'
 
 const dataLegalSchedule = [
   {

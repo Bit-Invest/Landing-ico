@@ -2,15 +2,14 @@ import React from 'react'
 
 import rating_topicolist from '../../media/rating-topicolist.png';
 import rating_trackico from '../../media/rating-trackico.png';
-// import rating_icorating from '../../media/rating-icorating.png';
 import rating_icomarks from '../../media/rating-icomarks.png';
 import rating_icobench from '../../media/rating-icobench.png';
 import ico_holder from '../../media/rating-holder.png';
 
-import { lng } from '../../links'
-import indexLngObj from '../../lngs/index'
+import { lng } from '../../links';
+import indexLngObj from '../../lngs/index';
 
-import './OurTopRatings.css'
+import './OurTopRatings.css';
 
 const ROOT_CLASS = 'our-top-ratings'
 

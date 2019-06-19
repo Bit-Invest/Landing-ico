@@ -2,15 +2,15 @@ import * as React from 'react';
 import logo from '../../images/Logo_CINDX.png';
 import menu from '../../images/menu.png';
 import arrow_public from '../../images/arrow_public.png';
-import {links} from '../../links.js';
-import { Join } from '../../links.js';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { showDocPopup } from '../../store/store';
-import './Menu.css';
-import { lng, list_lngs, ab_val } from '../../links';
+import { links, lng, list_lngs, ab_val } from '../../links';
 import indexLngObj from '../../lngs/index';
-import flags from './objFlags'
+import flags from './objFlags';
+
+import './Menu.css';
+
 
 class Menu extends React.Component {
   constructor(props){

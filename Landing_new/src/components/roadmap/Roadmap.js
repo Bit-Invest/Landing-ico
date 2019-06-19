@@ -1,30 +1,13 @@
 import * as React from 'react';
-import { Button } from '@components/button';
-import './Roadmap.css';
-import { lng } from '../../links'
-import indexLngObj from '../../lngs/index'
-// import roadmapLike from '../../images/roadmapLike.svg'
-import roadMapLike from '../../images/roadMapLike.svg'
+import { lng } from '../../links';
+import indexLngObj from '../../lngs/index';
+
 import Gen_Image from '@images/New_CINDX_website-min.png';
 
+import './Roadmap.css';
+
+
 const ROOT_CLASS = 'roadmap';
-
-const discForMailStiones = {
-
-};
-
-const Popup = (props) => {
-  return (
-    <div className="popup-for-img" onClick={props.onClick}>
-      <div className="popup-for-img__close-bg" ></div>
-      <div className="popup-for-img__content">
-        <div className="popup-for-img__close"></div>
-        <img className="popup-for-img__img" src={props.src} alt="INVISIBLE_IMAGE" />
-      </div>
-    </div>
-  )
-}
-
 export class Roadmap extends React.Component {
   constructor(props) {
     super(props)

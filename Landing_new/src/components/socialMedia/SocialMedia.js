@@ -1,9 +1,8 @@
 import React from 'react'
-
-import './SocialMedia.css'
-
 import { lng, links } from '../../links'
 import indexLngObj from '../../lngs/index'
+
+import './SocialMedia.css'
 
 const ROOT_CLASS = 'social-media'
 

@@ -11,7 +11,6 @@ import { MediaNews } from './components/mediaNews/MediaNews';
 import { TeamAdvisersPartners } from './components/teamAdvisersPartners/TeamAdvisersPartners';
 import { MainBlock } from '@components/mainBlock';
 import { CryptoAssetsManagement } from './components/cryptoAssetsManagement/CryptoAssetsManagement';
-import { TeamLegal } from './components/teamLegal/TeamLegal';
 import { Roadmap } from '@components/roadmap';
 import { CanvasMouns } from '@components/animate';
 import { ProgressBarSale } from '@components/progressBarSale/ProgressBarSale';
@@ -50,7 +49,6 @@ class App extends React.Component {
           <ProblemSolving />
           <HowCindxWorks />
           <MarketAnalytics />
-          <TeamLegal />
           <Roadmap />
           <RoadsShow />
           <FeedbackProject />

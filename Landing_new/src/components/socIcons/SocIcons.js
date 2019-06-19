@@ -2,14 +2,13 @@ import * as React from 'react';
 
 import { links } from '../../links.js';
 
-import github_icon from '../../media/github_icon.png';
 import reddit_icon from '../../media/reddit_icon.png';
 import twitter_icon from '../../media/twitter_icon.png';
 import facebook_icon from '../../media/facebook_icon.png';
 import medium_icon from '../../media/medium_icon.png';
 import linkedin_icon from '../../media/linkedin_icon.png';
-import instagram_icon from '../../media/instagram_icon.png';
 import telegram_icon_white from '../../media/telegram_icon_white.png';
+
 import './SocIcons.css';
 
 export class SocIcons extends React.Component { 

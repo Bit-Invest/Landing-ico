@@ -1,25 +1,18 @@
 import * as React from 'react';
-import block_3_img from '../../images/block_3_img_1@2x.png';
-import block_3_img2 from '../../images/block_3_img_2@2x.png';
-import block_3_img3 from '../../images/block_3_img_3@2x.png';
-import block_3_man from '../../images/block_3_man.png';
-import {links, ab_val} from '../../links.js';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { showDocPopup } from '../../store/store';
 import Slider from "react-slick";
+import { lng, links } from '../../links.js';
+import indexLngObj from '../../lngs/index';
+
+import block_3_img from '../../images/block_3_img_1@2x.png';
+import block_3_img2 from '../../images/block_3_img_2@2x.png';
+import block_3_img3 from '../../images/block_3_img_3@2x.png';
+
 import './MarketAnalytics.css';
-import { lng } from '../../links.js'
-import indexLngObj from '../../lngs/index'
 
 const MarketAnalytics = props => {
-  const openPopup = (e) => {
-    if (ab_val === '1') {
-      e.preventDefault()
-      props.showDocPopup('')
-    }
-  }
-
   const settings = {
     arrows: false,
     infinite: true,
