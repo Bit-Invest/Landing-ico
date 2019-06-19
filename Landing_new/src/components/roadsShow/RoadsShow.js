@@ -313,7 +313,11 @@ const getBeautifulDate = (date) => {
   const monthNames = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
   ];
-  const $date = new Date(date);
+
+  let tsDate = date.split('.');
+  tsDate = `${tsDate[2]}/${tsDate[0]}/${tsDate[1]} 00:00:00`;
+
+  const $date = new Date(tsDate);
   const monthIndex = $date.getMonth();
   const monthStr = monthNames[monthIndex];
   const day = $date.getUTCDate();
@@ -329,7 +333,7 @@ dataRoadShow = dataRoadShow
   })
   .map((curRoadshow) => ({
     ...curRoadshow,
-    date: getBeautifulDate(curRoadshow.date),
+    date: getBeautifulDate(curRoadshow.date) ? getBeautifulDate(curRoadshow.date) : curRoadshow.date,
   }))
 
 export class RoadsShow extends React.Component {

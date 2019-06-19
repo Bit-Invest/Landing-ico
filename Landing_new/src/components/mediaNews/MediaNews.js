@@ -116,7 +116,7 @@ let media = [
   {
     screen: Investing,
     type: 'investing',
-    date: '08.29.202018',
+    date: '08.29.2018',
     name: indexLngObj['en']['mediaNews#1_32'],
     text: indexLngObj['en']['mediaNews#1_33'],
     src: 'https://www.investing.com/analysis/why-bitcoin-mining-hashrates-are-way-up-despite-the-bear-market-200340991'
@@ -954,7 +954,11 @@ const getBeautifulDate = (date) => {
   const monthNames = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
   ];
-  const $date = new Date(date);
+
+  let tsDate = date.split('.');
+  tsDate = `${tsDate[2]}/${tsDate[0]}/${tsDate[1]} 00:00:00`;
+
+  const $date = new Date(tsDate);
   const monthIndex = $date.getMonth();
   const monthStr = monthNames[monthIndex];
   const day = $date.getUTCDate();
@@ -970,7 +974,7 @@ media = media
   })
   .map((curMedia) => ({
     ...curMedia,
-    date: getBeautifulDate(curMedia.date),
+    date: getBeautifulDate(curMedia.date) ? getBeautifulDate(curMedia.date) : curMedia.date,
   }))
 
 news = news
@@ -979,7 +983,7 @@ news = news
   })
   .map((curNews) => ({
     ...curNews,
-    date: getBeautifulDate(curNews.date),
+    date: getBeautifulDate(curNews.date) ? getBeautifulDate(curNews.date) : curNews.date,
   }))
 
 export class MediaNews extends React.Component {
