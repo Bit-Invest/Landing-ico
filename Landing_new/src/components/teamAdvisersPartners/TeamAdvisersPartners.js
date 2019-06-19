@@ -3,69 +3,22 @@ import Slider from "react-slick";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { showPopUp, changeUrlPopupVideo } from '../../store/store';
-import ava_1 from '../../images/ava_1.png';
+import { lng } from '../../links';
+import indexLngObj from '../../lngs/index';
+import { peopleImages } from '../../paths';
+
 import playButtonWhite from '../../images/play_button_white.png';
 import linkedin_icon_social from '../../images/linkedin_icon_social.png';
 import medium_icon_social from '../../images/medium_icon_social.png';
 
-// Team icon
-import Yuriy_Avdeev from '../../media/Yuriy_Avdeev.5aa55970.png';
-import Jason_King from '../../media/Jason_King.jpg';
-import Val_Jerdes from '../../media/Val_Jerdes.f8ab5be3.jpg';
-import Mofassair_Hossain from '../../media/Mofassair_Hossain.11359d11.jpg';
-import Artur_Shamalov from '../../media/Artur_Shamalov.4dc17f50.jpg';
-import Denis_Eskenazi from '../../media/Denis_Eskenazi.e8b0d64b.jpg';
-import Ibraghim_Haniev from '../../media/Ibraghim_Haniev.77b0aa4e.jpg';
-import Airat from '../../media/Airat.jpg';
-import Sofja_Pevzner from '../../media/Sofja_Pevzner.jpg';
-import Jelena_Karzetskaja from '../../media/Jelena_Karzetskaja.png';
-import Sergey_Potehin from '../../images/Sergey_Potehin.png';
-import Georg_Brich from '../../images/Georg_Brich.png';
+import Collage_partners from '@images/Collage_partners.png';
 
-// Our Parners icon
-import Progressor_logo from '../../media/Progressor_logo.png';
-import ICO_PROMO from '../../media/ico_promo.png';
-import sum_and_substance_1 from '../../media/sum_and_substance1.png';
-import twigagroup from '../../media/twigagroup.png';
-import Tradingview from '../../media/Tradingview.png';
-import Yellow_Door from '../../media/Yellow Door.png';
-import Innova8 from '../../media/Innova8.png';
-import BtcBit from '../../media/BtcBit.jpg';
-import civic_logo_horz_BIG from '../../media/civic_logo_horz_BIG.png';
-import Greenberg from '../../media/Greenberg.png';
-import intel_Wise from '../../media/intel_Wise.png';
-import Credits from '../../media/Credits.jpg';
-import WP_Pecunio from '../../media/WP_Pecunio.png';
-import Logo_Zeus from '../../media/logo.7508f04a.png';
-import Pentaglobal from '../../media/pentaglobal.png';
-import Aerum from '../../media/AerumLogo.png';
-
-// Advicer icon
-import Keith_Teare from '../../media/Keith_Teare.1e7599ac.jpg';
-import Austin_Kimm from '../../media/Austin_Kimm.caf37ff2.jpg';
-import Philip_Staehelin from '../../media/Philip_Staehelin.49caf8a6.jpg';
-import Amarpreet_Singh from '../../media/Amarpreet_Singh.afa7b4f8.jpg';
-// import Tyler_Sanford from '../../media/Tyler_Sanford.5d35cd71.jpg';
-import Bogdan_Fiedur from '../../media/Bogdan_Fiedur.e36a757d.jpg';
-import Graham_Doggart from '../../media/Graham_Doggart.fd8f9df5.jpg';
-import Sadie_Hutton from '../../media/Sadie_Hutton.54ab2eaa.jpg';
-// import Motti_Peer from '../../media/Motti_Peer.png';
-import Leonard_Grayver from '../../media/Leonard_Grayver.png';
-import William_Zhu from '../../media/William_Zhu.png';
-import Kosol_Saisanit from '../../media/Kosol.png';
-
-import Lincoln from '../../news/Lincoln.png';
-import Reinhard_Berger from '../../news/Reinhard_Berger.png';
-
-import Gen_Image from '@images/Collage_partners.png';
-
+//styles
 import './TeamAdvisersPartners.css';
-import { lng } from '../../links'
-import indexLngObj from '../../lngs/index'
 
 const teamInfo = [
   {
-    img: Yuriy_Avdeev,
+    img: peopleImages.team.Yuriy_Avdeev,
     name: indexLngObj[lng]['teamAdvisersPartners#4'],
     position: indexLngObj[lng]['teamAdvisersPartners#5'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#6'],
@@ -75,7 +28,7 @@ const teamInfo = [
     m: 'https://medium.com/cindx/cindx-team-yuriy-avdeev-e7a747d4c2e3'
   },
   {
-    img: Val_Jerdes,
+    img: peopleImages.team.Val_Jerdes,
     name: indexLngObj[lng]['teamAdvisersPartners#9'],
     position: indexLngObj[lng]['teamAdvisersPartners#10'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#11'],
@@ -85,7 +38,7 @@ const teamInfo = [
     m: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61'
   },
   {
-    img: Mofassair_Hossain,
+    img: peopleImages.team.Mofassair_Hossain,
     name: indexLngObj[lng]['teamAdvisersPartners#14'],
     position: indexLngObj[lng]['teamAdvisersPartners#15'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#16'],
@@ -95,7 +48,7 @@ const teamInfo = [
     m: 'https://medium.com/cindx/cindx-team-mofassair-hossain-72661ba3474e'
   },
   {
-    img: Artur_Shamalov,
+    img: peopleImages.team.Artur_Shamalov,
     name: indexLngObj[lng]['teamAdvisersPartners#19'],
     position: indexLngObj[lng]['teamAdvisersPartners#20'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#21'],
@@ -106,7 +59,7 @@ const teamInfo = [
 
   },
   {
-    img: Denis_Eskenazi,
+    img: peopleImages.team.Denis_Eskenazi,
     name: indexLngObj[lng]['teamAdvisersPartners#24'],
     position: indexLngObj[lng]['teamAdvisersPartners#25'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#26'],
@@ -116,7 +69,7 @@ const teamInfo = [
     m: 'https://medium.com/cindx/denis-eskenazi-ac67e81d8c50'
   },
   {
-    img: Ibraghim_Haniev,
+    img: peopleImages.team.Ibraghim_Haniev,
     name: indexLngObj[lng]['teamAdvisersPartners#29'],
     position: indexLngObj[lng]['teamAdvisersPartners#30'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#31'],
@@ -126,7 +79,7 @@ const teamInfo = [
     m: 'https://medium.com/cindx/cindx-team-ibraghim-haniev-17f67defd1ba'
   },
   {
-    img: Sergey_Potehin,
+    img: peopleImages.team.Sergey_Potehin,
     name: indexLngObj[lng]['teamAdvisersPartners#59_1'],
     position: indexLngObj[lng]['teamAdvisersPartners#60_1'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#61_1'],
@@ -136,7 +89,7 @@ const teamInfo = [
     m: 'https://medium.com/cindx/cindx-team-sergey-potekhin-31451dbb6de3',
   },
   {
-    img: Georg_Brich,
+    img: peopleImages.team.Georg_Brich,
     name: indexLngObj[lng]['teamAdvisersPartners#64_1'],
     position: indexLngObj[lng]['teamAdvisersPartners#65_1'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#66_1'],
@@ -146,7 +99,7 @@ const teamInfo = [
     m: 'https://medium.com/cindx/cindx-attends-the-binance-meetup-moscow-event-81f41e8c4814',
   },
   {
-    img: Airat,
+    img: peopleImages.team.Airat,
     name: indexLngObj[lng]['teamAdvisersPartners#34'],
     position: indexLngObj[lng]['teamAdvisersPartners#35'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#36'],
@@ -156,7 +109,7 @@ const teamInfo = [
     m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-airat-shayhulov-b980078cdc6f'
   },
   {
-    img: Sofja_Pevzner,
+    img: peopleImages.team.Sofja_Pevzner,
     name: indexLngObj[lng]['teamAdvisersPartners#39'],
     position: indexLngObj[lng]['teamAdvisersPartners#40'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#41'],
@@ -166,7 +119,7 @@ const teamInfo = [
     m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-sofja-pevzner-8386e8e88407'
   },
   {
-    img: Jelena_Karzetskaja,
+    img: peopleImages.team.Jelena_Karzetskaja,
     name: indexLngObj[lng]['teamAdvisersPartners#49'],
     position: indexLngObj[lng]['teamAdvisersPartners#50'],
     fackt1: indexLngObj[lng]['teamAdvisersPartners#51'],
@@ -177,79 +130,9 @@ const teamInfo = [
   },
 ];
 
-const ourPartners = [
-   {
-     img: Progressor_logo,
-     name: 'Progressor',
-     position: 'Legal support',
-     href: 'https://progressor.ee/'
-   },
-   {
-     img: sum_and_substance_1,
-     name: 'Sum & Substance',
-     position: 'Security & Compliance',
-     href: 'https://sumsub.com/'
-   },
-   {
-     img: twigagroup,
-     name: 'Twiga Communication Group',
-     position: 'Digital & PR',
-     href: 'http://twiga.ru/'
-   },
-   {
-     img: Tradingview,
-     name: 'Tradingview',
-     position: 'Market data',
-     href: 'https://www.tradingview.com/'
-   },
-   {
-     img: Yellow_Door,
-     name: 'Yellow Door',
-     position: 'Silicon Valley Accelerator',
-     href: 'http://yellowdoor.ru/'
-   },
-   {
-     img: Innova8,
-     name: 'Innov8 Global Advisory',
-     position: 'Global Ventures',
-     href: 'http://www.innov8globaladvisory.com/'
-   },
-  {
-    img: BtcBit,
-  },
-  {
-    img: civic_logo_horz_BIG,
-  },
-  {
-    img: Greenberg,
-  },
-  {
-    img: intel_Wise
-  },
-  {
-    img: Credits
-  },
-  {
-    img: Logo_Zeus,
-    height: 50
-  },
-  {
-    img: WP_Pecunio,
-    height: 30
-  },
-  {
-    img: Pentaglobal,
-    height: 30
-  },
-  {
-    img: Aerum,
-    height: 30,
-  }
-].reverse();
-
 const advisers = [
   {
-    img: Austin_Kimm,
+    img: peopleImages.advisers.Austin_Kimm,
     video: 'https://www.youtube.com/embed/pkBoVl7Brds',
     name: indexLngObj[lng]['teamAdvisersPartners#67'],
     src: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
@@ -265,7 +148,7 @@ const advisers = [
     ]
   },
   {
-    img: Keith_Teare,
+    img: peopleImages.advisers.Keith_Teare,
     video: 'https://www.youtube.com/embed/1JaUqtqCQ5w',
     src: 'https://linkedin.com/in/kteare',
     m: 'https://medium.com/cindx/cindx-advisers-keith-teare-1041410275d0',
@@ -282,7 +165,7 @@ const advisers = [
     ]
   },
   {
-    img: Amarpreet_Singh,
+    img: peopleImages.advisers.Amarpreet_Singh,
     video: 'https://www.youtube.com/embed/VKNEfob9sGA',
     name: indexLngObj[lng]['teamAdvisersPartners#82'],
     src: 'https://www.linkedin.com/in/amarpreetsingh2/',
@@ -300,7 +183,7 @@ const advisers = [
     ]
   },
   {
-    img: Philip_Staehelin,
+    img: peopleImages.advisers.Philip_Staehelin,
     video: 'https://www.youtube.com/embed/nN76RkbejGc',
     name: indexLngObj[lng]['teamAdvisersPartners#74'],
     src: 'https://www.linkedin.com/in/staehelin/',
@@ -317,7 +200,7 @@ const advisers = [
     ]
   },
   {
-    img: Jason_King,
+    img: peopleImages.advisers.Jason_King,
     video: 'https://www.youtube.com/embed/MHQzECP7izc',
     name: indexLngObj[lng]['teamAdvisersPartners#149'],
     src: 'https://www.linkedin.com/in/jasonking/',
@@ -334,7 +217,7 @@ const advisers = [
     ]
   },
   {
-    img: Bogdan_Fiedur,
+    img: peopleImages.advisers.Bogdan_Fiedur,
     video: 'https://www.youtube.com/embed/4kXgu60guic',
     name: indexLngObj[lng]['teamAdvisersPartners#125'],
     src: 'https://www.linkedin.com/in/bogdanfiedur/',
@@ -351,7 +234,7 @@ const advisers = [
     ]
   },
   {
-    img: Graham_Doggart,
+    img: peopleImages.advisers.Graham_Doggart,
     video: 'https://www.youtube.com/embed/uXTA_QLympE',
     name: indexLngObj[lng]['teamAdvisersPartners#133'],
     src: 'https://www.linkedin.com/in/grahamdoggart/',
@@ -368,7 +251,7 @@ const advisers = [
     ]
   },
   {
-    img: Sadie_Hutton,
+    img: peopleImages.advisers.Sadie_Hutton,
     video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
     name: indexLngObj[lng]['teamAdvisersPartners#141'],
     src: 'https://www.linkedin.com/in/sadie-hutton/',
@@ -385,7 +268,7 @@ const advisers = [
     ]
   },
   {
-    img: Leonard_Grayver,
+    img: peopleImages.advisers.Leonard_Grayver,
     video: '',
     name: indexLngObj[lng]['teamAdvisersPartners#164'],
     src: 'https://www.linkedin.com/in/leonardgrayver/?locale=ru_RU',
@@ -401,7 +284,7 @@ const advisers = [
     ]
   },
   {
-    img: Lincoln,
+    img: peopleImages.advisers.Lincoln,
     video: '',
     name: indexLngObj[lng]['teamAdvisersPartners#178'],
     src: 'https://www.linkedin.com/in/lincolnteo/',
@@ -419,7 +302,7 @@ const advisers = [
     ]
   },
   {
-    img: Reinhard_Berger,
+    img: peopleImages.advisers.Reinhard_Berger,
     video: '',
     name: indexLngObj[lng]['teamAdvisersPartners#187'],
     src: 'https://www.linkedin.com/in/reinhard-berger-90810613/',
@@ -436,7 +319,7 @@ const advisers = [
     ]
   },
   {
-    img: William_Zhu,
+    img: peopleImages.advisers.William_Zhu,
     video: '',
     name: indexLngObj[lng]['teamAdvisersPartners#100'],
     src: 'https://www.linkedin.com/in/高峰-朱-196741173',
@@ -456,7 +339,7 @@ const advisers = [
     ]
   },
   {
-    img: Kosol_Saisanit,
+    img: peopleImages.advisers.Kosol_Saisanit,
     video: '',
     name: indexLngObj[lng]['teamAdvisersPartners#171'],
     src: 'https://www.linkedin.com/in/austin-kimm-486b5a22/',
@@ -486,7 +369,7 @@ class TeamAdvisersPartners extends React.Component {
       return (
         <div key={i} className="item">
           <div className="img" style={{
-            'background-image': `url(${el.img})`,
+            backgroundImage: `url(${el.img})`,
           }}></div>
           <h3>{el.name}</h3>
           <p className="position">{el.position}</p>
@@ -502,49 +385,6 @@ class TeamAdvisersPartners extends React.Component {
               <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
             </a>
           </div>
-        </div>
-      );
-    })
-  }
-
-  mapTeam2 = () => {
-    return teamInfo.map((el, i) => {
-      return (
-        <div key={i} className="item">
-          <img className="img" src={el.img} alt="CINDX"/>
-          <h3>{el.name}</h3>
-          <p className="position">{el.position}</p>
-          <hr />
-          <p>{el.fackt1}</p>
-          <p>{el.fackt2}</p>
-          <p>{el.fackt3}</p>
-          <div className="block-soc-icon">
-            <a target="_blank" style={{ display: el.src ? 'block' : 'none' }} href={el.src}>
-              <img className="soc-icon" src={linkedin_icon_social} alt="CINDX"/>
-            </a>
-            <a target="_blank" style={{ display : el.m ? 'block' : 'none' }} href={el.m}>
-              <img className="soc-icon" src={medium_icon_social} alt="CINDX"/>
-            </a>
-          </div>
-        </div>
-      );
-    })
-  }
-
-  mapOurPartners = () => {
-    return ourPartners.map((el, i) => {
-      const promo = (el.img === ICO_PROMO || el.img === civic_logo_horz_BIG || el.img === Greenberg) ? 'ico-promo' : ''
-      const newPromo = (el.img === BtcBit) ? 'btcbit-promo' : ''
-      return (
-        <div key={i} data-msg={el.height}>
-          <img
-            className={`img ${promo} ${newPromo}`} 
-            src={el.img} 
-            alt="CINDX"
-            style={{
-              maxHeight: el.height || null
-            }}
-          />
         </div>
       );
     })
@@ -600,30 +440,6 @@ class TeamAdvisersPartners extends React.Component {
   }
 
   render() {
-    const settings = {
-      infinite: true,
-      swipeToSlide: true,
-      lazyLoad: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1
-    };
-    const settingsTeam2 = {
-      infinite: true,
-      swipeToSlide: true,
-      lazyLoad: true,
-      speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 1
-    };
-    const settingsTeam3 = {
-      infinite: true,
-      swipeToSlide: true,
-      lazyLoad: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
     const settingsAdvisers = {
       infinite: true,
       swipeToSlide: true,
@@ -631,39 +447,6 @@ class TeamAdvisersPartners extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-    };
-    const settingsOurParners = {
-      arrows: false,
-      swipeToSlide: true,
-      lazyLoad: true,
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000
-    };
-    const settingsOurParners2 = {
-      arrows: false,
-      swipeToSlide: true,
-      lazyLoad: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000
-    };
-    const settingsOurParners3 = {
-      arrows: false,
-      swipeToSlide: true,
-      lazyLoad: true,
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000
     };
     return (
       <div className="block_8" id="team">
@@ -691,23 +474,8 @@ class TeamAdvisersPartners extends React.Component {
           <div className="ourPartners">
             <h2 className="header_blocks">{ indexLngObj[lng]['teamAdvisersPartners#3'] }</h2>
             <div className="imageForPartners_parent">
-              <img src={Gen_Image} className="imageForPartners" />
+              <img alt="Our parners" src={Collage_partners} className="imageForPartners" />
             </div>
-            {
-              // <div className="container2">
-              //   <Slider {...settingsOurParners}>
-              //     {this.mapOurPartners()}
-              //   </Slider>
-              // </div>
-              // <div className="container3">
-              //   {<div className="slick-list">
-              //     {this.mapOurPartners()}
-              //   </div>}
-              //   <Slider {...settingsOurParners2}>
-              //     {this.mapOurPartners()}
-              //   </Slider>
-              // </div>
-            }
           </div>
           <div className="clear" />
         </div>

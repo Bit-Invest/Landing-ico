@@ -153,8 +153,6 @@ class CryptoAssetsManagement extends React.Component {
       const animation2 = this.state.isChange && i === 2 ? 'problemBlock__slide-animation-2' : ''
       const startSlide = this.state.isDefault ? 0 : 1
 
-      console.log({i,startSlide,state:this.state,})
-
       return (
         <div className={`problemBlock__slide problemBlock__slide-${i} ${animation0} ${animation1} ${animation2}`} key={i}>
           <div 

@@ -3,29 +3,15 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { showPopUp, changeUrlPopupVideo } from '../../store/store';
 import Slider from "react-slick";
-import { PopUpManager } from '../popUp/PopUpManager'
-import block_6_ava from '../../images/block_6_ava.png';
-import playButtonWhite from '../../images/play_button_white.png';
-import Val_Jerdes from '../../media/Val_Jerdes.f8ab5be3.jpg';
-import Denis_Eskenazi from '../../media/Denis_Eskenazi.e8b0d64b.jpg';
-import Philip_Staehelin from '../../media/Philip_Staehelin.49caf8a6.jpg';
-import Andrzej_Cichowlaz1 from '../../media/Andrzej_Cichowlaz1.7705cd34.jpg';
-import Austin_Kimm from '../../media/Austin_Kimm.caf37ff2.jpg';
-import Amarpreet_Singh from '../../media/Amarpreet_Singh.afa7b4f8.jpg';
-import Keith_Teare from '../../media/Keith_Teare.1e7599ac.jpg';
-import Mansur_Rasulov from '../../media/Mansur_Rasulov.1950d44a.jpg';
-import Sadie_Hutton from '../../media/Sadie_Hutton.54ab2eaa.jpg';
-import Graham_Doggart from '../../media/Graham_Doggart.fd8f9df5.jpg';
-import Alina_Vardanyan from '../../media/Alina_Vardanyan.jpg';
-import Bogdan_Fiedur from '../../media/Bogdan_Fiedur.e36a757d.jpg';
-import Jason_King from '../../media/Jason_King.png';
+import { peopleImages } from '../../paths';
+import { lng } from '../../links.js';
+import indexLngObj from '../../lngs/index';
+
 import './feedbackProject.css';
-import { lng } from '../../links.js'
-import indexLngObj from '../../lngs/index'
 
 const feedbackOnOurProject = [
   {
-    img: Keith_Teare,
+    img: peopleImages.feedback.Keith_Teare,
     name: indexLngObj[lng]['feedbackProject#28'],
     position: indexLngObj[lng]['feedbackProject#29'],
     video: 'https://www.youtube.com/embed/1JaUqtqCQ5w',
@@ -33,7 +19,7 @@ const feedbackOnOurProject = [
     text2: indexLngObj[lng]['feedbackProject#32'],
   },
   {
-    img: Austin_Kimm,
+    img: peopleImages.feedback.Austin_Kimm,
     name: indexLngObj[lng]['feedbackProject#18'],
     position: indexLngObj[lng]['feedbackProject#19'],
     video: 'https://www.youtube.com/embed/pkBoVl7Brds',
@@ -41,7 +27,7 @@ const feedbackOnOurProject = [
     text2: indexLngObj[lng]['feedbackProject#22'],
   },
   {
-    img: Val_Jerdes,
+    img: peopleImages.feedback.Val_Jerdes,
     name: indexLngObj[lng]['feedbackProject#2'],
     position: indexLngObj[lng]['feedbackProject#3'],
     video: 'https://www.youtube.com/embed/H6hSOnoyFTY',
@@ -49,7 +35,7 @@ const feedbackOnOurProject = [
      text2: indexLngObj[lng]['feedbackProject#6'],
   },
   {
-    img: Amarpreet_Singh,
+    img: peopleImages.feedback.Amarpreet_Singh,
     name: indexLngObj[lng]['feedbackProject#23'],
     position: indexLngObj[lng]['feedbackProject#24'],
     video: 'https://www.youtube.com/embed/VKNEfob9sGA',
@@ -57,7 +43,7 @@ const feedbackOnOurProject = [
     text2: indexLngObj[lng]['feedbackProject#27'],
   },
   {
-    img: Philip_Staehelin,
+    img: peopleImages.feedback.Philip_Staehelin,
     name: indexLngObj[lng]['feedbackProject#10'],
     position: indexLngObj[lng]['feedbackProject#11'],
     video: 'https://www.youtube.com/embed/nN76RkbejGc',
@@ -65,7 +51,7 @@ const feedbackOnOurProject = [
     text2: indexLngObj[lng]['feedbackProject#14'],
   },
   {
-    img: Jason_King,
+    img: peopleImages.feedback.Jason_King,
     name: indexLngObj[lng]['feedbackProject#54'],
     position: indexLngObj[lng]['feedbackProject#55'],
     video: 'https://www.youtube.com/embed/MHQzECP7izc',
@@ -73,7 +59,7 @@ const feedbackOnOurProject = [
     text2: indexLngObj[lng]['feedbackProject#58'],
   },
   {
-    img: Bogdan_Fiedur,
+    img: peopleImages.feedback.Bogdan_Fiedur,
     name: indexLngObj[lng]['feedbackProject#49'],
     position: indexLngObj[lng]['feedbackProject#50'],
     video: 'https://www.youtube.com/embed/4kXgu60guic',
@@ -81,7 +67,7 @@ const feedbackOnOurProject = [
     text2: indexLngObj[lng]['feedbackProject#53'],
   },
   {
-    img: Graham_Doggart,
+    img: peopleImages.feedback.Graham_Doggart,
     name: indexLngObj[lng]['feedbackProject#41'],
     position: indexLngObj[lng]['feedbackProject#42'],
     video: 'https://www.youtube.com/embed/uXTA_QLympE',
@@ -89,7 +75,7 @@ const feedbackOnOurProject = [
     text2: indexLngObj[lng]['feedbackProject#45'],
   },
   {
-    img: Sadie_Hutton,
+    img: peopleImages.feedback.Sadie_Hutton,
     name: indexLngObj[lng]['feedbackProject#36'],
     position: indexLngObj[lng]['feedbackProject#37'],
     video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
@@ -125,8 +111,8 @@ class FeedbackProject extends React.Component {
               <hr />
             </div>
             <p>
-              {el.text}
-              <div className="citaty">{el.text2}</div>
+              <span>{el.text}</span>
+              <span className="citaty">{el.text2}</span>
             </p>
           </div>
         </div>

@@ -25,8 +25,8 @@ let urgentNewsData = [
 class UrgentNest extends React.Component {
   renderNews() {
     const resJsx = urgentNewsData
-      .map(curUrgent => (
-        <div className="itemUrgent">
+      .map((curUrgent, index) => (
+        <div className="itemUrgent" key={index}>
           <div className="childItem titleOne">{curUrgent.texts.title}</div>
           <div className="childItem readingTime">{curUrgent.texts.readingTime}</div>
           <div className="childItem mainThought">{curUrgent.texts.mainThought}</div>

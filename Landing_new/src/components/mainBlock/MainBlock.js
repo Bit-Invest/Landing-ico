@@ -33,8 +33,6 @@ const ROOT_CLASS = 'main-block';
 
 mailerlite.init(links.mailerlite.apiKey);
 
-console.log({mailerlite,x:mailerlite.subscribers.addToList});
-
 export class MainBlock extends React.Component {
   constructor() {
     super();

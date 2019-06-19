@@ -1038,7 +1038,6 @@ export class MediaNews extends React.Component {
 
   mapMedia = () => {
     return media.map((el, i) => {
-      console.log(el);
       const arrName = el.name.split(' ')
       const arrText = el.text.split(' ')
       let newName = ''
