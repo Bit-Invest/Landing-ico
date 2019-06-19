@@ -1,7 +1,9 @@
 import * as React from 'react';
 import './JoinTokenPreSale.css';
 import { lng } from '../../links'
-import indexLngObj from '../../lngs/index'
+import indexLngObj from '../../lngs/index';
+import mailerlite from 'mailerlite-js';
+
 import bitcointalk_icon from '../../media/bitcointalk_icon.png';
 import youtube_icon from '../../media/youtube_icon.png';
 import instagram_icon from '../../media/instagram_icon.png';
@@ -17,6 +19,8 @@ import { Join } from '../../links.js';
 import weibo_icon from '../../media/weibo_icon.png';
 import wechat_icon from '../../media/wechat_icon.png';
 import kakaotalk_icon from '../../media/kakaotalk_icon.png';
+
+mailerlite.init(links.mailerlite.apiKey);
 
 export class MailBlock extends React.Component {
   constructor() {
@@ -68,33 +72,24 @@ export class MailBlock extends React.Component {
       });
     }
 
-    fetch(`https://cindx.io/subscribe/?email=${email}&loc=en&clickid=default&loc=en&gaid=default`)
-      .then((response) => response.json())
-      .then((responseJson) => {
-        console.log(responseJson)
-        if(responseJson.status == 1 || responseJson.status == 2) {
-          this.setState({
-            submitStatus: 1,
-            submitStatusText: indexLngObj[lng]['mailForm#3']
-          });
-        } else if (responseJson.status == 0) {
-          this.setState({
-            submitStatus: 2,
-            submitStatusText: indexLngObj[lng]['mailForm#4']
-          });
-
-          setTimeout(()=>{
-            window.location.href = links.mvp;
-          }, 1000);
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-        this.setState({
-          submitStatus: 3,
-          submitStatusText: indexLngObj[lng]['mailForm#5']
+    mailerlite.subscribers.addToList(links.mailerlite.listId, email, (status, res) => {
+      console.log({status, res});
+      if (!res.email) {
+        return this.setState({
+          submitStatus: 1,
+          submitStatusText: indexLngObj[lng]['mailForm#3']
         });
-      });
+      }
+
+      this.setState({
+        submitStatus: 2,
+        submitStatusText: indexLngObj[lng]['mailForm#4']
+      });     
+
+      setTimeout(()=>{
+        window.location.href = links.mvp;
+      }, 2000); 
+    });
   }
 
   render() {

@@ -74,6 +74,10 @@ export const links = {
     marketAnalytics2: 'https://brokernotes.co/wp-content/uploads/2017/08/BN-research-report_2018-FINAL.pdf',
     marketAnalytics3: 'Coinmarketcap.com',
   },
+  mailerlite: {
+    listId: '38481354',
+    apiKey: '4f96a1e85041bdb86cc489624b49c534',
+  },
 };
 
 /*

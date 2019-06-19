@@ -2,8 +2,10 @@ import * as React from 'react';
 import { MailForm } from '@components/mailForm';
 import { IcoInfo } from './icoInfo';
 import './MainBlock.css';
-import { lng } from '../../links'
+import { lng } from '../../links';
 import indexLngObj from '../../lngs/index';
+
+import mailerlite from 'mailerlite-js';
 
 import Asean_Prize from '@images/ASEAN_s.c45f4b3a.png';
 import BB_S_Prize from '@images/BB_S.8027238f.png';
@@ -28,6 +30,10 @@ import qr_code from '../../images/qr_code.jpg';
 import Doc_icon from '@images/Doc_icon2.png';
 
 const ROOT_CLASS = 'main-block';
+
+mailerlite.init(links.mailerlite.apiKey);
+
+console.log({mailerlite,x:mailerlite.subscribers.addToList});
 
 export class MainBlock extends React.Component {
   constructor() {
@@ -79,33 +85,20 @@ export class MainBlock extends React.Component {
       });
     }
 
-    fetch(`https://cindx.io/subscribe/?email=${email}&loc=en&clickid=default&loc=en&gaid=default`)
-      .then((response) => response.json())
-      .then((responseJson) => {
-        console.log(responseJson)
-        if(responseJson.status == 1 || responseJson.status == 2) {
-          this.setState({
-            submitStatus: 1,
-            submitStatusText: indexLngObj[lng]['mailForm#3']
-          });
-        } else if (responseJson.status == 0) {
-          this.setState({
-            submitStatus: 2,
-            submitStatusText: indexLngObj[lng]['mailForm#4']
-          });
-
-          setTimeout(()=>{
-            window.location.href = links.mvp;
-          }, 1000);
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-        this.setState({
-          submitStatus: 3,
-          submitStatusText: indexLngObj[lng]['mailForm#5']
+    mailerlite.subscribers.addToList(links.mailerlite.listId, email, (status, res) => {
+      console.log({status, res});
+      if (!res.email) {
+        return this.setState({
+          submitStatus: 1,
+          submitStatusText: indexLngObj[lng]['mailForm#3']
         });
-      });
+      }
+
+      this.setState({
+        submitStatus: 2,
+        submitStatusText: indexLngObj[lng]['mailForm#4']
+      });   
+    });
   }
 
   renderQrCode = (atopClass) => lng === 'zn' ? (
