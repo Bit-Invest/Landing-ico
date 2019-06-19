@@ -188,7 +188,7 @@ export class MainBlock extends React.Component {
                   </a>
                   <a target="_blank" href={links.soc.telegram} className="g_soc">
                     <img alt="telegram link" className="icon" src={telegram_icon} />
-                    <span>10k +</span>
+                    <span>13k +</span>
                   </a>
                 </div>
               </div>

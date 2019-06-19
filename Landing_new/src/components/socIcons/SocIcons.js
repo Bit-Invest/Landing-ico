@@ -62,7 +62,7 @@ export class SocIcons extends React.Component {
             </a>
             <a target="_blank" className="item" href={links.soc.telegram}>
               <img className="img_2" src={telegram_icon_white} alt="CINDX"/>
-              <span>10k +</span>
+              <span>13k +</span>
             </a>
           </div>
         </div>
