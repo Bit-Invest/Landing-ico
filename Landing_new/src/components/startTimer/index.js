@@ -1,5 +1,7 @@
 import React from 'react';
 
+import BitForexIcon from '../../media/BitForex.png';
+
 import './style.css';
 
 export default class StartTimer extends React.Component {
@@ -7,7 +9,7 @@ export default class StartTimer extends React.Component {
     super();
 
     this.state = {
-      restTime: '0D:0Р:0M:0S',
+      restTime: '0D:0H:0M:0S',
     };
   }
 
@@ -39,8 +41,24 @@ export default class StartTimer extends React.Component {
     let restMinutes = Math.floor(restTime / 1000 / 60) - ((restDays * 24 * 60) + (restHours * 60)); 
     let restSeconds = Math.floor(restTime / 1000) - ((restDays * 24 * 60 * 60) + (restHours * 60 * 60) + (restMinutes * 60)); 
 
+    if ((`${restDays}`).length === 1) {
+      restDays = `0${restDays}`;
+    }
+
+    if ((`${restHours}`).length === 1) {
+      restHours = `0${restHours}`;
+    }
+
+    if ((`${restMinutes}`).length === 1) {
+      restMinutes = `0${restMinutes}`;
+    }
+
+    if ((`${restSeconds}`).length === 1) {
+      restSeconds = `0${restSeconds}`;
+    }
+
     this.setState({
-      restTime: `${restDays}D:${restHours}P:${restMinutes}M:${restSeconds}S`,
+      restTime: `${restDays}D:${restHours}H:${restMinutes}M:${restSeconds}S`,
     });
   }
 
@@ -48,7 +66,17 @@ export default class StartTimer extends React.Component {
 		return(
 			<div className="startTimer">
         <div className="size content">
-          <div className="titleText">{this.state.restTime} left until the start of the Pre-IEO on Bitforex. Hurry up, the sale lasts for only 1 hour.</div>
+          <div className="titleText">
+            <div className="firstText">
+              <span>1h only CINDX Pre-IEO on</span> 
+              <span>
+                <img alt="" className="logoIcon" src={BitForexIcon} /> 
+                <span>Bitforex</span>
+              </span> 
+              <span>&#8194; starts in</span>              
+            </div>
+            <div className="timerText">{this.state.restTime}</div>
+          </div>
         </div>
       </div>
 		);
