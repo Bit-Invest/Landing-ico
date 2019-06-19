@@ -20,6 +20,14 @@ let urgentNewsData = [
     },
     linkMore: 'https://medium.com/cindx/cindx-token-benefits-for-token-holders-d3228205117c',
   },
+  {
+    texts: {
+      title: 'CINDX FAQ',
+      readingTime: '6 MIN READ',
+      mainThought: 'Frequently Asked Questions About CINDX',
+    },
+    linkMore: 'https://medium.com/cindx/frequently-asked-questions-about-cindx-692cae405d6',
+  },
 ];
 
 class UrgentNest extends React.Component {
