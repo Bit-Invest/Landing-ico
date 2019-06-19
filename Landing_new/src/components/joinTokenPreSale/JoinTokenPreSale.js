@@ -87,7 +87,7 @@ export class MailBlock extends React.Component {
       });     
 
       setTimeout(()=>{
-        window.location.href = links.mvp;
+        window.open(links.mvp);
       }, 2000); 
     });
   }
