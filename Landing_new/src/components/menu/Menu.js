@@ -9,8 +9,9 @@ import { links, lng, list_lngs, ab_val } from '../../links';
 import indexLngObj from '../../lngs/index';
 import flags from './objFlags';
 
-import './Menu.css';
+import StartTimer from '../startTimer/';
 
+import './Menu.css';
 
 class Menu extends React.Component {
   constructor(props){
@@ -161,52 +162,55 @@ class Menu extends React.Component {
 
   render() {
     return (
-      <div className="menu">
-        <div className="container-menu">
-          <a href="#top"><img className="logo" src={logo} alt={"CINDX"}/></a>
-          <div className="menu-item">
-            <a href="#product" className="item">{ indexLngObj[lng]['menu#7'] }</a>
-            <a href="#team" className="item">{ indexLngObj[lng]['menu#9'] }</a>
-            <div
-              onMouseLeave={this.closePublicDocs}
-              onMouseMove={this.openPublicDocs}
-              className="drop-down"
-            >
-              <a className="item">{ indexLngObj[lng]['menu#10'] }</a>
-              <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
-              <div className="publickOnMouseLeave"></div>
-              {this.renderPublicDocs()}
+      <div className="headeFixed">
+        <StartTimer />
+        <div className="menu">
+          <div className="container-menu">
+            <a href="#top"><img className="logo" src={logo} alt={"CINDX"}/></a>
+            <div className="menu-item">
+              <a href="#product" className="item">{ indexLngObj[lng]['menu#7'] }</a>
+              <a href="#team" className="item">{ indexLngObj[lng]['menu#9'] }</a>
+              <div
+                onMouseLeave={this.closePublicDocs}
+                onMouseMove={this.openPublicDocs}
+                className="drop-down"
+              >
+                <a className="item">{ indexLngObj[lng]['menu#10'] }</a>
+                <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
+                <div className="publickOnMouseLeave"></div>
+                {this.renderPublicDocs()}
+              </div>
+              <a className="btn" target='_blank' href={links.mvp}>{ indexLngObj[lng]['menu#11'] }</a>
+              <a className="btn" target="_blank" href={links.wp}>White Paper</a>
+              <a className="btn" target="_blank" href={links.op}>One Pager</a>
+              <a className="btn" target="_blank" href={links.medium}>Blog</a>
+              <div
+                onMouseLeave={this.closeLanguage}
+                onMouseMove={this.openLanguage}
+                className="drop-down"
+              >
+                <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
+                <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
+                <div className="publickOnMouseLeave"></div>
+                {this.renderLanguage()}
+              </div>
             </div>
-            <a className="btn" target='_blank' href={links.mvp}>{ indexLngObj[lng]['menu#11'] }</a>
-            <a className="btn" target="_blank" href={links.wp}>White Paper</a>
-            <a className="btn" target="_blank" href={links.op}>One Pager</a>
-            <a className="btn" target="_blank" href={links.medium}>Blog</a>
-            <div
-              onMouseLeave={this.closeLanguage}
-              onMouseMove={this.openLanguage}
-              className="drop-down"
-            >
-              <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
-              <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
-              <div className="publickOnMouseLeave"></div>
-              {this.renderLanguage()}
+            <div className="menu-768px">
+              <div
+                onMouseLeave={this.closeLanguage}
+                onMouseMove={this.openLanguage}
+                className="drop-down"
+              >
+                <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
+                <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
+                <div className="publickOnMouseLeave"></div>
+                {this.renderLanguage()}
+              </div>
+              <a onClick={this.openMenu} className="menu-item-burger">
+                <img className="menu-icon" src={menu} alt={"CINDX"}/>
+              </a>
+              {this.renderMenu()}
             </div>
-          </div>
-          <div className="menu-768px">
-            <div
-              onMouseLeave={this.closeLanguage}
-              onMouseMove={this.openLanguage}
-              className="drop-down"
-            >
-              <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
-              <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
-              <div className="publickOnMouseLeave"></div>
-              {this.renderLanguage()}
-            </div>
-            <a onClick={this.openMenu} className="menu-item-burger">
-              <img className="menu-icon" src={menu} alt={"CINDX"}/>
-            </a>
-            {this.renderMenu()}
           </div>
         </div>
       </div>
