@@ -383,7 +383,7 @@ export class RoadsShow extends React.Component {
                     <p className="noClickDetails">Details</p>
                   )
                 }
-                <p className="dateInfo">Date: {el.date}</p>
+                <p className="dateInfo">{el.date}</p>
                 <div className={`statusEvent ${el.status.toUpperCase()}`}>{el.status}</div>
               </div>
             </div>

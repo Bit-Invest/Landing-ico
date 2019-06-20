@@ -101,6 +101,7 @@ import IMG_1205 from '../../media/IMG_1205.png';
 import IMG_1206 from '../../media/IMG_1206.png';
 import IMG_1207 from '../../media/IMG_1207.png';
 import IMG_1208 from '../../media/IMG_1208.png';
+import IMG_1225 from '../../media/IMG_1225.png';
 
 import './MediaNews.css';
 
@@ -940,6 +941,15 @@ Read our Review about Singapore’s blockchain industry and hurry up to join the
     source: 'www.medium.com',
     centered: true
   },
+  {
+    urlLink: 'https://medium.com/cindx/frequently-asked-questions-about-cindx-692cae405d6',
+    screen: IMG_1225,
+    date: '06.19.2019',
+    name: 'Frequently Asked Questions About CINDX',
+    text: 'The CINDX project is complex and revolutionary in many ways. That is why we are releasing a comprehensive FAQ to help understand the project better.',
+    source: 'www.medium.com',
+    centered: true
+  },
 ]; 
 
 const getBeautifulDate = (date) => {
@@ -1012,7 +1022,7 @@ export class MediaNews extends React.Component {
                 <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
                 <div className="clear" />
                 <p className="textContent">{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
-                <p className="dateInfo">Date: {el.date}</p>
+                <p className="dateInfo">{el.date}</p>
                 <p className="details">Details</p>
               </div>
             </div>
@@ -1054,7 +1064,7 @@ export class MediaNews extends React.Component {
               </div>
               <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
               <p className="textContent">{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
-              <p className="dateInfo">Date: {el.date}</p>
+              <p className="dateInfo">{el.date}</p>
               <p className="details">Details</p>
             </div>
           </a>
