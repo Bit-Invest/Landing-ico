@@ -150,7 +150,6 @@ class CryptoAssetsManagement extends React.Component {
       const animation0 = this.state.isChange && i === 0 ? 'problemBlock__slide-animation-1' : ''
       const animation1 = this.state.isChange && i === 1 ? 'problemBlock__slide-animation-0' : ''
       const animation2 = this.state.isChange && i === 2 ? 'problemBlock__slide-animation-2' : ''
-      const startSlide = this.state.isDefault ? 0 : 1
 
       return (
         <div className={`problemBlock__slide problemBlock__slide-${i} ${animation0} ${animation1} ${animation2}`} key={i}>
@@ -227,7 +226,7 @@ class CryptoAssetsManagement extends React.Component {
       return (
         <div className="problemBlock__wrapper-problem" key={i}>
           <div className="problemBlock__wrapper-img">
-            <img src={el.mobileSrc} />
+            <img alt="" src={el.mobileSrc} />
           </div>
           <div className="problemBlock">
             <div className="txt">
@@ -295,8 +294,6 @@ class CryptoAssetsManagement extends React.Component {
   }
 
   render() {
-    const { props } = this;
-
     const settings = {
       arrows: false,
       lazyLoad: true,

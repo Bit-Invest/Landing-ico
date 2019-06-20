@@ -1,4 +1,3 @@
-//import mountain_new23 from 'https://cindx.io/https://cindx.io/media/mountain_new23.70fbb83c.svg';
 import star_moun from '../../images/5b05238fabbf26c7e7a31cdb_stars_mount.svg';
 import mouns from '../../images/mountain_new23.70fbb83c.svg';
 import sun from '../../images/Sun.svg';
@@ -8,7 +7,6 @@ import guy_gif from '../../media/Guy.f182b798.gif';
 
 var resizeFunc = (function() {
   var pen = 0;
-  var ram_scroll;
 
   var rfbcue;
   var rfbcue_top;
@@ -79,6 +77,8 @@ var resizeFunc = (function() {
           break;
         case 'html-image':
           htmlImgDraw(e);
+          break;
+        default: 
           break;
       }
     })
@@ -418,7 +418,7 @@ var resizeFunc = (function() {
   var loaded_files = 0;
 
   loaded_canvas = function() {
-    if(++loaded_files==5){
+    if(++loaded_files === 5){
       $canvas.width = sizesCanvas[0];
       $canvas.height = sizesCanvas[1];
     }
@@ -435,6 +435,8 @@ var resizeFunc = (function() {
           break;
         case 'html-image':
           drawHtmlImage(e1, index);
+          break;
+        default:
           break;
       }
     })
@@ -496,10 +498,9 @@ var resizeFunc = (function() {
 
   function drawData(type, key, post) {
     var v;
-    let ram = [];
     var $scrolls = animatesBlock[key].scroll;
     $scrolls.forEach(function(e, i) {
-      if (e.type == type && e.start <= post) {
+      if (e.type === type && e.start <= post) {
         v = e.end < post ? e.valueEnd : ((e.valueEnd - e.valueStart) / 100) * ((e.end - e.start) - (e.end - post)) / ((e.end - e.start) / 100) + e.valueStart;
       }
     });
@@ -527,7 +528,7 @@ var resizeFunc = (function() {
       }
 
       var vh = window.innerHeight;
-      var th_scroll = window.scrollY == 0 ? 1 : window.scrollY;
+      var th_scroll = window.scrollY === 0 ? 1 : window.scrollY;
 
       pen = (4000/((rfbcue_top-vh)/(th_scroll)));
 

@@ -26,12 +26,12 @@ export const ab_val = window.localStorage.getItem('ab_val');
 export const list_lngs = linkSearch.loc === 'ko' ? 'en ko zn' : 'en zn';
 const user_lng = linkSearch.loc || window.localStorage.getItem('loc') || navigator.language || 'en';
 const user_loc = user_lng.split('_')[0].split('-')[0];
-const loc = ((list_lngs.indexOf(user_loc) != -1) ? user_loc : 'en');
+const loc = ((list_lngs.indexOf(user_loc) !== -1) ? user_loc : 'en');
 
 export const lng = loc;
 
 const list_hasDocs = 'en'; //тут языки на которые есть доки
-const doc_forUser = ((list_hasDocs.indexOf(loc) != -1) ? loc : 'en');
+const doc_forUser = ((list_hasDocs.indexOf(loc) !== -1) ? loc : 'en');
 
 const docs = {
   wp: `https://static.cindx.io/${doc_forUser}/whitepaper.pdf`,
@@ -47,14 +47,14 @@ export const links = {
   // anchor: '3',
   anchor: '4',
   mvp: `http://live.cindx.io/registration/sign-in?loc=${lng}`,
-  joinpresale: 'https://my.cindx.io/registration' + `?clickid=${clickid}`,
+  joinpresale: `https://my.cindx.io/registration?clickid=${clickid}`,
   wp: docs.wp,
   pr: docs.pr,
   op: docs.op,
   fm: docs.fm,
   ld: docs.ld,
   medium: 'https://medium.com/cindx',
-  buytokens: 'https://my.cindx.io/registration' + `?clickid=${clickid}`,
+  buytokens: `https://my.cindx.io/registration?clickid=${clickid}`,
   lD: 'https://static.cindx.io/Legal_Disclaimer.pdf',
   pp: 'https://static.cindx.io/Privacy_Policy.pdf',
   gaid: getGAID,

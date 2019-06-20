@@ -100,11 +100,6 @@ export class MainBlock extends React.Component {
   ) : null;
 
   render() {
-    const {
-      submitStatus,
-      submitStatusText
-    } = this.state;
-
     return(
       <div className={ROOT_CLASS} id="top">
         <div className={`size ${ROOT_CLASS}__content`}>
@@ -121,13 +116,13 @@ export class MainBlock extends React.Component {
             </div>
             <div className={`${ROOT_CLASS}__cont`}>
               <div className={`${ROOT_CLASS}__formStarted`}>
-                <a className="button_send" href={links.mvp} target="_blank">{indexLngObj[lng]['mailForm#33']}</a>
+                <a className="button_send" href={links.mvp} target="_blank" rel="noopener noreferrer">{indexLngObj[lng]['mailForm#33']}</a>
               </div>
               <div className={`${ROOT_CLASS}__prizes`}>
-                <a target="_blank" href="https://medium.com/cindx/1st-place-in-the-pitch-competition-at-asean-digital-342dfb0ee61">
+                <a target="_blank" rel="noopener noreferrer" href="https://medium.com/cindx/1st-place-in-the-pitch-competition-at-asean-digital-342dfb0ee61">
                   <img alt="Asean_Prize" src={Asean_Prize} />
                 </a>
-                <a target="_blank" href="https://medium.com/cindx/borderless-blockchain-technology-summit-924a40a1f43e">
+                <a target="_blank" rel="noopener noreferrer" href="https://medium.com/cindx/borderless-blockchain-technology-summit-924a40a1f43e">
                   <img alt="BB_S_Prize" src={BB_S_Prize} />
                 </a>
               </div>
@@ -153,36 +148,36 @@ export class MainBlock extends React.Component {
               <MailForm />
               <div className="icons_wrapper">
                 <div className="icon_block">
-                  <a target="_blank" href={links.soc.youtube}>
+                  <a target="_blank" rel="noopener noreferrer" href={links.soc.youtube}>
                     <img alt="youtube link" className="icon" src={youtube_icon} />
                   </a>
-                  <a target="_blank" href={links.soc.instagram}>
+                  <a target="_blank" rel="noopener noreferrer" href={links.soc.instagram}>
                     <img alt="instagram link" className="icon" src={instagram_icon} />
                   </a>
-                  <a target="_blank" href={links.soc.reddit}>
+                  <a target="_blank" rel="noopener noreferrer" href={links.soc.reddit}>
                     <img alt="reddit link" className="icon" src={reddit_icon} />
                   </a>
-                  <a target="_blank" href={links.soc.twitter}>
+                  <a target="_blank" rel="noopener noreferrer" href={links.soc.twitter}>
                     <img alt="twitter link" className="icon" src={twitter_icon} />
                   </a>
-                  <a target="_blank" href={links.soc.facebook}>
+                  <a target="_blank" rel="noopener noreferrer" href={links.soc.facebook}>
                     <img alt="facebook link" className="icon" src={facebook_icon} />
                   </a>
                   {
                     lng === 'zn' ? (
-                      <a target="_blank" href={links.soc.wb}>
+                      <a target="_blank" rel="noopener noreferrer" href={links.soc.wb}>
                         <img alt="wb link" className="icon" src={WB_icon} />
                       </a>
                     ) : (
-                      <a target="_blank" href={links.soc.medium}>
+                      <a target="_blank" rel="noopener noreferrer" href={links.soc.medium}>
                         <img alt="medium link" className="icon" src={medium_icon} />
                       </a>
                     )
                   }
-                  <a target="_blank" href={links.soc.linkedin}>
+                  <a target="_blank" rel="noopener noreferrer" href={links.soc.linkedin}>
                     <img alt="linkedin link" className="icon" src={linkedin_icon} />
                   </a>
-                  <a target="_blank" href={links.soc.telegram} className="g_soc">
+                  <a target="_blank" rel="noopener noreferrer" href={links.soc.telegram} className="g_soc">
                     <img alt="telegram link" className="icon" src={telegram_icon} />
                     <span>13k +</span>
                   </a>

@@ -63,12 +63,12 @@ export class MvpBlock extends React.Component {
       .then((response) => response.json())
       .then((responseJson) => {
         console.log(responseJson)
-        if(responseJson.status == 1 || responseJson.status == 2) {
+        if(responseJson.status === 1 || responseJson.status === 2) {
           this.setState({
             submitStatus: 1,
             submitStatusText: indexLngObj[lng]['mailForm#3']
           });
-        } else if (responseJson.status == 0) {
+        } else if (responseJson.status === 0) {
           this.setState({
             submitStatus: 2,
             submitStatusText: indexLngObj[lng]['mailForm#4']
@@ -89,11 +89,6 @@ export class MvpBlock extends React.Component {
   }
 
   render() {
-    const {
-      submitStatus,
-      submitStatusText
-    } = this.state;
-
     return(
     	<div className={`${ROOT_CLASS}`}>
         <div className="size">
@@ -101,48 +96,20 @@ export class MvpBlock extends React.Component {
       		<div className={`${ROOT_CLASS}-container`}>
   	    		<div className={`${ROOT_CLASS}-container-two`}>
   	    			<div className={`${ROOT_CLASS}-screeImg`}>
-  	    				<img src={SU} />
+  	    				<img alt="" src={SU} />
   	    			</div>
   	    			<div className={`${ROOT_CLASS}-formBlock`}>
   	    				<div className={`${ROOT_CLASS}-content`}>
   	    					<div className={`${ROOT_CLASS}-title`}>{indexLngObj[lng]['mvpBlock#2']}</div>
                   <div className={`${ROOT_CLASS}-adjustments`}>
                     <a className="btn" href={links.mvp} target="_blank">{indexLngObj[lng]['mvpBlock#3']}</a>
-  		    					<img src={Adjustments} />
+  		    					<img alt="" src={Adjustments} />
   		    				</div>
   	    				</div>
   	    			</div>
   	    		</div>
           </div>
     		</div>
-    		{
-	      	/*
-	      	<div className={ROOT_CLASS} id="top">
-	        <div className={`${ROOT_CLASS}__content`}>
-	          <div className={`${ROOT_CLASS}__container-1`}>
-	            <div className={`${ROOT_CLASS}__cont`}>
-	              <div className={`${ROOT_CLASS}__formStarted`}>
-	                <input type="text" placeholder="EMAIL" onChange={this.onChange} />
-	                <div className="button_send" onClick={this.sendSubcribe} >Get started</div>
-	                {
-	                  submitStatus !== 4 ?
-	                    <div
-	                      className={`${ROOT_CLASS}__textStatus ${
-	                        (submitStatus === 0 || submitStatus ===1) ? "error" :
-	                          (submitStatus === 3) ? "loading" :
-	                            (submitStatus === 2) ? "success" : null
-	                      }
-	                      `}>
-	                        {submitStatusText}
-	                    </div> : null
-	                }
-	              </div>
-	            </div>
-	          </div>
-	        </div>
-	      	</div>
-	      	*/
-	    	}
     	</div>
     );
   }

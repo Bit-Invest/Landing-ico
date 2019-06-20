@@ -1,82 +1,84 @@
-@font-face {
-    font-family: 'Geometria';
-    src: url('./fonts/Geometria-Bold.woff2') format('woff2'),
-        url('./fonts/Geometria-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap');
 
-@font-face {
-    font-family: 'Geometria';
-    src: url('./fonts/Geometria-Heavy.woff2') format('woff2'),
-        url('./fonts/Geometria-Heavy.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('./fonts/Geometria-ExtraLightItalic.woff2') format('woff2'),
-        url('./fonts/Geometria-ExtraLightItalic.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('./fonts/Geometria-Light.woff2') format('woff2'),
-        url('./fonts/Geometria-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('./fonts/Geometria-Medium.woff2') format('woff2'),
-        url('./fonts/Geometria-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('./fonts/Geometria.woff2') format('woff2'),
-        url('./fonts/Geometria.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('./fonts/Geometria-ExtraBold.woff2') format('woff2'),
-        url('./fonts/Geometria-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('./fonts/Geometria-ExtraLight.woff2') format('woff2'),
-        url('./fonts/Geometria-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Geometria';
-    src: url('./fonts/Geometria-MediumItalic.woff2') format('woff2'),
-        url('./fonts/Geometria-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-}
-
-*
-{
+/*@font-face {
   font-family: 'Geometria';
+  src: url('./fonts/Geometria-Bold.woff2') format('woff2'),
+      url('./fonts/Geometria-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./fonts/Geometria-Heavy.woff2') format('woff2'),
+      url('./fonts/Geometria-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./fonts/Geometria-ExtraLightItalic.woff2') format('woff2'),
+      url('./fonts/Geometria-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./fonts/Geometria-Light.woff2') format('woff2'),
+      url('./fonts/Geometria-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./fonts/Geometria-Medium.woff2') format('woff2'),
+      url('./fonts/Geometria-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./fonts/Geometria.woff2') format('woff2'),
+      url('./fonts/Geometria.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./fonts/Geometria-ExtraBold.woff2') format('woff2'),
+      url('./fonts/Geometria-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./fonts/Geometria-ExtraLight.woff2') format('woff2'),
+      url('./fonts/Geometria-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./fonts/Geometria-MediumItalic.woff2') format('woff2'),
+      url('./fonts/Geometria-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}*/
+
+* {
+  font-family: 'Quicksand';
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
 }
+
 .contentText {
   position: relative;
   margin-bottom: -15%;
@@ -88,13 +90,7 @@
   max-width: 1440px;
 }
 
-/* .container {
-  width: 100%;
-  margin: 0 auto;
-} */
-
 .container2 {
-  /* width: 100%; */
   margin: 0 auto;
 }
 

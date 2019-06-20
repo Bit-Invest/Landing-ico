@@ -174,10 +174,6 @@ let dataRoadShow = [{
     img: Singapore19_09,
     src: 'https://www.coindesk.com/events/consensus-singapore-2018/'
   },
-  report: {
-    text: '',
-    link: ''
-  },
   text: 'Consensus: Singapore will feature 75+ speakers and 50+ sponsors across 2 days of powerful insights, industry announcements, and cross-industry networking opportunities.'
 }, 
 {
@@ -415,21 +411,6 @@ export class RoadsShow extends React.Component {
         this.setState({ isLinkAccess: true })
       }
     };
-    const settingsNews = {
-      arrows: true,
-      swipeToSlide: true,
-      lazyLoad: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      beforeChange: () => {
-        this.setState({ isLinkAccess: false })
-      },
-      afterChange: () => {
-        this.setState({ isLinkAccess: true })
-      }
-    };
     const settings2 = {
       arrows: true,
       infinite: true,
@@ -445,31 +426,7 @@ export class RoadsShow extends React.Component {
         this.setState({ isLinkAccess: true })
       }
     };
-    const settingsNews2 = {
-      arrows: true,
-      infinite: true,
-      lazyLoad: true,
-      swipeToSlide: true,
-      speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 3,
-      beforeChange: () => {
-        this.setState({ isLinkAccess: false })
-      },
-      afterChange: () => {
-        this.setState({ isLinkAccess: true })
-      }
-    };
     const settings3 = {
-      arrows: true,
-      infinite: true,
-      swipeToSlide: true,
-      lazyLoad: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 3,
-    };
-    const settingsNews3 = {
       arrows: true,
       infinite: true,
       swipeToSlide: true,
