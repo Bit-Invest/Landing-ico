@@ -135,6 +135,7 @@
   background-color: white;
   flex-direction: column;
   box-shadow: 0 0 40px black;
+  min-width: 150px;
 }
 .menu .trPublicDocs {
   right: 380px;

@@ -66,21 +66,23 @@ export default class StartTimer extends React.Component {
 
 	render() {
 		return(
-			<div className="startTimer">
-        <div className="size content">
-          <div className="titleText">
-            <div className="firstText">
-              <span>{indexLngObj[lng]['headerTimer#1']}</span> 
-              <span>
-                <img alt="" className="logoIcon" src={BitForexIcon} /> 
-                <span>{indexLngObj[lng]['headerTimer#6']}</span>
-              </span> 
-              <span>&#8194;starts in&#8194;</span>              
+			<a target="_blanl" rel="noopener noreferrer" href={indexLngObj[lng]['link#1_bitforex']}>
+        <div className="startTimer">
+            <div className="size content">
+              <div className="titleText">
+                <div className="firstText">
+                  <span>{indexLngObj[lng]['headerTimer#1']}</span> 
+                  <span>
+                    <img alt="" className="logoIcon" src={BitForexIcon} /> 
+                    <span>{indexLngObj[lng]['headerTimer#6']}</span>
+                  </span> 
+                  <span>&#8194;starts in&#8194;</span>              
+                </div>
+                <div className="timerText">{this.state.restTime}</div>
+              </div>
             </div>
-            <div className="timerText">{this.state.restTime}</div>
-          </div>
         </div>
-      </div>
+      </a>
 		);
 	}
 };

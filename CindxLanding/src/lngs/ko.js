@@ -711,6 +711,7 @@ const ko = {
     'mvpBlock#13': '',
     'mvpBlock#14': '',
 
-}
+    'link#1_bitforex': 'https://support.bitforex.com/hc/en-us/articles/360029703651',
+};
 
-export default ko
+export default ko;

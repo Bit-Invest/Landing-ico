@@ -710,6 +710,8 @@ const zn = {
     'mvpBlock#12': '',
     'mvpBlock#13': '',
     'mvpBlock#14': '',
+
+    'link#1_bitforex': 'https://support.bitforex.com/hc/zh-cn/articles/360029703651-CINDX-CINXO-全球认购-即将开放',
 }
 
 export default zn;

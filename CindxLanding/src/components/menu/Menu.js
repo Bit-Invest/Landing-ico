@@ -62,7 +62,7 @@ class Menu extends React.Component {
     let { publicDocs } = this.state;
     if (publicDocs) {
       return (
-        <div onMouseLeave={this.closePublicDocs} className={`publicDocs ${lng === 'tr' || lng === 'es' || lng === 'de' || lng === 'ar' ? 'trPublicDocs' : null}`}>
+        <div onMouseLeave={this.openPublicDocs} className={`publicDocs ${lng === 'tr' || lng === 'es' || lng === 'de' || lng === 'ar' ? 'trPublicDocs' : null}`}>
           <div className="show-publicDocs">
             <div className="doc_icon" onClick={this.openPopup}></div>
             <a target="_blank" onClick={this.openPopup} href={links.wp} className="itemMini2">{ indexLngObj[lng]['menu#1'] }</a>
@@ -171,7 +171,7 @@ class Menu extends React.Component {
               <a href="#product" className="item">{ indexLngObj[lng]['menu#7'] }</a>
               <a href="#team" className="item">{ indexLngObj[lng]['menu#9'] }</a>
               <div
-                onMouseLeave={this.closePublicDocs}
+                onMouseLeave={this.openPublicDocs}
                 onMouseMove={this.openPublicDocs}
                 className="drop-down"
               >

@@ -710,7 +710,9 @@ const en = {
     'mvpBlock#12': '',
     'mvpBlock#13': '',
     'mvpBlock#14': '',
-    
-}
 
-export default en
+    'link#1_bitforex': 'https://support.bitforex.com/hc/en-us/articles/360029703651',
+};
+
+export default en;
+
