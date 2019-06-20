@@ -152,11 +152,6 @@ class Menu extends React.Component {
           <a className="itemMini" target="_blank" href={links.wp}>White Paper</a>
           <a className="itemMini" target="_blank" href={links.op}>One Pager</a>
           <a className="itemMini" target="_blank" href={links.medium}>Blog</a>
-          <div onClick={this.clickLanguage} className="drop-down">
-            <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
-            <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
-          </div>
-          {this.renderLanguage(lng)}
         </div>
       )
     } else {
@@ -186,20 +181,28 @@ class Menu extends React.Component {
             <a className="btn" target="_blank" href={links.wp}>White Paper</a>
             <a className="btn" target="_blank" href={links.op}>One Pager</a>
             <a className="btn" target="_blank" href={links.medium}>Blog</a>
-            {
-              <div
-                onMouseLeave={this.closeLanguage}
-                onMouseMove={this.openLanguage}
-                className="drop-down"
-              >
-                <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
-                <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
-                <div className="publickOnMouseLeave"></div>
-                {this.renderLanguage()}
-              </div>
-            }
+            <div
+              onMouseLeave={this.closeLanguage}
+              onMouseMove={this.openLanguage}
+              className="drop-down"
+            >
+              <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
+              <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
+              <div className="publickOnMouseLeave"></div>
+              {this.renderLanguage()}
+            </div>
           </div>
           <div className="menu-768px">
+            <div
+              onMouseLeave={this.closeLanguage}
+              onMouseMove={this.openLanguage}
+              className="drop-down"
+            >
+              <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
+              <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
+              <div className="publickOnMouseLeave"></div>
+              {this.renderLanguage()}
+            </div>
             <a onClick={this.openMenu} className="menu-item-burger">
               <img className="menu-icon" src={menu} alt={"CINDX"}/>
             </a>
