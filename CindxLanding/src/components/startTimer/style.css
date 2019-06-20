@@ -1,0 +1,45 @@
+.startTimer {
+  background: #bc77e4;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  color: white;
+}
+
+.startTimer .content {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.startTimer .content .titleText {
+  font-size: 22px;
+  text-align: center;
+  line-height: 30px;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.startTimer .content .titleText .firstText {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.startTimer .content .titleText .firstText > span {
+  display: inline-flex;
+}
+
+.startTimer .content .titleText .firstText .logoIcon {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.startTimer .content .titleText .timerText {
+  display: flex;
+  justify-content: center;
+}
