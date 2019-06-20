@@ -28,7 +28,7 @@
 }
 
 .main-block__content {
-  padding: 230px 40px 0!important;
+  padding: 180px 40px 0!important;
 }
 
 .main-block .icons_wrapper .icon_block img {
@@ -72,7 +72,6 @@
   padding-top: 0px;
   margin: 0 auto;
   width: 620px;
-  font-family: Geometria;
   font-size: 32px;
   font-weight: bold;
   font-style: normal;
@@ -170,6 +169,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 180px 40px 0!important;
   }
   .main-block__ico-info-m {
     display: none;
@@ -209,6 +209,7 @@
   .main-block__content {
     max-width: 500px;
     margin: 0 auto;
+    padding: 200px 40px 0!important;
   }
   .main-block__header {
     margin: 0 auto;
@@ -261,6 +262,12 @@
   .main-block .qr_code.mobile {
     display: flex;
   } 
+}
+
+@media screen and (max-width: 500px) {
+  .main-block__content {
+    padding: 250px 40px 0!important;
+  }
 }
 
 
