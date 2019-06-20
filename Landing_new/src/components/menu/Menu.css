@@ -276,5 +276,6 @@
   .menu .language {
     right: auto;
     top: 65px;
+    z-index: 2;
   }
 }
