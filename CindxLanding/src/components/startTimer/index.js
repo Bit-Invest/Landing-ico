@@ -11,7 +11,7 @@ export default class StartTimer extends React.Component {
     super();
 
     this.state = {
-      restTime: '0D:0H:0M:0S',
+      restTime: '0d : 0h : 0m',
     };
   }
 
