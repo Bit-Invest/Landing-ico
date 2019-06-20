@@ -2,7 +2,7 @@ import star_moun from '../../images/5b05238fabbf26c7e7a31cdb_stars_mount.svg';
 import mouns from '../../images/mountain_new23.70fbb83c.svg';
 import sun from '../../images/Sun.svg';
 import kabinka_2 from '../../images/kabinka_2.1ee5cce3.svg';
-import finish_guy_gif from '../../images/finish_guy.gif';
+// import finish_guy_gif from '../../images/finish_guy.gif';
 import guy_gif from '../../media/Guy.f182b798.gif';
 
 var resizeFunc = (function() {
@@ -386,29 +386,30 @@ var resizeFunc = (function() {
           valueEnd: fp.f2 - (pr_px(11.45, 0))
         },
       ]
-    }, {
-      type: 'image',
-      src: finish_guy_gif,
-      style: {
-        width: fp.fn1,
-        height: fp.fn2,
-        left: fp.fn3,
-        top: fp.fn4,
-        leftWidth: 0,
-        topHeight: 0,
-        alpha: 0,
-      },
-      scroll: [
-        //alpha
-        {
-          type: 'alpha',
-          start: 3900,
-          end: 4000,
-          valueStart: 0,
-          valueEnd: 1
-        },
-      ]
-    },
+    }, 
+    // {
+    //   type: 'image',
+    //   src: finish_guy_gif,
+    //   style: {
+    //     width: fp.fn1,
+    //     height: fp.fn2,
+    //     left: fp.fn3,
+    //     top: fp.fn4,
+    //     leftWidth: 0,
+    //     topHeight: 0,
+    //     alpha: 0,
+    //   },
+    //   scroll: [
+    //     //alpha
+    //     {
+    //       type: 'alpha',
+    //       start: 3900,
+    //       end: 4000,
+    //       valueStart: 0,
+    //       valueEnd: 1
+    //     },
+    //   ]
+    // },
   ];
 
   var elems = [];
