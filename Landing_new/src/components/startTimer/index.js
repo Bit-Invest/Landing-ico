@@ -60,7 +60,7 @@ export default class StartTimer extends React.Component {
     }
 
     this.setState({
-      restTime: `${restDays}${indexLngObj[lng]['headerTimer#2']}:${restHours}${indexLngObj[lng]['headerTimer#3']}:${restMinutes}${indexLngObj[lng]['headerTimer#4']}:${restSeconds}${indexLngObj[lng]['headerTimer#5']}`,
+      restTime: `${restDays}d :${restHours}h: ${restMinutes}m`,
     });
   }
 
@@ -75,7 +75,7 @@ export default class StartTimer extends React.Component {
                 <img alt="" className="logoIcon" src={BitForexIcon} /> 
                 <span>{indexLngObj[lng]['headerTimer#6']}</span>
               </span> 
-              <span>&#8194;starts in</span>              
+              <span>&#8194;starts in&#8194;</span>              
             </div>
             <div className="timerText">{this.state.restTime}</div>
           </div>
