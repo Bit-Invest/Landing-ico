@@ -171,7 +171,7 @@ class Menu extends React.Component {
               <a href="#product" className="item">{ indexLngObj[lng]['menu#7'] }</a>
               <a href="#team" className="item">{ indexLngObj[lng]['menu#9'] }</a>
               <div
-                onMouseLeave={this.openPublicDocs}
+                onMouseLeave={this.closePublicDocs}
                 onMouseMove={this.openPublicDocs}
                 className="drop-down"
               >
