@@ -60,7 +60,7 @@ export default class StartTimer extends React.Component {
     }
 
     this.setState({
-      restTime: `${restDays}d :${restHours}h: ${restMinutes}m`,
+      restTime: `${restDays}d : ${restHours}h : ${restMinutes}m`,
     });
   }
 
