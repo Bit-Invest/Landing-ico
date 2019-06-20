@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { MailForm } from '@components/mailForm';
-import './MainBlock.css';
 import { lng } from '../../links';
 import indexLngObj from '../../lngs/index';
 import { links } from '../../links.js';
@@ -22,6 +21,8 @@ import linkedin_icon from '../../media/linkedin_icon.png';
 import WB_icon from '../../media/WB.png';
 
 import Doc_icon from '@images/Doc_icon2.png';
+
+import './MainBlock.css';
 
 const ROOT_CLASS = 'main-block';
 
