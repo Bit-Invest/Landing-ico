@@ -3,6 +3,7 @@ import './JoinTokenPreSale.css';
 import { lng } from '../../links'
 import indexLngObj from '../../lngs/index';
 import mailerlite from 'mailerlite-js';
+import { links } from '../../links.js';
 
 import youtube_icon from '../../media/youtube_icon.png';
 import instagram_icon from '../../media/instagram_icon.png';
@@ -12,7 +13,7 @@ import telegram_icon from '../../media/telegram_icon.png';
 import twitter_icon from '../../media/twitter_icon.png';
 import medium_icon from '../../media/medium_icon.png';
 import linkedin_icon from '../../media/linkedin_icon.png';
-import { links } from '../../links.js';
+import WB_icon from '../../media/WB.png';
 
 mailerlite.init(links.mailerlite.apiKey);
 
@@ -144,9 +145,17 @@ export const JoinTokenPreSale = () => (
               <a target="_blank" href={links.soc.facebook}>
                 <img className="icon" src={facebook_icon} alt={"CINDEX"}/>
               </a>
-              <a target="_blank" href={links.soc.medium}>
-                <img className="icon" src={medium_icon} alt={"CINDEX"}/>
-              </a>
+              {
+                lng === 'zn' ? (
+                  <a target="_blank" href={links.soc.wb}>
+                    <img alt="wb link" className="icon" src={WB_icon} />
+                  </a>
+                ) : (
+                  <a target="_blank" href={links.soc.medium}>
+                    <img alt="medium link" className="icon" src={medium_icon} />
+                  </a>
+                )
+              }
               <a target="_blank" href={links.soc.linkedin}>
                 <img className="icon" src={linkedin_icon} alt={"CINDEX"}/>
               </a>

@@ -3,6 +3,8 @@ import { MailForm } from '@components/mailForm';
 import './MainBlock.css';
 import { lng } from '../../links';
 import indexLngObj from '../../lngs/index';
+import { links } from '../../links.js';
+import qr_code from '../../images/qr_code.jpg';
 
 import mailerlite from 'mailerlite-js';
 
@@ -17,8 +19,7 @@ import telegram_icon from '../../media/telegram_icon.png';
 import twitter_icon from '../../media/twitter_icon.png';
 import medium_icon from '../../media/medium_icon.png';
 import linkedin_icon from '../../media/linkedin_icon.png';
-import { links } from '../../links.js';
-import qr_code from '../../images/qr_code.jpg';
+import WB_icon from '../../media/WB.png';
 
 import Doc_icon from '@images/Doc_icon2.png';
 
@@ -167,9 +168,17 @@ export class MainBlock extends React.Component {
                   <a target="_blank" href={links.soc.facebook}>
                     <img alt="facebook link" className="icon" src={facebook_icon} />
                   </a>
-                  <a target="_blank" href={links.soc.medium}>
-                    <img alt="medium link" className="icon" src={medium_icon} />
-                  </a>
+                  {
+                    lng === 'zn' ? (
+                      <a target="_blank" href={links.soc.wb}>
+                        <img alt="wb link" className="icon" src={WB_icon} />
+                      </a>
+                    ) : (
+                      <a target="_blank" href={links.soc.medium}>
+                        <img alt="medium link" className="icon" src={medium_icon} />
+                      </a>
+                    )
+                  }
                   <a target="_blank" href={links.soc.linkedin}>
                     <img alt="linkedin link" className="icon" src={linkedin_icon} />
                   </a>

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { links } from '../../links.js';
+import { lng, links } from '../../links.js';
 
 import reddit_icon from '../../media/reddit_icon.png';
 import twitter_icon from '../../media/twitter_icon.png';
@@ -8,6 +8,7 @@ import facebook_icon from '../../media/facebook_icon.png';
 import medium_icon from '../../media/medium_icon.png';
 import linkedin_icon from '../../media/linkedin_icon.png';
 import telegram_icon_white from '../../media/telegram_icon_white.png';
+import WB_icon from '../../media/WB.png';
 
 import './SocIcons.css';
 
@@ -54,9 +55,17 @@ export class SocIcons extends React.Component {
             <a target="_blank" className="item" href={links.soc.facebook}>
               <img className="img" src={facebook_icon} alt="CINDX"/>
             </a>
-            <a target="_blank" className="item" href={links.soc.medium}>
-              <img className="img" src={medium_icon} alt="CINDX"/>
-            </a>
+            {
+              lng === 'zn' ? (
+                <a target="_blank" className="item" href={links.soc.wb}>
+                  <img alt="wb link" className="img" src={WB_icon} />
+                </a>
+              ) : (
+                <a target="_blank" className="item" href={links.soc.medium}>
+                  <img alt="medium link" className="img" src={medium_icon} />
+                </a>
+              )
+            }
             <a target="_blank" className="item" href={links.soc.linkedin}>
               <img className="img" src={linkedin_icon} alt="CINDX"/>
             </a>

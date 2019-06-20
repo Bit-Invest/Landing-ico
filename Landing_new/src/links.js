@@ -68,6 +68,7 @@ export const links = {
     medium: 'https://medium.com/cindx',
     linkedin: 'https://www.linkedin.com/company/cindx/',
     telegram: 'https://t.me/cindx_official',
+    wb: 'https://www.weibo.com/u/7194975259',
   },
   common: {
     marketAnalytics1: 'https://cryptofundresearch.com/cryptocurrency-funds-overview-infographic/',
