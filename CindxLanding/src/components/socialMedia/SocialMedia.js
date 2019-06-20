@@ -13,42 +13,53 @@ const SocialMedia = () => {
               <div className={`${ROOT_CLASS}__wrapper`}>
                   <div className={`${ROOT_CLASS}__header`}>{ indexLngObj[lng]['socialMedia#1'] }</div>
                   <div className={`${ROOT_CLASS}__icons`}>
-                          <a target="_blank" href={links.soc.youtube}>
+                          <a rel="noopener noreferrer" target="_blank" href={links.soc.youtube}>
                               <div className={`${ROOT_CLASS}__wrapper-icon`}>
                                   <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__youtube`}></div>
                               </div>
                           </a>
-                          <a target="_blank" href={links.soc.instagram}>
+                          <a rel="noopener noreferrer" target="_blank" href={links.soc.instagram}>
                               <div className={`${ROOT_CLASS}__wrapper-icon`}>
                                   <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__instagram`}></div>
                               </div>
                           </a>
-                          <a target="_blank" href={links.soc.reddit}>
+                          <a rel="noopener noreferrer" target="_blank" href={links.soc.reddit}>
                               <div className={`${ROOT_CLASS}__wrapper-icon`}>
                                   <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__reddit`}></div>
                               </div>
                           </a>
-                          <a target="_blank" href={links.soc.telegram}>
+                          <a rel="noopener noreferrer" target="_blank" href={links.soc.telegram}>
                               <div className={`${ROOT_CLASS}__wrapper-icon`}>
                                   <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__tel`}></div>
                               </div>
                           </a>
-                          <a target="_blank" href={links.soc.twitter}>
+                          <a rel="noopener noreferrer" target="_blank" href={links.soc.twitter}>
                               <div className={`${ROOT_CLASS}__wrapper-icon`}>
                                   <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__twitter`}></div>
                               </div>
                           </a>
-                          <a target="_blank" href={links.soc.facebook}>
+                          <a rel="noopener noreferrer" target="_blank" href={links.soc.facebook}>
                               <div className={`${ROOT_CLASS}__wrapper-icon`}>
                                   <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__facebook`}></div>
                               </div>
                           </a>
-                          <a target="_blank" href={links.soc.medium}>
+                          <a rel="noopener noreferrer" target="_blank" href={links.soc.medium}>
                               <div className={`${ROOT_CLASS}__wrapper-icon`}>
                                   <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__medium`}></div>
                               </div>
                           </a>
-                          <a target="_blank" href={links.soc.linkedin}>
+                          {
+                            lng === 'zn' ? (
+                              <a target="_blank" rel="noopener noreferrer" href={links.soc.wb}>
+                                <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__weibo`}></div>
+                              </a>
+                            ) : (
+                              <a target="_blank" rel="noopener noreferrer" href={links.soc.medium}>
+                                <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__medium`}></div>
+                              </a>
+                            )
+                          }
+                          <a rel="noopener noreferrer" target="_blank" href={links.soc.linkedin}>
                               <div className={`${ROOT_CLASS}__wrapper-icon`}>
                                   <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__linkedin`}></div>
                               </div>
