@@ -12,6 +12,9 @@ import SocialMedia from './components/socialMedia/SocialMedia'
 import { MvpBlock } from './components/mvpBlock/';
 import UrgentNews from './components/urgentNews/';
 
+import './slick/slick.min.css';
+import './slick/slick-theme.min.css';
+
 export default () => (
   <div className="AsyncApp">
     <MarketAnalytics />
