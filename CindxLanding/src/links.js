@@ -68,6 +68,7 @@ export const links = {
     medium: 'https://medium.com/cindx',
     linkedin: 'https://www.linkedin.com/company/cindx/',
     telegram: 'https://t.me/cindx_official',
+    telegram_zn: 'https://t.me/cindx_official_cn',
     wb: 'https://www.weibo.com/u/7194975259',
   },
   common: {

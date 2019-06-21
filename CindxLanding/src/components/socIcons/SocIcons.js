@@ -45,7 +45,7 @@ export class SocIcons extends React.Component {
     return(
       <div className="socIcons" style={{display: this.state.menuShow ? 'block' : 'none'}}>
         <div className="fixedSocIcon">
-          <div className="socIconsBlock">
+          <div className={`socIconsBlock ${lng === 'zn' ? 'twoTl' : ''}`}>
             <a target="_blank" className="item" href={links.soc.reddit}>
               <img className="img" src={reddit_icon} alt="CINDX"/>
             </a>
@@ -73,6 +73,14 @@ export class SocIcons extends React.Component {
               <img className="img_2" src={telegram_icon_white} alt="CINDX"/>
               <span>12k +</span>
             </a>
+            {
+              lng === 'zn' && (
+                <a target="_blank" className="item" rel="noopener noreferrer" href={links.soc.telegram_zn}>
+                  <img className="img_3"  alt="wb link" src={telegram_icon_white} />
+                  <span>中文</span>
+                </a>
+              )
+            }
           </div>
         </div>
       </div>

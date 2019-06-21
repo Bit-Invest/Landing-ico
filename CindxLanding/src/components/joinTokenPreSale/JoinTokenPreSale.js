@@ -175,22 +175,7 @@ export const JoinTokenPreSale = () => (
               </a>
               <a href="http://static.cindx.io/LD_LAST.pdf" target="__blank" className="linkDoc">{indexLngObj[lng]['joinTokenPreSale#14']}</a>
               <a href="http://static.cindx.io/PP_LAST.pdf" target="__blank" className="linkDoc">{indexLngObj[lng]['joinTokenPreSale#15']}</a>
-              {/* <a target="_blank" href={links.lD}>
-                <p className="lD">
-                  { indexLngObj[lng]['joinTokenPreSale#8'] }
-                </p>
-              </a> */}
             </div>
-            {/*<div className="adress_right">
-              <div className="caption">{ indexLngObj[lng]['joinTokenPreSale#9'] }</div>
-              <div className="address__text">
-                <div>{ indexLngObj[lng]['joinTokenPreSale#10'] }</div>
-                <div>{ indexLngObj[lng]['joinTokenPreSale#11'] }</div>
-              </div>
-              <p>
-                { indexLngObj[lng]['joinTokenPreSale#12'] } <a href="mailto:hr@cindx.io">hr@cindx.io</a>
-              </p>
-            </div>*/}
           </div>
         </div>
       </div>

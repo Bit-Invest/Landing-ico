@@ -182,6 +182,14 @@ export class MainBlock extends React.Component {
                     <img alt="telegram link" className="icon" src={telegram_icon} />
                     <span>12k +</span>
                   </a>
+                  {
+                    lng === 'zn' && (
+                      <a target="_blank" rel="noopener noreferrer" href={links.soc.telegram_zn}>
+                        <img alt="wb link" className="icon" src={telegram_icon} />
+                        <span>中文</span>
+                      </a>
+                    )
+                  }
                 </div>
               </div>
             </div>
