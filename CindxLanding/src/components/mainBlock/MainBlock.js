@@ -106,13 +106,13 @@ export class MainBlock extends React.Component {
         <div className={`size ${ROOT_CLASS}__content`}>
           <div className={`${ROOT_CLASS}__container-1`}>
             <div className={`${ROOT_CLASS}__header`}>
-              {indexLngObj[lng]['mailForm#30']}
+              {indexLngObj[lng]['mainBlock#1']}
               <br/>
               <div className={`${ROOT_CLASS}__header2`}>
-                {indexLngObj[lng]['mailForm#31']}
+                {indexLngObj[lng]['mainBlock#2']}
               </div>
               <div className={`${ROOT_CLASS}__header3`}>
-                {indexLngObj[lng]['mailForm#32']} 
+                {indexLngObj[lng]['mainBlock#3']} 
               </div>
             </div>
             <div className={`${ROOT_CLASS}__cont`}>

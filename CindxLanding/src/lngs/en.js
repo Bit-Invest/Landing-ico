@@ -53,9 +53,6 @@ const en = {
     'mailForm#27': 'AGREE & SUBMIT',
     'mailForm#28': 'Get it before everyone else does Offer expires within',
     'mailForm#29': 'Want to get the latest news and upcoming offers?',
-    'mailForm#30': 'One-stop solution for crypto asset management.',
-    'mailForm#31': 'Making Crypto Investments Easy, Secure and Fast.',
-    'mailForm#32': 'CINDX IS LIVE NOW!',
     'mailForm#33': 'GET STARTED',
     'mailForm#34': 'PROSPECTUS',
     'mailForm#35': 'TECH WHITEPAPER',
@@ -728,6 +725,6 @@ const en = {
     'mvpBlock#14': '',
 
     'link#1_bitforex': 'https://support.bitforex.com/hc/en-us/articles/360029703651',
-}
+};
 
-export default en
+export default en;
