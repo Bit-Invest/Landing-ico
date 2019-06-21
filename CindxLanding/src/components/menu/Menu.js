@@ -141,7 +141,9 @@ class Menu extends React.Component {
     const { isOpened } = this.state;
     if (isOpened) {
       return (
-        <div className="showMenu">
+        <div 
+          className="showMenu"
+        >
           <a onClick={this.openMenu} href="#product" className="itemMini">{ indexLngObj[lng]['menu#7'] }</a>
           <a onClick={this.openMenu} href="#team" className="itemMini">{ indexLngObj[lng]['menu#9'] }</a>
           <div onClick={this.clickPublicDocs} className="drop-down">
@@ -198,6 +200,7 @@ class Menu extends React.Component {
             <div className="menu-768px">
               <div
                 onMouseLeave={this.closeLanguage}
+                onBlur={this.closeLanguage}
                 onMouseMove={this.openLanguage}
                 className="drop-down"
               >
