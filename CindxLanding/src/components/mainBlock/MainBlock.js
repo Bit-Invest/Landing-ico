@@ -117,7 +117,7 @@ export class MainBlock extends React.Component {
             </div>
             <div className={`${ROOT_CLASS}__cont`}>
               <div className={`${ROOT_CLASS}__formStarted`}>
-                <a className="button_send" href={links.mvp} target="_blank" rel="noopener noreferrer">{indexLngObj[lng]['mailForm#33']}</a>
+                <a className="button_send_main" href={links.mvp} target="_blank" rel="noopener noreferrer">{indexLngObj[lng]['mailForm#33']}</a>
               </div>
               <div className={`${ROOT_CLASS}__prizes`}>
                 <a target="_blank" rel="noopener noreferrer" href="https://medium.com/cindx/1st-place-in-the-pitch-competition-at-asean-digital-342dfb0ee61">
