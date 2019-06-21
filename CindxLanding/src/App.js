@@ -5,6 +5,7 @@ import { HowCindxWorks } from './components/howCindxWorks/HowCindxWorks';
 import { PopUpManager } from './components/popUp/PopUpManager';
 import { MainBlock } from '@components/mainBlock';
 import { CryptoAssetsManagement } from './components/cryptoAssetsManagement/CryptoAssetsManagement';
+import SubscribeBlock from './components/subscribeBlock/';
 import { CanvasMouns } from '@components/animate';
 import { Menu } from '@components/menu/Menu';
 import { connect } from 'react-redux';
@@ -33,6 +34,7 @@ class App extends React.Component {
           <Menu />
           <MainBlock />
           <CryptoAssetsManagement />
+          <SubscribeBlock />
           <ProblemSolving />
           <HowCindxWorks />
           <AsyncBlocksContainer />

@@ -727,6 +727,8 @@ const ko = {
     'mvpBlock#13': '',
     'mvpBlock#14': '',
 
+    'subscribeBlock#1': 'CINDX에 대해 먼저 알아야합니다.',
+
     'link#1_bitforex': 'https://support.bitforex.com/hc/en-us/articles/360029703651',
 }
 

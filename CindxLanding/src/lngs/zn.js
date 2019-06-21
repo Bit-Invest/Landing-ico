@@ -727,6 +727,8 @@ const zn = {
     'mvpBlock#13': '',
     'mvpBlock#14': '',
 
+    'subscribeBlock#1': '成为第一个知道CINDX的人',
+
     'link#1_bitforex': 'https://support.bitforex.com/hc/zh-cn/articles/360029703651-CINDX-CINXO-全球认购-即将开放',
 }
 
