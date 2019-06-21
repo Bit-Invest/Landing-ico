@@ -43,11 +43,6 @@ const SocialMedia = () => {
                                   <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__facebook`}></div>
                               </div>
                           </a>
-                          <a rel="noopener noreferrer" target="_blank" href={links.soc.medium}>
-                              <div className={`${ROOT_CLASS}__wrapper-icon`}>
-                                  <div className={`${ROOT_CLASS}__icon ${ROOT_CLASS}__medium`}></div>
-                              </div>
-                          </a>
                           {
                             lng === 'zn' ? (
                               <a target="_blank" rel="noopener noreferrer" href={links.soc.wb}>
