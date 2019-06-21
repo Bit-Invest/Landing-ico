@@ -10,6 +10,7 @@ const zn = {
     'headerTimer#4': 'M',
     'headerTimer#5': 'S',
     'headerTimer#6': 'Bitforex',
+    'headerTimer#7': '将开始',
 
 //    'icoInfo#1': '我们接受：',
 //    'icoInfo#2': '硬上限：',

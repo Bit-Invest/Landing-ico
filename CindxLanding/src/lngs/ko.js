@@ -10,6 +10,7 @@ const ko = {
     'headerTimer#4': 'M',
     'headerTimer#5': 'S',
     'headerTimer#6': 'Bitforex',
+    'headerTimer#7': '~에서 시작됩니다.',
 
 //    'icoInfo#1': '동의합니다:',
 //    'icoInfo#2': '하드캡:',

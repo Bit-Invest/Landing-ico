@@ -10,6 +10,7 @@ const en = {
     'headerTimer#4': 'M',
     'headerTimer#5': 'S',
     'headerTimer#6': 'Bitforex',
+    'headerTimer#7': 'start in',
 
 //    'icoInfo#1': 'We accept:',
 //    'icoInfo#2': 'Soft Cap Closed',
