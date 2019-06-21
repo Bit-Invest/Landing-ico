@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ef528f0ba425cd8bffe6e435595b6b7",
+    "revision": "8b39718fc84380b9f0f1b556299c52a5",
     "url": "/index.html"
   },
   {
-    "revision": "fe17f937eac7d8aa98b9",
-    "url": "/static/css/2.b2ed52a0.chunk.css"
+    "revision": "a8d50ff2dbe433235fb7",
+    "url": "/static/css/2.ab760ec0.chunk.css"
   },
   {
-    "revision": "bd0d0bb6f337d92c00a0",
-    "url": "/static/css/main.c11f2b60.chunk.css"
+    "revision": "57263be6e0faff0be622",
+    "url": "/static/css/main.0db81164.chunk.css"
   },
   {
-    "revision": "fe17f937eac7d8aa98b9",
-    "url": "/static/js/2.9e884879.chunk.js"
+    "revision": "a8d50ff2dbe433235fb7",
+    "url": "/static/js/2.357dac76.chunk.js"
   },
   {
-    "revision": "dd6d728361d8b581f66b",
-    "url": "/static/js/3.351d0da2.chunk.js"
+    "revision": "6ecb076262f5b2f1a918",
+    "url": "/static/js/3.a3c243d6.chunk.js"
   },
   {
-    "revision": "bd0d0bb6f337d92c00a0",
-    "url": "/static/js/main.bcaf6b34.chunk.js"
+    "revision": "57263be6e0faff0be622",
+    "url": "/static/js/main.6b2f4356.chunk.js"
   },
   {
-    "revision": "020290af76b84719d106",
-    "url": "/static/js/runtime~main.a19ce633.js"
+    "revision": "44b2deba074b2bd4fa77",
+    "url": "/static/js/runtime~main.1326589e.js"
   },
   {
     "revision": "06bcf4f16d2e8a22d5ce52f850953794",
@@ -488,16 +488,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/block_3_img_3@2x.c95f34ee.png"
   },
   {
-    "revision": "a5bc7316719a58045b91eb816a5538a7",
-    "url": "/static/media/crypto1.a5bc7316.png"
+    "revision": "86720d9d132c1e7874ec23fb590be3ef",
+    "url": "/static/media/crypto1.86720d9d.png"
   },
   {
-    "revision": "5078dc339ebac8e25af359aee72cfdc5",
-    "url": "/static/media/crypto2.5078dc33.png"
+    "revision": "247285f8036f727255530c108b464880",
+    "url": "/static/media/crypto2.247285f8.png"
   },
   {
-    "revision": "4824be4fbcf824984aa33f98f149d3f6",
-    "url": "/static/media/crypto3.4824be4f.png"
+    "revision": "fd00bf32a4f78f7d8cff250c643c57f2",
+    "url": "/static/media/crypto3.fd00bf32.png"
   },
   {
     "revision": "70fe6cc7bdc52c7a32c89621090442c6",
