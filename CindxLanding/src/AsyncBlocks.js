@@ -14,6 +14,7 @@ import UrgentNews from './components/urgentNews/';
 
 import './slick/slick.min.css';
 import './slick/slick-theme.min.css';
+import './AsyncApp.css';
 
 export default () => (
   <div className="AsyncApp">
