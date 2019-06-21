@@ -1,8 +1,8 @@
 // Английский
 const en = {
-    'mainBlock#1': 'The one-stop solution for crypto asset management.',
-    'mainBlock#2': 'Making Crypto Investments Easy, Secure and Fast.',
-    'mainBlock#3': 'Subscribe to the latest updates from Cindx',
+    'mainBlock#1': 'The one-stop solution for crypto asset management',
+    'mainBlock#2': 'Earn along with the best traders',
+    'mainBlock#3': 'CINDX Platform is Live Now!',
 
     'headerTimer#1': '1h only CINDX Pre-IEO on',
     'headerTimer#2': 'D',
@@ -55,7 +55,7 @@ const en = {
     'mailForm#30': 'One-stop solution for crypto asset management.',
     'mailForm#31': 'Making Crypto Investments Easy, Secure and Fast.',
     'mailForm#32': 'CINDX IS LIVE NOW!',
-    'mailForm#33': 'Join',
+    'mailForm#33': 'GET STARTED',
     'mailForm#34': 'PROSPECTUS',
     'mailForm#35': 'TECH WHITEPAPER',
     'mailForm#36': '',
@@ -79,7 +79,7 @@ const en = {
  //   'progressBarSale#8': 'Oct 22',
  //   'progressBarSale#9': 'Nov 6',
  //   'progressBarSale#10': 'Nov 19',
- //   'progressBarSale#11': 'Dec 3',
+ //   'progressBarSale#11': 'Dec 3',CINDX IS LIVE NOW! 
  //   'progressBarSale#12': 'Dec 17',
  //   'progressBarSale#13': 'ONE PAGER',
  //   'progressBarSale#14': 'PRESENTATION',
@@ -533,7 +533,22 @@ const en = {
     'teamAdvisersPartners#66_1': '7 years in trading',
     'teamAdvisersPartners#67_1': 'Experience in FINTECH project architecture development',
     'teamAdvisersPartners#68_1': '5 years is Asset Management',
-    
+    'teamAdvisersPartners#69_1': 'Yuri Proshin',
+    'teamAdvisersPartners#70_1': 'Head of Community',
+    'teamAdvisersPartners#71_1': 'Master \'s Degree in International Business',
+    'teamAdvisersPartners#72_1': '4 years in FinTech and blockchain startups',
+    'teamAdvisersPartners#73_1': 'Focus on community management, PR and communications',
+    'teamAdvisersPartners#74_1': 'Nikita Begishev',
+    'teamAdvisersPartners#75_1': 'Developer',
+    'teamAdvisersPartners#76_1': 'Experienced Full-Stack Developer',
+    'teamAdvisersPartners#77_1': 'Big data processing',
+    'teamAdvisersPartners#78_1': 'Аnalysis and visualization',
+    'teamAdvisersPartners#79_1': 'Alexander Bogdanov',
+    'teamAdvisersPartners#80_1': 'Member of the board CINDX Investkapital AS',
+    'teamAdvisersPartners#81_1': 'Finance and investment consulting specialist with over 12 years of experience',
+    'teamAdvisersPartners#82_1': 'Marketing strategy development',
+    'teamAdvisersPartners#83_1': '',
+  
     // advisers
     'teamAdvisersPartners#59': 'Keith Teare',
     'teamAdvisersPartners#60': 'Founder and Executive Chairman at Accelerated Digital Ventures',
@@ -712,7 +727,6 @@ const en = {
     'mvpBlock#14': '',
 
     'link#1_bitforex': 'https://support.bitforex.com/hc/en-us/articles/360029703651',
-};
+}
 
-export default en;
-
+export default en
