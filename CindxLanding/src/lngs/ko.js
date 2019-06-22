@@ -4,13 +4,13 @@ const ko = {
     'mainBlock#2': '암호자산 투자를 쉽고, 안전하게 그리고 빠르게 하십시오',
     'mainBlock#3': 'CINDX 실시간 이용 가능!',
 
-    'headerTimer#1': '1h 만 CINDX Pre-IEO 에',
+    'headerTimer#1': '',
     'headerTimer#2': 'D',
     'headerTimer#3': 'H',
     'headerTimer#4': 'M',
     'headerTimer#5': 'S',
     'headerTimer#6': 'Bitforex',
-    'headerTimer#7': '~에서 시작됩니다.',
+    'headerTimer#7': '오직 1시간 소요',
 
 //    'icoInfo#1': '동의합니다:',
 //    'icoInfo#2': '하드캡:',
