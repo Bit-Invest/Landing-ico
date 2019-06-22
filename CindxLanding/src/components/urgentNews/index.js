@@ -15,7 +15,7 @@ let urgentNewsData = [
   {
     texts: {
       title: 'CINDX Token Benefits For Token Holders',
-      readingTime: '6 MIN READ',
+      readingTime: '4 MIN READ',
       mainThought: 'Get to know more about the CINDX tokens!',
     },
     linkMore: 'https://medium.com/cindx/cindx-token-benefits-for-token-holders-d3228205117c',
@@ -27,6 +27,14 @@ let urgentNewsData = [
       mainThought: 'Frequently Asked Questions About CINDX',
     },
     linkMore: 'https://medium.com/cindx/frequently-asked-questions-about-cindx-692cae405d6',
+  },
+    {
+    texts: {
+      title: 'CINDX launches on Bitforex',
+      readingTime: '3 MIN READ',
+      mainThought: 'CINDX Premium Token Offering on Bitforex',
+    },
+    linkMore: 'https://event.bitforex.com/en/CINXO.html',
   },
 ];
 
