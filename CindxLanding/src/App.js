@@ -1,11 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 
-import { ProblemSolving } from './components/problemSolving/ProblemSolving';
-import { HowCindxWorks } from './components/howCindxWorks/HowCindxWorks';
 import { PopUpManager } from './components/popUp/PopUpManager';
 import { MainBlock } from '@components/mainBlock';
-import { CryptoAssetsManagement } from './components/cryptoAssetsManagement/CryptoAssetsManagement';
-import SubscribeBlock from './components/subscribeBlock/';
 import { CanvasMouns } from '@components/animate';
 import { Menu } from '@components/menu/Menu';
 import { connect } from 'react-redux';
@@ -33,10 +29,6 @@ class App extends React.Component {
         <div className="contentText">
           <Menu />
           <MainBlock />
-          <CryptoAssetsManagement />
-          <SubscribeBlock />
-          <ProblemSolving />
-          <HowCindxWorks />
           <AsyncBlocksContainer />
         </div>
       </div>

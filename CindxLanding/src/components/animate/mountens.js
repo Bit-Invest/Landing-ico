@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './mouns.css';
-import MounsCnvs from './j.js';
+// import MounsCnvs from './j.js';
 
 export class CanvasMouns extends React.Component {
   constructor(props) {
@@ -13,14 +13,14 @@ export class CanvasMouns extends React.Component {
   }
 
   updateDimensions = () => {
-    if(window.innerWidth > 1000){
-      MounsCnvs.resizeFunc();
-    }
+    // if(window.innerWidth > 1000){
+      // MounsCnvs.resizeFunc();
+    // }
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.updateDimensions);
-    this.updateDimensions();
+    // window.addEventListener("resize", this.updateDimensions);
+    // this.updateDimensions();
   }
 
   render() {

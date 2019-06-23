@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { CryptoAssetsManagement } from './components/cryptoAssetsManagement/CryptoAssetsManagement';
+import SubscribeBlock from './components/subscribeBlock/';
+import { HowCindxWorks } from './components/howCindxWorks/HowCindxWorks';
+import { ProblemSolving } from './components/problemSolving/ProblemSolving';
 import { MarketAnalytics } from './components/marketAnalytics/MarketAnalytics';
 import { FeedbackProject } from './components/feedbackProject/FeedbackProject';
 import { JoinTokenPreSale } from './components/joinTokenPreSale/JoinTokenPreSale';
@@ -18,6 +22,10 @@ import './AsyncApp.css';
 
 export default () => (
   <div className="AsyncApp">
+    <CryptoAssetsManagement />
+    <SubscribeBlock />
+    <ProblemSolving />
+    <HowCindxWorks />
     <MarketAnalytics />
     <Roadmap />
     <RoadsShow />
