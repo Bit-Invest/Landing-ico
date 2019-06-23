@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "414c3ce7d284b3eec6ca6c917bcfc389",
+    "revision": "49f984067b3c463a309ad69317cec0b8",
     "url": "/index.html"
   },
   {
-    "revision": "696bcb7090b5675c4222",
-    "url": "/static/css/2.7a9b5bf5.chunk.css"
+    "revision": "f0c3dfc7b726319bd03a",
+    "url": "/static/css/2.efbe08be.chunk.css"
   },
   {
-    "revision": "e2c92d4f54b2be9448b2",
-    "url": "/static/css/main.bd930661.chunk.css"
+    "revision": "e4f05e7a219df7dbd8ba",
+    "url": "/static/css/main.9591e4d9.chunk.css"
   },
   {
-    "revision": "696bcb7090b5675c4222",
-    "url": "/static/js/2.938f75db.chunk.js"
+    "revision": "f0c3dfc7b726319bd03a",
+    "url": "/static/js/2.6d4d3c4b.chunk.js"
   },
   {
     "revision": "96ebeb09d76351076db4",
@@ -24,12 +24,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/4.40d2f715.chunk.js"
   },
   {
-    "revision": "e2c92d4f54b2be9448b2",
-    "url": "/static/js/main.18caa4cd.chunk.js"
+    "revision": "e4f05e7a219df7dbd8ba",
+    "url": "/static/js/main.482ca987.chunk.js"
   },
   {
-    "revision": "e4e08274b12a6d8c617f",
-    "url": "/static/js/runtime~main.b5288ecb.js"
+    "revision": "295f0241c8d1ea5cca1a",
+    "url": "/static/js/runtime~main.2383f5c3.js"
   },
   {
     "revision": "06bcf4f16d2e8a22d5ce52f850953794",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f74e0734b2ebb1b1ad580e2ad1b757f8",
     "url": "/static/media/2.f74e0734.png"
+  },
+  {
+    "revision": "153730041de57fd317665dd1f5a22e14",
+    "url": "/static/media/5b05238fabbf26c7e7a31cdb_stars_mount.15373004.svg"
   },
   {
     "revision": "eca1309918a90f430734aa816f4b2b82",
@@ -240,6 +244,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Graham_Doggart.a951ea9c.jpeg"
   },
   {
+    "revision": "4599dca49904e77d3a555ed479185ad3",
+    "url": "/static/media/Guy.f182b798.4599dca4.gif"
+  },
+  {
     "revision": "e0fd38c41bcd056030be9cddec9dabb6",
     "url": "/static/media/How_CINDX_Can_Help_You_to_Fine_Tune_Your_Trading_Strategy.e0fd38c4.jpg"
   },
@@ -408,6 +416,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Sofja_Pevzner.f8fc9c22.jpeg"
   },
   {
+    "revision": "132db634ee060e2a38904261e7388353",
+    "url": "/static/media/Sun.132db634.svg"
+  },
+  {
     "revision": "c3d8dd29e29c164d321f76b95ee55922",
     "url": "/static/media/The_issuance_of_CINX_tokens.c3d8dd29.jpeg"
   },
@@ -504,6 +516,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/instagram-icon.4f2dddd1.svg"
   },
   {
+    "revision": "8141993abd08d118ac2286a4fd8ddf8c",
+    "url": "/static/media/kabinka_2.1ee5cce3.8141993a.svg"
+  },
+  {
     "revision": "080556ca01de18c0df85601dce529827",
     "url": "/static/media/kakaotalk-icon.080556ca.svg"
   },
@@ -542,6 +558,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0239b3e69c63ae62be027645bb977ee6",
     "url": "/static/media/mountain.0239b3e6.png"
+  },
+  {
+    "revision": "99c6101036c9cda8c984d7fdb94c8ef2",
+    "url": "/static/media/mountain_new23.70fbb83c.99c61010.svg"
   },
   {
     "revision": "394a5d2f0cb1fa3ff351d2dc85335d05",
