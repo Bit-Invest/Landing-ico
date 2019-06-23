@@ -1,5 +1,6 @@
 import React from 'react';
 import mailerlite from 'mailerlite-js';
+import MounsCnvs from '../animate/j.js';
 
 import { lng, links } from '../../links';
 import indexLngObj from '../../lngs/index';
@@ -17,6 +18,17 @@ export default class SubscribeBlock extends React.Component {
       submitStatus: 4, // 0 - пусто; 1 - не подходит почта; 2 - всё ок отправлено; 3 - отправляется
       submitStatusText: null
     };
+  }
+
+  updateDimensions = () => {
+    if(window.innerWidth > 1000){
+      MounsCnvs.resizeFunc();
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
+    this.updateDimensions();
   }
 
   onChange = (e) => {

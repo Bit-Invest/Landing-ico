@@ -12,7 +12,7 @@ import './App.css';
 
 const AsyncBlocks = lazy(() => import('./AsyncBlocks'));
 
-const renderLoader = () => <p>Loading</p>;
+const renderLoader = () => <div className="asyncLoading">Loading...</div>;
 
 const AsyncBlocksContainer = () => (
   <Suspense fallback={renderLoader()}>

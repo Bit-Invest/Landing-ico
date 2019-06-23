@@ -152,3 +152,9 @@
 .block_1 .header_blocks {
   width: 65%;
 }
+
+.asyncLoading {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
