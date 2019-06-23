@@ -81,6 +81,7 @@ import MediaBitcoinist from '../../media/Bitcoinist.png'
 import MediaTokendesk from '../../media/tokendesk.png'
 import MediaBtcmanager from '../../media/BTCManager.png'
 import MediaBlockonomi from '../../media/blockonomi-logo.png'
+
 import Investing from '../../media/investing.jpeg'
 import Сryptoninjas from '../../media/Cryptoninjas.png'
 import Coinannouncer from '../../media/Coinannouncer.png'
@@ -1056,39 +1057,20 @@ export class MediaNews extends React.Component {
         }
       })
       return (
-        <div key={i} className="txt">
-          <a href={el.src} target="_blank">
-            <div className="bg">
-              <div className="bg_img">
-                <img className={"media-img " + el.type} src={el.screen} alt="CINDEX"/>
-              </div>
-              <h3>{(newName.length - 1) === el.name.length ? newName : newName + ' ...'}</h3>
-              <p className="textContent">{(newText.length - 1) === el.text.length ? newText : newText + ' ...'}</p>
-              <p className="dateInfo">{el.date}</p>
-              <p className="details">Details</p>
-            </div>
-          </a>
-        </div>
+        <a 
+          href={el.src} 
+          target="_blank" 
+          key={i} 
+          className="pressItem"
+          // style={{backgroundImage: `url(${el.screen})`}}
+        >
+          <img alt="" src={el.screen} className="imageLogoMedia" />
+        </a>
       );
     })
   }
 
   render() {
-    const settings = {
-      arrows: true,
-      swipeToSlide: true,
-      lazyLoad: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      beforeChange: () => {
-        this.setState({ isLinkAccess: false })
-      },
-      afterChange: (i) => {
-        this.setState({ isLinkAccess: true })
-      }
-    };
     const settingsNews = {
       arrows: true,
       swipeToSlide: true,
@@ -1096,21 +1078,6 @@ export class MediaNews extends React.Component {
       infinite: true,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 3,
-      beforeChange: () => {
-        this.setState({ isLinkAccess: false })
-      },
-      afterChange: () => {
-        this.setState({ isLinkAccess: true })
-      }
-    };
-    const settings2 = {
-      arrows: true,
-      infinite: true,
-      lazyLoad: true,
-      swipeToSlide: true,
-      speed: 500,
-      slidesToShow: 2,
       slidesToScroll: 3,
       beforeChange: () => {
         this.setState({ isLinkAccess: false })
@@ -1134,15 +1101,6 @@ export class MediaNews extends React.Component {
         this.setState({ isLinkAccess: true })
       }
     };
-    const settings3 = {
-      arrows: true,
-      infinite: true,
-      swipeToSlide: true,
-      lazyLoad: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 3,
-    };
     const settingsNews3 = {
       arrows: true,
       infinite: true,
@@ -1156,46 +1114,30 @@ export class MediaNews extends React.Component {
       <div className="block_7">
         <div className="size">
           <h2 className="header_blocks">{ indexLngObj[lng]['mediaNews#1'] }</h2>
-          <div className="block_arrow_relative">
-            <div className="settings">
-              <Slider {...settings}>
-                {this.mapMedia()}
-              </Slider>
-            </div>
-          </div>
-          <div className="block_arrow_relative">
-            <div className="settings2">
-              <Slider {...settings2}>
-                {this.mapMedia()}
-              </Slider>
-            </div>
-          </div>
-          <div className="block_arrow_relative">
-            <div className="settings3">
-              <Slider {...settings3}>
-                {this.mapMedia()}
-              </Slider>
+          <div className="block_arrow_relative pressParent">
+            <div className="pressList">
+              {this.mapMedia()}
             </div>
           </div>
           <h2 className="header_blocks">{ indexLngObj[lng]['mediaNews#2'] }</h2>
           <div className="block_arrow_relative">
             <div className="settingsNews">
               <Slider {...settingsNews}>
-                  {this.mapNews()}
+                {this.mapNews()}
               </Slider>
             </div>
           </div>
           <div className="block_arrow_relative">
             <div className="settingsNews2">
               <Slider {...settingsNews2}>
-                  {this.mapNews()}
+                {this.mapNews()}
               </Slider>
             </div>
           </div>
           <div className="block_arrow_relative">
             <div className="settingsNews3">
               <Slider {...settingsNews3}>
-                  {this.mapNews()}
+                {this.mapNews()}
               </Slider>
             </div>
           </div>
