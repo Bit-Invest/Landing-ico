@@ -155,7 +155,7 @@ const teamInfo = [
     fackt1: indexLngObj[lng]['teamAdvisersPartners#81_1'],
     fackt2: indexLngObj[lng]['teamAdvisersPartners#82_1'],
     fackt3: indexLngObj[lng]['teamAdvisersPartners#83_1'],
-    src: 'https://www.linkedin.com/in/yuri-proshin-220490/',
+    src: '',
     m: 'https://medium.com/cindx/cindx-team-alex-bogdan-5a292e80a608a'
   },
 ];
