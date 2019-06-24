@@ -3,7 +3,7 @@ import { MailForm } from '@components/mailForm';
 import { lng } from '../../links';
 import indexLngObj from '../../lngs/index';
 import { links } from '../../links.js';
-import qr_code from '../../images/qr_code.jpg';
+import qr_code from '../../images/qr_code.png';
 
 import mailerlite from 'mailerlite-js';
 

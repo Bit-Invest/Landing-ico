@@ -1113,12 +1113,12 @@ export class MediaNews extends React.Component {
     return (
       <div className="block_7">
         <div className="size">
-          <h2 className="header_blocks">{ indexLngObj[lng]['mediaNews#1'] }</h2>
+          {/*<h2 className="header_blocks">{ indexLngObj[lng]['mediaNews#1'] }</h2>
           <div className="block_arrow_relative pressParent">
             <div className="pressList">
               {this.mapMedia()}
             </div>
-          </div>
+          </div>*/}
           <h2 className="header_blocks">{ indexLngObj[lng]['mediaNews#2'] }</h2>
           <div className="block_arrow_relative">
             <div className="settingsNews">

@@ -69,7 +69,7 @@ export const links = {
     linkedin: 'https://www.linkedin.com/company/cindx/',
     telegram: 'https://t.me/cindx_official',
     telegram_zn: 'https://t.me/cindx_official_cn',
-    wb: 'https://www.weibo.com/u/7194975259',
+    wb: 'https://www.weibo.com/u/6721574832',
   },
   common: {
     marketAnalytics1: 'https://cryptofundresearch.com/cryptocurrency-funds-overview-infographic/',
