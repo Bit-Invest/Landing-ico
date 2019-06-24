@@ -988,23 +988,14 @@ const getBeautifulDate = (date) => {
   return `${monthStr} ${day}, ${yearStr}`;
 };
 
-// media = media
-//   .sort((curObjShow1, curObjShow2) => {
-//     return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
-//   })
-//   .map((curMedia) => ({
-//     ...curMedia,
-//     date: getBeautifulDate(curMedia.date) ? getBeautifulDate(curMedia.date) : curMedia.date,
-//   }))
-
 news = news
-  .sort((curObjShow1, curObjShow2) => {
-    return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
-  })
   .map((curNews) => ({
     ...curNews,
     date: getBeautifulDate(curNews.date) ? getBeautifulDate(curNews.date) : curNews.date,
   }))
+  .sort((curObjShow1, curObjShow2) => {
+    return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
+  });
 
 export class MediaNews extends React.Component {
   state = {
@@ -1095,7 +1086,7 @@ export class MediaNews extends React.Component {
       swipeToSlide: true,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
       beforeChange: () => {
         this.setState({ isLinkAccess: false })
       },
@@ -1110,7 +1101,7 @@ export class MediaNews extends React.Component {
       lazyLoad: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
     };
     return (
       <div className="block_7">

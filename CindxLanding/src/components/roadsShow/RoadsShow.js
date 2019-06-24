@@ -324,13 +324,13 @@ const getBeautifulDate = (date) => {
 };
 
 dataRoadShow = dataRoadShow
-  .sort((curObjShow1, curObjShow2) => {
-    return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
-  })
   .map((curRoadshow) => ({
     ...curRoadshow,
     date: getBeautifulDate(curRoadshow.date) ? getBeautifulDate(curRoadshow.date) : curRoadshow.date,
   }))
+  .sort((curObjShow1, curObjShow2) => {
+    return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
+  });
 
 export class RoadsShow extends React.Component {
   state = {
@@ -418,7 +418,7 @@ export class RoadsShow extends React.Component {
       swipeToSlide: true,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
       beforeChange: () => {
         this.setState({ isLinkAccess: false })
       },
@@ -433,7 +433,7 @@ export class RoadsShow extends React.Component {
       lazyLoad: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
     };
     return (
       <div className="block_7">
