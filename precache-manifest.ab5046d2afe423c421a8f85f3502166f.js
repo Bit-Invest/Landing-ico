@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29702c724b63b00b7690301f2ebe2039",
+    "revision": "0a18a9ced6f7dd9adbe38ac6b8d1a3c8",
     "url": "/index.html"
   },
   {
-    "revision": "920d941fb1b4f4012fb7",
-    "url": "/static/css/2.3a2fee5b.chunk.css"
+    "revision": "3cd08d9e3317f9036d4c",
+    "url": "/static/css/2.a48a75d0.chunk.css"
   },
   {
-    "revision": "b45434f359e85f30b544",
-    "url": "/static/css/main.9591e4d9.chunk.css"
+    "revision": "640822cea82ea57392e9",
+    "url": "/static/css/main.35bbd711.chunk.css"
   },
   {
-    "revision": "920d941fb1b4f4012fb7",
-    "url": "/static/js/2.3f138b2a.chunk.js"
+    "revision": "3cd08d9e3317f9036d4c",
+    "url": "/static/js/2.1c815452.chunk.js"
   },
   {
     "revision": "96ebeb09d76351076db4",
@@ -24,12 +24,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/4.40d2f715.chunk.js"
   },
   {
-    "revision": "b45434f359e85f30b544",
-    "url": "/static/js/main.4d0ff712.chunk.js"
+    "revision": "640822cea82ea57392e9",
+    "url": "/static/js/main.7b8cb5f5.chunk.js"
   },
   {
-    "revision": "ef994ecd52b1e6991117",
-    "url": "/static/js/runtime~main.d2a9f28e.js"
+    "revision": "e718a8748b83d29ec0f9",
+    "url": "/static/js/runtime~main.6a831d80.js"
   },
   {
     "revision": "06bcf4f16d2e8a22d5ce52f850953794",
@@ -50,10 +50,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "457400b0b7a5842464fe92806ccf4636",
     "url": "/static/media/AGORA_Dubai.457400b0.jpg"
-  },
-  {
-    "revision": "4e1220944c6017da13933a7b24b67072",
-    "url": "/static/media/AMBcrypto.4e122094.png"
   },
   {
     "revision": "aa6789a722eae53cebf14a966827be71",
@@ -112,8 +108,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/BB_S.8027238f.8027238f.png"
   },
   {
-    "revision": "3272bc50078f66a2ca48efd4824fe62e",
-    "url": "/static/media/BTCManager.3272bc50.png"
+    "revision": "7c06727003a3687ac1a5cd1a8f346544",
+    "url": "/static/media/BTCManager.7c067270.png"
   },
   {
     "revision": "ed275fba793250cba678edccf2784de5",
@@ -128,8 +124,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Beijing13-16-09.3098248f.png"
   },
   {
-    "revision": "4d07d0024bc8df921a4c74a2e2a29fb1",
-    "url": "/static/media/Bitcoinexchangeguide.4d07d002.png"
+    "revision": "48c15a16875b950090d6b517c25e3f52",
+    "url": "/static/media/Bitcoinexchangeguide.48c15a16.png"
+  },
+  {
+    "revision": "ea5e219536e7b4f36cce052ffd0c9de2",
+    "url": "/static/media/Bitcoinist.ea5e2195.png"
   },
   {
     "revision": "02934039661523164d8cd8a3ed9cf517",
@@ -144,12 +144,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Bogdan_Fiedur.d7aafd46.jpeg"
   },
   {
+    "revision": "d84fd7277ed18dfc2e8c09be5fad5aa0",
+    "url": "/static/media/Bogdanov.d84fd727.png"
+  },
+  {
     "revision": "7f418667efc8c0beb1eeea50fdd48231",
     "url": "/static/media/Borderless_Blockchain_Technology_Summit_Post_Event_Report.7f418667.jpg"
   },
   {
-    "revision": "a3577e896187281799fdc3284fdf3c3c",
-    "url": "/static/media/CCN.a3577e89.png"
+    "revision": "f08a7d9e2d0559426b309a9859de9cc4",
+    "url": "/static/media/CCN.f08a7d9e.png"
   },
   {
     "revision": "df72ab0c55aeecbbe46ff3f7a5960751",
@@ -220,12 +224,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/CINDX_talk_a_service_that_will_help_people_become_wiser_in_taking_financial_decisions.a267531d.jpeg"
   },
   {
+    "revision": "f277f28e6e3826a0d89b67f84bdc7b25",
+    "url": "/static/media/CoinFox.f277f28e.png"
+  },
+  {
+    "revision": "d6ec99a7a0b1a937bf83dbe8f7c004e4",
+    "url": "/static/media/Coinannouncer.d6ec99a7.png"
+  },
+  {
     "revision": "ccd4104620c7171945e504436dc90485",
     "url": "/static/media/Collage_partners.ccd41046.png"
   },
   {
-    "revision": "d1562ee9fa49df947fb2d66369288d91",
-    "url": "/static/media/Cryptoreporter.d1562ee9.png"
+    "revision": "b2fcd3bc0fc701794703d2529c555b5a",
+    "url": "/static/media/Cryptoninjas.b2fcd3bc.png"
+  },
+  {
+    "revision": "d3fa64defba88b8efe4b798d50d1de77",
+    "url": "/static/media/Cryptoreporter.d3fa64de.png"
   },
   {
     "revision": "7f66e182702be721065d3c8512ab75f4",
@@ -384,12 +400,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Mofassair_Hossain.a018dd4f.jpg"
   },
   {
-    "revision": "e0e25f7ba5c3ad1b3e4a457d97ff5894",
-    "url": "/static/media/NASDAQ_logo.e0e25f7b.png"
+    "revision": "e7a22aaf90f0905b653d176ad4a46d47",
+    "url": "/static/media/NASDAQ_logo.e7a22aaf.png"
   },
   {
     "revision": "e1e98836314c0bb860cd9dfde84125b4",
     "url": "/static/media/New_CINDX_website-min.e1e98836.png"
+  },
+  {
+    "revision": "dcc38919ab3820a9430fccb91fadcfd7",
+    "url": "/static/media/Nikita.dcc38919.png"
   },
   {
     "revision": "6afa59cf151225e23f237a19410c008f",
@@ -408,8 +428,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Philip_Staehelin.cba41043.jpeg"
   },
   {
-    "revision": "1bf612e963b8481df7b43711345a28b5",
-    "url": "/static/media/Reuters.1bf612e9.png"
+    "revision": "3d8b0f87787b8b3c3290cfe88d4f353d",
+    "url": "/static/media/Proshin.3d8b0f87.png"
+  },
+  {
+    "revision": "f2404e3678170c362fb4d0a4f01258a0",
+    "url": "/static/media/Reuters.f2404e36.png"
   },
   {
     "revision": "92ace718eca20d7983ccca603d0ee2e8",
@@ -456,8 +480,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/The_strategic_meeting_of_the_international_CINDX_team.239ecf34.png"
   },
   {
-    "revision": "2a6d9c3541f86f9bf0a37b28599824ff",
-    "url": "/static/media/Thestreet.2a6d9c35.png"
+    "revision": "970f947811cc69a6e6daedb72503be00",
+    "url": "/static/media/Thestreet.970f9478.png"
   },
   {
     "revision": "5166fde07ced55d08096fb44997906a4",
@@ -504,8 +528,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Weekly_digest_27_08_18_02_09_18.d8e3c28c.jpg"
   },
   {
-    "revision": "132622edec2dbb39173792840a04bacb",
-    "url": "/static/media/YahooFinance.132622ed.png"
+    "revision": "8573e797ae7c53004d900aa2982de2e2",
+    "url": "/static/media/YahooFinance.8573e797.png"
   },
   {
     "revision": "c769b6a83e483d4808baab20d1cb57c6",
@@ -516,8 +540,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bitcoin-icon.d6ff31a0.svg"
   },
   {
-    "revision": "f0bbad967d6a9d6da638b580f0ef3260",
-    "url": "/static/media/bitcoingarden_logo.f0bbad96.png"
+    "revision": "b7cdd9edb3fbbd1578adcd2f3a51ad01",
+    "url": "/static/media/bitcoingarden_logo.b7cdd9ed.png"
   },
   {
     "revision": "1fcd792199311259ac81355d948214e7",
@@ -532,6 +556,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/block_3_img_3@2x.c95f34ee.png"
   },
   {
+    "revision": "af359c45e6e7a7bae9260b8e50506fc5",
+    "url": "/static/media/blockonomi-logo.af359c45.png"
+  },
+  {
     "revision": "86720d9d132c1e7874ec23fb590be3ef",
     "url": "/static/media/crypto1.86720d9d.png"
   },
@@ -544,8 +572,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/crypto3.fd00bf32.png"
   },
   {
-    "revision": "6bdc36a4e3cb1bd8f4154049eb0e3316",
-    "url": "/static/media/digital_journal_transp.6bdc36a4.png"
+    "revision": "9087eed4f65a155d60d7f76102187495",
+    "url": "/static/media/digital_journal_transp.9087eed4.png"
   },
   {
     "revision": "70fe6cc7bdc52c7a32c89621090442c6",
@@ -560,8 +588,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/instagram-icon.4f2dddd1.svg"
   },
   {
-    "revision": "396521bc9576befa85b765e958efb15c",
-    "url": "/static/media/investing.396521bc.png"
+    "revision": "14869148cf2aa95c8dbcf58b4425cdf8",
+    "url": "/static/media/investing.14869148.png"
   },
   {
     "revision": "8141993abd08d118ac2286a4fd8ddf8c",
@@ -612,8 +640,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/mountain_new23.70fbb83c.99c61010.svg"
   },
   {
-    "revision": "310fe194a812111886b54f5525b2300e",
-    "url": "/static/media/ms.310fe194.png"
+    "revision": "0c1b1b1c4102b5b0411e891e916c4b13",
+    "url": "/static/media/ms.0c1b1b1c.png"
   },
   {
     "revision": "394a5d2f0cb1fa3ff351d2dc85335d05",
@@ -654,6 +682,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d90c8c33d7bf530ac3f9f9c52a4b6fde",
     "url": "/static/media/telegram-icon.d90c8c33.svg"
+  },
+  {
+    "revision": "f776d0cfd25c0286bec321cbb3bc31ae",
+    "url": "/static/media/tokendesk.f776d0cf.png"
   },
   {
     "revision": "d3fda9b96d7a302cf2fff350b15399ec",
