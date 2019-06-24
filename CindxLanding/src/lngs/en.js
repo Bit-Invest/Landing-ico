@@ -4,36 +4,44 @@ const en = {
     'mainBlock#2': 'Earn along with the best traders',
     'mainBlock#3': 'CINDX Platform is Live Now!',
 
-    'headerTimer#1': '1h only CINDX Pre-IEO on',
-    'headerTimer#2': 'D',
-    'headerTimer#3': 'H',
-    'headerTimer#4': 'M',
-    'headerTimer#5': 'S',
-    'headerTimer#6': 'Bitforex',
-    'headerTimer#7': 'start in',
+//Текст в плашке
+    'headertext#0': 'CINDX Pre-IEO start in',      //сейчас ( есть таймер)
+    'headertext#1': 'The CINDX Pre-IEO is Live!', //25.06 14-59 мск:
+    'headertext#2': '2nd round of CINDX Pre-IEO starts in', // 25.06 16-00 мск: ( есть таймер)
+    'headertext#3': 'The CINDX Pre-IEO ends in',  // 26.06 15-00 мск ( есть таймер)
+    'headertext#4': 'The CINDX Pre-IEO has ended.', // 27.06 15-00 мск(или раньше) первая строка  
+    'headertext#4_1': '$400,000 worth of tokens sold.', // 27.06 15-00 мск(или раньше) вторая строка ( не показывать в моб)
+//Таймер
+    'headerTimer#1': 'D',
+    'headerTimer#2': 'H',
+    'headerTimer#3': 'M',
+    'headerTimer#4': 'S',
+// Кнопка в плашке
+    'buttonheader#1': 'Buy CINXO on ', 
+    'buttonheader#2': 'BitForex',   // Название биржи с эконкой на кнопке
 
 //    'icoInfo#1': 'We accept:',
 //    'icoInfo#2': 'Soft Cap Closed',
 //    'icoInfo#3': 'Hard Cap Milestone: ',
 //    'icoInfo#4': 'Listing Agreements are Signed With: ',
 
-    'menu#1': 'WHITEPAPER',
+    'menu#1': 'WHITE PAPER', // распространяется также на кнопку в хэдере 
     'menu#2': 'PRESENTATION',
-    'menu#3': 'ONE PAGER',
-//    'menu#4': 'FINANCIAL MODEL',
+    'menu#3': 'ONE PAGER',  //распространяется также на кнопку в хэдере 
+    'menu#4': 'Blog',     //распространяется также на кнопку в хэдере 
     'menu#5': 'LEGAL DOCS',
     'menu#6': 'EN',
     'menu#7': 'Product',
 //    'menu#8': 'Sale Details',
     'menu#9': 'Team',
     'menu#10': 'Public Docs',
-    'menu#11': 'CINDX LIVE',
+    'menu#11': 'CINDX LIVE',  //распространяется также на кнопку в хэдере 
     'menu#12': 'SUBSCRIBE',
 
     'mailForm#1': 'Wrong email',
     'mailForm#2': 'sending ..',
-    'mailForm#3': '이메일이 이미 사용되었거나 올바르지 않습니다.',
-    'mailForm#4': '이메일 수신함을 확인하고 가입을 확인하십시오.',
+    'mailForm#3': 'Already was or is not valid, try again',
+    'mailForm#4': 'Your email has been sent successfully',
     'mailForm#5': 'an error occurred, try again',
     'mailForm#6': 'GDRP Сompliance',
     'mailForm#7': 'Personal data provided via Subscription form and KYC procedure will be collected in the full compliance with GDRP The Data Protection Officer of the project is Mrs. Sofja Pevzner-Belositski. Contact details: dpo@cindx.io. Any data subject may, at any time, contact Data Protection Officer of directly with any request related to data protection. Your personal data provided via Subscription form and KYC procedure will be shared to our partners:',
@@ -689,6 +697,8 @@ const en = {
     'teamAdvisersPartners#197': '',
     
     //urgentnews
+    'urgentnews#g1': 'View all posts',
+    'urgentnews#g2': 'Read More',
     'urgentnews#1': 'Initial Circulation Supply of CINXO',            //title
     'urgentnews#2': '4 MIN READ',                                      // readtime
     'urgentnews#3': 'Important information about CINDX tokens!',      // mainThought
@@ -705,8 +715,10 @@ const en = {
     'urgentnews#14': '3 MIN READ',
     'urgentnews#15': 'CINDX Premium Token Offering on Bitforex',
     'urgentnews#16': 'https://event.bitforex.com/en/CINXO.html',
-    'urgentnews#17': '',
-    'urgentnews#18': '',
+    'urgentnews#17': 'Official Social Media Channels for CINDX',
+    'urgentnews#18': '2 MIN READ',
+    'urgentnews#19': 'The given list contains all of our official channels and online media',
+    'urgentnews#20': 'https://medium.com/cindx/official-social-media-channels-for-cindx-4c44759dffe8',
 
     //'joinTokenPreSale#1': 'Join Token Pre-Sale Now!',
     //'joinTokenPreSale#2': 'JOIN PRE-SALE',
@@ -743,6 +755,8 @@ const en = {
     'mvpBlock#12': '',
     'mvpBlock#13': '',
     'mvpBlock#14': '',
+
+    'common#g1': 'Email',
 
     'subscribeBlock#1': 'Be the first to get the latest news and updates from CINDX',
 

@@ -4,13 +4,21 @@ const zn = {
     'mainBlock#2': '让加密货币投资变得安全便捷',
     'mainBlock#3': '订阅 Cindx 的最新消息', // CINDX IS LIVE NOW!
 
-    'headerTimer#1': '距离',
-    'headerTimer#2': 'D',
-    'headerTimer#3': 'H',
-    'headerTimer#4': 'M',
-    'headerTimer#5': 'S',
-    'headerTimer#6': 'Bitforex',
-    'headerTimer#7': '上的初始交易所产品预发行开始还有',
+//Текст в плашке
+    'headertext#0': 'CINDX Pre-IEO 开始:',      //сейчас ( есть таймер)
+    'headertext#1': 'CINDX Pre-IEO直播！', //25.06 14-59 мск:
+    'headertext#2': '第二轮CINDX Pre-IEO开始:', // 25.06 16-00 мск: ( есть таймер)
+    'headertext#3': 'CINDX Pre-IEO结束:',  // 26.06 15-00 мск ( есть таймер)
+    'headertext#4': 'CINDX Pre-IEO 已经结束了.', // 27.06 15-00 мск(или раньше) первая строка  
+    'headertext#4_1':'价值400 000美元的代币已经出售', // 27.06 15-00 мск(или раньше) вторая строка ( не показывать в моб)
+//Таймер
+    'headerTimer#1': 'D',
+    'headerTimer#2': 'H',
+    'headerTimer#3': 'M',
+    'headerTimer#4': 'S',
+// Кнопка в плашке
+    'buttonheader#1': '购买CINXO在', 
+    'buttonheader#2': 'BitForex上',   // Название биржи с эконкой на кнопке
 
 //    'icoInfo#1': '我们接受：',
 //    'icoInfo#2': '硬上限：',
@@ -20,14 +28,14 @@ const zn = {
     'menu#1': '白皮书 ',
     'menu#2': '演示文稿',
     'menu#3': '单页报告',
-//    'menu#4': '财务模型 ',
+    'menu#4': '博客 ',
     'menu#5': '法律文件',
     'menu#6': 'EN',
     'menu#7': '产品',
 //    'menu#8': '销售详情',
     'menu#9': '团队',
     'menu#10': '公开文件',
-    'menu#11': 'CINDX LIVE',
+    'menu#11': 'CINDX 平台',
     'menu#12': '订阅',
 
     'mailForm#1': '错误的电子邮件',
@@ -79,10 +87,10 @@ const zn = {
  //   'progressBarSale#10': 'Nov 19',
  //   'progressBarSale#11': 'Dec 3',
  //   'progressBarSale#12': 'Dec 17',
- //   'progressBarSale#13': 'ONE PAGER',
+  // 'progressBarSale#13': '单页报告',
  //   'progressBarSale#14': 'PRESENTATION',
- //   'progressBarSale#15': 'WHITEPAPER',
- //   'progressBarSale#16': 'FINANCIAL MODEL',
+  // 'progressBarSale#15': '白皮书',
+ //   'progressBarSale#16': 'BLog',
  //   'progressBarSale#17': 'LEGAL DOCS',
  //   'progressBarSale#18': 'Download Our Public Documents',
  //   'progressBarSale#19': '',
@@ -456,7 +464,7 @@ const zn = {
     'mediaNews#2_90': 'Enjoy reading what inspired Yuriy Avdeev to create a project that will help all participants of the crypto market to be profitably engaged - CINDX.',
     'mediaNews#2_91': 'Weekly digest (13.08.18 - 19.08.18)',
     'mediaNews#2_92': 'CINDX continues its regular Weekly Digest column. We are excited to share our project’s progress and the most recent achievements! We are glad to remind you that CINDX security token Pre-sale starts this Sunday. Don"t miss',
-    'mediaNews#2_93': 'Upcoming',
+    'mediaNews#2_93': '接下来的活动',
     'mediaNews#2_94': 'Ended',
     'mediaNews#2_95': '路演',
 
@@ -531,21 +539,21 @@ const zn = {
     'teamAdvisersPartners#66_1': '7年交易经验',
     'teamAdvisersPartners#67_1': '拥有金融科技项目架构发展经验',
     'teamAdvisersPartners#68_1': '5年资产管理经验',
-    'teamAdvisersPartners#69_1': 'Yuri Proshin',
-    'teamAdvisersPartners#70_1': 'Head of Community',
-    'teamAdvisersPartners#71_1': 'Master \'s Degree in International Business',
-    'teamAdvisersPartners#72_1': '4 years in FinTech and blockchain startups',
-    'teamAdvisersPartners#73_1': 'Focus on community management, PR and communications',
-    'teamAdvisersPartners#74_1': 'Nikita Begishev',
-    'teamAdvisersPartners#75_1': 'Developer',
-    'teamAdvisersPartners#76_1': 'Experienced Full-Stack Developer',
-    'teamAdvisersPartners#77_1': 'Big data processing',
-    'teamAdvisersPartners#78_1': 'Аnalysis and visualization',
-    'teamAdvisersPartners#79_1': 'Alexander Bogdanov',
-    'teamAdvisersPartners#80_1': '',
-    'teamAdvisersPartners#81_1': 'finance and investment consulting specialist with over 12 years of experience',
-    'teamAdvisersPartners#82_1': 'marketing strategy development',
-    'teamAdvisersPartners#83_1': '',
+    'teamAdvisersPartners＃69_1': 'Yuri Proshin',
+    'teamAdvisersPartners＃70_1': '社区负责人',
+    'teamAdvisersPartners＃71_1': '国际商务硕士学位',
+    'teamAdvisersPartners＃72_1': '4年FinTech和区块链经验',
+    'teamAdvisersPartners＃73_1': '社区管理,公共关系和沟通',
+    'teamAdvisersPartners＃74_1': 'Nikita Begishev',
+    'teamAdvisersPartners＃75_1': '开发人员',
+    'teamAdvisersPartners＃76_1': '经验丰富的全栈开发者',
+    'teamAdvisersPartners＃77_1': '大数据处理',
+    'teamAdvisersPartners＃78_1': '分析和可视化',
+    'teamAdvisersPartners＃79_1': 'Alexander Bogdanov',
+    'teamAdvisersPartners＃80_1': '',
+    'teamAdvisersPartners＃81_1': '拥有超过12年经验的金融和投资咨询专家',
+    'teamAdvisersPartners＃82_1': '营销策略发展',
+    'teamAdvisersPartners＃83_1': '',
    
     // advisers
     'teamAdvisersPartners#59': 'Keith Teare',
@@ -688,25 +696,29 @@ const zn = {
     'teamAdvisersPartners#196': '',
     'teamAdvisersPartners#197': '',
 
-      //urgentnews
-    'urgentnews#1': 'Initial Circulation Supply of CINXO',            //title
-    'urgentnews#2': '4 MIN READ',                                      // readtime
-    'urgentnews#3': 'Important information about CINDX tokens!',      // mainThought
-    'urgentnews#4': 'https://medium.com/cindx/the-initial-circulating-supply-of-cinxo-tokens-386ae92b57cd', // link
-    'urgentnews#5': 'CINDX Token Benefits For Token Holders',
-    'urgentnews#6': '4 MIN READ',
-    'urgentnews#7': 'Get to know more about the CINDX tokens!',
-    'urgentnews#8': 'https://medium.com/cindx/cindx-token-benefits-for-token-holders-d3228205117c',
-    'urgentnews#9': 'CINDX FAQ',
-    'urgentnews#10': '6 MIN READ',
-    'urgentnews#11': 'Frequently Asked Questions About CINDX',
-    'urgentnews#12': 'https://medium.com/cindx/frequently-asked-questions-about-cindx-692cae405d6',
-    'urgentnews#13': 'CINDX launches on Bitforex',
-    'urgentnews#14': '3 MIN READ',
-    'urgentnews#15': 'CINDX Premium Token Offering on Bitforex',
-    'urgentnews#16': 'https://event.bitforex.com/en/CINXO.html',
-    'urgentnews#17': '',
-    'urgentnews#18': '',
+    //urgentnews
+    'urgentnews#g1': '查看所有文章',
+    'urgentnews#g2': '更多',
+    'urgentnews#1': 'CINXO代币的初始循环供应',            //title
+    'urgentnews#2': '4 分钟',                                      // readtime
+    'urgentnews#3': '关于CINXO代币重要的信息!',      // mainThought
+    'urgentnews#4': 'https://www.weibo.com/ttarticle/p/show?id=2309404386816240316389', // link
+    'urgentnews#5': 'CINDX 代币为持有者带来的收益',
+    'urgentnews#6': '4 分钟',
+    'urgentnews#7': '了解更多关于CINDX代币!',
+    'urgentnews#8': 'https://www.weibo.com/ttarticle/p/show?id=2309404386715006578968',
+    'urgentnews#9': '常见问题',
+    'urgentnews#10': '6 分钟',
+    'urgentnews#11': '关于CINDX的常见问题',
+    'urgentnews#12': 'https://www.weibo.com/ttarticle/p/show?id=2309404386453491679919',
+    'urgentnews#13': 'CINDX在Bitforex上发行',
+    'urgentnews#14': '3 分钟',
+    'urgentnews#15': '在币夫交易所上的CINDX尊享通证认购',
+    'urgentnews#16': 'https://event.bitforex.com/cn/CINXO.html',
+    'urgentnews#17': 'CINDX的官方社交媒体',
+    'urgentnews#18': '2 分钟',
+    'urgentnews#19': '给出的列表中包含我们所有的官方渠道和线上媒体',
+    'urgentnews#20': 'https://medium.com/cindx/official-social-media-channels-for-cindx-4c44759dffe8',
 
  //   'joinTokenPreSale#1': '参与代币预售！',
 //    'joinTokenPreSale#2': '参与预售',
@@ -743,6 +755,8 @@ const zn = {
     'mvpBlock#12': '',
     'mvpBlock#13': '',
     'mvpBlock#14': '',
+
+    'common#g1': '邮箱',
 
     'subscribeBlock#1': '成为第一个从CINDX获取最新消息和更新的人',
 

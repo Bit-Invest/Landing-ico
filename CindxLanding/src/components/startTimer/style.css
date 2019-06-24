@@ -20,6 +20,7 @@
   padding: 0 15px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .startTimer .content .titleText .firstText {
@@ -29,17 +30,31 @@
   flex-wrap: wrap;
 }
 
-.startTimer .content .titleText .firstText > span {
+.startTimer .content .titleText .timerText {
+  display: flex;
+  justify-content: center;
+}
+
+.startTimer .content .titleText .buyButton {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  font-size: 13px;
+  padding: 0 20px;
+  border-radius: 100px;
+  align-self: center;
+  margin-top: 5px;
+}
+
+.startTimer .content .titleText .buyButton > span {
   display: inline-flex;
 }
 
-.startTimer .content .titleText .firstText .logoIcon {
+.startTimer .content .titleText .buyButton .logoIcon {
   width: 30px;
   height: 30px;
   margin: 0 5px;
 }
 
-.startTimer .content .titleText .timerText {
-  display: flex;
-  justify-content: center;
-}

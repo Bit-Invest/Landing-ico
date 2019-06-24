@@ -4,13 +4,21 @@ const ko = {
     'mainBlock#2': '암호자산 투자를 쉽고, 안전하게 그리고 빠르게 하십시오',
     'mainBlock#3': 'CINDX 실시간 이용 가능!',
 
-    'headerTimer#1': '',
-    'headerTimer#2': 'D',
-    'headerTimer#3': 'H',
-    'headerTimer#4': 'M',
-    'headerTimer#5': 'S',
-    'headerTimer#6': 'Bitforex',
-    'headerTimer#7': '오직 1시간 소요',
+//Текст в плашке
+    'headertext#0': 'CINDX Pre-IEO start in',      //сейчас ( есть таймер)
+    'headertext#1': 'The CINDX Pre-IEO is Live!', //25.06 14-59 мск:
+    'headertext#2': '2nd round of CINDX Pre-IEO starts in', // 25.06 16-00 мск: ( есть таймер)
+    'headertext#3': 'The CINDX Pre-IEO ends in',  // 26.06 15-00 мск ( есть таймер)
+    'headertext#4': 'The CINDX Pre-IEO has ended.', // 27.06 15-00 мск(или раньше) первая строка  
+    'headertext#4_1': '$400,000 worth of tokens sold.', // 27.06 15-00 мск(или раньше) вторая строка ( не показывать в моб)
+//Таймер
+    'headerTimer#1': 'D',
+    'headerTimer#2': 'H',
+    'headerTimer#3': 'M',
+    'headerTimer#4': 'S',
+// Кнопка в плашке
+    'buttonheader#1': 'Buy CINXO on ', 
+    'buttonheader#2': 'BitForex',   // Название биржи с эконкой на кнопке
 
 //    'icoInfo#1': '동의합니다:',
 //    'icoInfo#2': '하드캡:',
@@ -20,7 +28,7 @@ const ko = {
     'menu#1': '백서',
     'menu#2': '프레젠테이션',
     'menu#3': '요약 자료 ',
-//    'menu#4': '금융 모델 ',
+    'menu#4': '블로그',
     'menu#5': '법률 문서',
     'menu#6': '영어',
     'menu#7': '제품',
@@ -688,7 +696,9 @@ const ko = {
     'teamAdvisersPartners#196': '',
     'teamAdvisersPartners#197': '',
 
-//urgentnews
+    //urgentnews
+    'urgentnews#g1': '모두 보기 게시물',
+    'urgentnews#g2': '자세히보기',
     'urgentnews#1': 'Initial Circulation Supply of CINXO',            //title
     'urgentnews#2': '4 MIN READ',                                      // readtime
     'urgentnews#3': 'Important information about CINDX tokens!',      // mainThought
@@ -704,9 +714,11 @@ const ko = {
     'urgentnews#13': 'CINDX launches on Bitforex',
     'urgentnews#14': '3 MIN READ',
     'urgentnews#15': 'CINDX Premium Token Offering on Bitforex',
-    'urgentnews#16': 'https://event.bitforex.com/en/CINXO.html',
-    'urgentnews#17': '',
-    'urgentnews#18': '',
+    'urgentnews#16': 'https://event.bitforex.com/kr/CINXO.html',
+    'urgentnews#17': 'Official Social Media Channels for CINDX',
+    'urgentnews#18': '2 MIN READ',
+    'urgentnews#19': 'The given list contains all of our official channels and online media',
+    'urgentnews#20': 'https://medium.com/cindx/official-social-media-channels-for-cindx-4c44759dffe8',
 
 //    'joinTokenPreSale#1': '토큰 프리세일 참여하기!',
 //    'joinTokenPreSale#2': '프리세일 참여하기 ',
@@ -743,6 +755,8 @@ const ko = {
     'mvpBlock#12': '',
     'mvpBlock#13': '',
     'mvpBlock#14': '',
+
+    'common#g1': '이메일',
 
     'subscribeBlock#1': 'CINDX에 대해 먼저 알아야합니다.',
 

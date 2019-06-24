@@ -13,6 +13,8 @@ export default class StartTimer extends React.Component {
     this.state = {
       stepIEO: 0, // 0 - до 1 раунда, 1 - вовремя 1 раунда, 2 - после 1 раунда, 3 - вовремя 2 раунда, 4 - после 2 раунда
       restTime: '0d : 0h : 0m',
+      text: '',
+      buyButton: false,
     };
   }
 
@@ -21,19 +23,53 @@ export default class StartTimer extends React.Component {
       this.getRestTime();
     }, 1000);
   }
-
-  // 1) 25.06 14-59 мск: The CINDX Pre-IEO is Live!
-  // 2) 25.06 16-00 мск: 2nd round of CINDX Pre-IEO starts in X:Y:Z
-  // 3) 26.06 15-00 мск: The CINDX Pre-IEO ends in X:Y:Z
-  // 4) 27.06 15-00 мск(или раньше): The CINDX Pre-IEO has ended. $400,000 worth of tokens sold. (в моб только первое предложение; кнопку убрать и в пк, и в моб)
-
+  
   getRestTime = () => {
     const dateNow = new Date();
     const myOffsetUTC = dateNow.getTimezoneOffset();
     const timeMyOffsetUTC = myOffsetUTC * 60 * 1000;
     const utcNowTime = dateNow.getTime() + timeMyOffsetUTC;
 
-    const timePreIEO = new Date('2019/06/25 12:00').getTime();
+    const datesIEO = [
+      {
+        text: indexLngObj[lng]['headertext#0'],
+        timeTo: '2019/06/25 12:00',
+        buyButton: true,
+      },
+      {
+        text: indexLngObj[lng]['headertext#1'],
+        timeTo: '2019/06/25 13:00',
+        buyButton: true,
+      },
+      {
+        text: indexLngObj[lng]['headertext#2'],
+        timeTo: '2019/06/26 12:00',
+        buyButton: true,
+      },
+      {
+        text: indexLngObj[lng]['headertext#3'],
+        timeTo: '2019/06/27 12:00',
+        buyButton: true,
+      },
+      {
+        text: `${indexLngObj[lng]['headertext#4']} ${indexLngObj[lng]['headertext#4_1']}`,
+        timeTo: '2019/06/27 12:00',
+        buyButton: false,
+      },
+    ];
+
+    let nextDateIEO = datesIEO[datesIEO.length - 1];
+
+    for (const tsDate of datesIEO) {
+      const tsRestTime = new Date(tsDate.timeTo).getTime() - utcNowTime;
+
+      if (tsRestTime >= 0) {
+        nextDateIEO = tsDate;
+        break;
+      }
+    }
+
+    const timePreIEO = new Date(nextDateIEO.timeTo).getTime();
     const utcIEOTime = timePreIEO;
     
     const restTime = utcIEOTime - utcNowTime;
@@ -61,28 +97,27 @@ export default class StartTimer extends React.Component {
 
     this.setState({
       restTime: `${restDays}d : ${restHours}h : ${restMinutes}m`,
+      text: nextDateIEO.text,
+      buyButton: nextDateIEO.buyButton,
     });
   }
 
 	render() {
 		return(
-			<a target="_blanl" rel="noopener noreferrer" href={indexLngObj[lng]['link#1_bitforex']}>
-        <div className="startTimer">
-            <div className="size content">
-              <div className="titleText">
-                <div className="firstText">
-                  <span>{indexLngObj[lng]['headerTimer#1']}</span> 
-                  <span>
-                    <img alt="" className="logoIcon" src={BitForexIcon} /> 
-                    <span>{indexLngObj[lng]['headerTimer#6']}</span>
-                  </span> 
-                  <span>&#8194;{indexLngObj[lng]['headerTimer#7']}&#8194;</span>              
-                </div>
-                <div className="timerText">{this.state.restTime}</div>
-              </div>
+      <div className="startTimer">
+          <div className="size content">
+            <div className="titleText">
+              <div className="firstText"><span>{this.state.text}&#8194;</span><span>{this.state.restTime}</span></div>
+              <a className="buyButton" target="_blanl" rel="noopener noreferrer" href={indexLngObj[lng]['link#1_bitforex']}>
+                <span>{indexLngObj[lng]['buttonheader#1']}</span>
+                <span>
+                  <img alt="" className="logoIcon" src={BitForexIcon} /> 
+                  <span>{indexLngObj[lng]['buttonheader#2']}</span>
+                </span> 
+              </a>
             </div>
-        </div>
-      </a>
+          </div>
+      </div>
 		);
 	}
 };
