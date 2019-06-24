@@ -79,6 +79,8 @@ export default class StartTimer extends React.Component {
     let restMinutes = Math.floor(restTime / 1000 / 60) - ((restDays * 24 * 60) + (restHours * 60)); 
     let restSeconds = Math.floor(restTime / 1000) - ((restDays * 24 * 60 * 60) + (restHours * 60 * 60) + (restMinutes * 60)); 
 
+    let restDaysInt = restDays;
+
     if ((`${restDays}`).length === 1) {
       restDays = `0${restDays}`;
     }
@@ -95,8 +97,14 @@ export default class StartTimer extends React.Component {
       restSeconds = `0${restSeconds}`;
     }
 
+    console.log({restDaysInt});
+
     this.setState({
-      restTime: `${restDays}d : ${restHours}h : ${restMinutes}m`,
+      restTime: restDaysInt > 0 ? (
+        `${restDays}d : ${restHours}h : ${restMinutes}m`
+      ) : (
+        `${restHours}h : ${restMinutes}m : ${restSeconds}s`
+      ),
       text: nextDateIEO.text,
       buyButton: nextDateIEO.buyButton,
     });
