@@ -755,7 +755,7 @@ const zn = {
 
     'subscribeBlock#1': '成为第一个从CINDX获取最新消息和更新的人',
 
-    'link#1_bitforex': 'https://support.bitforex.com/hc/zh-cn/articles/360029703651-CINDX-CINXO-全球认购-即将开放',
+    'link#1_bitforex': 'https://event.bitforex.com/cn/CINXO.html',
 }
 
 export default zn;

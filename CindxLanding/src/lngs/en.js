@@ -755,7 +755,7 @@ const en = {
 
     'subscribeBlock#1': 'Be the first to get the latest news and updates from CINDX',
 
-    'link#1_bitforex': 'https://support.bitforex.com/hc/en-us/articles/360029703651',
+    'link#1_bitforex': 'https://event.bitforex.com/en/CINXO.html',
 };
 
 export default en;
