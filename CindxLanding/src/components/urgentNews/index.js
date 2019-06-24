@@ -37,6 +37,14 @@ let urgentNewsData = [
     },
     linkMore: indexLngObj[lng]['urgentnews#16'],
   },
+  {
+    texts: {
+      title: indexLngObj[lng]['urgentnews#17'],
+      readingTime: indexLngObj[lng]['urgentnews#18'],
+      mainThought: indexLngObj[lng]['urgentnews#19'], 
+    },
+    linkMore: indexLngObj[lng]['urgentnews#20'],
+  },
 ];
 
 class UrgentNest extends React.Component {
@@ -55,11 +63,13 @@ class UrgentNest extends React.Component {
   }
 
   render() {
+    const viewAllLink = lng === 'zn' ? links.soc.wb : links.soc.medium;
+
     return(
       <div className="urgentNews">
         <div className="size container">
           <div className="listUrgents">{this.renderNews()}</div>
-          <a className="clickToAllUrgents" href={links.medium} target="_blank">{ indexLngObj[lng]['urgentnews#g1'] }</a>
+          <a className="clickToAllUrgents" href={viewAllLink} target="_blank">{ indexLngObj[lng]['urgentnews#g1'] }</a>
         </div>
       </div>
     );
