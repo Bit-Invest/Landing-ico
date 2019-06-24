@@ -25,7 +25,7 @@ export default class StartTimer extends React.Component {
   }
 
   getRestTime = () => {
-    const dateNow = new Date('2019/06/25 16:00');
+    const dateNow = new Date();
     const myOffsetUTC = dateNow.getTimezoneOffset();
     const timeMyOffsetUTC = myOffsetUTC * 60 * 1000;
     const utcNowTime = dateNow.getTime() + timeMyOffsetUTC;
