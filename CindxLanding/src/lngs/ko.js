@@ -53,9 +53,6 @@ const ko = {
     'mailForm#27': '동의 & 제출',
     'mailForm#28': '기 전에 그것을 얻을 다른 사람들! 제공 내에 만료됩',
     'mailForm#29': '을 얻고 싶은 최신 뉴스를 제공합?',
-    'mailForm#30': '원-스톱 솔루션을 위한 암호화 자산을 관리할 수 있습니다.',
-    'mailForm#31': '암호화 통화 투자를 쉽고 안전하며 빠릅니다.',
-    'mailForm#32': 'Cindx의 최신 업데이트 구독',
     'mailForm#33': '구독하기',
     'mailForm#34': 'PROSPECTUS',
     'mailForm#35': '기술 백서',
@@ -690,6 +687,26 @@ const ko = {
     'teamAdvisersPartners#195': '',
     'teamAdvisersPartners#196': '',
     'teamAdvisersPartners#197': '',
+
+//urgentnews
+    'urgentnews#1': 'Initial Circulation Supply of CINXO',            //title
+    'urgentnews#2': '4 MIN READ',                                      // readtime
+    'urgentnews#3': 'Important information about CINDX tokens!',      // mainThought
+    'urgentnews#4': 'https://medium.com/cindx/the-initial-circulating-supply-of-cinxo-tokens-386ae92b57cd', // link
+    'urgentnews#5': 'CINDX Token Benefits For Token Holders',
+    'urgentnews#6': '4 MIN READ',
+    'urgentnews#7': 'Get to know more about the CINDX tokens!',
+    'urgentnews#8': 'https://medium.com/cindx/cindx-token-benefits-for-token-holders-d3228205117c',
+    'urgentnews#9': 'CINDX FAQ',
+    'urgentnews#10': '6 MIN READ',
+    'urgentnews#11': 'Frequently Asked Questions About CINDX',
+    'urgentnews#12': 'https://medium.com/cindx/frequently-asked-questions-about-cindx-692cae405d6',
+    'urgentnews#13': 'CINDX launches on Bitforex',
+    'urgentnews#14': '3 MIN READ',
+    'urgentnews#15': 'CINDX Premium Token Offering on Bitforex',
+    'urgentnews#16': 'https://event.bitforex.com/en/CINXO.html',
+    'urgentnews#17': '',
+    'urgentnews#18': '',
 
 //    'joinTokenPreSale#1': '토큰 프리세일 참여하기!',
 //    'joinTokenPreSale#2': '프리세일 참여하기 ',

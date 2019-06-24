@@ -32,8 +32,8 @@ const en = {
 
     'mailForm#1': 'Wrong email',
     'mailForm#2': 'sending ..',
-    'mailForm#3': 'Already was or is not valid, try again',
-    'mailForm#4': 'Your email has been sent successfully',
+    'mailForm#3': '이메일이 이미 사용되었거나 올바르지 않습니다.',
+    'mailForm#4': '이메일 수신함을 확인하고 가입을 확인하십시오.',
     'mailForm#5': 'an error occurred, try again',
     'mailForm#6': 'GDRP Сompliance',
     'mailForm#7': 'Personal data provided via Subscription form and KYC procedure will be collected in the full compliance with GDRP The Data Protection Officer of the project is Mrs. Sofja Pevzner-Belositski. Contact details: dpo@cindx.io. Any data subject may, at any time, contact Data Protection Officer of directly with any request related to data protection. Your personal data provided via Subscription form and KYC procedure will be shared to our partners:',
@@ -202,7 +202,7 @@ const en = {
     'marketAnalytics#14': 'Geographic Scope',
     'marketAnalytics#15': 'More than 25 million potential Managers and Traders',
     'marketAnalytics#16': '',
-    'marketAnalytics#17': 'More than 100 million potential investors',
+    'marketAnalytics#17': 'More than 100 million potential investors and',
     'marketAnalytics#18': 'transactions every day',
     'marketAnalytics#19': 'More than 1000 institutional partners,',
     'marketAnalytics#20': 'each with $3-5 billion',
@@ -687,6 +687,26 @@ const en = {
     'teamAdvisersPartners#195': '',
     'teamAdvisersPartners#196': '',
     'teamAdvisersPartners#197': '',
+    
+    //urgentnews
+    'urgentnews#1': 'Initial Circulation Supply of CINXO',            //title
+    'urgentnews#2': '4 MIN READ',                                      // readtime
+    'urgentnews#3': 'Important information about CINDX tokens!',      // mainThought
+    'urgentnews#4': 'https://medium.com/cindx/the-initial-circulating-supply-of-cinxo-tokens-386ae92b57cd', // link
+    'urgentnews#5': 'CINDX Token Benefits For Token Holders',
+    'urgentnews#6': '4 MIN READ',
+    'urgentnews#7': 'Get to know more about the CINDX tokens!',
+    'urgentnews#8': 'https://medium.com/cindx/cindx-token-benefits-for-token-holders-d3228205117c',
+    'urgentnews#9': 'CINDX FAQ',
+    'urgentnews#10': '6 MIN READ',
+    'urgentnews#11': 'Frequently Asked Questions About CINDX',
+    'urgentnews#12': 'https://medium.com/cindx/frequently-asked-questions-about-cindx-692cae405d6',
+    'urgentnews#13': 'CINDX launches on Bitforex',
+    'urgentnews#14': '3 MIN READ',
+    'urgentnews#15': 'CINDX Premium Token Offering on Bitforex',
+    'urgentnews#16': 'https://event.bitforex.com/en/CINXO.html',
+    'urgentnews#17': '',
+    'urgentnews#18': '',
 
     //'joinTokenPreSale#1': 'Join Token Pre-Sale Now!',
     //'joinTokenPreSale#2': 'JOIN PRE-SALE',

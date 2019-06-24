@@ -1,40 +1,41 @@
 import React from 'react';
-import { links } from '../../links.js';
+import { lng, links } from '../../links';
+import indexLngObj from '../../lngs/index';
 
 import './style.css';
 
 let urgentNewsData = [
   {
     texts: {
-      title: 'Initial Circulation Supply of CINXO',
-      readingTime: '4 MIN READ',
-      mainThought: 'Important information about CINDX tokens!', 
+      title: indexLngObj[lng]['urgentnews#1'],
+      readingTime: indexLngObj[lng]['urgentnews#2'],
+      mainThought: indexLngObj[lng]['urgentnews#3'], 
     },
-    linkMore: 'https://medium.com/cindx/the-initial-circulating-supply-of-cinxo-tokens-386ae92b57cd',
+    linkMore: indexLngObj[lng]['urgentnews#4'],
   },
   {
     texts: {
-      title: 'CINDX Token Benefits For Token Holders',
-      readingTime: '4 MIN READ',
-      mainThought: 'Get to know more about the CINDX tokens!',
+      title: indexLngObj[lng]['urgentnews#5'],
+      readingTime: indexLngObj[lng]['urgentnews#6'],
+      mainThought: indexLngObj[lng]['urgentnews#7'], 
     },
-    linkMore: 'https://medium.com/cindx/cindx-token-benefits-for-token-holders-d3228205117c',
+    linkMore: indexLngObj[lng]['urgentnews#8'],
   },
   {
     texts: {
-      title: 'CINDX FAQ',
-      readingTime: '6 MIN READ',
-      mainThought: 'Frequently Asked Questions About CINDX',
+      title: indexLngObj[lng]['urgentnews#9'],
+      readingTime: indexLngObj[lng]['urgentnews#10'],
+      mainThought: indexLngObj[lng]['urgentnews#11'], 
     },
-    linkMore: 'https://medium.com/cindx/frequently-asked-questions-about-cindx-692cae405d6',
+    linkMore: indexLngObj[lng]['urgentnews#12'],
   },
-    {
+  {
     texts: {
-      title: 'CINDX launches on Bitforex',
-      readingTime: '3 MIN READ',
-      mainThought: 'CINDX Premium Token Offering on Bitforex',
+      title: indexLngObj[lng]['urgentnews#13'],
+      readingTime: indexLngObj[lng]['urgentnews#14'],
+      mainThought: indexLngObj[lng]['urgentnews#15'], 
     },
-    linkMore: 'https://event.bitforex.com/en/CINXO.html',
+    linkMore: indexLngObj[lng]['urgentnews#16'],
   },
 ];
 
