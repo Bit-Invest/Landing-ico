@@ -191,7 +191,13 @@ class Menu extends React.Component {
                 onMouseMove={this.openLanguage}
                 className="drop-down"
               >
-                <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
+                <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">
+                  { ({
+                    'en': 'EN',
+                    'zn': '中文',
+                    'ko': 'KO',
+                  })[lng].toUpperCase() }
+                </div></a>
                 <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
                 <div className="publickOnMouseLeave"></div>
                 {this.renderLanguage()}
@@ -204,7 +210,13 @@ class Menu extends React.Component {
                 onMouseMove={this.openLanguage}
                 className="drop-down"
               >
-                <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">{ lng.toUpperCase() }</div></a>
+                <a className="menu-lang-flags">{this.renderFlag(lng)}<div className="menu-lang">
+                  { ({
+                    'en': 'EN',
+                    'zn': '中文',
+                    'ko': 'KO',
+                  })[lng].toUpperCase() }
+                </div></a>
                 <img className="arrow_public" src={arrow_public} alt={"CINDX"}/>
                 <div className="publickOnMouseLeave"></div>
                 {this.renderLanguage()}
