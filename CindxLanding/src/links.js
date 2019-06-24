@@ -30,7 +30,7 @@ const loc = ((list_lngs.indexOf(user_loc) !== -1) ? user_loc : 'en');
 
 export const lng = loc;
 
-const list_hasDocs = 'en'; //тут языки на которые есть доки
+const list_hasDocs = 'en zn'; //тут языки на которые есть доки
 const doc_forUser = ((list_hasDocs.indexOf(loc) !== -1) ? loc : 'en');
 
 const docs = {
