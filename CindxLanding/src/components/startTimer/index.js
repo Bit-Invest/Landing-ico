@@ -11,6 +11,7 @@ export default class StartTimer extends React.Component {
     super();
 
     this.state = {
+      stepIEO: 0, // 0 - до 1 раунда, 1 - вовремя 1 раунда, 2 - после 1 раунда, 3 - вовремя 2 раунда, 4 - после 2 раунда
       restTime: '0d : 0h : 0m',
     };
   }
@@ -21,22 +22,21 @@ export default class StartTimer extends React.Component {
     }, 1000);
   }
 
+  // 1) 25.06 14-59 мск: The CINDX Pre-IEO is Live!
+  // 2) 25.06 16-00 мск: 2nd round of CINDX Pre-IEO starts in X:Y:Z
+  // 3) 26.06 15-00 мск: The CINDX Pre-IEO ends in X:Y:Z
+  // 4) 27.06 15-00 мск(или раньше): The CINDX Pre-IEO has ended. $400,000 worth of tokens sold. (в моб только первое предложение; кнопку убрать и в пк, и в моб)
+
   getRestTime = () => {
-    const MOSCOW_OFF = 4;
     const dateNow = new Date();
-    const datePreIEO = new Date();
+    const myOffsetUTC = dateNow.getTimezoneOffset();
+    const timeMyOffsetUTC = myOffsetUTC * 60 * 1000;
+    const utcNowTime = dateNow.getTime() + timeMyOffsetUTC;
+
+    const timePreIEO = new Date('2019/06/25 12:00').getTime();
+    const utcIEOTime = timePreIEO;
     
-    dateNow.setTime((new Date().getTime()) + 
-      (dateNow.getTimezoneOffset() * 60 * 1000) + 
-      (1000 * 60 * 60 * MOSCOW_OFF)); 
-
-    datePreIEO.setTime((new Date('2019/06/25 15:00').getTime()) + 
-      (datePreIEO.getTimezoneOffset() * 60 * 1000) + 
-      (1000 * 60 * 60 * MOSCOW_OFF)); 
-
-    const ieoTime = datePreIEO.getTime();
-    const nowTime = dateNow.getTime();
-    const restTime = ieoTime - nowTime;
+    const restTime = utcIEOTime - utcNowTime;
 
     let restDays = Math.floor(restTime / 1000 / 60 / 60 / 24);
     let restHours = Math.floor(restTime / 1000 / 60 / 60) - (restDays * 24); 
