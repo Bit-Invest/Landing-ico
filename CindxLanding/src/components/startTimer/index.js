@@ -23,9 +23,9 @@ export default class StartTimer extends React.Component {
       this.getRestTime();
     }, 1000);
   }
-  
+
   getRestTime = () => {
-    const dateNow = new Date();
+    const dateNow = new Date('2019/06/25 16:00');
     const myOffsetUTC = dateNow.getTimezoneOffset();
     const timeMyOffsetUTC = myOffsetUTC * 60 * 1000;
     const utcNowTime = dateNow.getTime() + timeMyOffsetUTC;
@@ -63,7 +63,7 @@ export default class StartTimer extends React.Component {
     for (const tsDate of datesIEO) {
       const tsRestTime = new Date(tsDate.timeTo).getTime() - utcNowTime;
 
-      if (tsRestTime >= 0) {
+      if (tsRestTime > 0) {
         nextDateIEO = tsDate;
         break;
       }
@@ -107,14 +107,18 @@ export default class StartTimer extends React.Component {
       <div className="startTimer">
           <div className="size content">
             <div className="titleText">
-              <div className="firstText"><span>{this.state.text}&#8194;</span><span>{this.state.restTime}</span></div>
-              <a className="buyButton" target="_blanl" rel="noopener noreferrer" href={indexLngObj[lng]['link#1_bitforex']}>
-                <span>{indexLngObj[lng]['buttonheader#1']}</span>
-                <span>
-                  <img alt="" className="logoIcon" src={BitForexIcon} /> 
-                  <span>{indexLngObj[lng]['buttonheader#2']}</span>
-                </span> 
-              </a>
+              <div className="firstText"><span>{this.state.text}&#8194;</span><span>{this.state.buyButton?this.state.restTime:''}</span></div>
+              {
+                this.state.buyButton && (
+                  <a className="buyButton" target="_blanl" rel="noopener noreferrer" href={indexLngObj[lng]['link#1_bitforex']}>
+                    <span>{indexLngObj[lng]['buttonheader#1']}</span>
+                    <span>
+                      <img alt="" className="logoIcon" src={BitForexIcon} /> 
+                      <span>{indexLngObj[lng]['buttonheader#2']}</span>
+                    </span> 
+                  </a>
+                )
+              }
             </div>
           </div>
       </div>
