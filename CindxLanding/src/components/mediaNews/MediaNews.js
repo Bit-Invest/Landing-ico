@@ -81,6 +81,7 @@ import MediaTokendesk from '../../media/tokendesk.png'
 import MediaBtcmanager from '../../media/BTCManager.png'
 import MediaBlockonomi from '../../media/blockonomi-logo.png'
 
+import MediaAmbcrypto from '../../media/AMBcrypto.png'
 import Investing from '../../media/investing.png'
 import Сryptoninjas from '../../media/Cryptoninjas.png'
 import Coinannouncer from '../../media/Coinannouncer.png'
@@ -238,6 +239,10 @@ let media = [
     name: indexLngObj['en']['mediaNews#1_15'],
     text: indexLngObj['en']['mediaNews#1_16'],
     src: 'http://www.coinfox.info/news/10194-5-tips-from-cindx-crypto-assets-management-hub-how-to-avoid-being-cheated'
+  },
+  {
+    screen: MediaAmbcrypto,
+    src: 'https://ambcrypto.com/how-cindx-is-democratizing-the-modern-financial-system-2/'
   },
 ];
 

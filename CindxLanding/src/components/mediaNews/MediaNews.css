@@ -26,6 +26,12 @@
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 600px) {
+  .block_7 .pressParent .pressList {
+    justify-content: center;
+  }
+}
+
 .block_7 .pressParent .pressList .pressItem {
   display: flex;
   margin: 10px;
