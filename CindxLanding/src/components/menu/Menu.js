@@ -152,9 +152,9 @@ class Menu extends React.Component {
           </div>
           {this.renderPublicDocs()}
           <a href={links.mvp} target="_blank" className="itemMini">{ indexLngObj[lng]['menu#11'] }</a>
-          <a className="itemMini" target="_blank" href={links.wp}>White Paper</a>
-          <a className="itemMini" target="_blank" href={links.op}>One Pager</a>
-          <a className="itemMini" target="_blank" href={links.medium}>Blog</a>
+          <a className="itemMini" target="_blank" href={links.wp}>{ indexLngObj[lng]['menu#1'] }</a>
+          <a className="itemMini" target="_blank" href={links.op}>{ indexLngObj[lng]['menu#3'] }</a>
+          <a className="itemMini" target="_blank" href={links.medium}>{ indexLngObj[lng]['menu#4'] }</a>
         </div>
       )
     } else {
@@ -183,9 +183,9 @@ class Menu extends React.Component {
                 {this.renderPublicDocs()}
               </div>
               <a className="btn" target='_blank' href={links.mvp}>{ indexLngObj[lng]['menu#11'] }</a>
-              <a className="btn" target="_blank" href={links.wp}>White Paper</a>
-              <a className="btn" target="_blank" href={links.op}>One Pager</a>
-              <a className="btn" target="_blank" href={links.medium}>Blog</a>
+              <a className="btn" target="_blank" href={links.wp}>{ indexLngObj[lng]['menu#1'] }</a>
+              <a className="btn" target="_blank" href={links.op}>{ indexLngObj[lng]['menu#3'] }</a>
+              <a className="btn" target="_blank" href={links.medium}>{ indexLngObj[lng]['menu#4'] }</a>
               <div
                 onMouseLeave={this.closeLanguage}
                 onMouseMove={this.openLanguage}

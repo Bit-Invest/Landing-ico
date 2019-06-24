@@ -97,7 +97,7 @@ export class MailBlock extends React.Component {
       <div className="mail-block-footer">
         <div className="title">{indexLngObj[lng]['joinTokenPreSale#16']}</div>
         <div className={`mail-block-footer__formStarted`}>
-          <input type="text" placeholder="EMAIL" onChange={this.onChange} />
+          <input type="text" placeholder={indexLngObj[lng]['common#g1']} onChange={this.onChange} />
           <div className="button_send" onClick={this.sendSubcribe}>{indexLngObj[lng]['joinTokenPreSale#17']}</div>
         </div>
         {

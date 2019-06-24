@@ -47,7 +47,7 @@ class UrgentNest extends React.Component {
           <div className="childItem titleOne">{curUrgent.texts.title}</div>
           <div className="childItem readingTime">{curUrgent.texts.readingTime}</div>
           <div className="childItem mainThought">{curUrgent.texts.mainThought}</div>
-          <a className="readMore" target="_blank" href={curUrgent.linkMore}>Read More</a>
+          <a className="readMore" target="_blank" href={curUrgent.linkMore}>{ indexLngObj[lng]['urgentnews#g2'] }</a>
         </div>
       ))
   
@@ -59,7 +59,7 @@ class UrgentNest extends React.Component {
       <div className="urgentNews">
         <div className="size container">
           <div className="listUrgents">{this.renderNews()}</div>
-          <a className="clickToAllUrgents" href={links.medium} target="_blank">View all posts</a>
+          <a className="clickToAllUrgents" href={links.medium} target="_blank">{ indexLngObj[lng]['urgentnews#g1'] }</a>
         </div>
       </div>
     );

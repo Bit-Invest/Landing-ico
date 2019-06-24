@@ -101,7 +101,7 @@ export default class SubscribeBlock extends React.Component {
               <div className="contentCenter">
                 <div className="inputBlock">
                   <img src={Group} alt="" />
-                  <input type="text" placeholder="Email" onChange={this.onChange} />
+                  <input type="text" placeholder={indexLngObj[lng]['common#g1']} onChange={this.onChange} />
                 </div>
                 <div className="sendButtonSubscribe" onClick={this.sendSubcribe}>
                   {indexLngObj[lng]['joinTokenPreSale#17']}
