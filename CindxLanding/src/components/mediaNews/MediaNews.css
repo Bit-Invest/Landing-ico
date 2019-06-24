@@ -39,6 +39,13 @@
   background-color: transparent;
   padding: 20px;
   flex-wrap: wrap;
+  width: 20%;
+}
+
+@media screen and (max-width: 600px) {
+  .block_7 .pressParent .pressList .pressItem {
+    width: 45%;
+  }
 }
 
 .block_7 .pressParent .pressList .pressItem:hover {
@@ -46,7 +53,9 @@
 }
 
 .block_7 .pressParent .pressList .pressItem .imageLogoMedia {
-  height: 40px;
+  width: 100%;
+  align-self: center;
+  flex: 0 0 auto;
 }
 
 .block_7 .bg > img {

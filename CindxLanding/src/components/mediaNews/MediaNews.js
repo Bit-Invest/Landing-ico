@@ -144,22 +144,22 @@ let media = [
     text: indexLngObj['en']['mediaNews#1_21'],
     src: 'https://www.ccn.com/cindx-crypto-asset-management-hub-adopts-bancor-protocol/'
   },
-  {
-    screen: Thestreet,
-    type: 'thestreet',
-    date: '08.31.2018',
-     name: indexLngObj['en']['mediaNews#1_30'],
-    text: indexLngObj['en']['mediaNews#1_31'],
-    src: 'https://www.thestreet.com/technology/citi-analyst-treat-crypto-and-blockchain-with-healthy-skepticism-14695612'
-  },
-  {
-    screen: Bitcoinexchangeguide,
-    type: 'bitcoinexchangeguide',
-    date: '09.08.2018',
-    name: indexLngObj['en']['mediaNews#1_28'],
-    text: indexLngObj['en']['mediaNews#1_29'], 
-    src: 'https://bitcoinexchangeguide.com/cindx-crypto-asset-manager-for-traders-launches-security-token-ico/'
-  },
+  // {
+  //   screen: Thestreet,
+  //   type: 'thestreet',
+  //   date: '08.31.2018',
+  //    name: indexLngObj['en']['mediaNews#1_30'],
+  //   text: indexLngObj['en']['mediaNews#1_31'],
+  //   src: 'https://www.thestreet.com/technology/citi-analyst-treat-crypto-and-blockchain-with-healthy-skepticism-14695612'
+  // },
+  // {
+  //   screen: Bitcoinexchangeguide,
+  //   type: 'bitcoinexchangeguide',
+  //   date: '09.08.2018',
+  //   name: indexLngObj['en']['mediaNews#1_28'],
+  //   text: indexLngObj['en']['mediaNews#1_29'], 
+  //   src: 'https://bitcoinexchangeguide.com/cindx-crypto-asset-manager-for-traders-launches-security-token-ico/'
+  // },
   {
     screen: Cryptoreporter,
     type: 'cryptoreporter',
@@ -169,81 +169,85 @@ let media = [
     src: 'https://www.crypto-reporter.com/press-releases/even-amateur-blockchain-investors-can-make-it-big-with-the-help-of-cindx-5339/'
   },
   {
-    screen: Coinannouncer,
-    type: 'coinannouncer',
-    date: '09.14.2018',
-    name: indexLngObj['en']['mediaNews#1_24'],
-    text: indexLngObj['en']['mediaNews#1_25'],
-    src: 'https://www.coinannouncer.com/blockchain-investors-can-now-make-it-big-with-the-help-of-cindx/'
-  },
-  {
-    screen: Сryptoninjas,
-    type: 'cryptoninjas',
-    date: '09.05.2018',
-    name: indexLngObj['en']['mediaNews#1_22'],
-    text: indexLngObj['en']['mediaNews#1_23'],
-    src: 'https://www.cryptoninjas.net/2018/09/05/cindx-beginning-ico-for-crypto-asset-management-and-social-network/'
-  },
-  {
-    screen: MediaBitcoinist,
-    type: 'bitcoinist',
-    date: '08.09.2018',
-    name: indexLngObj['en']['mediaNews#1_3'],
-    text: indexLngObj['en']['mediaNews#1_4'],
-    src: 'https://bitcoinist.com/cindx-announces-plans-for-ico-pre-sale-amidst-release-of-revolutionary-crypto-trading-hub-that-allows-users-to-follow-expert-traders/'
-  },
-  {
-    screen: MediaTokendesk,
-    type: 'tokendesk',
-    date: '08.02.2018',
-    name: indexLngObj['en']['mediaNews#1_5'],
-    text: indexLngObj['en']['mediaNews#1_6'],
-    src: 'https://www.tokendesk.io/how-cindx-is-democratizing-the-modern-financial-system/'
-  },
-  {
-    screen: MediaBtcmanager,
-    type: 'btcmanager',
-    date: '08.03.2018',
-    name: indexLngObj['en']['mediaNews#1_7'],
-    text: indexLngObj['en']['mediaNews#1_8'],
-    src: 'https://btcmanager.com/how-cindx-is-democratizing-the-modern-financial-system/'
-  },
-  {
-    screen: MediaBlockonomi,
-    type: 'blockonomi',
-    date: '08.01.2018',
-    name: indexLngObj['en']['mediaNews#1_9'],
-    text: indexLngObj['en']['mediaNews#1_10'],
-    src: 'https://blockonomi.com/cindxico-pre-sale/'
-  },
-  {
-    screen: MediaBitcoingarden,
-    type: 'bitcoingarden',
-    date: '08.01.2018',
-    name: indexLngObj['en']['mediaNews#1_11'],
-    text: indexLngObj['en']['mediaNews#1_12'],
-    src: 'https://bitcoingarden.org/cindx-announces-plans-for-ico-pre-sale-amidst-release-of-revolutionary-crypto-trading-hub-that-allows-users-to-follow-expert-traders/'
-  },
-  {
-    screen: MediaDigitaljournal,
-    type: 'digitaljournal',
-    date: '08.01.2018',
-    name: indexLngObj['en']['mediaNews#1_13'],
-    text: indexLngObj['en']['mediaNews#1_14'],
-    src: 'http://www.digitaljournal.com/pr/3881157'
-  },
-  {
-    screen: MediaCoinfox,
-    type: 'coinfox',
-    date: '08.14.2018',
-    name: indexLngObj['en']['mediaNews#1_15'],
-    text: indexLngObj['en']['mediaNews#1_16'],
-    src: 'http://www.coinfox.info/news/10194-5-tips-from-cindx-crypto-assets-management-hub-how-to-avoid-being-cheated'
-  },
-  {
     screen: MediaAmbcrypto,
     src: 'https://ambcrypto.com/how-cindx-is-democratizing-the-modern-financial-system-2/'
   },
+  // {
+  //   screen: Coinannouncer,
+  //   type: 'coinannouncer',
+  //   date: '09.14.2018',
+  //   name: indexLngObj['en']['mediaNews#1_24'],
+  //   text: indexLngObj['en']['mediaNews#1_25'],
+  //   src: 'https://www.coinannouncer.com/blockchain-investors-can-now-make-it-big-with-the-help-of-cindx/'
+  // },
+  // {
+  //   screen: Сryptoninjas,
+  //   type: 'cryptoninjas',
+  //   date: '09.05.2018',
+  //   name: indexLngObj['en']['mediaNews#1_22'],
+  //   text: indexLngObj['en']['mediaNews#1_23'],
+  //   src: 'https://www.cryptoninjas.net/2018/09/05/cindx-beginning-ico-for-crypto-asset-management-and-social-network/'
+  // },
+  // {
+  //   screen: MediaBitcoinist,
+  //   type: 'bitcoinist',
+  //   date: '08.09.2018',
+  //   name: indexLngObj['en']['mediaNews#1_3'],
+  //   text: indexLngObj['en']['mediaNews#1_4'],
+  //   src: 'https://bitcoinist.com/cindx-announces-plans-for-ico-pre-sale-amidst-release-of-revolutionary-crypto-trading-hub-that-allows-users-to-follow-expert-traders/'
+  // },
+  // {
+  //   screen: MediaTokendesk,
+  //   type: 'tokendesk',
+  //   date: '08.02.2018',
+  //   name: indexLngObj['en']['mediaNews#1_5'],
+  //   text: indexLngObj['en']['mediaNews#1_6'],
+  //   src: 'https://www.tokendesk.io/how-cindx-is-democratizing-the-modern-financial-system/'
+  // },
+  // {
+  //   screen: MediaBtcmanager,
+  //   type: 'btcmanager',
+  //   date: '08.03.2018',
+  //   name: indexLngObj['en']['mediaNews#1_7'],
+  //   text: indexLngObj['en']['mediaNews#1_8'],
+  //   src: 'https://btcmanager.com/how-cindx-is-democratizing-the-modern-financial-system/'
+  // },
+  // {
+  //   screen: MediaBlockonomi,
+  //   type: 'blockonomi',
+  //   date: '08.01.2018',
+  //   name: indexLngObj['en']['mediaNews#1_9'],
+  //   text: indexLngObj['en']['mediaNews#1_10'],
+  //   src: 'https://blockonomi.com/cindxico-pre-sale/'
+  // },
+  // {
+  //   screen: MediaBitcoingarden,
+  //   type: 'bitcoingarden',
+  //   date: '08.01.2018',
+  //   name: indexLngObj['en']['mediaNews#1_11'],
+  //   text: indexLngObj['en']['mediaNews#1_12'],
+  //   src: 'https://bitcoingarden.org/cindx-announces-plans-for-ico-pre-sale-amidst-release-of-revolutionary-crypto-trading-hub-that-allows-users-to-follow-expert-traders/'
+  // },
+  // {
+  //   screen: MediaDigitaljournal,
+  //   type: 'digitaljournal',
+  //   date: '08.01.2018',
+  //   name: indexLngObj['en']['mediaNews#1_13'],
+  //   text: indexLngObj['en']['mediaNews#1_14'],
+  //   src: 'http://www.digitaljournal.com/pr/3881157'
+  // },
+  // {
+  //   screen: MediaCoinfox,
+  //   type: 'coinfox',
+  //   date: '08.14.2018',
+  //   name: indexLngObj['en']['mediaNews#1_15'],
+  //   text: indexLngObj['en']['mediaNews#1_16'],
+  //   src: 'http://www.coinfox.info/news/10194-5-tips-from-cindx-crypto-assets-management-hub-how-to-avoid-being-cheated'
+  // },
+  // {
+  //   screen: MediaAmbcrypto,
+  //   src: 'https://ambcrypto.com/how-cindx-is-democratizing-the-modern-financial-system-2/'
+  // },
 ];
 
 let news = [
