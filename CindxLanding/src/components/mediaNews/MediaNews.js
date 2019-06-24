@@ -82,13 +82,18 @@ import MediaTokendesk from '../../media/tokendesk.png'
 import MediaBtcmanager from '../../media/BTCManager.png'
 import MediaBlockonomi from '../../media/blockonomi-logo.png'
 
-import Investing from '../../media/investing.jpeg'
+import Investing from '../../media/investing.png'
 import Сryptoninjas from '../../media/Cryptoninjas.png'
 import Coinannouncer from '../../media/Coinannouncer.png'
-import Cryptoreporter from '../../media/Cryptoreporter.jpg'
-import Bitcoinexchangeguide from '../../media/Bitcoinexchangeguide.jpeg'
+import Cryptoreporter from '../../media/Cryptoreporter.png'
+import Bitcoinexchangeguide from '../../media/Bitcoinexchangeguide.png'
 import Thestreet from '../../media/Thestreet.png'
 import MediaCNN from '../../media/CCN.png'
+
+import NASDAQ_logo from '../../media/NASDAQ_logo.png';
+import Reuters from '../../media/Reuters.png';
+import YahooFinance from '../../media/YahooFinance.png';
+import morningstar from '../../media/ms.png';
 
 import img_08_1 from '../../news/08/1.png';
 import img_08_2 from '../../news/08/2.png';
@@ -107,6 +112,22 @@ import IMG_1225 from '../../media/IMG_1225.png';
 import './MediaNews.css';
 
 let media = [
+  {
+    screen: morningstar,
+    scr: '',
+  },
+  {
+    screen: NASDAQ_logo,
+    src: '',
+  },
+  {
+    screen: Reuters,
+    src: '',
+  },
+  {
+    screen: YahooFinance,
+    src: '',
+  },
   {
     screen: Investing,
     type: 'investing',
@@ -971,14 +992,14 @@ const getBeautifulDate = (date) => {
   return `${monthStr} ${day}, ${yearStr}`;
 };
 
-media = media
-  .sort((curObjShow1, curObjShow2) => {
-    return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
-  })
-  .map((curMedia) => ({
-    ...curMedia,
-    date: getBeautifulDate(curMedia.date) ? getBeautifulDate(curMedia.date) : curMedia.date,
-  }))
+// media = media
+//   .sort((curObjShow1, curObjShow2) => {
+//     return (new Date(curObjShow2.date).getTime()) - (new Date(curObjShow1.date).getTime())
+//   })
+//   .map((curMedia) => ({
+//     ...curMedia,
+//     date: getBeautifulDate(curMedia.date) ? getBeautifulDate(curMedia.date) : curMedia.date,
+//   }))
 
 news = news
   .sort((curObjShow1, curObjShow2) => {
@@ -1041,21 +1062,6 @@ export class MediaNews extends React.Component {
 
   mapMedia = () => {
     return media.map((el, i) => {
-      const arrName = el.name.split(' ')
-      const arrText = el.text.split(' ')
-      let newName = ''
-      let newText = ''
-
-      arrName.forEach(nameEl => {
-        if (newName.length < 76) {
-          newName += nameEl + ' '
-        }
-      })
-      arrText.forEach(textEl => {
-        if (newText.length < 105) {
-          newText += textEl + ' '
-        }
-      })
       return (
         <a 
           href={el.src} 
@@ -1113,12 +1119,12 @@ export class MediaNews extends React.Component {
     return (
       <div className="block_7">
         <div className="size">
-          {/*<h2 className="header_blocks">{ indexLngObj[lng]['mediaNews#1'] }</h2>
+          <h2 className="header_blocks">{ indexLngObj[lng]['mediaNews#1'] }</h2>
           <div className="block_arrow_relative pressParent">
             <div className="pressList">
               {this.mapMedia()}
             </div>
-          </div>*/}
+          </div>
           <h2 className="header_blocks">{ indexLngObj[lng]['mediaNews#2'] }</h2>
           <div className="block_arrow_relative">
             <div className="settingsNews">

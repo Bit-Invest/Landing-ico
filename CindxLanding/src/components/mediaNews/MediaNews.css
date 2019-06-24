@@ -23,12 +23,16 @@
   width: 90%;
   justify-content: space-between;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .block_7 .pressParent .pressList .pressItem {
   display: flex;
   margin: 10px;
   cursor: pointer;
+  background-color: white;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .block_7 .pressParent .pressList .pressItem:hover {
