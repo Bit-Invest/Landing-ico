@@ -97,8 +97,6 @@ export default class StartTimer extends React.Component {
       restSeconds = `0${restSeconds}`;
     }
 
-    console.log({restDaysInt});
-
     this.setState({
       restTime: restDaysInt > 0 ? (
         `${restDays}d : ${restHours}h : ${restMinutes}m`
