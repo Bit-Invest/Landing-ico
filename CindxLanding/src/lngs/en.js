@@ -11,11 +11,6 @@ const en = {
     'headertext#3': 'The CINDX Pre-IEO ends in',  // 26.06 15-00 мск ( есть таймер)
     'headertext#4': 'The CINDX Pre-IEO has ended.', // 27.06 15-00 мск(или раньше) первая строка  
     'headertext#4_1': '$400,000 worth of tokens sold.', // 27.06 15-00 мск(или раньше) вторая строка ( не показывать в моб)
-//Таймер
-    'headerTimer#1': 'D',
-    'headerTimer#2': 'H',
-    'headerTimer#3': 'M',
-    'headerTimer#4': 'S',
 // Кнопка в плашке
     'buttonheader#1': 'Buy CINXO on ', 
     'buttonheader#2': 'BitForex',   // Название биржи с эконкой на кнопке

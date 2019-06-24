@@ -11,11 +11,6 @@ const zn = {
     'headertext#3': 'CINDX Pre-IEO结束:',  // 26.06 15-00 мск ( есть таймер)
     'headertext#4': 'CINDX Pre-IEO 已经结束了.', // 27.06 15-00 мск(или раньше) первая строка  
     'headertext#4_1':'价值400 000美元的代币已经出售', // 27.06 15-00 мск(или раньше) вторая строка ( не показывать в моб)
-//Таймер
-    'headerTimer#1': 'D',
-    'headerTimer#2': 'H',
-    'headerTimer#3': 'M',
-    'headerTimer#4': 'S',
 // Кнопка в плашке
     'buttonheader#1': '购买CINXO在', 
     'buttonheader#2': 'BitForex上',   // Название биржи с эконкой на кнопке
@@ -539,21 +534,21 @@ const zn = {
     'teamAdvisersPartners#66_1': '7年交易经验',
     'teamAdvisersPartners#67_1': '拥有金融科技项目架构发展经验',
     'teamAdvisersPartners#68_1': '5年资产管理经验',
-    'teamAdvisersPartners＃69_1': 'Yuri Proshin',
-    'teamAdvisersPartners＃70_1': '社区负责人',
-    'teamAdvisersPartners＃71_1': '国际商务硕士学位',
-    'teamAdvisersPartners＃72_1': '4年FinTech和区块链经验',
-    'teamAdvisersPartners＃73_1': '社区管理,公共关系和沟通',
-    'teamAdvisersPartners＃74_1': 'Nikita Begishev',
-    'teamAdvisersPartners＃75_1': '开发人员',
-    'teamAdvisersPartners＃76_1': '经验丰富的全栈开发者',
-    'teamAdvisersPartners＃77_1': '大数据处理',
-    'teamAdvisersPartners＃78_1': '分析和可视化',
-    'teamAdvisersPartners＃79_1': 'Alexander Bogdanov',
-    'teamAdvisersPartners＃80_1': '',
-    'teamAdvisersPartners＃81_1': '拥有超过12年经验的金融和投资咨询专家',
-    'teamAdvisersPartners＃82_1': '营销策略发展',
-    'teamAdvisersPartners＃83_1': '',
+    'teamAdvisersPartners#69_1': 'Yuri Proshin',
+    'teamAdvisersPartners#70_1': '社区负责人',
+    'teamAdvisersPartners#71_1': '国际商务硕士学位',
+    'teamAdvisersPartners#72_1': '4年FinTech和区块链经验',
+    'teamAdvisersPartners#73_1': '社区管理,公共关系和沟通',
+    'teamAdvisersPartners#74_1': 'Nikita Begishev',
+    'teamAdvisersPartners#75_1': '开发人员',
+    'teamAdvisersPartners#76_1': '经验丰富的全栈开发者',
+    'teamAdvisersPartners#77_1': '大数据处理',
+    'teamAdvisersPartners#78_1': '分析和可视化',
+    'teamAdvisersPartners#79_1': 'Alexander Bogdanov',
+    'teamAdvisersPartners#80_1': '',
+    'teamAdvisersPartners#81_1': '拥有超过12年经验的金融和投资咨询专家',
+    'teamAdvisersPartners#82_1': '营销策略发展',
+    'teamAdvisersPartners#83_1': '',
    
     // advisers
     'teamAdvisersPartners#59': 'Keith Teare',

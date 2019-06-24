@@ -11,11 +11,6 @@ const ko = {
     'headertext#3': 'The CINDX Pre-IEO ends in',  // 26.06 15-00 мск ( есть таймер)
     'headertext#4': 'The CINDX Pre-IEO has ended.', // 27.06 15-00 мск(или раньше) первая строка  
     'headertext#4_1': '$400,000 worth of tokens sold.', // 27.06 15-00 мск(или раньше) вторая строка ( не показывать в моб)
-//Таймер
-    'headerTimer#1': 'D',
-    'headerTimer#2': 'H',
-    'headerTimer#3': 'M',
-    'headerTimer#4': 'S',
 // Кнопка в плашке
     'buttonheader#1': 'Buy CINXO on ', 
     'buttonheader#2': 'BitForex',   // Название биржи с эконкой на кнопке
@@ -541,19 +536,19 @@ const ko = {
     'teamAdvisersPartners#67_1': '에서 경험하는 금융 기술 건축물 프로젝트 개발',
     'teamAdvisersPartners#68_1': '5 년 자산 운용',
     'teamAdvisersPartners#69_1': 'Yuri Proshin',
-    'teamAdvisersPartners#70_1': 'Head of Community',
-    'teamAdvisersPartners#71_1': 'Master \'s Degree in International Business',
-    'teamAdvisersPartners#72_1': '4 years in FinTech and blockchain startups',
-    'teamAdvisersPartners#73_1': 'Focus on community management, PR and communications',
+    'teamAdvisersPartners#70_1': '지역 사회 책임자',
+    'teamAdvisersPartners#71_1': '국제 비즈니스에서 석사 학위',
+    'teamAdvisersPartners#72_1': 'FINTECH 및 blockchain 신생 기업에서 사년',
+    'teamAdvisersPartners#73_1': '지역 사회 관리, 홍보 및 커뮤니케이션에 중점을 둡니다.',
     'teamAdvisersPartners#74_1': 'Nikita Begishev',
-    'teamAdvisersPartners#75_1': 'Developer',
-    'teamAdvisersPartners#76_1': 'Experienced Full-Stack Developer',
-    'teamAdvisersPartners#77_1': 'Big data processing',
-    'teamAdvisersPartners#78_1': 'Аnalysis and visualization',
+    'teamAdvisersPartners#75_1': '개발자',
+    'teamAdvisersPartners#76_1': '숙련 된 풀 스택 개발자',
+    'teamAdvisersPartners#77_1': '빅 데이터 처리',
+    'teamAdvisersPartners#78_1': '분석 및 시각화',
     'teamAdvisersPartners#79_1': 'Alexander Bogdanov',
     'teamAdvisersPartners#80_1': '',
-    'teamAdvisersPartners#81_1': 'finance and investment consulting specialist with over 12 years of experience',
-    'teamAdvisersPartners#82_1': 'marketing strategy development',
+    'teamAdvisersPartners#81_1': '12 년 이상의 경험을 가진 재무 및 투자 컨설팅 전문가',
+    'teamAdvisersPartners#82_1': '마케팅 전략 개발',
     'teamAdvisersPartners#83_1': '',
  
     // advisers
