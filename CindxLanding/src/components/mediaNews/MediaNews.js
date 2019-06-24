@@ -76,7 +76,6 @@ import Banners_005 from '../../news/Banners.005_copy.png'
 import Prorocol from '../../news/prorocol.jpg'
 import Kosol_Saisanit_photo from '../../news/Kosol_Saisanit_photo.png'
 import CD3105 from '../../images/CD3105.png'
-import MediaAmbcrypto from '../../media/AMBcrypto.png'
 import MediaBitcoinist from '../../media/Bitcoinist.png'
 import MediaTokendesk from '../../media/tokendesk.png'
 import MediaBtcmanager from '../../media/BTCManager.png'
@@ -183,14 +182,6 @@ let media = [
     name: indexLngObj['en']['mediaNews#1_22'],
     text: indexLngObj['en']['mediaNews#1_23'],
     src: 'https://www.cryptoninjas.net/2018/09/05/cindx-beginning-ico-for-crypto-asset-management-and-social-network/'
-  },
-  {
-    screen: MediaAmbcrypto,
-    type: 'ambcrypto',
-    date: '08.18.2018',
-    name: indexLngObj['en']['mediaNews#1_1'],
-    text: indexLngObj['en']['mediaNews#1_2'],
-    src: 'https://ambcrypto.com/how-cindx-is-democratizing-the-modern-financial-system-2/'
   },
   {
     screen: MediaBitcoinist,
