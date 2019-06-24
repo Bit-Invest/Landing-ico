@@ -21,6 +21,9 @@ import Mofassair_Hossain_team from './people/team/Mofassair_Hossain.jpg';
 import Sergey_Potehin_team from './people/team/Sergey_Potehin.jpg';
 import Sofja_Pevzner_team from './people/team/Sofja_Pevzner.jpg';
 import Val_Jerdes_team from './people/team/Val_Jerdes.jpg';
+import Nikita_Begishev_team from './people/team/Nikita.png';
+import Aleksandr_Bogdanov_team from './people/team/Bogdanov.png';
+import Yuriy_Proshin_team from './people/team/Proshin.png';
 
 //advisers
 import Amarpreet_Singh_advisers from './people/advisers/Amarpreet_Singh.jpg';
@@ -61,6 +64,9 @@ export const peopleImages = {
 		Sergey_Potehin: Sergey_Potehin_team,
 		Sofja_Pevzner: Sofja_Pevzner_team,
 		Val_Jerdes: Val_Jerdes_team,
+		Nikita_Begishev: Nikita_Begishev_team,
+		Aleksandr_Bogdanov: Aleksandr_Bogdanov_team,
+		Yuriy_Proshin: Yuriy_Proshin_team,
 	},
 	advisers: {
 		Amarpreet_Singh: Amarpreet_Singh_advisers,

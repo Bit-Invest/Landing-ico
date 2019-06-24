@@ -95,7 +95,7 @@ const teamInfo = [
     fackt1: indexLngObj[lng]['teamAdvisersPartners#66_1'],
     fackt2: indexLngObj[lng]['teamAdvisersPartners#67_1'],
     fackt3: indexLngObj[lng]['teamAdvisersPartners#68_1'],
-    src: '',
+    src: 'https://www.linkedin.com/in/brichkovskiy-georgy/',
     m: 'https://medium.com/cindx/cindx-attends-the-binance-meetup-moscow-event-81f41e8c4814',
   },
   {
@@ -127,6 +127,36 @@ const teamInfo = [
     fackt3: indexLngObj[lng]['teamAdvisersPartners#53'],
     src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
     m: 'https://medium.com/cindx/team-jelena-karzetskaja-94e8c4286924'
+  },
+  {
+    img: peopleImages.team.Yuriy_Proshin, // оптимизируй картинку
+    name: indexLngObj[lng]['teamAdvisersPartners#69_1'],
+    position: indexLngObj[lng]['teamAdvisersPartners#70_1'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#71_1'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#72_1'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#73_1'],
+    src: 'https://www.linkedin.com/in/yuri-proshin-220490/',
+    m: 'https://medium.com/cindx/cindx-team-yuri-proshin-2ce48ec2d75a'
+  },
+    {
+    img: peopleImages.team.Nikita_Begishev, // оптимизируй картинку
+    name: indexLngObj[lng]['teamAdvisersPartners#74_1'],
+    position: indexLngObj[lng]['teamAdvisersPartners#75_1'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#76_1'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#77_1'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#78_1'],
+    src: '',
+    m: 'https://medium.com/cindx/cindx-team-nick-begi-b71ea5bd7966'
+  },
+  {
+    img: peopleImages.team.Aleksandr_Bogdanov, // оптимизируй картинку
+    name: indexLngObj[lng]['teamAdvisersPartners#79_1'],
+    position: indexLngObj[lng]['teamAdvisersPartners#80_1'],
+    fackt1: indexLngObj[lng]['teamAdvisersPartners#81_1'],
+    fackt2: indexLngObj[lng]['teamAdvisersPartners#82_1'],
+    fackt3: indexLngObj[lng]['teamAdvisersPartners#83_1'],
+    src: 'https://www.linkedin.com/in/yuri-proshin-220490/',
+    m: 'https://medium.com/cindx/cindx-team-alex-bogdan-5a292e80a608a'
   },
 ];
 
