@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.9591e4d9.chunk.css",
-    "main.js": "/static/js/main.a86b3662.chunk.js",
-    "main.js.map": "/static/js/main.a86b3662.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.598af650.js",
-    "runtime~main.js.map": "/static/js/runtime~main.598af650.js.map",
+    "main.js": "/static/js/main.4d0ff712.chunk.js",
+    "main.js.map": "/static/js/main.4d0ff712.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.d2a9f28e.js",
+    "runtime~main.js.map": "/static/js/runtime~main.d2a9f28e.js.map",
     "static/css/2.3a2fee5b.chunk.css": "/static/css/2.3a2fee5b.chunk.css",
-    "static/js/2.3e2ff48c.chunk.js": "/static/js/2.3e2ff48c.chunk.js",
-    "static/js/2.3e2ff48c.chunk.js.map": "/static/js/2.3e2ff48c.chunk.js.map",
+    "static/js/2.3f138b2a.chunk.js": "/static/js/2.3f138b2a.chunk.js",
+    "static/js/2.3f138b2a.chunk.js.map": "/static/js/2.3f138b2a.chunk.js.map",
     "static/js/3.7d9b1bef.chunk.js": "/static/js/3.7d9b1bef.chunk.js",
     "static/js/3.7d9b1bef.chunk.js.map": "/static/js/3.7d9b1bef.chunk.js.map",
     "static/js/4.40d2f715.chunk.js": "/static/js/4.40d2f715.chunk.js",
     "static/js/4.40d2f715.chunk.js.map": "/static/js/4.40d2f715.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ef74438f57357678d7ea224e02471cda.js": "/precache-manifest.ef74438f57357678d7ea224e02471cda.js",
+    "precache-manifest.17c937dd33b9a114b34fa443b3ca7a69.js": "/precache-manifest.17c937dd33b9a114b34fa443b3ca7a69.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.3a2fee5b.chunk.css.map": "/static/css/2.3a2fee5b.chunk.css.map",
     "static/css/main.9591e4d9.chunk.css.map": "/static/css/main.9591e4d9.chunk.css.map",
@@ -150,6 +150,7 @@
     "static/media/qr_code.png": "/static/media/qr_code.6b71e375.png",
     "static/media/road1.PNG": "/static/media/road1.89adf502.PNG",
     "static/media/road2.PNG": "/static/media/road2.793b413d.PNG",
+    "static/media/roadMapZN.png": "/static/media/roadMapZN.d10f090a.png",
     "static/media/st_place_in_the_pitch_competition.png": "/static/media/st_place_in_the_pitch_competition.65fb04a5.png"
   }
 }
