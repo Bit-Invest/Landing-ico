@@ -540,7 +540,7 @@ const ko = {
     'teamAdvisersPartners#71_1': '국제 비즈니스에서 석사 학위',
     'teamAdvisersPartners#72_1': 'FINTECH 및 blockchain 신생 기업에서 사년',
     'teamAdvisersPartners#73_1': '지역 사회 관리, 홍보 및 커뮤니케이션에 중점을 둡니다.',
-    'teamAdvisersPartners#74_1': 'Nikita Begishev',
+    'teamAdvisersPartners#74_1': 'Nick Begi',
     'teamAdvisersPartners#75_1': '개발자',
     'teamAdvisersPartners#76_1': '숙련 된 풀 스택 개발자',
     'teamAdvisersPartners#77_1': '빅 데이터 처리',

@@ -539,7 +539,7 @@ const en = {
     'teamAdvisersPartners#71_1': 'Master \'s Degree in International Business',
     'teamAdvisersPartners#72_1': '4 years in FinTech and blockchain startups',
     'teamAdvisersPartners#73_1': 'Focus on community management, PR and communications',
-    'teamAdvisersPartners#74_1': 'Nikita Begishev',
+    'teamAdvisersPartners#74_1': 'Nick Begi',
     'teamAdvisersPartners#75_1': 'Developer',
     'teamAdvisersPartners#76_1': 'Experienced Full-Stack Developer',
     'teamAdvisersPartners#77_1': 'Big data processing',

@@ -539,7 +539,7 @@ const zn = {
     'teamAdvisersPartners#71_1': '国际商务硕士学位',
     'teamAdvisersPartners#72_1': '4年FinTech和区块链经验',
     'teamAdvisersPartners#73_1': '社区管理,公共关系和沟通',
-    'teamAdvisersPartners#74_1': 'Nikita Begishev',
+    'teamAdvisersPartners#74_1': 'Nick Begi',
     'teamAdvisersPartners#75_1': '开发人员',
     'teamAdvisersPartners#76_1': '经验丰富的全栈开发者',
     'teamAdvisersPartners#77_1': '大数据处理',
