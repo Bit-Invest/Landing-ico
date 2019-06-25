@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c9e57cc3afa2f4cdad18bfb86202ed6d",
+    "revision": "6d6d7864e98b792a7e13d7dcea9c3c82",
     "url": "/index.html"
   },
   {
-    "revision": "3cd08d9e3317f9036d4c",
+    "revision": "1b00233df4ac9a0e386f",
     "url": "/static/css/2.a48a75d0.chunk.css"
   },
   {
-    "revision": "85c65ad60e34109392c0",
+    "revision": "0b2cfa31cab213db95c9",
     "url": "/static/css/main.35bbd711.chunk.css"
   },
   {
-    "revision": "3cd08d9e3317f9036d4c",
-    "url": "/static/js/2.1c815452.chunk.js"
+    "revision": "1b00233df4ac9a0e386f",
+    "url": "/static/js/2.17e68e52.chunk.js"
   },
   {
     "revision": "96ebeb09d76351076db4",
@@ -24,12 +24,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/4.40d2f715.chunk.js"
   },
   {
-    "revision": "85c65ad60e34109392c0",
-    "url": "/static/js/main.acaabe0a.chunk.js"
+    "revision": "0b2cfa31cab213db95c9",
+    "url": "/static/js/main.6a31fa19.chunk.js"
   },
   {
-    "revision": "e718a8748b83d29ec0f9",
-    "url": "/static/js/runtime~main.6a831d80.js"
+    "revision": "e5b12d87fd4b1199c6da",
+    "url": "/static/js/runtime~main.e9ba5c77.js"
   },
   {
     "revision": "06bcf4f16d2e8a22d5ce52f850953794",
@@ -534,6 +534,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c769b6a83e483d4808baab20d1cb57c6",
     "url": "/static/media/Yuriy_Avdeev_CEO_of_the_CINDX_project.c769b6a8.jpg"
+  },
+  {
+    "revision": "05d9349fc67c190e9c293108571047a8",
+    "url": "/static/media/_Yahoo.05d9349f.png"
   },
   {
     "revision": "d6ff31a0f07175f2e6b51c0efc6ec4ac",
