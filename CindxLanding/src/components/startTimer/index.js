@@ -51,11 +51,11 @@ export default class StartTimer extends React.Component {
         timeTo: '2019/06/27 12:00',
         buyButton: true,
       },
-      {
-        text: `${indexLngObj[lng]['headertext#4']} ${indexLngObj[lng]['headertext#4_1']}`,
-        timeTo: '2019/06/27 12:00',
-        buyButton: false,
-      },
+      // {
+      //   text: `${indexLngObj[lng]['headertext#4']} ${indexLngObj[lng]['headertext#4_1']}`,
+      //   timeTo: '2019/06/27 12:00',
+      //   buyButton: false,
+      // },
     ];
 
     let nextDateIEO = datesIEO[datesIEO.length - 1];
