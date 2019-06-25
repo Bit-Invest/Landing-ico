@@ -38,12 +38,12 @@ export default class StartTimer extends React.Component {
         hasTimer: true,
         buyButton: true,
       },
-      {
-        text: indexLngObj[lng]['headertext#1'],
-        timeTo: '2019/06/25 13:00',
-        hasTimer: false,
-        buyButton: true,
-      },
+      // {
+      //   text: indexLngObj[lng]['headertext#1'],
+      //   timeTo: '2019/06/25 13:00',
+      //   hasTimer: false,
+      //   buyButton: true,
+      // },
       {
         text: indexLngObj[lng]['headertext#2'],
         timeTo: '2019/06/26 12:00',
