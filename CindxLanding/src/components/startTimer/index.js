@@ -14,6 +14,7 @@ export default class StartTimer extends React.Component {
       stepIEO: 0, // 0 - до 1 раунда, 1 - вовремя 1 раунда, 2 - после 1 раунда, 3 - вовремя 2 раунда, 4 - после 2 раунда
       restTime: '0d : 0h : 0m',
       text: '',
+      hasTimer: false,
       buyButton: false,
     };
   }
@@ -34,21 +35,25 @@ export default class StartTimer extends React.Component {
       {
         text: indexLngObj[lng]['headertext#0'],
         timeTo: '2019/06/25 12:00',
+        hasTimer: true,
         buyButton: true,
       },
       {
         text: indexLngObj[lng]['headertext#1'],
         timeTo: '2019/06/25 13:00',
+        hasTimer: false,
         buyButton: true,
       },
       {
         text: indexLngObj[lng]['headertext#2'],
         timeTo: '2019/06/26 12:00',
+        hasTimer: true,
         buyButton: true,
       },
       {
         text: indexLngObj[lng]['headertext#3'],
         timeTo: '2019/06/27 12:00',
+        hasTimer: true,
         buyButton: true,
       },
       // {
@@ -104,6 +109,7 @@ export default class StartTimer extends React.Component {
         `${restHours}h : ${restMinutes}m : ${restSeconds}s`
       ),
       text: nextDateIEO.text,
+      hasTimer: nextDateIEO.hasTimer,
       buyButton: nextDateIEO.buyButton,
     });
   }
@@ -113,7 +119,7 @@ export default class StartTimer extends React.Component {
       <div className="startTimer">
           <div className="size content">
             <div className="titleText">
-              <div className="firstText"><span>{this.state.text}&#8194;</span><span>{this.state.buyButton?this.state.restTime:''}</span></div>
+              <div className="firstText"><span>{this.state.text}&#8194;</span><span>{this.state.hasTimer?this.state.restTime:''}</span></div>
               {
                 this.state.buyButton && (
                   <a className="buyButton" target="_blanl" rel="noopener noreferrer" href={indexLngObj[lng]['link#1_bitforex']}>
