@@ -88,7 +88,8 @@ import Coinannouncer from '../../media/Coinannouncer.png'
 import Cryptoreporter from '../../media/Cryptoreporter.png'
 import Bitcoinexchangeguide from '../../media/Bitcoinexchangeguide.png'
 import Thestreet from '../../media/Thestreet.png'
-import MediaCNN from '../../media/CCN.png'
+import MediaCNN from '../../media/CCN.png';
+import _Yahoo from '../../media/_Yahoo.png';
 
 import NASDAQ_logo from '../../media/NASDAQ_logo.png';
 import Reuters from '../../media/Reuters.png';
@@ -114,19 +115,19 @@ import './MediaNews.css';
 let media = [
   {
     screen: morningstar,
-    scr: '',
+    src: 'https://www.morningstar.com/news/access-wire/ASW_Accesswire_549643MSN/cindx-blockchainbased-fund-management-ecosystem-announces-launch.html',
   },
   {
-    screen: NASDAQ_logo,
-    src: '',
+    screen: _Yahoo,
+    src: 'https://www.yahoo.com/news/cindx-blockchain-based-fund-management-085000416.html',
   },
   {
     screen: Reuters,
-    src: '',
+    src: 'https://www.reuters.com/brandfeatures/venture-capital/article?id=124385',
   },
   {
     screen: YahooFinance,
-    src: '',
+    src: 'https://finance.yahoo.com/news/cindx-blockchain-based-fund-management-085000416.html',
   },
   {
     screen: Investing,
