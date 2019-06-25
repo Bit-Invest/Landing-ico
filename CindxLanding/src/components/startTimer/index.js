@@ -121,15 +121,18 @@ export default class StartTimer extends React.Component {
             <div className="titleText">
               <div className="firstText"><span>{this.state.text}&#8194;</span><span>{this.state.hasTimer?this.state.restTime:''}</span></div>
               {
-                this.state.buyButton && (
+                this.state.buyButton && [
                   <a className="buyButton" target="_blanl" rel="noopener noreferrer" href={indexLngObj[lng]['link#1_bitforex']}>
                     <span>{indexLngObj[lng]['buttonheader#1']}</span>
                     <span>
                       <img alt="" className="logoIcon" src={BitForexIcon} /> 
                       <span>{indexLngObj[lng]['buttonheader#2']}</span>
                     </span> 
+                  </a>,
+                  <a className="needHelpLink" href={indexLngObj[lng]['link#2_help']} target="_blanl" rel="noopener noreferrer">
+                    {indexLngObj[lng]['headertext#5']}
                   </a>
-                )
+                ]
               }
             </div>
           </div>

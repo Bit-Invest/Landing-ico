@@ -7,10 +7,11 @@ const en = {
 //Текст в плашке
     'headertext#0': 'CINDX Pre-IEO start in',      //сейчас ( есть таймер)
     'headertext#1': 'The CINDX Pre-IEO is Live!', //25.06 14-59 мск:
-    'headertext#2': '2nd round of CINDX Pre-IEO starts in', // 25.06 16-00 мск: ( есть таймер)
+    'headertext#2': '2 round Pre-IEO start in', // 25.06 16-00 мск: ( есть таймер)
     'headertext#3': 'The CINDX Pre-IEO ends in',  // 26.06 15-00 мск ( есть таймер)
     'headertext#4': 'The CINDX Pre-IEO has ended.', // 27.06 15-00 мск(или раньше) первая строка  
     'headertext#4_1': '$400,000 worth of tokens sold.', // 27.06 15-00 мск(или раньше) вторая строка ( не показывать в моб)
+    'headertext#5': 'Need Help?', 
 // Кнопка в плашке
     'buttonheader#1': 'Buy CINXO on ', 
     'buttonheader#2': 'BitForex',   // Название биржи с эконкой на кнопке
@@ -756,6 +757,7 @@ const en = {
     'subscribeBlock#1': 'Be the first to get the latest news and updates from CINDX',
 
     'link#1_bitforex': 'https://event.bitforex.com/en/CINXO.html',
+    'link#2_help': 'https://medium.com/cindx/how-to-buy-cinxo-tokens-7fc82a27ba47?postPublishedType=repub',
 };
 
 export default en;

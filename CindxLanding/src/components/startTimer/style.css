@@ -9,7 +9,7 @@
 .startTimer .content {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 10px 0 5px;
 }
 
 .startTimer .content .titleText {
@@ -57,4 +57,12 @@
   height: 30px;
   margin: 0 5px;
 }
+
+.startTimer .content .titleText .needHelpLink {
+  font-size: 14px;
+  color: white;
+  text-decoration: underline;
+}
+
+
 

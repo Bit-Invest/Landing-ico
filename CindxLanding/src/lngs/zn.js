@@ -7,10 +7,11 @@ const zn = {
 //Текст в плашке
     'headertext#0': 'CINDX Pre-IEO 开始:',      //сейчас ( есть таймер)
     'headertext#1': 'CINDX Pre-IEO直播！', //25.06 14-59 мск:
-    'headertext#2': '第二轮CINDX Pre-IEO开始:', // 25.06 16-00 мск: ( есть таймер)
+    'headertext#2': '第二轮Pre-IEO开始::', // 25.06 16-00 мск: ( есть таймер)
     'headertext#3': 'CINDX Pre-IEO结束:',  // 26.06 15-00 мск ( есть таймер)
     'headertext#4': 'CINDX Pre-IEO 已经结束了.', // 27.06 15-00 мск(или раньше) первая строка  
     'headertext#4_1':'价值400 000美元的代币已经出售', // 27.06 15-00 мск(или раньше) вторая строка ( не показывать в моб)
+    'headertext#5': 'Need Help?',
 // Кнопка в плашке
     'buttonheader#1': '购买CINXO在', 
     'buttonheader#2': 'BitForex上',   // Название биржи с эконкой на кнопке
@@ -756,6 +757,7 @@ const zn = {
     'subscribeBlock#1': '成为第一个从CINDX获取最新消息和更新的人',
 
     'link#1_bitforex': 'https://event.bitforex.com/cn/CINXO.html',
+    'link#2_help': 'https://medium.com/cindx/how-to-buy-cinxo-tokens-7fc82a27ba47?postPublishedType=repub',
 }
 
 export default zn;
