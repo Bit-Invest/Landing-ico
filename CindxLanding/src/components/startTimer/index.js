@@ -20,9 +20,9 @@ export default class StartTimer extends React.Component {
   }
 
   componentWillMount() {
-    setInterval(() => {
-      this.getRestTime();
-    }, 1000);
+    // setInterval(() => {
+    //   this.getRestTime();
+    // }, 1000);
   }
 
   getRestTime = () => {
@@ -32,35 +32,35 @@ export default class StartTimer extends React.Component {
     const utcNowTime = dateNow.getTime() + timeMyOffsetUTC;
 
     const datesIEO = [
-      {
-        text: indexLngObj[lng]['headertext#0'],
-        timeTo: '2019/06/25 12:00',
-        hasTimer: true,
-        buyButton: true,
-      },
+      // {
+      //   text: indexLngObj[lng]['headertext#0'],
+      //   timeTo: '2019/06/25 12:00',
+      //   hasTimer: true,
+      //   buyButton: true,
+      // },
       // {
       //   text: indexLngObj[lng]['headertext#1'],
       //   timeTo: '2019/06/25 13:00',
       //   hasTimer: false,
       //   buyButton: true,
       // },
-      {
-        text: indexLngObj[lng]['headertext#2'],
-        timeTo: '2019/06/26 12:00',
-        hasTimer: true,
-        buyButton: true,
-      },
-      {
-        text: indexLngObj[lng]['headertext#3'],
-        timeTo: '2019/06/27 12:00',
-        hasTimer: true,
-        buyButton: true,
-      },
       // {
-      //   text: `${indexLngObj[lng]['headertext#4']} ${indexLngObj[lng]['headertext#4_1']}`,
-      //   timeTo: '2019/06/27 12:00',
-      //   buyButton: false,
+      //   text: indexLngObj[lng]['headertext#2'],
+      //   timeTo: '2019/06/26 12:00',
+      //   hasTimer: true,
+      //   buyButton: true,
       // },
+      // {
+      //   text: indexLngObj[lng]['headertext#3'],
+      //   timeTo: '2019/06/27 12:00',
+      //   hasTimer: true,
+      //   buyButton: true,
+      // },
+      {
+        text: `${indexLngObj[lng]['headertext#4']} ${indexLngObj[lng]['headertext#4_1']}`,
+        timeTo: '2019/06/27 12:00',
+        buyButton: false,
+      },
     ];
 
     let nextDateIEO = datesIEO[datesIEO.length - 1];
@@ -119,7 +119,10 @@ export default class StartTimer extends React.Component {
       <div className="startTimer">
           <div className="size content">
             <div className="titleText">
-              <div className="firstText"><span>{this.state.text}&#8194;</span><span>{this.state.hasTimer?this.state.restTime:''}</span></div>
+              <div className="firstText">
+                <span>{indexLngObj[lng]['headertext#4_1']}</span>
+              </div>
+              <span>{indexLngObj[lng]['headertext#4']}</span>
               {
                 this.state.buyButton && [
                   <a className="buyButton" target="_blanl" rel="noopener noreferrer" href={indexLngObj[lng]['link#1_bitforex']}>
