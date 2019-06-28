@@ -110,6 +110,8 @@ import IMG_1207 from '../../media/IMG_1207.png';
 import IMG_1208 from '../../media/IMG_1208.png';
 import IMG_1225 from '../../media/IMG_1225.png';
 
+import IMG_1 from '../../media/IMG_1.png';
+
 import './MediaNews.css';
 
 let media = [
@@ -973,6 +975,15 @@ Read our Review about Singapore’s blockchain industry and hurry up to join the
     source: 'www.medium.com',
     centered: true
   },
+  {
+    urlLink: 'https://medium.com/cindx/cindx-successfully-closes-both-pre-ieo-rounds-5c7c114d0027',
+    screen: IMG_1,
+    date: '06.26.2019',
+    name: 'CINDX Successfully Closes Both Pre-IEO Rounds' ,
+    text: 'The CINDX project is delighted to announce that it has successfully closed both Pre-IEO sales rounds on BitForex and has raised the necessary amount of funds to continue development of the platform.',
+    source: 'www.medium.com',
+    centered: false
+  },
 ]; 
 
 const getBeautifulDate = (date) => {
@@ -986,7 +997,7 @@ const getBeautifulDate = (date) => {
   const $date = new Date(tsDate);
   const monthIndex = $date.getMonth();
   const monthStr = monthNames[monthIndex];
-  const day = $date.getUTCDate();
+  const day = $date.getDate();
   const year = $date.getUTCFullYear();
   const yearStr = (`${year}`).substr(2, 2);
 

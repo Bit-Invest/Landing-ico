@@ -316,7 +316,7 @@ const getBeautifulDate = (date) => {
   const $date = new Date(tsDate);
   const monthIndex = $date.getMonth();
   const monthStr = monthNames[monthIndex];
-  const day = $date.getUTCDate();
+  const day = $date.getDate();
   const year = $date.getUTCFullYear();
   const yearStr = (`${year}`).substr(2, 2);
 
