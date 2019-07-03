@@ -180,7 +180,7 @@ export class MainBlock extends React.Component {
                   </a>
                   <a target="_blank" rel="noopener noreferrer" href={links.soc.telegram} className="g_soc">
                     <img alt="telegram link" className="icon" src={telegram_icon} />
-                    <span>13k +</span>
+                    <span>15k +</span>
                   </a>
                   {
                     lng === 'zn' && (
