@@ -112,6 +112,11 @@ import IMG_1225 from '../../media/IMG_1225.png';
 
 import IMG_1 from '../../media/IMG_1.png';
 
+import IMG_1n1 from '../../media/IMG_1n1.jpg';
+import IMG_1n2 from '../../media/IMG_1n2.jpg';
+import IMG_1n3 from '../../media/IMG_1n3.jpg';
+import IMG_1n4 from '../../media/IMG_1n4.jpg';
+
 import './MediaNews.css';
 
 let media = [
@@ -863,7 +868,7 @@ let news = [
     date: '10.04.2018',
     name: `Blockchain in Singapore`,
     text: `CINDX only just finished its Asian Roadshow, but the team is still basking in the excitement!.
-Read our Review about Singapore’s blockchain industry and hurry up to join the CINDX STO right now! `,
+  Read our Review about Singapore’s blockchain industry and hurry up to join the CINDX STO right now! `,
     source: 'www.medium.com',
     centered: true
   },
@@ -976,15 +981,42 @@ Read our Review about Singapore’s blockchain industry and hurry up to join the
     centered: true
   },
   {
-    urlLink: 'https://medium.com/cindx/cindx-successfully-closes-both-pre-ieo-rounds-5c7c114d0027',
-    screen: IMG_1,
-    date: '06.26.2019',
-    name: 'CINDX Successfully Closes Both Pre-IEO Rounds' ,
-    text: 'The CINDX project is delighted to announce that it has successfully closed both Pre-IEO sales rounds on BitForex and has raised the necessary amount of funds to continue development of the platform.',
+    urlLink: 'https://medium.com/cindx/cindx-hub-overview-part-1-103d5a9bbbd7',
+    screen: IMG_1n1,
+    date: '07.12.2019',
+    name: 'CINDX.Hub Overview (Part 1)' ,
+    text: 'CINDX.Hub is a fully-featured toolset, allowing users to develop algorithmic solutions which can be shared with other platform particpants and monetized or reserved for personal use.',
     source: 'www.medium.com',
     centered: false
   },
-]; 
+  {
+    urlLink: 'https://medium.com/cindx/cindx-hub-overview-part-2-e5c4e906bc0d',
+    screen: IMG_1n2,
+    date: '07.19.2019',
+    name: 'CINDX.Hub Overview (Part 2)' ,
+    text: 'In the second part of the article on CINDX.Hub we’ll focus on the editor of algorithmic strategies and various kinds of bots available on the platform.',
+    source: 'www.medium.com',
+    centered: false
+ },
+  {
+    urlLink: 'https://medium.com/cindx/cindx-platform-is-open-for-public-testing-d432075bcfa7',
+    screen: IMG_1n3,
+    date: '07.23.2019',
+    name: 'CINDX Platform Open For Public Testing' ,
+    text: 'We’d like to invite traders, investors and interested community members in general to try out the platform and provide us with feedback, streamline the overall user experience and eliminate possible bugs.',
+    source: 'www.medium.com',
+    centered: false
+ },
+  {
+    urlLink: 'https://medium.com/cindx/cindx-monthly-update-july-2019-63712f6a039b',
+    screen: IMG_1n4,
+    date: '08.05.2019',
+    name: 'CINDX Progress Report - July 2019' ,
+    text: 'It was a productive month, our team has accomplished a lot and finally released a working version of the platform to top that off! Read more in this month`s report',
+    source: 'www.medium.com',
+    centered: false
+ },
+];
 
 const getBeautifulDate = (date) => {
   const monthNames = ["January", "February", "March", "April", "May", "June",

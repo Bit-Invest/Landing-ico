@@ -165,7 +165,7 @@ class Menu extends React.Component {
   render() {
     return (
       <div className="headeFixed">
-        <StartTimer />
+        {/*<StartTimer />*/}
         <div className="menu">
           <div className="container-menu">
             <a href="#top"><img className="logo" src={logo} alt={"CINDX"}/></a>
