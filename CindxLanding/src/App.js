@@ -39,4 +39,4 @@ class App extends React.Component {
 const mapDispatchToProps = dispatch =>
   bindActionCreators({saveMoney}, dispatch);
 
-export default connect(null, mapDispatchToProps)(App)
+export default connect(null, mapDispatchToProps)(App);

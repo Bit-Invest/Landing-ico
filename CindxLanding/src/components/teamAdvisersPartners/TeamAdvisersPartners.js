@@ -38,14 +38,14 @@ const teamInfo = [
     m: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61'
   },
   {
-    img: peopleImages.team.Mofassair_Hossain,
-    name: indexLngObj[lng]['teamAdvisersPartners#14'],
-    position: indexLngObj[lng]['teamAdvisersPartners#15'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#16'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#17'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#18'],
-    src: 'https://www.linkedin.com/in/md-mofassair-hossain-515a90148',
-    m: 'https://medium.com/cindx/cindx-team-mofassair-hossain-72661ba3474e'
+    img: peopleImages.team.Aleksey,
+    name: 'Alexey Korolev',
+    position: 'Director of communication',
+    fackt1: '18 years of experience in marketing and advertising',
+    fackt2: '5 years of work in the investment field',
+    fackt3: '',
+    src: '',
+    m: '',
   },
   {
     img: peopleImages.team.Artur_Shamalov,

@@ -79,11 +79,11 @@ export class MailBlock extends React.Component {
       this.setState({
         submitStatus: 2,
         submitStatusText: indexLngObj[lng]['mailForm#4']
-      });     
+      });
 
       setTimeout(()=>{
         window.open(links.mvp);
-      }, 2000); 
+      }, 2000);
     });
   }
 
@@ -175,6 +175,7 @@ export const JoinTokenPreSale = () => (
               </a>
               <a href="http://static.cindx.io/LD_LAST.pdf" target="__blank" className="linkDoc">{indexLngObj[lng]['joinTokenPreSale#14']}</a>
               <a href="http://static.cindx.io/PP_LAST.pdf" target="__blank" className="linkDoc">{indexLngObj[lng]['joinTokenPreSale#15']}</a>
+              <a href="https://cindx.io/deposite.html" target="__blank" className="linkDoc">Investment deposit</a>
             </div>
           </div>
         </div>
