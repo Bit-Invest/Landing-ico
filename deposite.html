@@ -120,7 +120,7 @@
         if (mustBtcWallet) {
           if (!btcWalletVal) return alert('Enter BTC wallet!');
 
-          urlSend += `&wallet=${$('.btcWallet').val(btcWalletVal)}`;
+          urlSend += `&wallet=${btcWalletVal}`;
         }
 
         const response = await fetch(urlSend)
