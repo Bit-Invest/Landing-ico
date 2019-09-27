@@ -56,6 +56,15 @@
       width: 90%;
       display: none;
     }
+    .btcAdressParent {
+      width: 100%;
+    }
+    .btcAdressParent .checkboxWalletDiv {
+      margin-bottom: 5px;
+    }
+    .btcWallet {
+      display: none;
+    }
   </style>
   </head>
   <body>
@@ -63,6 +72,15 @@
       <div class="form">
         <div class="title">CINDX INVESTMENT DEPOSIT</div>
         <input class="input email" type="text" placeholder="Email">
+        <div class="btcAdressParent">
+          <div class="checkboxWalletDiv">
+            <label>
+              <input type="checkbox" id="haveWallet">
+              <span>I have a btc wallet</span>
+            </label>
+          </div>
+        </div>
+        <input class="input btcWallet" type="text" placeholder="BTC address">
         <div class="btnPuy active">Send</div>
         <a class="btnPuy link">Good mail. Go to the payment!<a/>
       </div>
@@ -78,6 +96,16 @@
         $('.btnPuy').addClass('active');
       }
 
+      $('#haveWallet').on('change', async function() {
+        const val = $(this).prop('checked');
+
+        if (val) {
+          $('.btcWallet').show();
+        } else {
+          $('.btcWallet').hide();
+        }
+      });
+
       $('.btnPuy.active').on('click', async function() {
         const mail = $('.email').val();
         if (!mail) {
@@ -85,7 +113,13 @@
         }
         doNoActive();
 
-        const response = await fetch(`https://cindx.io/deposite-control?mail=${mail}`)
+        let urlSend = `https://cindx.io/deposite-control?mail=${mail}`;
+
+        if ($('#haveWallet').prop('checked')) {
+          urlSend += `&wallet=${$('.btcWallet').val()}`;
+        }
+
+        const response = await fetch(urlSend)
           .then(response => response.json());
         const redirectUrl = (response || {}).redirectUrl;
 
