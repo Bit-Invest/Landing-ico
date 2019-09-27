@@ -109,14 +109,18 @@
       $('.btnPuy.active').on('click', async function() {
         const mail = $('.email').val();
         if (!mail) {
-          return alert('Fill in all the fields');
+          return alert('Enter email!');
         }
         doNoActive();
 
         let urlSend = `https://cindx.io/deposite-control?mail=${mail}`;
+        let btcWalletVal = $('.btcWallet').val();
+        let mustBtcWallet = $('#haveWallet').prop('checked');
 
-        if ($('#haveWallet').prop('checked')) {
-          urlSend += `&wallet=${$('.btcWallet').val()}`;
+        if (mustBtcWallet) {
+          if (!btcWalletVal) return alert('Enter BTC wallet!');
+
+          urlSend += `&wallet=${$('.btcWallet').val(btcWalletVal)}`;
         }
 
         const response = await fetch(urlSend)
@@ -125,7 +129,7 @@
 
         if (!redirectUrl) {
           doActive();
-          return alert('Some kind of mistake, try again later.');
+          return alert(`Some kind of mistake, try again later. ${JSON.stringify(response)}`);
         }
 
         location.href = redirectUrl;
