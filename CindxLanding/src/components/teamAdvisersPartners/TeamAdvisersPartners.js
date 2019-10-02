@@ -40,7 +40,7 @@ const teamInfo = [
   {
     img: peopleImages.team.Aleksey,
     name: 'Alexey Korolev',
-    position: 'Director of communication',
+    position: 'Business development director',
     fackt1: '18 years of experience in marketing and advertising',
     fackt2: '5 years of work in the investment field',
     fackt3: '',
