@@ -14,6 +14,7 @@
     }
     .container {
       display: flex;
+      flex-direction: column;
       flex: 1;
       height: 100vh;
       justify-content: center;
@@ -21,6 +22,10 @@
       background-image: -webkit-gradient(linear,left bottom,left top,from(#3a2f64),color-stop(48%,#4a3c6b),to(#755c7a));
       background-image: -webkit-linear-gradient(bottom,#3a2f64,#4a3c6b 48%,#755c7a);
       background-image: linear-gradient(0deg,#3a2f64,#4a3c6b 48%,#755c7a);
+    }
+    .container .logo {
+      width: 100px;
+      margin-bottom: 30px;
     }
     .container .form {
       display: flex;
@@ -69,6 +74,7 @@
   </head>
   <body>
     <div class="container">
+      <img class="logo" src="./logo.png" />
       <div class="form">
         <div class="title">CINDX INVESTMENT DEPOSIT</div>
         <input class="input email" type="text" placeholder="Email">
