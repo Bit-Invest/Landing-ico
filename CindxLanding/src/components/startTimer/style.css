@@ -6,6 +6,11 @@
   color: white;
 }
 
+.startTimer a {
+  color: white;
+  text-decoration: underline;
+}
+
 .startTimer .content {
   display: flex;
   justify-content: center;
@@ -15,54 +20,15 @@
 .startTimer .content .titleText {
   font-size: 22px;
   text-align: center;
-  line-height: 30px;
   flex-wrap: wrap;
   padding: 0 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 60%;
 }
 
-.startTimer .content .titleText .firstText {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.startTimer .content .titleText .timerText {
-  display: flex;
-  justify-content: center;
-}
-
-.startTimer .content .titleText .buyButton {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  background: white;
+.startTimer .content .titleText span {
   font-size: 13px;
-  padding: 0 20px;
-  border-radius: 100px;
-  align-self: center;
-  margin-top: 5px;
 }
-
-.startTimer .content .titleText .buyButton > span {
-  display: inline-flex;
-}
-
-.startTimer .content .titleText .buyButton .logoIcon {
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
-}
-
-.startTimer .content .titleText .needHelpLink {
-  font-size: 14px;
-  color: white;
-  text-decoration: underline;
-}
-
-
 
