@@ -138,16 +138,6 @@ const teamInfo = [
     src: 'https://www.linkedin.com/in/yuri-proshin-220490/',
     m: 'https://medium.com/cindx/cindx-team-yuri-proshin-2ce48ec2d75a'
   },
-    {
-    img: peopleImages.team.Nikita_Begishev, // оптимизируй картинку
-    name: indexLngObj[lng]['teamAdvisersPartners#74_1'],
-    position: indexLngObj[lng]['teamAdvisersPartners#75_1'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#76_1'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#77_1'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#78_1'],
-    src: '',
-    m: 'https://medium.com/cindx/cindx-team-nick-begi-b71ea5bd7966'
-  },
   {
     img: peopleImages.team.Aleksandr_Bogdanov, // оптимизируй картинку
     name: indexLngObj[lng]['teamAdvisersPartners#79_1'],
