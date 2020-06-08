@@ -1,9 +1,9 @@
 .startTimer {
   background: #bc77e4;
-  display: inline-flex;
   width: 100%;
-  justify-content: center;
   color: white;
+  height: 80px;
+  overflow-y: auto;
 }
 
 .startTimer a {
