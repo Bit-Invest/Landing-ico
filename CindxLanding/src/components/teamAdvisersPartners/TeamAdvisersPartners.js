@@ -253,40 +253,40 @@ const advisers = [
       indexLngObj[lng]['teamAdvisersPartners#132']
     ]
   },
-  {
-    img: peopleImages.advisers.Graham_Doggart,
-    video: 'https://www.youtube.com/embed/uXTA_QLympE',
-    name: indexLngObj[lng]['teamAdvisersPartners#133'],
-    src: 'https://www.linkedin.com/in/grahamdoggart/',
-    m: 'https://medium.com/cindx/cindx-advisers-graham-doggart-a7f45b3e4ce4',
-    position: indexLngObj[lng]['teamAdvisersPartners#134'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#135'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#136'],
-    linkedin: 'https://www.linkedin.com/in/grahamdoggart/',
-    text: [
-      indexLngObj[lng]['teamAdvisersPartners#137'],
-      indexLngObj[lng]['teamAdvisersPartners#138'],
-      indexLngObj[lng]['teamAdvisersPartners#139'],
-      indexLngObj[lng]['teamAdvisersPartners#140'],
-    ]
-  },
-  {
-    img: peopleImages.advisers.Sadie_Hutton,
-    video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
-    name: indexLngObj[lng]['teamAdvisersPartners#141'],
-    src: 'https://www.linkedin.com/in/sadie-hutton/',
-    m: 'https://medium.com/cindx/cindx-advisers-sadie-hutton-6a8d68aa6fcf',
-    position: indexLngObj[lng]['teamAdvisersPartners#142'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#143'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#144'],
-    linkedin: 'https://www.linkedin.com/in/sadie-hutton/',
-    text: [
-      indexLngObj[lng]['teamAdvisersPartners#145'],
-      indexLngObj[lng]['teamAdvisersPartners#146'],
-      indexLngObj[lng]['teamAdvisersPartners#147'],
-      indexLngObj[lng]['teamAdvisersPartners#148']
-    ]
-  },
+  // {
+  //   img: peopleImages.advisers.Graham_Doggart,
+  //   video: 'https://www.youtube.com/embed/uXTA_QLympE',
+  //   name: indexLngObj[lng]['teamAdvisersPartners#133'],
+  //   src: 'https://www.linkedin.com/in/grahamdoggart/',
+  //   m: 'https://medium.com/cindx/cindx-advisers-graham-doggart-a7f45b3e4ce4',
+  //   position: indexLngObj[lng]['teamAdvisersPartners#134'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#135'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#136'],
+  //   linkedin: 'https://www.linkedin.com/in/grahamdoggart/',
+  //   text: [
+  //     indexLngObj[lng]['teamAdvisersPartners#137'],
+  //     indexLngObj[lng]['teamAdvisersPartners#138'],
+  //     indexLngObj[lng]['teamAdvisersPartners#139'],
+  //     indexLngObj[lng]['teamAdvisersPartners#140'],
+  //   ]
+  // },
+  // {
+  //   img: peopleImages.advisers.Sadie_Hutton,
+  //   video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
+  //   name: indexLngObj[lng]['teamAdvisersPartners#141'],
+  //   src: 'https://www.linkedin.com/in/sadie-hutton/',
+  //   m: 'https://medium.com/cindx/cindx-advisers-sadie-hutton-6a8d68aa6fcf',
+  //   position: indexLngObj[lng]['teamAdvisersPartners#142'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#143'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#144'],
+  //   linkedin: 'https://www.linkedin.com/in/sadie-hutton/',
+  //   text: [
+  //     indexLngObj[lng]['teamAdvisersPartners#145'],
+  //     indexLngObj[lng]['teamAdvisersPartners#146'],
+  //     indexLngObj[lng]['teamAdvisersPartners#147'],
+  //     indexLngObj[lng]['teamAdvisersPartners#148']
+  //   ]
+  // },
   {
     img: peopleImages.advisers.Leonard_Grayver,
     video: '',

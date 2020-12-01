@@ -66,22 +66,22 @@ const feedbackOnOurProject = [
     text: indexLngObj[lng]['feedbackProject#51'],
     text2: indexLngObj[lng]['feedbackProject#53'],
   },
-  {
-    img: peopleImages.feedback.Graham_Doggart,
-    name: indexLngObj[lng]['feedbackProject#41'],
-    position: indexLngObj[lng]['feedbackProject#42'],
-    video: 'https://www.youtube.com/embed/uXTA_QLympE',
-    text: indexLngObj[lng]['feedbackProject#43'],
-    text2: indexLngObj[lng]['feedbackProject#45'],
-  },
-  {
-    img: peopleImages.feedback.Sadie_Hutton,
-    name: indexLngObj[lng]['feedbackProject#36'],
-    position: indexLngObj[lng]['feedbackProject#37'],
-    video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
-    text: indexLngObj[lng]['feedbackProject#38'],
-    text2: indexLngObj[lng]['feedbackProject#40'],
-  },
+  // {
+  //   img: peopleImages.feedback.Graham_Doggart,
+  //   name: indexLngObj[lng]['feedbackProject#41'],
+  //   position: indexLngObj[lng]['feedbackProject#42'],
+  //   video: 'https://www.youtube.com/embed/uXTA_QLympE',
+  //   text: indexLngObj[lng]['feedbackProject#43'],
+  //   text2: indexLngObj[lng]['feedbackProject#45'],
+  // },
+  // {
+  //   img: peopleImages.feedback.Sadie_Hutton,
+  //   name: indexLngObj[lng]['feedbackProject#36'],
+  //   position: indexLngObj[lng]['feedbackProject#37'],
+  //   video: 'https://www.youtube.com/embed/D4ln5WpZh-Y',
+  //   text: indexLngObj[lng]['feedbackProject#38'],
+  //   text2: indexLngObj[lng]['feedbackProject#40'],
+  // },
 ]
 
 class FeedbackProject extends React.Component {
