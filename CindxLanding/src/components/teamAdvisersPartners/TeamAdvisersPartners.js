@@ -17,137 +17,137 @@ import Collage_partners from '@images/Collage_partners.png';
 import './TeamAdvisersPartners.css';
 
 const teamInfo = [
-  {
-    img: peopleImages.team.Yuriy_Avdeev,
-    name: indexLngObj[lng]['teamAdvisersPartners#4'],
-    position: indexLngObj[lng]['teamAdvisersPartners#5'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#6'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#7'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#8'],
-    src: 'https://www.linkedin.com/in/yuriyavdeev/',
-    m: 'https://medium.com/cindx/cindx-team-yuriy-avdeev-e7a747d4c2e3'
-  },
-  {
-    img: peopleImages.team.Val_Jerdes,
-    name: indexLngObj[lng]['teamAdvisersPartners#9'],
-    position: indexLngObj[lng]['teamAdvisersPartners#10'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#11'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#12'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#13'],
-    src: 'https://www.linkedin.com/in/valjerdes/',
-    m: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61'
-  },
-  {
-    img: peopleImages.team.Aleksey,
-    name: 'Alexey Korolev',
-    position: 'Business development director',
-    fackt1: '18 years of experience in marketing and advertising',
-    fackt2: '5 years of work in the investment field',
-    fackt3: '',
-    src: '',
-    m: '',
-  },
-  {
-    img: peopleImages.team.Artur_Shamalov,
-    name: indexLngObj[lng]['teamAdvisersPartners#19'],
-    position: indexLngObj[lng]['teamAdvisersPartners#20'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#21'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#22'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#23'],
-    src: 'https://www.linkedin.com/in/artur-shamalov/',
-    m: 'https://medium.com/cindx/cindx-team-artur-shamalov-52c9dae3b3c9'
+  // {
+  //   img: peopleImages.team.Yuriy_Avdeev,
+  //   name: indexLngObj[lng]['teamAdvisersPartners#4'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#5'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#6'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#7'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#8'],
+  //   src: 'https://www.linkedin.com/in/yuriyavdeev/',
+  //   m: 'https://medium.com/cindx/cindx-team-yuriy-avdeev-e7a747d4c2e3'
+  // },
+  // {
+  //   img: peopleImages.team.Val_Jerdes,
+  //   name: indexLngObj[lng]['teamAdvisersPartners#9'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#10'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#11'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#12'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#13'],
+  //   src: 'https://www.linkedin.com/in/valjerdes/',
+  //   m: 'https://medium.com/cindx/the-cindx-team-val-jerdes-e6c828062e61'
+  // },
+  // {
+  //   img: peopleImages.team.Aleksey,
+  //   name: 'Alexey Korolev',
+  //   position: 'Business development director',
+  //   fackt1: '18 years of experience in marketing and advertising',
+  //   fackt2: '5 years of work in the investment field',
+  //   fackt3: '',
+  //   src: '',
+  //   m: '',
+  // },
+  // {
+  //   img: peopleImages.team.Artur_Shamalov,
+  //   name: indexLngObj[lng]['teamAdvisersPartners#19'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#20'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#21'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#22'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#23'],
+  //   src: 'https://www.linkedin.com/in/artur-shamalov/',
+  //   m: 'https://medium.com/cindx/cindx-team-artur-shamalov-52c9dae3b3c9'
 
-  },
-  {
-    img: peopleImages.team.Denis_Eskenazi,
-    name: indexLngObj[lng]['teamAdvisersPartners#24'],
-    position: indexLngObj[lng]['teamAdvisersPartners#25'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#26'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#27'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#28'],
-    src: 'https://ru.linkedin.com/in/denis-eskenazi-03b81726',
-    m: 'https://medium.com/cindx/denis-eskenazi-ac67e81d8c50'
-  },
-  {
-    img: peopleImages.team.Ibraghim_Haniev,
-    name: indexLngObj[lng]['teamAdvisersPartners#29'],
-    position: indexLngObj[lng]['teamAdvisersPartners#30'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#31'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#32'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#33'],
-    src: 'https://www.linkedin.com/in/ibrahimhaniev/',
-    m: 'https://medium.com/cindx/cindx-team-ibraghim-haniev-17f67defd1ba'
-  },
-  {
-    img: peopleImages.team.Sergey_Potehin,
-    name: indexLngObj[lng]['teamAdvisersPartners#59_1'],
-    position: indexLngObj[lng]['teamAdvisersPartners#60_1'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#61_1'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#62_1'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#63_1'],
-    src: '',
-    m: 'https://medium.com/cindx/cindx-team-sergey-potekhin-31451dbb6de3',
-  },
-  {
-    img: peopleImages.team.Georg_Brich,
-    name: indexLngObj[lng]['teamAdvisersPartners#64_1'],
-    position: indexLngObj[lng]['teamAdvisersPartners#65_1'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#66_1'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#67_1'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#68_1'],
-    src: 'https://www.linkedin.com/in/brichkovskiy-georgy/',
-    m: 'https://medium.com/cindx/cindx-attends-the-binance-meetup-moscow-event-81f41e8c4814',
-  },
-  {
-    img: peopleImages.team.Airat,
-    name: indexLngObj[lng]['teamAdvisersPartners#34'],
-    position: indexLngObj[lng]['teamAdvisersPartners#35'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#36'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#37'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#38'],
-    src: 'https://www.linkedin.com/in/airatshayhulov/',
-    m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-airat-shayhulov-b980078cdc6f'
-  },
-  {
-    img: peopleImages.team.Sofja_Pevzner,
-    name: indexLngObj[lng]['teamAdvisersPartners#39'],
-    position: indexLngObj[lng]['teamAdvisersPartners#40'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#41'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#42'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#43'],
-    src: 'https://www.linkedin.com/in/sofja-pevzner-70831963/',
-    m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-sofja-pevzner-8386e8e88407'
-  },
-  {
-    img: peopleImages.team.Jelena_Karzetskaja,
-    name: indexLngObj[lng]['teamAdvisersPartners#49'],
-    position: indexLngObj[lng]['teamAdvisersPartners#50'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#51'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#52'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#53'],
-    src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
-    m: 'https://medium.com/cindx/team-jelena-karzetskaja-94e8c4286924'
-  },
-  {
-    img: peopleImages.team.Yuriy_Proshin, // оптимизируй картинку
-    name: indexLngObj[lng]['teamAdvisersPartners#69_1'],
-    position: indexLngObj[lng]['teamAdvisersPartners#70_1'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#71_1'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#72_1'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#73_1'],
-    src: 'https://www.linkedin.com/in/yuri-proshin-220490/',
-    m: 'https://medium.com/cindx/cindx-team-yuri-proshin-2ce48ec2d75a'
-  },
-  {
-    img: peopleImages.team.Aleksandr_Bogdanov, // оптимизируй картинку
-    name: indexLngObj[lng]['teamAdvisersPartners#79_1'],
-    position: indexLngObj[lng]['teamAdvisersPartners#80_1'],
-    fackt1: indexLngObj[lng]['teamAdvisersPartners#81_1'],
-    fackt2: indexLngObj[lng]['teamAdvisersPartners#82_1'],
-    fackt3: indexLngObj[lng]['teamAdvisersPartners#83_1'],
-    src: '',
-    m: 'https://medium.com/cindx/cindx-team-alex-bogdan-5a292e80a608a'
-  },
+  // },
+  // {
+  //   img: peopleImages.team.Denis_Eskenazi,
+  //   name: indexLngObj[lng]['teamAdvisersPartners#24'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#25'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#26'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#27'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#28'],
+  //   src: 'https://ru.linkedin.com/in/denis-eskenazi-03b81726',
+  //   m: 'https://medium.com/cindx/denis-eskenazi-ac67e81d8c50'
+  // },
+  // {
+  //   img: peopleImages.team.Ibraghim_Haniev,
+  //   name: indexLngObj[lng]['teamAdvisersPartners#29'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#30'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#31'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#32'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#33'],
+  //   src: 'https://www.linkedin.com/in/ibrahimhaniev/',
+  //   m: 'https://medium.com/cindx/cindx-team-ibraghim-haniev-17f67defd1ba'
+  // },
+  // {
+  //   img: peopleImages.team.Sergey_Potehin,
+  //   name: indexLngObj[lng]['teamAdvisersPartners#59_1'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#60_1'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#61_1'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#62_1'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#63_1'],
+  //   src: '',
+  //   m: 'https://medium.com/cindx/cindx-team-sergey-potekhin-31451dbb6de3',
+  // },
+  // {
+  //   img: peopleImages.team.Georg_Brich,
+  //   name: indexLngObj[lng]['teamAdvisersPartners#64_1'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#65_1'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#66_1'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#67_1'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#68_1'],
+  //   src: 'https://www.linkedin.com/in/brichkovskiy-georgy/',
+  //   m: 'https://medium.com/cindx/cindx-attends-the-binance-meetup-moscow-event-81f41e8c4814',
+  // },
+  // {
+  //   img: peopleImages.team.Airat,
+  //   name: indexLngObj[lng]['teamAdvisersPartners#34'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#35'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#36'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#37'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#38'],
+  //   src: 'https://www.linkedin.com/in/airatshayhulov/',
+  //   m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-airat-shayhulov-b980078cdc6f'
+  // },
+  // {
+  //   img: peopleImages.team.Sofja_Pevzner,
+  //   name: indexLngObj[lng]['teamAdvisersPartners#39'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#40'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#41'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#42'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#43'],
+  //   src: 'https://www.linkedin.com/in/sofja-pevzner-70831963/',
+  //   m: 'https://medium.com/cindx/https-medium-com-cindx-cindx-team-sofja-pevzner-8386e8e88407'
+  // },
+  // {
+  //   img: peopleImages.team.Jelena_Karzetskaja,
+  //   name: indexLngObj[lng]['teamAdvisersPartners#49'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#50'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#51'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#52'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#53'],
+  //   src: 'https://www.linkedin.com/in/jelena-karzetskaja-28754727/',
+  //   m: 'https://medium.com/cindx/team-jelena-karzetskaja-94e8c4286924'
+  // },
+  // {
+  //   img: peopleImages.team.Yuriy_Proshin, // оптимизируй картинку
+  //   name: indexLngObj[lng]['teamAdvisersPartners#69_1'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#70_1'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#71_1'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#72_1'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#73_1'],
+  //   src: 'https://www.linkedin.com/in/yuri-proshin-220490/',
+  //   m: 'https://medium.com/cindx/cindx-team-yuri-proshin-2ce48ec2d75a'
+  // },
+  // {
+  //   img: peopleImages.team.Aleksandr_Bogdanov, // оптимизируй картинку
+  //   name: indexLngObj[lng]['teamAdvisersPartners#79_1'],
+  //   position: indexLngObj[lng]['teamAdvisersPartners#80_1'],
+  //   fackt1: indexLngObj[lng]['teamAdvisersPartners#81_1'],
+  //   fackt2: indexLngObj[lng]['teamAdvisersPartners#82_1'],
+  //   fackt3: indexLngObj[lng]['teamAdvisersPartners#83_1'],
+  //   src: '',
+  //   m: 'https://medium.com/cindx/cindx-team-alex-bogdan-5a292e80a608a'
+  // },
 ];
 
 const advisers = [
